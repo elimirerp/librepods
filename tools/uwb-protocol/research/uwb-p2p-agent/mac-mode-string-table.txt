@@ -1,0 +1,10 @@
+0 -> Unspecified
+1 -> PointToShare
+2 -> PeerToPeer
+3 -> Alisha
+4 -> GR
+5 -> FiRaUnicast
+6 -> FiRaContentionBased
+7 -> TestNMI
+8 -> NMI
+9 -> Localization

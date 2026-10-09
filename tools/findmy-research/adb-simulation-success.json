@@ -1,0 +1,136 @@
+{
+  "schema_version": 1,
+  "mode": "simulation",
+  "caller_context": "adb_shell",
+  "device": {
+    "api_level": {
+      "status": "ok",
+      "value": "37"
+    },
+    "android_release": {
+      "status": "ok",
+      "value": "17"
+    },
+    "security_patch": {
+      "status": "ok",
+      "value": "2026-09-01"
+    },
+    "oneui_version": {
+      "status": "ok",
+      "value": "90000"
+    },
+    "manufacturer": {
+      "status": "ok",
+      "value": "samsung"
+    },
+    "model": {
+      "status": "ok",
+      "value": "SM-S938U"
+    }
+  },
+  "uwb_feature": {
+    "query_status": "ok",
+    "advertised": "present"
+  },
+  "shell_package_permissions": {
+    "query_status": "ok",
+    "package": "com.android.shell",
+    "grants": {
+      "UWB_PRIVILEGED": "true",
+      "UWB_RANGING": "true",
+      "RANGING": "true",
+      "BLUETOOTH_PRIVILEGED": "true",
+      "WRITE_SECURE_SETTINGS": "true"
+    }
+  },
+  "uwb_service": {
+    "query_status": "ok",
+    "visibility": "present"
+  },
+  "uwb_shell_help": {
+    "query_status": "ok",
+    "advertised_read_only_commands": [
+      "status",
+      "get-specification-info"
+    ]
+  },
+  "uwb_state": {
+    "query_status": "ok",
+    "state": "enabled"
+  },
+  "specification": {
+    "query_status": "ok",
+    "fira_capability_fields": {
+      "max_phy_version": "3.0",
+      "channels": [
+        5,
+        9
+      ],
+      "prf_capabilities": 3,
+      "rframe_capabilities": 11,
+      "sts_capabilities": 31,
+      "bprf_parameter_set_capabilities": 63,
+      "hprf_parameter_set_capabilities": 7158278831
+    },
+    "controller_firmware_version": "not_identified_by_this_query"
+  },
+  "public_artifacts": [
+    "/system/framework/com.samsung.android.uwb_extras.jar",
+    "/system/framework/libsr200t_prod_fw.so",
+    "/system_ext/framework/com.samsung.android.uwb_extras.jar",
+    "/system_ext/framework/libsr200t_prod_fw.so",
+    "/product/framework/com.samsung.android.uwb_extras.jar",
+    "/product/framework/libsr200t_prod_fw.so",
+    "/vendor/framework/com.samsung.android.uwb_extras.jar",
+    "/vendor/framework/libsr200t_prod_fw.so",
+    "/apex/com.android.uwb/javalib/com.samsung.android.uwb_extras.jar",
+    "/apex/com.android.uwb/javalib/libsr200t_prod_fw.so",
+    "/vendor/etc/com.samsung.android.uwb_extras.jar",
+    "/vendor/etc/libsr200t_prod_fw.so",
+    "/vendor/firmware/com.samsung.android.uwb_extras.jar",
+    "/vendor/firmware/libsr200t_prod_fw.so",
+    "/vendor/lib64/hw/com.samsung.android.uwb_extras.jar",
+    "/vendor/lib64/hw/libsr200t_prod_fw.so"
+  ],
+  "artifact_directory_queries": [
+    {
+      "path": "/system/framework",
+      "query_status": "ok"
+    },
+    {
+      "path": "/system_ext/framework",
+      "query_status": "ok"
+    },
+    {
+      "path": "/product/framework",
+      "query_status": "ok"
+    },
+    {
+      "path": "/vendor/framework",
+      "query_status": "ok"
+    },
+    {
+      "path": "/apex/com.android.uwb/javalib",
+      "query_status": "ok"
+    },
+    {
+      "path": "/vendor/etc",
+      "query_status": "ok"
+    },
+    {
+      "path": "/vendor/firmware",
+      "query_status": "ok"
+    },
+    {
+      "path": "/vendor/lib64/hw",
+      "query_status": "ok"
+    }
+  ],
+  "command_count": 21,
+  "live_ranging_performed": false,
+  "limitations": [
+    "ADB shell privileges do not establish ordinary APK permissions.",
+    "Missing fields or commands do not establish missing controller support.",
+    "No identifiers, credentials, raw command output, sessions, logs or key bytes are emitted."
+  ]
+}

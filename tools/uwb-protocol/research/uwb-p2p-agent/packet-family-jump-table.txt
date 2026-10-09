@@ -1,0 +1,17 @@
+0 -> Legacy_BPRF
+1 -> IEEE_BPRF
+2 -> IEEE_HPRF
+3 -> unknown
+4 -> Proprietary_HPRF
+5 -> SplitND_BPRF
+6 -> SplitND_HPRF
+7 -> MMS
+8 -> Mixed_MMS
+9 -> unknown
+10 -> unknown
+11 -> unknown
+12 -> unknown
+13 -> unknown
+14 -> unknown
+15 -> unknown
+16 -> NB

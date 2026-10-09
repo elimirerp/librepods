@@ -1,0 +1,23 @@
+0x10044d764: ldrh w8, [x0]
+0x10044d768: rev w8, w8
+0x10044d76c: lsr w0, w8, #0x10
+0x10044d770: ret 
+0x10044d774: ldrb w8, [x0, #1]
+0x10044d778: ldrb w9, [x0]
+0x10044d77c: cbz w9, #0x10044d798
+0x10044d780: and w10, w8, #0xff
+0x10044d784: cmp w10, #1
+0x10044d788: ccmp w9, #0x10, #0, eq
+0x10044d78c: mov w10, #0x10
+0x10044d790: csel w9, w10, w9, eq
+0x10044d794: b #0x10044d7c4
+0x10044d798: sub w8, w8, #1
+0x10044d79c: cmp w8, #0xd
+0x10044d7a0: b.hs #0x10044d7bc
+0x10044d7a4: mov w9, #0
+0x10044d7a8: and x8, x8, #0xff
+0x10044d7ac: adrp x10, #0x100594000
+0x10044d7b0: add x10, x10, #0x2aa
+0x10044d7b4: ldrb w8, [x10, x8]
+0x10044d7b8: b #0x10044d7c4
+0x10044d7bc: mov w8, #0

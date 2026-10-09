@@ -1,0 +1,15 @@
+{
+  "scope": "Run original ROSE STS setup with synthetic addresses; capture AES MMIO, no AES/radio.",
+  "syntheticRoseMAC": "0102030405060708",
+  "storedIV": "00020304050607080000000000000000",
+  "fixedFirmwareAESKey": "4a5572bc90798c8e518d2449092f1b55",
+  "AESCommandWords": [
+    "0x16000000",
+    "0x100320a1",
+    "0x26020000",
+    "0x10032081",
+    "0x2056c539",
+    "0x10030000"
+  ],
+  "aesExpansionEmulated": false
+}

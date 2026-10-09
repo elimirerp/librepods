@@ -1,0 +1,54 @@
+{
+  "scope": "Synthetic slices of original 9A348 NERF; no radio, keys or account access.\n\nLogging, connection flags, async dispatch and final transport are explicit\nharness boundaries. The opcode table, validation, dispatch and response payload\ncopies execute unchanged firmware instructions.\n",
+  "completion_payloads": [
+    {
+      "opcode": 1798,
+      "payload": "00000000"
+    },
+    {
+      "opcode": 1798,
+      "payload": "03000000"
+    },
+    {
+      "opcode": 1809,
+      "payload": "0f000000"
+    }
+  ],
+  "capability_gate": [
+    {
+      "encrypted": false,
+      "initialized": false,
+      "queried_flags": [
+        5
+      ],
+      "responses": [
+        {
+          "opcode": 1792,
+          "ack_opcode": 0,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "encrypted": true,
+      "initialized": false,
+      "queried_flags": [
+        5
+      ],
+      "responses": []
+    },
+    {
+      "encrypted": true,
+      "initialized": true,
+      "queried_flags": [
+        5
+      ],
+      "responses": [
+        {
+          "opcode": 1809,
+          "payload": "0f000000"
+        }
+      ]
+    }
+  ]
+}

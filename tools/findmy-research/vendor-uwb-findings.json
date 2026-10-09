@@ -1,0 +1,122 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "scope": "Primary-source UWB/NBA-MMS feasibility research; no phone commands or ranging executed",
+  "device": {
+    "model": "Samsung Galaxy S25 Ultra",
+    "oneui": "9 (user stated, not measured)",
+    "uwb_hardware": "confirmed by Samsung specifications",
+    "exact_controller": "NXP SR200T identified from exact phone config/service metadata",
+    "controller_firmware": "version pending fixed CORE_DEVICE_INFO query"
+  },
+  "findings": [
+    {
+      "id": "s25-hardware",
+      "status": "documented",
+      "source": "https://www.samsung.com/sec/support/model/SM-S938NZDAKOO/",
+      "finding": "Samsung S25 Ultra specification lists UWB support. Does not identify the UWB controller or firmware."
+    },
+    {
+      "id": "s25-current-support",
+      "status": "documented",
+      "source": "https://developer.samsung.com/wallet/references/devicecompatibility.html",
+      "finding": "Current Samsung Wallet matrix includes S25 Ultra/Plus/Edge for UWB Aliro Home Key on Android16 or later. This is service compatibility, not unrestricted controller access or NBA-MMS proof."
+    },
+    {
+      "id": "samsung-u100",
+      "status": "documented",
+      "source": "https://news.samsung.com/global/samsung-announces-ultra-wideband-chipset-with-centimeter-level-accuracy-for-mobile-and-automotive-devices",
+      "finding": "Samsung announced Exynos Connect U100 in March2023 with STS, FiRa certification and CCC3.0 support. The announcement does not map U100 to S25 Ultra or state NBA-MMS support."
+    },
+    {
+      "id": "samsung-nba-receiver",
+      "status": "documented",
+      "source": "https://ims-ieee.org/sites/ims/files/content_images/RFIC/PB_Archive/rfic2026_program_book.pdf",
+      "location": "PDF page61 (zero-based60), printed page57; Tu1A-4 June9 2026",
+      "finding": "Samsung engineers describe an IEEE802.15.4ab NBA-MMS receiver supporting both narrowband and UWB. Establishes Samsung engineering work, not S25 shipment, firmware availability or an ordinary app API."
+    },
+    {
+      "id": "nxp-ab",
+      "status": "documented",
+      "source": "https://www.nxp.com/products/NCJ29D8",
+      "finding": "NXP explicitly advertises IEEE802.15.4ab and 4z compatibility for preproduction automotive NCJ29D8. Does not establish mobile SR200/SR250 NBA-MMS or S25 controller support."
+    },
+    {
+      "id": "fira-four",
+      "status": "documented",
+      "source": "https://research.samsung.com/blog/FiRa-4-0-Specification-Release-and-Certification-Program-launching",
+      "finding": "Samsung describes FiRa4.0 features as IEEE802.15.4z based and future 802.15.4ab adoption separately. FiRa certification/version alone cannot establish NBA-MMS support."
+    },
+    {
+      "id": "nba-physical-boundary",
+      "status": "documented",
+      "source": "https://www.usenix.org/system/files/usenixsecurity23-anliker.pdf",
+      "location": "Section2.1.3 and reference14",
+      "finding": "Research describes Apple proposed NBA-MMS using narrowband and multi-millisecond ranging fragments, and cites Apple IEEE presentation 15-21-0593. This motivates checking the physical mode separately from FiRa profile/key matching. No claim this paper proves AirPods Pro3 mode."
+    },
+    {
+      "id": "android-raw",
+      "status": "documented",
+      "source": "https://developer.android.com/develop/connectivity/ranging",
+      "finding": "RANGING_SESSION_RAW gives app-controlled OOB negotiation/parameters. It does not advertise arbitrary RF packets, raw UCI access or NBA-MMS."
+    },
+    {
+      "id": "android-public-builder",
+      "status": "observed",
+      "source": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/ranging/framework/java/android/ranging/uwb/UwbRangingParams.java",
+      "finding": "Saved source/public API snapshots expose six FiRa profile constants, session/subsession identifiers and keys, complex channel, update rate and slot duration. No vendor bundle, arbitrary UCI payload or NB/MMS fields are exposed in this snapshot. Main snapshot may differ from shipped Samsung code and newest API37 reference."
+    },
+    {
+      "id": "android-vendor-gating",
+      "status": "observed",
+      "source": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/service/java/com/android/server/uwb/UwbServiceImpl.java",
+      "location": "lines191-193,220-224,244-251,292-304,334-338",
+      "finding": "Binder methods for vendor UCI messages, vendor/OEM callbacks and low-level ranging invoke enforceUwbPrivilegedPermission. Enforcement checks android.permission.UWB_PRIVILEGED before delegating. Reflecting Java classes would not remove this permission check."
+    },
+    {
+      "id": "nxp-selected-headers",
+      "status": "observed",
+      "source": "https://github.com/nxp-uwb/sr250-uwbiot-zephyr",
+      "finding": "Selected public SRXXX UwbApi_Proprietary.h and UwbApi_Types_Proprietary.h and nearby-interaction TLV header contain no NBAMMS/NBA/MMS/narrowband API names in reviewed text. This limited negative observation is not a controller capability verdict; this is an embedded SR250 SDK, not the phone firmware."
+    },
+    {
+      "id": "s25-fcc-physical",
+      "status": "documented",
+      "source": "https://fccid.io/A3LSMS938B/Test-Report/UWB-Test-Report-7820748.pdf",
+      "primary_origin": "https://apps.fcc.gov/eas/GetApplicationAttachment.html?id=7820748",
+      "location": "Report page4 section2.3; pages35-40 BPRF/HPRF plots",
+      "finding": "Samsung/Element report for A3LSMS938B describes two antennas, BPRF preambles9-12 and HPRF preamble27, with channels5 and9 tested. Phone build tested was S938BXXU0AXHN; this is not an identified UWB controller firmware version. No controller model or NBA-MMS capability is identified in reviewed report text. Compatible conventional channel/PRF coverage is a useful physical prerequisite, not proof of matching the Apple case mode."
+    },
+    {
+      "id": "samsung-historical-oem",
+      "status": "documented",
+      "source": "https://tuprints.ulb.tu-darmstadt.de/server/api/core/bitstreams/f251822a-1a5f-493c-a705-a0ba25feda6a/content",
+      "location": "2022 Heyden thesis, sections4.4 and5.3-5.4, PDFpages44 and52-53",
+      "finding": "Historical S21 Ultra SR100T analysis identifies samsung.uwb.jar, com.samsung.android.uwb_extras.jar and sendRawUci. Raw method was permission-restricted to system apps; /dev/sr100 allowed only uwb user/group or root. Useful names for metadata research, not proof of S25 chip/API and not a bypass route."
+    }
+  ],
+  "apple_context": {
+    "source": "work/uwb-protocol-agent/README.md and rose-internal-schema.txt",
+    "status": "binary-derived research supplied by team",
+    "finding": "Apple RangeEnableParameters carries distinct FiRa and NBAMMS structures; Hawkeye task selectors include startNBRangingHawkeyeTaskWithIRK. Actual mode chosen for this Pro3 case remains unconfirmed. IRK is not assumed to be a FiRa STS session key."
+  },
+  "decision": {
+    "can_build_now": "Read-only metadata/artifact research and offline OOB/profile parser comparisons. Generic FiRa integration has public Android APIs if device supports them.",
+    "not_yet_demonstrated": "An AirPods case OOB handshake and matched ranging mode that an ordinary S25 Ultra app can configure.",
+    "conditional_blocker": "Public Android ranging cannot express NBAMMS. Samsung provides a WRITE_SECURE_SETTINGS-gated raw UCI endpoint, and that development permission may be granted through authorized ADB. Actual access and controller NBA-MMS support still require evidence; ordinary runtime permission alone is insufficient."
+  },
+  "next_read_only_steps": [
+    "Run simulated probes before Android metadata probe; record actual API/release/OneUI and UWB feature visibility. Termux denial means caller restriction, not missing hardware.",
+    "Inspect names, public class/method signatures and permission annotations in world-readable UWB/Samsung framework artifacts only. Look for NBAMMS, NBA, MMS, narrowband, OOB, vendor session configurations and explicit ordinary-app entrypoints. No binder calls or hidden API bypass.",
+    "Use any publicly readable, nonsecret vendor capability document or controller/firmware version metadata to establish exact S25 controller; do not infer from other Galaxy models.",
+    "Compare Android exposed params with Apple NBA/MMS field families offline. A missing public parameter mapping is an API boundary, not a guessed radio packet format.",
+    "If shell/artifact visibility is insufficient, report unknown. A separate ordinary Android app capability query may be considered later only after simulation; this handoff authorizes no APK install/launch or ranging."
+  ],
+  "limitations": [
+    "Official Samsung S25 source portal could not be fetched here; unverified community kernel mirrors were not used to identify the controller.",
+    "FCC report concerns global SM-S938B tested in 2024; measured phone variant/OneUI9 firmware may differ.",
+    "The 2022 thesis uses S21 Ultra, not S25 Ultra.",
+    "No Android app capability query or radio session was executed."
+  ],
+  "latest_exact_phone_review": "exact-phone-static-review.json"
+}

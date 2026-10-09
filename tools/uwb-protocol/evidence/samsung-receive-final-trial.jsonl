@@ -1,0 +1,12 @@
+{"event":"receive_idle_confirmed"}
+{"event":"receive_session_initialized","status":0}
+{"event":"receive_configuration","group":1,"status":0,"parameterErrors":0}
+{"event":"receive_configuration","group":13,"status":0,"parameterErrors":0}
+{"event":"receive_window_verified","tWinParameter":750,"tWinUnitVerified":false,"hostObservationSeconds":1.5,"transmission":false}
+{"event":"receive_session_state","status":0,"state":3}
+{"event":"receive_start_response","status":0}
+{"event":"receive_experiment_result","notificationCount":0,"successfulPackets":0,"rangingProven":false}
+{"event":"receive_stop_response","status":0}
+{"event":"receive_session_deinitialized","status":0}
+{"event":"receive_trace_detached"}
+{"event":"receive_controller_cleanup","idle":true}

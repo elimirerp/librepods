@@ -1,0 +1,9 @@
+{
+  "source": "https://updates.cdn-apple.com/MobileAssets2026/patches/082-43280/47DD80D8-0F48-4914-83E0-D9C1A0C91F95/com_apple_MobileAsset_UARP_A3064/ff07718e5b1891d81abe389d9b88390f3e515a23.zip",
+  "catalog": "https://mesu.apple.com/assets/macos/com_apple_MobileAsset_UARP_A3064/com_apple_MobileAsset_UARP_A3064.xml",
+  "build": "9A348",
+  "model": "A3064",
+  "size": 12538358,
+  "sha256": "0705f8a4bfde09f8c8ad5969c9c84eafcf876d6903efd348cf1c54bcf20d8750",
+  "catalogSHA256match": true
+}

@@ -1,0 +1,1782 @@
+
+PAGE 1
+FCC ID: A3LSMS938B MEASUREMENT REPORT  
+(CERTIFICATION) 
+Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type: P age 1 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+Applicant Name: 
+Samsung Electronics Co., Ltd. 
+129, Samsung-ro, 
+Yeongtong-gu, Suwon-si 
+Gyeonggi-do, 16677, Korea 
+Date of Testing: 
+9/16/2024 – 11/05/2024 
+Test Report Issue Date: 
+11/05/2024 
+Test Site/Location: 
+Element Lab. Yongin-Si, Gyeonggi-do, South Korea 
+Test Report Serial No.: 
+1M2408260069-14.A3L 
+FCC ID: A3LSMS938B 
+APPLICANT: Samsung Electronics Co., Ltd.
+Application Type: 
+Model: 
+Additional Model:
+EUT Type: 
+FCC Classification: 
+FCC Rule Parts(s): 
+UWB Classification: 
+Test Procedure(s): 
+Certification 
+SM-S938B/DS 
+SM-S938B
+Portable Handset 
+Ultra Wideband (UWB) 
+FCC Part 15 Subpart F (15.519, 15.521) 
+Hand-held Communic
+ation Device 
+ANSI C63.10-2013, KDB 393764 D01, KDB 484596 v02r02 D01 
+This equipment has been shown to be capable of compliance with the applicable technical standards as indicated in the measure ment 
+report and has been tested in accordance with the measurement procedures specified in ANSI C63. 10-2013 (See Test Report). These 
+measurements were performed with no deviation from the standards. Test results reported herein relate only to the item(s) tested. 
+I attest to the accuracy of data. All measurements reported herein were performed by me or were made under my supervision and are 
+c
+orrect to the best of my knowledge and belief. I assume full responsibility for the completeness of these measurements and vouch for the 
+qualifications of all persons taking them. 
+Prepared by Reviewed by 
+Element Suwon 
+13, Heungdeok 1-ro, Giheung-gu, Yongin-si, 
+Gyeonggi-do, 16954 South Korea 
+Tel. 031.660.7319 / Fax 031.660.7318 
+http://www.element.com 
+MEASUREMENT REPORT 
+FCC Part 15F ULTRA WIDEBAND 
+
+
+PAGE 2
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 2 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+TABLE OF CONTENTS  
+ 
+1.0 Introduction ...................................................................................................................................... 3 
+1.1 Scope..................................................................................................................................................... 3 
+1.2 Element Test Location ........................................................................................................................... 3 
+1.3 Test Facility / Accreditations .................................................................................................................. 3 
+2.0 PRODUCT INFORMATION ............................................................................................................. 4 
+2.1 Equipment Description ........................................................................................................................... 4 
+2.2 Device Capabilities ................................................................................................................................ 4 
+2.3 Test Configuration .................................................................................................................................  4 
+2.4 EMI Suppression Device(s)/Modifications .............................................................................................. 4 
+2.5 Antenna Description............................................................................................................................... 4 
+2.6 Software and Firmware .......................................................................................................................... 4 
+3.0 DESCRIPTION OF TESTS .............................................................................................................. 5 
+3.1 Evaluation Procedure............................................................................................................................. 5 
+3.2 AC Line Conducted Emissions .............................................................................................................. 5 
+3.3 Radiated Emissions ............................................................................................................................... 6 
+3.4 Environmental Conditions ...................................................................................................................... 6 
+4.0 Antenna Requirements .................................................................................................................... 7 
+5.0 Measurement Uncertainty ................................................................................................................ 8 
+6.0 TEST EQUIPMENT CALIBRATION DATA ...................................................................................... 9 
+7.0 TEST DATA ................................................................................................................................... 10 
+7.1 Summary ............................................................................................................................................. 10 
+7.2 10dBc Bandwidth Measurement .......................................................................................................... 12 
+7.3 Cessation Time .................................................................................................................................... 29 
+7.4 Peak Power and Maximum Average Emissions .................................................................................. 31 
+7.5 Radiated Measurement Data above 960MHz ...................................................................................... 38 
+7.6 Radiated Spurious Emissions Measurements – Below 1GHz .............................................................. 46 
+7.7 Line Conducted Measurement Data .................................................................................................... 50 
+8.0 CONCLUSION ............................................................................................................................... 54 
+ 
+
+PAGE 3
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 3 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+1.0 INTRODUCTION  
+1.1 Scope 
+ 
+Measurement and determination of electromagnetic emissions (EMC) of radio frequency devices including 
+intentional and/or unintentional radiators for compliance with the technical rules and regulations of the Federal 
+Communications Commission and Innovation, Science and Economic Development Canada.  
+ 
+1.2 Element Test Location 
+ 
+These measurement tests were conducted at the Element Suwon Laboratory  located at 13, Heungdeok 1- ro, 
+Giheung-gu, Yongin-si, Gyeonggi-do, 16954, South Korea. The measurement facility is compliant with the test site 
+requirements specified in ANSI C63.4-2014. 
+ 
+1.3 Test Facility / Accreditations 
+Measurements were performed at Element Materials Technology Suwon, Ltd. located in Yongin-si, 
+Gyeonggi-do, 16954, South Korea. 
+ 
+• Element Materials Technology Suwon, Ltd. is an ISO 17025-2017 accredited test facility under the American 
+Association for Laboratory Accreditation(A2LA) with Certificate number 2041.04 for Specific Absorption Rate 
+(SAR), and Electromagnetic Com patibility (EMC)  & Telecommunications testing for FCC and Innovation, 
+Science, and Economic Development Canada rules. 
+ 
+• Element Materials Technology Suwon, Ltd. facility is a ccredited, designated, and recognized in accordance 
+with the provision of Radio Wave Act and International Standard ISO/IEC 17025:2017 under the National Radio 
+Research Agency. 
+ 
+- Designation Number / CABID: KR0169 
+- Test Firm Registration Number of FCC: 417945 
+- Test Firm Registration Number of ISED: 26168 
+
+PAGE 4
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 4 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+2.0 PRODUCT INFORMATION  
+2.1 Equipment Description  
+ 
+The Equipment Under Test (EUT) is the Samsung  Portable Handset  FCC ID: A3LSM S938B. The test data 
+contained in this report pertains only to the EUT's ultra-wideband transmitter. 
+ 
+Test Device Serial No.: 0439M, 0325M 
+ 
+2.2 Device Capabilities 
+ 
+This device contains the following capabilities: 
+ 
+850/1900 GSM/GPRS/EDGE, 850/1700/1900 WCDMA/HSPA, Multi-band LTE, Multi-band 5G NR (FR1), 
+802.11b/g/n/ac/ax/be WLAN, 802.11a/n/ac/ax/be UNII (5GHz and 6GHz), Bluetooth (1x, EDR, LE), Wireless 
+Power Transfer, UWB 
+ 
+2.3 Test Configuration 
+ 
+The EUT was tested per the guidance of Section 10 of ANSI C63.10- 2013.  The EUT setup procedures of ANSI 
+C63.10-2013 were used to reference the appropriate EUT setup for radiated spurious emissions testing and AC 
+line conducted testing. See Section 3.2 for AC line conducted emissions test setups, 3.3 for radiated emissions test 
+setups, respectively. 
+ 
+The Equipment Under Test (EUT ) was capable of operating on two antennas in two separate modes [HPRF, 
+preamble 27] and [BPRF, preamble 9~12].  Care was taken to ensure the worst-case modes were investigated and 
+reported. 
+ 
+For more information, please see Section 7.0 for test data and the test setup photos document  for the test setup 
+photographs. 
+ 
+2.4 EMI Suppression Device(s)/Modifications 
+ 
+No EMI suppression device(s) were added and no modifications were made during testing. 
+ 
+2.5 Antenna Description 
+ 
+Following antenna was used for the testing. 
+ 
+Frequency [GHz] Antenna Gain [dBi] 
+6.5 -4.38 
+8.0 -6.65 
+Table 2-1. Maximum Peak Antenna Gain 
+ 
+2.6 Software and Firmware 
+ 
+The test was conducted with firmware version S938BXXU0AXHN installed on the EUT.  
+
+PAGE 5
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 5 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+3.0 DES CRIPTION OF TESTS  
+3.1 Evaluation Procedure 
+  
+The measurement procedure described in the American National Standard for Methods of Measurement of Radio-
+Noise Emission from Low-Voltage Electrical and Electronic Equipment in the Range of 9kHz to 40GHz (ANSI C63.4-
+2014) was used in the measurement of the EUT. 
+ 
+Deviation from measurement procedure…………………………………………….....................................None  
+ 
+3.2 AC Line Conducted Emissions 
+ 
+The line-conducted facility is located inside a 10'x16'x9' shielded enclosure. The shielded enclosure is manufactured 
+by SY cooperation  RF Enclosures . The line- conducted facility is located inside a 7m x 3.66m x 2.7m shielded 
+enclosure. The shielding effectiveness of the shielded room is in accordance with MIL- Std-285 or NSA 65-5. A 1m 
+x 1.5m wooden table 80cm high is placed 40cm away from the vertical wall and 80cm away from the sidewall of the 
+shielded room. Two 10kHz -30MHz, 50Ω/50µH Line-Impedance Stabilization Networks (LISNs) are bonded to the 
+shielded room floor. Power to the LISNs is filtered by external high-current high-insertion loss power line filters. The 
+external power line filter is an ETS Lindgren Model LPRX -4X30 (100dB Attenuation, 14kHz -18GHz) and the two 
+EMI/RFI filters are ETS Lindgren Model LRW -2030-S1 (100dB Minimum Insertio n Loss, 14kHz – 10GHz). These 
+filters attenuate ambient signal noise from entering the measurement lines. These filters are also bonded to the 
+shielded enclosure. 
+ 
+The EUT is powered from one LISN and the support equipment is powered from the second LISN. If the EUT is a 
+DC-powered device, power will be derived from the source power supply it normally will be powered from and this 
+supply line(s) will be connected to the second LISN. All interconnecting cables more than 1 meter were shortened 
+to a 1 meter length by non-inductive bundling (serpentine fashion) and draped over the back edge of the test table. 
+All cables were at least 40cm above the horizontal reference gr oundplane. Power cables for support equipment 
+were routed down to the second LISN while ensuring that that cables were not draped over the second LISN.  
+ 
+Sufficient time for the EUT, support equipment, and test equipment was allowed in order for them to warm up to 
+their normal operating condition. The RF output of the LISN was connected to the spectrum analyzer and 
+exploratory measurements were made to determine the frequencies  producing the maximum emission from the 
+EUT. The spectrum was scanned from 150kHz to 30M Hz with a spectrum analyzer. The detector function was set 
+to peak mode for exploratory measurements while t he bandwidth of the analyzer was set t o 10kHz. The EUT, 
+support equipment, and interconnecting cables were arranged and manipulated to maximize each emission. Once 
+the worst case emissions have been identified, the one EUT cable configuration/arrangement and mode of 
+operation that produced these emissions is used for final measurements on the same test site. The analyzer is set 
+to CISPR quasi-peak and average detectors with a 9kHz resolution bandwidth for final measurements.  
+ 
+Line conducted emissions test results are shown in Section 7.7. The EMI Receiver mode of the R&S ESW was 
+used to perform AC line conducted emissions testing. Automated test software was used to perform the AC line 
+conducted emissions testing.  Automated measurement software utilized is Rohde & Schwarz EMC32, Version 
+10.20.01. 
+  
+
+PAGE 6
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 6 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+3.3 Radiated Emissions 
+ 
+The radiated test facilities consisted of an indoor 3 meter semi-anechoic chamber used for final measurements and 
+exploratory measurements, when necessary. The measurement area is contained within the semi -anechoic 
+chamber which is shielded from any ambient interference. The test site inside the chamber is a 6m x 5.2m elliptical, 
+obstruction-free area in accordance with Clause 5, Figure 5.7 of ANSI C63.4- 2014. A raised turntable is used for 
+radiated measurement. It is a continuously rotatable, remote-controlled, metallic turntable and 2 meters (6.56 ft.) in 
+diameter. The turn table is flush with the raised floor of the chamber in order to maintain its function as a ground 
+plane. Absorbers are arranged on the floor between the turn table and the antenna mast in such a way so as to 
+maximize the reduction of reflections for measurements above 1GHz. . An 80cm tall test table made of Styrodur is 
+placed on top of the turn table. For measurements above 1GHz, an additional Styrodur pedestal is placed on top of 
+the test table to bring the total table height to 1.5m. 
+ 
+For all measurements, the spectrum was scanned through all EUT azimuths and from 1 to 4 meter receive antenna 
+height using a broadband antenna from 30MHz up to the upper frequency shown in 15.33(b)(1) depending on the 
+highest frequency generated or used in the device or on which the device operates or tunes. For frequencies above 
+1GHz, linearly polarized double ridge horn antennas were used. For frequencies below 30MHz, a calibrated loop 
+antenna was used. When exploratory measurements were necessary, they were performed at 1 meter test distance 
+inside the semi -anechoic chamber using broadband antennas, broadband amplifiers, and spectrum analyzers to 
+determine the frequencies and modes producing the maximum emissions. Sufficient time for the EUT, support 
+equipment, and test equipment was allowed in order for them to warm up to their normal operating condition. The 
+test set-up was placed on top of the 1 x 1.5 meter table. The EUT, support equipment, and interconnecting cables 
+were arranged and manipulated to maximize each emission. Appropriate precaution was taken to ensure that all 
+emissions from the EUT were maximized and investigated. The system configuration, mode of operation, turntable 
+azimuth, and receive antenna height was noted for each frequency found. 
+ 
+Final measurements were made in the semi -anechoic chamber using calibrated, linearly polarized broadband  and 
+horn antennas. The test setup was configured to the setup that produced the worst case emissions. The spectrum 
+analyzer was set to investigate all frequencies required for testing to compare the highest radiated disturbances 
+with respect to the specified limits. The turntable containing the EUT was rotated through 360 degrees and the 
+height of the receive antenna was varied 1 to 4 meters and stopped at the azimuth and height producing the 
+maximum emission. Each emission was maximized by changing the orientation of the EUT through three orthogonal 
+planes and changing the polarity of the receive antenna, whichever produced the worst -case emissions. 
+ 
+All radiated measurements are performed in a chamber that meets the site requirements per ANSI C63.4- 2014. 
+Additionally, radiated emissions below 30MHz are also validated on an Open Area Test Site to assert correlation 
+with the chamber measurements per the requirements of KDB 414788 D01 v01r01. 
+ 
+3.4 Environmental Conditions 
+ 
+The temperature is controlled within range of 15
+oC to 35oC. The relative humidity is controlled within range of 10% 
+to 75%. The atmospheric pressure is monitored within the range 86-106kPa (860-1060mbar). 
+ 
+
+PAGE 7
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 7 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+4.0 ANTENNA REQUIREMENTS  
+Except from §15.203 of the FCC Rules/Regulations: 
+ 
+“An intentional radiator shall be designed to ensure that no antenna other than that furnished by the responsible 
+party shall be used with the device. The use of a permanently attached antenna or of an antenna that uses a 
+unique coupling to the intentional radiator shall be considered sufficient to comply with the provisions of this 
+section.” 
+ 
+• The antenna(s) of the EUT are permanently attached 
+• There are no provisions for a connection to an external antenna 
+ 
+The EUT complies with the requirements of §15.203. 
+
+PAGE 8
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 8 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+5.0 MEASUREMENT UNCERTAINTY  
+The measurement uncertainties shown below were calculated in accordance with the requirements of  
+ANSI C63.4-2014. All measurement uncertainty values are shown with a coverage factor of k = 2 to indicate a 95% 
+level of confidence. The measurement uncertainty shown below meets or exceeds the U CISPR measurement 
+uncertainty values specified in CISPR 16- 4-2 and, thus, can be compared directly to specified limits to determine 
+compliance. 
+ 
+Contribution Expanded Uncertainty (±dB) 
+Conducted Bench Top Measurements 1.95 
+Radiated Disturbance (<1GHz) 4.10 
+Radiated Disturbance (>1GHz) 4.82 
+Radiated Disturbance (>18GHz) 4.96 
+ 
+
+PAGE 9
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 9 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+6.0 TEST EQUIPMENT CALIBRATION DATA  
+Test Equipment Calibration is traceable to the National Institute of Standards and Technology (NIST). Measurements 
+antennas used during testing were calibrated in accordance to the requirements of ANSI C63.5- 2017. 
+ 
+ 
+Table 6-1.Test Equipment Calibration Schedule 
+ 
+Note: 
+ 
+For equipment listed above that has a calibration date or calibration due date that falls within the test date range, 
+care was taken to ensure that this equipment was used after the calibration date and before the calibration due 
+date.
+ 
+ 
+ 
+Manufacturer Model Description Cal Date Cal Interval Cal Due Serial Number 
+Agilent N9030A PXA Signal Analyzer 2024-07-08 Annual 2025-07-07 MY48432391
+Com-Power AL-130 9kHz - 30MHz Loop Antenna 2024-10-10 Annual 2025-10-10 10160045
+Huber+Suhner SF102/11SK/11SK/1500 RF Cable SN 804225/2
+Huber+Suhner SF102/11SK/11SK/2000 RF Cable SN 804223/2
+Mini-Circuits BW-N10W5+ Attenuator 2024-04-08 Annual 2025-04-07 2106
+Mini-Circuits BW-N10W5+ Attenuator 2024-04-08 Annual 2025-04-07 2106
+NARDA 180-442A-KF Horn Antenna (Small) 2024-01-16 Annual 2025-01-15 T058701-03
+Rohde & Schwarz TS-PR18 Preamplifier 2024-07-10 Annual 2025-07-09 102141
+Rohde & Schwarz TS-PR1840 Preamplifier 2024-07-10 Annual 2025-07-09 100049
+Rohde & Schwarz ENV216 Two-Line V-Network 2024-04-08 Annual 2025-04-07 101319
+Rohde & Schwarz ESW EMI Test Receiver 2024-07-09 Annual 2025-07-08 101761
+Rohde & Schwarz FSW43 Signal & Spectrum Analyzer 2024-01-11 Annual 2025-01-10 101955
+Rohde & Schwarz TS-SFUNIT-Rx Shielded Filter Unit 2024-01-11 Annual 2025-01-10 102131
+Schwarzbeck VULB9162 Broadband TRILOG Antenna 2023-06-01 Biennial 2025-05-31 9162-217
+Sunol Sciences DRH-118 Horn Antenna 2024-07-16 Annual 2025-07-15 A102416-1
+Sunol Sciences DRH-118 Horn Antenna 2024-07-16 Annual 2025-07-15 A060215
+N/A
+N/A
+
+PAGE 10
+FCC ID: A3LSMS938B MEASUREMENT REPORT  
+(CERTIFICATION) 
+Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type: P age 10 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+7.0 TEST DATA 
+7.1 Summary 
+C
+ompany Name: Samsung Electronics Co., Ltd. 
+FCC ID: A3LSMS938B 
+FCC Classification: Ultra-Wideband (UWB) 
+FCC Part 
+Section(s) Test Description Test Limit Test 
+Condition 
+Test 
+Result Reference 
+§15.503,
+§15.519 (b) 10dBc Bandwidth ≥ 500MHz 
+RADIATED 
+PASS 
+Section 7.2 
+§15.519(a)(1) Cessation Time Transmission shall cease in 
+less than 10s  Section 7.3 
+§15.519(e) Maximum Peak 
+Power 
+< 0dBm EIRP in 50MHz BW Section 7.4 
+§15.519(c)
+Maximum Average 
+Emission in the range 
+of 3100 – 10600 MHz 
+< -41.3 EIRP in dBm Section 7.4 
+§15.519(c) Radiated Emissions 
+Above 960MHz 
+See table in 15.519(c)  for 
+details 
+Section 7.4, 
+7.5 
+§15.519(d)
+Radiated Emissions in 
+the 1164 – 1240Mhz 
+and 1559 – 1610MHz 
+GPS Bands  
+< -85.3 EIRP in dBm Section 7.5 
+§15.519(c),
+§15.519(a)
+Radiate Emissions 
+Below 960MHz 
+Emissions in restricted 
+bands must meet the 
+radiated limits detailed in 
+15.209 
+Section 7.6 
+§15.207
+AC Conducted 
+Emissions 150kHz – 
+30MHz 
+< FCC 15.207 limits (RSS-
+Gen) 
+LINE 
+CONDUCTED Section 7.7 
+Table 7-1. Summary of Test Results 
+1. Data was leveraged from model SM-S938U for the certification of SM- S938B/DS. See Table 7-2 for spot-
+check results.
+Table 7-2. Spot-check Results 
+FCC Rules Test Item Units Limit Reference 
+Model: SM-S938U
+Variant Model: 
+SM-S938B
+Deviation 
+(dB)
+Max
+ Deviation 
+(dB)
+Pass/Fail
+15.209, 15.519(a), 
+15.519(c) Radiated Spurious Emissions dBm -61.3 -67.46 -64.98 2.48 3 PASS
+
+PAGE 11
+FCC ID: A3LSMS938B MEASUREMENT REPORT  
+(CERTIFICATION) 
+Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type: P age 11 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+T
+able 7-3. Radiated Emissions Spot-check Results 
+17999 RMS V - - - 64.98 -61.30 -3.68
+Frequency [MHz] Detector
+Spurious 
+Emission 
+L
+evel 
+[dBm]
+Limit 
+[dBm]
+Margin 
+[dB]
+Ant. Pol. 
+[H/V]
+Antenna 
+Height 
+[c
+m]
+Turntable 
+Azimuth 
+[
+degree]
+
+PAGE 12
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 12 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+7.2 10dBc Bandwidth Measurement 
+§15.503(a), §15.519(b) 
+ 
+Test Overview and Limit 
+ 
+Per the definition of 15.503, the UWB Bandwidth is the frequency band bounded by the points that are 10 dB below the highest 
+radiated emission, as based on the complete transmission system including the antenna. 
+ 
+The 10dB bandwidth of the UWB signal must remain fully within the 3100 – 10,600MHz band.  The 10dB bandwidth of the UWB 
+signal must also be greater than or equal to 500MHz. 
+ 
+Test Procedures Used 
+ 
+ANSI C63.10-2013 Section 10.1 
+ 
+Test Settings 
+ 
+1. RBW = 1MHz 
+2. VBW = 3MHz 
+3. Detector = Peak 
+4. Span was set wide enough to capture the 10dB points of the signal 
+5. Trace mode = max hold 
+6. Sweep = 2s 
+7. The trace was allowed to stabilize 
+ 
+Test Setup 
+ 
+The EUT and measurement equipment were set up as shown in the diagram below.  
+ 
+ 
+Figure 7-1. Test Instrument and Measurment Setup 
+
+
+PAGE 13
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 13 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Table 7-4. UWB 10dBc Bandwidth Summary 
+
+
+PAGE 14
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 14 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+10dBc Bandwidth Results 
+ 
+ 
+Plot 7-1. 10dBc Bandwidth – CH.5 - SP0 – Preamble 9 
+ 
+ 
+Plot 7-2. 10dBc Bandwidth – CH.5 – SP1 – Preamble 9 
+
+
+PAGE 15
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 15 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+ 
+Plot 7-3. 10dBc Bandwidth – CH.5 – SP3 – Preamble 9 
+ 
+ 
+Plot 7-4. 10dBc Bandwidth – CH.5 - SP0 – Preamble 10 
+ 
+
+
+PAGE 16
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 16 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-5. 10dBc Bandwidth – CH.5 – SP1 – Preamble 10 
+ 
+ 
+Plot 7-6. 10dBc Bandwidth – CH.5 – SP3 – Preamble 10 
+ 
+
+
+PAGE 17
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 17 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-7. 10dBc Bandwidth – CH.5 - SP0 – Preamble 11 
+ 
+ 
+Plot 7-8. 10dBc Bandwidth – CH.5 – SP1 – Preamble 11 
+ 
+
+
+PAGE 18
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 18 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-9. 10dBc Bandwidth – CH.5 – SP3 – Preamble 11 
+ 
+ 
+Plot 7-10. 10dBc Bandwidth – CH.5 - SP0 – Preamble 12 
+ 
+
+
+PAGE 19
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 19 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-11. 10dBc Bandwidth – CH.5 – SP1 – Preamble 12 
+ 
+ 
+Plot 7-12. 10dBc Bandwidth – CH.5 – SP3 – Preamble 12 
+
+
+PAGE 20
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 20 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-13. 10dBc Bandwidth – CH.5 - SP0 – Preamble 27 
+ 
+ 
+Plot 7-14. 10dBc Bandwidth – CH.5 – SP1 – Preamble 27 
+ 
+
+
+PAGE 21
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 21 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-15. 10dBc Bandwidth – CH.5 – SP3 – Preamble 27 
+ 
+ 
+Plot 7-16. 10dBc Bandwidth – CH.9 - SP0 – Preamble 9 
+ 
+ 
+
+
+PAGE 22
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 22 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-17. 10dBc Bandwidth – CH.9 – SP1 – Preamble 9 
+ 
+ 
+Plot 7-18. 10dBc Bandwidth – CH.9 – SP3 – Preamble 9 
+ 
+ 
+
+
+PAGE 23
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 23 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-19. 10dBc Bandwidth – CH.9 - SP0 – Preamble 10 
+ 
+ 
+Plot 7-20. 10dBc Bandwidth – CH.9 – SP1 – Preamble 10 
+ 
+
+
+PAGE 24
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 24 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-21. 10dBc Bandwidth – CH.9 – SP3 – Preamble 10 
+ 
+ 
+Plot 7-22. 10dBc Bandwidth – CH.9 - SP0 – Preamble 11 
+ 
+
+
+PAGE 25
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 25 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-23. 10dBc Bandwidth – CH.9 – SP1 – Preamble 11 
+ 
+ 
+Plot 7-24. 10dBc Bandwidth – CH.9 – SP3 – Preamble 11 
+ 
+
+
+PAGE 26
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 26 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-25. 10dBc Bandwidth – CH.9 - SP0 – Preamble 12 
+ 
+ 
+Plot 7-26. 10dBc Bandwidth – CH.9 – SP1 – Preamble 12 
+ 
+
+
+PAGE 27
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 27 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-27. 10dBc Bandwidth – CH.9 – SP3 – Preamble 12 
+ 
+ 
+Plot 7-28. 10dBc Bandwidth – CH.9 - SP0 – Preamble 27 
+ 
+
+
+PAGE 28
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 28 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-29. 10dBc Bandwidth – CH.9 – SP1 – Preamble 27 
+ 
+ 
+Plot 7-30. 10dBc Bandwidth – CH.9 – SP3 – Preamble 27 
+ 
+ 
+
+
+PAGE 29
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 29 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+7.3 Cessation Time 
+§15.519(a)(1) 
+ 
+Test Overview and Limit 
+ 
+§15.519(a)(1) A UWB device operating under the provisions of this section shall transmit only when it is sending information to 
+an associated receiver.  The UWB intentional radiator shall cease transmission within 10 seconds unless it receives an 
+acknowledgment from the associated receiver that its transmission is being received an acknowledgment of reception must 
+continue to be received by the UWB intentional radiator at least every 10 seconds or the UWB device must cease transmitting. 
+ 
+Test Settings 
+ 
+1. RBW = 1MHz 
+2. VBW = 3MHz 
+3. Span = 0 Span Mode 
+4. Sweep time shall be sufficient to demonstrate EUTs compliance with the rule part. 
+ 
+Test Setup 
+ 
+The EUT and measurement equipment were set up as shown in the diagram below.  
+ 
+ 
+Figure 7-2. Test Instrument and Measurement Setup 
+  
+
+
+PAGE 30
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 30 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-31. Cessation Time Plot 
+ 
+Test Note 
+ 
+X2 represents the EUT for UWB stop receiving, and 1Δ2 shows the EUT for UWB cease transmitting. 
+ 
+
+
+PAGE 31
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 31 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+7.4 Peak Power and Maximum Average Emissions 
+§15.519(e), §15.519(c) 
+ 
+Test Overview and Limit 
+ 
+15.519 (e) There is a limit on the peak level of the emissions contained within a 50 MHz bandwidth centered on 
+the frequency at which the highest radiated emission occurs, fM. That limit is 0 dBm EIRP.  
+ 
+15.519 (c) The radiated emissions above 960 MHz from a device operating under the provisions of this section 
+shall not exceed the following average limits when measured using a resolution bandwidth of 1 MHz:  
+ 
+Frequency in MHz EIRP in dBm 
+3100 - 10600 -41.3 
+Table 7-5. Average EIRP Limit 
+ 
+ 
+Test Procedures Used 
+ 
+ANSI C63.10-2013 
+ 
+Test Settings 
+Peak: 
+ 
+1. Analyzer frequency set to the frequency of the radiated spurious emission of interest  
+2. RBW = 50MHz, VBW = 80MHz  
+3. Detector = Peak 
+4. Sweep time = auto coupled 
+5. Trace mode = max hold 
+6. Trace was allowed to stabilize 
+Average: 
+ 
+1. Analyzer frequency set to the frequency of the radiated spurious emission of interest 
+2. RBW = 1MHz, VBW = 3MHz  
+3. Detector = Average (RMS) 
+4. Sweep time = No more than 1ms integration period over measurement bin 
+5. Trace mode = max hold 
+6. Trace was allowed to stabilize 
+ 
+
+PAGE 32
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 32 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+Test Note 
+ 
+All combinations of HPRF/BPRF, power mode, and preamble are investigated for average and peak EIRP 
+measurements. Only the worst case combinations are reported for each channel and each antenna.  
+ 
+RESULTS – BPRF 
+ 
+ 
+Table 7-6. BPRF Highest Peak Power Results 
+ 
+ 
+Table 7-7. BPRF Highest Average Power Results 
+ 
+Sample Calculation: 
+ 
+The raw radiated spurious level is converted to field strength in dBuV/m. Then, the EIRP level is calculated  
+by applying the additional factors shown below for a test distance of 3 meter. 
+. 
+RSE EIRP (dBm) = Analyzer Level (dBm) + 107 + AFCL (dB/m) + 20Log(Dm) – 104.8 
+ 
+ 
+ 
+ 
+ 
+ 
+ANT CH Mode Preamble Meas.
+Ant
+Peak Power
+(dBm/50MHz)
+Peak Limit
+(dBm/50MHz)
+Margin
+[dB]
+5 SP0 10 V -1.67 0 -1.67
+9 SP0 10 V -1.80 0 -1.801
+ANT CH Mode Preamble Meas.
+Ant
+Average Power
+(dBm)
+Average Limit
+(dBm)
+Margin
+[dB]
+5 SP3 10 V -42.84 -41.3 -1.54
+9 SP3 10 V -42.99 -41.3 -1.691
+
+PAGE 33
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 33 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-32. UWB Peak Power Measurement - CH.5 – BPRF 
+ 
+ 
+Plot 7-33. UWB Peak Power Measurement - CH.9 – BPRF 
+ 
+
+
+PAGE 34
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 34 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-34. UWB Average Power Measurement - CH.5 – BPRF 
+ 
+ 
+Plot 7-35. UWB Average Power Measurement - CH.9 – BPRF 
+ 
+ 
+
+
+PAGE 35
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 35 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+RESULTS – HPRF 
+ 
+ 
+Table 7-8. HPRF Highest Peak Power Results 
+ 
+ 
+Table 7-9. HPRF Highest Average Power Results 
+ 
+ 
+Sample Calculation 
+ 
+The raw radiated spurious level is converted to field strength in dBuV/m. Then, the EIRP level is calculated  
+by applying the additional factors shown below for a test distance of 3 meter 
+. 
+RSE EIRP (dBm) = Analyzer Level (dBm) + 107 + AFCL (dB/m) + 20Log(Dm) – 104.8 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ANT CH Mode Preamble Meas.
+Ant
+Peak Power
+(dBm/50MHz)
+Peak Limit
+(dBm/50MHz)
+Margin
+[dB]
+5 SP0 27 V -6.44 0 -6.44
+9 SP0 27 V -6.64 0 -6.641
+ANT CH Mode Preamble Meas.
+Ant
+Average Power
+(dBm)
+Average Limit
+(dBm)
+Margin
+[dB]
+5 SP0 27 V -43.68 -41.3 -2.38
+9 SP0 27 V -43.16 -41.3 -1.861
+
+PAGE 36
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 36 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-36. UWB Peak Power Measurement - CH.5 – HPRF 
+ 
+ 
+Plot 7-37. UWB Peak Power Measurement - CH.9 – HPRF 
+ 
+
+
+PAGE 37
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 37 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-38. UWB Average Power Measurement - CH.5 – HPRF 
+ 
+ 
+Plot 7-39. UWB Average Power Measurement - CH.9 – HPRF 
+ 
+ 
+
+
+PAGE 38
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 38 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+7.5 Radiated Measurement Data above 960MHz 
+§15.519 (c), §15.519(d) 
+Test Overview and Limit 
+ 
+All out of band radiated spurious emissions are measured with a spectrum analyzer connected to a receive antenna 
+while the EUT is operating at maximum power and at the appropriate frequencies . Only the radiated emissions of 
+the configuration that produced the worst case emissions are reported in this section. 
+ 
+§15.519(c) 
+Frequency in MHz EIRP in dBm 
+960-1610 -75.3 
+1610-1990 -63.3 
+1990-3100 -61.3 
+3100-10600 -41.3 
+Above 10600 -61.3 
+Table 7-10. Above 960MHz Average Limits  
+§15.519(d) 
+Frequency in MHz EIRP in dBm 
+1164-1240 -85.3 
+1559-1610 -85.3 
+Table 7-11. Above 960MHz Average Limits  
+ 
+ 
+Test Procedures Used 
+ 
+ANSI C63.10-2013 
+ 
+Test Settings 
+ Average EIRP Measurements 
+1. Analyzer frequency set to the frequency of the radiated spurious emission of interest  
+2. RBW = 1MHz (30kHz for emissions in the GPS bands) 
+3. VBW = 3MHz (100kHz for the emissions in the GPS bands) 
+4. Detector = RMS 
+5. Sweep time = No more than 1ms integration period over each measurement bin  
+6. Trace mode = Max hold 
+7. Trace was allowed to stabilize 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+PAGE 39
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 39 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+Test Setup 
+The EUT and measurement equipment were set up as shown test setup photos provided.  
+ 
+Figure 7-3. Radiated Test Setup > 1GHz 
+ 
+Test Notes 
+ 
+1. All modes of operation and settings (Preamble, Packet Type, etc) were investigated and the worst-case 
+emissions are reported. 
+2. The RBW for measurements in the GPS Bands were reduced to 30kHz in order to prove compliance. 
+3. 1000 ~ 180 00 MHz and above 18000 MHz pre- scan plots were conducted at 0.7 and 0.6 meter 
+respectively. The plots are only for the purpose of spurious emission identification.  
+4. All final measurements were made at 0.7 and 0.6 meters respectively. 
+5. All readings are calibrated by a signal generator with accuracy traceable to the National Institute of 
+Standards and Technology (NIST). 
+6. AFCL (dB/m) = Antenna Factor (dB/m) + Cable Loss (dB) 
+ 
+Sample Calculation 
+ 
+The raw radiated spurious level is converted to field strength in dBuV/m. Then, the RSE level is calculated  
+by applying the additional factors shown below for a test distance of 3 meter. 
+ 
+Spurious Emission Level (dBm) = Analyzer Level (dBm) + 107 + AFCL (dB/m) + 20Log(Dm) – 104.8 
+
+
+PAGE 40
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 40 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+Channel 5 
+ 
+Plot 7-40. Radiated Spurious Pre-Scan 1000 - 10600 MHz - CH.5 
+ 
+ 
+Plot 7-41. Radiated Spurious Pre-Scan 10600 - 18000 MHz - CH.5 
+
+
+PAGE 41
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 41 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-42. Radiated Spurious Pre-Scan 1164 - 1240 MHz - CH.5 – GPS band 
+ 
+ 
+Plot 7-43. Radiated Spurious Pre-Scan 1559 - 1610 MHz - CH.5 – GPS band 
+ 
+
+
+PAGE 42
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 42 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-44. Radiated Spurious Pre-Scan 18 – 40 GHz - CH.5 
+ 
+ 
+Table 7-12. Radiated Spurious Emissions CH. 5 
+ 
+ 
+Table 7-13. Radiated Spurious Emissions CH. 5 – GPS BANDs  
+Channel: 5
+Frequency (MHz): 6489
+Preamble ID 10
+Config SP3
+1543 RMS V - - -89.15 -75.30 -13.85
+1972 RMS V - - -86.45 -63.30 -23.15
+3068 RMS V - - -79.57 -61.30 -18.27
+86274 RMS V - - -75.69 -41.30 -34.39
+17999 RMS V - - -67.64 -61.30 -6.34
+18700 RMS V - - -75.91 -61.30 -14.61
+Antenna 
+Height 
+[cm]
+Turntable 
+Azimuth 
+[degree]
+Spurious 
+Emission 
+Level 
+[dBm]
+Limit 
+[dBm]
+Margin 
+[dB]Frequency [MHz] Detector Ant. Pol. 
+[H/V]
+Channel: 5
+Frequency (MHz): 6489
+Preamble ID 10
+Config SP3
+1168 RMS V - - -103.23 -85.30 -17.93
+1584 RMS V - - -102.19 -85.30 -16.89
+Spurious 
+Emission 
+Level 
+[dBm]
+Limit 
+[dBm]
+Antenna 
+Height 
+[cm]
+Turntable 
+Azimuth 
+[degree]
+Margin 
+[dB]Frequency [MHz] Detector Ant. Pol. 
+[H/V]
+
+PAGE 43
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 43 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+Channel 9 
+ 
+Plot 7-45. Radiated Spurious Pre-Scan 1000 - 10600 MHz - CH.9 
+ 
+ 
+Plot 7-46. Radiated Spurious Pre-Scan 10600 - 18000 MHz - CH.9 
+
+
+PAGE 44
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 44 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-47. Radiated Spurious Pre-Scan 1164 - 1240 MHz - CH.9 – GPS band 
+ 
+ 
+Plot 7-48. Radiated Spurious Pre-Scan 1559 - 1610 MHz - CH.9 – GPS band 
+ 
+
+
+PAGE 45
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 45 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-49. Radiated Spurious Pre-Scan 18 – 40 GHz - CH.9 
+ 
+ 
+Table 7-14. Radiated Spurious Emissions CH. 9 
+ 
+ 
+Table 7-15. Radiated Spurious Emissions CH. 9 – GPS BANDs  
+  
+Channel: 9
+Frequency (MHz): 7987
+Preamble ID 10
+Config SP3
+1588 RMS V - - -88.36 -75.30 -13.06
+1973 RMS V - - -84.17 -63.30 -20.87
+3082 RMS V - - -83.94 -61.30 -22.64
+9618 RMS V - - -75.13 -41.30 -33.83
+17999 RMS V - - -67.46 -61.30 -6.16
+21697 RMS V - - -75.80 -61.30 -14.50
+Ant. Pol. 
+[H/V]
+Antenna 
+Height 
+[cm]
+Turntable 
+Azimuth 
+[degree]
+Limit 
+[dBm]
+Margin 
+[dB]
+Spurious 
+Emission 
+Level 
+[dBm]
+Frequency [MHz] Detector
+Channel: 5
+Frequency (MHz): 6489
+Preamble ID 10
+Config SP3
+1196 RMS V - - -101.28 -85.30 -15.98
+1576 RMS V - - -102.37 -85.30 -17.07
+Spurious 
+Emission 
+Level 
+[dBm]
+Limit 
+[dBm]
+Antenna 
+Height 
+[cm]
+Turntable 
+Azimuth 
+[degree]
+Margin 
+[dB]Frequency [MHz] Detector Ant. Pol. 
+[H/V]
+
+PAGE 46
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 46 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+7.6 Radiated Spurious Emissions Measurements – Below 1GHz 
+§15.209(a), §15.519(c); RSS-Gen [8.9] 
+ 
+Test Overview and Limit 
+ 
+All out of band radiated spurious emissions are measured with a spectrum analyzer connected to a receive antenna 
+while the EUT is operating at its maximum duty cycle, at maximum power, and at the appropriate frequencies . All 
+data rates and modes were investigated for radiated spurious emissions. Only the radiated emissions of the 
+configuration that produced the worst case emissions are reported in this section.  
+ 
+All out of band emissions appearing in a restricted band as specified in Section 15.205 of the Title 47 CFR  
+and Table 6 of RSS-Gen (8.10) must not exceed the limits shown in Table 7-19 per Section 15.209 and RSS-
+Gen (8.9). 
+ 
+Frequency Field Strength 
+[µV/m] 
+Measured Distance 
+[Meters] 
+0.009 – 0.490 MHz 2400/F (kHz) 300 
+0.490 – 1.705 MHz 24000/F (kHz) 30 
+1.705 – 30.00 MHz 30 30 
+30.00 – 88.00 MHz 100 3 
+88.00 – 216.0 MHz 150 3 
+216.0 – 960.0 MHz 200 3 
+Above 960.0 MHz 500 3 
+Table 7-16. Radiated Limits 
+ 
+Test Procedures Used 
+ 
+ANSI C63.10-2013 
+Test Settings 
+ 
+Quasi-Peak Field Strength Measurements 
+ 
+1. Analyzer center frequency was set to the frequency of the radiated spurious emission of interest  
+2. RBW = 120kHz (for emissions from 30MHz – 1GHz) 
+3. Detector = quasi-peak 
+4. Sweep time = auto couple 
+5. Trace mode = max hold 
+6. Trace was allowed to stabilize 
+  
+
+PAGE 47
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 47 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+Test Setup 
+ 
+The EUT and measurement equipment were set up as shown in the diagrams below. 
+ 
+ 
+Figure 7-4. Radiated Test Setup < 30Mhz 
+ 
+ 
+Figure 7-5. Radiated Test Setup < 1GHz 
+ 
+
+
+PAGE 48
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 48 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+Test Notes 
+ 
+1. The broadband receive antenna is manipulated through vertical and horizontal polarizations  during the 
+tests. The EUT is manipulated through three orthogonal planes. 
+2. The spectrum is investigated using a peak detector and final measurements are recorded using CISPR 
+quasi peak detector. The worst -case emissions are reported however emissions whose levels were not 
+within 20dB of the respective limits were not reported. 
+3. Emissions were measured at a 3 meter test distance. 
+4. Emissions are investigated while operating on the center channel of the mode, band, and modulation that 
+produced the worst case results during the transmitter spurious emissions testing.  
+5. No spurious emissions were detected within 20dB of the limit below 30MHz.  
+6. The results recorded using the broadband antenna is known to correlate with the results obtained by using 
+a tuned dipole with an acceptable degree of accuracy. The VSWR for the measurement antenna was found 
+to be less than 2:1. 
+7. The wide spectrum spurious emissions plots shown on the following pages are used only for the purpose 
+of emission identification. There were no emissions detected in the 30MHz – 1GHz frequency range, as 
+shown in the subsequent plots. 
+ 
+ 
+ 
+  
+
+PAGE 49
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 49 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-50. 30MHz - 1 GHz Pre-Scan Plots – CH 5 
+ 
+ 
+Table 7-17. Radiated Spurious Emissions Below 1GHz – CH5 
+ 
+ 
+Plot 7-51. 30MHz - 1 GHz Pre-Scan Plots – CH 9 
+ 
+ 
+Table 7-18. Radiated Spurious Emissions Below 1GHz – CH9 
+ 
+52.18 Quasi-Peak V - - 1.67 20.39 22.06 40.00 -17.94
+879.35 Quasi-Peak V - - 2.86 30.27 33.13 46.02 -12.89
+962.74 Quasi-Peak V - - 2.95 30.73 33.68 53.98 -20.30
+Turntable 
+Azimuth 
+[degree]
+Analyzer 
+Level 
+[dBuV/m]
+AFCL 
+[dB/m]
+Field 
+Strength 
+[dBuV/m]
+Limit 
+[dBuV/m]
+Margin 
+[dB]Frequency [MHz] Detector Ant. Pol. 
+[H/V]
+Antenna 
+Height 
+[cm]
+53.01 Quasi-Peak V - - 1.49 20.31 21.80 40.00 -18.20
+875.85 Quasi-Peak V - - 2.27 30.26 32.53 46.02 -13.49
+986.95 Quasi-Peak V - - 2.62 31.03 33.65 53.98 -20.33
+Frequency [MHz] Detector Ant. Pol. 
+[H/V]
+Antenna 
+Height 
+[cm]
+Turntable 
+Azimuth 
+[degree]
+Analyzer 
+Level 
+[dBm]
+AFCL 
+[dB/m]
+Spurious 
+Emission 
+Level 
+[dBm]
+Limit 
+[dBm]
+Margin 
+[dB]
+
+PAGE 50
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 50 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+7.7 Line Conducted Measurement Data 
+§15.207 
+ 
+Test Overview and Limit 
+ 
+All AC line conducted spurious emissions are measured with a receiver connected to a grounded LISN while the 
+EUT is operating at its maximum duty cycle, at maximum power, and at the appropriate frequencies. All data rates 
+and modes were investigated for conducted spurious emissions. Only the conducted emissions of the configuration 
+that produced the worst case emissions are reported in this section. 
+ 
+All emissions must not exceed the limits shown in Table 7-20 per FCC 15.207 and RSS-Gen (8.8). 
+ 
+Frequency of emission 
+(MHz) 
+Conducted Limit (dBµV) 
+Quasi-peak Average 
+0.15 – 0.5 66 to 56* 56 to 46* 
+0.5 – 5 56 46 
+5 – 30 60 50 
+Table 7-19. Conducted Limits 
+ 
+*Decreases with the logarithm of the frequency. 
+ 
+Test Procedures Used 
+ 
+ANSI C63.4-2014 
+Test Settings 
+ 
+Quasi-Peak Field Strength Measurements 
+ 
+1. Analyzer center frequency was set to the frequency of the spurious emission of interest 
+2. RBW = 9kHz (for emissions from 150kHz – 30MHz) 
+3. Detector = quasi-peak 
+4. Sweep time = auto couple 
+5. Trace mode = max hold 
+6. Trace was allowed to stabilize 
+Average Field Strength Measurements 
+ 
+1. Analyzer center frequency was set to the frequency of the spurious emission of interest  
+2. RBW = 9kHz (for emissions from 150kHz – 30MHz) 
+3. Detector = RMS 
+4. Sweep time = auto couple 
+5. Trace mode = max hold 
+6. Trace was allowed to stabilize 
+  
+
+PAGE 51
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 51 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+Test Setup 
+ 
+The EUT and measurement equipment were set up as shown in the test setup photos provided.  
+ 
+ 
+Figure 7-6. Test Instrument & Measurement Setup 
+ 
+Test Notes 
+ 
+1. All Modes of operation were investigated and the worst-case emissions are reported. 
+2. The limit for Class B device(s) from 150kHz to 30MHz are specified in Section 15. 207 and RSS-Gen. 
+3. L1 = Phase; N = Neutral 
+4. Corr. (dB) = Cable loss (dB) + LISN insertion factor (dB) 
+5. QP/AV Level (dBµV) = QP/AV Reading (dBµV) + Factor (dB) 
+6. Margin (dB) = QP/AV Limit (dBµV) – QP/AV Level (dBµV) 
+7. Traces shown in plot are made using a peak detector. 
+8. Deviations to the Specifications: None. 
+ 
+  
+
+
+PAGE 52
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 52 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-52. Line Conducted Plot (L1) – CH 5 
+ 
+ 
+Plot 7-53. Line Conducted Plot (N) – CH 5 
+ 
+ 
+
+
+PAGE 53
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 53 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+ 
+Plot 7-54. Line Conducted Plot (L1) – CH 9 
+ 
+ 
+Plot 7-55. Line Conducted Plot (N) – CH 9 
+ 
+ 
+
+
+PAGE 54
+ 
+FCC ID: A3LSMS938B  MEASUREMENT REPORT  
+(CERTIFICATION)  Approved by: 
+Technical Manager 
+Test Report S/N: Test Dates: EUT Type:  Page 54 of 54 1M2408260069-14.A3L 9/16/2024 – 11/05/2024 Portable Handset 
+© 2024 ELEMENT V3.0 1/4/2022 
+Unless otherwise specified, no part of this report may be reproduced or utilized in any part, form or by any means, electronic or mechanical, including photocopying and microfilm, without 
+permission in writing from Element. If you have any questions about this or have an i nquiry about obtaining additional rights to this report or  assembly of contents thereof, please contact  
+ct.info@element.com. 
+8.0 CONCLUSION  
+The data collected relate only to the item(s) tested and show that the Samsung Portable Handset                           
+FCC ID: A3LSMS938B has been tested to comply with the requirements specified in §15.519 and §15.521 of the 
+FCC rules. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  

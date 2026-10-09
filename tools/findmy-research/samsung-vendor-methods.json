@@ -1,0 +1,292 @@
+[
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService;",
+    "method": "lambda$registerSecUwbCallback$0",
+    "signature": "()V",
+    "flags": 4098,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmVendorExtensionWrapper",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmSessionNotification",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "unregisterSessionNotificationCallback",
+        "signature": "(Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fputmSecCallback",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;Lcom/samsung/android/uwb_extras/ISecUwbCallback;)V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService;",
+    "method": "registerSecUwbCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ISecUwbCallback;)I",
+    "flags": 1,
+    "strings": [
+      "android.permission.WRITE_SECURE_SETTINGS",
+      "WRITE_SECURE_SETTINGS permission required"
+    ],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmContext",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Landroid/content/Context;"
+      },
+      {
+        "class": "Landroid/content/Context;",
+        "method": "enforceCallingOrSelfPermission",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmSecCallback",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/uwb_extras/ISecUwbCallback;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmVendorExtensionWrapper",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmSessionNotification",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "unregisterSessionNotificationCallback",
+        "signature": "(Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fputmSecCallback",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;Lcom/samsung/android/uwb_extras/ISecUwbCallback;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService$1;",
+        "method": "<init>",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fputmSessionNotification",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmVendorExtensionWrapper",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmSessionNotification",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;"
+      },
+      {
+        "class": "Ljava/util/concurrent/Executors;",
+        "method": "newSingleThreadExecutor",
+        "signature": "()Ljava/util/concurrent/ExecutorService;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "registerSessionNotificationCallback",
+        "signature": "(Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;Ljava/util/concurrent/Executor;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmSecCallback",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/uwb_extras/ISecUwbCallback;"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/ISecUwbCallback;",
+        "method": "asBinder",
+        "signature": "()Landroid/os/IBinder;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService$$ExternalSyntheticLambda0;",
+        "method": "<init>",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService;)V"
+      },
+      {
+        "class": "Landroid/os/IBinder;",
+        "method": "linkToDeath",
+        "signature": "(Landroid/os/IBinder$DeathRecipient;I)V"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;Ljava/lang/Throwable;)I"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService;",
+    "method": "registerTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;Ljava/lang/String;I)V",
+    "flags": 1,
+    "strings": [
+      "android.permission.WRITE_SECURE_SETTINGS",
+      "WRITE_SECURE_SETTINGS permission required",
+      "registerTimesyncCallback - macAddress: "
+    ],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmContext",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Landroid/content/Context;"
+      },
+      {
+        "class": "Landroid/content/Context;",
+        "method": "enforceCallingOrSelfPermission",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "i",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmVendorExtensionWrapper",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "registerTimesyncCallback",
+        "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;Ljava/lang/String;I)V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService;",
+    "method": "sendUciMessage",
+    "signature": "(II[B)[B",
+    "flags": 1,
+    "strings": [
+      "android.permission.WRITE_SECURE_SETTINGS",
+      "WRITE_SECURE_SETTINGS permission required",
+      "sendUciMessage()"
+    ],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmContext",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Landroid/content/Context;"
+      },
+      {
+        "class": "Landroid/content/Context;",
+        "method": "enforceCallingOrSelfPermission",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "i",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$misUwbEnabled",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmIVendorExtension",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/IVendorExtension;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/IVendorExtension;",
+        "method": "sendVendorUciMessage",
+        "signature": "(II[B)[B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UwbExtrasAdapterService;",
+    "method": "unregisterTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V",
+    "flags": 1,
+    "strings": [
+      "android.permission.WRITE_SECURE_SETTINGS",
+      "WRITE_SECURE_SETTINGS permission required",
+      "unregisterTimesyncCallback"
+    ],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmContext",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Landroid/content/Context;"
+      },
+      {
+        "class": "Landroid/content/Context;",
+        "method": "enforceCallingOrSelfPermission",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "i",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+        "method": "-$$Nest$fgetmVendorExtensionWrapper",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungExtension;)Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "unregisterTimesyncCallback",
+        "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V"
+      }
+    ]
+  }
+]

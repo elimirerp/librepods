@@ -1,0 +1,473 @@
+[
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension;",
+    "method": "sendVendorUciMessage",
+    "signature": "(Lcom/samsung/uwb/support/uci/UciPacket;)[B",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getGid",
+        "signature": "()B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getOid",
+        "signature": "()B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getPayload",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/IVendorExtension;",
+        "method": "sendVendorUciMessage",
+        "signature": "(II[B)[B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+    "method": "lambda$sendVendorUciMessageWithBlocked$0",
+    "signature": "(II[B)[B",
+    "flags": 4098,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Landroid/uwb/UwbManager;",
+        "method": "sendVendorUciMessage",
+        "signature": "(II[B)I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+        "method": "blockingWait",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+        "method": "getPayload",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+        "method": "getPayload",
+        "signature": "()[B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+    "method": "sendVendorUciMessageWithBlocked",
+    "signature": "(II[B)[B",
+    "flags": 2,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "toHexString",
+        "signature": "([B)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper$$ExternalSyntheticLambda0;",
+        "method": "<init>",
+        "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;II[B)V"
+      },
+      {
+        "class": "Ljava/util/concurrent/FutureTask;",
+        "method": "<init>",
+        "signature": "(Ljava/util/concurrent/Callable;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "runTaskOnSingleThreadExecutor",
+        "signature": "(Ljava/util/concurrent/FutureTask;I)[B"
+      },
+      {
+        "class": "Ljava/lang/Exception;",
+        "method": "printStackTrace",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/util/concurrent/TimeoutException;",
+        "method": "printStackTrace",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+    "method": "registerTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;Ljava/lang/String;I)V",
+    "flags": 1,
+    "strings": [
+      "registerTimesyncCallback - macAddress: xx:xx:xx:xx:",
+      "registerTimesyncCallback - binderKey: ",
+      "registerTimesyncCallback - callback already registered",
+      "registerTimesyncCallback - stored in map, new size: ",
+      "registerTimesyncCallback - callback or macAddress must not be NULL"
+    ],
+    "calls": [
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "substring",
+        "signature": "(I)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "i",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/ITimesyncCallback;",
+        "method": "asBinder",
+        "signature": "()Landroid/os/IBinder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "size",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "containsKey",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "w",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper$3;",
+        "method": "<init>",
+        "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "put",
+        "signature": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "size",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/util/concurrent/Executors;",
+        "method": "newSingleThreadExecutor",
+        "signature": "()Ljava/util/concurrent/ExecutorService;"
+      },
+      {
+        "class": "Landroid/uwb/UwbManager;",
+        "method": "registerTimesyncCallback",
+        "signature": "(Ljava/util/concurrent/Executor;Ljava/lang/String;ILandroid/uwb/UwbManager$TimesyncCallback;)V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/lang/StringIndexOutOfBoundsException;",
+        "method": "printStackTrace",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+    "method": "sendVendorUciMessage",
+    "signature": "(II[B)[B",
+    "flags": 131073,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "sendVendorUciMessageWithBlocked",
+        "signature": "(II[B)[B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+    "method": "unregisterTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V",
+    "flags": 1,
+    "strings": [
+      "unregisterTimesyncCallback",
+      "unregisterTimesyncCallback - callback must not be NULL",
+      "unregisterTimesyncCallback - binderKey: ",
+      "unregisterTimesyncCallback - callback not found in map",
+      "unregisterTimesyncCallback - successfully removed, new size: "
+    ],
+    "calls": [
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/ITimesyncCallback;",
+        "method": "asBinder",
+        "signature": "()Landroid/os/IBinder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/Object;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "size",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "remove",
+        "signature": "(Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "size",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "i",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Landroid/uwb/UwbManager;",
+        "method": "unregisterTimesyncCallback",
+        "signature": "(Landroid/uwb/UwbManager$TimesyncCallback;)V"
+      }
+    ]
+  }
+]

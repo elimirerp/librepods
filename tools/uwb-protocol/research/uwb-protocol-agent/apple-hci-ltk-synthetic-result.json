@@ -1,0 +1,9 @@
+{
+  "scope": "Run Apple's original ARM64 HCI format'd' slice with a synthetic16B key.\n\nNo hardware or credentials. This executes0x10016BBE4..0x10016BC68 only;\ndescriptor and jump-table selection are separately checked from the image.\n",
+  "descriptor_address": "0x100A9BCE8",
+  "format": "h82d",
+  "d_entry": "0x10016BBE4",
+  "native_wire_equals_input": true,
+  "bumble_wire_equals_native": true,
+  "synthetic_key": "000102030405060708090a0b0c0d0e0f"
+}

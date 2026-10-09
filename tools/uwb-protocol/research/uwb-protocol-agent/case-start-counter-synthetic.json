@@ -1,0 +1,65 @@
+{
+  "scope": "Original case0703 future-counter validation, synthetic BLE state; no radio.",
+  "trials": [
+    {
+      "current": 80,
+      "target": 0,
+      "acceptedByCounterGate": false,
+      "status": 7,
+      "startParameters": []
+    },
+    {
+      "current": 80,
+      "target": 83,
+      "acceptedByCounterGate": false,
+      "status": 7,
+      "startParameters": []
+    },
+    {
+      "current": 80,
+      "target": 84,
+      "acceptedByCounterGate": true,
+      "status": 0,
+      "startParameters": [
+        {
+          "handle": 1,
+          "target": 84,
+          "interval": 24
+        }
+      ]
+    },
+    {
+      "current": 80,
+      "target": 90,
+      "acceptedByCounterGate": true,
+      "status": 0,
+      "startParameters": [
+        {
+          "handle": 1,
+          "target": 90,
+          "interval": 24
+        }
+      ]
+    },
+    {
+      "current": 65534,
+      "target": 0,
+      "acceptedByCounterGate": false,
+      "status": 7,
+      "startParameters": []
+    },
+    {
+      "current": 65530,
+      "target": 65534,
+      "acceptedByCounterGate": true,
+      "status": 0,
+      "startParameters": [
+        {
+          "handle": 1,
+          "target": 65534,
+          "interval": 24
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+0x10045fd68: add x0, x0, #0x6c8
+0x10045fd6c: bl #0x10001ad1c
+0x10045fd70: adrp x1, #0x1008f1000
+0x10045fd74: add x1, x1, #0x409 ; 0x1008f1409 'Nicaragua'
+0x10045fd78: add x20, sp, #6, lsl #12
+0x10045fd7c: add x20, x20, #0x680
+0x10045fd80: add x0, sp, #6, lsl #12
+0x10045fd84: add x0, x0, #0x680
+0x10045fd88: bl #0x10001ad1c
+0x10045fd8c: adrp x1, #0x1008f1000
+0x10045fd90: add x1, x1, #0x406
+0x10045fd94: add x0, x20, #0x18
+0x10045fd98: bl #0x10001ad1c
+0x10045fd9c: add x9, sp, #6, lsl #12
+0x10045fda0: add x9, x9, #0x680
+0x10045fda4: strb wzr, [x23, #0x65]
+0x10045fda8: mov w8, #1
+0x10045fdac: sturh w8, [x23, #0x66]
+0x10045fdb0: add x0, x9, #0x30
+0x10045fdb4: add x1, sp, #6, lsl #12
+0x10045fdb8: add x1, x1, #0x67d ; 0x1008f167d 'tius'
+0x10045fdbc: add x3, sp, #6, lsl #12
+0x10045fdc0: add x3, x3, #0x67c
+0x10045fdc4: mov w2, #1
+0x10045fdc8: bl #0x10045f4cc
+0x10045fdcc: add x1, sp, #6, lsl #12
+0x10045fdd0: add x1, x1, #0x6c8 ; 0x1008f16c8 'man'
+0x10045fdd4: add x2, sp, #6, lsl #12
+0x10045fdd8: add x2, x2, #0x680
+0x10045fddc: mov x0, x19
+0x10045fde0: bl #0x10045ebfc
+0x10045fde4: add x8, sp, #6, lsl #12
+0x10045fde8: add x8, x8, #0x880
+0x10045fdec: add x19, x8, #0x1e0
+0x10045fdf0: adrp x1, #0x1008f1000
+0x10045fdf4: add x1, x1, #0x45e
+0x10045fdf8: add x0, sp, #6, lsl #12
+0x10045fdfc: add x0, x0, #0x660
+0x10045fe00: bl #0x10001ad1c
+0x10045fe04: adrp x1, #0x1008f1000
+0x10045fe08: add x1, x1, #0x461 ; 0x1008f1461 'Bolivia'
+0x10045fe0c: add x20, sp, #6, lsl #12
+0x10045fe10: add x20, x20, #0x618
+0x10045fe14: add x0, sp, #6, lsl #12
+0x10045fe18: add x0, x0, #0x618
+0x10045fe1c: bl #0x10001ad1c
+0x10045fe20: adrp x1, #0x1008f1000
+0x10045fe24: add x1, x1, #0x45e
+0x10045fe28: add x0, x20, #0x18
+0x10045fe2c: bl #0x10001ad1c
+0x10045fe30: add x24, sp, #6, lsl #12
+0x10045fe34: add x24, x24, #0x542
+0x10045fe38: add x9, sp, #6, lsl #12
+0x10045fe3c: add x9, x9, #0x618
+0x10045fe40: strb wzr, [x24, #0xd3]
+0x10045fe44: mov w8, #1
+0x10045fe48: sturh w8, [x24, #0xd4]
+0x10045fe4c: add x0, x9, #0x30
+0x10045fe50: add x1, sp, #6, lsl #12
+0x10045fe54: add x1, x1, #0x615 ; 0x1008f1615 'stan'
+0x10045fe58: add x3, sp, #6, lsl #12
+0x10045fe5c: add x3, x3, #0x614
+0x10045fe60: mov w2, #1
+0x10045fe64: bl #0x10045f4cc
+0x10045fe68: add x1, sp, #6, lsl #12
+0x10045fe6c: add x1, x1, #0x660
+0x10045fe70: add x2, sp, #6, lsl #12
+0x10045fe74: add x2, x2, #0x618
+0x10045fe78: mov x0, x19
+0x10045fe7c: bl #0x10045ebfc
+0x10045fe80: add x8, sp, #6, lsl #12
+0x10045fe84: add x8, x8, #0x880
+0x10045fe88: add x19, x8, #0x240
+0x10045fe8c: adrp x1, #0x1008f1000
+0x10045fe90: add x1, x1, #0x469
+0x10045fe94: add x0, sp, #6, lsl #12
+0x10045fe98: add x0, x0, #0x5f8
+0x10045fe9c: bl #0x10001ad1c
+0x10045fea0: adrp x1, #0x1008f1000
+0x10045fea4: add x1, x1, #0x46c ; 0x1008f146c 'Jamaica'
+0x10045fea8: add x20, sp, #6, lsl #12
+0x10045feac: add x20, x20, #0x5b0
+0x10045feb0: add x0, sp, #6, lsl #12
+0x10045feb4: add x0, x0, #0x5b0
+0x10045feb8: bl #0x10001ad1c
+0x10045febc: adrp x1, #0x1008f1000

@@ -23,6 +23,14 @@ sealed interface Screen: NavKey {
     data object AppSettings: Screen
 
     @Serializable
+    data object AppleAccount: Screen
+
+    @Serializable
+    data object CaseFinding: Screen {
+        override val showTopBar: Boolean = false
+    }
+
+    @Serializable
     data object Troubleshooting: Screen
 
     @Serializable

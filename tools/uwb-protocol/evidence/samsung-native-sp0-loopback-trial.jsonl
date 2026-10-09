@@ -1,0 +1,12 @@
+{"event":"framing_command","hostMonotonicSeconds":183139.377954,"gid":1,"oid":5,"payloadBytes":0,"responseHex":"0000"}
+{"event":"framing_command","hostMonotonicSeconds":183139.433407,"gid":1,"oid":5,"payloadBytes":0,"responseHex":"0000"}
+{"event":"framing_other_notification","hostMonotonicSeconds":183140.837151,"gid":1,"oid":2,"packetBytes":10,"sessionState":0,"reasonCode":0}
+{"event":"framing_command","hostMonotonicSeconds":183140.842725,"gid":1,"oid":0,"payloadBytes":5,"responseHex":"00010000d0"}
+{"event":"framing_command","hostMonotonicSeconds":183140.946484,"gid":1,"oid":3,"payloadBytes":58,"responseHex":"0000"}
+{"event":"framing_command","hostMonotonicSeconds":183141.021474,"gid":1,"oid":4,"payloadBytes":21,"responseHex":"00100401091f010012010015010014010a17010129010035010105010106020000070201001101000a04000000000b0100160100020100"}
+{"event":"framing_command","hostMonotonicSeconds":183141.088197,"gid":15,"oid":0,"payloadBytes":14,"responseHex":"020202050305"}
+{"event":"framing_other_notification","hostMonotonicSeconds":183141.150728,"gid":1,"oid":2,"packetBytes":10,"sessionState":1,"reasonCode":0}
+{"event":"framing_command","hostMonotonicSeconds":183141.151294,"gid":1,"oid":1,"payloadBytes":4,"responseHex":"00"}
+{"event":"framing_command","hostMonotonicSeconds":183159.72863,"gid":1,"oid":5,"payloadBytes":0,"responseHex":"0000"}
+{"event":"framing_cleanup","hostMonotonicSeconds":183159.793432,"idle":true,"uwbEnabled":true,"cleanupConfirmed":true}
+{"event":"framing_probe_failed","hostMonotonicSeconds":183159.793501,"reason":"native_loopback_antenna_set_rejected"}

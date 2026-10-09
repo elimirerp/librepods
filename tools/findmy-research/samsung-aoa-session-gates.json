@@ -1,0 +1,5316 @@
+[
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+    "method": "<init>",
+    "signature": "()V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mProtocolVersion",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceType",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceRole",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingRoundUsage",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMultiNodeMode",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceAddress",
+        "type": "Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDestAddressList",
+        "type": "Ljava/util/List;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAbsoluteInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotDurationRstu",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotsPerRangingRound",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBlockStrideLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHoppingMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxRangingRoundRetries",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionPriority",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMacAddressMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingResultReportMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasControlMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingControlPhase",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportPhase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInBandTerminationAttemptCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mChannelNumber",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleCodeIndex",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRframeConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPrfMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mCapSize",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mScheduledMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleDuration",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSfdId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsSegmentCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubsessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPsduDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBprfPhrDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFcsType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsTxAdaptivePayloadPowerEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mVendorId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStaticStsIV",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsRssiReportingEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsDiagnosticsEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDiagramsFrameReportsFieldsFlags",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAntennaMode",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsKeyRotationEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mKeyRotationRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaResultRequest",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityNear",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityFar",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasTimeOfFlightReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalAzimuthReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalElevationReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalFigureOfMeritReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnRange",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaAzimuth",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaElevation",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingErrorStreakTimeoutMs",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mLinkLayerMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDataRepetitionCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingTimeStruct",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMinFramesPerRr",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMtuSize",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInterFrameInterval",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaBlockStriding",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaRrsPerBlock",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaRandomWindowMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceIdType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxTimestampType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFilterType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxNumberOfMeasurements",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionDataTransferStatusNtfConfig",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceTimeBase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceSessionHandle",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionOffsetInMicroSeconds",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingNefaLevel",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingCswLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mApplicationDataEndpoint",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaMeasurementVersion",
+        "type": "I"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+    "method": "<init>",
+    "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "get",
+        "signature": "()Ljava/lang/Object;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "get",
+        "signature": "()Ljava/lang/Object;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "get",
+        "signature": "()Ljava/lang/Object;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "get",
+        "signature": "()Ljava/lang/Object;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "get",
+        "signature": "()Ljava/lang/Object;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "isSet",
+        "signature": "()Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "get",
+        "signature": "()Ljava/lang/Object;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mProtocolVersion",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceType",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceRole",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingRoundUsage",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMultiNodeMode",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceAddress",
+        "type": "Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDestAddressList",
+        "type": "Ljava/util/List;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAbsoluteInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotDurationRstu",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotsPerRangingRound",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBlockStrideLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHoppingMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxRangingRoundRetries",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionPriority",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMacAddressMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingResultReportMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasControlMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingControlPhase",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportPhase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInBandTerminationAttemptCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mChannelNumber",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleCodeIndex",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRframeConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPrfMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mCapSize",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mScheduledMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleDuration",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSfdId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsSegmentCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubsessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPsduDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBprfPhrDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFcsType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsTxAdaptivePayloadPowerEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mVendorId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStaticStsIV",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsRssiReportingEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsDiagnosticsEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDiagramsFrameReportsFieldsFlags",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAntennaMode",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsKeyRotationEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mKeyRotationRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaResultRequest",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityNear",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityFar",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasTimeOfFlightReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalAzimuthReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalElevationReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalFigureOfMeritReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnRange",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaAzimuth",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaElevation",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingErrorStreakTimeoutMs",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mLinkLayerMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDataRepetitionCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingTimeStruct",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMinFramesPerRr",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMtuSize",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInterFrameInterval",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaBlockStriding",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaRrsPerBlock",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaRandomWindowMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceIdType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxTimestampType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFilterType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxNumberOfMeasurements",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionDataTransferStatusNtfConfig",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceTimeBase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceSessionHandle",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionOffsetInMicroSeconds",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingNefaLevel",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingCswLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mApplicationDataEndpoint",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaMeasurementVersion",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mProtocolVersion",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mProtocolVersion",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceType",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceType",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceRole",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceRole",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingRoundUsage",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingRoundUsage",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMultiNodeMode",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMultiNodeMode",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceAddress",
+        "type": "Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceAddress",
+        "type": "Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDestAddressList",
+        "type": "Ljava/util/List;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDestAddressList",
+        "type": "Ljava/util/List;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAbsoluteInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAbsoluteInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotDurationRstu",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotDurationRstu",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotsPerRangingRound",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotsPerRangingRound",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBlockStrideLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBlockStrideLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHoppingMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHoppingMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxRangingRoundRetries",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxRangingRoundRetries",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionPriority",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionPriority",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMacAddressMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMacAddressMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingResultReportMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingResultReportMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasControlMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasControlMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingControlPhase",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingControlPhase",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportPhase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportPhase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInBandTerminationAttemptCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInBandTerminationAttemptCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mChannelNumber",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mChannelNumber",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleCodeIndex",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleCodeIndex",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRframeConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRframeConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPrfMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPrfMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mScheduledMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mScheduledMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mScheduledMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mCapSize",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mCapSize",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleDuration",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleDuration",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSfdId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSfdId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsSegmentCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsSegmentCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubsessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubsessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPsduDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPsduDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBprfPhrDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBprfPhrDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFcsType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFcsType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsTxAdaptivePayloadPowerEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsTxAdaptivePayloadPowerEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mVendorId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mVendorId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStaticStsIV",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStaticStsIV",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsRssiReportingEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsRssiReportingEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsDiagnosticsEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsDiagnosticsEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDiagramsFrameReportsFieldsFlags",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDiagramsFrameReportsFieldsFlags",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAntennaMode",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAntennaMode",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsKeyRotationEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsKeyRotationEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mKeyRotationRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mKeyRotationRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaResultRequest",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaResultRequest",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityNear",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityNear",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityFar",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityFar",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasTimeOfFlightReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasTimeOfFlightReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalAzimuthReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalAzimuthReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalElevationReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalElevationReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalFigureOfMeritReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalFigureOfMeritReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnRange",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnRange",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaAzimuth",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaAzimuth",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaElevation",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaElevation",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingErrorStreakTimeoutMs",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingErrorStreakTimeoutMs",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mLinkLayerMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mLinkLayerMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDataRepetitionCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDataRepetitionCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingTimeStruct",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingTimeStruct",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMinFramesPerRr",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMinFramesPerRr",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMtuSize",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMtuSize",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInterFrameInterval",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInterFrameInterval",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaBlockStriding",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaBlockStriding",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaRrsPerBlock",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaRrsPerBlock",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaRandomWindowMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaRandomWindowMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceIdType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceIdType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxTimestampType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxTimestampType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxNumberOfMeasurements",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxNumberOfMeasurements",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionDataTransferStatusNtfConfig",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionDataTransferStatusNtfConfig",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceTimeBase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceTimeBase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceSessionHandle",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceSessionHandle",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionOffsetInMicroSeconds",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionOffsetInMicroSeconds",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingNefaLevel",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingNefaLevel",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingCswLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingCswLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mApplicationDataEndpoint",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mApplicationDataEndpoint",
+        "type": "I"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+    "method": "<init>",
+    "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Lcom/google/uwb/support/fira/FiraProtocolVersion;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Ljava/util/List;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$1900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$2900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$3900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/base/RequiredParam;",
+        "method": "set",
+        "signature": "(Ljava/lang/Object;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$4900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$5900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Ljava/lang/Long;"
+      },
+      {
+        "class": "Ljava/lang/Long;",
+        "method": "longValue",
+        "signature": "()J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$6900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$7900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8000",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8100",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8200",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8300",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8400",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8500",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8600",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8700",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8800",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "access$8900",
+        "signature": "(Lcom/google/uwb/support/fira/FiraOpenSessionParams;)I"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mProtocolVersion",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceType",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceRole",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingRoundUsage",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMultiNodeMode",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceAddress",
+        "type": "Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDestAddressList",
+        "type": "Ljava/util/List;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAbsoluteInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotDurationRstu",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotsPerRangingRound",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBlockStrideLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHoppingMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxRangingRoundRetries",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionPriority",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMacAddressMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingResultReportMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasControlMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingControlPhase",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportPhase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInBandTerminationAttemptCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mChannelNumber",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleCodeIndex",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRframeConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPrfMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mCapSize",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mScheduledMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleDuration",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSfdId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsSegmentCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubsessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPsduDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBprfPhrDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFcsType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsTxAdaptivePayloadPowerEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mVendorId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStaticStsIV",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsRssiReportingEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsDiagnosticsEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDiagramsFrameReportsFieldsFlags",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAntennaMode",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsKeyRotationEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mKeyRotationRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaResultRequest",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityNear",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityFar",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasTimeOfFlightReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalAzimuthReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalElevationReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalFigureOfMeritReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnRange",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaAzimuth",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaElevation",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingErrorStreakTimeoutMs",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mLinkLayerMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDataRepetitionCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingTimeStruct",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMinFramesPerRr",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMtuSize",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInterFrameInterval",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaBlockStriding",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaRrsPerBlock",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaRandomWindowMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceIdType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxTimestampType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFilterType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxNumberOfMeasurements",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionDataTransferStatusNtfConfig",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceTimeBase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceSessionHandle",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionOffsetInMicroSeconds",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingNefaLevel",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingCswLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mApplicationDataEndpoint",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaMeasurementVersion",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mProtocolVersion",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceType",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceRole",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingRoundUsage",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMultiNodeMode",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDeviceAddress",
+        "type": "Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDestAddressList",
+        "type": "Ljava/util/List;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAbsoluteInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotDurationRstu",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSlotsPerRangingRound",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBlockStrideLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHoppingMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxRangingRoundRetries",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionPriority",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMacAddressMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMacAddressMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingResultReportMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasControlMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasRangingControlPhase",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMeasurementReportPhase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInBandTerminationAttemptCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mChannelNumber",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleCodeIndex",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRframeConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPrfMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mScheduledMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mCapSize",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPreambleDuration",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSfdId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsSegmentCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubsessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mPsduDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mBprfPhrDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFcsType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsTxAdaptivePayloadPowerEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStsConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSubSessionId",
+        "type": "Lcom/google/uwb/support/base/RequiredParam;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mVendorId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mStaticStsIV",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsRssiReportingEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsDiagnosticsEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDiagramsFrameReportsFieldsFlags",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAntennaMode",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mIsKeyRotationEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mKeyRotationRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaResultRequest",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityNear",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfProximityFar",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaAzimuthUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangeDataNtfAoaElevationUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasTimeOfFlightReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalAzimuthReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalElevationReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mHasAngleOfArrivalFigureOfMeritReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mAoaType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnRange",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaAzimuth",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mNumOfMsrmtFocusOnAoaElevation",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingErrorStreakTimeoutMs",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mLinkLayerMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDataRepetitionCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mRangingTimeStruct",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMinFramesPerRr",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMtuSize",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mInterFrameInterval",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaBlockStriding",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaRrsPerBlock",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaRandomWindowMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceIdType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaDeviceId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mUlTdoaTxTimestampType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mFilterType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mMaxNumberOfMeasurements",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionDataTransferStatusNtfConfig",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceTimeBase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mReferenceSessionHandle",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSessionOffsetInMicroSeconds",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingNefaLevel",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mSecureRangingCswLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mApplicationDataEndpoint",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams$Builder;",
+        "field": "mDlTdoaMeasurementVersion",
+        "type": "I"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+    "method": "<init>",
+    "signature": "(Lcom/google/uwb/support/fira/FiraProtocolVersion;IIIIIILandroid/uwb/UwbAddress;Ljava/util/List;JJIIIIIIIIZZZIIIIIII[BIIIII[B[BIIIZII[B[BZZBBZIIIIIDDDDZZZZIIIILjava/lang/Long;IIIIIIIIIII[BIIIZIIIIIII)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mProtocolVersion",
+        "type": "Lcom/google/uwb/support/fira/FiraProtocolVersion;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSessionId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSessionType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDeviceType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDeviceRole",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangingRoundUsage",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMultiNodeMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDeviceAddress",
+        "type": "Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDestAddressList",
+        "type": "Ljava/util/List;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mAbsoluteInitiationTime",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSlotDurationRstu",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSlotsPerRangingRound",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangingIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mBlockStrideLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mHoppingMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMaxRangingRoundRetries",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSessionPriority",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMacAddressMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mHasRangingResultReportMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mHasControlMessage",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mHasRangingControlPhase",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMeasurementReportType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMeasurementReportPhase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mInBandTerminationAttemptCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mChannelNumber",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mPreambleCodeIndex",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRframeConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mPrfMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mCapSize",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mScheduledMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mPreambleDuration",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSfdId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mStsSegmentCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mStsLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSubSessionKey",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mPsduDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mBprfPhrDataRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mFcsType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mIsTxAdaptivePayloadPowerEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mStsConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSubSessionId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mVendorId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mStaticStsIV",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mIsRssiReportingEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mIsDiagnosticsEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDiagramsFrameReportsFieldsFlags",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mAntennaMode",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mIsKeyRotationEnabled",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mKeyRotationRate",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mAoaResultRequest",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangeDataNtfConfig",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangeDataNtfProximityNear",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangeDataNtfProximityFar",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangeDataNtfAoaAzimuthLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangeDataNtfAoaAzimuthUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangeDataNtfAoaElevationLower",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangeDataNtfAoaElevationUpper",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mHasTimeOfFlightReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mHasAngleOfArrivalAzimuthReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mHasAngleOfArrivalElevationReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mHasAngleOfArrivalFigureOfMeritReport",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mAoaType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mNumOfMsrmtFocusOnRange",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mNumOfMsrmtFocusOnAoaAzimuth",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mNumOfMsrmtFocusOnAoaElevation",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangingErrorStreakTimeoutMs",
+        "type": "Ljava/lang/Long;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mLinkLayerMode",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDataRepetitionCount",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mRangingTimeStruct",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMinFramesPerRr",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMtuSize",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mInterFrameInterval",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDlTdoaBlockStriding",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDlTdoaRrsPerBlock",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mUlTdoaTxIntervalMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mUlTdoaRandomWindowMs",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mUlTdoaDeviceIdType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mUlTdoaDeviceId",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mUlTdoaTxTimestampType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mFilterType",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mMaxNumberOfMeasurements",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSessionDataTransferStatusNtfConfig",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mReferenceTimeBase",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mReferenceSessionHandle",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSessionOffsetInMicroSeconds",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSecureRangingNefaLevel",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mSecureRangingCswLength",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mApplicationDataEndpoint",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mDlTdoaMeasurementVersion",
+        "type": "I"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+    "method": "<init>",
+    "signature": "(Lcom/google/uwb/support/fira/FiraProtocolVersion;IIIIIILandroid/uwb/UwbAddress;Ljava/util/List;JJIIIIIIIIZZZIIIIIII[BIIIII[B[BIIIZII[B[BZZBBZIIIIIDDDDZZZZIIIILjava/lang/Long;IIIIIIIIIII[BIIIZIIIIIIILcom/google/uwb/support/fira/FiraOpenSessionParams$1;)V",
+    "flags": 69632,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "<init>",
+        "signature": "(Lcom/google/uwb/support/fira/FiraProtocolVersion;IIIIIILandroid/uwb/UwbAddress;Ljava/util/List;JJIIIIIIIIZZZIIIIIII[BIIIII[B[BIIIZII[B[BZZBBZIIIIIDDDDZZZZIIIILjava/lang/Long;IIIIIIIIIII[BIIIZIIIIIII)V"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+    "method": "getAoaResultRequest",
+    "signature": "()I",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "field": "mAoaResultRequest",
+        "type": "I"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$$ExternalSyntheticLambda0;",
+    "method": "<init>",
+    "signature": "(Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;IZ)V",
+    "flags": 69633,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$$ExternalSyntheticLambda0;",
+        "field": "f$0",
+        "type": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$$ExternalSyntheticLambda0;",
+        "field": "f$1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$$ExternalSyntheticLambda0;",
+        "field": "f$2",
+        "type": "Z"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+    "method": "<init>",
+    "signature": "(Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;Lcom/google/uwb/support/oemextension/SessionStatus;)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/util/HashSet;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/SessionStatus;",
+        "method": "getSessionId",
+        "signature": "()J"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/SessionStatus;",
+        "method": "getAppPackageName",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/SessionStatus;",
+        "method": "getSessionToken",
+        "signature": "()I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "-$$Nest$fgetPP_ALLOW_LIST",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;)[Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/util/Arrays;",
+        "method": "asList",
+        "signature": "([Ljava/lang/Object;)Ljava/util/List;"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "contains",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mPpEnable",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mRangingDuration",
+        "type": "J"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mRangingInterval",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mRemoteMacAddressList",
+        "type": "Ljava/util/HashSet;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mSessionId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mPackageName",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mSessionToken",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mPackageName",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mPackageName",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mPpEnable",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mSessionId",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mSessionToken",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mPackageName",
+        "type": "Ljava/lang/String;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+    "method": "getPpEnable",
+    "signature": "()Z",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mPpEnable",
+        "type": "Z"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+    "method": "setPpEnable",
+    "signature": "(Z)V",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "field": "mPpEnable",
+        "type": "Z"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+    "method": "<init>",
+    "signature": "(Landroid/content/Context;Lcom/samsung/android/server/uwb/IVendorExtension;Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;Lcom/samsung/android/server/uwb/bigdata/BigdataManager;)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;",
+        "method": "<init>",
+        "signature": "(Landroid/content/Context;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/advertisement/UwbExtAdvertiseManager;",
+        "method": "<init>",
+        "signature": "(Landroid/content/Context;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "setSessionListener",
+        "signature": "(Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "setAdvertiseListener",
+        "signature": "(Lcom/samsung/android/server/uwb/IVendorExtension$AdvertiseNotification;)V"
+      },
+      {
+        "class": "Landroid/content/Context;",
+        "method": "getSystemService",
+        "signature": "(Ljava/lang/String;)Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mUwbSessionMap",
+        "type": "Ljava/util/concurrent/ConcurrentHashMap;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "PP_ALLOW_LIST",
+        "type": "[Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mContext",
+        "type": "Landroid/content/Context;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mIVendorExtension",
+        "type": "Lcom/samsung/android/server/uwb/IVendorExtension;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mPostProcessingManager",
+        "type": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mUwbExtAdvertiseManager",
+        "type": "Lcom/samsung/android/server/uwb/advertisement/UwbExtAdvertiseManager;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mUwbExtAdvertiseManager",
+        "type": "Lcom/samsung/android/server/uwb/advertisement/UwbExtAdvertiseManager;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mBigdataManager",
+        "type": "Lcom/samsung/android/server/uwb/bigdata/BigdataManager;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mSemWifiManager",
+        "type": "Lcom/samsung/android/wifi/SemWifiManager;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+    "method": "updateRangingReport",
+    "signature": "(Landroid/uwb/RangingReport;Lcom/samsung/uwb/support/data/ranging/RangingData;Ljava/lang/String;Lcom/google/uwb/support/base/Params;)Landroid/uwb/RangingReport;",
+    "flags": 2,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Landroid/uwb/RangingReport;",
+        "method": "getMeasurements",
+        "signature": "()Ljava/util/List;"
+      },
+      {
+        "class": "Ljava/util/ArrayList;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "equals",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "getAoaResultRequest",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/lang/IllegalArgumentException;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getRangingMeasurementType",
+        "signature": "()B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getRangingMeasurements",
+        "signature": "()[Lcom/samsung/uwb/support/data/ranging/Measurement;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getNumOfRangingMeasurements",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "get",
+        "signature": "(I)Ljava/lang/Object;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getStatus",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "add",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getRemoteDeviceAddress",
+        "signature": "()Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setRemoteDeviceAddress",
+        "signature": "(Landroid/uwb/UwbAddress;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setStatus",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getElapsedRealtimeNanos",
+        "signature": "()J"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setElapsedRealtimeNanos",
+        "signature": "(J)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getLineOfSight",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setLineOfSight",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getMeasurementFocus",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setMeasurementFocus",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getRssiDbm",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setRssiDbm",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getRangingMeasurementMetadata",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setRangingMeasurementMetadata",
+        "signature": "(Landroid/os/PersistableBundle;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDistanceMeasurement",
+        "signature": "()Landroid/uwb/DistanceMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDistanceMeasurement",
+        "signature": "()Landroid/uwb/DistanceMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setDistanceMeasurement",
+        "signature": "(Landroid/uwb/DistanceMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getFinalAoaAzimuth",
+        "signature": "()F"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getFinalAoaAzimuth",
+        "signature": "()F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "degreeToRadian",
+        "signature": "(F)F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getAoaAzimuthFom",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/AngleMeasurement;",
+        "method": "<init>",
+        "signature": "(DDD)V"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "<init>",
+        "signature": "(Landroid/uwb/AngleMeasurement;)V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getFinalAoaElevation",
+        "signature": "()F"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getFinalAoaElevation",
+        "signature": "()F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "degreeToRadian",
+        "signature": "(F)F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getAoaElevationFom",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/AngleMeasurement;",
+        "method": "<init>",
+        "signature": "(DDD)V"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "setAltitude",
+        "signature": "(Landroid/uwb/AngleMeasurement;)Landroid/uwb/AngleOfArrivalMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setAngleOfArrivalMeasurement",
+        "signature": "(Landroid/uwb/AngleOfArrivalMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDestinationAngleOfArrivalMeasurement",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDestinationAngleOfArrivalMeasurement",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setDestinationAngleOfArrivalMeasurement",
+        "signature": "(Landroid/uwb/AngleOfArrivalMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/RangingMeasurement;"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "add",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport;",
+        "method": "getRangingReportMetadata",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "fromBundle",
+        "signature": "(Landroid/os/PersistableBundle;)Lcom/google/uwb/support/oemextension/RangingReportMetadata;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "addMeasurements",
+        "signature": "(Ljava/util/List;)Landroid/uwb/RangingReport$Builder;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "toBundle",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "addRangingReportMetadata",
+        "signature": "(Landroid/os/PersistableBundle;)Landroid/uwb/RangingReport$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/RangingReport;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getRangingMeasurementType",
+        "signature": "()B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getRangingMeasurements",
+        "signature": "()[Lcom/samsung/uwb/support/data/ranging/Measurement;"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "get",
+        "signature": "(I)Ljava/lang/Object;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getStatus",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "add",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getRemoteDeviceAddress",
+        "signature": "()Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setRemoteDeviceAddress",
+        "signature": "(Landroid/uwb/UwbAddress;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setStatus",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getElapsedRealtimeNanos",
+        "signature": "()J"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setElapsedRealtimeNanos",
+        "signature": "(J)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getLineOfSight",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setLineOfSight",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaAzimuth",
+        "signature": "()F"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaAzimuth",
+        "signature": "()F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "degreeToRadian",
+        "signature": "(F)F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaAzimuthFom",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/AngleMeasurement;",
+        "method": "<init>",
+        "signature": "(DDD)V"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "<init>",
+        "signature": "(Landroid/uwb/AngleMeasurement;)V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaElevation",
+        "signature": "()F"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaElevation",
+        "signature": "()F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "degreeToRadian",
+        "signature": "(F)F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaElevationFom",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/AngleMeasurement;",
+        "method": "<init>",
+        "signature": "(DDD)V"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "setAltitude",
+        "signature": "(Landroid/uwb/AngleMeasurement;)Landroid/uwb/AngleOfArrivalMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setAngleOfArrivalMeasurement",
+        "signature": "(Landroid/uwb/AngleOfArrivalMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDestinationAngleOfArrivalMeasurement",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDestinationAngleOfArrivalMeasurement",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setDestinationAngleOfArrivalMeasurement",
+        "signature": "(Landroid/uwb/AngleOfArrivalMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/RangingMeasurement;"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "add",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport;",
+        "method": "getRangingReportMetadata",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "fromBundle",
+        "signature": "(Landroid/os/PersistableBundle;)Lcom/google/uwb/support/oemextension/RangingReportMetadata;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "addMeasurements",
+        "signature": "(Ljava/util/List;)Landroid/uwb/RangingReport$Builder;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "toBundle",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "addRangingReportMetadata",
+        "signature": "(Landroid/os/PersistableBundle;)Landroid/uwb/RangingReport$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/RangingReport;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+    "method": "onRangingReportReceived",
+    "signature": "(Landroid/uwb/RangingReport;)Landroid/uwb/RangingReport;",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/os/FactoryTest;",
+        "method": "isFactoryMode",
+        "signature": "()Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport;",
+        "method": "getRangingReportMetadata",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "fromBundle",
+        "signature": "(Landroid/os/PersistableBundle;)Lcom/google/uwb/support/oemextension/RangingReportMetadata;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "getRawNtfData",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "<init>",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getSessionToken",
+        "signature": "()J"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "findUwbSessionByToken",
+        "signature": "(I)Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;",
+        "method": "isAvailableToPostProcessing",
+        "signature": "(Lcom/samsung/uwb/support/data/ranging/RangingData;)Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "method": "getChannelNumber",
+        "signature": "()I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "method": "getPpEnable",
+        "signature": "()Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;",
+        "method": "requestPostProcessing",
+        "signature": "(ZILcom/samsung/uwb/support/data/ranging/RangingData;)Lcom/samsung/uwb/support/data/ranging/RangingData;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "method": "getProtocolName",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "method": "getParam",
+        "signature": "()Lcom/google/uwb/support/base/Params;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "updateRangingReport",
+        "signature": "(Landroid/uwb/RangingReport;Lcom/samsung/uwb/support/data/ranging/RangingData;Ljava/lang/String;Lcom/google/uwb/support/base/Params;)Landroid/uwb/RangingReport;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "recordOwrMeasurementFromPostProcessedRangeData",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;Lcom/samsung/uwb/support/data/ranging/RangingData;)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mPostProcessingManager",
+        "type": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mPostProcessingManager",
+        "type": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+    "method": "<init>",
+    "signature": "(BB[BB[B[B)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "twos_compliment",
+        "signature": "(II)I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "convertQFormatToFloat",
+        "signature": "(III)F"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "twos_compliment",
+        "signature": "(II)I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "convertQFormatToFloat",
+        "signature": "(III)F"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "twos_compliment",
+        "signature": "(II)I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "convertQFormatToFloat",
+        "signature": "(III)F"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "twos_compliment",
+        "signature": "(II)I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "convertQFormatToFloat",
+        "signature": "(III)F"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "convertQFormatToFloat",
+        "signature": "(III)F"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "convertQFormatToFloat",
+        "signature": "(III)F"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "getShort",
+        "signature": "()S"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Ljava/nio/ByteOrder;",
+        "field": "LITTLE_ENDIAN",
+        "type": "Ljava/nio/ByteOrder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "samsungSpecificData",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "wifiCoexStatus",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "rxModeForRanging",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRanging",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "rxAntennaForRanging",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "rxModeForRframe",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRframe",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "rxAntennaForRframe",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRanging",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "aoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRanging",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRanging",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoaIndex",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRanging",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "aoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoaIndex",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "aoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoaIndex",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "aoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoaIndex",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "aoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoa",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "pdoaIndex",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRframe",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "snrFirst",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRframe",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "snrMain",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRframe",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "firstIndex",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRframe",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "mainIndex",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "numOfRxForRframe",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "snrFirst",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "snrMain",
+        "type": "[I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "firstIndex",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "mainIndex",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "distance2",
+        "type": "Ljava/lang/Integer;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "field": "distance2",
+        "type": "Ljava/lang/Integer;"
+      }
+    ]
+  }
+]

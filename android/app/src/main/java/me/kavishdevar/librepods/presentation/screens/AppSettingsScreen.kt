@@ -105,6 +105,7 @@ fun AppSettingsScreen(
     navigateToPurchase: () -> Unit,
     navigateToTroubleshooting: () -> Unit,
     navigateToOpenSourceLicenses: () -> Unit,
+    navigateToAppleAccount: () -> Unit,
     navigateToReleaseNotesScreen: () -> Unit
 ) {
     val context = LocalContext.current
@@ -134,6 +135,14 @@ fun AppSettingsScreen(
         Spacer(modifier = Modifier.height(topPadding))
 
         val isDarkTheme = isSystemInDarkTheme()
+
+        StyledList {
+            StyledListItem(
+                name = stringResource(R.string.apple_account),
+                onClick = navigateToAppleAccount,
+            )
+        }
+        Spacer(modifier = Modifier.height(16.dp))
 
         if (!state.isPremium && state.connectionSuccessful) {
             StyledButton(

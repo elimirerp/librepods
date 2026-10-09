@@ -1,0 +1,6 @@
+rx-preamble-candidates @ 0x1005e1a7e: [9, 11, 12]
+gatt-interval-ms-candidates @ 0x1005e1a62: [71, 72, 73, 74, 76, 77, 78, 79, 81, 82, 83, 84, 86, 87]
+ordinary-interval-ms-candidates @ 0x1005e1a46: [51, 52, 53, 54, 56, 57, 58, 59, 61, 62, 63, 64, 66, 67]
+legacy-packet-code-table @ 0x1005f9764: [1, 2, 3, 4, 5, 0, 0, 0, 0, 10, 11, 12, 13]
+trigger-mode-table @ 0x10016b430: [-227, -294, -294, -218, -294, -294, -250, -284, -294]
+diversity-mode-table @ 0x10016b4b0: [-65, -15, -23, -19]

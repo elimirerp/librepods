@@ -21,6 +21,8 @@ import me.kavishdevar.librepods.presentation.screens.AccessibilitySettingsScreen
 import me.kavishdevar.librepods.presentation.screens.AdaptiveStrengthScreen
 import me.kavishdevar.librepods.presentation.screens.AirPodsSettingsRoute
 import me.kavishdevar.librepods.presentation.screens.AppSettingsScreen
+import me.kavishdevar.librepods.presentation.screens.AppleAccountScreen
+import me.kavishdevar.librepods.presentation.screens.CaseFindingRoute
 import me.kavishdevar.librepods.presentation.screens.CallControlScreen
 import me.kavishdevar.librepods.presentation.screens.EqualizerRoute
 import me.kavishdevar.librepods.presentation.screens.HeadTrackingScreen
@@ -128,8 +130,19 @@ fun AppNavGraph(
                                 navigateToPurchase = ::navigateToPurchase,
                                 navigateToTroubleshooting = { navigate(Screen.Troubleshooting) },
                                 navigateToOpenSourceLicenses = { navigate(Screen.OpenSourceLicenses) },
+                                navigateToAppleAccount = { navigate(Screen.AppleAccount) },
                                 navigateToReleaseNotesScreen = { navigate(Screen.ReleaseNotes) }
                             )
+                        }
+
+                    Screen.AppleAccount ->
+                        NavEntry(screen) {
+                            AppleAccountScreen(navigateToFinding = { navigate(Screen.CaseFinding) })
+                        }
+
+                    Screen.CaseFinding ->
+                        NavEntry(screen) {
+                            CaseFindingRoute(onClose = { backStack.removeAt(backStack.lastIndex) })
                         }
 
                     Screen.Troubleshooting ->

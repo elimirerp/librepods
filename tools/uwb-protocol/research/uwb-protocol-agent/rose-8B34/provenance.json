@@ -1,0 +1,8 @@
+[
+  {
+    "source": "A3064-8B34-payloads/ROSE.bin",
+    "component": "rkos",
+    "length": 552320,
+    "sha256": "849508e50c1ef7d9d45df2d1cd1a9fdaf1d8ef891055bc7c014743a33a4e57e0"
+  }
+]

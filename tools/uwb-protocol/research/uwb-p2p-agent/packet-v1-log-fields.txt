@@ -1,0 +1,20 @@
+Built P2P packet V1: { 
+ses_role: %d
+ tx_ant_mask: %d
+ rx_ant_mask: %d
+ rx_sync_search_ant_mask: %d
+ tx_preamble: %d
+ rx_preamble: %d
+ tx_pkt_type: %d
+ rx_pkt_type: %d
+ tx_mslot_sz_250us: %d
+ rx_mslot_sz_250us: %d
+ dual_ranging_enable: %d
+ tx_ant_mask2: %d
+ rx_ant_mask2: %d
+ rx_sync_search_ant_mask2: %d
+ soi_rssi_thd2: %d
+ debug_flags: %d
+ interval_ms: %d
+ channel:%d
+}

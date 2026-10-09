@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="apple_account">Apple Account</string>
+    <string name="findmy_finding_start">Find nearby</string>
+    <string name="findmy_finding_label">FINDING</string>
+    <string name="findmy_finding_case">AirPods Pro case</string>
+    <string name="findmy_finding_simulation">SIMULATION</string>
+    <string name="findmy_finding_ahead">ahead</string>
+    <string name="findmy_finding_left">to your left</string>
+    <string name="findmy_finding_right">to your right</string>
+    <string name="findmy_finding_behind">behind you</string>
+    <string name="findmy_finding_here">here</string>
+    <string name="findmy_finding_move_phone">move your phone</string>
+    <string name="findmy_finding_connecting">Connecting…</string>
+    <string name="findmy_finding_signal_lost">Signal lost</string>
+    <string name="findmy_finding_move_around">Move slowly to help locate your case.</string>
+    <string name="findmy_finding_stop">Stop finding</string>
+    <string name="findmy_case_connection_pending">Root access is ready. The case connection is still being developed.</string>
+    <string name="findmy_root_title">Precision Finding access</string>
+    <string name="findmy_root_intro">Allow LibrePods root access in your root manager to connect to the AirPods case. Precision Finding is still under development.</string>
+    <string name="findmy_root_request">Allow root access</string>
+    <string name="findmy_root_required">Root access is unavailable. Enable root for LibrePods in your root manager, then try again.</string>
+    <string name="findmy_root_check_failed">Root access granted. The Bluetooth access check could not finish. Try again.</string>
+    <string name="findmy_root_restricted">Root access granted. This phone still restricts the Bluetooth connection needed for the case.</string>
+    <string name="findmy_root_ready">Root access granted. Bluetooth access checks passed. Case connection and ranging still need testing.</string>
+    <string name="apple_account_intro">Connect your Apple Account for Find My. Sign-in communicates directly with Apple. Your password is never saved; your session is encrypted on this device.</string>
+    <string name="apple_account_continue">Continue</string>
+    <string name="apple_account_email">Email or phone number</string>
+    <string name="apple_account_password">Password</string>
+    <string name="apple_account_sign_in">Sign in</string>
+    <string name="apple_account_sign_out">Disconnect account</string>
+    <string name="apple_account_choose_verification">Choose where to receive your verification code.</string>
+    <string name="apple_account_verification_code">Verification code</string>
+    <string name="apple_account_verify">Verify</string>
+    <string name="apple_account_connected">Account connected</string>
+    <string name="findmy_account_check">Check Find My account access</string>
+    <string name="apple_account_enrollment_pending">AirPods enrollment and Precision Finding are still under development. Connecting your account does not enroll AirPods in this build.</string>
+    <string name="apple_account_terms_intro">Apple requires you to review and accept updated account terms before continuing.</string>
+    <string name="apple_account_read_terms">Read Apple’s terms</string>
+    <string name="apple_account_accept_terms">Accept Apple’s terms</string>
+</resources>

@@ -1,0 +1,21 @@
+[
+  {
+    "name": "A1V2",
+    "length": 387024,
+    "sha256": "79e53e10dbda3424d7744f107daa1ce88df3c8b4a4725556fd018248d55f9aa8",
+    "equals_dev": false,
+    "same_prefix20": true
+  },
+  {
+    "name": "A1V1",
+    "length": 383474,
+    "sha256": "8802f6925526795be3bb440643ea06155929857413ab798dd827bf2b6302c7e0",
+    "equals_dev": false,
+    "same_prefix20": true
+  },
+  {
+    "name": "dev_BIN",
+    "length": 387024,
+    "sha256": "94ec62d5938711906b04cde1878b399fd9fe2cd88ed81e297aae7e82883927cd"
+  }
+]

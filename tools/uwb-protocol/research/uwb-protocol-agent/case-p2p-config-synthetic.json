@@ -1,0 +1,121 @@
+{
+  "scope": "Execute original case0702 decoder and0707 response with synthetic input.\n\nNo radio/account I/O. Enrollment/connection flags, logs, async work and final\ntransport are explicit boundaries. Original opcode dispatch and field packing\nexecute unchanged; this does not claim successful radio setup.\n",
+  "configure": [
+    {
+      "tx_code": 0,
+      "rx_code": 0,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047000000000000",
+      "event": 29
+    },
+    {
+      "tx_code": 0,
+      "rx_code": 1,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047001000000000",
+      "event": 29
+    },
+    {
+      "tx_code": 0,
+      "rx_code": 2,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047002000000000",
+      "event": 29
+    },
+    {
+      "tx_code": 0,
+      "rx_code": 3,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047003000000000",
+      "event": 29
+    },
+    {
+      "tx_code": 1,
+      "rx_code": 0,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047000100000000",
+      "event": 29
+    },
+    {
+      "tx_code": 1,
+      "rx_code": 1,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047001100000000",
+      "event": 29
+    },
+    {
+      "tx_code": 1,
+      "rx_code": 2,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047002100000000",
+      "event": 29
+    },
+    {
+      "tx_code": 1,
+      "rx_code": 3,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047003100000000",
+      "event": 29
+    },
+    {
+      "tx_code": 2,
+      "rx_code": 0,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047000200000000",
+      "event": 29
+    },
+    {
+      "tx_code": 2,
+      "rx_code": 1,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047001200000000",
+      "event": 29
+    },
+    {
+      "tx_code": 2,
+      "rx_code": 2,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047002200000000",
+      "event": 29
+    },
+    {
+      "tx_code": 2,
+      "rx_code": 3,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047003200000000",
+      "event": 29
+    },
+    {
+      "tx_code": 3,
+      "rx_code": 0,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047000300000000",
+      "event": 29
+    },
+    {
+      "tx_code": 3,
+      "rx_code": 1,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047001300000000",
+      "event": 29
+    },
+    {
+      "tx_code": 3,
+      "rx_code": 2,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047002300000000",
+      "event": 29
+    },
+    {
+      "tx_code": 3,
+      "rx_code": 3,
+      "rose_mac": "0102030405060708",
+      "rose_config": "000944000047003300000000",
+      "event": 29
+    }
+  ],
+  "completion": {
+    "opcode": 1799,
+    "body": "00000000"
+  }
+}

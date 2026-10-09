@@ -1,0 +1,3 @@
+# Host radio probes; verified in the development environment on 2026-10-09.
+bumble==0.0.223
+frida==17.23.3

@@ -1,0 +1,17 @@
+{
+  "scope": "Execute original 9A348 recovery-address selection and LTK installation.\n\nEntirely synthetic RAM. Advertising transport and logs are harness boundaries.\nNo controller, account, owner data or radio operations.\n",
+  "cases": [
+    {
+      "address_bank": "recovery",
+      "replacement_ltk_source": "active_primary_bank_plus_0x1c",
+      "replacement_ltk_equals_synthetic_primary": true,
+      "controller_address_bytes": "4544434241c0"
+    },
+    {
+      "address_bank": "latched_primary",
+      "replacement_ltk_source": "active_primary_bank_plus_0x1c",
+      "replacement_ltk_equals_synthetic_primary": true,
+      "controller_address_bytes": "1514131211d0"
+    }
+  ]
+}

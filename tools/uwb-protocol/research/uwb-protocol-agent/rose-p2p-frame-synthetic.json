@@ -1,0 +1,46 @@
+{
+  "scope": "Verify the unchanged A3122 ROSE P2P frame validator using public synthetic bytes.\nNo radio I/O or owner material. The caller's separate status/source checks are\nnot emulated here. A 23-byte PSDU plus a two-byte FCS meets the native 25-byte\nminimum; this harness does not calculate or validate that FCS.\n",
+  "syntheticFrameIncludingPlaceholderFCS": "41a80100020304050607080102030405060708a5a500310000",
+  "results": [
+    {
+      "name": "valid",
+      "nativeStatus": 0
+    },
+    {
+      "name": "short",
+      "nativeStatus": 246
+    },
+    {
+      "name": "pan",
+      "nativeStatus": 242
+    },
+    {
+      "name": "fcf",
+      "nativeStatus": 243
+    },
+    {
+      "name": "sequence",
+      "nativeStatus": 244
+    },
+    {
+      "name": "destination",
+      "nativeStatus": 245
+    },
+    {
+      "name": "kind",
+      "nativeStatus": 247
+    },
+    {
+      "name": "status_checked_by_caller",
+      "nativeStatus": 0
+    },
+    {
+      "name": "source_checked_by_caller",
+      "nativeStatus": 0
+    },
+    {
+      "name": "fcs_checked_by_radio",
+      "nativeStatus": 0
+    }
+  ]
+}

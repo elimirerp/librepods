@@ -1,0 +1,13 @@
+{
+  "source": "https://updates.cdn-apple.com/MobileAssets2026/patches/089-90709/0290C372-A841-4B4B-BAD5-D26C67A5C097/com_apple_MobileAsset_UARP_A3064/386c8646f9de72382c870b3daefc033a1a4c7979.zip",
+  "discoveryOnly": "https://api.applesn.info/v1/links/132841/download",
+  "size": 12164673,
+  "sha256": "6a1d984ed4aedf1b3c3e9821e73f0efeec2a53bc979287024768effba9435fbf",
+  "sha1": "930291e83eb0f4697b635a8c3d398d95b9b47206",
+  "appleCDNDigestSHA256Match": true,
+  "appleCDNDigestSHA1Match": true,
+  "appleCDNLastModified": "Tue, 06 Jan 2026 22:16:39 GMT",
+  "buildConfirmedInsideAppleArchive": "8B34",
+  "separateHistoricalA3122Catalog": null,
+  "casePayloadVerifiedInsideCombinedPackageBySourcePath": "usr/local/standalone/firmware/nerfthis/b747/nerfthis_b747user.bin"
+}

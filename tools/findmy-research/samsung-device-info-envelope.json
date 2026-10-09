@@ -1,0 +1,383 @@
+[
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+    "method": "<init>",
+    "signature": "()V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+    "method": "blockingWait",
+    "signature": "()V",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+        "method": "blockingTimedWait",
+        "signature": "(J)V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+    "method": "getPayload",
+    "signature": "()[B",
+    "flags": 1,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+    "method": "setPayload",
+    "signature": "([B)V",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/util/Arrays;",
+        "method": "copyOf",
+        "signature": "([BI)[B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper$$ExternalSyntheticLambda0;",
+    "method": "<init>",
+    "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;II[B)V",
+    "flags": 69633,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper$1$$ExternalSyntheticLambda0;",
+    "method": "<init>",
+    "signature": "(Lcom/samsung/android/server/uwb/IVendorExtension$SessionNotification;Landroid/os/PersistableBundle;)V",
+    "flags": 69633,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper$1;",
+    "method": "<init>",
+    "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;)V",
+    "flags": 65536,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper$2;",
+    "method": "<init>",
+    "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;)V",
+    "flags": 65536,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper$2;",
+    "method": "onVendorUciResponse",
+    "signature": "(II[B)V",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "toHexString",
+        "signature": "([B)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "-$$Nest$fgetmUciWaitObj",
+        "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;)Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "-$$Nest$fgetmUciWaitObj",
+        "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;)Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+        "method": "setPayload",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "-$$Nest$fgetmUciWaitObj",
+        "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;)Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+        "method": "blockingNotify",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper$3;",
+    "method": "<init>",
+    "signature": "(Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V",
+    "flags": 65536,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+    "method": "<init>",
+    "signature": "(Landroid/content/Context;)V",
+    "flags": 65536,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/util/concurrent/ConcurrentHashMap;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungExtension$UciWaitObj;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/content/Context;",
+        "method": "getSystemService",
+        "signature": "(Ljava/lang/Class;)Ljava/lang/Object;"
+      },
+      {
+        "class": "Ljava/util/concurrent/Executors;",
+        "method": "newSingleThreadExecutor",
+        "signature": "()Ljava/util/concurrent/ExecutorService;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/UwbVendorExtensionWrapper;",
+        "method": "initializeCallback",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/UwbManager;",
+        "method": "registerUwbOemExtensionCallback",
+        "signature": "(Ljava/util/concurrent/Executor;Landroid/uwb/UwbManager$UwbOemExtensionCallback;)V"
+      },
+      {
+        "class": "Landroid/uwb/UwbManager;",
+        "method": "registerUwbVendorUciCallback",
+        "signature": "(Ljava/util/concurrent/Executor;Landroid/uwb/UwbManager$UwbVendorUciCallback;)V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+    "method": "<init>",
+    "signature": "([B)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "remaining",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/deviceinfo/SamsungSpecificDataForDeviceInfo;",
+        "method": "<init>",
+        "signature": "([B)V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetDeviceInfoResponse;",
+    "method": "<init>",
+    "signature": "([B)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "<init>",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getPayload",
+        "signature": "()[B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "remaining",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "method": "<init>",
+        "signature": "([B)V"
+      }
+    ]
+  }
+]

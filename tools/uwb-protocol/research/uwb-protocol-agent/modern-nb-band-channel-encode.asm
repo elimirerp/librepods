@@ -1,0 +1,45 @@
+0x10044d594: pacibsp 
+0x10044d598: stp x20, x19, [sp, #-0x20]!
+0x10044d59c: stp x29, x30, [sp, #0x10]
+0x10044d5a0: add x29, sp, #0x10
+0x10044d5a4: ldrb w10, [x0]
+0x10044d5a8: lsl w8, w10, #0xb
+0x10044d5ac: sub w9, w10, #1
+0x10044d5b0: cmp w9, #6
+0x10044d5b4: b.hs #0x10044d5d8
+0x10044d5b8: ldrb w9, [x0, #6]
+0x10044d5bc: tbz w9, #0, #0x10044d5f0
+0x10044d5c0: ldrh w9, [x0, #4]
+0x10044d5c4: orr w9, w9, w8
+0x10044d5c8: and w0, w9, #0xffff
+0x10044d5cc: ldp x29, x30, [sp, #0x10]
+0x10044d5d0: ldp x20, x19, [sp], #0x20
+0x10044d5d4: retab 
+0x10044d5d8: cbnz w10, #0x10044d5c8
+0x10044d5dc: ldrb w9, [x0, #2]
+0x10044d5e0: tbz w9, #0, #0x10044d610
+0x10044d5e4: ldrb w9, [x0, #1]
+0x10044d5e8: orr w9, w8, w9
+0x10044d5ec: b #0x10044d5c8
+0x10044d5f0: mov w0, #0x10
+0x10044d5f4: bl #0x1004f0c44
+0x10044d5f8: mov x19, x0
+0x10044d5fc: adrp x1, #0x1008f0000
+0x10044d600: add x1, x1, #0x1b7 ; 0x1008f01b7 'Missing channel-select for band'
+0x10044d604: bl #0x1004469f0
+0x10044d608: mov x0, x19
+0x10044d60c: bl #0x1004ec96c
+0x10044d610: mov w0, #0x10
+0x10044d614: bl #0x1004f0c44
+0x10044d618: mov x19, x0
+0x10044d61c: adrp x1, #0x1008f0000
+0x10044d620: add x1, x1, #0x1b7 ; 0x1008f01b7 'Missing channel-select for band'
+0x10044d624: bl #0x1004469f0
+0x10044d628: mov x0, x19
+0x10044d62c: bl #0x1004ec96c
+0x10044d630: b #0x10044d634
+0x10044d634: mov x20, x0
+0x10044d638: mov x0, x19
+0x10044d63c: bl #0x1004f0c84
+0x10044d640: mov x0, x20
+0x10044d644: bl #0x1004effd4

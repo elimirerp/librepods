@@ -1,0 +1,61 @@
+{
+  "source_binary_sha256": "ac6536ad1bb18d6657f4254ef7e7a878bb396d095ee6d04ac89a68738d51dd0c",
+  "branch_checks": [
+    {
+      "fd44_in_first_set": true,
+      "second_set": false,
+      "device_policy": false,
+      "allow_restricted": false,
+      "permitted": false
+    },
+    {
+      "fd44_in_first_set": true,
+      "second_set": false,
+      "device_policy": false,
+      "allow_restricted": true,
+      "permitted": true
+    },
+    {
+      "fd44_in_first_set": true,
+      "second_set": false,
+      "device_policy": true,
+      "allow_restricted": false,
+      "permitted": false
+    },
+    {
+      "fd44_in_first_set": true,
+      "second_set": false,
+      "device_policy": true,
+      "allow_restricted": true,
+      "permitted": true
+    },
+    {
+      "fd44_in_first_set": true,
+      "second_set": true,
+      "device_policy": false,
+      "allow_restricted": false,
+      "permitted": false
+    },
+    {
+      "fd44_in_first_set": true,
+      "second_set": true,
+      "device_policy": false,
+      "allow_restricted": true,
+      "permitted": true
+    },
+    {
+      "fd44_in_first_set": true,
+      "second_set": true,
+      "device_policy": true,
+      "allow_restricted": false,
+      "permitted": false
+    },
+    {
+      "fd44_in_first_set": true,
+      "second_set": true,
+      "device_policy": true,
+      "allow_restricted": true,
+      "permitted": true
+    }
+  ]
+}

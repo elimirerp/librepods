@@ -1,0 +1,9 @@
+{
+  "source": "https://updates.cdn-apple.com/MobileAssets2026/patches/082-43279/AAC65C8D-E04E-43D5-91C9-ED4A0F5C61FD/com_apple_MobileAsset_UARP_A3122/0d583aea96a0cb99749c4426f9bb47b3a9bf8755.zip",
+  "catalog": "https://mesu.apple.com/assets/macos/com_apple_MobileAsset_UARP_A3122/com_apple_MobileAsset_UARP_A3122.xml",
+  "build": "9A348",
+  "model": "A3122",
+  "size": 12538372,
+  "sha256": "90e345c960d8d324263950f057af46ee77f2094b4452173d23e3f57395dd88c4",
+  "catalogSHA256match": true
+}

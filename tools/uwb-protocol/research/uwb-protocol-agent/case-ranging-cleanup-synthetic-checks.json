@@ -1,0 +1,285 @@
+{
+  "scope": "Original 9A348 Thumb cleanup slices, synthetic RAM only.\n\nLogging, radio/controller hardware, scheduler, and GATT transport are explicit\nharness boundaries. No account, private keys, phone, or radio access.\n",
+  "commands": [
+    {
+      "frame": "010407",
+      "paired": true,
+      "encrypted": true,
+      "initialized": true,
+      "events": [
+        [
+          33,
+          0
+        ]
+      ],
+      "acks": []
+    },
+    {
+      "frame": "010407",
+      "paired": false,
+      "encrypted": true,
+      "initialized": true,
+      "events": [],
+      "acks": [
+        {
+          "opcode": 1792,
+          "request": 0,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "frame": "010407",
+      "paired": true,
+      "encrypted": false,
+      "initialized": true,
+      "events": [],
+      "acks": [
+        {
+          "opcode": 1792,
+          "request": 0,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "frame": "010407",
+      "paired": true,
+      "encrypted": true,
+      "initialized": false,
+      "events": [],
+      "acks": [
+        {
+          "opcode": 1792,
+          "request": 1796,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "frame": "01040700",
+      "paired": true,
+      "encrypted": true,
+      "initialized": true,
+      "events": [],
+      "acks": [
+        {
+          "opcode": 1792,
+          "request": 1796,
+          "status": 3
+        }
+      ]
+    },
+    {
+      "frame": "010507",
+      "paired": true,
+      "encrypted": true,
+      "initialized": true,
+      "events": [
+        [
+          28,
+          0
+        ]
+      ],
+      "acks": []
+    },
+    {
+      "frame": "010507",
+      "paired": false,
+      "encrypted": true,
+      "initialized": true,
+      "events": [],
+      "acks": [
+        {
+          "opcode": 1792,
+          "request": 0,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "frame": "010507",
+      "paired": true,
+      "encrypted": false,
+      "initialized": true,
+      "events": [],
+      "acks": [
+        {
+          "opcode": 1792,
+          "request": 0,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "frame": "010507",
+      "paired": true,
+      "encrypted": true,
+      "initialized": false,
+      "events": [],
+      "acks": [
+        {
+          "opcode": 1792,
+          "request": 1797,
+          "status": 1
+        }
+      ]
+    },
+    {
+      "frame": "01050700",
+      "paired": true,
+      "encrypted": true,
+      "initialized": true,
+      "events": [],
+      "acks": [
+        {
+          "opcode": 1792,
+          "request": 1797,
+          "status": 3
+        }
+      ]
+    }
+  ],
+  "indications": [
+    [
+      1800,
+      "0000000002"
+    ],
+    [
+      1800,
+      "0800000002"
+    ],
+    [
+      1802,
+      "00000000"
+    ],
+    [
+      1802,
+      "08000000"
+    ],
+    [
+      1803,
+      "00000000"
+    ],
+    [
+      1803,
+      "08000000"
+    ]
+  ],
+  "finding_routes": [
+    {
+      "findmy_event": 33,
+      "any_initialized_connection": false,
+      "any_ranging_connection": false,
+      "rose_events": [
+        [
+          10,
+          0
+        ]
+      ],
+      "range_completion_statuses": []
+    },
+    {
+      "findmy_event": 28,
+      "any_initialized_connection": false,
+      "any_ranging_connection": false,
+      "rose_events": [
+        [
+          24,
+          0
+        ]
+      ],
+      "range_completion_statuses": []
+    },
+    {
+      "findmy_event": 32,
+      "any_initialized_connection": false,
+      "any_ranging_connection": false,
+      "rose_events": [],
+      "range_completion_statuses": [
+        0
+      ]
+    },
+    {
+      "findmy_event": 5,
+      "any_initialized_connection": false,
+      "any_ranging_connection": false,
+      "rose_events": [
+        [
+          23,
+          0
+        ]
+      ],
+      "range_completion_statuses": []
+    },
+    {
+      "findmy_event": 5,
+      "any_initialized_connection": true,
+      "any_ranging_connection": false,
+      "rose_events": [
+        [
+          10,
+          0
+        ]
+      ],
+      "range_completion_statuses": []
+    },
+    {
+      "findmy_event": 5,
+      "any_initialized_connection": true,
+      "any_ranging_connection": true,
+      "rose_events": [],
+      "range_completion_statuses": []
+    }
+  ],
+  "rose_routes": [
+    {
+      "state": 5,
+      "event": 10,
+      "callback": "0x26322",
+      "new_state": 5
+    },
+    {
+      "state": 5,
+      "event": 11,
+      "callback": "0x261a4",
+      "new_state": 2
+    },
+    {
+      "state": 2,
+      "event": 23,
+      "callback": "0x260f4",
+      "new_state": 14
+    },
+    {
+      "state": 2,
+      "event": 24,
+      "callback": "0x26108",
+      "new_state": 14
+    },
+    {
+      "state": 4,
+      "event": 23,
+      "callback": "0x260f4",
+      "new_state": 14
+    },
+    {
+      "state": 4,
+      "event": 24,
+      "callback": "0x26108",
+      "new_state": 14
+    },
+    {
+      "state": 5,
+      "event": 23,
+      "callback": "0x260f4",
+      "new_state": 14
+    },
+    {
+      "state": 5,
+      "event": 24,
+      "callback": "0x26108",
+      "new_state": 14
+    }
+  ]
+}

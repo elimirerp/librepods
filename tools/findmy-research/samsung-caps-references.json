@@ -1,0 +1,3574 @@
+[
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_AZIMUTH_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_ELEVATION_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_FOM_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_FULL_AZIMUTH_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_INTERLEAVING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_AZIMUTH_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_ELEVATION_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_FOM_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_FULL_AZIMUTH_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "HAS_INTERLEAVING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$AoaCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_1_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_2_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_3_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_4_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_5_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_6_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_1_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_2_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_3_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_4_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_5_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_6_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$BprfParameterSetCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "field": "HAS_CONSTRAINT_LENGTH_3_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "field": "HAS_CONSTRAINT_LENGTH_7_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "field": "HAS_CONSTRAINT_LENGTH_3_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "field": "HAS_CONSTRAINT_LENGTH_7_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$CcConstraintLengthCapabilitiesFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_CONTROLEE_INITIATOR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_CONTROLEE_RESPONDER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_CONTROLLER_INITIATOR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_CONTROLLER_RESPONDER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_UT_SYNCHRONIZATION_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_UT_ANCHOR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_UT_TAG_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_ADVERTISER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_OBSERVER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_DT_ANCHOR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_DT_TAG_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_CONTROLEE_INITIATOR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_CONTROLEE_RESPONDER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_CONTROLLER_INITIATOR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_CONTROLLER_RESPONDER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_UT_SYNCHRONIZATION_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_UT_ANCHOR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_UT_TAG_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_ADVERTISER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_OBSERVER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_DT_ANCHOR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "HAS_DT_TAG_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$DeviceRoleCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_1_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_2_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_3_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_4_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_5_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_6_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_7_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_8_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_9_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_10_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_11_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_12_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_13_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_14_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_15_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_16_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_17_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_18_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_19_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_20_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_21_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_22_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_23_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_24_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_25_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_26_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_27_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_28_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_29_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_30_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_31_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_32_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_33_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_34_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_35_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_1_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_2_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_3_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_4_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_5_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_6_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_7_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_8_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_9_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_10_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_11_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_12_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_13_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_14_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_15_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_16_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_17_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_18_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_19_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_20_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_21_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_22_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_23_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_24_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_25_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_26_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_27_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_28_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_29_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_30_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_31_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_32_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_33_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_34_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "HAS_SET_35_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$HprfParameterSetCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "HAS_UNICAST_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "HAS_ONE_TO_MANY_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "HAS_MANY_TO_MANY_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "HAS_ONE_TO_MANY_DATA_TRANSFER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "HAS_UNICAST_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "HAS_ONE_TO_MANY_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "HAS_MANY_TO_MANY_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "HAS_ONE_TO_MANY_DATA_TRANSFER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$MultiNodeCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "field": "HAS_BPRF_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "field": "HAS_HPRF_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "field": "HAS_BPRF_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "field": "HAS_HPRF_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PrfCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "HAS_6M81_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "HAS_7M80_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "HAS_27M2_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "HAS_31M2_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "HAS_6M81_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "HAS_7M80_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "HAS_27M2_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "HAS_31M2_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$PsduDataRateCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_DISABLE",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_PROXIMITY_LEVEL_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_AOA_LEVEL_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_PROXIMITY_AOA_LEVEL_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_PROXIMITY_EDGE_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_AOA_EDGE_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_PROXIMITY_AOA_EDGE_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_DISABLE",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_PROXIMITY_LEVEL_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_AOA_LEVEL_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_PROXIMITY_AOA_LEVEL_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_PROXIMITY_EDGE_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_AOA_EDGE_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "HAS_RANGE_DATA_NTF_CONFIG_ENABLE_PROXIMITY_AOA_EDGE_TRIG",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangeDataNtfConfigCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_DS_TWR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_SS_TWR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_OWR_UL_TDOA_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_OWR_DL_TDOA_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_OWR_AOA_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_ESS_TWR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_ADS_TWR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_DATA_TRANSFER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_ALIRO_DS_TWR_DEFERRED_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_DS_TWR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_SS_TWR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_OWR_UL_TDOA_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_OWR_DL_TDOA_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_OWR_AOA_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_ESS_TWR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_ADS_TWR_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_DATA_TRANSFER_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "HAS_ALIRO_DS_TWR_DEFERRED_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingRoundCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "field": "HAS_INTERVAL_BASED_SCHEDULING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "field": "HAS_BLOCK_BASED_SCHEDULING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "field": "HAS_INTERVAL_BASED_SCHEDULING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "field": "HAS_BLOCK_BASED_SCHEDULING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RangingTimeStructCapabilitiesFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "HAS_SP0_RFRAME_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "HAS_SP1_RFRAME_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "HAS_SP3_RFRAME_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "HAS_SP0_RFRAME_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "HAS_SP1_RFRAME_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "HAS_SP3_RFRAME_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$RframeCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "HAS_CONTENTION_BASED_RANGING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "HAS_TIME_SCHEDULED_RANGING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "HAS_HYBRID_SCHEDULED_RANGING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "HAS_CONTENTION_BASED_RANGING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "HAS_TIME_SCHEDULED_RANGING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "HAS_HYBRID_SCHEDULED_RANGING_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$SchedulingModeCapabilitiesFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_STATIC_STS_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_DYNAMIC_STS_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_DYNAMIC_STS_INDIVIDUAL_CONTROLEE_KEY_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_PROVISIONED_STS_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_PROVISIONED_STS_INDIVIDUAL_CONTROLEE_KEY_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_STATIC_STS_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_DYNAMIC_STS_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_DYNAMIC_STS_INDIVIDUAL_CONTROLEE_KEY_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_PROVISIONED_STS_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "HAS_PROVISIONED_STS_INDIVIDUAL_CONTROLEE_KEY_SUPPORT",
+        "type": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraParams$StsCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "field": "HAS_OMNI_MODE_SUPPORT",
+        "type": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "field": "HAS_DIRECTIONAL_MODE_SUPPORT",
+        "type": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "field": "HAS_OMNI_MODE_SUPPORT",
+        "type": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "field": "HAS_DIRECTIONAL_MODE_SUPPORT",
+        "type": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/generic/GenericParams$AntennaModeCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "method": "$values",
+    "signature": "()[Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "flags": 4106,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "field": "HAS_RADAR_SWEEP_SAMPLES_SUPPORT",
+        "type": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "method": "<clinit>",
+    "signature": "()V",
+    "flags": 65544,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;IJ)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "method": "$values",
+        "signature": "()[Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "field": "HAS_RADAR_SWEEP_SAMPLES_SUPPORT",
+        "type": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "method": "<init>",
+    "signature": "(Ljava/lang/String;IJ)V",
+    "flags": 65538,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;I)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "method": "valueOf",
+    "signature": "(Ljava/lang/String;)Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Enum;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Class;Ljava/lang/String;)Ljava/lang/Enum;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "method": "values",
+    "signature": "()[Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "flags": 9,
+    "strings": [],
+    "calls": [
+      {
+        "class": "[Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "method": "clone",
+        "signature": "()Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "field": "$VALUES",
+        "type": "[Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+    "method": "getValue",
+    "signature": "()J",
+    "flags": 1,
+    "strings": [],
+    "calls": [],
+    "fields": [
+      {
+        "class": "Lcom/google/uwb/support/radar/RadarParams$RadarCapabilityFlag;",
+        "field": "mValue",
+        "type": "J"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+    "method": "<init>",
+    "signature": "(BI[B)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/TlvParam;",
+        "method": "<init>",
+        "signature": "(BI[B)V"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Ljava/nio/ByteOrder;",
+        "field": "LITTLE_ENDIAN",
+        "type": "Ljava/nio/ByteOrder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+        "field": "llCapabilityParamSupport",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+        "field": "llCapabilityParamMaxNum",
+        "type": "B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+    "method": "toString",
+    "signature": "()Ljava/lang/String;",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/CharSequence;)V"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/TlvParam;",
+        "method": "toString",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "format",
+        "signature": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "format",
+        "signature": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/TlvParam;",
+        "method": "toString",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+        "field": "llCapabilityParamSupport",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+        "field": "llCapabilityParamSupport",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+        "field": "llCapabilityParamSupport",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+        "field": "llCapabilityParamSupport",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+        "field": "llCapabilityParamMaxNum",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+        "field": "llCapabilityParamMaxNum",
+        "type": "B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/cmd/CoreGetCapsInfoCommand;",
+    "method": "<init>",
+    "signature": "()V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "<init>",
+        "signature": "(BBB[B)V"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/cmd/CoreGetCapsInfoCommand;",
+    "method": "toString",
+    "signature": "()Ljava/lang/String;",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/String;",
+        "method": "format",
+        "signature": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+    "method": "<init>",
+    "signature": "([B)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "<init>",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getPayload",
+        "signature": "()[B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "remaining",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbCapsInfo;",
+        "method": "<init>",
+        "signature": "([B)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "numOfParam",
+        "type": "I"
+      },
+      {
+        "class": "Ljava/nio/ByteOrder;",
+        "field": "LITTLE_ENDIAN",
+        "type": "Ljava/nio/ByteOrder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "status",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "status",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "secUwbCapsInfo",
+        "type": "Lcom/samsung/uwb/support/data/SecUwbCapsInfo;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "numOfParam",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "secUwbCapsInfo",
+        "type": "Lcom/samsung/uwb/support/data/SecUwbCapsInfo;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+    "method": "toString",
+    "signature": "()Ljava/lang/String;",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/CharSequence;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "toHexString",
+        "signature": "(B)Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/code/StatusCode;",
+        "method": "getStatusName",
+        "signature": "(I)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "format",
+        "signature": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "valueOf",
+        "signature": "(Ljava/lang/Object;)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "add",
+        "signature": "(Ljava/lang/CharSequence;)Ljava/util/StringJoiner;"
+      },
+      {
+        "class": "Ljava/util/StringJoiner;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "status",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "mStatusCode",
+        "type": "Lcom/samsung/uwb/support/data/code/StatusCode;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "status",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "numOfParam",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "secUwbCapsInfo",
+        "type": "Lcom/samsung/uwb/support/data/SecUwbCapsInfo;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetCapsInfoResponse;",
+        "field": "secUwbCapsInfo",
+        "type": "Lcom/samsung/uwb/support/data/SecUwbCapsInfo;"
+      }
+    ]
+  }
+]

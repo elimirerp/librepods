@@ -1,0 +1,88 @@
+{
+  "synthetic_nb_config": {
+    "hex": "010d070102030405060708090a0b0c0d0e0f10111213",
+    "parsed": {
+      "opcode": 1805,
+      "nb_config": {
+        "version": 1,
+        "mms_frag_country_code": 2,
+        "nb_country_codes": 3,
+        "sar_country_codes": 4,
+        "acq_timeout": 5,
+        "acq_retry_interval": 6,
+        "acq_dither_max": 7,
+        "ranging_timeout": 8,
+        "nb_mask_nap_channel": 2569,
+        "nb_channel_select_mask": 3083,
+        "wire_mms_psr": 13,
+        "mms_gap": 14,
+        "mms_sequence_index": 15,
+        "mms_slot_size": 16,
+        "interval": 4625,
+        "debug_flags": 19
+      }
+    },
+    "synthetic": true
+  },
+  "synthetic_nb_start": {
+    "hex": "010e07000102030405060708090a0b0c0d0e0f",
+    "parsed": {
+      "opcode": 1806,
+      "ranging_irk_hex": "000102030405060708090a0b0c0d0e0f"
+    },
+    "synthetic": true
+  },
+  "synthetic_p2p_config": {
+    "hex": "010207019e34120001020304050607",
+    "parsed": {
+      "opcode": 1794,
+      "country": 1,
+      "flags": 158,
+      "channel": 2,
+      "acq_preamble": 3,
+      "tracking_preamble": 1,
+      "interval": 4660,
+      "rose_mac_hex": "0001020304050607"
+    },
+    "synthetic": true
+  },
+  "synthetic_p2p_start": {
+    "hex": "0103073412",
+    "parsed": {
+      "opcode": 1795,
+      "target_event_counter": 4660
+    },
+    "synthetic": true
+  },
+  "native_capabilities_query": {
+    "hex": "01100700000000",
+    "parsed": {
+      "opcode": 1808,
+      "capabilities_query_mask": 0
+    },
+    "synthetic": false
+  },
+  "synthetic_capabilities_response": {
+    "hex": "0111070f000000",
+    "parsed": {
+      "opcode": 1809,
+      "capabilities": {
+        "raw": 15,
+        "supports_fc1nd": true,
+        "supports_nbamms": true,
+        "supports_unii5": true,
+        "supports_simultaneous_ranging": true
+      }
+    },
+    "synthetic": true
+  },
+  "synthetic_capabilities_ack": {
+    "hex": "01000710070000",
+    "parsed": {
+      "opcode": 1792,
+      "acknowledged_opcode": 1808,
+      "status": 0
+    },
+    "synthetic": true
+  }
+}

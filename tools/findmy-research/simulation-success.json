@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "mode": "simulation",
+  "simulation_scenario": "success",
+  "caller_context": "simulated_termux_app_uid",
+  "device": {
+    "api_level": {
+      "status": "ok",
+      "value": "37"
+    },
+    "android_release": {
+      "status": "ok",
+      "value": "17"
+    },
+    "security_patch": {
+      "status": "ok",
+      "value": "2026-09-01"
+    },
+    "oneui_version": {
+      "status": "ok",
+      "value": "90000"
+    },
+    "manufacturer": {
+      "status": "ok",
+      "value": "samsung"
+    },
+    "model": {
+      "status": "ok",
+      "value": "SM-S938B"
+    }
+  },
+  "uwb_feature": {
+    "query_status": "ok",
+    "advertised": "present"
+  },
+  "uwb_service": {
+    "query_status": "ok",
+    "visibility": "present"
+  },
+  "termux_package_permissions": {
+    "package": "com.termux",
+    "permissions": {
+      "UWB_RANGING": {
+        "query_status": "ok",
+        "grant": "denied"
+      },
+      "RANGING": {
+        "query_status": "ok",
+        "grant": "denied"
+      },
+      "UWB_PRIVILEGED": {
+        "query_status": "ok",
+        "grant": "denied"
+      }
+    }
+  },
+  "uwb_shell_help": {
+    "query_status": "ok"
+  },
+  "public_framework_artifacts": {
+    "status": "not_queried_in_simulation",
+    "artifacts": []
+  },
+  "app_capabilities": {
+    "status": "not_queried",
+    "reason": "Termux metadata cannot determine an installed Android app's UWB ranging capability set."
+  },
+  "interop": {
+    "status": "unresolved",
+    "apple_mode": "unconfirmed_for_this_case",
+    "nbamms_public_android_support": "unknown",
+    "live_ranging_performed": false
+  },
+  "limitations": [
+    "Denied or missing shell commands do not prove missing hardware or Android app APIs.",
+    "com.termux permission results describe that package; they are not an app-capability query.",
+    "No serials, account IDs, raw command output, sessions, keys, logs or protected stores are emitted."
+  ]
+}

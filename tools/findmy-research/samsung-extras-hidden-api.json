@@ -1,0 +1,117 @@
+[
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+    "method": "sendUciMessage",
+    "signature": "(II[B)[B",
+    "flags": 1025,
+    "hidden_api_flag": 2,
+    "strings": [],
+    "calls": [],
+    "fields": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "getUwbAdapter",
+    "signature": "(Landroid/content/Context;)Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "flags": 131081,
+    "hidden_api_flag": 2,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "getServiceInterface",
+        "signature": "()Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/lang/UnsupportedOperationException;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter$$ExternalSyntheticLambda0;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/util/HashMap;",
+        "method": "computeIfAbsent",
+        "signature": "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "field": "sIsInitialized",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "field": "sUwbService",
+        "type": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "field": "sUwbService",
+        "type": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "field": "sIsInitialized",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "field": "sUwbAdapters",
+        "type": "Ljava/util/HashMap;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "lambda$getUwbAdapter$0",
+    "signature": "(Landroid/content/Context;)Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "flags": 4104,
+    "hidden_api_flag": 2,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "sendUciMessage",
+    "signature": "(II[B)[B",
+    "flags": 1,
+    "hidden_api_flag": 2,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+        "method": "sendUciMessage",
+        "signature": "(II[B)[B"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "attemptDeadServiceRecovery",
+        "signature": "(Ljava/lang/Exception;)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "field": "sUwbService",
+        "type": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;"
+      }
+    ]
+  }
+]

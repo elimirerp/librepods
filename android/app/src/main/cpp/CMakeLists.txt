@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.22.1)
 project("l2c_fcr_hook")
 set(CMAKE_CXX_STANDARD 23)
 
+add_subdirectory(adi)
+
 add_library(bluetooth_socket SHARED
         bluetooth_socket.cpp
 )

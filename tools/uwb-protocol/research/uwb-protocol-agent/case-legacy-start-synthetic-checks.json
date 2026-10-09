@@ -1,0 +1,277 @@
+{
+  "scope": "Original 9A348 dispatcher/completion with synthetic state, no radio.",
+  "dispatch": [
+    {
+      "frame": "010307b400",
+      "accepted": true,
+      "events": [
+        [
+          31,
+          0
+        ]
+      ],
+      "flags": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "responses": [
+        [
+          1792,
+          "03070000"
+        ]
+      ]
+    },
+    {
+      "frame": "0103070000",
+      "accepted": true,
+      "events": [
+        [
+          31,
+          0
+        ]
+      ],
+      "flags": [
+        [
+          1,
+          1,
+          1
+        ]
+      ],
+      "responses": [
+        [
+          1792,
+          "03070000"
+        ]
+      ]
+    },
+    {
+      "frame": "010307b400",
+      "accepted": false,
+      "events": [],
+      "flags": [],
+      "responses": [
+        [
+          1792,
+          "00000100"
+        ]
+      ]
+    },
+    {
+      "frame": "010307b400",
+      "accepted": false,
+      "events": [],
+      "flags": [],
+      "responses": [
+        [
+          1792,
+          "00000100"
+        ]
+      ]
+    },
+    {
+      "frame": "010307b400",
+      "accepted": false,
+      "events": [],
+      "flags": [],
+      "responses": [
+        [
+          1792,
+          "03070100"
+        ]
+      ]
+    },
+    {
+      "frame": "010307",
+      "accepted": false,
+      "events": [],
+      "flags": [],
+      "responses": [
+        [
+          1792,
+          "03070300"
+        ]
+      ]
+    }
+  ],
+  "counter": [
+    {
+      "current": 80,
+      "target": 0,
+      "acceptedByCounterGate": false,
+      "status": 7,
+      "startParameters": []
+    },
+    {
+      "current": 80,
+      "target": 83,
+      "acceptedByCounterGate": false,
+      "status": 7,
+      "startParameters": []
+    },
+    {
+      "current": 80,
+      "target": 84,
+      "acceptedByCounterGate": true,
+      "status": 0,
+      "startParameters": [
+        {
+          "handle": 1,
+          "target": 84,
+          "interval": 24
+        }
+      ]
+    },
+    {
+      "current": 80,
+      "target": 180,
+      "acceptedByCounterGate": true,
+      "status": 0,
+      "startParameters": [
+        {
+          "handle": 1,
+          "target": 180,
+          "interval": 24
+        }
+      ]
+    },
+    {
+      "current": 65530,
+      "target": 65534,
+      "acceptedByCounterGate": true,
+      "status": 0,
+      "startParameters": [
+        {
+          "handle": 1,
+          "target": 65534,
+          "interval": 24
+        }
+      ]
+    },
+    {
+      "current": 65532,
+      "target": 65535,
+      "acceptedByCounterGate": false,
+      "status": 7,
+      "startParameters": []
+    },
+    {
+      "current": 65534,
+      "target": 0,
+      "acceptedByCounterGate": false,
+      "status": 7,
+      "startParameters": []
+    }
+  ],
+  "completion": [
+    {
+      "status": 7,
+      "end_reason": 1,
+      "responses": [
+        [
+          1800,
+          "0700000001"
+        ]
+      ],
+      "flag_changes": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "scheduled": [
+        "0x26e79",
+        "0x26d35"
+      ],
+      "rose_final_state": 2
+    },
+    {
+      "status": 0,
+      "end_reason": 1,
+      "responses": [
+        [
+          1800,
+          "0000000001"
+        ]
+      ],
+      "flag_changes": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "scheduled": [
+        "0x26e79"
+      ],
+      "rose_final_state": 2
+    },
+    {
+      "status": 0,
+      "end_reason": 2,
+      "responses": [
+        [
+          1800,
+          "0000000002"
+        ]
+      ],
+      "flag_changes": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "scheduled": [
+        "0x26e79"
+      ],
+      "rose_final_state": 2
+    },
+    {
+      "status": 1,
+      "end_reason": 1,
+      "responses": [
+        [
+          1800,
+          "0100000001"
+        ]
+      ],
+      "flag_changes": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "scheduled": [
+        "0x26e79",
+        "0x26d35"
+      ],
+      "rose_final_state": 2
+    },
+    {
+      "status": 0,
+      "end_reason": 4,
+      "responses": [
+        [
+          1800,
+          "0000000004"
+        ]
+      ],
+      "flag_changes": [
+        [
+          1,
+          1,
+          0
+        ]
+      ],
+      "scheduled": [
+        "0x26e79"
+      ],
+      "rose_final_state": 2
+    }
+  ]
+}

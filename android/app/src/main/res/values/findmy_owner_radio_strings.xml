@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="findmy_owner_checking">Checking case…</string>
+    <string name="findmy_owner_access_checking">Checking access…</string>
+    <string name="findmy_owner_access_needed">Root access needed</string>
+    <string name="findmy_owner_account_needed">Connect your account</string>
+    <string name="findmy_owner_keys_needed">Recover case keys</string>
+    <string name="findmy_owner_connected">Connection verified</string>
+    <string name="findmy_owner_restore_unknown">Check Bluetooth</string>
+    <string name="findmy_owner_failed">Connection failed</string>
+    <string name="findmy_owner_ready">Case connection ready</string>
+    <string name="findmy_owner_checking_message">Connecting to your selected case and checking its encrypted connection and capabilities. Bluetooth reconnects when the check finishes.</string>
+    <string name="findmy_owner_access_message">Checking LibrePods root access and Bluetooth support.</string>
+    <string name="findmy_owner_account_message">Sign in through Apple Account settings before connecting to your case.</string>
+    <string name="findmy_owner_keys_message">In Apple Account settings, recover the device keys and select your case.</string>
+    <string name="findmy_owner_ready_message">Place your selected case nearby, then check its connection. Precision ranging is not available yet.</string>
+    <string name="findmy_owner_check">Check case connection</string>
+    <string name="findmy_owner_retry">Try connection again</string>
+    <string name="findmy_owner_close">Close</string>
+</resources>

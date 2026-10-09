@@ -1,0 +1,186 @@
+Configuration 'fossDebugCompileClasspath' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+Configuration 'fossDebugRuntimeClasspath' was resolved during configuration time.
+This is a build performance and scalability issue.
+See https://github.com/gradle/gradle/issues/2298
+Run with --info for a stacktrace.
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preFossDebugBuild UP-TO-DATE
+> Task :app:mergeFossDebugNativeDebugMetadata NO-SOURCE
+> Task :app:dataBindingMergeDependencyArtifactsFossDebug UP-TO-DATE
+> Task :app:prepareLibraryDefinitionsFossDebug UP-TO-DATE
+> Task :app:extractFossDebugSupportedLocales UP-TO-DATE
+> Task :app:mapFossDebugSourceSetPaths UP-TO-DATE
+> Task :app:generateFossDebugLocaleConfig UP-TO-DATE
+> Task :app:generateFossDebugResources UP-TO-DATE
+> Task :app:mergeFossDebugResources UP-TO-DATE
+> Task :app:packageFossDebugResources UP-TO-DATE
+> Task :app:processFossDebugNavigationResources UP-TO-DATE
+> Task :app:parseFossDebugLocalResources UP-TO-DATE
+> Task :app:dataBindingGenBaseClassesFossDebug UP-TO-DATE
+> Task :app:generateFossDebugBuildConfig UP-TO-DATE
+> Task :app:extractFossDebugPythonBuildPackages
+
+> Task :app:generateFindmyAccountWheel
+Built pinned account wheel
+
+> Task :app:generateUnicornStubWheel
+Built stub wheel: <LOCAL_WORKSPACE>/work/elimirerp-librepods/android/app/build/generated/stub-wheels/unicorn-2.1.1-py3-none-any.whl
+
+> Task :app:installFossDebugPythonRequirements
+Chaquopy: Installing for arm64-v8a
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Processing ./build/generated/stub-wheels/unicorn-2.1.1-py3-none-any.whl
+Processing ./build/generated/account-wheels/findmy-0.10.1+librepods.1-py3-none-any.whl
+Processing <LOCAL_WORKSPACE>/work/elimirerp-librepods/android/vendor/bumble-mobile/bumble-0.0.223+librepods.1-py3-none-any.whl
+Collecting srp<2.0.0,>=1.0.21 (from findmy==0.10.1+librepods.1)
+  Using cached srp-1.0.22-py3-none-any.whl.metadata (1.9 kB)
+Collecting cryptography>=42.0.0 (from findmy==0.10.1+librepods.1)
+  Using cached https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp312-cp312-android_24_arm64_v8a.whl (1.1 MB)
+Collecting beautifulsoup4<5.0.0,>=4.12.3 (from findmy==0.10.1+librepods.1)
+  Using cached beautifulsoup4-4.15.0-py3-none-any.whl.metadata (3.8 kB)
+Collecting aiohttp<4.0.0,>=3.9.5 (from findmy==0.10.1+librepods.1)
+  Using cached aiohttp-3.14.4-py3-none-any.whl.metadata (8.3 kB)
+Collecting typing-extensions<5.0.0,>=4.12.2 (from findmy==0.10.1+librepods.1)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting anisette<2.0.0,>=1.2.4 (from findmy==0.10.1+librepods.1)
+  Using cached anisette-1.2.4-py3-none-any.whl.metadata (2.2 kB)
+Collecting protobuf<8,>=5.28.1 (from findmy==0.10.1+librepods.1)
+  Using cached protobuf-7.36.2-py3-none-any.whl.metadata (595 bytes)
+Collecting pyee>=13.0.0 (from bumble==0.0.223+librepods.1)
+  Using cached pyee-14.0.0-py3-none-any.whl.metadata (1.8 kB)
+Collecting aiohappyeyeballs>=2.5.0 (from aiohttp<4.0.0,>=3.9.5->findmy==0.10.1+librepods.1)
+  Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl.metadata (5.9 kB)
+Collecting aiosignal>=1.4.0 (from aiohttp<4.0.0,>=3.9.5->findmy==0.10.1+librepods.1)
+  Using cached aiosignal-1.4.0-py3-none-any.whl.metadata (3.7 kB)
+Collecting attrs>=17.3.0 (from aiohttp<4.0.0,>=3.9.5->findmy==0.10.1+librepods.1)
+  Using cached attrs-26.1.0-py3-none-any.whl.metadata (8.8 kB)
+Collecting frozenlist>=1.1.1 (from aiohttp<4.0.0,>=3.9.5->findmy==0.10.1+librepods.1)
+  Using cached frozenlist-1.8.0-py3-none-any.whl.metadata (20 kB)
+Collecting multidict<7.0,>=4.5 (from aiohttp<4.0.0,>=3.9.5->findmy==0.10.1+librepods.1)
+  Using cached multidict-6.9.1-py3-none-any.whl.metadata (5.3 kB)
+Collecting propcache>=0.2.0 (from aiohttp<4.0.0,>=3.9.5->findmy==0.10.1+librepods.1)
+  Using cached propcache-0.5.4-py3-none-any.whl.metadata (25 kB)
+Collecting yarl<2.0,>=1.25.1 (from aiohttp<4.0.0,>=3.9.5->findmy==0.10.1+librepods.1)
+  Using cached yarl-1.25.1-py3-none-any.whl.metadata (111 kB)
+Collecting certifi>=2025.1.31 (from anisette<2.0.0,>=1.2.4->findmy==0.10.1+librepods.1)
+  Using cached certifi-2026.7.22-py3-none-any.whl.metadata (2.5 kB)
+Collecting fs>=2.4.16 (from anisette<2.0.0,>=1.2.4->findmy==0.10.1+librepods.1)
+  Using cached fs-2.4.16-py2.py3-none-any.whl.metadata (6.3 kB)
+Collecting pyelftools>=0.31 (from anisette<2.0.0,>=1.2.4->findmy==0.10.1+librepods.1)
+  Using cached pyelftools-0.33-py3-none-any.whl.metadata (1.0 kB)
+Collecting urllib3>=2.3.0 (from anisette<2.0.0,>=1.2.4->findmy==0.10.1+librepods.1)
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting soupsieve>=1.6.1 (from beautifulsoup4<5.0.0,>=4.12.3->findmy==0.10.1+librepods.1)
+  Using cached soupsieve-2.10-py3-none-any.whl.metadata (4.4 kB)
+Collecting six (from srp<2.0.0,>=1.0.21->findmy==0.10.1+librepods.1)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting idna>=2.0 (from yarl<2.0,>=1.25.1->aiohttp<4.0.0,>=3.9.5->findmy==0.10.1+librepods.1)
+  Using cached idna-3.20-py3-none-any.whl.metadata (7.2 kB)
+Collecting cffi>=1.12 (from cryptography>=42.0.0->findmy==0.10.1+librepods.1)
+  Using cached https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp312-cp312-android_24_arm64_v8a.whl (188 kB)
+Collecting pycparser (from cffi>=1.12->cryptography>=42.0.0->findmy==0.10.1+librepods.1)
+  Using cached pycparser-3.11-py3-none-any.whl.metadata (8.2 kB)
+Collecting chaquopy-libffi>=3.3 (from cffi>=1.12->cryptography>=42.0.0->findmy==0.10.1+librepods.1)
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libffi/chaquopy_libffi-3.3-3-py3-none-android_24_arm64_v8a.whl (33 kB)
+Collecting appdirs~=1.4.3 (from fs>=2.4.16->anisette<2.0.0,>=1.2.4->findmy==0.10.1+librepods.1)
+  Using cached appdirs-1.4.4-py2.py3-none-any.whl.metadata (9.0 kB)
+Collecting setuptools (from fs>=2.4.16->anisette<2.0.0,>=1.2.4->findmy==0.10.1+librepods.1)
+  Using cached setuptools-84.0.0-py3-none-any.whl.metadata (6.6 kB)
+Using cached aiohttp-3.14.4-py3-none-any.whl (279 kB)
+Using cached anisette-1.2.4-py3-none-any.whl (32 kB)
+Using cached beautifulsoup4-4.15.0-py3-none-any.whl (109 kB)
+Using cached multidict-6.9.1-py3-none-any.whl (19 kB)
+Using cached protobuf-7.36.2-py3-none-any.whl (179 kB)
+Using cached srp-1.0.22-py3-none-any.whl (25 kB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached yarl-1.25.1-py3-none-any.whl (63 kB)
+Using cached aiohappyeyeballs-2.7.1-py3-none-any.whl (15 kB)
+Using cached aiosignal-1.4.0-py3-none-any.whl (7.5 kB)
+Using cached attrs-26.1.0-py3-none-any.whl (67 kB)
+Using cached certifi-2026.7.22-py3-none-any.whl (136 kB)
+Using cached frozenlist-1.8.0-py3-none-any.whl (13 kB)
+Using cached fs-2.4.16-py2.py3-none-any.whl (135 kB)
+Using cached appdirs-1.4.4-py2.py3-none-any.whl (9.6 kB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached idna-3.20-py3-none-any.whl (69 kB)
+Using cached propcache-0.5.4-py3-none-any.whl (16 kB)
+Using cached pyee-14.0.0-py3-none-any.whl (15 kB)
+Using cached pyelftools-0.33-py3-none-any.whl (201 kB)
+Using cached soupsieve-2.10-py3-none-any.whl (38 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Using cached pycparser-3.11-py3-none-any.whl (51 kB)
+Using cached setuptools-84.0.0-py3-none-any.whl (818 kB)
+Installing collected packages: unicorn, chaquopy-libffi, appdirs, urllib3, typing-extensions, soupsieve, six, setuptools, pyelftools, pycparser, protobuf, propcache, multidict, idna, frozenlist, certifi, attrs, aiohappyeyeballs, yarl, srp, pyee, fs, cffi, beautifulsoup4, aiosignal, cryptography, anisette, aiohttp, findmy, bumble
+
+Successfully installed aiohappyeyeballs-2.7.1 aiohttp-3.14.4 aiosignal-1.4.0 anisette-1.2.4 appdirs-1.4.4 attrs-26.1.0 beautifulsoup4-4.15.0 bumble-0.0.223+librepods.1 certifi-2026.7.22 cffi-1.17.1 chaquopy-libffi-3.3 cryptography-42.0.8 findmy-0.10.1+librepods.1 frozenlist-1.8.0 fs-2.4.16 idna-3.20 multidict-6.9.1 propcache-0.5.4 protobuf-7.36.2 pycparser-3.11 pyee-14.0.0 pyelftools-0.33 setuptools-84.0.0 six-1.17.0 soupsieve-2.10 srp-1.0.22 typing-extensions-4.16.0 unicorn-2.1.1 urllib3-2.8.0 yarl-1.25.1
+
+Chaquopy: Installing for x86_64
+Looking in indexes: https://pypi.org/simple, https://chaquo.com/pypi-13.1
+Collecting cffi==1.17.1
+  Using cached https://chaquo.com/pypi-13.1/cffi/cffi-1.17.1-1-cp312-cp312-android_24_x86_64.whl (190 kB)
+Collecting chaquopy-libffi==3.3
+  Using cached https://chaquo.com/pypi-13.1/chaquopy-libffi/chaquopy_libffi-3.3-3-py3-none-android_24_x86_64.whl (35 kB)
+Collecting cryptography==42.0.8
+  Using cached https://chaquo.com/pypi-13.1/cryptography/cryptography-42.0.8-0-cp312-cp312-android_24_x86_64.whl (1.2 MB)
+Installing collected packages: chaquopy-libffi, cryptography, cffi
+
+Successfully installed cffi-1.17.1 chaquopy-libffi-3.3 cryptography-42.0.8
+
+> Task :app:mergeFossDebugPythonSources
+> Task :app:generateFossDebugPythonProxies
+> Task :app:generateFossDebugRFile UP-TO-DATE
+> Task :app:compileFossDebugKotlin UP-TO-DATE
+> Task :app:javaPreCompileFossDebug UP-TO-DATE
+> Task :app:compileFossDebugJavaWithJavac UP-TO-DATE
+> Task :app:generateFossDebugAssets UP-TO-DATE
+> Task :app:generateFossDebugPythonMiscAssets UP-TO-DATE
+> Task :app:generateFossDebugPythonRequirementsAssets
+> Task :app:generateFossDebugPythonSourceAssets
+> Task :app:generateFossDebugPythonBuildAssets
+> Task :app:mergeFossDebugAssets
+> Task :app:generateFossDebugGlobalSynthetics UP-TO-DATE
+> Task :app:checkFossDebugDuplicateClasses UP-TO-DATE
+> Task :app:desugarFossDebugFileDependencies UP-TO-DATE
+> Task :app:mergeExtDexFossDebug UP-TO-DATE
+> Task :app:processFossDebugJavaRes UP-TO-DATE
+> Task :app:mergeFossDebugJavaResource UP-TO-DATE
+> Task :app:mergeLibDexFossDebug UP-TO-DATE
+> Task :app:checkFossDebugAarMetadata UP-TO-DATE
+> Task :app:compileFossDebugNavigationResources UP-TO-DATE
+> Task :app:createFossDebugCompatibleScreenManifests UP-TO-DATE
+> Task :app:extractDeepLinksFossDebug UP-TO-DATE
+> Task :app:processFossDebugMainManifest UP-TO-DATE
+> Task :app:processFossDebugManifest UP-TO-DATE
+> Task :app:processFossDebugManifestForPackage UP-TO-DATE
+> Task :app:processFossDebugResources UP-TO-DATE
+> Task :app:dexBuilderFossDebug UP-TO-DATE
+> Task :app:mergeProjectDexFossDebug UP-TO-DATE
+> Task :app:configureCMakeDebug[arm64-v8a]
+> Task :app:buildCMakeDebug[arm64-v8a]
+> Task :app:configureCMakeDebug[x86_64]
+> Task :app:buildCMakeDebug[x86_64]
+> Task :app:generateFossDebugPythonJniLibs UP-TO-DATE
+> Task :app:mergeFossDebugJniLibFolders UP-TO-DATE
+> Task :app:mergeFossDebugNativeLibs UP-TO-DATE
+> Task :app:stripFossDebugDebugSymbols UP-TO-DATE
+> Task :app:validateSigningFossDebug UP-TO-DATE
+> Task :app:writeFossDebugAppMetadata UP-TO-DATE
+> Task :app:writeFossDebugSigningConfigVersions UP-TO-DATE
+> Task :app:compressFossDebugAssets
+> Task :app:packageFossDebug
+> Task :app:createFossDebugApkListingFileRedirect UP-TO-DATE
+> Task :app:assembleFossDebug
+
+[Incubating] Problems report is available at: file://<LOCAL_WORKSPACE>/work/elimirerp-librepods/android/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 10.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/9.4.1/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 16s
+58 actionable tasks: 16 executed, 42 up-to-date

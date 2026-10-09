@@ -1,0 +1,114 @@
+[
+  {
+    "file": "ranging-current.txt",
+    "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/ranging/framework/api/current.txt",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "53036f342a559f78e97296104e607d3e846bfbcf998d25d26b64a7a36921113e",
+    "bytes": 30602,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "ranging-system-current.txt",
+    "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/ranging/framework/api/system-current.txt",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "39824f8c9fee1582598de5aa8cfa9653e84fbd69bd8aeb92c4a78c861faad552",
+    "bytes": 25,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "ranging-UwbRangingParams.java",
+    "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/ranging/framework/java/android/ranging/uwb/UwbRangingParams.java",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "2295bf8636307f674e2a8d4e618b6e33184aa18e7b8f8cdd5b089b955ef6e37a",
+    "bytes": 16226,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "ranging-SessionConfig.java",
+    "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/ranging/framework/java/android/ranging/SessionConfig.java",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "4f2a5f723acd74fa172b083c187f403a9aae1227d3b6b657332bfd4589ab18be",
+    "bytes": 8430,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "uwb-UwbServiceImpl.java",
+    "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/service/java/com/android/server/uwb/UwbServiceImpl.java",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "6b468ff2971694be0e661132faa63139d867fec91c11bbf750d47d25061d4abd",
+    "bytes": 27791,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "uwb-UwbManager.java",
+    "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/framework/java/android/uwb/UwbManager.java",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "830bf19a2a343795f395023d01fdaaa2c26f1040392507cf628b4e8dd27dc3e0",
+    "bytes": 46380,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "samsung-uwb-thesis.pdf",
+    "url": "https://tuprints.ulb.tu-darmstadt.de/server/api/core/bitstreams/f251822a-1a5f-493c-a705-a0ba25feda6a/content",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "3c05941802172d7f44ace05bb82192d91fd146ed0543ad9e5cbed2f3e36fdbc2",
+    "bytes": 8986444,
+    "format": "original PDF"
+  },
+  {
+    "file": "samsung-uwb-thesis.txt",
+    "url": "https://tuprints.ulb.tu-darmstadt.de/server/api/core/bitstreams/f251822a-1a5f-493c-a705-a0ba25feda6a/content",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "6e9d7504f5ca8af1ffc0def8b2cebfc3c4450d953adffd0ee3e1eb6738b7064d",
+    "bytes": 387871,
+    "format": "local text extraction with pypdf; no phone data"
+  },
+  {
+    "file": "s25-uwb-fcc.pdf",
+    "url": "https://fccid.io/A3LSMS938B/Test-Report/UWB-Test-Report-7820748.pdf",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "7a521479daa284c3dcd6734b5e0ba579eaa891c75f2b2250a922685f25560321",
+    "bytes": 4365454,
+    "format": "original PDF"
+  },
+  {
+    "file": "s25-uwb-fcc.txt",
+    "url": "https://fccid.io/A3LSMS938B/Test-Report/UWB-Test-Report-7820748.pdf",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "7ed86fdc0fb5a892669f60dcaedacc68d50383409b5e2e55d277040d820f790d",
+    "bytes": 74978,
+    "format": "local text extraction with pypdf; no phone data"
+  },
+  {
+    "file": "art-hiddenapi_flags.h",
+    "url": "https://android.googlesource.com/platform/art/+/refs/heads/main/libartbase/base/hiddenapi_flags.h",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "18c35bea97719b21d9bf40b23b81352a74e5c81e79d44d4c7fd0002feacfd802",
+    "bytes": 16643,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "nxp-phNxpUciHal_ext.cc",
+    "url": "https://android.googlesource.com/platform/hardware/nxp/uwb/+/refs/heads/main/halimpl/hal/phNxpUciHal_ext.cc",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "babd279fc03238ecdc3bb2e240423ee683fb9d7d02ed9b8806eb1beeaa2a1fe8",
+    "bytes": 37289,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "uwb-FiraDecoder.java",
+    "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/service/java/com/android/server/uwb/params/FiraDecoder.java",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "bf8a88b4f2192935e9a304a0bb314d7fa9384b1868cd396e084093244a7a6c34",
+    "bytes": 49365,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  },
+  {
+    "file": "uwb-CccDecoder.java",
+    "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/service/java/com/android/server/uwb/params/CccDecoder.java",
+    "retrieved_utc_date": "2026-10-08",
+    "sha256": "db8c909f29fe637a09be2786973cd403eb5504055cb82479243f3753cd2417a6",
+    "bytes": 15283,
+    "revision": "moving main snapshot; SHA256 identifies saved bytes, not a commit"
+  }
+]

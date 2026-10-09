@@ -1,0 +1,16 @@
+test_204_is_only_server_acceptance_and_has_no_automatic_retry (test_bridge_plan.BridgeTests.test_204_is_only_server_acceptance_and_has_no_automatic_retry) ... ok
+test_actual_host_collector_is_account_unverified (test_bridge_plan.BridgeTests.test_actual_host_collector_is_account_unverified) ... ok
+test_case_only_or_mismatched_owner_evidence_is_blocked (test_bridge_plan.BridgeTests.test_case_only_or_mismatched_owner_evidence_is_blocked) ... ok
+test_credentials_and_keys_rejected_at_any_depth (test_bridge_plan.BridgeTests.test_credentials_and_keys_rejected_at_any_depth) ... ok
+test_existing_and_unknown_never_touch_pairing_inputs (test_bridge_plan.BridgeTests.test_existing_and_unknown_never_touch_pairing_inputs) ... ok
+test_legacy_list_absence_never_authorizes_registration (test_bridge_plan.BridgeTests.test_legacy_list_absence_never_authorizes_registration) ... ok
+test_native_confirmation_requires_exact_subject_and_owner (test_bridge_plan.BridgeTests.test_native_confirmation_requires_exact_subject_and_owner) ... ok
+test_nonmac_host_collection_rejected_before_commands (test_bridge_plan.BridgeTests.test_nonmac_host_collection_rejected_before_commands) ... ok
+test_private_file_and_redacted_cli_errors (test_bridge_plan.BridgeTests.test_private_file_and_redacted_cli_errors) ... ok
+test_valid_structure_still_has_no_submit_capability (test_bridge_plan.BridgeTests.test_valid_structure_still_has_no_submit_capability) ... ok
+test_world_readable_symlink_and_oversized_inputs_rejected (test_bridge_plan.BridgeTests.test_world_readable_symlink_and_oversized_inputs_rejected) ... ok
+
+----------------------------------------------------------------------
+Ran 11 tests in 0.005s
+
+OK

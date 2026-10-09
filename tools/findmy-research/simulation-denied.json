@@ -1,0 +1,79 @@
+{
+  "schema_version": 1,
+  "mode": "simulation",
+  "simulation_scenario": "denied",
+  "caller_context": "simulated_termux_app_uid",
+  "device": {
+    "api_level": {
+      "status": "denied",
+      "value": null
+    },
+    "android_release": {
+      "status": "denied",
+      "value": null
+    },
+    "security_patch": {
+      "status": "denied",
+      "value": null
+    },
+    "oneui_version": {
+      "status": "denied",
+      "value": null
+    },
+    "manufacturer": {
+      "status": "denied",
+      "value": null
+    },
+    "model": {
+      "status": "denied",
+      "value": null
+    }
+  },
+  "uwb_feature": {
+    "query_status": "denied",
+    "advertised": "unknown"
+  },
+  "uwb_service": {
+    "query_status": "denied",
+    "visibility": "unknown"
+  },
+  "termux_package_permissions": {
+    "package": "com.termux",
+    "permissions": {
+      "UWB_RANGING": {
+        "query_status": "denied",
+        "grant": "unknown"
+      },
+      "RANGING": {
+        "query_status": "denied",
+        "grant": "unknown"
+      },
+      "UWB_PRIVILEGED": {
+        "query_status": "denied",
+        "grant": "unknown"
+      }
+    }
+  },
+  "uwb_shell_help": {
+    "query_status": "denied"
+  },
+  "public_framework_artifacts": {
+    "status": "not_queried_in_simulation",
+    "artifacts": []
+  },
+  "app_capabilities": {
+    "status": "not_queried",
+    "reason": "Termux metadata cannot determine an installed Android app's UWB ranging capability set."
+  },
+  "interop": {
+    "status": "unresolved",
+    "apple_mode": "unconfirmed_for_this_case",
+    "nbamms_public_android_support": "unknown",
+    "live_ranging_performed": false
+  },
+  "limitations": [
+    "Denied or missing shell commands do not prove missing hardware or Android app APIs.",
+    "com.termux permission results describe that package; they are not an app-capability query.",
+    "No serials, account IDs, raw command output, sessions, keys, logs or protected stores are emitted."
+  ]
+}

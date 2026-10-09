@@ -1,0 +1,144 @@
+{
+  "schema_version": 1,
+  "scope": "Offline review of root-collected exact phone artifacts; no ADB/radio commands executed by this agent",
+  "device": {
+    "model": "SM-S938U",
+    "android": "17",
+    "api": 37,
+    "oneui": "90000",
+    "build": "S938USQUCDZIF",
+    "source": "root measured metadata"
+  },
+  "controller": {
+    "identity": "NXP SR200T",
+    "evidence": [
+      "libuwb-nxp.conf explicitly selects libsr200t_prod_fw.so",
+      "semuwb-service.jar contains SR200T device type and NXP UCI classes",
+      "root observed /vendor/firmware/uwb/libsr200t_dev_fw.bin and libsr200t_prod_fw.so filenames"
+    ],
+    "firmware_version": "not yet measured"
+  },
+  "fira_capabilities": {
+    "source": "/Users/elibaum/Documents/Codex/2026-10-08/bas/work/phone-uwb/specification.txt",
+    "max_phy_version": "3.0",
+    "max_mac_version": "3.0",
+    "uci_version": 3,
+    "channels": [
+      5,
+      9
+    ],
+    "prf_capabilities": 3,
+    "bprf_parameter_set_capabilities": 63,
+    "hprf_parameter_set_capabilities": 7158278831,
+    "rframe_capabilities": 11,
+    "sts_capabilities": 31,
+    "aoa_capabilities": 16,
+    "extended_mac_address": false
+  },
+  "mask_interpretation": {
+    "source": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/service/support_lib/src/com/google/uwb/support/fira/FiraParams.java",
+    "prf3": [
+      "BPRF",
+      "HPRF"
+    ],
+    "bprf63": [
+      "sets1",
+      "sets2",
+      "sets3",
+      "sets4",
+      "sets5",
+      "sets6"
+    ],
+    "rframe11": [
+      "SP0",
+      "SP1",
+      "SP3"
+    ],
+    "sts31": [
+      "static",
+      "dynamic",
+      "dynamic individual controlee",
+      "provisioned",
+      "provisioned individual controlee"
+    ],
+    "aoa16": [
+      "interleaving only; generic mask does not advertise azimuth/elevation"
+    ],
+    "caution": "Apple Legacy_BPRF packet-family0/profile-index4 is not proved equivalent to FiRa BPRF set4. Profile/table numbers must be mapped from actual parameters."
+  },
+  "samsung_vendor_interface": {
+    "client_class": "com.samsung.android.uwb_extras.UwbExtrasAdapter",
+    "get_adapter": "static getUwbAdapter(Context) -> UwbExtrasAdapter",
+    "send": "sendUciMessage(int gid,int oid,byte[] payload) -> byte[]",
+    "binder_service": "SamsungExtension$UwbExtrasAdapterService",
+    "permission": "android.permission.WRITE_SECURE_SETTINGS",
+    "verified_calls": [
+      "sendUciMessage enforces permission and checks UWB enabled",
+      "delegates to IVendorExtension.sendVendorUciMessage",
+      "vendor wrapper sends on worker executor through platform UwbManager and returns UciWaitObj payload"
+    ],
+    "callbacks": [
+      "registerSecUwbCallback replaces shared session callback; avoid for initial probe",
+      "registerTimesyncCallback delegates to UwbManager with MAC/type; do not assume passive or permission-complete"
+    ],
+    "runtime_access": "not yet measured for WSS-granted APK"
+  },
+  "permission_correction": {
+    "source": "https://android.googlesource.com/platform/frameworks/base/+/refs/heads/main/core/res/AndroidManifest.xml",
+    "WRITE_SECURE_SETTINGS": "signature|privileged|development|role|installer in current upstream",
+    "UWB_PRIVILEGED": "signature|privileged",
+    "BLUETOOTH_PRIVILEGED": "signature|privileged",
+    "conclusion": "The Termux report overstates that an ordinary installed APK can never obtain WRITE_SECURE_SETTINGS. ADB may grant this development permission to a declaring APK, subject actual device policy. This is distinct from a normal runtime permission and does not confer UWB_PRIVILEGED or BLUETOOTH_PRIVILEGED."
+  },
+  "reviewed_minimal_transport_test": {
+    "operation": "CORE_DEVICE_INFO",
+    "gid": 0,
+    "oid": 2,
+    "payload_bytes": 0,
+    "attempts": "one per separately coordinated permission state",
+    "source": "https://android.googlesource.com/platform/external/uwb/+/refs/heads/main/src/rust/uwb_uci_packets/uci_packets.pdl",
+    "samsung_evidence": "Exact CoreGetDeviceInfoCommand constructor invokes UciPacket(MT1,GID0,OID2,null).",
+    "return_envelope": "response payload only; not full UCI packet",
+    "result_parse": {
+      "status_offset": 0,
+      "minimum_success_length": 10,
+      "uci_generic_version_le16_offset": 1,
+      "mac_version_le16_offset": 3,
+      "phy_version_le16_offset": 5,
+      "uci_test_version_le16_offset": 7,
+      "vendor_length_u8_offset": 9,
+      "vendor_data_offset": 10,
+      "vendor_data": "discard; never log or probe arbitrary TLVs"
+    },
+    "mutations": "No session open/config/start/stop; no callback registration; no arbitrary vendor opcode probing"
+  },
+  "interop_unknowns": [
+    "Exact Pro3 selected mode: FiRa versus legacy BPRF versus NBAMMS",
+    "Apple PHY profile/table mapping to NXP configurable params",
+    "Apple temporary BLE LTK connection-token setup has no verified ordinary Android API equivalent",
+    "Generic angle capability mask versus Samsung private angle/fusion behavior",
+    "Firmware NBA-MMS support not established by FiRa capabilities or missing symbol names"
+  ],
+  "phone_artifact_hashes": [
+    {
+      "file": "libuwb-uci.conf",
+      "sha256": "8f1621fa33f433be1395b3e87f540a83781b19c6b5e6f1a5a77dcf9d6a4785ff"
+    },
+    {
+      "file": "libuwb-nxp.conf",
+      "sha256": "a053b1a30508cf14a97a6b42965b269709efd040027f6e5a7cfb2cbc93ee1c62"
+    },
+    {
+      "file": "semuwb-service.jar",
+      "sha256": "b027c9a7e815f1ea21d4bef954b8e08b2c7861db127f1507d03f6af8fe2d2e31"
+    },
+    {
+      "file": "libuwb-feature.conf",
+      "sha256": "7e6657da5208c56e29ddebe20f14491454a1959f964bbff782c04f2b59418844"
+    },
+    {
+      "file": "com.samsung.android.uwb_extras.jar",
+      "sha256": "6d2c0e32571b85cfd3ef9e2974e4d5410f0941ef2756d01f3dcf817127b3c554"
+    }
+  ]
+}

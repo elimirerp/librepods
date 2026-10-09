@@ -1,0 +1,56 @@
+0 -> unsupported
+1 -> invalid
+2 -> invalid
+3 -> invalid
+4 -> invalid
+5 -> invalid
+6 -> invalid
+7 -> invalid
+8 -> invalid
+9 -> 0
+10 -> 1
+11 -> 2
+12 -> 3
+13 -> unsupported
+14 -> unsupported
+15 -> unsupported
+16 -> unsupported
+17 -> unsupported
+18 -> unsupported
+19 -> unsupported
+20 -> unsupported
+21 -> unsupported
+22 -> unsupported
+23 -> unsupported
+24 -> unsupported
+25 -> unsupported
+26 -> unsupported
+27 -> unsupported
+28 -> unsupported
+29 -> unsupported
+30 -> unsupported
+31 -> unsupported
+32 -> unsupported
+0 -> Legacy_BPRF
+1 -> IEEE_BPRF
+2 -> IEEE_HPRF
+3 -> unknown
+4 -> Proprietary_HPRF
+5 -> SplitND_BPRF
+6 -> SplitND_HPRF
+7 -> MMS
+8 -> Mixed_MMS
+9 -> unknown
+10 -> unknown
+11 -> unknown
+12 -> unknown
+13 -> unknown
+14 -> unknown
+15 -> unknown
+16 -> NB
+rx-preamble-candidates @ 0x1005e1a7e: [9, 11, 12]
+gatt-interval-ms-candidates @ 0x1005e1a62: [71, 72, 73, 74, 76, 77, 78, 79, 81, 82, 83, 84, 86, 87]
+ordinary-interval-ms-candidates @ 0x1005e1a46: [51, 52, 53, 54, 56, 57, 58, 59, 61, 62, 63, 64, 66, 67]
+legacy-packet-code-table @ 0x1005f9764: [1, 2, 3, 4, 5, 0, 0, 0, 0, 10, 11, 12, 13]
+trigger-mode-table @ 0x10016b430: [-227, -294, -294, -218, -294, -294, -250, -284, -294]
+diversity-mode-table @ 0x10016b4b0: [-65, -15, -23, -19]

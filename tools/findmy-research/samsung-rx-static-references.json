@@ -1,0 +1,413 @@
+[
+  {
+    "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+    "method": "<init>",
+    "signature": "(BI[B)V",
+    "flags": 65537,
+    "hidden_api_flag": null,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/TlvParam;",
+        "method": "<init>",
+        "signature": "(BI[B)V"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Ljava/nio/ByteOrder;",
+        "field": "LITTLE_ENDIAN",
+        "type": "Ljava/nio/ByteOrder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+    "method": "toString",
+    "signature": "()Ljava/lang/String;",
+    "flags": 1,
+    "hidden_api_flag": null,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/TlvParam;",
+        "method": "toString",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/appconfig/SfdId;",
+        "field": "sfdId",
+        "type": "B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/cmd/TestRxCommand;",
+    "method": "<init>",
+    "signature": "([B)V",
+    "flags": 65537,
+    "hidden_api_flag": null,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "<init>",
+        "signature": "(BBB[B)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getPayload",
+        "signature": "()[B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "remaining",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Ljava/nio/ByteOrder;",
+        "field": "LITTLE_ENDIAN",
+        "type": "Ljava/nio/ByteOrder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/cmd/TestRxCommand;",
+        "field": "psduData",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/cmd/TestRxCommand;",
+        "field": "psduData",
+        "type": "[B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/cmd/TestRxCommand;",
+    "method": "toString",
+    "signature": "()Ljava/lang/String;",
+    "flags": 1,
+    "hidden_api_flag": null,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "valueOf",
+        "signature": "(I)Ljava/lang/Integer;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "toHexString",
+        "signature": "([B)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "format",
+        "signature": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/cmd/TestRxCommand;",
+        "field": "psduData",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/cmd/TestRxCommand;",
+        "field": "psduData",
+        "type": "[B"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/ntf/TestRxNotification;",
+    "method": "<init>",
+    "signature": "([B)V",
+    "flags": 65537,
+    "hidden_api_flag": null,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "<init>",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getPayload",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/rftest/TestPerRxData;",
+        "method": "<init>",
+        "signature": "([B)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/ntf/TestRxNotification;",
+        "field": "testRxData",
+        "type": "Lcom/samsung/uwb/support/data/rftest/TestPerRxData;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/ntf/TestRxNotification;",
+    "method": "toString",
+    "signature": "()Ljava/lang/String;",
+    "flags": 1,
+    "hidden_api_flag": null,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/String;",
+        "method": "format",
+        "signature": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/ntf/TestRxNotification;",
+        "field": "testRxData",
+        "type": "Lcom/samsung/uwb/support/data/rftest/TestPerRxData;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/rsp/TestRxResponse;",
+    "method": "<init>",
+    "signature": "([B)V",
+    "flags": 65537,
+    "hidden_api_flag": null,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "<init>",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getPayload",
+        "signature": "()[B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Ljava/nio/ByteOrder;",
+        "field": "LITTLE_ENDIAN",
+        "type": "Ljava/nio/ByteOrder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/TestRxResponse;",
+        "field": "status",
+        "type": "I"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/rsp/TestRxResponse;",
+    "method": "toString",
+    "signature": "()Ljava/lang/String;",
+    "flags": 1,
+    "hidden_api_flag": null,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "toHexString",
+        "signature": "(B)Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/code/StatusCode;",
+        "method": "getStatusName",
+        "signature": "(I)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "format",
+        "signature": "(Ljava/lang/String;[Ljava/lang/Object;)Ljava/lang/String;"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/TestRxResponse;",
+        "field": "status",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/TestRxResponse;",
+        "field": "mStatusCode",
+        "type": "Lcom/samsung/uwb/support/data/code/StatusCode;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/TestRxResponse;",
+        "field": "status",
+        "type": "I"
+      }
+    ]
+  }
+]

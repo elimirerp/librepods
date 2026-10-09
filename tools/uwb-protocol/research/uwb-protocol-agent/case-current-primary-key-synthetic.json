@@ -1,0 +1,19 @@
+{
+  "scope": "Offline execution of original 9A348 paired-owner primary-public-key request.\nNo credentials, actual identifiers, radio operations, or live keys are used.\nLogging and final indication transport are explicit harness boundaries.\nOpcode validation, pairing predicate, getter and payload selection run unchanged.\n",
+  "cases": [
+    {
+      "enrolled": true,
+      "encryption_flag_queried": false,
+      "response_opcode": "0x402",
+      "response_payload_length": 28,
+      "synthetic_current_public_key_returned": true
+    },
+    {
+      "enrolled": false,
+      "encryption_flag_queried": false,
+      "response_opcode": "0x402",
+      "response_payload_length": 28,
+      "synthetic_current_public_key_returned": false
+    }
+  ]
+}

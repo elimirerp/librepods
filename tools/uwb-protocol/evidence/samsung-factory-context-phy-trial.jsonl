@@ -1,0 +1,6 @@
+{"event":"uwb_idle_confirmed"}
+{"event":"test_session_response","status":0,"responseBytes":5,"sessionType":208,"factorySessionContext":true}
+{"event":"phy_configuration_response","status":0,"parameterStatus":[],"radioStarted":false}
+{"event":"phy_readback","exactMatch":true,"values":{"04":[9],"1f":[0],"12":[3],"15":[0],"14":[10],"17":[1],"29":[1],"35":[1]},"rangingProven":false}
+{"event":"test_session_deinitialized","status":0}
+{"event":"uwb_session_cleanup","idle":true}

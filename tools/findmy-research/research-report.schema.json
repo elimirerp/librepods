@@ -1,0 +1,309 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:librepods:findmy-research:report:1",
+  "title": "Nonsecret Termux UWB research report",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "simulation",
+    "device",
+    "caller",
+    "observations",
+    "exposed_api",
+    "app_capabilities",
+    "interop",
+    "limitations",
+    "next_steps"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "simulation": {
+      "type": "object",
+      "required": [
+        "scenarios",
+        "passed",
+        "hardware_commands_executed"
+      ],
+      "properties": {
+        "scenarios": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "success",
+              "missing",
+              "denied"
+            ]
+          },
+          "minItems": 3,
+          "uniqueItems": true
+        },
+        "passed": {
+          "const": true
+        },
+        "hardware_commands_executed": {
+          "const": 0
+        }
+      }
+    },
+    "device": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "api_level": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "android_release": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "security_patch": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "oneui_version": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "manufacturer": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ],
+          "maxLength": 80
+        },
+        "model": {
+          "type": [
+            "string",
+            "integer",
+            "null"
+          ],
+          "maxLength": 80
+        }
+      }
+    },
+    "caller": {
+      "type": "object",
+      "required": [
+        "context",
+        "permission_limitations"
+      ],
+      "properties": {
+        "context": {
+          "type": "string"
+        },
+        "permission_limitations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "observations": {
+      "type": "array",
+      "maxItems": 40,
+      "items": {
+        "type": "object",
+        "required": [
+          "area",
+          "status",
+          "value",
+          "evidence"
+        ],
+        "properties": {
+          "area": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "observed",
+              "documented",
+              "inferred",
+              "denied",
+              "unavailable",
+              "unresolved"
+            ]
+          },
+          "value": {},
+          "evidence": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "required": [
+                "source",
+                "finding"
+              ],
+              "properties": {
+                "source": {
+                  "type": "string"
+                },
+                "finding": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "exposed_api": {
+      "type": "object",
+      "required": [
+        "public_methods",
+        "privileged_methods",
+        "nbamms_evidence"
+      ],
+      "properties": {
+        "public_methods": {
+          "type": "array",
+          "maxItems": 40,
+          "items": {
+            "type": "object",
+            "required": [
+              "symbol",
+              "source",
+              "finding"
+            ],
+            "properties": {
+              "symbol": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "finding": {
+                "type": "string"
+              },
+              "permission": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "privileged_methods": {
+          "type": "array",
+          "maxItems": 40,
+          "items": {
+            "type": "object",
+            "required": [
+              "symbol",
+              "source",
+              "finding"
+            ],
+            "properties": {
+              "symbol": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "finding": {
+                "type": "string"
+              },
+              "permission": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "nbamms_evidence": {
+          "type": "array",
+          "maxItems": 40,
+          "items": {
+            "type": "object",
+            "required": [
+              "symbol",
+              "source",
+              "finding"
+            ],
+            "properties": {
+              "symbol": {
+                "type": "string"
+              },
+              "source": {
+                "type": "string"
+              },
+              "finding": {
+                "type": "string"
+              },
+              "permission": {
+                "type": "string"
+              }
+            }
+          }
+        }
+      }
+    },
+    "app_capabilities": {
+      "type": "object",
+      "required": [
+        "status",
+        "reason"
+      ],
+      "properties": {
+        "status": {
+          "const": "not_queried"
+        },
+        "reason": {
+          "type": "string"
+        }
+      }
+    },
+    "interop": {
+      "type": "object",
+      "required": [
+        "apple_case_mode",
+        "android_nbamms_support",
+        "public_fira_compatible",
+        "live_ranging_performed"
+      ],
+      "properties": {
+        "apple_case_mode": {
+          "type": "string"
+        },
+        "android_nbamms_support": {
+          "type": "string"
+        },
+        "public_fira_compatible": {
+          "type": "string"
+        },
+        "live_ranging_performed": {
+          "const": false
+        }
+      }
+    },
+    "limitations": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_steps": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  }
+}

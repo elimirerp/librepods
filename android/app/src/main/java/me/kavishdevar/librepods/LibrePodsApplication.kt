@@ -14,11 +14,13 @@ import me.kavishdevar.librepods.utils.XposedState
 class LibrePodsApplication: Application(), XposedServiceHelper.OnServiceListener, DefaultLifecycleObserver {
 
     override fun onCreate() {
+        super<Application>.onCreate()
+        // The native library probe must not initialize app services or Python.
+        if (getProcessName().endsWith(":adiprobe")) return
+
         XposedServiceHelper.registerListener(this)
         BillingManager.provider = BillingProviderFactory.create(this)
         ProcessLifecycleOwner.get().lifecycle.addObserver(this)
-
-        super<Application>.onCreate()
 
     }
 

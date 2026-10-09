@@ -1,0 +1,247 @@
+[
+  {
+    "tag": 160,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/SlotBitMask;",
+    "offset": 332
+  },
+  {
+    "tag": 161,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/SyncCodeIndexBitMask;",
+    "offset": 326
+  },
+  {
+    "tag": 162,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/HoppingConfigModesAndSequences;",
+    "offset": 320
+  },
+  {
+    "tag": 163,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/ChannelBitMask;",
+    "offset": 314
+  },
+  {
+    "tag": 164,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/SupportedProtocolVersion;",
+    "offset": 308
+  },
+  {
+    "tag": 165,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/UwbConfigId;",
+    "offset": 302
+  },
+  {
+    "tag": 166,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/PulseShapeCombo;",
+    "offset": 296
+  },
+  {
+    "tag": 167,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/RanMultiplier;",
+    "offset": 290
+  },
+  {
+    "tag": 168,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/SupportedMaxSessionNum;",
+    "offset": 284
+  },
+  {
+    "tag": 169,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/MinUwbInitiationTime;",
+    "offset": 278
+  },
+  {
+    "tag": 171,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/UwbsMaxPpm;",
+    "offset": 272
+  },
+  {
+    "tag": 192,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/PowerStats;",
+    "offset": 266
+  },
+  {
+    "tag": 227,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/AoaRstReqInterleaving;",
+    "offset": 260
+  },
+  {
+    "tag": 228,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/MinRangingInterval;",
+    "offset": 254
+  },
+  {
+    "tag": 229,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/RangeDataNtfConfig;",
+    "offset": 248
+  },
+  {
+    "tag": 230,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/RssiReporting;",
+    "offset": 242
+  },
+  {
+    "tag": 231,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/Diagnostics;",
+    "offset": 235
+  },
+  {
+    "tag": 232,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/MinSlotDurationRstu;",
+    "offset": 228
+  },
+  {
+    "tag": 233,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/MaxRangingSessionNum;",
+    "offset": 221
+  },
+  {
+    "tag": 234,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/SupportedChannelsAoa;",
+    "offset": 214
+  },
+  {
+    "tag": 0,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/MaxMessageSize;",
+    "offset": 207
+  },
+  {
+    "tag": 1,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/MaxDataPacketPayloadSize;",
+    "offset": 200
+  },
+  {
+    "tag": 2,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/FiraPhyVersionRange;",
+    "offset": 193
+  },
+  {
+    "tag": 3,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/FiraMacVersionRange;",
+    "offset": 186
+  },
+  {
+    "tag": 4,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/DeviceType;",
+    "offset": 179
+  },
+  {
+    "tag": 5,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/DeviceRole;",
+    "offset": 172
+  },
+  {
+    "tag": 6,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/RangingMethod;",
+    "offset": 165
+  },
+  {
+    "tag": 7,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/StsConfig;",
+    "offset": 158
+  },
+  {
+    "tag": 8,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/MultiNodeMode;",
+    "offset": 151
+  },
+  {
+    "tag": 9,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/RangingTimeStruct;",
+    "offset": 144
+  },
+  {
+    "tag": 10,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/ScheduleMode;",
+    "offset": 137
+  },
+  {
+    "tag": 11,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/HoppingMode;",
+    "offset": 130
+  },
+  {
+    "tag": 12,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/BlockStriding;",
+    "offset": 123
+  },
+  {
+    "tag": 13,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/UwbInitiationTime;",
+    "offset": 116
+  },
+  {
+    "tag": 14,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/Channels;",
+    "offset": 109
+  },
+  {
+    "tag": 15,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/RframeConfig;",
+    "offset": 102
+  },
+  {
+    "tag": 16,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/CcConstraintLength;",
+    "offset": 95
+  },
+  {
+    "tag": 17,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/BprfParameterSets;",
+    "offset": 88
+  },
+  {
+    "tag": 18,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/HprfParameterSets;",
+    "offset": 81
+  },
+  {
+    "tag": 19,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/AoaSupport;",
+    "offset": 74
+  },
+  {
+    "tag": 20,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/ExtendedMacAddress;",
+    "offset": 67
+  },
+  {
+    "tag": 21,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/SuspendRangingSupport;",
+    "offset": 60
+  },
+  {
+    "tag": 22,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/SessionKeyLength;",
+    "offset": 53
+  },
+  {
+    "tag": 23,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/DtAnchorMaxActiveRr;",
+    "offset": 46
+  },
+  {
+    "tag": 24,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/DtTagMaxActiveRr;",
+    "offset": 39
+  },
+  {
+    "tag": 25,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/DtTagBlockSkipping;",
+    "offset": 32
+  },
+  {
+    "tag": 26,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/PsduLengthSupport;",
+    "offset": 25
+  },
+  {
+    "tag": 27,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/LlCapabilityParam;",
+    "offset": 18
+  },
+  {
+    "tag": 28,
+    "class": "Lcom/samsung/uwb/support/data/param/capsinfo/BypassLogicalLinkModeSupport;",
+    "offset": 11
+  }
+]

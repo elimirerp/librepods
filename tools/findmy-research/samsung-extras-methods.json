@@ -1,0 +1,532 @@
+[
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+    "method": "registerSecUwbCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ISecUwbCallback;)I",
+    "flags": 1025,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+    "method": "registerTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;Ljava/lang/String;I)V",
+    "flags": 1025,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+    "method": "sendUciMessage",
+    "signature": "(II[B)[B",
+    "flags": 1025,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+    "method": "unregisterTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V",
+    "flags": 1025,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Default;",
+    "method": "registerSecUwbCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ISecUwbCallback;)I",
+    "flags": 1,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Default;",
+    "method": "registerTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;Ljava/lang/String;I)V",
+    "flags": 1,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Default;",
+    "method": "sendUciMessage",
+    "signature": "(II[B)[B",
+    "flags": 1,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Default;",
+    "method": "unregisterTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V",
+    "flags": 1,
+    "strings": [],
+    "calls": []
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Stub$Proxy;",
+    "method": "registerSecUwbCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ISecUwbCallback;)I",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Stub$Proxy;",
+        "method": "asBinder",
+        "signature": "()Landroid/os/IBinder;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "obtain",
+        "signature": "(Landroid/os/IBinder;)Landroid/os/Parcel;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "obtain",
+        "signature": "()Landroid/os/Parcel;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeInterfaceToken",
+        "signature": "(Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeStrongInterface",
+        "signature": "(Landroid/os/IInterface;)V"
+      },
+      {
+        "class": "Landroid/os/IBinder;",
+        "method": "transact",
+        "signature": "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "readException",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "readInt",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Stub$Proxy;",
+    "method": "registerTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;Ljava/lang/String;I)V",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Stub$Proxy;",
+        "method": "asBinder",
+        "signature": "()Landroid/os/IBinder;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "obtain",
+        "signature": "(Landroid/os/IBinder;)Landroid/os/Parcel;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "obtain",
+        "signature": "()Landroid/os/Parcel;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeInterfaceToken",
+        "signature": "(Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeStrongInterface",
+        "signature": "(Landroid/os/IInterface;)V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeString",
+        "signature": "(Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeInt",
+        "signature": "(I)V"
+      },
+      {
+        "class": "Landroid/os/IBinder;",
+        "method": "transact",
+        "signature": "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "readException",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Stub$Proxy;",
+    "method": "sendUciMessage",
+    "signature": "(II[B)[B",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Stub$Proxy;",
+        "method": "asBinder",
+        "signature": "()Landroid/os/IBinder;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "obtain",
+        "signature": "(Landroid/os/IBinder;)Landroid/os/Parcel;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "obtain",
+        "signature": "()Landroid/os/Parcel;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeInterfaceToken",
+        "signature": "(Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeInt",
+        "signature": "(I)V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeInt",
+        "signature": "(I)V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeByteArray",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Landroid/os/IBinder;",
+        "method": "transact",
+        "signature": "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "readException",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "createByteArray",
+        "signature": "()[B"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Stub$Proxy;",
+    "method": "unregisterTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter$Stub$Proxy;",
+        "method": "asBinder",
+        "signature": "()Landroid/os/IBinder;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "obtain",
+        "signature": "(Landroid/os/IBinder;)Landroid/os/Parcel;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "obtain",
+        "signature": "()Landroid/os/Parcel;"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeInterfaceToken",
+        "signature": "(Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "writeStrongInterface",
+        "signature": "(Landroid/os/IInterface;)V"
+      },
+      {
+        "class": "Landroid/os/IBinder;",
+        "method": "transact",
+        "signature": "(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "readException",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/os/Parcel;",
+        "method": "recycle",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "getUwbAdapter",
+    "signature": "(Landroid/content/Context;)Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "flags": 131081,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "getServiceInterface",
+        "signature": "()Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/lang/UnsupportedOperationException;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter$$ExternalSyntheticLambda0;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/util/HashMap;",
+        "method": "computeIfAbsent",
+        "signature": "(Ljava/lang/Object;Ljava/util/function/Function;)Ljava/lang/Object;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "lambda$getUwbAdapter$0",
+    "signature": "(Landroid/content/Context;)Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "flags": 4104,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "<init>",
+        "signature": "()V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "registerSecUwbCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/SecUwbCallback;)I",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/util/concurrent/Executors;",
+        "method": "newSingleThreadExecutor",
+        "signature": "()Ljava/util/concurrent/ExecutorService;"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter$1;",
+        "method": "<init>",
+        "signature": "(Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;Lcom/samsung/android/uwb_extras/SecUwbCallback;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+        "method": "registerSecUwbCallback",
+        "signature": "(Lcom/samsung/android/uwb_extras/ISecUwbCallback;)I"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "attemptDeadServiceRecovery",
+        "signature": "(Ljava/lang/Exception;)V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "registerTimesyncCallback",
+    "signature": "(Ljava/util/concurrent/Executor;Ljava/lang/String;ILcom/samsung/android/uwb_extras/SecUwbCallback$TimesyncCallback;)V",
+    "flags": 131073,
+    "strings": [
+      "registerTimesyncCallback - callback must not be NULL",
+      "registerTimesyncCallback - callback already registered"
+    ],
+    "calls": [
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/util/Map;",
+        "method": "containsKey",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "i",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter$2;",
+        "method": "<init>",
+        "signature": "(Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;Ljava/util/concurrent/Executor;Lcom/samsung/android/uwb_extras/SecUwbCallback$TimesyncCallback;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+        "method": "registerTimesyncCallback",
+        "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;Ljava/lang/String;I)V"
+      },
+      {
+        "class": "Ljava/util/Map;",
+        "method": "put",
+        "signature": "(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "attemptDeadServiceRecovery",
+        "signature": "(Ljava/lang/Exception;)V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "sendUciMessage",
+    "signature": "(II[B)[B",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+        "method": "sendUciMessage",
+        "signature": "(II[B)[B"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "attemptDeadServiceRecovery",
+        "signature": "(Ljava/lang/Exception;)V"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+    "method": "unregisterTimesyncCallback",
+    "signature": "(Lcom/samsung/android/uwb_extras/SecUwbCallback$TimesyncCallback;)V",
+    "flags": 131073,
+    "strings": [
+      "unregisterTimesyncCallback - callback must not be NULL",
+      "unregisterTimesyncCallback - callback not found in map"
+    ],
+    "calls": [
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/util/Map;",
+        "method": "remove",
+        "signature": "(Ljava/lang/Object;)Ljava/lang/Object;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "e",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/IUwbExtrasAdapter;",
+        "method": "unregisterTimesyncCallback",
+        "signature": "(Lcom/samsung/android/uwb_extras/ITimesyncCallback;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/uwb_extras/UwbExtrasAdapter;",
+        "method": "attemptDeadServiceRecovery",
+        "signature": "(Ljava/lang/Exception;)V"
+      }
+    ]
+  }
+]

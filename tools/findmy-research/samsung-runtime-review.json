@@ -1,0 +1,110 @@
+{
+  "schema_version": 1,
+  "date": "2026-10-08",
+  "scope": "static exact-phone artifacts plus parent-reported bounded read-only runtime results; no phone commands executed by this agent",
+  "ordinary_app": {
+    "factory": "com.samsung.android.uwb_extras.UwbExtrasAdapter.getUwbAdapter(Context)",
+    "factory_java_access": "public static declared_synchronized",
+    "factory_hidden_api_flag": 2,
+    "send_method_hidden_api_flag": 2,
+    "art_flag_meaning": "blocked",
+    "observed_lookup": "NoSuchMethodException despite Class.forName succeeding",
+    "wss_grant_can_remove_hidden_api_block": false,
+    "public_ranging_azimuth_supported": false,
+    "public_ranging_elevation_supported": false
+  },
+  "shell_binder": {
+    "service": "semuwb_extras",
+    "descriptor": "com.samsung.android.uwb_extras.IUwbExtrasAdapter",
+    "send_transaction": 2,
+    "argument_layout": [
+      "gid:int32",
+      "oid:int32",
+      "payload:byte-array"
+    ],
+    "reply_layout": [
+      "readException",
+      "byte-array payload only, no UCI header"
+    ],
+    "fixed_device_info": {
+      "gid": 0,
+      "oid": 2,
+      "empty_payload": true,
+      "parent_reported_status": 0,
+      "parent_reported_length": 157,
+      "parent_reported_version_words_unsigned_le16": [
+        3,
+        3,
+        3,
+        3
+      ]
+    },
+    "fixed_caps_info": {
+      "gid": 0,
+      "oid": 3,
+      "empty_payload": true,
+      "parent_reported_status": 0,
+      "parent_reported_length": 214,
+      "payload_schema": "status:u8,count:u8, repeated tag:u8,length:u8,value[length]"
+    }
+  },
+  "caps": {
+    "aoa_standard_mask": 0,
+    "antenna_interleaving": 1,
+    "aoa_channels_mask": 9,
+    "aoa_channels": [
+      5,
+      9
+    ],
+    "bprf_set_mask": 63,
+    "hprf_set_mask": 7158278831,
+    "sts_mask": 31,
+    "rframe_mask": 11,
+    "extended_mac_supported": false,
+    "min_slot_rstu": 1200,
+    "min_slot_us": 1000,
+    "min_interval_ms": 100,
+    "max_sessions_direct": 8,
+    "max_sessions_config": 5,
+    "no_nbamms_mode_proved": true,
+    "raw_transport_caveat": "NXP public HAL installs GET_CAPS response handler: removes extended NXP tags, overrides AoA, appends configuration TLVs and applies channel restrictions. Exact Samsung HAL may differ; shell query is not proved unfiltered silicon output.",
+    "ccc_namespace": "0xA0..0xA8 fields are CCC Digital Key capabilities, not Apple profile identifiers."
+  },
+  "angles": {
+    "processor": "SamsungSpecificDataForTwr PDoA and antenna data -> AoaCalibrationProcessor -> Postprocessor -> final azimuth/elevation",
+    "output": "SamsungUwbSessionManager.updateRangingReport creates android.uwb.AngleMeasurement and AngleOfArrivalMeasurement and sets standard RangingMeasurement angle field",
+    "interleaving_mode": 240,
+    "mode_240_enables_both_angle_fields": true,
+    "calibration_vs_fusion": "requestPostProcessing invokes calibration independently of mPpEnable. PP allowlist controls bool passed to calculatePostprocessor; do not conflate that flag with all angle availability. No package impersonation attempted.",
+    "live_angle_measurement_performed": false
+  },
+  "unresolved": [
+    "AirPods selected legacy BPRF versus NBAMMS mode",
+    "Samsung proprietary NBAMMS support and exact session configuration",
+    "Apple temporary BLE LTK connection-token injection from ordinary APK",
+    "A supported ordinary APK route to blocked Samsung Binder facade",
+    "Active calibrated interleaved angle result for this exact phone/session"
+  ],
+  "sources": [
+    {
+      "url": "https://android.googlesource.com/platform/art/+/refs/heads/main/libartbase/base/hiddenapi_flags.h",
+      "local": "source-snapshots/art-hiddenapi_flags.h"
+    },
+    {
+      "url": "https://android.googlesource.com/platform/hardware/nxp/uwb/+/refs/heads/main/halimpl/hal/phNxpUciHal_ext.cc",
+      "local": "source-snapshots/nxp-phNxpUciHal_ext.cc"
+    },
+    {
+      "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/service/java/com/android/server/uwb/params/FiraDecoder.java",
+      "local": "source-snapshots/uwb-FiraDecoder.java"
+    },
+    {
+      "url": "https://android.googlesource.com/platform/packages/modules/Uwb/+/refs/heads/main/service/java/com/android/server/uwb/params/CccDecoder.java",
+      "local": "source-snapshots/uwb-CccDecoder.java"
+    },
+    {
+      "url": "https://source.android.com/docs/core/connect/uwb-hal-interface",
+      "claim": "0xF0 interleaving configuration and E3/E8/EA capabilities"
+    }
+  ]
+}

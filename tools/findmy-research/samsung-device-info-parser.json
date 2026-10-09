@@ -1,0 +1,209 @@
+[
+  {
+    "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+    "method": "<init>",
+    "signature": "([B)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Ljava/lang/Object;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "remaining",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/param/deviceinfo/SamsungSpecificDataForDeviceInfo;",
+        "method": "<init>",
+        "signature": "([B)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Ljava/nio/ByteOrder;",
+        "field": "LITTLE_ENDIAN",
+        "type": "Ljava/nio/ByteOrder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "uciGenericVersion",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "uciGenericVersion",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "macVersion",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "macVersion",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "phyVersion",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "phyVersion",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "uciTestVersion",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "uciTestVersion",
+        "type": "[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "samsungSpecificDataForDeviceInfo",
+        "type": "Lcom/samsung/uwb/support/data/param/deviceinfo/SamsungSpecificDataForDeviceInfo;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "field": "samsungSpecificDataForDeviceInfo",
+        "type": "Lcom/samsung/uwb/support/data/param/deviceinfo/SamsungSpecificDataForDeviceInfo;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetDeviceInfoResponse;",
+    "method": "<init>",
+    "signature": "([B)V",
+    "flags": 65537,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "<init>",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/UciPacket;",
+        "method": "getPayload",
+        "signature": "()[B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "wrap",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "order",
+        "signature": "(Ljava/nio/ByteOrder;)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "rewind",
+        "signature": "()Ljava/nio/Buffer;"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "remaining",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/nio/ByteBuffer;",
+        "method": "get",
+        "signature": "([B)Ljava/nio/ByteBuffer;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;",
+        "method": "<init>",
+        "signature": "([B)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Ljava/nio/ByteOrder;",
+        "field": "LITTLE_ENDIAN",
+        "type": "Ljava/nio/ByteOrder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetDeviceInfoResponse;",
+        "field": "status",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetDeviceInfoResponse;",
+        "field": "status",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetDeviceInfoResponse;",
+        "field": "secUwbDeviceInfo",
+        "type": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/uci/rsp/CoreGetDeviceInfoResponse;",
+        "field": "secUwbDeviceInfo",
+        "type": "Lcom/samsung/uwb/support/data/SecUwbDeviceInfo;"
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+<resources>
+    <string name="findmy_devices_title">Find My devices</string>
+    <string name="findmy_devices_refresh">Refresh devices</string>
+    <string name="findmy_recovery_title">Recover owned case keys</string>
+    <string name="findmy_recovery_intro">Choose an escrow device by model and date, then use that device’s login password or PIN. Passwords are used only for this recovery. Recovered case keys stay in memory for up to 30 minutes.</string>
+    <string name="findmy_recovery_apple_password">Apple Account password for key access</string>
+    <string name="findmy_recovery_list">List recovery devices</string>
+    <string name="findmy_recovery_selected">Selected: %1$s</string>
+    <string name="findmy_recovery_device_passcode">Selected device’s login password or PIN</string>
+    <string name="findmy_recovery_unlock">Recover case keys</string>
+    <string name="findmy_recovery_clear">Clear case keys and selections</string>
+</resources>

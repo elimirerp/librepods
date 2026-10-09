@@ -654,3 +654,19 @@ obj/
 
 # End of https://www.toptal.com/developers/gitignore/api/qt,c++,clion,kotlin,python,android,pycharm,androidstudio,visualstudiocode,linux
 linux/.qmlls.ini
+
+# Find My development state and locally obtained proprietary research inputs.
+.direct-state/
+*.sock
+case-candidates-*.json
+*component-private.json
+client-identity.json
+anisette-libs.bin
+tools/uwb-protocol/research/**/*.bin
+tools/uwb-protocol/research/**/superbinary-parser/
+tools/findmy-enrollment/mac-lab-archive/registration-*.json
+tools/findmy-research/source-snapshots/samsung-uwb-thesis.pdf
+tools/findmy-research/source-snapshots/samsung-uwb-thesis.txt
+
+# Historical author Makefile is source, not generated build output.
+!tools/findmy-enrollment/mac-lab-archive/Makefile

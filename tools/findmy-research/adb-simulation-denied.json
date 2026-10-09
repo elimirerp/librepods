@@ -1,0 +1,105 @@
+{
+  "schema_version": 1,
+  "mode": "simulation",
+  "caller_context": "adb_shell",
+  "device": {
+    "api_level": {
+      "status": "denied",
+      "value": null
+    },
+    "android_release": {
+      "status": "denied",
+      "value": null
+    },
+    "security_patch": {
+      "status": "denied",
+      "value": null
+    },
+    "oneui_version": {
+      "status": "denied",
+      "value": null
+    },
+    "manufacturer": {
+      "status": "denied",
+      "value": null
+    },
+    "model": {
+      "status": "denied",
+      "value": null
+    }
+  },
+  "uwb_feature": {
+    "query_status": "denied",
+    "advertised": "unknown"
+  },
+  "shell_package_permissions": {
+    "query_status": "denied",
+    "package": "com.android.shell",
+    "grants": {
+      "UWB_PRIVILEGED": "unknown",
+      "UWB_RANGING": "unknown",
+      "RANGING": "unknown",
+      "BLUETOOTH_PRIVILEGED": "unknown",
+      "WRITE_SECURE_SETTINGS": "unknown"
+    }
+  },
+  "uwb_service": {
+    "query_status": "denied",
+    "visibility": "unknown"
+  },
+  "uwb_shell_help": {
+    "query_status": "denied",
+    "advertised_read_only_commands": []
+  },
+  "uwb_state": {
+    "query_status": "not_queried",
+    "state": "unknown"
+  },
+  "specification": {
+    "query_status": "not_queried",
+    "fira_capability_fields": {},
+    "controller_firmware_version": "not_identified_by_this_query"
+  },
+  "public_artifacts": [],
+  "artifact_directory_queries": [
+    {
+      "path": "/system/framework",
+      "query_status": "denied"
+    },
+    {
+      "path": "/system_ext/framework",
+      "query_status": "denied"
+    },
+    {
+      "path": "/product/framework",
+      "query_status": "denied"
+    },
+    {
+      "path": "/vendor/framework",
+      "query_status": "denied"
+    },
+    {
+      "path": "/apex/com.android.uwb/javalib",
+      "query_status": "denied"
+    },
+    {
+      "path": "/vendor/etc",
+      "query_status": "denied"
+    },
+    {
+      "path": "/vendor/firmware",
+      "query_status": "denied"
+    },
+    {
+      "path": "/vendor/lib64/hw",
+      "query_status": "denied"
+    }
+  ],
+  "command_count": 19,
+  "live_ranging_performed": false,
+  "limitations": [
+    "ADB shell privileges do not establish ordinary APK permissions.",
+    "Missing fields or commands do not establish missing controller support.",
+    "No identifiers, credentials, raw command output, sessions, logs or key bytes are emitted."
+  ]
+}

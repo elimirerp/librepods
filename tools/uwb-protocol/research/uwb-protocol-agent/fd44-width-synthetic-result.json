@@ -1,0 +1,15 @@
+{
+  "semantic_uuid_equal": true,
+  "synthetic_results": [
+    {
+      "input": "FD44",
+      "first_request_value": "44fd",
+      "services_found": 1
+    },
+    {
+      "input": "0000fd44-0000-1000-8000-00805f9b34fb",
+      "first_request_value": "fb349b5f800000800010000044fd0000",
+      "services_found": 0
+    }
+  ]
+}

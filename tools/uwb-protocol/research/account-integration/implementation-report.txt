@@ -1,0 +1,54 @@
+Apple Account backend implementation boundary, 2026-10-08
+
+Added in work/elimirerp-librepods (root integrates existing/shared Gradle/Manifest/UI):
+- android/app/src/main/java/me/kavishdevar/librepods/findmy/AppleAccountBackend.kt
+- findmy/anisette/ local NativeADI core, Apple CDN range extraction/hash validation, crash probe and load guard
+- android/app/src/main/cpp/adi/ JNI + CoreFoundation/mediaplatform stubs with handwritten C++ return ABI
+- android/app/src/main/assets/findmy-adi-libraries.json
+- android/app/src/main/python/findmy_account/__init__.py
+- android/app/stubs/unicorn + android/scripts/build_unicorn_stub_wheel.py
+- android/app/src/test/python/test_findmy_account.py
+MIT OpenTagViewer attribution and license retained for adapted files.
+
+API: application singleton AppleAccountBackend.get(context), inert constructor.
+StateFlow<AppleAccountStatus>; suspend prepare, signIn, requestCode, submitCode, restore, signOut, fetchTerms, acceptTerms.
+One dedicated worker serializes native and Python state. prepare explicitly invoked after Connect; no cold-start provisioning.
+Real pinned FindMy.py GrandSlam SRP + trusted-device/SMS2FA, local Anisette via native Android Apple Music ADI.
+No remote Anisette fallback. Saved machine/profile/serial/uid/devid checked against restored token state.
+Password is removed when login completes; finished account reconstructed with password=None.
+Only LOGGED_IN state exportable; incomplete 2FA/terms remains in memory.
+The pinned synchronous wrapper's close() is async: explicitly awaited on wrapper's owned event loop, GC hook detached, loop closed.
+Encrypted versioned AES256GCM session uses AndroidKeyStore, fresh12byte IV,128bit tag, app/version AAD.
+All token blob/identity/ADI state/guards are in noBackupFilesDir. Decrypt never replaces missing key.
+API errors do not expose repr/exception messages/raw Apple bodies/credentials/tokens. No added account logging.
+Signout deletes local session and closes account while preserving native install identity and provisioning.
+Restore is offline; signed_in restored means parsed bound session, not independently verified token validity.
+New auth is required when token reauthentication needs the absent password; no promise of permanent automatic session refresh.
+
+Dependencies:
+- Chaquopy17.0.0 required for fork AGP9.2.1. Official docs https://chaquo.com/chaquopy/doc/current/versions.html confirms17 supportsAGP7.3-9.2 and16.1 only7.0-8.13.
+- Python3.12; arm64-v8a+x86_64; pinnedFindMy commit7969003ca785658369b650f75d9e7ca519566bf6 (OTV samepin).
+- Transitive srp,cryptography,beautifulsoup4,aiohttp,bleak,typingextensions,anisette,protobuf>=5.28.1,<8.
+- Unicorn real emulation unavailable in Chaquopy; generated purePython import stub deliberately raises on Uc use. Our provider never uses emulation.
+- No Jackson,Lombok,Room,Rx deps introduced.
+- CMake add_subdirectory(adi); targets findmy_adi/CoreFoundation_stub/mediaplatform_stub.
+- Manifest INTERNET and AppleLibraryProbeService exported=false process=:adiprobe.
+- App initialization must skip :adiprobe before normal app/Python startup.
+- Exact Gradle block: work/account-integration-agent/gradle-block.txt.
+
+Tests run: 14offline tests passed with Python3.12, -Werror. Actual pinnedFindMy constructor/customnativeprovider/serialization/restoration constructor exercised with aiohttp requests forbidden. Fake trusted/SMS2FA sequence, badcode retry, malformedcode, credentialsfailure closing, complete-only export, passwordnotexported, identities/provider tamper, corruptstate, termsfetch-beforeaccept.
+Log: work/account-integration-agent/offline-tests.log.
+Stub wheel generation passed.
+No live account calls, no native ADI execution on phone, no BLE or UWB calls.
+Native ABI/16Kpage/device library compatibility and AndroidKeyStore behavior remain phone/emulator smoke gates.
+Root owns whole APK build; enrollment deferred to prioritize user UWB request. No claim of Android AirPods registration/precision finding success.
+
+Why not rustpush fulltree: root LICENSE SSPLv1, large APNS/iMessage/media/cloud dependencies, missing git submodules apple-private-apis/icloud_auth+omnisette and OpenAbsinthe; not a smaller drop-in account backend. OTV, FindMy.py, Anisette.py, SRP license files inspected MIT; LibrePods GPLv3 preserved.
+
+Actual Android dependency blocker resolved:
+Chaquopy pip cannot satisfy Bleak3.0.2 ->dbus-fast>=1.83.0. FindMy source already lazily imports scanner; account path has no Bleak usage.
+Vendored complete exact pinned MIT source in android/vendor/findmy-account. Only upstream pyproject dependency line Bleak removed; functional package source unchanged and each file SHA256 recorded in PROVENANCE.json.
+Generator android/scripts/build_findmy_account_wheel.py verifies source hashes/file inventory, includes all package subpackages, generates deterministic findmy-0.10.1+librepods.1-py3-none-any.whl with LICENSE+PROVENANCE.
+Installed generatedwheel to owned testvenv, uninstalled Bleak, then 14tests passed again(-Werror).
+Actual account/cloudkit/proto/util/keychain subpackages imported successfully, Bleak absent True.
+Log offline-vendored-tests.log. Root replaces gitFindMy install with generatedwheel and wires generation before PythonRequirements.

@@ -1,0 +1,344 @@
+[
+  {
+    "model": "A3064",
+    "tag": "AUCH",
+    "ordinal": 0,
+    "length": 50776,
+    "sha256": "c920afa3647a5018810de183bd3213b85ced581730fe19b4f72052ab9c1bb42a",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auch_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AUDT",
+    "ordinal": 0,
+    "length": 12758,
+    "sha256": "b83b0a3e7d92771410d1f69a1bfbe3a5504a4d2fa80b6c6d72efdf5a4d46e585",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/audt_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AUER",
+    "ordinal": 0,
+    "length": 16696,
+    "sha256": "516d6365aa11a56e9933d25ea5fe4a7df51be22dc8e82abdba15bb01f9f776fa",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auer_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AUFM",
+    "ordinal": 0,
+    "length": 42718,
+    "sha256": "f01a900c5b094f91ed5cf2b0982f030e1693511b8b7dfbb3523c92c92f444424",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aufm_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AUFR",
+    "ordinal": 0,
+    "length": 20890,
+    "sha256": "e1eb518e6cc843c89364109d4788226427f374b4400c0cce7e5df49035cce6a9",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aufr_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AULB",
+    "ordinal": 0,
+    "length": 45876,
+    "sha256": "6c4c1091982dcb3e35c8bac990e5f157b20a5a7488ee27dfc39954335f063578",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aulb_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AUPC",
+    "ordinal": 0,
+    "length": 16788,
+    "sha256": "72636592086ec055ff3156d9ecd4f748afce299643dbdd4ac984688e6b8cf0bf",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aupc_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AUPS",
+    "ordinal": 0,
+    "length": 31276,
+    "sha256": "1203cbab86cb94276c2a99e4c01d3d2fd879dd54fcbd190b37dfe5c034ea7cad",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aups_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AUUF",
+    "ordinal": 0,
+    "length": 23394,
+    "sha256": "b3c0a5958b69d9afbd98203954f025e075e0e72243000e2f7ce27823e9d92e7b",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auuf_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "AUUT",
+    "ordinal": 0,
+    "length": 35460,
+    "sha256": "4fb1059b85f9cbf1d1686f1b7dc74da427debd120f9a94084259aafecc048fca",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auut_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "BAPP",
+    "ordinal": 0,
+    "length": 102464,
+    "sha256": "4a508595434340c188bb9917ce692c2edd85af8acfa5279603aaed4f4a26e40c",
+    "sourcePath": "usr/local/standalone/firmware/b747/bapp_b747.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "CMAP",
+    "ordinal": 0,
+    "length": 1116,
+    "sha256": "f7a7fee4d1117efd41f9bb3f9d923c8af11f2ad3faddf56cee863818c79f19a7",
+    "sourcePath": "usr/local/standalone/firmware/uarp/cmaps/b747/a3122_cmap.plist",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "CTAB",
+    "ordinal": 0,
+    "length": 6533378,
+    "sha256": "64deb370d335d0b1544bc99ac9f26c1ce2b5dd249a1e0372f77d533e66138951",
+    "sourcePath": "ftab.bin",
+    "compressionChunkSize": 16384
+  },
+  {
+    "model": "A3064",
+    "tag": "FTAB",
+    "ordinal": 0,
+    "length": 8413184,
+    "sha256": "81827a6efa79905b5bb5a372f0909c83e902fe806bb3d9672e7212b4ba4a0bc8",
+    "sourcePath": "ftab.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "NERF",
+    "ordinal": 0,
+    "length": 402632,
+    "sha256": "d5670f883e56efc8b4db4ac9fe9a28fec2a02271e442492924faaf5070898f47",
+    "sourcePath": "usr/local/standalone/firmware/nerfthis/b747/nerfthis_b747user.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "ROSE",
+    "ordinal": 0,
+    "length": 896868,
+    "sha256": "d4751a3ea6ce118fc9141eca33e1bda890e306b393f81b1a5bd15d433ff221b2",
+    "sourcePath": "usr/local/standalone/firmware/Rose/b747/ftab.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "STFW",
+    "ordinal": 0,
+    "length": 624192,
+    "sha256": "3a5d7e7031ea6130f9ebc350bfa208aac2fd9397b97cb65e2a44efe08704a3cf",
+    "sourcePath": "usr/local/standalone/firmware/b747/FWUP_b747.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "TMAP",
+    "ordinal": 0,
+    "length": 69454,
+    "sha256": "858f40f260ccfab3ef4b91616270f9577e29c5b08a201b484b6400a265cb027c",
+    "sourcePath": "usr/local/standalone/firmware/uarp/tmaps/b747/a3122.plist",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3064",
+    "tag": "TMAP",
+    "ordinal": 1,
+    "length": 532556,
+    "sha256": "41562884119bbcc907a387b5814f0548ba48c47fd6754cd8a39f1f8d2c66b1d2",
+    "sourcePath": "usr/local/standalone/firmware/uarp/tmaps/b788/a3064.plist",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUCH",
+    "ordinal": 0,
+    "length": 50776,
+    "sha256": "c920afa3647a5018810de183bd3213b85ced581730fe19b4f72052ab9c1bb42a",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auch_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUDT",
+    "ordinal": 0,
+    "length": 12758,
+    "sha256": "b83b0a3e7d92771410d1f69a1bfbe3a5504a4d2fa80b6c6d72efdf5a4d46e585",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/audt_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUER",
+    "ordinal": 0,
+    "length": 16696,
+    "sha256": "516d6365aa11a56e9933d25ea5fe4a7df51be22dc8e82abdba15bb01f9f776fa",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auer_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUFM",
+    "ordinal": 0,
+    "length": 42718,
+    "sha256": "f01a900c5b094f91ed5cf2b0982f030e1693511b8b7dfbb3523c92c92f444424",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aufm_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUFR",
+    "ordinal": 0,
+    "length": 20890,
+    "sha256": "e1eb518e6cc843c89364109d4788226427f374b4400c0cce7e5df49035cce6a9",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aufr_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AULB",
+    "ordinal": 0,
+    "length": 45876,
+    "sha256": "6c4c1091982dcb3e35c8bac990e5f157b20a5a7488ee27dfc39954335f063578",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aulb_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUPC",
+    "ordinal": 0,
+    "length": 16788,
+    "sha256": "72636592086ec055ff3156d9ecd4f748afce299643dbdd4ac984688e6b8cf0bf",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aupc_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUPS",
+    "ordinal": 0,
+    "length": 31276,
+    "sha256": "1203cbab86cb94276c2a99e4c01d3d2fd879dd54fcbd190b37dfe5c034ea7cad",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aups_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUUF",
+    "ordinal": 0,
+    "length": 23394,
+    "sha256": "b3c0a5958b69d9afbd98203954f025e075e0e72243000e2f7ce27823e9d92e7b",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auuf_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "AUUT",
+    "ordinal": 0,
+    "length": 35460,
+    "sha256": "4fb1059b85f9cbf1d1686f1b7dc74da427debd120f9a94084259aafecc048fca",
+    "sourcePath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auut_jb.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "BAPP",
+    "ordinal": 0,
+    "length": 102464,
+    "sha256": "4a508595434340c188bb9917ce692c2edd85af8acfa5279603aaed4f4a26e40c",
+    "sourcePath": "usr/local/standalone/firmware/b747/bapp_b747.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "CMAP",
+    "ordinal": 0,
+    "length": 1116,
+    "sha256": "f7a7fee4d1117efd41f9bb3f9d923c8af11f2ad3faddf56cee863818c79f19a7",
+    "sourcePath": "usr/local/standalone/firmware/uarp/cmaps/b747/a3122_cmap.plist",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "CTAB",
+    "ordinal": 0,
+    "length": 6533379,
+    "sha256": "c06308d6f7c4e50076f354fab69facce63aa2aa15df2879279150bce3b682aaa",
+    "sourcePath": "ftab.bin",
+    "compressionChunkSize": 16384
+  },
+  {
+    "model": "A3122",
+    "tag": "FTAB",
+    "ordinal": 0,
+    "length": 8413184,
+    "sha256": "2114a5b22d144b1f796d27c52c90309e42632549a98730d79de5aede0669dcc0",
+    "sourcePath": "ftab.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "NERF",
+    "ordinal": 0,
+    "length": 402632,
+    "sha256": "d5670f883e56efc8b4db4ac9fe9a28fec2a02271e442492924faaf5070898f47",
+    "sourcePath": "usr/local/standalone/firmware/nerfthis/b747/nerfthis_b747user.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "ROSE",
+    "ordinal": 0,
+    "length": 896868,
+    "sha256": "d4751a3ea6ce118fc9141eca33e1bda890e306b393f81b1a5bd15d433ff221b2",
+    "sourcePath": "usr/local/standalone/firmware/Rose/b747/ftab.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "STFW",
+    "ordinal": 0,
+    "length": 624192,
+    "sha256": "3a5d7e7031ea6130f9ebc350bfa208aac2fd9397b97cb65e2a44efe08704a3cf",
+    "sourcePath": "usr/local/standalone/firmware/b747/FWUP_b747.bin",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "TMAP",
+    "ordinal": 0,
+    "length": 69454,
+    "sha256": "858f40f260ccfab3ef4b91616270f9577e29c5b08a201b484b6400a265cb027c",
+    "sourcePath": "usr/local/standalone/firmware/uarp/tmaps/b747/a3122.plist",
+    "compressionChunkSize": null
+  },
+  {
+    "model": "A3122",
+    "tag": "TMAP",
+    "ordinal": 1,
+    "length": 532556,
+    "sha256": "41562884119bbcc907a387b5814f0548ba48c47fd6754cd8a39f1f8d2c66b1d2",
+    "sourcePath": "usr/local/standalone/firmware/uarp/tmaps/b788/a3064.plist",
+    "compressionChunkSize": null
+  }
+]

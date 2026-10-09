@@ -21,3 +21,10 @@
 #-renamesourcefileattribute SourceFile
 
 -keep class me.kavishdevar.librepods.utils.KotlinModule { *; }
+
+# JNI symbols and the Python bridge refer to these Java names directly.
+-keep class me.kavishdevar.librepods.findmy.anisette.** { *; }
+
+# app_process launches this exact class from the installed APK.
+-keep class me.kavishdevar.librepods.findmy.root.RootBluetoothProbe { *; }
+-keep class me.kavishdevar.librepods.findmy.root.RootHciBridge** { *; }

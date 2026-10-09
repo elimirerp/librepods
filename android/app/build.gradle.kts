@@ -3,6 +3,7 @@ import java.util.Properties
 val appVersionName = "1.0.1-rc1"
 
 plugins {
+    id("com.chaquo.python")
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.aboutLibraries)
@@ -23,6 +24,39 @@ val releaseSigningAvailable = listOf(
     "RELEASE_KEY_ALIAS",
     "RELEASE_KEY_PASSWORD"
 ).all { props[it]?.toString()?.isNotBlank() == true }
+
+// Native ADI supplies Anisette; the unused desktop Unicorn backend must fail closed.
+val findMyBuildPython = providers.gradleProperty("findMyBuildPython").getOrElse("python3.12")
+val unicornStubWheel = layout.buildDirectory.file("generated/stub-wheels/unicorn-2.1.1-py3-none-any.whl")
+val generateUnicornStubWheel = tasks.register<Exec>("generateUnicornStubWheel") {
+    val script = rootProject.file("scripts/build_unicorn_stub_wheel.py")
+    inputs.dir(layout.projectDirectory.dir("stubs/unicorn"))
+    inputs.file(script)
+    outputs.file(unicornStubWheel)
+    commandLine(findMyBuildPython, script.absolutePath, unicornStubWheel.get().asFile.absolutePath)
+}
+val findmyAccountWheel = layout.buildDirectory.file("generated/account-wheels/findmy-0.10.1+librepods.1-py3-none-any.whl")
+val generateFindmyAccountWheel = tasks.register<Exec>("generateFindmyAccountWheel") {
+    val script = rootProject.file("scripts/build_findmy_account_wheel.py")
+    inputs.dir(rootProject.file("vendor/findmy-account"))
+    inputs.file(script)
+    outputs.file(findmyAccountWheel)
+    commandLine(findMyBuildPython, script.absolutePath, findmyAccountWheel.get().asFile.absolutePath)
+}
+tasks.matching { it.name.contains("PythonRequirements") || it.name.contains("PythonReqs") }
+    .configureEach { dependsOn(generateUnicornStubWheel, generateFindmyAccountWheel) }
+
+chaquopy {
+    defaultConfig {
+        version = "3.12"
+        buildPython(findMyBuildPython)
+        pip {
+            install(unicornStubWheel.get().asFile.absolutePath)
+            install(findmyAccountWheel.get().asFile.absolutePath)
+            install(rootProject.file("vendor/bumble-mobile/bumble-0.0.223+librepods.1-py3-none-any.whl").absolutePath)
+        }
+    }
+}
 
 kotlin {
     compilerOptions {
@@ -51,6 +85,9 @@ android {
         targetSdk = 37
         versionCode = 64
         versionName = appVersionName
+        ndk {
+            abiFilters += listOf("arm64-v8a", "x86_64")
+        }
     }
     buildTypes {
         release {

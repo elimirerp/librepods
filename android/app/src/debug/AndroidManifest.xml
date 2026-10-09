@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- This debug probe reads capability callbacks; it never opens a session. -->
+    <uses-permission android:name="android.permission.RANGING" />
+    <uses-permission android:name="android.permission.UWB_RANGING" />
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS" />
+    <!-- Debug research scanner needs beacon results which neverForLocation may omit. -->
+    <uses-permission android:name="android.permission.BLUETOOTH_SCAN"
+        tools:remove="android:usesPermissionFlags" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <application>
+        <activity android:name=".findmy.AppleAccountRenderProbeActivity" android:exported="false" />
+        <activity android:name=".findmy.uwb.FindingPreviewActivity" android:exported="true" />
+    </application>
+    <instrumentation
+        android:name="me.kavishdevar.librepods.findmy.uwb.UwbProbeInstrumentation"
+        android:targetPackage="${applicationId}"
+        android:functionalTest="false"
+        android:handleProfiling="false" />
+</manifest>

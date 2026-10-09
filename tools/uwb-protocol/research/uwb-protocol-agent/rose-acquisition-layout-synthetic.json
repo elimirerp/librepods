@@ -1,0 +1,25 @@
+{
+  "scope": "Execute native ROSE mini-slot normalization and acquisition reply builder.\nOnly public synthetic addresses/timestamps. No RF, AES, owner material or FCS.\n",
+  "normalization": [
+    {
+      "packetGroup": 0,
+      "zeroCodesBecome": [
+        12,
+        12
+      ]
+    },
+    {
+      "packetGroup": 1,
+      "zeroCodesBecome": [
+        56,
+        56
+      ]
+    }
+  ],
+  "syntheticRoseMac": "a002030405060708",
+  "replyPsduWithoutFcs": "41a80100020304050607080102030405060708a5a50031",
+  "rxTimestamp48": "0x1234fffffff0",
+  "delayNativeTicks": 115200,
+  "scheduledTx48": "0x12350001c1f0",
+  "fcsEmulated": false
+}

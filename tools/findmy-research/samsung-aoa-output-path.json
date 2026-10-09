@@ -1,0 +1,1864 @@
+[
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+    "method": "updateRangingReport",
+    "signature": "(Landroid/uwb/RangingReport;Lcom/samsung/uwb/support/data/ranging/RangingData;Ljava/lang/String;Lcom/google/uwb/support/base/Params;)Landroid/uwb/RangingReport;",
+    "flags": 2,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Landroid/uwb/RangingReport;",
+        "method": "getMeasurements",
+        "signature": "()Ljava/util/List;"
+      },
+      {
+        "class": "Ljava/util/ArrayList;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/String;",
+        "method": "equals",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/google/uwb/support/fira/FiraOpenSessionParams;",
+        "method": "getAoaResultRequest",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/lang/IllegalArgumentException;",
+        "method": "<init>",
+        "signature": "(Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getRangingMeasurementType",
+        "signature": "()B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getRangingMeasurements",
+        "signature": "()[Lcom/samsung/uwb/support/data/ranging/Measurement;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getNumOfRangingMeasurements",
+        "signature": "()B"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "get",
+        "signature": "(I)Ljava/lang/Object;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getStatus",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "add",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getRemoteDeviceAddress",
+        "signature": "()Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setRemoteDeviceAddress",
+        "signature": "(Landroid/uwb/UwbAddress;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setStatus",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getElapsedRealtimeNanos",
+        "signature": "()J"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setElapsedRealtimeNanos",
+        "signature": "(J)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getLineOfSight",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setLineOfSight",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getMeasurementFocus",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setMeasurementFocus",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getRssiDbm",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setRssiDbm",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getRangingMeasurementMetadata",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setRangingMeasurementMetadata",
+        "signature": "(Landroid/os/PersistableBundle;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDistanceMeasurement",
+        "signature": "()Landroid/uwb/DistanceMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDistanceMeasurement",
+        "signature": "()Landroid/uwb/DistanceMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setDistanceMeasurement",
+        "signature": "(Landroid/uwb/DistanceMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getFinalAoaAzimuth",
+        "signature": "()F"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getFinalAoaAzimuth",
+        "signature": "()F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "degreeToRadian",
+        "signature": "(F)F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getAoaAzimuthFom",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/AngleMeasurement;",
+        "method": "<init>",
+        "signature": "(DDD)V"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "<init>",
+        "signature": "(Landroid/uwb/AngleMeasurement;)V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getFinalAoaElevation",
+        "signature": "()F"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getFinalAoaElevation",
+        "signature": "()F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "degreeToRadian",
+        "signature": "(F)F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getAoaElevationFom",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/AngleMeasurement;",
+        "method": "<init>",
+        "signature": "(DDD)V"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "setAltitude",
+        "signature": "(Landroid/uwb/AngleMeasurement;)Landroid/uwb/AngleOfArrivalMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setAngleOfArrivalMeasurement",
+        "signature": "(Landroid/uwb/AngleOfArrivalMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDestinationAngleOfArrivalMeasurement",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDestinationAngleOfArrivalMeasurement",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setDestinationAngleOfArrivalMeasurement",
+        "signature": "(Landroid/uwb/AngleOfArrivalMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/RangingMeasurement;"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "add",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport;",
+        "method": "getRangingReportMetadata",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "fromBundle",
+        "signature": "(Landroid/os/PersistableBundle;)Lcom/google/uwb/support/oemextension/RangingReportMetadata;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "addMeasurements",
+        "signature": "(Ljava/util/List;)Landroid/uwb/RangingReport$Builder;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "toBundle",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "addRangingReportMetadata",
+        "signature": "(Landroid/os/PersistableBundle;)Landroid/uwb/RangingReport$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/RangingReport;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getRangingMeasurementType",
+        "signature": "()B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getRangingMeasurements",
+        "signature": "()[Lcom/samsung/uwb/support/data/ranging/Measurement;"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "get",
+        "signature": "(I)Ljava/lang/Object;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getStatus",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "add",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getRemoteDeviceAddress",
+        "signature": "()Landroid/uwb/UwbAddress;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setRemoteDeviceAddress",
+        "signature": "(Landroid/uwb/UwbAddress;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setStatus",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getElapsedRealtimeNanos",
+        "signature": "()J"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setElapsedRealtimeNanos",
+        "signature": "(J)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getLineOfSight",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setLineOfSight",
+        "signature": "(I)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaAzimuth",
+        "signature": "()F"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaAzimuth",
+        "signature": "()F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "degreeToRadian",
+        "signature": "(F)F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaAzimuthFom",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/AngleMeasurement;",
+        "method": "<init>",
+        "signature": "(DDD)V"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "<init>",
+        "signature": "(Landroid/uwb/AngleMeasurement;)V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaElevation",
+        "signature": "()F"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaElevation",
+        "signature": "()F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "degreeToRadian",
+        "signature": "(F)F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/OneWayForAoaMeasurement;",
+        "method": "getAoaElevationFom",
+        "signature": "()I"
+      },
+      {
+        "class": "Landroid/uwb/AngleMeasurement;",
+        "method": "<init>",
+        "signature": "(DDD)V"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "setAltitude",
+        "signature": "(Landroid/uwb/AngleMeasurement;)Landroid/uwb/AngleOfArrivalMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/AngleOfArrivalMeasurement$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setAngleOfArrivalMeasurement",
+        "signature": "(Landroid/uwb/AngleOfArrivalMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDestinationAngleOfArrivalMeasurement",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement;",
+        "method": "getDestinationAngleOfArrivalMeasurement",
+        "signature": "()Landroid/uwb/AngleOfArrivalMeasurement;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "setDestinationAngleOfArrivalMeasurement",
+        "signature": "(Landroid/uwb/AngleOfArrivalMeasurement;)Landroid/uwb/RangingMeasurement$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingMeasurement$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/RangingMeasurement;"
+      },
+      {
+        "class": "Ljava/util/List;",
+        "method": "add",
+        "signature": "(Ljava/lang/Object;)Z"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport;",
+        "method": "getRangingReportMetadata",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "fromBundle",
+        "signature": "(Landroid/os/PersistableBundle;)Lcom/google/uwb/support/oemextension/RangingReportMetadata;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "addMeasurements",
+        "signature": "(Ljava/util/List;)Landroid/uwb/RangingReport$Builder;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "toBundle",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "addRangingReportMetadata",
+        "signature": "(Landroid/os/PersistableBundle;)Landroid/uwb/RangingReport$Builder;"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport$Builder;",
+        "method": "build",
+        "signature": "()Landroid/uwb/RangingReport;"
+      }
+    ],
+    "fields": []
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+    "method": "onRangingReportReceived",
+    "signature": "(Landroid/uwb/RangingReport;)Landroid/uwb/RangingReport;",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/os/FactoryTest;",
+        "method": "isFactoryMode",
+        "signature": "()Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Landroid/uwb/RangingReport;",
+        "method": "getRangingReportMetadata",
+        "signature": "()Landroid/os/PersistableBundle;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "fromBundle",
+        "signature": "(Landroid/os/PersistableBundle;)Lcom/google/uwb/support/oemextension/RangingReportMetadata;"
+      },
+      {
+        "class": "Lcom/google/uwb/support/oemextension/RangingReportMetadata;",
+        "method": "getRawNtfData",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "<init>",
+        "signature": "([B)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/RangingData;",
+        "method": "getSessionToken",
+        "signature": "()J"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "findUwbSessionByToken",
+        "signature": "(I)Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/log/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)V"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;",
+        "method": "isAvailableToPostProcessing",
+        "signature": "(Lcom/samsung/uwb/support/data/ranging/RangingData;)Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "method": "getChannelNumber",
+        "signature": "()I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "method": "getPpEnable",
+        "signature": "()Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;",
+        "method": "requestPostProcessing",
+        "signature": "(ZILcom/samsung/uwb/support/data/ranging/RangingData;)Lcom/samsung/uwb/support/data/ranging/RangingData;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "method": "getProtocolName",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;",
+        "method": "getParam",
+        "signature": "()Lcom/google/uwb/support/base/Params;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "updateRangingReport",
+        "signature": "(Landroid/uwb/RangingReport;Lcom/samsung/uwb/support/data/ranging/RangingData;Ljava/lang/String;Lcom/google/uwb/support/base/Params;)Landroid/uwb/RangingReport;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "method": "recordOwrMeasurementFromPostProcessedRangeData",
+        "signature": "(Lcom/samsung/android/server/uwb/SamsungUwbSessionManager$UwbSession;Lcom/samsung/uwb/support/data/ranging/RangingData;)V"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mPostProcessingManager",
+        "type": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/SamsungUwbSessionManager;",
+        "field": "mPostProcessingManager",
+        "type": "Lcom/samsung/android/server/uwb/postprocessor/PostProcessingManager;"
+      }
+    ]
+  },
+  {
+    "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+    "method": "calculatePostprocessor",
+    "signature": "(ZLcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;[F[F[F)V",
+    "flags": 1,
+    "strings": [],
+    "calls": [
+      {
+        "class": "Landroid/util/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/lang/System;",
+        "method": "currentTimeMillis",
+        "signature": "()J"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getDistance",
+        "signature": "()I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getSamsungSpecificDataForTwr",
+        "signature": "()Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getRxModeForRanging",
+        "signature": "()B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getNumOfRxForRanging",
+        "signature": "()I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getRxAntennaForRanging",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getNumOfRxForRanging",
+        "signature": "()I"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getRxAntennaForRanging",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getRxModeForRanging",
+        "signature": "()B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getRxAntennaForRanging",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getRxAntennaForRanging",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getRxAntennaForRanging",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getAoa",
+        "signature": "()[F"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getDistance2",
+        "signature": "()Ljava/lang/Integer;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/SamsungSpecificDataForTwr;",
+        "method": "getDistance2",
+        "signature": "()Ljava/lang/Integer;"
+      },
+      {
+        "class": "Ljava/lang/Integer;",
+        "method": "intValue",
+        "signature": "()I"
+      },
+      {
+        "class": "Ljava/util/Arrays;",
+        "method": "copyOf",
+        "signature": "([FI)[F"
+      },
+      {
+        "class": "Ljava/util/Arrays;",
+        "method": "copyOf",
+        "signature": "([FI)[F"
+      },
+      {
+        "class": "Ljava/util/Arrays;",
+        "method": "copyOf",
+        "signature": "([FI)[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "method": "processNewMeasurements",
+        "signature": "(JIFFIFFIFFIIFFIIDDDDLjava/lang/String;I)V"
+      },
+      {
+        "class": "Ljava/lang/System;",
+        "method": "currentTimeMillis",
+        "signature": "()J"
+      },
+      {
+        "class": "Ljava/lang/Math;",
+        "method": "abs",
+        "signature": "(D)D"
+      },
+      {
+        "class": "Ljava/lang/Math;",
+        "method": "abs",
+        "signature": "(D)D"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "setFinalAoaAzimuth",
+        "signature": "(F)V"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "setFinalAoaElevation",
+        "signature": "(F)V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/data/ranging/TwoWayMeasurement;",
+        "method": "getMacAddress",
+        "signature": "()[B"
+      },
+      {
+        "class": "Lcom/samsung/uwb/support/util/UwbUtil;",
+        "method": "toHexString",
+        "signature": "([B)Ljava/lang/String;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(F)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(J)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Z)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(D)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(D)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(D)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(D)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(D)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(I)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "<init>",
+        "signature": "()V"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(D)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(D)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(Ljava/lang/String;)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "append",
+        "signature": "(D)Ljava/lang/StringBuilder;"
+      },
+      {
+        "class": "Ljava/lang/StringBuilder;",
+        "method": "toString",
+        "signature": "()Ljava/lang/String;"
+      },
+      {
+        "class": "Landroid/util/Log;",
+        "method": "d",
+        "signature": "(Ljava/lang/String;Ljava/lang/String;)I"
+      }
+    ],
+    "fields": [
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "TAG",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mDistance",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mDistance2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mOrientation",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAccelerometer",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mGyroscope",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mDistance",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mPdoa1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mPdoaIndex1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mPdoa2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mPdoaIndex2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mMainIndex1",
+        "type": "F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFirstIndex1",
+        "type": "F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mSnrMain1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mSnrFirst1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mMainIndex2",
+        "type": "F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFirstIndex2",
+        "type": "F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mSnrMain2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mSnrFirst2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mOrientation",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mOrientation",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mOrientation",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAccelerometer",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mDistance2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "isTargetInFOV",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputXCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputYCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputZCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputXCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "finalOutputRange",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputXCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputYCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "finalOutputRange",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputYCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputZCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "finalOutputRange",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputZCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "isTargetInFOV",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "isDiffInvalid",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "TAG",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mDistance",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoa",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mPdoa1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mPdoaIndex1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAoaEl",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mPdoa2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mPdoaIndex2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mMainIndex1",
+        "type": "F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFirstIndex1",
+        "type": "F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mSnrMain1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mSnrFirst1",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mMainIndex2",
+        "type": "F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFirstIndex2",
+        "type": "F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mSnrMain2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mSnrFirst2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mOrientation",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mOrientation",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mOrientation",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mAccelerometer",
+        "type": "[F"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "finalOutputRange",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "isTargetInFOV",
+        "type": "Z"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputAzimuth",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "finalOutputAzimuthConfidence",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "finalOutputErrorElevation",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "finalOutputRangeConfidence",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mDistance2",
+        "type": "I"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "TAG",
+        "type": "Ljava/lang/String;"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputXCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputYCoord",
+        "type": "D"
+      },
+      {
+        "class": "Lcom/samsung/android/server/uwb/postprocessor/Postprocessor;",
+        "field": "mFinalOutputZCoord",
+        "type": "D"
+      }
+    ]
+  }
+]

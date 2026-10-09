@@ -1,0 +1,2400 @@
+{
+  "scope": "Author research and redacted historical enrollment sources; proprietary executable images, credentials and live identities are excluded",
+  "files": [
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-LE-security-encrypt.asm",
+      "source": "work/uwb-protocol-agent/root-LE-security-encrypt.asm",
+      "sha256": "3b6eef44bea81fb9f4306eff80a806a0f11fd39dace5a0f61a29b140b3abcc5a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/timeBasedKeys-keymap-lookup-ios26.asm",
+      "source": "work/uwb-protocol-agent/timeBasedKeys-keymap-lookup-ios26.asm",
+      "sha256": "078f253e7c78a9110bac55e73413a4cf7c5dc992339268840bdd77b741acc400"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-uuid-methods.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-uuid-methods.asm",
+      "sha256": "ba29d0f7e4f3aab3a0532e9769945ca3fe754f1973665a45d4894a9c66d9ced2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/current-primary-key-task.asm",
+      "source": "work/uwb-protocol-agent/current-primary-key-task.asm",
+      "sha256": "def45ca91c4e22b1d31e5ecd597191d4a8aab973d20a3c01c85cfc40bcf6bdac"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectBeaconStore-post-ios26.asm",
+      "source": "work/uwb-protocol-agent/connectBeaconStore-post-ios26.asm",
+      "sha256": "0838bdeca9ca0f3f5a11592885f4797a15ade68de65ba59499a1f8062b257ece"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeyeRangingStatus.asm",
+      "source": "work/uwb-protocol-agent/hawkeyeRangingStatus.asm",
+      "sha256": "3555b9d35e7f80e5b34a52683b3c7a4bc058c97ffea3680c724fe36a6a056901"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/capabilities-ios26-setter.asm",
+      "source": "work/uwb-protocol-agent/capabilities-ios26-setter.asm",
+      "sha256": "fcb07c9915d05e5d116131445e69fff3f5b764388d1257c4de52b24db511009f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectBeaconStore-ios26.asm",
+      "source": "work/uwb-protocol-agent/connectBeaconStore-ios26.asm",
+      "sha256": "543f8855dbf47fc8af70b2bcaa25115debaf1140a2ff9f8d824efdcc889b9550"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-acquisition-channel.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-acquisition-channel.asm",
+      "sha256": "7ed52f0e0f4e79b8bccd0f1b2ff6d396347c5606f227fb989bb7ec0fe7da4705"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2pm-factory.asm",
+      "source": "work/uwb-protocol-agent/rose-p2pm-factory.asm",
+      "sha256": "c491a251cf70fd1682d972d71b5c4009c86a8b70f81c02964afcb3c101590601"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-case-legacy-start-semantics.py",
+      "source": "work/uwb-protocol-agent/verify-case-legacy-start-semantics.py",
+      "sha256": "89029e16a06eb479ab4600609e6b2e519f2709c5a455ad78fad373e1d4d5cf39"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/searchpartyd-ios26-import-stubs.asm",
+      "source": "work/uwb-protocol-agent/searchpartyd-ios26-import-stubs.asm",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-uwbsec-stream-generation.asm",
+      "source": "work/uwb-protocol-agent/rose-uwbsec-stream-generation.asm",
+      "sha256": "0e0380eea8c9e9140c63bad0a2b68ee32d32d3996ea47abc8cb57312da9d8ede"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-current-primary-key-handler.asm",
+      "source": "work/uwb-protocol-agent/case-current-primary-key-handler.asm",
+      "sha256": "235b4311de65416fbce2c9fb00bc243d34d15a04af70de9e729e72a262a0052e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-keystore-to-LE-keys.asm",
+      "source": "work/uwb-protocol-agent/root-keystore-to-LE-keys.asm",
+      "sha256": "6233b30009232d38d434f7f72af3b9208040a9059f4c87a8005641ea6c579d5f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-gatt-discovered-tail.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-gatt-discovered-tail.asm",
+      "sha256": "8534c378e4cbdaff603311b5767fbb2a063af34593b1d39337d80cc48cdd1f30"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/FindMyBluetooth-pairinginfo-getter-head.asm",
+      "source": "work/uwb-protocol-agent/FindMyBluetooth-pairinginfo-getter-head.asm",
+      "sha256": "8dc2fdad6e95f9c562d99c5534175b2423b4289bedde954e3cab084f2aee9a7d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-acquisition-layout-synthetic.json",
+      "source": "work/uwb-protocol-agent/rose-acquisition-layout-synthetic.json",
+      "sha256": "a5c84feaac01e78ce1400eab5db9d41f159531af29a3e8c2af86c46d036ebd07"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/addressFromUnknownBeacon.asm",
+      "source": "work/uwb-protocol-agent/addressFromUnknownBeacon.asm",
+      "sha256": "c889638f162cd3090271ea2421281f07cc03c18e24eae71dcd1f96a0086a85d1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-timeout-callbacks.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-timeout-callbacks.asm",
+      "sha256": "7d031f5ec2dd700970bdf6062d629fa13bc258024ff5936044553e5e100e8b74"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-response-lengths.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-response-lengths.asm",
+      "sha256": "710ea5ebef993944e18a199baab5331325bf1ad5734b7627e6136163425442f1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/createFetchFindingCapabilitiesHawkeye.asm",
+      "source": "work/uwb-protocol-agent/createFetchFindingCapabilitiesHawkeye.asm",
+      "sha256": "ce804b398868f928b96c7a8ef60f9fabd728d807cd1e888bc441aabb6e2e69b1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-encryption-callback-register-context.asm",
+      "source": "work/uwb-protocol-agent/root-encryption-callback-register-context.asm",
+      "sha256": "dcd7ded8d765fc61acab70740b4a47378277132ccc4ca3c31e9cd920189f434a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-session-factory-head.asm",
+      "source": "work/uwb-protocol-agent/rose-session-factory-head.asm",
+      "sha256": "8626cea5af3ccd2e63c0ec624e0864182413f177cf3dfdbbfd1ed68befdfa637"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-didInit.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-didInit.asm",
+      "sha256": "4702b8a546597f710e40d222929f408dfe2f2e952c73a2b3920b1efc84d15a4e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-current-primary-key-synthetic.json",
+      "source": "work/uwb-protocol-agent/case-current-primary-key-synthetic.json",
+      "sha256": "7024aa1f24063f3a0ffbdea40a5837537936704e8706bbc7177a38e3f08023b8"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-us-country-entry-prefix.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-us-country-entry-prefix.asm",
+      "sha256": "24f01277418f156e663dec4c13fcd61875eb7c416cc413633dea51756211ab35"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-start-end-reason.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-start-end-reason.asm",
+      "sha256": "a3a988b6374d618269689f1a7dcae2b5b10cff9c43d6e6825a81d7f6de7ac43d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ANDROID-TEMPORARY-LTK-API.md",
+      "source": "work/uwb-protocol-agent/ANDROID-TEMPORARY-LTK-API.md",
+      "sha256": "81bb2933e3918f0eae2e97ee3135714f46e1274352ff958a20a6cfd96dbfe98d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-register-LE-owner-security.asm",
+      "source": "work/uwb-protocol-agent/root-register-LE-owner-security.asm",
+      "sha256": "3829359e649da92a42f6b0423fc85f1fd3d2d64908c8b54c53b4bf4ade23628d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-stop-callback.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-stop-callback.asm",
+      "sha256": "1dab84d3ed6c1ec44a9ed59604e05ab1d8fc67a3a9e9745466dd5c79127611ce"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/range-derive-context-ios26.asm",
+      "source": "work/uwb-protocol-agent/range-derive-context-ios26.asm",
+      "sha256": "2bb7903f30b833a402a38d8d91d5e7cdde9ba4465c6e04e956b48a7818c6debf"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/didReceiveHawkeyeData.asm",
+      "source": "work/uwb-protocol-agent/didReceiveHawkeyeData.asm",
+      "sha256": "c6275e7064870335d31f583c67838f28f21d7868ee0c6eb8ab7d0e8462259201"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-p2p-start-dispatch.asm",
+      "source": "work/uwb-protocol-agent/case-p2p-start-dispatch.asm",
+      "sha256": "9dd6862eab410bae81def4c217e5d85ded1db10841f50025d16cd20484d3c316"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-regulatory-country-table.asm",
+      "source": "work/uwb-protocol-agent/ios-regulatory-country-table.asm",
+      "sha256": "06637fd7dfef7c91c3d8c465c5dcc198becb48a27c7fb7b77264e04201af59c2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-rose-acquisition-layout.py",
+      "source": "work/uwb-protocol-agent/verify-rose-acquisition-layout.py",
+      "sha256": "b9de1121fff3e83fe52251165c755818df992d937646457dc152025c331e7d50"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-cb-connect.asm",
+      "source": "work/uwb-protocol-agent/mac-cb-connect.asm",
+      "sha256": "3d9f64b25443987f9a03b5ff1eebf53bcbfd70dc56577d46a043d487d2058355"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-didConnect.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-didConnect.asm",
+      "sha256": "e3ef6982258e96e845bfde1d933b31cc376efe73b2cdb986bd879846297a7ad0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-service-filter-caller.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-service-filter-caller.asm",
+      "sha256": "62c4b29da5c66f25a6ee7d099012d422dfaaab523659b272dfd9646049f0b8e9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/durian-command-init.asm",
+      "source": "work/uwb-protocol-agent/durian-command-init.asm",
+      "sha256": "7b1ef8601a1ae99f6891ebce70044697a87f7762678271082c4e3016ea4b946c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetchConnectionTokensDevice.asm",
+      "source": "work/uwb-protocol-agent/fetchConnectionTokensDevice.asm",
+      "sha256": "451693ff463bfe6e85121133f25e1ad76148713ee7ad995c42560cad92b04de2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectBeaconStore-prefix-ios26.asm",
+      "source": "work/uwb-protocol-agent/connectBeaconStore-prefix-ios26.asm",
+      "sha256": "ff71ade7e8b3242652f55666702c43f7abdcc30832eb7d0af61f074a64c56203"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-discover-tail.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-discover-tail.asm",
+      "sha256": "b559686477efc92db0989941dce1571b7b40905b221f1017dc835a3d92c2ac2b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/commandKeys-service-ios26.asm",
+      "source": "work/uwb-protocol-agent/commandKeys-service-ios26.asm",
+      "sha256": "943c700cb82e87514933e9877ef4d3226a50bb1bd827ecd838216f6304559c69"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-multiple-material-add.asm",
+      "source": "work/uwb-protocol-agent/owner-multiple-material-add.asm",
+      "sha256": "09abe1b2cfebfafd606842aad85094c6d2e8b7a810694631c41cb041b0690596"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-key-index-sync.asm",
+      "source": "work/uwb-protocol-agent/case-key-index-sync.asm",
+      "sha256": "86f1609b8da72eed38c2ccd85cdee6278a7b1be998281c517575d3a8c83cb2ac"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetch-cryptex.py",
+      "source": "work/uwb-protocol-agent/fetch-cryptex.py",
+      "sha256": "70e09b0ada19637bf540d686744a50f75128bb0e1a2fd5cd961680089448cc0b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2pm-tx-config.asm",
+      "source": "work/uwb-protocol-agent/rose-p2pm-tx-config.asm",
+      "sha256": "563093b8785f78936b4bcfdc37ebec84f193ca5ae3a11c49644e858d4d1329ea"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/localFindable-material-service.asm",
+      "source": "work/uwb-protocol-agent/localFindable-material-service.asm",
+      "sha256": "58342885b18034261b230b983f22a5fedd70073fd74971bd11b4fb07aa2de1fa"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/startRangingHawkeye.asm",
+      "source": "work/uwb-protocol-agent/startRangingHawkeye.asm",
+      "sha256": "5e90082053d97ceaea7cc4cc2a689b5b339322f888a575725b60a5f222bb89bb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-temp-prepare.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-temp-prepare.asm",
+      "sha256": "b59889c6920d020c8d01b455410405a98d5cbb2f2c39321154a353a42317b791"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetch-locationd020.py",
+      "source": "work/uwb-protocol-agent/fetch-locationd020.py",
+      "sha256": "501426a5d3e2a5decee5ed2de22496f1a1a81326fb7de556fa872c0fb802e3c9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2p-sts-init.asm",
+      "source": "work/uwb-protocol-agent/rose-p2p-sts-init.asm",
+      "sha256": "3fd58bbdc3a1dc6ed21dd35fbea72e550753cf796788e185ed1093a9311a1ba7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/initRangingHawkeye.asm",
+      "source": "work/uwb-protocol-agent/initRangingHawkeye.asm",
+      "sha256": "c37b48be2a7206eb6d388ad6e96c43c10eb7e4f44d5e3db73557671711252134"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-hci-format-serializer-dispatch.asm",
+      "source": "work/uwb-protocol-agent/mac-hci-format-serializer-dispatch.asm",
+      "sha256": "b7ebdb9f39d495f87c56771c1aade7f156802e0530c28bb076c94f586670f44d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/sample-deflated.py",
+      "source": "work/uwb-protocol-agent/sample-deflated.py",
+      "sha256": "68560b5a800e802b3151106c31697811b62cb45f6af4093f6bf5b50bcedc9fa4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2ps-task.asm",
+      "source": "work/uwb-protocol-agent/rose-p2ps-task.asm",
+      "sha256": "a41703488dbba266bd1cede2c9355beb19c04260e0672f7c051dfe56220daf7d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-primary-secondary-getters.asm",
+      "source": "work/uwb-protocol-agent/case-primary-secondary-getters.asm",
+      "sha256": "200e38294219ba6fdbea0ed3aba923fc4b483297f8e6034887891f15a9bd94b4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-restricted-state.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-restricted-state.asm",
+      "sha256": "334854d9cd0d41941e16bf70340f154fa05ae58028ea8f26aecac20a42e9ce42"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-recovery-address-primary-ltk-synthetic.json",
+      "source": "work/uwb-protocol-agent/case-recovery-address-primary-ltk-synthetic.json",
+      "sha256": "6c5a7797e446c325847ac2cb42cc374591f61b1076ba3542a0fad8604a045b60"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/configureRangingHawkeye.asm",
+      "source": "work/uwb-protocol-agent/configureRangingHawkeye.asm",
+      "sha256": "5aaebe79ea4c85c6f2441c79a3c3d95df1cc59233c66a8ea1987e0a5d5c7208b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/notificationState-full.asm",
+      "source": "work/uwb-protocol-agent/notificationState-full.asm",
+      "sha256": "56772cd870c4c7cfced595b3bcd963affcc49c1cf3ac9a0d421870b40e66aac2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-ack-xrefs.asm",
+      "source": "work/uwb-protocol-agent/case-ack-xrefs.asm",
+      "sha256": "d7e409c3d9dfcd03c300220dfa6709f74829057802b35a28693ecd3f7d7808f1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetchFindingCapabilitiesHawkeye.asm",
+      "source": "work/uwb-protocol-agent/fetchFindingCapabilitiesHawkeye.asm",
+      "sha256": "1fdb3735dda988460a244ec0e03148f983f3479027e791d24deb7d5dd9a3a1de"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/x963KDF-ios26.asm",
+      "source": "work/uwb-protocol-agent/x963KDF-ios26.asm",
+      "sha256": "ca58fbaff0d382e915a7356574755a88d35b7f8a289b893fc84fb986903926be"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-regulatory-country-lookup.asm",
+      "source": "work/uwb-protocol-agent/ios-regulatory-country-lookup.asm",
+      "sha256": "8730a5d86cd3b7459a2751b6a8dc1e08de2cc0e3ef17fc68fd7b03510badc3b1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-hci-parameter-encoder.asm",
+      "source": "work/uwb-protocol-agent/mac-hci-parameter-encoder.asm",
+      "sha256": "ea781e76dfc6a5302faff4b3e5a082a821690c907eb9f780b4d1e39a2d957010"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-response-tail.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-response-tail.asm",
+      "sha256": "d269a778e3d2a2d9920f58d47a26a2714d25ab540a862e73daaa7fbd62aa57e8"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetch-locationd021.py",
+      "source": "work/uwb-protocol-agent/fetch-locationd021.py",
+      "sha256": "d1786083ea0cb9895359479b0e06638bf7767f4becbe08684a325eb6355d0439"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2ps-rx-to-reply.asm",
+      "source": "work/uwb-protocol-agent/rose-p2ps-rx-to-reply.asm",
+      "sha256": "76c5b230103e9f44c10f50b38863c63f77c264d4a602fddc9db8e4b2d3277625"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-start-synthetic-checks.json",
+      "source": "work/uwb-protocol-agent/case-legacy-start-synthetic-checks.json",
+      "sha256": "1fbfcb2542b40878e965b09779cff14d84954d9c5341343cfd486c2b7eebcd56"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-task-base-init.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-task-base-init.asm",
+      "sha256": "7a87c0ed817a701612bca98b4cc8cf2a5e6d6f0c379db482502b2d4926bf3842"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/createConfigureRangingHawkeye.asm",
+      "source": "work/uwb-protocol-agent/createConfigureRangingHawkeye.asm",
+      "sha256": "fd80df3fb8d407fe92d54b164188850f40f6a3a05bdefb94727604494919c96f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-band-channel-encode.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-band-channel-encode.asm",
+      "sha256": "d2dc46e6d1c67bfa6192050d6d0b956f2d6086ef2cd412c7a6f9d5f7d9ac97bf"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/diversified-root-callerB-ios26.asm",
+      "source": "work/uwb-protocol-agent/diversified-root-callerB-ios26.asm",
+      "sha256": "9a0510e150118a9d9ff46fdb2cff35135eb8113442a23b129057f6e0d3fc8dae"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-handleConnected.asm",
+      "source": "work/uwb-protocol-agent/owner-handleConnected.asm",
+      "sha256": "2876b242bb1019ad5c25af2c791a82c75969228399be958ab485852b2c44bf8e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-x963-synthetic.py",
+      "source": "work/uwb-protocol-agent/verify-x963-synthetic.py",
+      "sha256": "ab02aeb6091d0faddfd1041d9de432f5a6ffde77770576724225f57919c202d2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-ble-observers.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-ble-observers.asm",
+      "sha256": "7f1b75917839390b9640fb73bc509ab4bd80d8a9eb7149ec24aba42f934d715d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-deinit-controller.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-deinit-controller.asm",
+      "sha256": "6168c8bbb0b691f04d4be25238266d10fbe65825e474522325826e7f4e06ad91"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-length-check.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-length-check.asm",
+      "sha256": "bba05fa73f3b1adf7dafa18fb8e87c6d4854c9721c0a960b50bf19d1e3ca344b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/didWriteCharacteristic.asm",
+      "source": "work/uwb-protocol-agent/didWriteCharacteristic.asm",
+      "sha256": "5ce0bdb5e4ef735b247ba6a690df8f7b8ff08fda8222813e75e14703c42dfb5e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/notificationState.asm",
+      "source": "work/uwb-protocol-agent/notificationState.asm",
+      "sha256": "678fb4f0525877e2481479b4d2cf71264a4283c1df45c543e843586ae4042180"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-complete-init.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-complete-init.asm",
+      "sha256": "a6983ca8725e130ed5b9a79757358dc6b58339fc1c9b37ff8069d35adb09f7ae"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectToDevice.asm",
+      "source": "work/uwb-protocol-agent/connectToDevice.asm",
+      "sha256": "9e1db476f88e4f1e1fe1bb6501675576b1613b47d392993ed8bcb1c33b8ffd6e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearOwnerCommandKeys-keyconstruction.asm",
+      "source": "work/uwb-protocol-agent/nearOwnerCommandKeys-keyconstruction.asm",
+      "sha256": "3d8904ba26d630c50e52b5a85b9603ba7d9e4c4ecd43c101e0b6388772ba6fde"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-LE-connection-complete.asm",
+      "source": "work/uwb-protocol-agent/root-LE-connection-complete.asm",
+      "sha256": "84594386e10f6fdd427f7577e021edfee5e9e2e2f5ec9f02f4a7077ec45bb17b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-native-defaults.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-native-defaults.asm",
+      "sha256": "26394ac6689d208a97c9f6fcfb92b9ba31c321991fd64413298137410d9732b1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-recovery-key-policy.asm",
+      "source": "work/uwb-protocol-agent/case-recovery-key-policy.asm",
+      "sha256": "e09ec04a366940ab424f2c54607194b22ec517f0d30bde206ababc518c8d8348"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/commandKeys-secondary-ios26.asm",
+      "source": "work/uwb-protocol-agent/commandKeys-secondary-ios26.asm",
+      "sha256": "a213e70449ad4b0a17cf9c1707d20ef88fe662af2525b3e2a5a25cde66cd07ba"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-rose-sts-stream-descriptors.py",
+      "source": "work/uwb-protocol-agent/verify-rose-sts-stream-descriptors.py",
+      "sha256": "990f0b29e7f1d580eee2a05df89cad938782e129ea11b4967b67bf2045e683c1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-companion-update.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-companion-update.asm",
+      "sha256": "65fcc3bb9906982486786c658d9eb4c351733027569b1d9b8ebd646adf6aea6e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-p2p-full-rose-command.asm",
+      "source": "work/uwb-protocol-agent/case-p2p-full-rose-command.asm",
+      "sha256": "ddedbd1f4b4fdad685c2e5ed1ece2a8740e4a7d1f94c96bcf9c18246301b35d6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectionKey-callerC-ios26.asm",
+      "source": "work/uwb-protocol-agent/connectionKey-callerC-ios26.asm",
+      "sha256": "fd3ad272d6fc0f68b78e2e91f870df35e45c582f246a5727426e8bc30d6d60fb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-owner-info-dispatch.asm",
+      "source": "work/uwb-protocol-agent/case-owner-info-dispatch.asm",
+      "sha256": "761449d6858e944c9bd6fcca3c0f74422446ffb8abdfce5679519a2070543b02"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-near-owner-init-xrefs.asm",
+      "source": "work/uwb-protocol-agent/case-near-owner-init-xrefs.asm",
+      "sha256": "82b377b44dcc57e02e24c6e22d3bc0d22bcd117cca05f94010fda141f89fa78d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-stop-response-controller.asm",
+      "source": "work/uwb-protocol-agent/case-stop-response-controller.asm",
+      "sha256": "d1d6060bc17ec35d2562e03d3a35dbc907375db424bf965b5fe3ed85460e9718"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/command-initWithData.asm",
+      "source": "work/uwb-protocol-agent/command-initWithData.asm",
+      "sha256": "74e6ae63a3830e09df9c09986b0d34b16907928b8ee6e017084079dbbf9fce92"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-ranging-cleanup-synthetic-checks.json",
+      "source": "work/uwb-protocol-agent/case-ranging-cleanup-synthetic-checks.json",
+      "sha256": "20a113275b9f88508fa009555b1c577b69e5c7a7dcfc33269ab54931cca8374f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/peripheral-beacon-id-ios26.asm",
+      "source": "work/uwb-protocol-agent/peripheral-beacon-id-ios26.asm",
+      "sha256": "d14fb8d5d9e50b8bb0e1dcc14f49a4df35cce8d1acd18bca026cf2003876998e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-mac-f-config-head.asm",
+      "source": "work/uwb-protocol-agent/rose-mac-f-config-head.asm",
+      "sha256": "3604931c3fa2c4577924b45bd7ce717726ac9ee035ecfef99d5aa846330d471c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/timeBasedKey-record-loader-ios26.asm",
+      "source": "work/uwb-protocol-agent/timeBasedKey-record-loader-ios26.asm",
+      "sha256": "83bc8d1e29c50b0b9c991a33908ceeeb34d565e17f0277b1005ebd0c9a6fb791"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2pm-all.asm",
+      "source": "work/uwb-protocol-agent/rose-p2pm-all.asm",
+      "sha256": "827f1ea70058e46336f4e8c28721c3ff552f94200994c62bf1e2c1a3f4469e35"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-controller-constant-init.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-controller-constant-init.asm",
+      "sha256": "c6e8f754b11d8f69a494fad37af5a1fd2e6d3916f98dfda60e7c878f1a412dfe"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-session-init.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-session-init.asm",
+      "sha256": "ca081de77cc1f0efa87031efee12dc4010367a46b6410c7cdf07fbd8c5699a5a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/capabilities-ios26-init.asm",
+      "source": "work/uwb-protocol-agent/capabilities-ios26-init.asm",
+      "sha256": "cecc58268157a0136f4e27a6318bc6862708af4ae32dc7af56329f109c8febee"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-start-encryption-context.asm",
+      "source": "work/uwb-protocol-agent/root-start-encryption-context.asm",
+      "sha256": "2fdd3e0b291dc1aa91d532ecd66f9a56a3feaa4aff83c494a5bfa6502e45a74a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/createConfigureNBRangingHawkeye.asm",
+      "source": "work/uwb-protocol-agent/createConfigureNBRangingHawkeye.asm",
+      "sha256": "da4ba7bc3c6dba24b31faa481050b599e2bffa56a03ab1ccefbebbd5045821fe"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-next-material.asm",
+      "source": "work/uwb-protocol-agent/root-next-material.asm",
+      "sha256": "db0d1458ebbf5be3b471be8c0c687682daad1512a9967388733367aa9535a3bd"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-nb-start-ipc.asm",
+      "source": "work/uwb-protocol-agent/case-nb-start-ipc.asm",
+      "sha256": "706c9e860e0f25d43d78609a3d4f082682007fa882faed8c65a73f8a6f4a4af6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-state-hooks.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-state-hooks.asm",
+      "sha256": "4b464d4d73ff0a80ea1724f4c0d22636c57052108b1a2483f69dcb274b9b7e19"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-enum-region.asm",
+      "source": "work/uwb-protocol-agent/mac-enum-region.asm",
+      "sha256": "efc1fb63662da04eaacac7f74538d00a91a2261afbea8fd58f4a9b49b7e19c01"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-dispatch-common.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-dispatch-common.asm",
+      "sha256": "bed742132389cf129c81381b8305d2306e4385df31c461c73ead4fd82490117f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/writeError-tail.asm",
+      "source": "work/uwb-protocol-agent/writeError-tail.asm",
+      "sha256": "0b3c0d00864f6bbcd566289acc37ba591d49abb7fdb1e1b4de4d927fbf90a69a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-8B34-capability-dispatch.asm",
+      "source": "work/uwb-protocol-agent/case-8B34-capability-dispatch.asm",
+      "sha256": "eb94fca26dc7e2a09719cdae57cba389abc3b6d80f3e82e838a30288a99db77e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-notificationState.asm",
+      "source": "work/uwb-protocol-agent/owner-notificationState.asm",
+      "sha256": "0b87490ee26faa2ce8c25f8522c7af6c47f178cfb8a973c463ac59f4a3eb8123"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-regulatory-packed-getter-core.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-regulatory-packed-getter-core.asm",
+      "sha256": "cebc50caca329319a8e53f649710f61ec67b6aa28bc05804fe4bd9c0bde1f3fa"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetchConnectionTokens.asm",
+      "source": "work/uwb-protocol-agent/fetchConnectionTokens.asm",
+      "sha256": "84ed9bf4cbc390b37a6addb870ff64b2a0d6ee6171e8b4ce10b174fe0ba3adbd"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-key-request-reply.asm",
+      "source": "work/uwb-protocol-agent/root-key-request-reply.asm",
+      "sha256": "7a6cf7e52758efeed9da7b5583d9c0aba9dd6d854917a9f408836704fa0a2836"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2p-frame-validator.asm",
+      "source": "work/uwb-protocol-agent/rose-p2p-frame-validator.asm",
+      "sha256": "88fde80806d93f914ce8b6b5da009ef325b950d6b20c0335a0c9fb221bcadd22"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connect-key-construct-ios26.asm",
+      "source": "work/uwb-protocol-agent/connect-key-construct-ios26.asm",
+      "sha256": "9b1c7594e732b3bcd0877c3d7b0f352b9a951890877f6848f63b39c89784b1b3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-completion-dispatch-head.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-completion-dispatch-head.asm",
+      "sha256": "9aacd923aa54498c4cd226d4b2d5b220986dba633a6b5eb4b244b9df3a453593"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-hmd-tx-rx-start.asm",
+      "source": "work/uwb-protocol-agent/rose-hmd-tx-rx-start.asm",
+      "sha256": "c82aa152f085ae9729b23271432d8b2d8d80ac53dc38cd4355bad31e462669e7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-key-generation-range-ios26.asm",
+      "source": "work/uwb-protocol-agent/owner-key-generation-range-ios26.asm",
+      "sha256": "3d72dc480c3af6f9e76529efbbc56569a2abc8483762675ddfac2830643e18b0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-rmac-session.asm",
+      "source": "work/uwb-protocol-agent/rose-rmac-session.asm",
+      "sha256": "a70c61d92bf55203be0c44359a305cf78c04c59c4134750fdd94f5fc2b505e60"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2pm-initial-configuration.asm",
+      "source": "work/uwb-protocol-agent/rose-p2pm-initial-configuration.asm",
+      "sha256": "ff49b53cdc5deb4f6e11a28d8df53ed8d9e4cb88788091d56b32ebd519d90b99"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-response-final.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-response-final.asm",
+      "sha256": "ff2f0671c68f0f0492b17c347ddb72b412d73f280577e823e9ab23a4bcf2c4a3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-mac-f-config.asm",
+      "source": "work/uwb-protocol-agent/rose-mac-f-config.asm",
+      "sha256": "ad45ff0700f676d880003c7fa38bc715878325e67c06c7a4815f5914ecfefc7e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/key-generation-info-selection-ios26.asm",
+      "source": "work/uwb-protocol-agent/key-generation-info-selection-ios26.asm",
+      "sha256": "6e2e5ed387cbdef52617b2f5b3e27a96503f45d40a367d183ae12f4d248b4383"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/readNBRangingConfigParams.asm",
+      "source": "work/uwb-protocol-agent/readNBRangingConfigParams.asm",
+      "sha256": "034a80acbfaa579ed05a5ccb932664c23fbf8a52afb8e32be64e709416793015"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-registered-key-request.asm",
+      "source": "work/uwb-protocol-agent/root-registered-key-request.asm",
+      "sha256": "3531855cd4cf11b51eb0a1613ab162bee2ee31d06206d2abe39b32c20eea70f7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-didFetchCapabilities.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-didFetchCapabilities.asm",
+      "sha256": "e320e1932b81367eedfdc9ab2922aa4d4f21dcf633ff795deedd9a9fe3c2de03"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-handleDurian-session.asm",
+      "source": "work/uwb-protocol-agent/owner-handleDurian-session.asm",
+      "sha256": "8516feaf8f61b728984337be03af704789f385a1d14ba7e7dd93fac6c2a046e3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-handleCanSend.asm",
+      "source": "work/uwb-protocol-agent/owner-handleCanSend.asm",
+      "sha256": "999aad8e469f3262b883750b175ad317438babe4f6eec6d3f49ae26a59aa9daf"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-start-session.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-start-session.asm",
+      "sha256": "6ffdfb27705eeada04f6d1c4d2301aa99b36651ebd3da40406af192aa72e73c6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/checkHawkeyeDataValidity.asm",
+      "source": "work/uwb-protocol-agent/checkHawkeyeDataValidity.asm",
+      "sha256": "8a4d14079f1e5eced37cc9644295df2d89450c32720b394df8b786a4567c7100"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/executeTask.asm",
+      "source": "work/uwb-protocol-agent/executeTask.asm",
+      "sha256": "1a19b6c3d3de69163dcab46ce530b58dd3893df289984b1690d30791bed95ff3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-country-table-lookup.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-country-table-lookup.asm",
+      "sha256": "3a8723fcf4fc7ffe64af0f0dcd4657cecdf11e83003fe43cf8c224396df440c7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-sts-initializer-synthetic.json",
+      "source": "work/uwb-protocol-agent/rose-sts-initializer-synthetic.json",
+      "sha256": "fe7b51f4a285a59cf3692128424837b4919dde88cd5a2634e4a0768c1483c827"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/find-smallstrings.py",
+      "source": "work/uwb-protocol-agent/find-smallstrings.py",
+      "sha256": "f0721da188691840f2e7ca1dec343bc16ece3a07bb3e41ee982ee947300af73f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-legacy-packet-accessors.asm",
+      "source": "work/uwb-protocol-agent/rose-legacy-packet-accessors.asm",
+      "sha256": "8d053b9405db954f8ad3f7445d18c76c2fe7a384a3f0f59cf929557867ea5fb3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/FD44-DISCOVERY-WIDTH-AND-OWNER-SEQUENCE.md",
+      "source": "work/uwb-protocol-agent/FD44-DISCOVERY-WIDTH-AND-OWNER-SEQUENCE.md",
+      "sha256": "448b2bcb03bc197ad85f01462c9a893574b45828de3790ce4acbb7af5ec681ea"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-rose-ipc-config-packets.asm",
+      "source": "work/uwb-protocol-agent/case-rose-ipc-config-packets.asm",
+      "sha256": "b2ab593ab4239b20cedcf167cfc62c14bce73a0f694b0417eb38a0f7a0ec0c55"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeyeDiscoverySubscribe.asm",
+      "source": "work/uwb-protocol-agent/hawkeyeDiscoverySubscribe.asm",
+      "sha256": "ff260d21bebf6c0082bc7104ee690424cac27fc0324fcdbd289123469f9e3e51"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-nb-channel-list.asm",
+      "source": "work/uwb-protocol-agent/rose-nb-channel-list.asm",
+      "sha256": "0f918c53a327cef4cfef1aff9a0d560471051d3bb4e703b6f547519296fdb064"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-service-reply-filter.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-service-reply-filter.asm",
+      "sha256": "e6ffcf645a660387ddcf7d56d08ad770fc99098d64f04f54fa8249bc45ed6577"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/x963-synthetic-result.json",
+      "source": "work/uwb-protocol-agent/x963-synthetic-result.json",
+      "sha256": "ccd363a83b7749c712650e58926c7fbefd5dcd3f206f86db1d07592229da021c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-restricted-list-construction.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-restricted-list-construction.asm",
+      "sha256": "c9a8b936e97ff5bbf180e67ea916df14e189c94c7b2e8b58e54545476f63c723"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-companion-p2p-config-builder.asm",
+      "source": "work/uwb-protocol-agent/ios-companion-p2p-config-builder.asm",
+      "sha256": "610674420994ac2e4820833dcd381f627d62b1bd28c1b185d31d38d63486f529"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-state-dispatch.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-state-dispatch.asm",
+      "sha256": "b29196e48ce86f60564637f4f67cc40d73d3bcb433adf973a7a66f7a97604f7c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-cb-connect-block.asm",
+      "source": "work/uwb-protocol-agent/mac-cb-connect-block.asm",
+      "sha256": "f4957356acc140a81a6fa869d0cffc28b25a03a2d847327dcc7eece633545746"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-packet-rx-config-setup.asm",
+      "source": "work/uwb-protocol-agent/rose-packet-rx-config-setup.asm",
+      "sha256": "3c2ea96f4147b3ce5ee8dd5c1e297a643611917acbf5995f0e93838a008bb0e9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-connection-timeout.asm",
+      "source": "work/uwb-protocol-agent/root-connection-timeout.asm",
+      "sha256": "6f765e36ff5ce52dda0d23e8aaa2b17deefdbe4a27363913a8571f4b9133594d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/LEGACY-ACQUISITION-AND-STS-BOUNDARY.md",
+      "source": "work/uwb-protocol-agent/LEGACY-ACQUISITION-AND-STS-BOUNDARY.md",
+      "sha256": "01c63aebfc5ea3d4f3978b4774a61038759ed03549c2704c77e50b4a8103b51c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-dictionary.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-dictionary.asm",
+      "sha256": "77715703517d932f2790cd93c6977ab8b51a1dd8fe2a9c65aec0dc6b392c632b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-cb-retrieve-address.asm",
+      "source": "work/uwb-protocol-agent/mac-cb-retrieve-address.asm",
+      "sha256": "36ba8c37138ac4324be48d95ca8702dfbad44c15a0ff0ff8ed8716f1efb66b2b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-us-country-entry.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-us-country-entry.asm",
+      "sha256": "944487eb2446f9212d3889e42f76171b06240bf43d36eff29a5bf47eae883d8a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-restart-attempt.asm",
+      "source": "work/uwb-protocol-agent/root-restart-attempt.asm",
+      "sha256": "812e2703b2f2cdc90a0e1281202354eaa59c04952932aa721e203634c1169a34"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/didFetchConnectionMaterial-full.asm",
+      "source": "work/uwb-protocol-agent/didFetchConnectionMaterial-full.asm",
+      "sha256": "31cf585e9a3eef6546148f2d435df72c7a1679c5418bb960834770fb8ed3959d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-apple-hci-ltk-encoder.py",
+      "source": "work/uwb-protocol-agent/verify-apple-hci-ltk-encoder.py",
+      "sha256": "aa6bd1d57eada0302404979565f6d34e572c9a1dc217c05933394face2f9a3dc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-packet-type-encode.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-packet-type-encode.asm",
+      "sha256": "ccdd0e555eab76e3d253cf1b259ad530a99317c606e263ce2ddfef6df77ac201"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-hci-dispatch-head.asm",
+      "source": "work/uwb-protocol-agent/mac-hci-dispatch-head.asm",
+      "sha256": "65b00a4d1fc55f6d51428f97bebbd96eb38d74804a0f3704bbeedce9ac69fbcc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/commandKeys-address-token-composite-ios26.asm",
+      "source": "work/uwb-protocol-agent/commandKeys-address-token-composite-ios26.asm",
+      "sha256": "4be014be0d4a14db1aa8fa88d7710c881fb411bbf55c4385daf3c6dc461ea22a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/CASE-IDENTITY-AND-OWNER-LINK.md",
+      "source": "work/uwb-protocol-agent/CASE-IDENTITY-AND-OWNER-LINK.md",
+      "sha256": "e65b3ecf8763805f91916c501ade2ff02f54398cc6a97b462d961a306848aae0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/diversified-root-callerC-ios26.asm",
+      "source": "work/uwb-protocol-agent/diversified-root-callerC-ios26.asm",
+      "sha256": "fd93312f63cc7e2aba5ad2b042d10c743d7dc5c5549416c7c56bc9c027fd2efa"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-cb-discover-services.asm",
+      "source": "work/uwb-protocol-agent/mac-cb-discover-services.asm",
+      "sha256": "a53b656e850f213361d28d4a472f256a3c105af913d7fad8b845c1d80761f60b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/notificationState-tail.asm",
+      "source": "work/uwb-protocol-agent/notificationState-tail.asm",
+      "sha256": "177200ad4ff5d34ec2d9f02164d81588603706819ebd9f82cadfdfbc96e8822f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-packet-sts-definition.asm",
+      "source": "work/uwb-protocol-agent/rose-packet-sts-definition.asm",
+      "sha256": "7cb1ce1092a44ff495c362344c925238f3da4f950002643aaa83beaca76a8410"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-wild-init-xrefs.asm",
+      "source": "work/uwb-protocol-agent/case-wild-init-xrefs.asm",
+      "sha256": "6538750bb9447a00872f2eafc8c5e8e38dc9d123ef63e97497c3fd3420478498"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-set-companion-rose-address.asm",
+      "source": "work/uwb-protocol-agent/ios-set-companion-rose-address.asm",
+      "sha256": "6d6058860ce023ec55a7ee7d0a42edfd7c295c5ee9c2dbb5a6828559e5351db0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/NearbydDiagnosticExtension.md",
+      "source": "work/uwb-protocol-agent/NearbydDiagnosticExtension.md",
+      "sha256": "23fbd41722b676aa6690c2e8b29f9d78e7c344fefa3347079e12a1c239d5683f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-cb-services-response.asm",
+      "source": "work/uwb-protocol-agent/mac-cb-services-response.asm",
+      "sha256": "50dba3b764f1afa73943f4851e3e71d13261f298ab65d66c8c4417beebe660b6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-config-ipc.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-config-ipc.asm",
+      "sha256": "f249ec1d506922464c9b8679fea135f4955f68d11ffa15bc1d598997942604e5"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-session-create-caller.asm",
+      "source": "work/uwb-protocol-agent/rose-session-create-caller.asm",
+      "sha256": "cb56b1e62666af04ad52763aaff90aa9e36b4994bccdb1844c496e163ec3953a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-hci-descriptor-lookup.asm",
+      "source": "work/uwb-protocol-agent/mac-hci-descriptor-lookup.asm",
+      "sha256": "85ff6ea61084770c279f42db4eb9d14178114306ce98007b4cbbde573ed53323"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-has-service.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-has-service.asm",
+      "sha256": "65bd2218dfb7aed5a1590de2079d8e8e0145cd1428858685cd6e0ff4533656d4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-config-and-stop.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-config-and-stop.asm",
+      "sha256": "3d8b4611a1640b80edaf2f50789b4dc2e1dac28b1068b7213c09f6159338defb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-session-address-parser.asm",
+      "source": "work/uwb-protocol-agent/rose-session-address-parser.asm",
+      "sha256": "03540e8962b178d247ad86d023b0c332e51f1077fd18ae9ab89ce8a9657ba3fe"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-rose-sts-initializer.py",
+      "source": "work/uwb-protocol-agent/verify-rose-sts-initializer.py",
+      "sha256": "b884917735bd0b3eea27af892ced7b85ca7086a4a2d389e0d21efec6ab3dcb11"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2p-sts-init-2.asm",
+      "source": "work/uwb-protocol-agent/rose-p2p-sts-init-2.asm",
+      "sha256": "4b7fbb44ab4fad309c158494e7ec39ffde63096eeca793a077b8bd15f111b0d0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/CASE-DISCOVERY-ADDRESS.md",
+      "source": "work/uwb-protocol-agent/CASE-DISCOVERY-ADDRESS.md",
+      "sha256": "1b1a19b10cadea83d7aaada8cce2b2d69c3742b9de0e6168f31fc63d19961c8c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/find-daemons.py",
+      "source": "work/uwb-protocol-agent/find-daemons.py",
+      "sha256": "3ce09b391e22f38038d611bedb6425571f4d7c4ae64bd00f6660c0549d545e05"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-configureCompanion.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-configureCompanion.asm",
+      "sha256": "5a03b4e618ad68a94eecd4ebe8a73f357e6e125ebab4504a153af7e1bf82d7a6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-encryption-policy.asm",
+      "source": "work/uwb-protocol-agent/root-encryption-policy.asm",
+      "sha256": "a44ea2f3db62df416c168e1d8bd4dd8d52e8dd8f9e7994ecfe923d8f4b60944f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/sample-payloads.py",
+      "source": "work/uwb-protocol-agent/sample-payloads.py",
+      "sha256": "dbc25601b9a1acd7d7aa3fa3cbf7db5eba769c3670b7c7c484a3fad5f23f2cd9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-discovery-write.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-discovery-write.asm",
+      "sha256": "51057e338fde0989e9134805c05194441e9890c486419007a4cbb1eb4cfd38f6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-read-cfstrings.py",
+      "source": "work/uwb-protocol-agent/modern-nb-read-cfstrings.py",
+      "sha256": "578d101b81e27e351efe2da8d9bd5a923e77a9d98c260d0339795918162f20a2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-country-getters.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-country-getters.asm",
+      "sha256": "94b2a295f620aed55cba822085a269f60cbf5d119805dd5feb9823d3581ae129"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-endpointTask.asm",
+      "source": "work/uwb-protocol-agent/owner-endpointTask.asm",
+      "sha256": "8b2361365ba1384a5a9ba88bb6315684e4309ec224b89c9981fbce683b46410a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-case-precision-responses.py",
+      "source": "work/uwb-protocol-agent/verify-case-precision-responses.py",
+      "sha256": "6d67a58cdc01a5d59ac3243b7dd0ec1597d71087ff845bd75dc4e444c9f9a70d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-start-controller.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-start-controller.asm",
+      "sha256": "0fac4583979e0f3cd6d738d73ea7ae12aa71071d967951c957087c8163ce2ea4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-hmd-generate-sts-callback.asm",
+      "source": "work/uwb-protocol-agent/rose-hmd-generate-sts-callback.asm",
+      "sha256": "345d9a2710d9deee6da39f68969c1ed00769120eb702b8ca9490b0cc46f6cdc9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-fragmentation-tail.asm",
+      "source": "work/uwb-protocol-agent/case-fragmentation-tail.asm",
+      "sha256": "8ccd468ac0f540a553e1a87988eb579ddf04653b122a6f1cdd670a9ca4cf2ba4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-postInit.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-postInit.asm",
+      "sha256": "c7a47320084102c61d9a2455afaac0be2e24f7623a974ea8f8402d97e115931d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-registered-key-request-block.asm",
+      "source": "work/uwb-protocol-agent/root-registered-key-request-block.asm",
+      "sha256": "2002bbbea7d4fa608c79536e5d232261f22f637716b21134a0aa1a4c9629bae1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-session-prepare.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-session-prepare.asm",
+      "sha256": "ac9bfe7ef71764d78f98b009eaf139151d97117ce94f42aaeaa4f74f6db78426"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-temp-lowerlayer.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-temp-lowerlayer.asm",
+      "sha256": "78718da7811421a95d7ffeb8b65d4093c2b9c32f4d94caf35982bf74671facf7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-schema.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-schema.asm",
+      "sha256": "c28b00fa4f08a1092e27bab9dd147bbb22407fac592b904b4fef1256b5d2f851"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/commandKeys-service-dispatch-ios26.asm",
+      "source": "work/uwb-protocol-agent/commandKeys-service-dispatch-ios26.asm",
+      "sha256": "f6dc15562fcdd8e8dbf4ec36fbcd339d7784f7185811a14dadcda1005177835c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectionKey-callerB-ios26.asm",
+      "source": "work/uwb-protocol-agent/connectionKey-callerB-ios26.asm",
+      "sha256": "e265d69e9013ac6b0334468b8641256e17c321f6e0fb66b22b55f30a99503efc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-country-settings.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-country-settings.asm",
+      "sha256": "33808bb487b92dbd6e2dd15273b0318d2bcfc13ac91c4795b19be725579bbfd7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-legacy-country-byte-getter.asm",
+      "source": "work/uwb-protocol-agent/ios-legacy-country-byte-getter.asm",
+      "sha256": "fd6d20fe8178bcbd910ef978d6e3599d9649912321165cc7818e82adb084474c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-hci-enable-encryption-serializer.asm",
+      "source": "work/uwb-protocol-agent/mac-hci-enable-encryption-serializer.asm",
+      "sha256": "6ca3bb6532a56a16d61f0164f7c1ae669ea584cd15933f1dbe6f78415b6ca706"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/apple-hci-ltk-synthetic-result.json",
+      "source": "work/uwb-protocol-agent/apple-hci-ltk-synthetic-result.json",
+      "sha256": "06d5453513d5de95143575654af328fa8df776268d696f5c410c3ce4cef4919c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-connection-failure.asm",
+      "source": "work/uwb-protocol-agent/root-connection-failure.asm",
+      "sha256": "ed212711902e2166670974f6daef22c705db7e71dc0591e14c200668907032e6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearOwnerCommandKeys-trampoline.asm",
+      "source": "work/uwb-protocol-agent/nearOwnerCommandKeys-trampoline.asm",
+      "sha256": "46c7921388b56d040ba8f37149e8c687d7e6f4ccc18f6a1b9e47735fe801896b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-start-counter-synthetic.json",
+      "source": "work/uwb-protocol-agent/case-start-counter-synthetic.json",
+      "sha256": "a80e06ca55abff383586fae19ed964fe776faa8a5b6bc48d1cbf4cf1f53eab11"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-key-response-nearby.asm",
+      "source": "work/uwb-protocol-agent/root-key-response-nearby.asm",
+      "sha256": "e0f4b5db5ee5f7dcb1105bc9967c3d59bf31a2f5f8dee131c36057825f07defc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/README.md",
+      "source": "work/uwb-protocol-agent/README.md",
+      "sha256": "5f3bc1d58c0bf046c47b9d827960a2f223e4c49ad62afe5265be09fdddef7e1f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-sts-stream-descriptors-synthetic.json",
+      "source": "work/uwb-protocol-agent/rose-sts-stream-descriptors-synthetic.json",
+      "sha256": "6ed3cb8839ddda6a6aea5b7591a6f1ce455fb0a6f5e9564c09d3bda579e14477"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-completeTask-dispatch.asm",
+      "source": "work/uwb-protocol-agent/owner-completeTask-dispatch.asm",
+      "sha256": "e3b72f83eb335b8f587300179c4dbf5936d0e0853c3fc3a17ef55894e234dc2f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-write-handler-callback.asm",
+      "source": "work/uwb-protocol-agent/case-write-handler-callback.asm",
+      "sha256": "db54a90aac95ac62d8931647fa29fb7fa1d3976bf922f7bf0658c02b981658ec"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-case-start-counter.py",
+      "source": "work/uwb-protocol-agent/verify-case-start-counter.py",
+      "sha256": "000cb70b4cb1771a071f949c66fb80a4b939b654d20179028e84c33eb88df78b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-config-storage.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-config-storage.asm",
+      "sha256": "81070d2be8e9a2422f7e04e6b30c125624f51f0d293b4058ae6fe93eee0682e6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/find-adrp-refs.py",
+      "source": "work/uwb-protocol-agent/find-adrp-refs.py",
+      "sha256": "9391d57cc7c8c17926fb5ed2ade8ea5456cd658f948fca7fd6887ab77437d346"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-temporary-key-to-encryption.asm",
+      "source": "work/uwb-protocol-agent/root-temporary-key-to-encryption.asm",
+      "sha256": "7deb44e1538f9b2803adedf72fe264a62653addd95c80f36593233eaeab3738b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-hmd-psdu-configuration.asm",
+      "source": "work/uwb-protocol-agent/rose-hmd-psdu-configuration.asm",
+      "sha256": "bf6835b7d73ad516cc6d0b24f10ece58bf01e1e8ae17fddda54e038dd21326eb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-country-validation.asm",
+      "source": "work/uwb-protocol-agent/case-country-validation.asm",
+      "sha256": "97b8365a6bff91e1350024ecd887d9b758c97ec019f9ac6f1b7119c67e24cb20"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-owner-service-registration.asm",
+      "source": "work/uwb-protocol-agent/case-owner-service-registration.asm",
+      "sha256": "183006b171e0712a962177857cdc200dbe85af8aeeb4d71f2d7586ef6ddb5eb9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-key-response.asm",
+      "source": "work/uwb-protocol-agent/root-key-response.asm",
+      "sha256": "058dd28a58ab8564abd2499aba39fd0e8b0b279bc2f42caed0efb2facf417d9c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/configureNBRangingHawkeye.asm",
+      "source": "work/uwb-protocol-agent/configureNBRangingHawkeye.asm",
+      "sha256": "b6ab6a582ff0e2e4c0619c4c5d47933bdbcb88465a1b53030a9c855894851c25"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-key-request-bridge.asm",
+      "source": "work/uwb-protocol-agent/root-key-request-bridge.asm",
+      "sha256": "e37bad3610c722e91df86011565337ea65c8edaec191f6f95f346a4002019e3f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-p2p-country-byte-getter.asm",
+      "source": "work/uwb-protocol-agent/ios-p2p-country-byte-getter.asm",
+      "sha256": "994b9018c3b0780f620bb4da323001c5202b7c28ddcdbc787e82edc52559ccdb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-8B34-response-builder.asm",
+      "source": "work/uwb-protocol-agent/case-8B34-response-builder.asm",
+      "sha256": "301b07e2444c504c7320f4379b991eb34acc9ac1d148d12dedccc563f2f2f151"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/completeFetchFindingCapabilities.asm",
+      "source": "work/uwb-protocol-agent/completeFetchFindingCapabilities.asm",
+      "sha256": "a5a9eb0fa8b4221ee0573d907db16a2d900fb5af73df18709485ac5449936059"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-ranging-status.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-ranging-status.asm",
+      "sha256": "bc92f8b5dd96d8fb8274f710521e4d391d01a7b7672bd6e92c0a8b72919f8dc7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-session-factory-mode.asm",
+      "source": "work/uwb-protocol-agent/rose-session-factory-mode.asm",
+      "sha256": "f4afdb81600b6764b56e6ec20e2e0478984b465596d2b054ee30dd0ec4f16346"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/IOS-OWNER-BLE-HANDSHAKE.md",
+      "source": "work/uwb-protocol-agent/IOS-OWNER-BLE-HANDSHAKE.md",
+      "sha256": "994e1dcb60e024f4acbc6dbccd3d4686eeb744e7ab05186603dab26859751bf3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/HAWKEYE-WIRE.md",
+      "source": "work/uwb-protocol-agent/HAWKEYE-WIRE.md",
+      "sha256": "b430cc3748b7ab8b3cea30f8b240caf1be8069edff69f609467e63ce9e768c9c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2p-sts-aes-update.asm",
+      "source": "work/uwb-protocol-agent/rose-p2p-sts-aes-update.asm",
+      "sha256": "46b6f0dfc7cc0eb162ad89fa3d4fc78c19df8b372958cbb2d976e8bdb8c10a6b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-p2p-config-synthetic.json",
+      "source": "work/uwb-protocol-agent/case-p2p-config-synthetic.json",
+      "sha256": "de0d2d2af345d86b8931c237ef0b9349e87844acc13fc0002cdd7b7c1c533b9b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectionKey-data-wrapper-ios26.asm",
+      "source": "work/uwb-protocol-agent/connectionKey-data-wrapper-ios26.asm",
+      "sha256": "3dcbb7b120d6d10092d6b248212c42fd37df7ab00134a93d8826136a4a505665"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/INDEXED-INTERMEDIATE-KEY.md",
+      "source": "work/uwb-protocol-agent/INDEXED-INTERMEDIATE-KEY.md",
+      "sha256": "854075aaae8e05f937150aa5aa10c93064f1ab729ed4e7159655f17d510bf458"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/deviceWithUUID.asm",
+      "source": "work/uwb-protocol-agent/deviceWithUUID.asm",
+      "sha256": "3ec959521e76096ce43a338f8b1d2b53fa3040dba18179cff1e2bbbbda140ec7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/scan-cache-address.asm",
+      "source": "work/uwb-protocol-agent/scan-cache-address.asm",
+      "sha256": "ddbda9620c4989a4d329afb86d1a686e22d38e44459f765b703d3095175adaf0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/localfindableIntermediate-ios26.asm",
+      "source": "work/uwb-protocol-agent/localfindableIntermediate-ios26.asm",
+      "sha256": "2a679d0c9ba88a4be0aeab89134a8e22468621d0988f7097e9609f2df20376b4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-init-constructor.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-init-constructor.asm",
+      "sha256": "d314dd32ff60d68bd5b1a1305f26dbf8718313b85bbda24f7eb4f546bd50a85d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-createInit.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-createInit.asm",
+      "sha256": "16cce4b8ef1969e1615788606ad722bb4a8e895b6fedc6b3290c6f6cb8863cca"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-ble-disconnect.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-ble-disconnect.asm",
+      "sha256": "6dc2cbbf5f0294bc32aac10c0138929589b502d4aa3eed9dd82721ddff681cca"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-response.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-response.asm",
+      "sha256": "24e4c762b3c3954924f6e4b14f73fbbdafbc2846e7debf0a2a203b3c20f4c3fa"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/current-primary-key-device.asm",
+      "source": "work/uwb-protocol-agent/current-primary-key-device.asm",
+      "sha256": "3d37414937245e4ad04ea49dc8fcbb6f2a2916cede53f0150cda0df726d4249f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetch-locationd.py",
+      "source": "work/uwb-protocol-agent/fetch-locationd.py",
+      "sha256": "b769ec3e37ba8805a069950db39fc9bd9ce62625f0db99735bbd477a3274a949"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-write-handler-precision-tail.asm",
+      "source": "work/uwb-protocol-agent/case-write-handler-precision-tail.asm",
+      "sha256": "a298373170d9fb4d57c162fa9d6ba60a6455c4cbefe2df1ec3d169c9db73108c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-configure.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-configure.asm",
+      "sha256": "3cd992ac831417edf7d15409de0f4fa261cce18f62cf11e59d460a69efd90174"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-case-controller-config.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-case-controller-config.asm",
+      "sha256": "1200bef5862f2bd2f4b4c6785b8739244e31a00506d7ae1100117e71cb704fdb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-item-localizer-packet-init.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-item-localizer-packet-init.asm",
+      "sha256": "cb304379ebda99492a2cc2d84d426d8d5d1c21caa59092802b042b362149351c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/peripheral-material-trampoline.asm",
+      "source": "work/uwb-protocol-agent/peripheral-material-trampoline.asm",
+      "sha256": "afad738834611d32ea1fafd9723d3760f0a18d11667f20a4ee66a1ab7c2303c9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-packet-sts-caller.asm",
+      "source": "work/uwb-protocol-agent/rose-packet-sts-caller.asm",
+      "sha256": "101d9fd054c14daff6cb80a095fafaf6a83ee8e702375541801321de195ca61a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-gatt-services-reply.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-gatt-services-reply.asm",
+      "sha256": "9576dca7724d819b22a8e60316ddc466e36f688e4c7929db0a6445703620c325"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-start-counter-install.asm",
+      "source": "work/uwb-protocol-agent/case-start-counter-install.asm",
+      "sha256": "930d3a867f7e2465afb6b287828f323de502be85f3275509dede6da5898b6b0f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-advertising-address-callers.asm",
+      "source": "work/uwb-protocol-agent/case-advertising-address-callers.asm",
+      "sha256": "adb08b14550647ef274abc89d384c1db4a426e68b329f154d0d1168bbe73f248"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/key-range-caller-ios26.asm",
+      "source": "work/uwb-protocol-agent/key-range-caller-ios26.asm",
+      "sha256": "b63a8be3ff315f22a1629eb63fefd4d01431162af4fc51c0b0e8783c37c7a4bc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-session-sts-callbacks.asm",
+      "source": "work/uwb-protocol-agent/rose-session-sts-callbacks.asm",
+      "sha256": "a056ec4dca51523758bc32354637571cc06f44b6f9e6f71ddf4af5c47807348a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/commandKeys-beaconinfo-ios26.asm",
+      "source": "work/uwb-protocol-agent/commandKeys-beaconinfo-ios26.asm",
+      "sha256": "25501ee25a2bdff3dd28c5a17369253bb151ca486de450b3d16b92fe39ea27e6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/SR200D-RFTEST-STATIC-STS-BOUNDARY.md",
+      "source": "work/uwb-protocol-agent/SR200D-RFTEST-STATIC-STS-BOUNDARY.md",
+      "sha256": "5e9824aee8d5a56310319a39e337f8dda6c1e5494aa95655b94815d1f12126b6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-processAck.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-processAck.asm",
+      "sha256": "73050c348f2dc74b21ef0f6f9af9f9757f4c5a138069d24e056590f32db26309"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-stop-controller.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-stop-controller.asm",
+      "sha256": "52f3267821de859d9fbfca370f565dde7c6ad614491367fca259474ef8ca74fb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-fixtures.json",
+      "source": "work/uwb-protocol-agent/hawkeye-fixtures.json",
+      "sha256": "2950948dd5a8b712ba6d289f43901462a265194cf952bc1e8411f1317bd83436"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-response-builder.asm",
+      "source": "work/uwb-protocol-agent/case-response-builder.asm",
+      "sha256": "860274fac570a3801958297def069c5aac1e67b511c5c71e05d82eda15fd7a5e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/diversified-intermediate-ios26.asm",
+      "source": "work/uwb-protocol-agent/diversified-intermediate-ios26.asm",
+      "sha256": "3d311d59577ba0a76cd104bd170e24e7fd46be13bfc03ff51faba3c74d7a7484"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-characteristic-permissions.asm",
+      "source": "work/uwb-protocol-agent/case-characteristic-permissions.asm",
+      "sha256": "2a4e1117335a24a64267e068746b75a8fc3d2e3592842b3cb9d55840dea101af"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/sharedsecret-update-ios26.asm",
+      "source": "work/uwb-protocol-agent/sharedsecret-update-ios26.asm",
+      "sha256": "43ed0d1e47d8a4e5fedb144bf7e7ea4677cd544dd6f157ac17e5d6f117017f01"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-timer-install.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-timer-install.asm",
+      "sha256": "8cd088c14fb7e2024631bce5374e3bcd73f8372b19212ce3895dcca93b0f00ec"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-ios26-prepareNBAMMS.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-ios26-prepareNBAMMS.asm",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/swift-type-descriptors.py",
+      "source": "work/uwb-protocol-agent/swift-type-descriptors.py",
+      "sha256": "6ec9b7cd0922f87f86de8b147f654c93049a1e8d44812873ff805b370d8d2b5d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/itemLocalizerInit.asm",
+      "source": "work/uwb-protocol-agent/itemLocalizerInit.asm",
+      "sha256": "9cb9f7503f4b3784e045c669cc3786660a62affc5f178c82e91e721689b70d95"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-regulatory-country-install.asm",
+      "source": "work/uwb-protocol-agent/ios-regulatory-country-install.asm",
+      "sha256": "331be5ba970b81e2febe0636c5d52776df35a5c4beeff548ca36e27d19cde2ec"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-regulatory-country-lookup-main.asm",
+      "source": "work/uwb-protocol-agent/ios-regulatory-country-lookup-main.asm",
+      "sha256": "3d7e6936d64e84162abe1a174f3e08b04f57562397c6e6528d3fabb4d488e952"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-gatt-restricted-filter.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-gatt-restricted-filter.asm",
+      "sha256": "537821134651a70b0cf3d7c4ddfd209d7ec8b9ee77b9fb11585f5c1fc06048e2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-r1-events.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-r1-events.asm",
+      "sha256": "f39d6038741a55007d13a9e6629e7a35cc625ff0f3e7a9c5fb0fc40e61dd38bb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-keyslots-to-LE-keys.asm",
+      "source": "work/uwb-protocol-agent/root-keyslots-to-LE-keys.asm",
+      "sha256": "0ed99e37f91aa3695a0d9bbbd450932004a83ea59b22038bd9a3a2f30716e32c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearOwnerCommandKeys-wrapper.asm",
+      "source": "work/uwb-protocol-agent/nearOwnerCommandKeys-wrapper.asm",
+      "sha256": "7493d9123585e746e25451a4dfc95cbdeeecd8d23641ac23715dd8b98ad6e64a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetch-locationd019.py",
+      "source": "work/uwb-protocol-agent/fetch-locationd019.py",
+      "sha256": "5b6a7516fd6af974835d8e7aa781da3305e9a9acb2b49b9fdd034995a1c1f5c6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-encryption-complete.asm",
+      "source": "work/uwb-protocol-agent/root-encryption-complete.asm",
+      "sha256": "1ebe80dea8ca364fa09d3b7ea3338e292fc4d7f99ad7438555c9cc89cab40be3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-hci-encryption-b9-route.asm",
+      "source": "work/uwb-protocol-agent/mac-hci-encryption-b9-route.asm",
+      "sha256": "a28204305e9048679692fff22de8d69183110f2855e91c73efd2d9579ee2bae9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-aes-engine-caller.asm",
+      "source": "work/uwb-protocol-agent/rose-aes-engine-caller.asm",
+      "sha256": "848f238b69a3c871b76bc23ea1bf93ac369b6253a2c0e37a06fe3b33114fd9e9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-expectsResponse-getter.asm",
+      "source": "work/uwb-protocol-agent/owner-expectsResponse-getter.asm",
+      "sha256": "f246dd11cf4b6c1d01d83bea835c8d7b0c59c7494efc994aa7231232f350648f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-response-complete.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-response-complete.asm",
+      "sha256": "7bbcbd2c1c518380f25eb99ee5ae13d1df454dbf0b08b433bc37cb67dfacf63c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/timeBasedKeys-native-ios26.asm",
+      "source": "work/uwb-protocol-agent/timeBasedKeys-native-ios26.asm",
+      "sha256": "718945fb92f52759e8e4349c27f9029bd1ce26646d4182d1c15f8eadca6d587a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectKDF-ios26.asm",
+      "source": "work/uwb-protocol-agent/connectKDF-ios26.asm",
+      "sha256": "c269cc841ade18d78b407e56a830a2e61fcaabf2cd72db18fc24822e2a47912d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-event-bus.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-event-bus.asm",
+      "sha256": "0907643d5c5a32e5ad15edc012cafea5c6cff90d94b62874f167e2b5b51fb212"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-r1-sm.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-r1-sm.asm",
+      "sha256": "42bd2f76fc120733bddc68316b7ecbd1cd06f5d9402175807c2e9c0f3aaddbfa"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/commandKeysForUUID-ios26.asm",
+      "source": "work/uwb-protocol-agent/commandKeysForUUID-ios26.asm",
+      "sha256": "092531872e31e9a760f882f27935322016adc0aa9f107915b5aa5deca738192a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-case-ranging-cleanup.py",
+      "source": "work/uwb-protocol-agent/verify-case-ranging-cleanup.py",
+      "sha256": "93e48a272a7d0f3514c83a53257055fc8fd04366fb9280a9556f2ed3195d2871"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/didFetchAllDurians.asm",
+      "source": "work/uwb-protocol-agent/didFetchAllDurians.asm",
+      "sha256": "6d54ad01888411c98c3c82e018e08bbd71cf6d5a5d7ce0cb3d9695cfdf58484c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-precision-dispatch-tail.asm",
+      "source": "work/uwb-protocol-agent/case-precision-dispatch-tail.asm",
+      "sha256": "2ba15f6b87be63dc5a65a666cd850b894770882b1c7d50ed592a1ced6dbe082d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-restricted-catalog.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-restricted-catalog.asm",
+      "sha256": "f676a114d3d3e5277c36bf7dfce1b93e17f10486eda5134c099cd66a20753d03"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connectionKey-callerA-ios26.asm",
+      "source": "work/uwb-protocol-agent/connectionKey-callerA-ios26.asm",
+      "sha256": "23372a43fdd99bf3b989c479be46fa38d8171f50948b2dda253ffd3232562696"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/CASE-PRECISION-GATES-AND-HCI-KEY-ORDER.md",
+      "source": "work/uwb-protocol-agent/CASE-PRECISION-GATES-AND-HCI-KEY-ORDER.md",
+      "sha256": "199f7af275474a44c0dc03cc30abe15933e9e98bec40eab024daf609ddfb1bd4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fetchCapabilitiesService.asm",
+      "source": "work/uwb-protocol-agent/fetchCapabilitiesService.asm",
+      "sha256": "051eb679a7927ec3a43820c63873ab767667be7adbb7e8f4387d58a28a19c0ad"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-fd44-width.py",
+      "source": "work/uwb-protocol-agent/verify-fd44-width.py",
+      "sha256": "f4b4f99ddb8442cf0af1d93864fd01155b32f3aed01e96f07e688950ec4e2dcd"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-rose-request-builder.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-rose-request-builder.asm",
+      "sha256": "ab4e01641d2c8395d3914af91f30d00a8a36f8202e06c2b22e8e18a42c35acf1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-regulatory-provider.asm",
+      "source": "work/uwb-protocol-agent/ios-regulatory-provider.asm",
+      "sha256": "7a56071e510a5bfaaf123385e1689a014935bedac5732206f8083b185a02d63b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-packet-properties.asm",
+      "source": "work/uwb-protocol-agent/rose-packet-properties.asm",
+      "sha256": "8d74030c336a025bd0ed521f471c9983524b819a683d433eca5ea865611428df"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-p2p-config-dispatch.asm",
+      "source": "work/uwb-protocol-agent/case-p2p-config-dispatch.asm",
+      "sha256": "935a910d379cdf85d5be39853155f0ed0949937167aa50a8002d91ca2ec25bec"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-activate.asm",
+      "source": "work/uwb-protocol-agent/owner-activate.asm",
+      "sha256": "ff709ae08af5c908f06e4a0c05053cf8c5e7326d6fcbb00db36366b90b6da84e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-keybuilder-after-primary.asm",
+      "source": "work/uwb-protocol-agent/owner-keybuilder-after-primary.asm",
+      "sha256": "fd543c2e903caea2d6abd924f9aa5dccbb117b9ea4f9dd88b2e84edd3bc9c5a6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-start-trigger-ipc.asm",
+      "source": "work/uwb-protocol-agent/case-start-trigger-ipc.asm",
+      "sha256": "0fac4583979e0f3cd6d738d73ea7ae12aa71071d967951c957087c8163ce2ea4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye_codec.py",
+      "source": "work/uwb-protocol-agent/hawkeye_codec.py",
+      "sha256": "4ede5756e016971a69efa767531c670c483fd109b97675ad6673ec013ff8e7a1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/keys-seed-layout-ios26.asm",
+      "source": "work/uwb-protocol-agent/keys-seed-layout-ios26.asm",
+      "sha256": "20932419354749386fd42f49dce03c78a353f660eecfdb4a4d0ddf40cda8d78d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2p-mini-slot-defaults.asm",
+      "source": "work/uwb-protocol-agent/rose-p2p-mini-slot-defaults.asm",
+      "sha256": "f62e863e3eebdf1013bba250d9a50cdfc301dc470751902e1a88b0ce89b547ec"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-config-request.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-config-request.asm",
+      "sha256": "fe24b5bf6269f4b0f99b5462f5105f78b875f5ac5c39ac5a0b04f48f4ecd2ded"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-event-entry.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-event-entry.asm",
+      "sha256": "a3a26529a25830cdcf48865be61a9e54b02b19d7dd90cab0f9eee1a263f4b656"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-owner-info-request-gate.asm",
+      "source": "work/uwb-protocol-agent/case-owner-info-request-gate.asm",
+      "sha256": "aab6058c5a5a407f2f2339a00a61d669bbd067a7b19d0184f584faa2ea5634f0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/commandKeys-intermediate-lookup-ios26.asm",
+      "source": "work/uwb-protocol-agent/commandKeys-intermediate-lookup-ios26.asm",
+      "sha256": "6e9a125fc1bc7cb92584c641e9ac93ede197fcbfd2a9ad8b305d1d7cb3372d9f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-fd44-registration-and-active-key.asm",
+      "source": "work/uwb-protocol-agent/case-fd44-registration-and-active-key.asm",
+      "sha256": "2923894cc2937ffaa657349461cfb720075ee8586fd9d468ab07ef329a0e2bab"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-ack-classification.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-ack-classification.asm",
+      "sha256": "48747b5a43c1edae97ed7131a267ed59b77a2165c56aba8da61a17449ece19af"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-regulatory-packed-getter.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-regulatory-packed-getter.asm",
+      "sha256": "fe298de35f147a4ef83c8ccbd52a2bd4bfa92b2198a8292e4db9aa9369d9025c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/discoverCharacteristics.asm",
+      "source": "work/uwb-protocol-agent/discoverCharacteristics.asm",
+      "sha256": "6afc4f7d00d1fbdfe7e70ed1a2173b87e673a17a6e53cbd407abac47a4b46161"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/CURRENT-PRIMARY-KEY-QUERY.md",
+      "source": "work/uwb-protocol-agent/CURRENT-PRIMARY-KEY-QUERY.md",
+      "sha256": "53e512f8181db661df18fd209ad1c15289556b929db87c1c267a0110c8b345e2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/setRoseNBRanging.asm",
+      "source": "work/uwb-protocol-agent/setRoseNBRanging.asm",
+      "sha256": "7c23672e49b47929843ea09158a2c46f98f9d0da10a1dd757a88df95a47098ee"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/find-blrefs.py",
+      "source": "work/uwb-protocol-agent/find-blrefs.py",
+      "sha256": "9fdb44c283790513f1a0ba8e9eddb73f4e82abe48c95f87dafb1b2a37ccfbb83"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-retry-failure.asm",
+      "source": "work/uwb-protocol-agent/root-retry-failure.asm",
+      "sha256": "8ab04602aaaeac15248becacc50ade549a955d0f8c9c63f2268d58b8455ba29a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/key-generation-info-ratchet-ios26.asm",
+      "source": "work/uwb-protocol-agent/key-generation-info-ratchet-ios26.asm",
+      "sha256": "f4ca7b6a67dd7637123aa75f38ebd925f63bea2ab8296f91a1ac827ae32ca025"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/samsung-firmware-image-comparison.json",
+      "source": "work/uwb-protocol-agent/samsung-firmware-image-comparison.json",
+      "sha256": "40b8378071210c971cb298daa4801607aa05d58ea49b738783f1082cefb659b6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-encryption-callback-setters.asm",
+      "source": "work/uwb-protocol-agent/root-encryption-callback-setters.asm",
+      "sha256": "ea05bdd8d762254e289952dc6fe9e5a95803beb2fbcc7570d068f8941c8822e7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-modern-nb-config.py",
+      "source": "work/uwb-protocol-agent/verify-modern-nb-config.py",
+      "sha256": "318189d50eb69784bf579ff2c080b1fcc7b920073a6eac177a6f809452a4a119"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-regulatory-getters-before.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-regulatory-getters-before.asm",
+      "sha256": "819434a651807abfd2c9e1bd7358ce34eeb5403f67eb22a3a861375b5fcaf037"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-regulatory-state-copy.asm",
+      "source": "work/uwb-protocol-agent/ios-regulatory-state-copy.asm",
+      "sha256": "e80ba11f5d9dc6c15b2de09643f505e41f63197b2b3d2fa5339a57c427c8b9e6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-connectToDevice-full.asm",
+      "source": "work/uwb-protocol-agent/owner-connectToDevice-full.asm",
+      "sha256": "5814fb1a6181bec65fb4ca9e1e210f8d484547c943446a0ef946bff063e33b87"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-configureRangingSession.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-configureRangingSession.asm",
+      "sha256": "6cc4ba6f4ee9364be83f4c76b08ea0ca3910f7a0739c5431c06c035646fd8c9f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-stop-callbacks.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-stop-callbacks.asm",
+      "sha256": "c2d11807a6e23b687d57d958bf7bdf03c7eb12c0382781d013ba6ade4aaae704"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-rmac-sts.asm",
+      "source": "work/uwb-protocol-agent/rose-rmac-sts.asm",
+      "sha256": "965bfba684e4172ede5e24d5c4aa7dd70f2432560d3543b234eb9eaf8aa1686b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/FindMyBluetooth-material-conversion.asm",
+      "source": "work/uwb-protocol-agent/FindMyBluetooth-material-conversion.asm",
+      "sha256": "b2d5178458454d0f0acc51ab67d2d8559f2d8c3a3b1bbe5eff7b46e232bf7030"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-controller-timing.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-controller-timing.asm",
+      "sha256": "ca043556fbbe3389a6afa66a2afbd1bbb74e02a98c764fea50fce6d61e5c4076"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-restricted-scan.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-restricted-scan.asm",
+      "sha256": "4953f54b7420be1e7ebd9de1db50c93c970ee07bbe0cb3d247b06b20f6ddbfc2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-handleConnection.asm",
+      "source": "work/uwb-protocol-agent/owner-handleConnection.asm",
+      "sha256": "659b6873c7686586b7b170eff515dd74193587799fa2b25e2c898e993b308299"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-rose-p2p-frame.py",
+      "source": "work/uwb-protocol-agent/verify-rose-p2p-frame.py",
+      "sha256": "b225be25c140540a68dcea7aaf77d6a9680c0b7f83ba13a61c39d7581a015947"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/service-didAck.asm",
+      "source": "work/uwb-protocol-agent/service-didAck.asm",
+      "sha256": "2bcb3c16ca3ed263770e815fe73bd68083883578158c617c9fb737cee9cf0124"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-case-recovery-address-primary-ltk.py",
+      "source": "work/uwb-protocol-agent/verify-case-recovery-address-primary-ltk.py",
+      "sha256": "f4e1a400db2c6f73d4cad608e2cf47244c5fa0dfa1e2ed4832c27bf32db96a44"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-postInit-fetch.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-postInit-fetch.asm",
+      "sha256": "247fd2ce3de7d477d880ac647fbb21a5cf8ef55a285fae909c39de57ffc4905b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-nb-channel-manager.asm",
+      "source": "work/uwb-protocol-agent/rose-nb-channel-manager.asm",
+      "sha256": "4f1e2ae83c87d05a9f7a13d43443fcb75a0fe27707477b32af6063392fc50bd7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-regulatory-state-builder.asm",
+      "source": "work/uwb-protocol-agent/ios-regulatory-state-builder.asm",
+      "sha256": "011e546814cb456369f2ab74fdd5a43510b5f15632b99557fe9bca37b1defe41"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-country-vector.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-country-vector.asm",
+      "sha256": "9cf079bc16425fc0e987dc13af8935f00a909dbe1961e3f4b9e49f5664dffe31"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2p-frame-synthetic.json",
+      "source": "work/uwb-protocol-agent/rose-p2p-frame-synthetic.json",
+      "sha256": "06a9db2c2b7c8d6df23965837fe9014f3b5c270dc28e453b0374762c782eea6d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-case-current-primary-key.py",
+      "source": "work/uwb-protocol-agent/verify-case-current-primary-key.py",
+      "sha256": "0e98a44d33c164f7d748209054b59f9d725967702b14a310cef0b305dbb22d52"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-findmy-extension.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-findmy-extension.asm",
+      "sha256": "d41ca589ddb757cf738f80ff98e4a6423107dd71afdd35b85eb3bee7a50969ac"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-start-flag.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-start-flag.asm",
+      "sha256": "67adb7a17ce466b1e62f27a8793b631c260c7f2f41818edc10d2aeaa7bfc9d72"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-endpoint-ranging.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-endpoint-ranging.asm",
+      "sha256": "06fe713461b8d6b1839fd3acabcee6ef430b03500e9daa63d0876846e7e27ed5"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-session-factory-role1.asm",
+      "source": "work/uwb-protocol-agent/rose-session-factory-role1.asm",
+      "sha256": "638acb52994670ba1b346e469697b18f5fb5a98a9ff77aaa89e3b966a66f7040"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-initCompanion.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-initCompanion.asm",
+      "sha256": "82f835d466a6f4889ad901160a61aed93539c2a764f4d8763f18106b8e6006f7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/intermediateKDF-ios26.asm",
+      "source": "work/uwb-protocol-agent/intermediateKDF-ios26.asm",
+      "sha256": "9d909b8aa931c61dfd8f04a3fae79bed7b951890acbdc3a62e4946fdfa72448e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-didFetchInformation.asm",
+      "source": "work/uwb-protocol-agent/nearbyd-didFetchInformation.asm",
+      "sha256": "bce8d34054ecd5609ca2becf82cf5d6746ce2dde0e0ae60afded69ac9e2f5b17"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/fd44-width-synthetic-result.json",
+      "source": "work/uwb-protocol-agent/fd44-width-synthetic-result.json",
+      "sha256": "322390f436270b12ee9155d5132550921e0f310124178489f71fe3dc08fbd5d9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-init-dispatch-async.asm",
+      "source": "work/uwb-protocol-agent/case-init-dispatch-async.asm",
+      "sha256": "40b90ba113b3d027c2c85f231763ef52f1ad5ff6a15b62c4faa847a9ed99012f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-security-mode-enum.asm",
+      "source": "work/uwb-protocol-agent/case-security-mode-enum.asm",
+      "sha256": "fedb21dd8618f35ba251c98c5ff7b3c26862e3b412d04ed146d9d508f5e9d6ce"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-start-error-ack.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-start-error-ack.asm",
+      "sha256": "9a5bd521518a260f18aaed79f7279fc93cec37d9ceef6784b2b76949428a4d48"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/addScanResultAtDate.asm",
+      "source": "work/uwb-protocol-agent/addScanResultAtDate.asm",
+      "sha256": "43b8ed17660b23057ca813a96067bb282169ef768e78d3e70cae490deda95f9e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-packet-field-accessors.asm",
+      "source": "work/uwb-protocol-agent/rose-packet-field-accessors.asm",
+      "sha256": "98173fe8b0e8acbd4c35b6a626fee97d338a205f8503e041d7ddf4bf280246be"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-connect-caller-untraced.asm",
+      "source": "work/uwb-protocol-agent/owner-connect-caller-untraced.asm",
+      "sha256": "dff160d89209a6e328cffcf07dc1ed39ae573837e71b2e8a8e64c2fa63346977"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/intermediate-derive-prefix-ios26.asm",
+      "source": "work/uwb-protocol-agent/intermediate-derive-prefix-ios26.asm",
+      "sha256": "c1dcaaf216cf092272bc500d14e9a228596a0451358208ee5da4c901a3045bc0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-fd44-policy-head.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-fd44-policy-head.asm",
+      "sha256": "8e13af04c6aaa9d3bef7de9f0b432faca007baf92f87c6e725f5e206b59569c7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-mac-key-sync-enum.py",
+      "source": "work/uwb-protocol-agent/verify-mac-key-sync-enum.py",
+      "sha256": "69eebff860669cb64e8c9e711058f32d399d6a2d28765271b71497c778c49e0d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-wild-key-rolling-address.asm",
+      "source": "work/uwb-protocol-agent/case-wild-key-rolling-address.asm",
+      "sha256": "d6bb357e303e0e6e407ef90c198b2e2b190b727532c4761dfd5da8930aabac2c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-timeout-reset.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-timeout-reset.asm",
+      "sha256": "d42a808536632e3022ac216e62ef40587e8b608982b4af7b6e8893f4ba786853"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ROSE-STS-DESCRIPTORS.md",
+      "source": "work/uwb-protocol-agent/ROSE-STS-DESCRIPTORS.md",
+      "sha256": "e7fdbd40c161d26940b90d24079965b3f734effb0d71c0dc35fef7f7dc702986"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-connectToPeripheral.asm",
+      "source": "work/uwb-protocol-agent/owner-connectToPeripheral.asm",
+      "sha256": "2ebcd57b594cf792a2ca69059f585703d7d650f3a0f2d93288f50da0f255af92"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-handleDurian-ack-tail.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-handleDurian-ack-tail.asm",
+      "sha256": "90a74ced8d8f9f7bb0324fe478133999878d95fee8aa8ccc5f3043802d8de10b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-framing-ack.asm",
+      "source": "work/uwb-protocol-agent/case-framing-ack.asm",
+      "sha256": "66adddca4d8b26780069f0808573ca4fc095147e57291796192a70f5d962cc77"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/createStartNBRangingHawkeye.asm",
+      "source": "work/uwb-protocol-agent/createStartNBRangingHawkeye.asm",
+      "sha256": "55b2e993f2051ca8b2149ce27dac43d7ac1d5a938ddef6e31295573b9fef6e5c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/x963-derive-ios26.asm",
+      "source": "work/uwb-protocol-agent/x963-derive-ios26.asm",
+      "sha256": "8e189a0d83252147ad662effcf164bb43f88ddd8637c53bbca21ffcc82cddd87"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-hmd-sts-memory-ready.asm",
+      "source": "work/uwb-protocol-agent/rose-hmd-sts-memory-ready.asm",
+      "sha256": "f75dfd69fd481b6d5e8ad9f16f4cfff832ed1a4f5d10e610fcb8e95024af2304"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-p2p-command-install.asm",
+      "source": "work/uwb-protocol-agent/rose-p2p-command-install.asm",
+      "sha256": "8c9800b0e5adff0dcf4681741f332c9565a43c13536cd0b698a08a9b8972c9ee"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-cb-create-address.asm",
+      "source": "work/uwb-protocol-agent/mac-cb-create-address.asm",
+      "sha256": "92fcbf2e13c05cb50ae60cc09b62648616e2732e22ecfaae12656b9e2e8df003"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-wild-address-selection.asm",
+      "source": "work/uwb-protocol-agent/case-wild-address-selection.asm",
+      "sha256": "0fd848ac5eaadb6228b79053e92df5d6362e96ccbe2fc78149560a8d11e8d81b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-state-cleanup.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-state-cleanup.asm",
+      "sha256": "c6eaa61e6852b10dadd1b80ae59d8763778c139eb4f71ce42fae95ee75b2d223"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/CASE-LEGACY-PHY-STS-START.md",
+      "source": "work/uwb-protocol-agent/CASE-LEGACY-PHY-STS-START.md",
+      "sha256": "5f361e8b955f4d048ae25471b934a5e8033fdc3595b299e0d9b36f9a0a792e35"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-start-dispatch-exact.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-start-dispatch-exact.asm",
+      "sha256": "0d55dee4655278c7f90ba32ee3be371569a0cfbfdd6f0e7914f24482b4f44b2a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/commandKeysForUUID-native-ios26.asm",
+      "source": "work/uwb-protocol-agent/commandKeysForUUID-native-ios26.asm",
+      "sha256": "1067101b0792efa8ca14ac6ec1f22d388caaf54df2db79c60d1a9b517d4e8a5f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-regulatory-snapshot.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-regulatory-snapshot.asm",
+      "sha256": "4d1f58b9f0c0df73efb56f274907f3b7e4cad63322754f5c62c6379743ecf163"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-init-constructor.asm",
+      "source": "work/uwb-protocol-agent/rose-init-constructor.asm",
+      "sha256": "dca50be9edca5f7939c3def1cfa7b28eed66896001776b623c32cf4ee4cda65f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-discoverServices.asm",
+      "source": "work/uwb-protocol-agent/owner-discoverServices.asm",
+      "sha256": "125c5aa46ba167cb67c4a5ac74e1d53edddf5b47f9e23a0731ec3d92c67db38a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-legacy-config-state-copy.asm",
+      "source": "work/uwb-protocol-agent/case-legacy-config-state-copy.asm",
+      "sha256": "d8edb9bf35bd32c9f0051362665e9b7c159f0191093db42f17209abef30bef54"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-gatt-discovered.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-gatt-discovered.asm",
+      "sha256": "1a3e7708c1f229f304465e4d3253e421b35cd4729bc7048808bb14da047b90db"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/createDevice.asm",
+      "source": "work/uwb-protocol-agent/createDevice.asm",
+      "sha256": "ecb0159d883244307a77f6233c02cf2c3dc5e5db3ce00409da9cf9ed70b5edcc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearOwnerCommandKeys-native.asm",
+      "source": "work/uwb-protocol-agent/nearOwnerCommandKeys-native.asm",
+      "sha256": "ab3bf45626df3ce984e2ce5e26213821464c635e374b550b7c93b3a44ce4f63f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/FindMyBluetooth-select-address.asm",
+      "source": "work/uwb-protocol-agent/FindMyBluetooth-select-address.asm",
+      "sha256": "8e3672b9fe1910434498c3a68c7328466cb6e0b85ed0c4e43c4a5d30b7496803"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/FindMyBluetooth-retrieve-pairinginfo.asm",
+      "source": "work/uwb-protocol-agent/FindMyBluetooth-retrieve-pairinginfo.asm",
+      "sha256": "ca97b0d78aeb432c5e6c2758c71b4f419dcc8fe4c395a691dd02e588cd15c326"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/diversified-root-callerA-ios26.asm",
+      "source": "work/uwb-protocol-agent/diversified-root-callerA-ios26.asm",
+      "sha256": "18c2272201c25947ceb6db7980341afb193b7cf1ce516a24c43eb14490d46cf2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/service-rangingResponse.asm",
+      "source": "work/uwb-protocol-agent/service-rangingResponse.asm",
+      "sha256": "6870f343b218f91540559b0a9cc4b6a3b54b38288f87e9121214cc1306a36e1b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-synthetic-checks.json",
+      "source": "work/uwb-protocol-agent/modern-nb-synthetic-checks.json",
+      "sha256": "9d23bee1770ed99724ac97c5a85e28ebf198bf962e616acba161c85bec51572f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/connect-derive-function-ios26.asm",
+      "source": "work/uwb-protocol-agent/connect-derive-function-ios26.asm",
+      "sha256": "c00b9c5b90fb5f8046a25fd2ead0fada32654ba0fd5fc616c692cf2201560da8"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-key-request-callback.asm",
+      "source": "work/uwb-protocol-agent/root-key-request-callback.asm",
+      "sha256": "401ae330a399b759d8fe5e8c3cafabc6b1741ca4c47b871185b029cee183f035"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-key-sync-enum.asm",
+      "source": "work/uwb-protocol-agent/mac-key-sync-enum.asm",
+      "sha256": "053e6d274d4e50015a90f068dc1a0f603db757562a1528d576e21e5da8c9678d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-uuid-catalog-init.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-uuid-catalog-init.asm",
+      "sha256": "be4a7c930133b1b0e6905c7e9eb6463f13409bf1d17207edd992512b8771700c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-fragmentation-continuation.asm",
+      "source": "work/uwb-protocol-agent/case-fragmentation-continuation.asm",
+      "sha256": "ebab1374be170ba6d13c5bc40eb236b1e0c166cfe9b85a691538322ba523c8b1"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-status-event.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-status-event.asm",
+      "sha256": "a5f20d3a9d73163280b4dadad669618cf99d8489a5e5fcd6306e680d5c634478"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-ranging-session-classification.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-ranging-session-classification.asm",
+      "sha256": "5a9cf84b91db2693a7f16c827fb654c056179a573a6091b1fb9f50f272ed0d5d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-didWrite-success.asm",
+      "source": "work/uwb-protocol-agent/owner-didWrite-success.asm",
+      "sha256": "ed54bdae4346cea1c88d915737e45de0f7d19ff8b23f22fb55b91cee6587d8ef"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-key-pairing.asm",
+      "source": "work/uwb-protocol-agent/root-key-pairing.asm",
+      "sha256": "176499cc559c898d504c8c613739f99486dc56efe0f903cb4ebdee5972fbe3b9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-precision-response-synthetic.json",
+      "source": "work/uwb-protocol-agent/case-precision-response-synthetic.json",
+      "sha256": "09304e39debd6b8474ac05b7913ffb0fa5d7cf0ccfaf65daff5cbeef6b1e42cc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-regulatory-result.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-regulatory-result.asm",
+      "sha256": "a98499a6ef2c065ab1f6addeb75bf95a22e7551dd94b767466a31a126167b198"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/addPossiblePeripherals.asm",
+      "source": "work/uwb-protocol-agent/addPossiblePeripherals.asm",
+      "sha256": "954fedc2b12718feb84db2d37e0e6ca496fe281359be0fc36baee251b840cb70"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/handleDurianData.asm",
+      "source": "work/uwb-protocol-agent/handleDurianData.asm",
+      "sha256": "ce0c3eb9add36fff7ce67fff08bf27d935019eddf951df9e3e80351e24225c03"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-channel-selection.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-channel-selection.asm",
+      "sha256": "a1dd30355c6ac7d1fe03b6e40662d2f5de6154a811345864e2697186a1453f4e"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-cleanup-rose-event-dispatch.asm",
+      "source": "work/uwb-protocol-agent/case-cleanup-rose-event-dispatch.asm",
+      "sha256": "455557424afa40837e5e2b7c26ababa9c071bc3f07ee62a0ae7050f15368c37c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/getAddressForDevice.asm",
+      "source": "work/uwb-protocol-agent/getAddressForDevice.asm",
+      "sha256": "d1aebfac54be4ca06f22439e17682d44e7989190539d488ebb778cf0d147ec47"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/disassemble-macho-slice.py",
+      "source": "work/uwb-protocol-agent/disassemble-macho-slice.py",
+      "sha256": "c6fc4cf41dae6ccf63a82e85629c130e90f217c98af5da8a35bbca19bb44833d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/objc-addresses.py",
+      "source": "work/uwb-protocol-agent/objc-addresses.py",
+      "sha256": "9024325415ed501be3c9447901e0f6107c87dbb066c119a130da41b500df08bb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/ios-regulatory-uwb-country-code.asm",
+      "source": "work/uwb-protocol-agent/ios-regulatory-uwb-country-code.asm",
+      "sha256": "cb20d7eaa943050d44104ac8d0266ed658cc6d1906b81ba86bff03cd7a01c6cc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-aes-engine-init.asm",
+      "source": "work/uwb-protocol-agent/rose-aes-engine-init.asm",
+      "sha256": "62e8511d9a01a38e155f3c58d55fb44af3c9bc58671e84b494f7d7d212f7044c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/performTask.asm",
+      "source": "work/uwb-protocol-agent/performTask.asm",
+      "sha256": "c32365d6d576898121fdf96c2ee743628b8e2f93f010508b53602e6dd193dd07"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/verify-case-p2p-config.py",
+      "source": "work/uwb-protocol-agent/verify-case-p2p-config.py",
+      "sha256": "4337a897ec2b90f4e55d390d64a127b10fed63c50a1ffb5a836b7a96da6305b9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-connect-callbacks.asm",
+      "source": "work/uwb-protocol-agent/root-connect-callbacks.asm",
+      "sha256": "0be02791769c4bc8f4e8e4411abdd2f51151b456f279f3055704624bbb392fbb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-manager-init.asm",
+      "source": "work/uwb-protocol-agent/owner-manager-init.asm",
+      "sha256": "29046e5671bd896da267b93751737752612ff737f883cd93598932cdc8ccadc7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-case-config-bridge.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-case-config-bridge.asm",
+      "sha256": "167b592773e1e94d2667f6446befa202abeca5a331f8e09dd96ebe5adea4302f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-start-options.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-start-options.asm",
+      "sha256": "8df2aa3095354c4d4269cab5b1c7823790408c9b1e7b91754a06e365e5bda3f7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-restricted-entitlement.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-restricted-entitlement.asm",
+      "sha256": "268df35c03c64d4b74b858516d0dd253e1f70f0b4c0d9cd15a922159181e6eb3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/case-rose-config-storage.asm",
+      "source": "work/uwb-protocol-agent/case-rose-config-storage.asm",
+      "sha256": "d416481b51b323db9aacf1cdabbcecba81009c1b8ee915be5dada1cb04901c66"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/MAC-CAPABILITY-GATE.md",
+      "source": "work/uwb-protocol-agent/MAC-CAPABILITY-GATE.md",
+      "sha256": "df6b196a365fe1f51361942c9e839b3359ce1ad15997654fdff0e69f3e3b367d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-temp-setup.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-temp-setup.asm",
+      "sha256": "3ffc439c206e8eded5f1ed86d0bc959f6e8c065fd0fbff097f410b2d7848c0b9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/samsung-uci-constants.py",
+      "source": "work/uwb-protocol-agent/samsung-uci-constants.py",
+      "sha256": "4a9d9ed8a6a432772d5edeadf3f1ad843d3ece6c7f0c3712473d6f4f47e62c8b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/modern-nb-country-map-install.asm",
+      "source": "work/uwb-protocol-agent/modern-nb-country-map-install.asm",
+      "sha256": "6ddc30e8a4444c07aba6cf8ec1f5d2309e093c168d95b9e7802bbd0be09d5ed5"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/FindMyBluetooth-peripheral-material.asm",
+      "source": "work/uwb-protocol-agent/FindMyBluetooth-peripheral-material.asm",
+      "sha256": "a6d2c2daa9a04e834450fa6684df7ae9df837547c869a0a38d5c6279007aa735"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-restricted-uuid-check.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-restricted-uuid-check.asm",
+      "sha256": "a725f2cf4e772c5f4e9c3191c574fa2803bbcc99dc7931d40ab165cec6a81988"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/nearOwnerCommandKeys-tail.asm",
+      "source": "work/uwb-protocol-agent/nearOwnerCommandKeys-tail.asm",
+      "sha256": "450c0fa6d11b4e2d81a6ac7d8f50daa7952a36b49f301a15584095c260b13ea4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-sec-preamble.asm",
+      "source": "work/uwb-protocol-agent/rose-sec-preamble.asm",
+      "sha256": "2d731ba5df4217508ac50b3272aa208289e19c45830c0e19f5f9b4eced515c88"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-startLinkEncryption.asm",
+      "source": "work/uwb-protocol-agent/root-startLinkEncryption.asm",
+      "sha256": "4d771195474ee4619b9ac45b5c118bb3c8532fac408159df32a32688a3e8e170"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-fd44-restriction-synthetic.json",
+      "source": "work/uwb-protocol-agent/mac-fd44-restriction-synthetic.json",
+      "sha256": "7660eb88b1126841e7412a6ba60f7824ed41c60fdd893b83aa943ab716d93b37"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/mac-bluetoothd-fd44-policy.asm",
+      "source": "work/uwb-protocol-agent/mac-bluetoothd-fd44-policy.asm",
+      "sha256": "5513ea575eb1817998017abc3f92b270f030950191d8ab432de18922b34f7872"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/find-searchpartyd.py",
+      "source": "work/uwb-protocol-agent/find-searchpartyd.py",
+      "sha256": "761946a7a088db7688e44255a741c908fea1a09a9de099805211676565d04bb7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/retrievePeripheralForMaterial.asm",
+      "source": "work/uwb-protocol-agent/retrievePeripheralForMaterial.asm",
+      "sha256": "bda2b972f9f97d14b5951beb7fde3e4531768e3213129d3b507098b14ea2ffc7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/owner-didConnect.asm",
+      "source": "work/uwb-protocol-agent/owner-didConnect.asm",
+      "sha256": "2fe5bcf6e6a37d8d564e27ab80836238ef532fba7ab3b5f5d2944e71d8440439"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-didWriteValue.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-didWriteValue.asm",
+      "sha256": "5e63304b75c377f6a78c1bb94f347328ffca9c67d5ea7b13653f4537a4061a03"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/startNBRangingHawkeye.asm",
+      "source": "work/uwb-protocol-agent/startNBRangingHawkeye.asm",
+      "sha256": "99e45f06edda33135efbe6c2148893ae635de393b22d05d37fae72c68f8d4833"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/hawkeye-discovery-before.asm",
+      "source": "work/uwb-protocol-agent/hawkeye-discovery-before.asm",
+      "sha256": "bce8ec65728dc3473af606bac6b571879e32af1ddfbf81f0b79a01f085b20c9f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-8B34/p2p-sts-initializer.asm",
+      "source": "work/uwb-protocol-agent/rose-8B34/p2p-sts-initializer.asm",
+      "sha256": "e59d11d42dd8011075f20ac6bea620e2760b06874305f553117b81501b2c5aaf"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-8B34/provenance.json",
+      "source": "work/uwb-protocol-agent/rose-8B34/provenance.json",
+      "sha256": "ad46d70a78186a0aab1ee096989ebf27826e07e368c75a2c98e8debe0a459e6c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-8B34/verify-initializer.py",
+      "source": "work/uwb-protocol-agent/rose-8B34/verify-initializer.py",
+      "sha256": "b591623675eb61d7b888033b2acdf41fa737d8469ccd1b0056d0392ca2c21cc3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-8B34/sts-stream-generator.asm",
+      "source": "work/uwb-protocol-agent/rose-8B34/sts-stream-generator.asm",
+      "sha256": "531724b3a6f0718100260b2ca6d44d333d6007397934c19f7482f55585b3848a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-protocol-agent/rose-8B34/initializer-synthetic.json",
+      "source": "work/uwb-protocol-agent/rose-8B34/initializer-synthetic.json",
+      "sha256": "fe7b51f4a285a59cf3692128424837b4919dde88cd5a2634e4a0768c1483c827"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/reproduced-inventory.json",
+      "source": "work/airpods-pro3-firmware-agent/reproduced-inventory.json",
+      "sha256": "547b44764d6c55f3680dce7cecdb80d7f3789c959c09349bfe63a0817a2e73b8"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/emulate_key_policy.py",
+      "source": "work/airpods-pro3-firmware-agent/emulate_key_policy.py",
+      "sha256": "7e63e7107d1963e4c3c44b2af9beec7531c942cfca902c0c90d1b3cfe83e8ee2"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/A3064-8B34-provenance.json",
+      "source": "work/airpods-pro3-firmware-agent/A3064-8B34-provenance.json",
+      "sha256": "542c4759b573f7fd2c00effba293b5505ee2677f284bf8fbc1faf63cb022eb9c"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/thumb_inspect.py",
+      "source": "work/airpods-pro3-firmware-agent/thumb_inspect.py",
+      "sha256": "ad3a6369c7903557858c790d74faec0f64c9be60d7e91f05e6e4545aaaffe9a9"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/A3122-9A348-provenance.json",
+      "source": "work/airpods-pro3-firmware-agent/A3122-9A348-provenance.json",
+      "sha256": "fefba700d08dd495c150849fa5d7c606551ddcf4d7d8c99c9afa11323627bd17"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/README.md",
+      "source": "work/airpods-pro3-firmware-agent/README.md",
+      "sha256": "cf11ecead9027f33f49207542691ac0a35488321759d8639d497e4c6b736c0ff"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/A3064-9A348-provenance.json",
+      "source": "work/airpods-pro3-firmware-agent/A3064-9A348-provenance.json",
+      "sha256": "4934117a5b624233eabe9fdb6e6e214e89ed263b9cbe8ff4734f7a3edf24fc2d"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/reproduce_extraction.py",
+      "source": "work/airpods-pro3-firmware-agent/reproduce_extraction.py",
+      "sha256": "d2fdf6473b303ad7a41be155b48775fa817ae9e985e15b0478fcee9f5ebc9fb4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/8B34-ACQUISITION.md",
+      "source": "work/airpods-pro3-firmware-agent/8B34-ACQUISITION.md",
+      "sha256": "75e2cab094a5bb75536caf43827c9816ffedf12c8e6471c6e7463e81b349eb91"
+    },
+    {
+      "path": "tools/findmy-enrollment/research/FindMy-registration-audit.md",
+      "source": "work/protocol-agent/FindMy-registration-audit.md",
+      "sha256": "62075593f5cadf77c71db53baec780412c1ebb5c053621e546627c18a72788dd"
+    },
+    {
+      "path": "tools/findmy-enrollment/research/ext-connection-constants.py",
+      "source": "work/protocol-agent/ext-connection-constants.py",
+      "sha256": "30d850cdf6d00843a1e69fb63c940aa907a683b2f31d5e51344374bbe2db028b"
+    },
+    {
+      "path": "tools/findmy-enrollment/research/account-constants.py",
+      "source": "work/protocol-agent/account-constants.py",
+      "sha256": "f926f45adae5df8abb5a53aa8b9d9df37ed683347fabb3e87103b394107c42c6"
+    },
+    {
+      "path": "tools/uwb-protocol/research/account-integration/KEY-SELECTION-AUDIT.md",
+      "source": "work/account-integration-agent/KEY-SELECTION-AUDIT.md",
+      "sha256": "434295172acbdd144f08fefdfb360842ed8ce11ba8216c886e6e4d64dde9fd53"
+    },
+    {
+      "path": "tools/uwb-protocol/research/account-integration/test_key_selection_audit.py",
+      "source": "work/account-integration-agent/test_key_selection_audit.py",
+      "sha256": "74e8dfb0988968a28f55942fae68899398a49f5b24b2806462a4c77a313d3bcf"
+    },
+    {
+      "path": "tools/uwb-protocol/research/account-integration/implementation-report.txt",
+      "source": "work/account-integration-agent/implementation-report.txt",
+      "sha256": "bbe6cf2d1dadd19648ecf3521ebea74275d7fc3ee403bbeaa2db97fa23243df4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/build-p2p-packet.asm",
+      "source": "work/uwb-p2p-agent/build-p2p-packet.asm",
+      "sha256": "aebe4c377a1eb8d026035ba99815776a05943e8014a3c2604c7e26df098bb6bb"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/populate-p2p-options.asm",
+      "source": "work/uwb-p2p-agent/populate-p2p-options.asm",
+      "sha256": "d9f262dfbe5d508c9c6c6acbd082889cd386fe2dea9432a4d4555679871ef62a"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/extract-output.txt",
+      "source": "work/uwb-p2p-agent/extract-output.txt",
+      "sha256": "a3aa60441d4577538b60404ef2759c6ad50dcb7a6c76a33d11a062041c230917"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/native-constant-tables.txt",
+      "source": "work/uwb-p2p-agent/native-constant-tables.txt",
+      "sha256": "de4ddd3319caf4cc27626af4c15230f14c5b2f860fa35d467aff6258b225bfc0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/channel-map.asm",
+      "source": "work/uwb-p2p-agent/channel-map.asm",
+      "sha256": "befa37aca4daae85aeb0a4d83c55f42437a680623c4b8ace9850350191127488"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/preferred-channels.asm",
+      "source": "work/uwb-p2p-agent/preferred-channels.asm",
+      "sha256": "1d89dd12a39fbcf95d34bb4122a3fa1944abf85372d5fff05621a6afd8f42f20"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/preamble-jump-table.txt",
+      "source": "work/uwb-p2p-agent/preamble-jump-table.txt",
+      "sha256": "a1e2d9878ed481de5d198d1897415f6ba37d84803355ea1a0cacc24f353ddf5f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/four-byte-config.asm",
+      "source": "work/uwb-p2p-agent/four-byte-config.asm",
+      "sha256": "c03c0782c1c0cc2072386d4539d875bc4310265b73a0d73215608dfbf1ee74d3"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/diversity-config-exact.asm",
+      "source": "work/uwb-p2p-agent/diversity-config-exact.asm",
+      "sha256": "6677c6d59259f744e89f7507b1e11ff7454cdc7538d3371a2e08905b26edb60b"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/packet-v1-builder.asm",
+      "source": "work/uwb-p2p-agent/packet-v1-builder.asm",
+      "sha256": "19f53f8861e930926c2d16e543de3fca931f5d0ce182a065345db34c8189f2bd"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/packet-family-jump-table.txt",
+      "source": "work/uwb-p2p-agent/packet-family-jump-table.txt",
+      "sha256": "71c9190ecd1bdb8b215b80d922d5a9146f8a3d3a621ab20b083a1c31a23fa8be"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/extended-preamble-map.asm",
+      "source": "work/uwb-p2p-agent/extended-preamble-map.asm",
+      "sha256": "0349c576a4a7245b77656ca8cf26b8825669c5794078fbeefc7df454846577dc"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/preset-knobs.asm",
+      "source": "work/uwb-p2p-agent/preset-knobs.asm",
+      "sha256": "4d7369a0d5bc2106ef3d0564bd1885d781b291596fca36f07c235ce72f4f8ecd"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/request-preset-builder.asm",
+      "source": "work/uwb-p2p-agent/request-preset-builder.asm",
+      "sha256": "308d6a92ca3ba4da8a2c410713c9ced4f1c66d618fe8bfb31fe2b36a74dbddea"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/service-request-builder.asm",
+      "source": "work/uwb-p2p-agent/service-request-builder.asm",
+      "sha256": "40f070b6ea2d55d63cbc2c04bcc9394e1a04c1afcdfb8fcbd5495efb406d82af"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/companion-configure.asm",
+      "source": "work/uwb-p2p-agent/companion-configure.asm",
+      "sha256": "d281ce99879716151a64c24ba748a88ced6e5b6ae3fe05b0241108fd9abb12e7"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/packet-type.asm",
+      "source": "work/uwb-p2p-agent/packet-type.asm",
+      "sha256": "f0746120f9b1dbcb728d27fd77d942264a8ad569b7c5e71d16a20129621a7dc8"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/mac-mode-string-table.txt",
+      "source": "work/uwb-p2p-agent/mac-mode-string-table.txt",
+      "sha256": "078acd0bb7944c306997a14437fa5d9c8bb2c5c09c37e506dc75757158d3135f"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/prepare-request-cpp.asm",
+      "source": "work/uwb-p2p-agent/prepare-request-cpp.asm",
+      "sha256": "0e1da08ab79468dcd7ee28d26439ce76bc3af01d46aa7dee3442882a015266b0"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/packet-v1-log-fields.txt",
+      "source": "work/uwb-p2p-agent/packet-v1-log-fields.txt",
+      "sha256": "f9391457022b5ca83ece2421517df099408e5d1bbd1cc944c85be888380302c4"
+    },
+    {
+      "path": "tools/uwb-protocol/research/uwb-p2p-agent/extract.py",
+      "source": "work/uwb-p2p-agent/extract.py",
+      "sha256": "29bcae5a4964459547b0ec159d091b652b973269bf1040084918651c1c1b8fad"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/root-helper.py",
+      "source": "outputs/airpods-enrollment-lab/root-helper.py",
+      "sha256": "6cec6abc6712cfbeb3522ea07e669c90cbf30b16af8245f3a02f70edf09bd29a"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/sp-inspect.m",
+      "source": "outputs/airpods-enrollment-lab/sp-inspect.m",
+      "sha256": "e6af10ddb7cd864f7d53f72029bf0e6e0507dae79f006d0815b438b3d2dc7afa"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/registration-record.m",
+      "source": "outputs/airpods-enrollment-lab/registration-record.m",
+      "sha256": "ac13fca3879d50ad7f995ae233336202b2fc5d0f8766508ef4311feaa328d6ba"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/requirements.txt",
+      "source": "outputs/airpods-enrollment-lab/requirements.txt",
+      "sha256": "efc49be940295f370981b417f39a977dc61b34247553f5ba55f9b79ae5d58e03"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/Makefile",
+      "source": "outputs/airpods-enrollment-lab/Makefile",
+      "sha256": "0940d0933b63567bab95d6304fce2281a1ae1f55be6f2e5b41a216c37e04456d"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/direct-call.py",
+      "source": "outputs/airpods-enrollment-lab/direct-call.py",
+      "sha256": "c55c2143db7337b976627e3c7a9c0250972dca1d625d2fb65052b955571094c6"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/registration-trial.m",
+      "source": "outputs/airpods-enrollment-lab/registration-trial.m",
+      "sha256": "7bf59c680ef9382896b32243bcb4082f024f2d1f683fd69da920247eb61972a5"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/README.md",
+      "source": "outputs/airpods-enrollment-lab/README.md",
+      "sha256": "6b95c3ab872e36702ee8390fd4c9a3bcb948dcccba16947652605fb371b2f7fb"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/bluetooth-info.plist",
+      "source": "outputs/airpods-enrollment-lab/bluetooth-info.plist",
+      "sha256": "29fdbe1d1a3808b23443da524eeb8e48b2946591fb9f9db732e27c9d721bd622"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/airpods-helper.m",
+      "source": "outputs/airpods-enrollment-lab/airpods-helper.m",
+      "sha256": "6819a8b4d3be6b4b2fe7ee02994b299f2596dc85701f28a59efac94fb06fd45b"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/sp-owner-status.m",
+      "source": "outputs/airpods-enrollment-lab/sp-owner-status.m",
+      "sha256": "73b5ea5541357694c3f74dadad38acda50c98277819cc010607f48bf961350cb"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/direct-register.py",
+      "source": "outputs/airpods-enrollment-lab/direct-register.py",
+      "sha256": "7cd2952b79fabaff36d480bfb69d9e11c2ba11f0b2328c7afb62f086630bbfad"
+    },
+    {
+      "path": "tools/findmy-enrollment/mac-lab-archive/airpods-gatt.swift",
+      "source": "outputs/airpods-enrollment-lab/airpods-gatt.swift",
+      "sha256": "235a5fadb5b2cc1775575f7e098013ec904765747d199e7d581568cc24902415"
+    }
+  ]
+}

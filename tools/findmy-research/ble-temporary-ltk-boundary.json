@@ -1,0 +1,29 @@
+{
+  "schema_version": 1,
+  "scope": "Primary AOSP public API and internal stack source review only; no Bluetooth access",
+  "apple_lead": "Root observed locationd CBConnectPeripheralOptionUseTempLTK with SearchParty connection token before FD44 GATT writes.",
+  "findings": [
+    {
+      "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/refs/heads/main/framework/api/current.txt",
+      "finding": "Public BluetoothDevice.connectGatt overloads have no encryption LTK input, and reviewed public API file exposes no LTK injection setter. GATT write authentication retry flags select security policy, not key bytes."
+    },
+    {
+      "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/refs/heads/main/framework/java/android/bluetooth/OobData.java",
+      "finding": "SystemApi LeBuilder.setLeTemporaryKey takes pairing TK for the LE Security Manager. It does not document an arbitrary LTK encrypted-connect equivalent."
+    },
+    {
+      "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/refs/heads/main/android/app/src/com/android/bluetooth/btservice/AdapterService.java",
+      "finding": "createBond with non-null OOB data invokes enforceBluetoothPrivilegedPermissionIfNeeded, requiring BLUETOOTH_PRIVILEGED. WSS grant does not grant this permission."
+    },
+    {
+      "source": "https://android.googlesource.com/platform/packages/modules/Bluetooth/+/refs/heads/main/system/stack/btm/btm_ble_sec.cc",
+      "finding": "Internal btm_ble_start_encrypt uses a supplied STK or stored peer LTK and invokes HCI encryption. This native stack function is not exposed as an ordinary APK API in reviewed sources."
+    }
+  ],
+  "conclusion": "If Apple requires token-derived temporary LTK encryption before FD44 discovery/writes, plain public Android GATT cannot express that step using the verified API surface. A Samsung UWB vendor helper alone does not solve BLE encryption setup. A separate equivalent vendor/system endpoint remains unverified.",
+  "limitations": [
+    "Reviewed upstream source may differ from Samsung phone Bluetooth framework",
+    "No attempt to insert keys, alter bonds, invoke hidden APIs or bypass access controls",
+    "Not claiming Apple temporary LTK equals Bluetooth legacy pairing TK or ordinary STK"
+  ]
+}
