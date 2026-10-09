@@ -19,15 +19,10 @@
 package me.kavishdevar.librepods.billing
 
 import android.content.Context
-import me.kavishdevar.librepods.BuildConfig
 
 object BillingProviderFactory {
 
     fun create(context: Context): BillingProvider {
-        return if (BuildConfig.PLAY_BUILD) {
-            PlayBillingProvider(context)
-        } else {
-            FOSSBillingProvider(context)
-        }
+        return FOSSBillingProvider(context)
     }
 }

@@ -86,12 +86,6 @@ android {
             dimension = "env"
             buildConfigField("Boolean", "PLAY_BUILD", "false")
         }
-        create("play") {
-            dimension = "env"
-            buildConfigField("Boolean", "PLAY_BUILD", "true")
-            versionNameSuffix = "-play"
-            minSdk = 36
-        }
     }
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_21
@@ -142,7 +136,6 @@ dependencies {
     implementation(libs.androidx.dynamicanimation)
     implementation(libs.androidx.compose.ui)
     implementation(libs.androidx.compose.material.icons.core)
-    implementation(libs.billing)
     debugImplementation(libs.androidx.compose.ui.tooling)
     implementation(libs.androidx.compose.foundation.layout)
     implementation(libs.aboutlibraries)
@@ -215,8 +208,7 @@ val collect = tasks.register<Copy>("collectReleaseArtifacts") {
 
     dependsOn(
         zipRelease,
-        zipDebug,
-        "bundlePlayRelease"
+        zipDebug
     )
 
     into(releaseDir)
@@ -229,10 +221,6 @@ val collect = tasks.register<Copy>("collectReleaseArtifacts") {
     from(layout.buildDirectory.dir("outputs/apk/foss/debug")) {
         include("*.apk")
         rename(".*", "LibrePods-FOSS-v$appVersionName-debug.apk")
-    }
-
-    from(layout.buildDirectory.dir("outputs/bundle/playRelease")) {
-        include("*.aab")
     }
 
     from(layout.buildDirectory.dir("outputs/rootModuleZips")) {
