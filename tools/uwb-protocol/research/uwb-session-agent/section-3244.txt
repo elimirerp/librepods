@@ -1,0 +1,184 @@
+-[NIServerFindingAdvertisement payload]:
+0x100348D1C   pushq    %rbp                 
+0x100348D1D   movq     %rsp, %rbp           
+0x100348D20   pushq    %rbx                 
+0x100348D21   subq     $0x28, %rsp          
+0x100348D25   movq     %rdi, %rbx           
+0x100348D28   xorps    %xmm0, %xmm0         
+0x100348D2B   movaps   %xmm0, -0x30(%rbp)   
+0x100348D2F   movq     $0x0, -0x20(%rbp)    
+0x100348D37   movq     0x28(%rdi), %rdi     
+0x100348D3B   testq    %rdi, %rdi           
+0x100348D3E   je       0x100348d60          
+0x100348D40   movb     $0x0, -0x9(%rbp)     
+0x100348D44   movq     0x659915(%rip), %rsi  ; selector "intValue"
+0x100348D4B   callq    *0x5f647f(%rip)      ; _objc_msgSend
+0x100348D51   leaq     -0x9(%rbp), %rsi     
+0x100348D55   orb      %al, (%rsi)          
+0x100348D57   leaq     -0x30(%rbp), %rdi    
+0x100348D5B   callq    0x100238d2c          
+0x100348D60   movb     0xa(%rbx), %al       
+0x100348D63   testb    %al, %al             
+0x100348D65   je       0x100348d74          
+0x100348D67   cmpb     $0x7, %al            
+0x100348D69   ja       0x100348e11          
+0x100348D6F   movb     0xb(%rbx), %cl       
+0x100348D72   jmp      0x100348d81          
+0x100348D74   movb     0xb(%rbx), %cl       
+0x100348D77   testb    %cl, %cl             
+0x100348D79   jne      0x100348d81          
+0x100348D7B   cmpb     $0x0, 0xc(%rbx)      
+0x100348D7F   je       0x100348dbe          
+0x100348D81   movb     %al, -0x9(%rbp)      
+0x100348D84   testb    %cl, %cl             
+0x100348D86   je       0x100348d99          
+0x100348D88   cmpb     $0x4, %cl            
+0x100348D8B   jae      0x100348e32          
+0x100348D91   shlb     $0x3, %cl            
+0x100348D94   orb      %cl, %al             
+0x100348D96   movb     %al, -0x9(%rbp)      
+0x100348D99   movb     0xc(%rbx), %cl       
+0x100348D9C   testb    %cl, %cl             
+0x100348D9E   je       0x100348db1          
+0x100348DA0   cmpb     $0x4, %cl            
+0x100348DA3   jae      0x100348e53          
+0x100348DA9   shlb     $0x5, %cl            
+0x100348DAC   orb      %cl, %al             
+0x100348DAE   movb     %al, -0x9(%rbp)      
+0x100348DB1   leaq     -0x30(%rbp), %rdi    
+0x100348DB5   leaq     -0x9(%rbp), %rsi     
+0x100348DB9   callq    0x100238d2c          
+0x100348DBE   movq     -0x30(%rbp), %rdx    
+0x100348DC2   movq     -0x28(%rbp), %rcx    
+0x100348DC6   subq     %rdx, %rcx           
+0x100348DC9   je       0x100348df0          
+0x100348DCB   movq     0x5f6b1e(%rip), %rdi  ; _OBJC_CLASS_$_NSData
+0x100348DD2   movq     0x659f07(%rip), %rsi  ; selector "dataWithBytes:length:"
+0x100348DD9   callq    *0x5f63f1(%rip)      ; _objc_msgSend
+0x100348DDF   movq     %rax, %rdi           
+0x100348DE2   callq    _objc_retainAutoreleasedReturnValue 
+0x100348DE7   movq     %rax, %rbx           
+0x100348DEA   movq     -0x30(%rbp), %rdx    
+0x100348DEE   jmp      0x100348df2          
+0x100348DF0   xorl     %ebx, %ebx           
+0x100348DF2   testq    %rdx, %rdx           
+0x100348DF5   je       0x100348e03          
+0x100348DF7   movq     %rdx, -0x28(%rbp)    
+0x100348DFB   movq     %rdx, %rdi           
+0x100348DFE   callq    __ZdlPv              
+0x100348E03   movq     %rbx, %rdi           
+0x100348E06   addq     $0x28, %rsp          
+0x100348E0A   popq     %rbx                 
+0x100348E0B   popq     %rbp                 
+0x100348E0C   jmp      _objc_autoreleaseReturnValue 
+0x100348E11   leaq     0x1efcb8(%rip), %rdi  ; string literal: "-[NIServerFindingAdvertisement payload]"
+0x100348E18   leaq     0x1ef0be(%rip), %rsi  ; string literal: "NIServerFindingDiscovery.mm"
+0x100348E1F   leaq     0x1efcd2(%rip), %rcx  ; string literal: "(_protocolVersion & kProtocolVersionMask) == _protocolVersion"
+0x100348E26   movl     $0x917, %edx         
+0x100348E2B   callq    ___assert_rtn        
+0x100348E30   jmp      0x100348e72          
+0x100348E32   leaq     0x1efc97(%rip), %rdi  ; string literal: "-[NIServerFindingAdvertisement payload]"
+0x100348E39   leaq     0x1ef09d(%rip), %rsi  ; string literal: "NIServerFindingDiscovery.mm"
+0x100348E40   leaq     0x1efcef(%rip), %rcx  ; string literal: "(_narrowBandMask & narrowBandMaskValueMask) == _narrowBandMask"
+0x100348E47   movl     $0x91d, %edx         
+0x100348E4C   callq    ___assert_rtn        
+0x100348E51   jmp      0x100348e72          
+0x100348E53   leaq     0x1efc76(%rip), %rdi  ; string literal: "-[NIServerFindingAdvertisement payload]"
+0x100348E5A   leaq     0x1ef07c(%rip), %rsi  ; string literal: "NIServerFindingDiscovery.mm"
+0x100348E61   leaq     0x1efd0d(%rip), %rcx  ; string literal: "(_mmsNumFragmentsOOB & mmsNumFragmentsOOBValueMask) == _mmsNumFragmentsOOB"
+0x100348E68   movl     $0x923, %edx         
+0x100348E6D   callq    ___assert_rtn        
+0x100348E72   ud2                           
+0x100348E74   jmp      0x100348e7c          
+0x100348E76   jmp      0x100348e7c          
+0x100348E78   jmp      0x100348e7c          
+0x100348E7A   jmp      0x100348e7c          
+0x100348E7C   movq     %rax, %rbx           
+0x100348E7F   movq     -0x30(%rbp), %rdi    
+0x100348E83   testq    %rdi, %rdi           
+0x100348E86   je       0x100348e91          
+0x100348E88   movq     %rdi, -0x28(%rbp)    
+0x100348E8C   callq    __ZdlPv              
+0x100348E91   movq     %rbx, %rdi           
+0x100348E94   callq    __Unwind_Resume      
+0x100348E99   nop                           
+0x100348E9A   addb     %al, (%rax)          
+0x100348E9C   addb     %dl, 0x48(%rbp)      
+0x100348E9F   movl     %esp, %ebp           
+0x100348EA1   pushq    %rbx                 
+0x100348EA2   subq     $0x28, %rsp          
+0x100348EA6   movq     %rdi, %rbx           
+0x100348EA9   xorps    %xmm0, %xmm0         
+0x100348EAC   movaps   %xmm0, -0x30(%rbp)   
+0x100348EB0   movq     $0x0, -0x20(%rbp)    
+0x100348EB8   cmpq     $0x0, 0x30(%rdi)     
+0x100348EBD   je       0x100348ef6          
+0x100348EBF   leaq     -0x9(%rbp), %rdx     
+0x100348EC3   movb     $0x0, (%rdx)         
+0x100348EC6   leaq     -0x30(%rbp), %rdi    
+0x100348ECA   movl     $0x1, %esi           
+0x100348ECF   callq    0x10034a0f4          
+0x100348ED4   movq     0x30(%rbx), %rdi     
+0x100348ED8   movq     0x6597a1(%rip), %rsi  ; selector "boolValue"
+0x100348EDF   callq    *0x5f62eb(%rip)      ; _objc_msgSend
+0x100348EE5   movq     -0x30(%rbp), %rdx    
+0x100348EE9   testb    %al, %al             
+0x100348EEB   je       0x100348ef8          
+0x100348EED   orb      $0x1, (%rdx)         
+0x100348EF0   movq     -0x30(%rbp), %rdx    
+0x100348EF4   jmp      0x100348ef8          
+0x100348EF6   xorl     %edx, %edx           
+0x100348EF8   movq     0x38(%rbx), %rdi     
+0x100348EFC   testq    %rdi, %rdi           
+0x100348EFF   je       0x100348f44          
+0x100348F01   cmpq     %rdx, -0x28(%rbp)    
+0x100348F05   jne      0x100348f20          
+0x100348F07   leaq     -0x9(%rbp), %rdx     
+0x100348F0B   movb     $0x0, (%rdx)         
+0x100348F0E   leaq     -0x30(%rbp), %rdi    
+0x100348F12   movl     $0x1, %esi           
+0x100348F17   callq    0x10034a0f4          
+0x100348F1C   movq     0x38(%rbx), %rdi     
+0x100348F20   movq     0x6599d1(%rip), %rsi  ; selector "unsignedIntValue"
+0x100348F27   callq    *0x5f62a3(%rip)      ; _objc_msgSend
+0x100348F2D   cmpl     $0x3f, %eax          
+0x100348F30   movl     $0x3f, %ecx          
+0x100348F35   cmovbl   %eax, %ecx           
+0x100348F38   movq     -0x30(%rbp), %rax    
+0x100348F3C   addb     %cl, %cl             
+0x100348F3E   orb      %cl, (%rax)          
+0x100348F40   movq     -0x30(%rbp), %rdx    
+0x100348F44   movq     -0x28(%rbp), %rcx    
+0x100348F48   subq     %rdx, %rcx           
+0x100348F4B   je       0x100348f72          
+0x100348F4D   movq     0x5f699c(%rip), %rdi  ; _OBJC_CLASS_$_NSData
+0x100348F54   movq     0x659d85(%rip), %rsi  ; selector "dataWithBytes:length:"
+0x100348F5B   callq    *0x5f626f(%rip)      ; _objc_msgSend
+0x100348F61   movq     %rax, %rdi           
+0x100348F64   callq    _objc_retainAutoreleasedReturnValue 
+0x100348F69   movq     %rax, %rbx           
+0x100348F6C   movq     -0x30(%rbp), %rdx    
+0x100348F70   jmp      0x100348f74          
+0x100348F72   xorl     %ebx, %ebx           
+0x100348F74   testq    %rdx, %rdx           
+0x100348F77   je       0x100348f85          
+0x100348F79   movq     %rdx, -0x28(%rbp)    
+0x100348F7D   movq     %rdx, %rdi           
+0x100348F80   callq    __ZdlPv              
+0x100348F85   movq     %rbx, %rdi           
+0x100348F88   addq     $0x28, %rsp          
+0x100348F8C   popq     %rbx                 
+0x100348F8D   popq     %rbp                 
+0x100348F8E   jmp      _objc_autoreleaseReturnValue 
+0x100348F93   jmp      0x100348f9b          
+0x100348F95   jmp      0x100348f9b          
+0x100348F97   jmp      0x100348f9b          
+0x100348F99   jmp      0x100348f9b          
+0x100348F9B   movq     %rax, %rbx           
+0x100348F9E   movq     -0x30(%rbp), %rdi    
+0x100348FA2   testq    %rdi, %rdi           
+0x100348FA5   je       0x100348fb0          
+0x100348FA7   movq     %rdi, -0x28(%rbp)    
+0x100348FAB   callq    __ZdlPv              
+0x100348FB0   movq     %rbx, %rdi           
+0x100348FB3   callq    __Unwind_Resume      

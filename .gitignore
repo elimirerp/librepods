@@ -655,14 +655,13 @@ obj/
 # End of https://www.toptal.com/developers/gitignore/api/qt,c++,clion,kotlin,python,android,pycharm,androidstudio,visualstudiocode,linux
 linux/.qmlls.ini
 
-# Find My development state and locally obtained proprietary research inputs.
+# Find My development state and private runtime inputs.
 .direct-state/
 *.sock
 case-candidates-*.json
 *component-private.json
 client-identity.json
 anisette-libs.bin
-tools/uwb-protocol/research/**/*.bin
 tools/uwb-protocol/research/**/superbinary-parser/
 tools/findmy-enrollment/mac-lab-archive/registration-*.json
 tools/findmy-research/source-snapshots/samsung-uwb-thesis.pdf
@@ -670,3 +669,44 @@ tools/findmy-research/source-snapshots/samsung-uwb-thesis.txt
 
 # Historical author Makefile is source, not generated build output.
 !tools/findmy-enrollment/mac-lab-archive/Makefile
+
+# Reviewed static research inputs explicitly requested for the handoff.
+!tools/uwb-protocol/research/airpods-pro3-firmware-agent/**/*.bin
+!tools/uwb-protocol/research/airpods-pro3-firmware-agent/*.zip
+!tools/uwb-protocol/research/uwb-protocol-agent/rose-8B34/*.bin
+!tools/uwb-protocol/research/uwb-protocol-agent/*.dex
+!tools/uwb-protocol/research/phone-uwb/**/*.bin
+!tools/uwb-protocol/research/phone-uwb/**/*.so
+!tools/uwb-protocol/research/phone-uwb/**/*.dex
+!tools/uwb-protocol/research/phone-uwb/**/*.jar
+!tools/uwb-protocol/research/phone-uwb/**/*.apk
+!tools/uwb-protocol/research/phone-uwb/**/*.xz
+!tools/uwb-protocol/research/**/*.gz
+
+# Lossless text restored locally by verify_archived_inputs.py --unpack.
+tools/uwb-protocol/research/phone-uwb/android-key-api-audit/Bluetooth-main.disassembly.txt
+tools/uwb-protocol/research/phone-uwb/android-key-api-audit/framework-bluetooth.disassembly.txt
+tools/uwb-protocol/research/phone-uwb/android-key-api-audit/native-debug-symbols.txt
+tools/uwb-protocol/research/static-dumps/findmydeviced-disassembly.txt
+tools/uwb-protocol/research/static-dumps/findmydeviced-ios-disassembly.txt
+tools/uwb-protocol/research/static-dumps/findmydeviced-ios26-disassembly.txt
+tools/uwb-protocol/research/static-dumps/ios26-llvm-disassembly.txt
+tools/uwb-protocol/research/static-dumps/searchpartyuseragent-disassembly.txt
+tools/uwb-protocol/research/static-dumps/sp-disassembly.txt
+tools/uwb-protocol/research/uwb-protocol-agent/locationd-ios26-methods.txt
+tools/uwb-protocol/research/uwb-protocol-agent/locationd-ios26-otool.txt
+tools/uwb-protocol/research/uwb-protocol-agent/locationd-ios26.a2s
+tools/uwb-protocol/research/uwb-protocol-agent/mac-owner-enum-arm64e.a2s
+tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-ios26-fixups.txt
+tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-ios26-methods.txt
+tools/uwb-protocol/research/uwb-protocol-agent/nearbyd-ios26.a2s
+tools/uwb-protocol/research/uwb-protocol-agent/samsung-hal-disassembly.txt
+tools/uwb-protocol/research/uwb-protocol-agent/samsung-service-dexdump.txt
+tools/uwb-protocol/research/uwb-protocol-agent/searchpartyd-ios26-starts.txt
+tools/uwb-protocol/research/uwb-protocol-agent/searchpartyd-ios26-swift.txt
+tools/uwb-protocol/research/uwb-protocol-agent/searchpartyd-ios26.a2s
+tools/uwb-protocol/research/uwb-session-agent/didUpdateAdvertisement:toSendOOBToPeer.txt
+tools/uwb-protocol/research/uwb-session-agent/identifierFromDiscoveryToken.txt
+tools/uwb-protocol/research/uwb-session-agent/nearbyd-disassembly.txt
+tools/uwb-protocol/research/uwb-session-agent/nearbyinteraction-disassembly.txt
+tools/uwb-protocol/research/uwb-session-agent/processClientDiscoveryEventWithSharedConfigurationData.txt

@@ -1,0 +1,742 @@
+(lldb) target create "work/uwb-protocol-agent/runtime-inventory"
+Current executable set to '/Users/elibaum/Documents/Codex/2026-10-08/bas/work/uwb-protocol-agent/runtime-inventory' (arm64).
+(lldb) breakpoint set --name exit
+Breakpoint 1: 5 locations.
+(lldb) run /System/Library/Frameworks/CoreLocation.framework/CoreLocation
+LOAD /System/Library/Frameworks/CoreLocation.framework/CoreLocation ok
+CLASS _TtCV10Foundation4Data14RangeReference
+CLASS _TtCV14BiomeSQLParser27PgQuery_PartitionRangeDatumP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser24PgQuery_RangeTblFunctionP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser21PgQuery_RangeTblEntryP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser25PgQuery_RangeTableFuncColP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser22PgQuery_RangeTableFuncP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser24PgQuery_RangeTableSampleP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser22PgQuery_RangeSubselectP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _CLRangingPeerDistance
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- peer @16@0:8
+- encodeWithCoder: v24@0:8@16
+- timestamp @16@0:8
+- init @16@0:8
+- initWithCoder: @24@0:8@16
+- date @16@0:8
+- dealloc v16@0:8
+- isInitiator B16@0:8
+- initWithPeer:timestamp:distanceMeters:accuracyMeters:initiator: @52@0:8@16@24@32@40B48
+- accuracyMeters @16@0:8
+- distanceMeters @16@0:8
+- initWithPeer:date:distanceMeters:accuracyMeters:initiator: @52@0:8@16@24@32@40B48
+- initWithPeer:date:distanceMeters:accuracyMeters:initiator:shouldUnlock: @56@0:8@16@24@32@40B48B52
+- initiator B16@0:8
+- shouldUnlock B16@0:8
++ supportsSecureCoding B16@0:8
+CLASS _CLRangingPeer
+- macAddress Q16@0:8
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- encodeWithCoder: v24@0:8@16
+- isEqual: B24@0:8@16
+- hash Q16@0:8
+- init @16@0:8
+- initWithCoder: @24@0:8@16
+- dealloc v16@0:8
+- getMacAddressAsString @16@0:8
+- initWithMacAddressAsData:secureRangingKeyID: @32@0:8@16@24
+- initWithMacAddressAsString:secureRangingKeyID: @32@0:8@16@24
+- initWithMacAddressAsUInt:secureRangingKeyID: @32@0:8Q16@24
+- isEqualToPeer: B24@0:8@16
+- secureRangingKeyID @16@0:8
++ supportsSecureCoding B16@0:8
++ hexStringMacAddressFromUInt: @24@0:8Q16
++ uintMacAddressFromString: Q24@0:8@16
+CLASS _CLRangingPeerDistanceInternal
+- copyWithZone: @24@0:8^{_NSZone=}16
+- dealloc v16@0:8
+- initWithPeer:date:distanceMeters:accuracyMeters:initiator:shouldUnlock: @56@0:8@16@24@32@40B48B52
+CLASS _CLRangingPeerInternal
+- copyWithZone: @24@0:8^{_NSZone=}16
+- dealloc v16@0:8
+- initWithMacAddressAsUInt:secureRangingKeyID: @32@0:8Q16@24
+CLASS CLFindMyAccessoryFindingCapabilities
+- copyWithZone: @24@0:8^{_NSZone=}16
+- encodeWithCoder: v24@0:8@16
+- initWithData: @24@0:8@16
+- capabilities I16@0:8
+- init @16@0:8
+- initWithCoder: @24@0:8@16
+- supportsNBAMMS B16@0:8
+- setCapabilities: v20@0:8I16
+- dealloc v16@0:8
+- setSupportsSimultaneousRanging: v20@0:8B16
+- capabilitiesString @16@0:8
+- initWithSupportsFC1ND:supportsNBAMMS:supportsUnii5:capabilities:supportsSimultaneousRanging: @36@0:8B16B20B24I28B32
+- setSupportsFC1ND: v20@0:8B16
+- setSupportsNBAMMS: v20@0:8B16
+- supportsFC1ND B16@0:8
+- supportsSimultaneousRanging B16@0:8
+- supportsUnii5 B16@0:8
++ supportsSecureCoding B16@0:8
+CLASS CLFindMyAccessoryRangingManager
+- .cxx_construct @16@0:8
+- setDelegate: v24@0:8@16
+- handleMessage: v32@0:8{shared_ptr<CLConnectionMessage>=^{CLConnectionMessage}^{__shared_weak_count}}16
+- delegate @16@0:8
+- handleInterruption v16@0:8
+- initWithDelegate:delegateQueue: @32@0:8@16@24
+- .cxx_destruct v16@0:8
+- init @16@0:8
+- fetchFirmwareVersionFromDevice: v24@0:8@16
+- prepareForStartRangingOnDevice: v24@0:8@16
+- connectToDevice: v24@0:8@16
+- disconnectFromDevice: v24@0:8@16
+- initRoseWithParameters:onDevice: v32@0:8@16@24
+- setRoseRangingParameters:onDevice: v32@0:8@16@24
+- startEventCounterOnDevice: v24@0:8@16
+- startRangingWithParameters:onDevice: v32@0:8@16@24
+- stopEventCounterOnDevice: v24@0:8@16
+- stopRangingOnDevice: v24@0:8@16
+- stopRoseWithParameters:onDevice: v32@0:8@16@24
+CLASS CURangingSample
+- channel i16@0:8
+- setDeviceModel: v24@0:8@16
+- description @16@0:8
+- setChannel: v20@0:8i16
+- deviceAddress @16@0:8
+- deviceModel @16@0:8
+- .cxx_destruct v16@0:8
+- rawRSSI i16@0:8
+- setDeviceAddress: v24@0:8@16
+- setRawRSSI: v20@0:8i16
+CLASS CURangingPeer
+- deviceIRK @16@0:8
+- setDeviceModel: v24@0:8@16
+- description @16@0:8
+- deviceAddress @16@0:8
+- deviceModel @16@0:8
+- isEqual: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- setDeviceAddress: v24@0:8@16
+- setDeviceIRK: v24@0:8@16
+CLASS CURangingMeasurement
+- description @16@0:8
+- error @16@0:8
+- setError: v24@0:8@16
+- encodeWithCoder: v24@0:8@16
+- flags I16@0:8
+- .cxx_destruct v16@0:8
+- setFlags: v20@0:8I16
+- setIdentifier: v24@0:8@16
+- initWithCoder: @24@0:8@16
+- identifier @16@0:8
+- distanceMeters d16@0:8
+- horizontalError d16@0:8
+- horizontalAngle d16@0:8
+- distanceError d16@0:8
+- ptsScore d16@0:8
+- setDistanceError: v24@0:8d16
+- setDistanceMeters: v24@0:8d16
+- setHorizontalAngle: v24@0:8d16
+- setHorizontalError: v24@0:8d16
+- setPtsScore: v24@0:8d16
+- setTimestampTicks: v24@0:8Q16
+- setVerticalAngle: v24@0:8d16
+- setVerticalError: v24@0:8d16
+- timestampTicks Q16@0:8
+- verticalAngle d16@0:8
+- verticalError d16@0:8
++ supportsSecureCoding B16@0:8
+CLASS CURangingSession
+- setErrorHandler: v24@0:8@?16
+- setDispatchQueue: v24@0:8@16
+- dispatchQueue @16@0:8
+- setInvalidationHandler: v24@0:8@?16
+- invalidationHandler @?16@0:8
+- _update v16@0:8
+- _invalidated v16@0:8
+- setLabel: v24@0:8@16
+- peers @16@0:8
+- addSample: v24@0:8@16
+- activate v16@0:8
+- errorHandler @?16@0:8
+- flags I16@0:8
+- measurementHandler @?16@0:8
+- .cxx_destruct v16@0:8
+- init @16@0:8
+- setFlags: v20@0:8I16
+- setMeasurementHandler: v24@0:8@?16
+- statusFlags I16@0:8
+- invalidate v16@0:8
+- _invalidate v16@0:8
+- dealloc v16@0:8
+- label @16@0:8
+- _updateInitiator v16@0:8
+- _updatePeers v16@0:8
+- _updateResponder v16@0:8
+- measurementHandlerEx @?16@0:8
+- setMeasurementHandlerEx: v24@0:8@?16
+- setPeers: v24@0:8@16
+- setStatusChangedHandler: v24@0:8@?16
+- statusChangedHandler @?16@0:8
+CLASS _GEOTimeRange
+- startDate @16@0:8
+- startTime d16@0:8
+- duration d16@0:8
+- contains: B24@0:8@16
+- endDate @16@0:8
+- initWithPBTimeRange: @28@0:8{GEOPBTransitTimeRange=II{?=b1b1}}16
+- initWithPDTimeRange: @28@0:8{GEOPDTimeRange=II{?=b1b1}}16
+CLASS GEOPolylineCoordinateRangeArray
+- .cxx_construct @16@0:8
+- description @16@0:8
+- countByEnumeratingWithState:objects:count: Q40@0:8^{?=Q^@^Q[5Q]}16^@24Q32
+- count Q16@0:8
+- encodeWithCoder: v24@0:8@16
+- .cxx_destruct v16@0:8
+- initWithCoder: @24@0:8@16
+- addCoordinateRange: v32@0:8{GEOPolylineCoordinateRange={PolylineCoordinate=If}{PolylineCoordinate=If}}16
+- coordinateRangeAtIndex: {GEOPolylineCoordinateRange={PolylineCoordinate=If}{PolylineCoordinate=If}}24@0:8Q16
++ supportsSecureCoding B16@0:8
+CLASS NSRangeSpecifier
+- encodeWithCoder: v24@0:8@16
+- initWithCoder: @24@0:8@16
+- dealloc v16@0:8
+- _initFromRecord: @24@0:8@16
+- _putKeyFormAndDataInRecord: B24@0:8@16
+- _simpleDescription @16@0:8
+- _specifiedIndexesOfObjectsInContainer: @24@0:8@16
+- _specifiesSingleIndexedObjectPerContainer B16@0:8
+- endSpecifier @16@0:8
+- initWithContainerClassDescription:containerSpecifier:key: @40@0:8@16@24@32
+- initWithContainerClassDescription:containerSpecifier:key:startSpecifier:endSpecifier: @56@0:8@16@24@32@40@48
+- setEndSpecifier: v24@0:8@16
+- setStartSpecifier: v24@0:8@16
+- startSpecifier @16@0:8
+CLASS NSPrivateCoreDataClassForFindingBundle
+CLASS HDRFlexRangeParameters
+- setVersion: v24@0:8Q16
+- description @16@0:8
+- version Q16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- init @16@0:8
+- isMono B16@0:8
+- channelGammaRGB 16@0:8
+- alternateColorSpace ^{CGColorSpace=}16@0:8
+- alternateHeadroom f16@0:8
+- baseHeadroom f16@0:8
+- channelAlternateOffset f16@0:8
+- channelAlternateOffsetRGB 16@0:8
+- channelBaseOffset f16@0:8
+- channelBaseOffsetRGB 16@0:8
+- channelGamma f16@0:8
+- channelMax f16@0:8
+- channelMaxRGB 16@0:8
+- channelMin f16@0:8
+- channelMinRGB 16@0:8
+- createFlexRangeDictionary @16@0:8
+- createFlexRangeMetadata ^{CGImageMetadata=}16@0:8
+- setAlternateColorSpace: v24@0:8^{CGColorSpace=}16
+- setAlternateHeadroom: v20@0:8f16
+- setBaseHeadroom: v20@0:8f16
+- setChannelAlternateOffset: v20@0:8f16
+- setChannelAlternateOffsetRGB: v32@0:816
+- setChannelBaseOffset: v20@0:8f16
+- setChannelBaseOffsetRGB: v32@0:816
+- setChannelGamma: v20@0:8f16
+- setChannelGammaRGB: v32@0:816
+- setChannelMax: v20@0:8f16
+- setChannelMaxRGB: v32@0:816
+- setChannelMin: v20@0:8f16
+- setChannelMinRGB: v32@0:816
+- setIsMono: v20@0:8B16
+- setUseBaseColor: v20@0:8B16
+- useBaseColor B16@0:8
++ flexRangeParametersFromDictionary: @24@0:8@16
++ flexRangeParametersFromMetadata: @24@0:8^{CGImageMetadata=}16
+CLASS MTLResourceAddressRangeArray
+- description @16@0:8
+- formattedDescription: @24@0:8Q16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- count Q16@0:8
+- isEqual: B24@0:8@16
+- ranges ^{MTLAddressRange=QQ}16@0:8
+- initWithCount: @24@0:8Q16
+- hash Q16@0:8
+- dealloc v16@0:8
+- initWithRanges:count: @32@0:8^{MTLAddressRange=QQ}16Q24
+CLASS CAFrameRateRangeGroup
+- initWithDisplay: @24@0:8@16
+- dealloc v16@0:8
+- addReason: v20@0:8I16
+- arbitratedRange {CAFrameRateRange=fff}16@0:8
+- addCompatQuantaIntent v16@0:8
+- addFrameRateRange: v28@0:8{CAFrameRateRange=fff}16
+- arbitratedIntervalRange {CAFrameIntervalRange=III}16@0:8
+- hasCompatQuantaIntent B16@0:8
+- reasonsWithCount: r^I24@0:8^I16
+- removeFrameRateRange: v28@0:8{CAFrameRateRange=fff}16
+- updateFrameRateRange:toRange: v40@0:8{CAFrameRateRange=fff}16{CAFrameRateRange=fff}28
+CLASS GEOLPRValidationRange
+- start i16@0:8
+- description @16@0:8
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- setEnd: v20@0:8i16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- setStart: v20@0:8i16
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- end i16@0:8
+- validCharacters @16@0:8
+- hasEnd B16@0:8
+- hasStart B16@0:8
+- hasValidCharacters B16@0:8
+- setHasEnd: v20@0:8B16
+- setHasStart: v20@0:8B16
+- setValidCharacters: v24@0:8@16
++ isValid: B24@0:8@16
+CLASS GEOTraitsTransitScheduleTimeRange
+- setHasStartTime: v20@0:8B16
+- hasStartTime B16@0:8
+- description @16@0:8
+- hasDuration B16@0:8
+- setHasDuration: v20@0:8B16
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- setStartTime: v24@0:8d16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- startTime d16@0:8
+- duration d16@0:8
+- clearUnknownFields: v20@0:8B16
+- setDuration: v24@0:8d16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
++ isValid: B24@0:8@16
+CLASS GEOTimeRange
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+- initWithPlaceDataTimeRange: @24@0:8^{GEOPDLocalTimeRange=II{?=b1b1}}16
+CLASS GEOPBTransitZoomRangeString
+- description @16@0:8
+- setMinZoom: v20@0:8I16
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- minZoom I16@0:8
+- initWithData: @24@0:8@16
+- clearUnknownFields: v20@0:8B16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- hasLabelLanguage B16@0:8
+- hasLabelText B16@0:8
+- hasMinZoom B16@0:8
+- labelLanguage @16@0:8
+- labelText @16@0:8
+- setHasMinZoom: v20@0:8B16
+- setLabelLanguage: v24@0:8@16
+- setLabelText: v24@0:8@16
++ isValid: B24@0:8@16
+CLASS GEOPDResultRefinementRangeElement
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- initWithData: @24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+CLASS GEOPDResultRefinementRangeDiscrete
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+CLASS GEOPDResultRefinementRangeContinuous
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- initWithData: @24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+CLASS GEOPDResultRefinementRange
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- initWithData: @24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+CLASS GEOPDDateTimeRange
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+- dealloc v16@0:8
+- hasValidStartAndEndDates B16@0:8
+CLASS GEOTriggerPointRange
+- description @16@0:8
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- initWithData: @24@0:8@16
+- clearUnknownFields: v20@0:8B16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- displayTime I16@0:8
+- setDisplayTime: v20@0:8I16
+- setHideAtPoint: v24@0:8@16
+- setShowAtPoint: v24@0:8@16
+- hasDisplayTime B16@0:8
+- hasHideAtPoint B16@0:8
+- hasShowAtPoint B16@0:8
+- hideAtPoint @16@0:8
+- setHasDisplayTime: v20@0:8B16
+- showAtPoint @16@0:8
++ isValid: B24@0:8@16
+CLASS GEORouteLegRange
+- description @16@0:8
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- clearUnknownFields: v20@0:8B16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- setHasEndValidDistanceOffsetCm: v20@0:8B16
+- endValidDistanceOffsetCm I16@0:8
+- endValidSegmentIndex I16@0:8
+- hasEndValidDistanceOffsetCm B16@0:8
+- hasEndValidSegmentIndex B16@0:8
+- hasStartValidDistanceOffsetCm B16@0:8
+- hasStartValidSegmentIndex B16@0:8
+- setEndValidDistanceOffsetCm: v20@0:8I16
+- setEndValidSegmentIndex: v20@0:8I16
+- setHasEndValidSegmentIndex: v20@0:8B16
+- setHasStartValidDistanceOffsetCm: v20@0:8B16
+- setHasStartValidSegmentIndex: v20@0:8B16
+- setStartValidDistanceOffsetCm: v20@0:8I16
+- setStartValidSegmentIndex: v20@0:8I16
+- startValidDistanceOffsetCm I16@0:8
+- startValidSegmentIndex I16@0:8
++ isValid: B24@0:8@16
+CLASS GEOMinimumVisibleElevationRange
+- description @16@0:8
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- clearUnknownFields: v20@0:8B16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- hasLowerBoundCm B16@0:8
+- hasUpperBoundCm B16@0:8
+- lowerBoundCm i16@0:8
+- setHasLowerBoundCm: v20@0:8B16
+- setHasUpperBoundCm: v20@0:8B16
+- setLowerBoundCm: v20@0:8i16
+- setUpperBoundCm: v20@0:8i16
+- upperBoundCm i16@0:8
++ isValid: B24@0:8@16
+CLASS CCToolKitToolRestrictionContextInInclusiveRange
+- initWithData:error: @32@0:8@16^@24
+- jsonDictionary @16@0:8
+- initWithJSONDictionary:error: @32@0:8@16^@24
+- upperBound d16@0:8
+- lowerBound d16@0:8
+- decodeFieldValuesFromData:error: B32@0:8@16^@24
+- ensureDecodedWithError: B24@0:8^@16
+- enumerateFieldsUsingBlock:parentFieldType: v28@0:8@?16S24
+- initLazyDecodedWithTrustedItemMessageData:error: @32@0:8@16^@24
+- initWithItemMessageData:error: @32@0:8@16^@24
+- hasLowerBound B16@0:8
+- hasUpperBound B16@0:8
+- initWithLowerBound:upperBound:error: @40@0:8@16@24^@32
+- setHasLowerBound: v20@0:8B16
+- setHasUpperBound: v20@0:8B16
++ itemType S16@0:8
++ descriptionForTypeIdentifier: @20@0:8S16
++ contentMessageClass #16@0:8
++ metaContentMessageClass #16@0:8
++ typeIdentifierForDescription: S24@0:8@16
+CLASS VMURangeArray
+- range {_VMURange=QQ}16@0:8
+- description @16@0:8
+- setCapacity: v20@0:8I16
+- addRange: v32@0:8{_VMURange=QQ}16
+- sort v16@0:8
+- rangeAtIndex: {_VMURange=QQ}20@0:8I16
+- containsLocation: B24@0:8Q16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- intersectsRange: B32@0:8{_VMURange=QQ}16
+- count I16@0:8
+- containsRange: B32@0:8{_VMURange=QQ}16
+- ranges ^{_VMURange=QQ}16@0:8
+- init @16@0:8
+- dealloc v16@0:8
+- initWithRanges:count: @28@0:8r^{_VMURange=QQ}16I24
+- insertRange:atIndex: v36@0:8{_VMURange=QQ}16I32
+- removeRangeAtIndex: v20@0:8I16
+- removeAllRanges v16@0:8
+- addRanges: v24@0:8@16
+- indexForLocation: Q24@0:8Q16
+- intersectsLocation: B24@0:8Q16
+- largestRange {_VMURange=QQ}16@0:8
+- rangeForLocation: {_VMURange=QQ}24@0:8Q16
+- subrangeNotExcludedBySelfForRange: {_VMURange=QQ}32@0:8{_VMURange=QQ}16
+- sumLengths Q16@0:8
+CLASS VMUNonOverlappingRangeArray
+- mergeRange:excludingRanges: v40@0:8{_VMURange=QQ}16@32
+- addOrExtendRange: v32@0:8{_VMURange=QQ}16
+- mergeRanges:excludingRanges: v32@0:8@16@24
+- _mergeAllBitsOfRange:excludingRanges:mergeRanges: v44@0:8{_VMURange=QQ}16@32B40
+- subtract:mergeRanges: @28@0:8@16B24
+- sortAndMergeRanges v16@0:8
+- mergeRange: v32@0:8{_VMURange=QQ}16
+- mergeRanges: v24@0:8@16
+CLASS VMURangeToStringMap
+- .cxx_construct @16@0:8
+- description @16@0:8
+- uniquedStringCount I16@0:8
+- enumerateRanges: v24@0:8@?16
+- indexForString:insertIfMissing: I28@0:8@16B24
+- rangeForString:startingAtAddress: {_VMURange=QQ}32@0:8@16Q24
+- sort v16@0:8
+- stringForIndex: @20@0:8I16
+- enumerateHexAddressesInStrings: v24@0:8@?16
+- count I16@0:8
+- encodeWithCoder: v24@0:8@16
+- stringForAddress: @24@0:8Q16
+- rangeContainingAddress: {_VMURange=QQ}24@0:8Q16
+- .cxx_destruct v16@0:8
+- init @16@0:8
+- setString:forRange: v40@0:8@16{_VMURange=QQ}24
+- resymbolicateStringsWithSymbolicator: v32@0:8{_CSTypeRef=QQ}16
+- initWithCoder: @24@0:8@16
++ supportsSecureCoding B16@0:8
+CLASS VMUVMRegionRangeInfo
+- range {_VMURange=QQ}16@0:8
+- setSize: v24@0:8Q16
+- address Q16@0:8
+- setAddress: v24@0:8Q16
+- init @16@0:8
+- size Q16@0:8
+- stackIdentifier Q16@0:8
+- userTag I16@0:8
+- setStackIdentifier: v24@0:8Q16
+- setUserTag: v20@0:8I16
+CLASS AVAudioDoubleRange
+- description @16@0:8
+- initWithMin:max: @32@0:8d16d24
+- initWithRange: @48@0:8{SampleRateRange=^^?[1I]dd}16
+- minimum d16@0:8
+- maximum d16@0:8
+CLASS AVAudioFloatRange
+- description @16@0:8
+- initWithMin:max: @24@0:8f16f20
+- minimum f16@0:8
+- maximum f16@0:8
+CLASS AVAudioUIntegerRange
+- initWithMin:max: @32@0:8Q16Q24
+- minimum Q16@0:8
+- maximum Q16@0:8
+CLASS _TtGCs23_ContiguousArrayStorageGVs5RangeSi__$
+- objectAtIndexedSubscript: @24@0:8q16
+- countByEnumeratingWithState:objects:count: q40@0:8^{?=Q^@^Q[5Q]}16^@24q32
+- getObjects:range: v40@0:8^@16{?=qq}24
+- count q16@0:8
+- objectAtIndex: @24@0:8q16
+Process 74953 launched: '/Users/elibaum/Documents/Codex/2026-10-08/bas/work/uwb-protocol-agent/runtime-inventory' (arm64)
+Process 74953 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.3
+    frame #0: 0x0000000187bd82d0 libdyld.dylib`dyld4::LibSystemHelpers::exit(int) const
+libdyld.dylib`dyld4::LibSystemHelpers::exit:
+->  0x187bd82d0 <+0>:  pacibsp 
+    0x187bd82d4 <+4>:  stp    x29, x30, [sp, #-0x10]!
+    0x187bd82d8 <+8>:  mov    x29, sp
+    0x187bd82dc <+12>: mov    x0, x1
+Target 0: (runtime-inventory) stopped.
+(lldb) expr -l objc++ -- unsigned long long $capImp = (unsigned long long)(void*)method_getImplementation((void*)class_getInstanceMethod((void*)objc_getClass("CLFindMyAccessoryFindingCapabilities"),(void*)sel_registerName("initWithData:")))
+(lldb) disassemble --start-address $capImp --count 100
+CoreLocation`___lldb_unnamed_symbol3406:
+    0x1943cd320 <+0>:   pacibsp 
+    0x1943cd324 <+4>:   sub    sp, sp, #0x70
+    0x1943cd328 <+8>:   stp    x24, x23, [sp, #0x30]
+    0x1943cd32c <+12>:  stp    x22, x21, [sp, #0x40]
+    0x1943cd330 <+16>:  stp    x20, x19, [sp, #0x50]
+    0x1943cd334 <+20>:  stp    x29, x30, [sp, #0x60]
+    0x1943cd338 <+24>:  add    x29, sp, #0x60
+    0x1943cd33c <+28>:  mov    x19, x2
+    0x1943cd340 <+32>:  mov    x20, x0
+    0x1943cd344 <+36>:  adrp   x8, 363569
+    0x1943cd348 <+40>:  ldr    x8, [x8, #0x378]
+    0x1943cd34c <+44>:  ldr    x8, [x8]
+    0x1943cd350 <+48>:  str    x8, [sp, #0x28]
+    0x1943cd354 <+52>:  mov    x0, x2
+    0x1943cd358 <+56>:  bl     0x194579760
+    0x1943cd35c <+60>:  cmp    x0, #0x4
+    0x1943cd360 <+64>:  b.ne   0x1943cd3c4               ; <+164>
+    0x1943cd364 <+68>:  mov    x0, x19
+    0x1943cd368 <+72>:  bl     0x194573ca0
+    0x1943cd36c <+76>:  ldr    w5, [x0]
+    0x1943cd370 <+80>:  ldr    x8, [sp, #0x28]
+    0x1943cd374 <+84>:  adrp   x9, 363569
+    0x1943cd378 <+88>:  ldr    x9, [x9, #0x378]
+    0x1943cd37c <+92>:  ldr    x9, [x9]
+    0x1943cd380 <+96>:  cmp    x9, x8
+    0x1943cd384 <+100>: b.ne   0x1943cd544               ; <+548>
+    0x1943cd388 <+104>: ubfx   w3, w5, #1, #1
+    0x1943cd38c <+108>: ubfx   w4, w5, #2, #1
+    0x1943cd390 <+112>: ubfx   w6, w5, #3, #1
+    0x1943cd394 <+116>: and    w2, w5, #0x1
+    0x1943cd398 <+120>: mov    x0, x20
+    0x1943cd39c <+124>: ldp    x29, x30, [sp, #0x60]
+    0x1943cd3a0 <+128>: ldp    x20, x19, [sp, #0x50]
+    0x1943cd3a4 <+132>: ldp    x22, x21, [sp, #0x40]
+    0x1943cd3a8 <+136>: ldp    x24, x23, [sp, #0x30]
+    0x1943cd3ac <+140>: add    sp, sp, #0x70
+    0x1943cd3b0 <+144>: autibsp 
+    0x1943cd3b4 <+148>: eor    x16, x30, x30, lsl #1
+    0x1943cd3b8 <+152>: tbz    x16, #0x3e, 0x1943cd3c0   ; <+160>
+    0x1943cd3bc <+156>: brk    #0xc471
+    0x1943cd3c0 <+160>: b      0x194578a60
+    0x1943cd3c4 <+164>: adrp   x23, 381281
+    0x1943cd3c8 <+168>: ldr    x8, [x23, #0xba0]
+    0x1943cd3cc <+172>: cmn    x8, #0x1
+    0x1943cd3d0 <+176>: b.ne   0x1943cd514               ; <+500>
+    0x1943cd3d4 <+180>: adrp   x24, 381281
+    0x1943cd3d8 <+184>: ldr    x20, [x24, #0xba8]
+    0x1943cd3dc <+188>: mov    x0, x20
+    0x1943cd3e0 <+192>: mov    w1, #0x10                 ; =16 
+    0x1943cd3e4 <+196>: bl     0x1944d93e8               ; symbol stub for: os_log_type_enabled
+    0x1943cd3e8 <+200>: adrp   x22, 277
+    0x1943cd3ec <+204>: adrp   x21, 349
+    0x1943cd3f0 <+208>: add    x21, x21, #0x9fa          ; ""
+    0x1943cd3f4 <+212>: cbz    w0, 0x1943cd460           ; <+320>
+    0x1943cd3f8 <+216>: mov    x0, x19
+    0x1943cd3fc <+220>: bl     0x194579760
+    0x1943cd400 <+224>: ldr    d0, [x22, #0xf90]
+    0x1943cd404 <+228>: str    s0, [sp]
+    0x1943cd408 <+232>: str    wzr, [sp, #0x4]
+    0x1943cd40c <+236>: mov    w8, #0x822                ; =2082 
+    0x1943cd410 <+240>: strh   w8, [sp, #0x8]
+    0x1943cd414 <+244>: stur   x21, [sp, #0xa]
+    0x1943cd418 <+248>: mov    w8, #0x802                ; =2050 
+    0x1943cd41c <+252>: strh   w8, [sp, #0x12]
+    0x1943cd420 <+256>: stur   x0, [sp, #0x14]
+    0x1943cd424 <+260>: mov    w8, #0x842                ; =2114 
+    0x1943cd428 <+264>: strh   w8, [sp, #0x1c]
+    0x1943cd42c <+268>: stur   x19, [sp, #0x1e]
+    0x1943cd430 <+272>: adrp   x0, -206
+    0x1943cd434 <+276>: add    x0, x0, #0x0
+    0x1943cd438 <+280>: adrp   x3, 317
+    0x1943cd43c <+284>: add    x3, x3, #0x591            ; "{"msg%{public}.0s":"#durian CLFindMyAccessoryFindingCapabilities Unexpected data size", "size":%{public}ld, "data":%{public, location:escape_only}@}"
+    0x1943cd440 <+288>: mov    x4, sp
+    0x1943cd444 <+292>: mov    x1, x20
+    0x1943cd448 <+296>: mov    w2, #0x10                 ; =16 
+    0x1943cd44c <+300>: mov    w5, #0x26                 ; =38 
+    0x1943cd450 <+304>: bl     0x1944d8be8               ; symbol stub for: _os_log_impl
+    0x1943cd454 <+308>: ldr    x8, [x23, #0xba0]
+    0x1943cd458 <+312>: cmn    x8, #0x1
+    0x1943cd45c <+316>: b.ne   0x1943cd52c               ; <+524>
+    0x1943cd460 <+320>: ldr    x20, [x24, #0xba8]
+    0x1943cd464 <+324>: mov    x0, x20
+    0x1943cd468 <+328>: bl     0x1944d93f8               ; symbol stub for: os_signpost_enabled
+    0x1943cd46c <+332>: cbz    w0, 0x1943cd4e0           ; <+448>
+    0x1943cd470 <+336>: mov    x0, x19
+    0x1943cd474 <+340>: bl     0x194579760
+    0x1943cd478 <+344>: ldr    d0, [x22, #0xf90]
+    0x1943cd47c <+348>: str    s0, [sp]
+    0x1943cd480 <+352>: str    wzr, [sp, #0x4]
+    0x1943cd484 <+356>: mov    w8, #0x822                ; =2082 
+    0x1943cd488 <+360>: strh   w8, [sp, #0x8]
+    0x1943cd48c <+364>: stur   x21, [sp, #0xa]
+    0x1943cd490 <+368>: mov    w8, #0x802                ; =2050 
+    0x1943cd494 <+372>: strh   w8, [sp, #0x12]
+    0x1943cd498 <+376>: stur   x0, [sp, #0x14]
+    0x1943cd49c <+380>: mov    w8, #0x842                ; =2114 
+    0x1943cd4a0 <+384>: strh   w8, [sp, #0x1c]
+    0x1943cd4a4 <+388>: stur   x19, [sp, #0x1e]
+    0x1943cd4a8 <+392>: adrp   x0, -206
+    0x1943cd4ac <+396>: add    x0, x0, #0x0

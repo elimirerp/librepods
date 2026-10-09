@@ -1,0 +1,8 @@
+rawToken {length = 26, bytes = 0xe3097312 34560f09 0a800001 02030405 ... 08090a0b 0c0d0e0f }
+getIRK {length = 16, bytes = 0x000102030405060708090a0b0c0d0e0f}
+getSessionIdentifier {length = 3, bytes = 0x123456}
+tokenVariant 1
+rawHex e309731234560f090a80000102030405060708090a0b0c0d0e0f
+key1 {length = 3, bytes = 0x123456}
+key2 {length = 16, bytes = 0x000102030405060708090a0b0c0d0e0f}
+key7 1

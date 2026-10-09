@@ -1,0 +1,89 @@
+CLASS FMDEraseProxy
+CLASS FMDSharedConfiguration
+CLASS FMDDeviceIdentityFactory
+CLASS FMDSharedConfigurationEntry
+CLASS FMDVolatileMetaDataRecord
+CLASS FMDRepairDeviceLookupResult
+CLASS FMDRepairDeviceLookupContext
+CLASS FMDRepairDeviceResult
+CLASS FMDRepairDeviceContext
+CLASS FMDFMMAccountInfo
+CLASS FMDBAAAttestation
+CLASS FMDActivationLockContext
+CLASS FMDFMIPAccountInfo
+CLASS FMDCommandValidationSignatureRequestContext
+CLASS FMDLocalFindableAccessory
+  - accessoryIdentifier @16@0:8
+CLASS FMDAudioAccessoryInfo
+CLASS FMDSharedConfigurationFollowUpEntry
+CLASS FMDAccessoryIdentifier
+  - computeAccessoryIdentifierWithAddress: @24@0:8@16
+CLASS FMDIdentitySigningRequest
+CLASS FMDFMMManager
+  - registerObservers v16@0:8
+  - didRemoveLocalFindableAccessory:completion: v32@0:8@16@?24
+  - unregisterObservers v16@0:8
+CLASS FMDRepairDevice
+CLASS FMDEraseOptions
+CLASS FMDActivationLockInfo
+CLASS FMDataArchiver
+PROTOCOL FMDFMMUAProtocol
+  - addFMMAccount:withAuthData:usingCallback: Vv40@0:8@16@24@?32
+  - commandValidationSignatureWithContext:completion: Vv32@0:8@16@?24
+  - didChangeFMMAccountInfo:usingCallback: Vv32@0:8@16@?24
+  - didReceiveLostModeExitAuthToken:usingCallback: Vv32@0:8@16@?24
+  - downloadSharedConfigurationWithLocale:reply: v32@0:8@16@?24
+  - getTheftAndLossCoverageWithSerialNumber:reply: v32@0:8@16@?24
+  - initiateLostModeExitAuthForApp:usingCallback: Vv32@0:8@16@?24
+PROTOCOL FMDIdentifiable
+  - isValid B16@0:8
+  - stringValue @16@0:8
+PROTOCOL FMDAccessory
+  - accessoryIdentifier @16@0:8
+PROTOCOL FMDSharedConfigurationXPCInterface
+  - downloadSharedConfigurationWithLocale:reply: v32@0:8@16@?24
+  - getTheftAndLossCoverageWithSerialNumber:reply: v32@0:8@16@?24
+  - getTheftAndLossCoverageWithUDID:reply: v32@0:8@16@?24
+  - theftAndLossCoverageWithUDIDs:completion: v32@0:8@16@?24
+PROTOCOL FMDFMMProtocol
+  - disableFMMUsingToken:inContext:usingCallback: Vv40@0:8@16Q24@?32
+  - clearFMMAccountsWithCompletion: Vv24@0:8@?16
+  - activationLockInfoForContext:usingCallback: Vv32@0:8@16@?24
+  - didRemoveLocalFindableAccessory:completion: v32@0:8@16@?24
+  - enableActivationLockUsingCallback: Vv24@0:8@?16
+  - eraseAllContentAndSettingsUsingCallback: Vv24@0:8@?16
+  - fetchAPNSTokenWithCompletion: v24@0:8@?16
+  - fetchDeviceOwnerAuthContext: Vv24@0:8@?16
+  - isActivationLockCapableUsingCallback: Vv24@0:8@?16
+  - isActivationLockedUsingCallback: Vv24@0:8@?16
+  - locationCommandWithCompletion: v24@0:8@?16
+  - locationPayloadWithCompletion: v24@0:8@?16
+  - needsDeviceOwnerCredentials: Vv24@0:8@?16
+  - performActivationLockOperationWithInfo:usingCallback: Vv32@0:8@16@?24
+  - removeFMMAccountWithUsername:withAuthData:usingCallback: Vv40@0:8@16@24@?32
+  - retrieveFMMAccountUsingCallback: Vv24@0:8@?16
+  - shouldPromptForCredentialsForDeviceActivation: Vv24@0:8@?16
+  - shouldResumeCardsForUser:usingCallback: Vv32@0:8@16@?24
+  - signatureHeadersWithData:usingCallback: Vv32@0:8@16@?24
+  - simulatePushWithPayload:completion: v32@0:8@16@?24
+  - updateLocalAuthenticationContext:completion: Vv32@0:8@16@?24
+PROTOCOL FMDCodable
+  + objectType @16@0:8
+  + objectTypeKey @16@0:8
+  - encodeWithFMDCoder:error: B32@0:8@16^@24
+  - initWithFMDCoder:error: @32@0:8@16^@24
+PROTOCOL FMDFMMUAServicesProtocol
+  - addFMMAccount:withAuthData:withReply: Vv40@0:8@16@24@?32
+  - clearLocateAlertsForCommandId:withReply: Vv32@0:8@16@?24
+  - didReceiveLostModeExitAuthToken:withReply: Vv32@0:8@16@?24
+  - fetchAuthTokenUpdateMechanismWithReply: Vv24@0:8@?16
+  - getPendingLocateAlertsWithReply: Vv24@0:8@?16
+  - resetShouldResumeCardsForUser:withReply: Vv32@0:8@16@?24
+  - retryIdentityWithToken:tokenError:withReply: Vv40@0:8@16@24@?32
+  - updateAdditionalFMMAccountInfo:withReply: Vv32@0:8@16@?24
+  - updateGUIDUsingAuthData:withReply: Vv32@0:8@16@?24
+  - updateLocalAuthContext: Vv24@0:8@16
+  - updateSPStats:withReply: Vv32@0:8@16@?24
+PROTOCOL FMDDictionaryRepresentable
+  - dictionaryValue @16@0:8
+  - initWithDictionary: @24@0:8@16

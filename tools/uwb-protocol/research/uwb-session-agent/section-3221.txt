@@ -1,0 +1,415 @@
+-[NIServerFindingDiscoveryProvider _processReceivedAdvertisement:fromPeer:overBluetooth:cbDevice:]:
+0x1003443E9   pushq    %rbp                 
+0x1003443EA   movq     %rsp, %rbp           
+0x1003443ED   pushq    %r15                 
+0x1003443EF   pushq    %r14                 
+0x1003443F1   pushq    %r13                 
+0x1003443F3   pushq    %r12                 
+0x1003443F5   pushq    %rbx                 
+0x1003443F6   subq     $0xc8, %rsp          
+0x1003443FD   movq     %r9, %rbx            
+0x100344400   movl     %r8d, -0x78(%rbp)    
+0x100344404   movq     %rcx, %r14           
+0x100344407   movq     %rdi, %r15           
+0x10034440A   movq     0x5fa5df(%rip), %rax  ; ___stack_chk_guard
+0x100344411   movq     (%rax), %rax         
+0x100344414   movq     %rax, -0x30(%rbp)    
+0x100344418   movq     0x5fadf1(%rip), %r12  ; _objc_retain
+0x10034441F   movq     %rdx, -0x80(%rbp)    
+0x100344423   movq     %rdx, %rdi           
+0x100344426   callq    *%r12                
+0x100344429   movq     %r14, %rdi           
+0x10034442C   callq    *%r12                
+0x10034442F   movq     %rbx, -0x90(%rbp)    
+0x100344436   movq     %rbx, %rdi           
+0x100344439   callq    *%r12                
+0x10034443C   movq     0x30(%r15), %rdi     
+0x100344440   movq     %r14, -0x88(%rbp)    
+0x100344447   callq    _dispatch_assert_queue$V2 
+0x10034444C   movq     0x88(%r15), %rdi     
+0x100344453   movq     0x65e1fe(%rip), %rbx  ; selector "objectForKey:"
+0x10034445A   movq     %rbx, %rsi           
+0x10034445D   movq     %r14, %rdx           
+0x100344460   callq    *0x5fad6a(%rip)      ; _objc_msgSend
+0x100344466   movq     %rax, %rdi           
+0x100344469   callq    _objc_retainAutoreleasedReturnValue 
+0x10034446E   movq     %rax, -0xa8(%rbp)    
+0x100344475   movq     0x90(%r15), %rdi     
+0x10034447C   movq     %rbx, %rsi           
+0x10034447F   movq     %r14, %rdx           
+0x100344482   callq    *0x5fad48(%rip)      ; _objc_msgSend
+0x100344488   movq     %rax, %rdi           
+0x10034448B   callq    _objc_retainAutoreleasedReturnValue 
+0x100344490   movq     %rax, -0xa0(%rbp)    
+0x100344497   movq     0x5fb45a(%rip), %rdi  ; _OBJC_CLASS_$_NSDate
+0x10034449E   movq     0x65f0bb(%rip), %rbx  ; selector "now"
+0x1003444A5   movq     %rbx, %rsi           
+0x1003444A8   callq    *0x5fad22(%rip)      ; _objc_msgSend
+0x1003444AE   movq     %rax, %rdi           
+0x1003444B1   callq    _objc_retainAutoreleasedReturnValue 
+0x1003444B6   movq     %rax, -0x98(%rbp)    
+0x1003444BD   movb     $0x1, %r14b          
+0x1003444C0   movb     $0x1, %r12b          
+0x1003444C3   cmpq     $0x0, -0xa8(%rbp)    
+0x1003444CB   je       0x1003444eb          
+0x1003444CD   movq     0x65f534(%rip), %rsi  ; selector "isEqual:"
+0x1003444D4   movq     -0x80(%rbp), %rdi    
+0x1003444D8   movq     -0xa8(%rbp), %rdx    
+0x1003444DF   callq    *0x5faceb(%rip)      ; _objc_msgSend
+0x1003444E5   testb    %al, %al             
+0x1003444E7   sete     %r12b                
+0x1003444EB   cmpq     $0x0, -0xa0(%rbp)    
+0x1003444F3   je       0x10034452a          
+0x1003444F5   movq     0x65fdb4(%rip), %rsi  ; selector "timeIntervalSinceDate:"
+0x1003444FC   movq     -0x98(%rbp), %rdi    
+0x100344503   movq     -0xa0(%rbp), %rdx    
+0x10034450A   callq    *0x5facc0(%rip)      ; _objc_msgSend
+0x100344510   ucomisd  0x280400(%rip), %xmm0  ; 
+0x100344518   setae    %r14b                
+0x10034451C   movl     %r12d, %eax          
+0x10034451F   orb      %r14b, %al           
+0x100344522   cmpb     $0x1, %al            
+0x100344524   jne      0x100344750          
+0x10034452A   leaq     0x67978f(%rip), %rax  ; 
+0x100344531   movq     (%rax), %r13         
+0x100344534   movq     %r13, %rdi           
+0x100344537   callq    *0x5facd3(%rip)      ; _objc_retain
+0x10034453D   movq     %r13, %rdi           
+0x100344540   xorl     %esi, %esi           
+0x100344542   callq    _os_log_type_enabled 
+0x100344547   testb    %al, %al             
+0x100344549   je       0x10034461f          
+0x10034454F   movsbl   0x20(%r15), %edi     
+0x100344554   callq    0x100313d45          
+0x100344559   movq     %rax, -0xb0(%rbp)    
+0x100344560   movq     0x65f7a9(%rip), %rsi  ; selector "descriptionInternal"
+0x100344567   movq     -0x88(%rbp), %rdi    
+0x10034456E   callq    *0x5fac5c(%rip)      ; _objc_msgSend
+0x100344574   movq     %rax, %rdi           
+0x100344577   callq    _objc_retainAutoreleasedReturnValue 
+0x10034457C   movq     %rax, %rbx           
+0x10034457F   cmpb     $0x0, -0x78(%rbp)    
+0x100344583   leaq     0x1f430e(%rip), %rax  ; string literal: "OOB"
+0x10034458A   leaq     0x1f4304(%rip), %rcx  ; string literal: "BT"
+0x100344591   cmoveq   %rax, %rcx           
+0x100344595   movzbl   %r12b, %eax          
+0x100344599   movzbl   %r14b, %edx          
+0x10034459D   leaq     -0x70(%rbp), %r8     
+0x1003445A1   movl     $0x8200603, (%r8)    
+0x1003445A8   movq     -0xb0(%rbp), %rsi    
+0x1003445AF   movq     %rsi, 0x4(%r8)       
+0x1003445B3   movw     $0x820, 0xc(%r8)     
+0x1003445BA   movq     %rcx, 0xe(%r8)       
+0x1003445BE   movw     $0x841, %cx          
+0x1003445C2   movw     %cx, 0x16(%r8)       
+0x1003445C7   movq     %rbx, 0x18(%r8)      
+0x1003445CB   movw     $0x400, %si          
+0x1003445CF   movw     %si, 0x20(%r8)       
+0x1003445D4   movl     %eax, 0x22(%r8)      
+0x1003445D8   movw     %si, 0x26(%r8)       
+0x1003445DD   movl     %edx, 0x28(%r8)      
+0x1003445E1   movw     %cx, 0x2c(%r8)       
+0x1003445E6   movq     -0x90(%rbp), %rax    
+0x1003445ED   movq     %rax, 0x2e(%r8)      
+0x1003445F1   leaq     -0x3445f8(%rip), %rdi  ; 
+0x1003445F8   leaq     0x2482e1(%rip), %rcx  ; string literal: "#find-disc,[%s] Found device (%s) for token %{private}@. IsNew: %d. BeenTooLong: %d. Device: %{private}@"
+0x1003445FF   movq     %r13, %rsi           
+0x100344602   xorl     %edx, %edx           
+0x100344604   movl     $0x36, %r9d          
+0x10034460A   callq    __os_log_impl        
+0x10034460F   movq     %rbx, %rdi           
+0x100344612   callq    *0x5fabf0(%rip)      ; _objc_release
+0x100344618   movq     0x65ef41(%rip), %rbx  ; selector "now"
+0x10034461F   movq     %r13, %rdi           
+0x100344622   callq    *0x5fabe0(%rip)      ; _objc_release
+0x100344628   movq     -0x88(%rbp), %r14    
+0x10034462F   cmpb     $0x0, -0x78(%rbp)    
+0x100344633   je       0x1003446a0          
+0x100344635   movq     0x65e8ec(%rip), %rsi  ; selector "isFinder"
+0x10034463C   movq     -0x80(%rbp), %rdi    
+0x100344640   callq    *0x5fab8a(%rip)      ; _objc_msgSend
+0x100344646   movsbl   %al, %edi            
+0x100344649   callq    0x10031379b          
+0x10034464E   cmpl     $0x13, %eax          
+0x100344651   jne      0x1003446a0          
+0x100344653   movq     0x5fb29e(%rip), %rdi  ; _OBJC_CLASS_$_NSDate
+0x10034465A   movq     %rbx, %rsi           
+0x10034465D   callq    *0x5fab6d(%rip)      ; _objc_msgSend
+0x100344663   movq     %rax, %rdi           
+0x100344666   callq    _objc_retainAutoreleasedReturnValue 
+0x10034466B   movq     %rax, %r13           
+0x10034466E   movq     0xb8(%r15), %rdx     
+0x100344675   movq     0x65fc34(%rip), %rsi  ; selector "timeIntervalSinceDate:"
+0x10034467C   movq     %rax, %rdi           
+0x10034467F   callq    *0x5fab4b(%rip)      ; _objc_msgSend
+0x100344685   movsd    0x280eb3(%rip), %xmm1  ; 
+0x10034468D   ucomisd  %xmm0, %xmm1         
+0x100344691   ja       0x1003449c1          
+0x100344697   movq     %r13, %rdi           
+0x10034469A   callq    *0x5fab68(%rip)      ; _objc_release
+0x1003446A0   movq     0x80(%r15), %rdi     
+0x1003446A7   movq     0x65ecb2(%rip), %rsi  ; selector "containsObject:"
+0x1003446AE   movq     %r14, %rdx           
+0x1003446B1   callq    *0x5fab19(%rip)      ; _objc_msgSend
+0x1003446B7   testb    %al, %al             
+0x1003446B9   je       0x10034482c          
+0x1003446BF   movq     0x88(%r15), %rdi     
+0x1003446C6   movq     0x65e003(%rip), %rbx  ; selector "setObject:forKey:"
+0x1003446CD   movq     %rbx, %rsi           
+0x1003446D0   movq     -0x80(%rbp), %rdx    
+0x1003446D4   movq     %r14, %rcx           
+0x1003446D7   callq    *0x5faaf3(%rip)      ; _objc_msgSend
+0x1003446DD   movq     0x90(%r15), %rdi     
+0x1003446E4   movq     %rbx, %rsi           
+0x1003446E7   movq     -0x98(%rbp), %rdx    
+0x1003446EE   movq     %r14, %rcx           
+0x1003446F1   callq    *0x5faad9(%rip)      ; _objc_msgSend
+0x1003446F7   movsd    0xa0(%r15), %xmm0    
+0x100344700   movq     0x662309(%rip), %rsi  ; selector "_configureDiscoveryTimeout:forToken:"
+0x100344707   movq     %r15, %rdi           
+0x10034470A   movq     %r14, %rdx           
+0x10034470D   callq    *0x5faabd(%rip)      ; _objc_msgSend
+0x100344713   cmpb     $0x0, -0x78(%rbp)    
+0x100344717   sete     %bl                  
+0x10034471A   leaq     0x28(%r15), %rdi     
+0x10034471E   callq    _objc_loadWeakRetained 
+0x100344723   movq     %rax, %r12           
+0x100344726   testb    %bl, %bl             
+0x100344728   jne      0x100344858          
+0x10034472E   movq     0x6622e3(%rip), %rsi  ; selector "didDiscoverPeer:advertisement:overBluetooth:"
+0x100344735   movq     %r12, %rdi           
+0x100344738   movq     %r14, %rdx           
+0x10034473B   movq     -0x80(%rbp), %rcx    
+0x10034473F   movl     $0x1, %r8d           
+0x100344745   callq    *0x5faa85(%rip)      ; _objc_msgSend
+0x10034474B   jmp      0x1003448ed          
+0x100344750   leaq     0x679569(%rip), %rax  ; 
+0x100344757   movq     (%rax), %r13         
+0x10034475A   movq     %r13, %rdi           
+0x10034475D   callq    *0x5faaad(%rip)      ; _objc_retain
+0x100344763   movq     %r13, %rdi           
+0x100344766   movl     $0x1, %esi           
+0x10034476B   callq    _os_log_type_enabled 
+0x100344770   testb    %al, %al             
+0x100344772   movq     -0x88(%rbp), %r14    
+0x100344779   je       0x10034481e          
+0x10034477F   movsbl   0x20(%r15), %edi     
+0x100344784   callq    0x100313d45          
+0x100344789   movq     %rax, %r15           
+0x10034478C   movq     0x65f57d(%rip), %rsi  ; selector "descriptionInternal"
+0x100344793   movq     %r14, %rdi           
+0x100344796   callq    *0x5faa34(%rip)      ; _objc_msgSend
+0x10034479C   movq     %rax, %rdi           
+0x10034479F   callq    _objc_retainAutoreleasedReturnValue 
+0x1003447A4   movq     %rax, %rbx           
+0x1003447A7   cmpb     $0x0, -0x78(%rbp)    
+0x1003447AB   leaq     0x1f40e6(%rip), %rax  ; string literal: "OOB"
+0x1003447B2   leaq     0x1f40dc(%rip), %rcx  ; string literal: "BT"
+0x1003447B9   cmoveq   %rax, %rcx           
+0x1003447BD   leaq     -0x70(%rbp), %r8     
+0x1003447C1   movl     $0x8200403, (%r8)    
+0x1003447C8   movq     %r15, 0x4(%r8)       
+0x1003447CC   movw     $0x820, 0xc(%r8)     
+0x1003447D3   movq     %rcx, 0xe(%r8)       
+0x1003447D7   movw     $0x841, %ax          
+0x1003447DB   movw     %ax, 0x16(%r8)       
+0x1003447E0   movq     %rbx, 0x18(%r8)      
+0x1003447E4   movw     %ax, 0x20(%r8)       
+0x1003447E9   movq     -0x90(%rbp), %rax    
+0x1003447F0   movq     %rax, 0x22(%r8)      
+0x1003447F4   leaq     -0x3447fb(%rip), %rdi  ; 
+0x1003447FB   leaq     0x24814e(%rip), %rcx  ; string literal: "#find-disc,[%s] Found device (%s) for token %{private}@, but ignoring. Device: %{private}@"
+0x100344802   movq     %r13, %rsi           
+0x100344805   movl     $0x1, %edx           
+0x10034480A   movl     $0x2a, %r9d          
+0x100344810   callq    __os_log_impl        
+0x100344815   movq     %rbx, %rdi           
+0x100344818   callq    *0x5fa9ea(%rip)      ; _objc_release
+0x10034481E   movq     %r13, %rdi           
+0x100344821   callq    *0x5fa9e1(%rip)      ; _objc_release
+0x100344827   jmp      0x100344a1b          
+0x10034482C   leaq     0x67948d(%rip), %rax  ; 
+0x100344833   movq     (%rax), %rbx         
+0x100344836   movq     %rbx, %rdi           
+0x100344839   movl     $0x10, %esi          
+0x10034483E   callq    _os_log_type_enabled 
+0x100344843   testb    %al, %al             
+0x100344845   je       0x100344a1b          
+0x10034484B   movq     %rbx, %rdi           
+0x10034484E   callq    0x10049a02d          
+0x100344853   jmp      0x100344a1b          
+0x100344858   movq     0x30(%r15), %rax     
+0x10034485C   movq     %rax, -0x78(%rbp)    
+0x100344860   movq     0x5fa119(%rip), %rax  ; __NSConcreteStackBlock
+0x100344867   leaq     -0xe8(%rbp), %r13    
+0x10034486E   movq     %rax, (%r13)         
+0x100344872   movl     $0xc2000000, %eax    
+0x100344877   movq     %rax, 0x8(%r13)      
+0x10034487B   leaq     0x2a3(%rip), %rax    ; 
+0x100344882   movq     %rax, 0x10(%r13)     
+0x100344886   leaq     0x609f63(%rip), %rax  ; 
+0x10034488D   movq     %rax, 0x18(%r13)     
+0x100344891   movq     %r12, %rdi           
+0x100344894   movq     0x5fa975(%rip), %rbx  ; _objc_retain
+0x10034489B   callq    *%rbx                
+0x10034489D   movq     %r12, 0x20(%r13)     
+0x1003448A1   movq     %r14, %rdi           
+0x1003448A4   callq    *%rbx                
+0x1003448A6   movq     %r14, 0x28(%r13)     
+0x1003448AA   movq     -0x80(%rbp), %r14    
+0x1003448AE   movq     %r14, %rdi           
+0x1003448B1   callq    *%rbx                
+0x1003448B3   movq     %r14, 0x30(%r13)     
+0x1003448B7   movq     -0x78(%rbp), %rdi    
+0x1003448BB   movq     %r13, %rsi           
+0x1003448BE   callq    _dispatch_async      
+0x1003448C3   movq     0x30(%r13), %rdi     
+0x1003448C7   callq    *0x5fa93b(%rip)      ; _objc_release
+0x1003448CD   leaq     -0xc0(%rbp), %rax    
+0x1003448D4   movq     (%rax), %rdi         
+0x1003448D7   callq    *0x5fa92b(%rip)      ; _objc_release
+0x1003448DD   leaq     -0xc8(%rbp), %rax    
+0x1003448E4   movq     (%rax), %rdi         
+0x1003448E7   callq    *0x5fa91b(%rip)      ; _objc_release
+0x1003448ED   xorl     %edi, %edi           
+0x1003448EF   cmpb     $0x0, 0x20(%r15)     
+0x1003448F4   sete     %dil                 
+0x1003448F8   callq    0x10031379b          
+0x1003448FD   cmpl     $0x1a, %eax          
+0x100344900   jne      0x1003449af          
+0x100344906   movq     0x60(%r15), %rdi     
+0x10034490A   movq     0x65e9df(%rip), %r13  ; selector "discoveryFlags"
+0x100344911   movq     %r13, %rsi           
+0x100344914   callq    *0x5fa8b6(%rip)      ; _objc_msgSend
+0x10034491A   movabsq  $0x200100000, %r14   
+0x100344924   testq    %r14, %rax           
+0x100344927   jne      0x10034498f          
+0x100344929   leaq     0x679390(%rip), %rax  ; 
+0x100344930   movq     (%rax), %rbx         
+0x100344933   movq     %rbx, %rdi           
+0x100344936   xorl     %esi, %esi           
+0x100344938   callq    _os_log_type_enabled 
+0x10034493D   testb    %al, %al             
+0x10034493F   je       0x100344969          
+0x100344941   leaq     -0x70(%rbp), %r8     
+0x100344945   movw     $0x0, (%r8)          
+0x10034494B   leaq     -0x344952(%rip), %rdi  ; 
+0x100344952   leaq     0x2480f7(%rip), %rcx  ; string literal: "#find-disc,NearbyActionNoWake: enabling scan dupes"
+0x100344959   movq     %rbx, %rsi           
+0x10034495C   xorl     %edx, %edx           
+0x10034495E   movl     $0x2, %r9d           
+0x100344964   callq    __os_log_impl        
+0x100344969   movq     0x60(%r15), %rbx     
+0x10034496D   movq     %rbx, %rdi           
+0x100344970   movq     %r13, %rsi           
+0x100344973   callq    *0x5fa857(%rip)      ; _objc_msgSend
+0x100344979   orq      %r14, %rax           
+0x10034497C   movq     0x65e975(%rip), %rsi  ; selector "setDiscoveryFlags:"
+0x100344983   movq     %rbx, %rdi           
+0x100344986   movq     %rax, %rdx           
+0x100344989   callq    *0x5fa841(%rip)      ; _objc_msgSend
+0x10034498F   movq     0x78(%r15), %rdi     
+0x100344993   testq    %rdi, %rdi           
+0x100344996   je       0x1003449af          
+0x100344998   callq    _dispatch_source_cancel 
+0x10034499D   movq     0x78(%r15), %rdi     
+0x1003449A1   movq     $0x0, 0x78(%r15)     
+0x1003449A9   callq    *0x5fa859(%rip)      ; _objc_release
+0x1003449AF   movq     %r12, %rdi           
+0x1003449B2   callq    *0x5fa850(%rip)      ; _objc_release
+0x1003449B8   movq     -0x88(%rbp), %r14    
+0x1003449BF   jmp      0x100344a1b          
+0x1003449C1   movsd    %xmm0, -0x78(%rbp)   
+0x1003449C6   leaq     0x6792f3(%rip), %rax  ; 
+0x1003449CD   movq     (%rax), %rbx         
+0x1003449D0   movq     %rbx, %rdi           
+0x1003449D3   xorl     %esi, %esi           
+0x1003449D5   callq    _os_log_type_enabled 
+0x1003449DA   testb    %al, %al             
+0x1003449DC   je       0x100344a12          
+0x1003449DE   leaq     -0x70(%rbp), %r8     
+0x1003449E2   movl     $0x8000100, (%r8)    
+0x1003449E9   movsd    -0x78(%rbp), %xmm0   
+0x1003449EE   movsd    %xmm0, 0x4(%r8)      
+0x1003449F4   leaq     -0x3449fb(%rip), %rdi  ; 
+0x1003449FB   leaq     0x247fae(%rip), %rcx  ; string literal: "#find-disc,DO NOT PROCESS: Stale advertisment thats a cached dupe from previously configured scanner (delivery time from when scanner was configured = %f)"
+0x100344A02   movq     %rbx, %rsi           
+0x100344A05   xorl     %edx, %edx           
+0x100344A07   movl     $0xc, %r9d           
+0x100344A0D   callq    __os_log_impl        
+0x100344A12   movq     %r13, %rdi           
+0x100344A15   callq    *0x5fa7ed(%rip)      ; _objc_release
+0x100344A1B   movq     -0x98(%rbp), %rdi    
+0x100344A22   callq    *0x5fa7e0(%rip)      ; _objc_release
+0x100344A28   movq     -0xa0(%rbp), %rdi    
+0x100344A2F   callq    *0x5fa7d3(%rip)      ; _objc_release
+0x100344A35   movq     -0xa8(%rbp), %rdi    
+0x100344A3C   callq    *0x5fa7c6(%rip)      ; _objc_release
+0x100344A42   movq     -0x90(%rbp), %rdi    
+0x100344A49   callq    *0x5fa7b9(%rip)      ; _objc_release
+0x100344A4F   movq     %r14, %rdi           
+0x100344A52   callq    *0x5fa7b0(%rip)      ; _objc_release
+0x100344A58   movq     -0x80(%rbp), %rdi    
+0x100344A5C   callq    *0x5fa7a6(%rip)      ; _objc_release
+0x100344A62   movq     0x5f9f87(%rip), %rax  ; ___stack_chk_guard
+0x100344A69   movq     (%rax), %rax         
+0x100344A6C   cmpq     -0x30(%rbp), %rax    
+0x100344A70   jne      0x100344a84          
+0x100344A72   addq     $0xc8, %rsp          
+0x100344A79   popq     %rbx                 
+0x100344A7A   popq     %r12                 
+0x100344A7C   popq     %r13                 
+0x100344A7E   popq     %r14                 
+0x100344A80   popq     %r15                 
+0x100344A82   popq     %rbp                 
+0x100344A83   retq                          
+0x100344A84   callq    ___stack_chk_fail    
+0x100344A89   movq     %rax, %r15           
+0x100344A8C   movq     %r13, %rdi           
+0x100344A8F   callq    *0x5fa773(%rip)      ; _objc_release
+0x100344A95   jmp      0x100344acd          
+0x100344A97   jmp      0x100344aca          
+0x100344A99   jmp      0x100344a9d          
+0x100344A9B   jmp      0x100344aca          
+0x100344A9D   movq     %rax, %r15           
+0x100344AA0   movq     %r13, %rdi           
+0x100344AA3   callq    *0x5fa75f(%rip)      ; _objc_release
+0x100344AA9   jmp      0x100344acd          
+0x100344AAB   movq     %rax, %r15           
+0x100344AAE   movq     %r12, %rdi           
+0x100344AB1   callq    *0x5fa751(%rip)      ; _objc_release
+0x100344AB7   jmp      0x100344acd          
+0x100344AB9   movq     %rax, %r15           
+0x100344ABC   jmp      0x100344ada          
+0x100344ABE   movq     %rax, %r15           
+0x100344AC1   jmp      0x100344ae7          
+0x100344AC3   jmp      0x100344ac5          
+0x100344AC5   movq     %rax, %r15           
+0x100344AC8   jmp      0x100344af4          
+0x100344ACA   movq     %rax, %r15           
+0x100344ACD   movq     -0x98(%rbp), %rdi    
+0x100344AD4   callq    *0x5fa72e(%rip)      ; _objc_release
+0x100344ADA   movq     -0xa0(%rbp), %rdi    
+0x100344AE1   callq    *0x5fa721(%rip)      ; _objc_release
+0x100344AE7   movq     -0xa8(%rbp), %rdi    
+0x100344AEE   callq    *0x5fa714(%rip)      ; _objc_release
+0x100344AF4   movq     -0x90(%rbp), %rdi    
+0x100344AFB   callq    *0x5fa707(%rip)      ; _objc_release
+0x100344B01   movq     -0x88(%rbp), %rdi    
+0x100344B08   callq    *0x5fa6fa(%rip)      ; _objc_release
+0x100344B0E   movq     -0x80(%rbp), %rdi    
+0x100344B12   callq    *0x5fa6f0(%rip)      ; _objc_release
+0x100344B18   jmp      0x100344b1d          
+0x100344B1A   movq     %rax, %r15           
+0x100344B1D   movq     %r15, %rdi           
+0x100344B20   callq    __Unwind_Resume      
+0x100344B25   pushq    %rbp                 
+0x100344B26   movq     %rsp, %rbp           
+0x100344B29   movq     0x20(%rdi), %rax     
+0x100344B2D   movq     0x28(%rdi), %rdx     
+0x100344B31   movq     0x30(%rdi), %rcx     
+0x100344B35   movq     0x661edc(%rip), %rsi  ; selector "didDiscoverPeer:advertisement:overBluetooth:"
+0x100344B3C   movq     %rax, %rdi           
+0x100344B3F   xorl     %r8d, %r8d           
+0x100344B42   popq     %rbp                 
+0x100344B43   jmpq     *0x5fa687(%rip)      ; _objc_msgSend

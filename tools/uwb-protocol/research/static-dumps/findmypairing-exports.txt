@@ -1,0 +1,1619 @@
+associated type descriptor for FindMyPairing.PairingValidator.AckRequest
+associated type descriptor for FindMyPairing.TypedPairingInfoStore.Peripheral
+associated type descriptor for FindMyPairing.PairingExecutor.Peripheral
+associated type descriptor for FindMyPairing.PairingPeripheralProvider.Peripheral
+associated type descriptor for FindMyPairing.AccessoryMetadataProvider.Peripheral
+associated type descriptor for FindMyPairing.PairingValidator.AckResponse
+associated type descriptor for FindMyPairing.PairingPolicyVerifier.PairingInfo
+associated type descriptor for FindMyPairing.PairingExecutorFactory.PairingInfo
+associated type descriptor for FindMyPairing.TypedPairingInfoStore.ProductInfo
+protocol descriptor for FindMyPairing.BasePairingCoordinator
+dispatch thunk of FindMyPairing.BasePairingCoordinator.startAccessoryPairing() -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator.startAccessoryPairing() -> ()
+dispatch thunk of FindMyPairing.BasePairingCoordinator.continueAccessoryPairing() -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator.continueAccessoryPairing() -> ()
+dispatch thunk of FindMyPairing.BasePairingCoordinator.failPairing(with: Swift.Error) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.BasePairingCoordinator.failPairing(with: Swift.Error) async throws -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator.failPairing(with: Swift.Error) async throws -> ()
+dispatch thunk of FindMyPairing.BasePairingCoordinator.triggerPairingFlow() async -> ()
+async function pointer to dispatch thunk of FindMyPairing.BasePairingCoordinator.triggerPairingFlow() async -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator.triggerPairingFlow() async -> ()
+dispatch thunk of FindMyPairing.BasePairingCoordinator.timeoutHandling(for: FindMyPairing.PairingOperation) -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator.timeoutHandling(for: FindMyPairing.PairingOperation) -> ()
+dispatch thunk of FindMyPairing.BasePairingCoordinator._internalSetState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.BasePairingCoordinator._internalSetState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator._internalSetState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+dispatch thunk of FindMyPairing.BasePairingCoordinator.updateDependencies(FindMyPairing.CoordinatorDependencies) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.BasePairingCoordinator.updateDependencies(FindMyPairing.CoordinatorDependencies) async throws -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator.updateDependencies(FindMyPairing.CoordinatorDependencies) async throws -> ()
+dispatch thunk of FindMyPairing.BasePairingCoordinator.notifyNewPartsDetected(([FindMyPairing.Accessory]) async -> ()) -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator.notifyNewPartsDetected(([FindMyPairing.Accessory]) async -> ()) -> ()
+dispatch thunk of FindMyPairing.BasePairingCoordinator.newPartsDetectedHandler.modify : (([FindMyPairing.Accessory]) async -> ())?
+method descriptor for FindMyPairing.BasePairingCoordinator.newPartsDetectedHandler.modify : (([FindMyPairing.Accessory]) async -> ())?
+dispatch thunk of FindMyPairing.BasePairingCoordinator.newPartsDetectedHandler.getter : (([FindMyPairing.Accessory]) async -> ())?
+method descriptor for FindMyPairing.BasePairingCoordinator.newPartsDetectedHandler.getter : (([FindMyPairing.Accessory]) async -> ())?
+dispatch thunk of FindMyPairing.BasePairingCoordinator.newPartsDetectedHandler.setter : (([FindMyPairing.Accessory]) async -> ())?
+method descriptor for FindMyPairing.BasePairingCoordinator.newPartsDetectedHandler.setter : (([FindMyPairing.Accessory]) async -> ())?
+dispatch thunk of FindMyPairing.BasePairingCoordinator.setup() -> ()
+method descriptor for FindMyPairing.BasePairingCoordinator.setup() -> ()
+(extension in FindMyPairing):FindMyPairing.BasePairingCoordinator.notifyNewPartsDetected(([FindMyPairing.Accessory]) async -> ()) -> ()
+base conformance descriptor for FindMyPairing.BasePairingCoordinator: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.BasePairingCoordinator
+protocol descriptor for FindMyPairing.TypedPairingInfoStore
+associated conformance descriptor for FindMyPairing.TypedPairingInfoStore.FindMyPairing.TypedPairingInfoStore.VerificationInfo: FindMyPairing.PairingEligibilityInfo
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryProductInfo.modify : A.ProductInfo?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryProductInfo.modify : A.ProductInfo?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryProductInfo.getter : A.ProductInfo?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryProductInfo.getter : A.ProductInfo?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryProductInfo.setter : A.ProductInfo?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryProductInfo.setter : A.ProductInfo?
+associated conformance descriptor for FindMyPairing.TypedPairingInfoStore.FindMyPairing.TypedPairingInfoStore.ProductInfo: FindMyPairing.AccessoryProductInfoType
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.productInfo(for: FindMyPairing.FWVersionNumber?) throws -> A.ProductInfo?
+method descriptor for FindMyPairing.TypedPairingInfoStore.productInfo(for: FindMyPairing.FWVersionNumber?) throws -> A.ProductInfo?
+associated conformance descriptor for FindMyPairing.TypedPairingInfoStore.FindMyPairing.TypedPairingInfoStore.Peripheral: FindMyPairing.PeripheralType
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryMetadata.modify : A.Metadata?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryMetadata.modify : A.Metadata?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryMetadata.getter : A.Metadata?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryMetadata.getter : A.Metadata?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryMetadata.setter : A.Metadata?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryMetadata.setter : A.Metadata?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryPeripheral.modify : A.Peripheral?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryPeripheral.modify : A.Peripheral?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryPeripheral.getter : A.Peripheral?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryPeripheral.getter : A.Peripheral?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryPeripheral.setter : A.Peripheral?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryPeripheral.setter : A.Peripheral?
+associated conformance descriptor for FindMyPairing.TypedPairingInfoStore.FindMyPairing.TypedPairingInfoStore.AccessoryConfiguration: FindMyPairing.PairingConfigurationType
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.pairingPolicyInformation.getter : A.VerificationInfo
+method descriptor for FindMyPairing.TypedPairingInfoStore.pairingPolicyInformation.getter : A.VerificationInfo
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryUserConfiguration.modify : A.AccessoryConfiguration?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryUserConfiguration.modify : A.AccessoryConfiguration?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryUserConfiguration.getter : A.AccessoryConfiguration?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryUserConfiguration.getter : A.AccessoryConfiguration?
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.accessoryUserConfiguration.setter : A.AccessoryConfiguration?
+method descriptor for FindMyPairing.TypedPairingInfoStore.accessoryUserConfiguration.setter : A.AccessoryConfiguration?
+associated conformance descriptor for FindMyPairing.TypedPairingInfoStore.FindMyPairing.TypedPairingInfoStore.Product: FindMyPairing.ProductID
+associated conformance descriptor for FindMyPairing.TypedPairingInfoStore.FindMyPairing.TypedPairingInfoStore.Metadata: FindMyPairing.MetadataType
+dispatch thunk of FindMyPairing.TypedPairingInfoStore.productID.getter : A.Product?
+method descriptor for FindMyPairing.TypedPairingInfoStore.productID.getter : A.Product?
+base conformance descriptor for FindMyPairing.TypedPairingInfoStore: FindMyPairing.PairingInfoStore
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.accessoryProductInfoValue.getter : FindMyPairing.AccessoryProductInfoType?
+property descriptor for (extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.accessoryProductInfoValue : FindMyPairing.AccessoryProductInfoType?
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.updateAccessoryProductInfo<A where A1: FindMyPairing.AccessoryProductInfoType>(A1) throws -> ()
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.updatePeripheral<A where A1: FindMyPairing.PeripheralType>(A1) throws -> ()
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.accessoryMetadataValue.getter : FindMyPairing.MetadataType?
+property descriptor for (extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.accessoryMetadataValue : FindMyPairing.MetadataType?
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.updateAccessoryMetadata<A where A1: FindMyPairing.MetadataType>(A1) throws -> ()
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.accessoryPeripheralValue.getter : FindMyPairing.PeripheralType?
+property descriptor for (extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.accessoryPeripheralValue : FindMyPairing.PeripheralType?
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.pairingPolicyInformationValue.getter : FindMyPairing.PairingEligibilityInfo
+property descriptor for (extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.pairingPolicyInformationValue : FindMyPairing.PairingEligibilityInfo
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.accessoryUserConfigurationValue.getter : FindMyPairing.PairingConfigurationType?
+property descriptor for (extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.accessoryUserConfigurationValue : FindMyPairing.PairingConfigurationType?
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.updateAccessoryUserConfiguration<A where A1: FindMyPairing.PairingConfigurationType>(A1) throws -> ()
+(extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.productID.getter : A.Product?
+property descriptor for (extension in FindMyPairing):FindMyPairing.TypedPairingInfoStore.productID : A.Product?
+protocol requirements base descriptor for FindMyPairing.TypedPairingInfoStore
+protocol descriptor for FindMyPairing.AdaptivePairingCoordinator
+dispatch thunk of FindMyPairing.AdaptivePairingCoordinator.executionDirector.getter : FindMyPairing.ExecutionDirector
+method descriptor for FindMyPairing.AdaptivePairingCoordinator.executionDirector.getter : FindMyPairing.ExecutionDirector
+base conformance descriptor for FindMyPairing.AdaptivePairingCoordinator: FindMyPairing.PairingCoordinator
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.startAccessoryPairing() -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.continueAccessoryPairing() -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator._nextUserInteractivePairingFlowStep() async throws -> FindMyPairing.PairingFlowStep
+async function pointer to (extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator._nextUserInteractivePairingFlowStep() async throws -> FindMyPairing.PairingFlowStep
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.endPairing(result: Swift.Result<Foundation.UUID, Swift.Error>?) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.endPairing(result: Swift.Result<Foundation.UUID, Swift.Error>?) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator._endPairing(result: Swift.Result<Foundation.UUID, Swift.Error>?) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator._endPairing(result: Swift.Result<Foundation.UUID, Swift.Error>?) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.failPairing(with: Swift.Error) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.failPairing(with: Swift.Error) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.triggerPairingFlow() async -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.triggerPairingFlow() async -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.listenToUpdates(of: Foundation.UUID, stream: Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingExecutorState)>) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.listenToUpdates(of: Foundation.UUID, stream: Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingExecutorState)>) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.timeoutHandling(for: FindMyPairing.PairingOperation) -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator._internalSetState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator._internalSetState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.updateDependencies(FindMyPairing.CoordinatorDependencies) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.updateDependencies(FindMyPairing.CoordinatorDependencies) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.AdaptivePairingCoordinator.setup() -> ()
+protocol requirements base descriptor for FindMyPairing.AdaptivePairingCoordinator
+protocol descriptor for FindMyPairing.AccessoryPairingInfoType
+protocol descriptor for FindMyPairing.PairingAckRequest
+protocol descriptor for FindMyPairing.PairingUIInfoType
+dispatch thunk of FindMyPairing.PairingUIInfoType.dictionary.getter : [Swift.String : Any]
+method descriptor for FindMyPairing.PairingUIInfoType.dictionary.getter : [Swift.String : Any]
+protocol requirements base descriptor for FindMyPairing.PairingUIInfoType
+protocol descriptor for FindMyPairing.PairingAckResponse
+protocol descriptor for FindMyPairing.PairingBeaconStore
+dispatch thunk of FindMyPairing.PairingBeaconStore.generateStandaloneBeaconRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> FindMyPairing.BeaconRecordType
+async function pointer to dispatch thunk of FindMyPairing.PairingBeaconStore.generateStandaloneBeaconRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> FindMyPairing.BeaconRecordType
+method descriptor for FindMyPairing.PairingBeaconStore.generateStandaloneBeaconRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> FindMyPairing.BeaconRecordType
+dispatch thunk of FindMyPairing.PairingBeaconStore.saveBeaconRecord(_: FindMyPairing.BeaconRecordType, pairingConfiguration: FindMyPairing.PairingConfigurationType) async throws -> FindMyPairing.BeaconRecordType
+async function pointer to dispatch thunk of FindMyPairing.PairingBeaconStore.saveBeaconRecord(_: FindMyPairing.BeaconRecordType, pairingConfiguration: FindMyPairing.PairingConfigurationType) async throws -> FindMyPairing.BeaconRecordType
+method descriptor for FindMyPairing.PairingBeaconStore.saveBeaconRecord(_: FindMyPairing.BeaconRecordType, pairingConfiguration: FindMyPairing.PairingConfigurationType) async throws -> FindMyPairing.BeaconRecordType
+dispatch thunk of FindMyPairing.PairingBeaconStore.undoBeaconRecordSaving(Foundation.UUID) async -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingBeaconStore.undoBeaconRecordSaving(Foundation.UUID) async -> ()
+method descriptor for FindMyPairing.PairingBeaconStore.undoBeaconRecordSaving(Foundation.UUID) async -> ()
+dispatch thunk of FindMyPairing.PairingBeaconStore.ownedBeaconGroup(FindMyBase.MACAddress) async -> FindMyPairing.BeaconGroupType?
+async function pointer to dispatch thunk of FindMyPairing.PairingBeaconStore.ownedBeaconGroup(FindMyBase.MACAddress) async -> FindMyPairing.BeaconGroupType?
+method descriptor for FindMyPairing.PairingBeaconStore.ownedBeaconGroup(FindMyBase.MACAddress) async -> FindMyPairing.BeaconGroupType?
+dispatch thunk of FindMyPairing.PairingBeaconStore.generateBeaconGroupAndRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> (FindMyPairing.BeaconRecordType, FindMyPairing.BeaconGroupType)?
+async function pointer to dispatch thunk of FindMyPairing.PairingBeaconStore.generateBeaconGroupAndRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> (FindMyPairing.BeaconRecordType, FindMyPairing.BeaconGroupType)?
+method descriptor for FindMyPairing.PairingBeaconStore.generateBeaconGroupAndRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> (FindMyPairing.BeaconRecordType, FindMyPairing.BeaconGroupType)?
+dispatch thunk of FindMyPairing.PairingBeaconStore.generateBeaconRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> FindMyPairing.BeaconRecordType?
+async function pointer to dispatch thunk of FindMyPairing.PairingBeaconStore.generateBeaconRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> FindMyPairing.BeaconRecordType?
+method descriptor for FindMyPairing.PairingBeaconStore.generateBeaconRecord(pairingKeys: FindMyPairing.PairingKeysInfo, accessory: FindMyPairing.AccessoryInfo) async throws -> FindMyPairing.BeaconRecordType?
+base conformance descriptor for FindMyPairing.PairingBeaconStore: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingBeaconStore
+protocol descriptor for FindMyPairing.PairingCoordinator
+dispatch thunk of FindMyPairing.PairingCoordinator.transaction.getter : FindMyBase.Transaction?
+method descriptor for FindMyPairing.PairingCoordinator.transaction.getter : FindMyBase.Transaction?
+dispatch thunk of FindMyPairing.PairingCoordinator.dependencies.modify : FindMyPairing.CoordinatorDependencies
+method descriptor for FindMyPairing.PairingCoordinator.dependencies.modify : FindMyPairing.CoordinatorDependencies
+dispatch thunk of FindMyPairing.PairingCoordinator.dependencies.getter : FindMyPairing.CoordinatorDependencies
+method descriptor for FindMyPairing.PairingCoordinator.dependencies.getter : FindMyPairing.CoordinatorDependencies
+dispatch thunk of FindMyPairing.PairingCoordinator.dependencies.setter : FindMyPairing.CoordinatorDependencies
+method descriptor for FindMyPairing.PairingCoordinator.dependencies.setter : FindMyPairing.CoordinatorDependencies
+dispatch thunk of FindMyPairing.PairingCoordinator.stateManager.getter : FindMyPairing.PairingCoordinatorStateManager
+method descriptor for FindMyPairing.PairingCoordinator.stateManager.getter : FindMyPairing.PairingCoordinatorStateManager
+dispatch thunk of FindMyPairing.PairingCoordinator.loggingPrefix.getter : Swift.String
+method descriptor for FindMyPairing.PairingCoordinator.loggingPrefix.getter : Swift.String
+dispatch thunk of FindMyPairing.PairingCoordinator.workItemQueue.getter : FindMyBase.WorkItemQueue
+method descriptor for FindMyPairing.PairingCoordinator.workItemQueue.getter : FindMyBase.WorkItemQueue
+dispatch thunk of FindMyPairing.PairingCoordinator.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinator.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+method descriptor for FindMyPairing.PairingCoordinator.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+dispatch thunk of FindMyPairing.PairingCoordinator.pairingLocation() async throws -> FindMyPairing.PairingLocation?
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinator.pairingLocation() async throws -> FindMyPairing.PairingLocation?
+method descriptor for FindMyPairing.PairingCoordinator.pairingLocation() async throws -> FindMyPairing.PairingLocation?
+dispatch thunk of FindMyPairing.PairingCoordinator.pairingTimeoutTask.modify : Swift.Task<(), Swift.Never>?
+method descriptor for FindMyPairing.PairingCoordinator.pairingTimeoutTask.modify : Swift.Task<(), Swift.Never>?
+dispatch thunk of FindMyPairing.PairingCoordinator.pairingTimeoutTask.getter : Swift.Task<(), Swift.Never>?
+method descriptor for FindMyPairing.PairingCoordinator.pairingTimeoutTask.getter : Swift.Task<(), Swift.Never>?
+dispatch thunk of FindMyPairing.PairingCoordinator.pairingTimeoutTask.setter : Swift.Task<(), Swift.Never>?
+method descriptor for FindMyPairing.PairingCoordinator.pairingTimeoutTask.setter : Swift.Task<(), Swift.Never>?
+dispatch thunk of FindMyPairing.PairingCoordinator.pairingStreamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.PairingCoordinatorState>
+method descriptor for FindMyPairing.PairingCoordinator.pairingStreamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.PairingCoordinatorState>
+dispatch thunk of FindMyPairing.PairingCoordinator.analyticsStreamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.AnalyticsEvent>
+method descriptor for FindMyPairing.PairingCoordinator.analyticsStreamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.AnalyticsEvent>
+dispatch thunk of FindMyPairing.PairingCoordinator.pairingStartTimeoutTask.modify : Swift.Task<(), Swift.Never>?
+method descriptor for FindMyPairing.PairingCoordinator.pairingStartTimeoutTask.modify : Swift.Task<(), Swift.Never>?
+dispatch thunk of FindMyPairing.PairingCoordinator.pairingStartTimeoutTask.getter : Swift.Task<(), Swift.Never>?
+method descriptor for FindMyPairing.PairingCoordinator.pairingStartTimeoutTask.getter : Swift.Task<(), Swift.Never>?
+dispatch thunk of FindMyPairing.PairingCoordinator.pairingStartTimeoutTask.setter : Swift.Task<(), Swift.Never>?
+method descriptor for FindMyPairing.PairingCoordinator.pairingStartTimeoutTask.setter : Swift.Task<(), Swift.Never>?
+dispatch thunk of FindMyPairing.PairingCoordinator.interruptionWorkItemQueue.getter : FindMyBase.WorkItemQueue
+method descriptor for FindMyPairing.PairingCoordinator.interruptionWorkItemQueue.getter : FindMyBase.WorkItemQueue
+dispatch thunk of FindMyPairing.PairingCoordinator.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinator.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+method descriptor for FindMyPairing.PairingCoordinator.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+dispatch thunk of FindMyPairing.PairingCoordinator.timeOut(for: FindMyPairing.PairingOperation) -> Swift.Duration?
+method descriptor for FindMyPairing.PairingCoordinator.timeOut(for: FindMyPairing.PairingOperation) -> Swift.Duration?
+dispatch thunk of FindMyPairing.PairingCoordinator.setState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinator.setState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+method descriptor for FindMyPairing.PairingCoordinator.setState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+base conformance descriptor for FindMyPairing.PairingCoordinator: FindMyPairing.BasePairingCoordinator
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._canContinuePairing() async throws -> Swift.Bool
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._canContinuePairing() async throws -> Swift.Bool
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.startAccessoryPairing() -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._startAccessoryPairing() async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._startAccessoryPairing() async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.continueAccessoryPairing() -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._interruptExecutorsPairing() async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._interruptExecutorsPairing() async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.failPairing(with: Swift.Error) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator.failPairing(with: Swift.Error) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.triggerPairingFlow() async -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator.triggerPairingFlow() async -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.forceStopPairing() async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator.forceStopPairing() async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.startTimeout(for: FindMyPairing.PairingOperation) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator.startTimeout(for: FindMyPairing.PairingOperation) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.cancelTimeout(for: FindMyPairing.PairingOperation) throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.timeoutHandling(for: FindMyPairing.PairingOperation) -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._internalSetState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._internalSetState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._preFetchMetadata() async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._preFetchMetadata() async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.updateDependencies(FindMyPairing.CoordinatorDependencies) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator.updateDependencies(FindMyPairing.CoordinatorDependencies) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._withOptionalTimeout<A where A1: Swift.Sendable>(timeout: Swift.Duration?, _: @Sendable () async throws -> A1) async throws -> A1
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._withOptionalTimeout<A where A1: Swift.Sendable>(timeout: Swift.Duration?, _: @Sendable () async throws -> A1) async throws -> A1
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.reportAnalyticsEvent(FindMyPairing.AnalyticsEvent) -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._proceedWithConnection() async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._proceedWithConnection() async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._retrieveAndPrePairPeripheral() async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._retrieveAndPrePairPeripheral() async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.setup() -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator._cleanUp() async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator._cleanUp() async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingCoordinator.setState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingCoordinator.setState(FindMyPairing.PairingCoordinatorState) async throws -> ()
+protocol requirements base descriptor for FindMyPairing.PairingCoordinator
+protocol descriptor for FindMyPairing.PairingServiceType
+dispatch thunk of FindMyPairing.PairingServiceType.pairAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+async function pointer to dispatch thunk of FindMyPairing.PairingServiceType.pairAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+method descriptor for FindMyPairing.PairingServiceType.pairAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+dispatch thunk of FindMyPairing.PairingServiceType.pairMultipartCompatibleAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+async function pointer to dispatch thunk of FindMyPairing.PairingServiceType.pairMultipartCompatibleAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+method descriptor for FindMyPairing.PairingServiceType.pairMultipartCompatibleAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+base conformance descriptor for FindMyPairing.PairingServiceType: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingServiceType
+protocol descriptor for FindMyPairing.PairingServiceProxy
+dispatch thunk of FindMyPairing.PairingServiceProxy.coordinator(for: FindMyPairing.PairingConfiguration) async throws -> FindMyPairing.PairingCoordinator
+async function pointer to dispatch thunk of FindMyPairing.PairingServiceProxy.coordinator(for: FindMyPairing.PairingConfiguration) async throws -> FindMyPairing.PairingCoordinator
+method descriptor for FindMyPairing.PairingServiceProxy.coordinator(for: FindMyPairing.PairingConfiguration) async throws -> FindMyPairing.PairingCoordinator
+dispatch thunk of FindMyPairing.PairingServiceProxy.coordinators(for: [FindMyPairing.PairingConfiguration]) async throws -> [FindMyPairing.PairingCoordinator]
+async function pointer to dispatch thunk of FindMyPairing.PairingServiceProxy.coordinators(for: [FindMyPairing.PairingConfiguration]) async throws -> [FindMyPairing.PairingCoordinator]
+method descriptor for FindMyPairing.PairingServiceProxy.coordinators(for: [FindMyPairing.PairingConfiguration]) async throws -> [FindMyPairing.PairingCoordinator]
+dispatch thunk of FindMyPairing.PairingServiceProxy.reevaluateDependencies(for: FindMyPairing.PairingCoordinator, reason: FindMyPairing.ReevaluationReason) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingServiceProxy.reevaluateDependencies(for: FindMyPairing.PairingCoordinator, reason: FindMyPairing.ReevaluationReason) async throws -> ()
+method descriptor for FindMyPairing.PairingServiceProxy.reevaluateDependencies(for: FindMyPairing.PairingCoordinator, reason: FindMyPairing.ReevaluationReason) async throws -> ()
+base conformance descriptor for FindMyPairing.PairingServiceProxy: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingServiceProxy
+FindMyPairing.PairingConfiguration.identifier.getter : FindMyPairing.DependenciesIdentifier
+property descriptor for FindMyPairing.PairingConfiguration.identifier : FindMyPairing.DependenciesIdentifier
+enum case for FindMyPairing.PairingConfiguration.single(FindMyPairing.PairingConfiguration.Type) -> (FindMyPairing.Accessory) -> FindMyPairing.PairingConfiguration
+enum case for FindMyPairing.PairingConfiguration.multiple(FindMyPairing.PairingConfiguration.Type) -> ([FindMyPairing.Accessory]) -> FindMyPairing.PairingConfiguration
+type metadata accessor for FindMyPairing.PairingConfiguration
+nominal type descriptor for FindMyPairing.PairingConfiguration
+type metadata for FindMyPairing.PairingConfiguration
+enum case for FindMyPairing.PairingExecutorError.interrupted(FindMyPairing.PairingExecutorError.Type) -> FindMyPairing.PairingExecutorError
+enum case for FindMyPairing.PairingExecutorError.invalidPeripheralType(FindMyPairing.PairingExecutorError.Type) -> FindMyPairing.PairingExecutorError
+enum case for FindMyPairing.PairingExecutorError.pairedToAnotherAccount(FindMyPairing.PairingExecutorError.Type) -> FindMyPairing.PairingExecutorError
+static FindMyPairing.PairingExecutorError.== infix(FindMyPairing.PairingExecutorError, FindMyPairing.PairingExecutorError) -> Swift.Bool
+FindMyPairing.PairingExecutorError.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingExecutorError.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingExecutorError.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingExecutorError
+nominal type descriptor for FindMyPairing.PairingExecutorError
+type metadata for FindMyPairing.PairingExecutorError
+protocol conformance descriptor for FindMyPairing.PairingExecutorError : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorError : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorError : Swift.Error in FindMyPairing
+FindMyPairing.PairingExecutorState.isPairingNotFailed.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingExecutorState.isPairingNotFailed : Swift.Bool
+enum case for FindMyPairing.PairingExecutorState.CommandState.commandStart(FindMyPairing.PairingExecutorState.CommandState.Type) -> FindMyPairing.PairingExecutorState.CommandState
+enum case for FindMyPairing.PairingExecutorState.CommandState.commandFinish(FindMyPairing.PairingExecutorState.CommandState.Type) -> FindMyPairing.PairingExecutorState.CommandState
+static FindMyPairing.PairingExecutorState.CommandState.== infix(FindMyPairing.PairingExecutorState.CommandState, FindMyPairing.PairingExecutorState.CommandState) -> Swift.Bool
+FindMyPairing.PairingExecutorState.CommandState.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingExecutorState.CommandState.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingExecutorState.CommandState.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingExecutorState.CommandState
+nominal type descriptor for FindMyPairing.PairingExecutorState.CommandState
+type metadata for FindMyPairing.PairingExecutorState.CommandState
+protocol conformance descriptor for FindMyPairing.PairingExecutorState.CommandState : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorState.CommandState : Swift.Equatable in FindMyPairing
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.commandStart(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> FindMyPairing.PairingExecutorState.InitiatePairing
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.commandFinish(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> FindMyPairing.PairingExecutorState.InitiatePairing
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.generateE1Start(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> FindMyPairing.PairingExecutorState.InitiatePairing
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.generateE1Finish(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> FindMyPairing.PairingExecutorState.InitiatePairing
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.generateFMNIDStart(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> FindMyPairing.PairingExecutorState.InitiatePairing
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.generateFMNIDFinish(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> FindMyPairing.PairingExecutorState.InitiatePairing
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.generateCollaborativeKeyStart(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> FindMyPairing.PairingExecutorState.InitiatePairing
+static FindMyPairing.PairingExecutorState.InitiatePairing.== infix(FindMyPairing.PairingExecutorState.InitiatePairing, FindMyPairing.PairingExecutorState.InitiatePairing) -> Swift.Bool
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.generateCollaborativeKeyFinish(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> FindMyPairing.PairingExecutorState.InitiatePairing
+enum case for FindMyPairing.PairingExecutorState.InitiatePairing.result(FindMyPairing.PairingExecutorState.InitiatePairing.Type) -> (Swift.String, Swift.String) -> FindMyPairing.PairingExecutorState.InitiatePairing
+type metadata accessor for FindMyPairing.PairingExecutorState.InitiatePairing
+nominal type descriptor for FindMyPairing.PairingExecutorState.InitiatePairing
+type metadata for FindMyPairing.PairingExecutorState.InitiatePairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorState.InitiatePairing : Swift.Equatable in FindMyPairing
+enum case for FindMyPairing.PairingExecutorState.finalizePairingCompleted(FindMyPairing.PairingExecutorState.Type) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.initiatePairing(FindMyPairing.PairingExecutorState.Type) -> (FindMyPairing.PairingExecutorState.InitiatePairing?) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.initiatePairingFinished(FindMyPairing.PairingExecutorState.Type) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.PairingComplete.commandStart(FindMyPairing.PairingExecutorState.PairingComplete.Type) -> FindMyPairing.PairingExecutorState.PairingComplete
+enum case for FindMyPairing.PairingExecutorState.PairingComplete.commandFinish(FindMyPairing.PairingExecutorState.PairingComplete.Type) -> FindMyPairing.PairingExecutorState.PairingComplete
+enum case for FindMyPairing.PairingExecutorState.PairingComplete.peripheralUnpair(FindMyPairing.PairingExecutorState.PairingComplete.Type) -> FindMyPairing.PairingExecutorState.PairingComplete
+static FindMyPairing.PairingExecutorState.PairingComplete.== infix(FindMyPairing.PairingExecutorState.PairingComplete, FindMyPairing.PairingExecutorState.PairingComplete) -> Swift.Bool
+FindMyPairing.PairingExecutorState.PairingComplete.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingExecutorState.PairingComplete.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingExecutorState.PairingComplete.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingExecutorState.PairingComplete
+nominal type descriptor for FindMyPairing.PairingExecutorState.PairingComplete
+type metadata for FindMyPairing.PairingExecutorState.PairingComplete
+protocol conformance descriptor for FindMyPairing.PairingExecutorState.PairingComplete : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorState.PairingComplete : Swift.Equatable in FindMyPairing
+enum case for FindMyPairing.PairingExecutorState.PairingLockCheck.generatePairingDataFinish(FindMyPairing.PairingExecutorState.PairingLockCheck.Type) -> FindMyPairing.PairingExecutorState.PairingLockCheck
+enum case for FindMyPairing.PairingExecutorState.PairingLockCheck.generatePairingDataStart(FindMyPairing.PairingExecutorState.PairingLockCheck.Type) -> FindMyPairing.PairingExecutorState.PairingLockCheck
+enum case for FindMyPairing.PairingExecutorState.PairingLockCheck.requestStart(FindMyPairing.PairingExecutorState.PairingLockCheck.Type) -> FindMyPairing.PairingExecutorState.PairingLockCheck
+enum case for FindMyPairing.PairingExecutorState.PairingLockCheck.requestFinish(FindMyPairing.PairingExecutorState.PairingLockCheck.Type) -> FindMyPairing.PairingExecutorState.PairingLockCheck
+enum case for FindMyPairing.PairingExecutorState.PairingLockCheck.finalizeCommandStart(FindMyPairing.PairingExecutorState.PairingLockCheck.Type) -> FindMyPairing.PairingExecutorState.PairingLockCheck
+enum case for FindMyPairing.PairingExecutorState.PairingLockCheck.finalizeCommandFinish(FindMyPairing.PairingExecutorState.PairingLockCheck.Type) -> FindMyPairing.PairingExecutorState.PairingLockCheck
+enum case for FindMyPairing.PairingExecutorState.PairingLockCheck.signatureVerificationStart(FindMyPairing.PairingExecutorState.PairingLockCheck.Type) -> FindMyPairing.PairingExecutorState.PairingLockCheck
+enum case for FindMyPairing.PairingExecutorState.PairingLockCheck.signatureVerificationFinish(FindMyPairing.PairingExecutorState.PairingLockCheck.Type) -> FindMyPairing.PairingExecutorState.PairingLockCheck
+static FindMyPairing.PairingExecutorState.PairingLockCheck.== infix(FindMyPairing.PairingExecutorState.PairingLockCheck, FindMyPairing.PairingExecutorState.PairingLockCheck) -> Swift.Bool
+FindMyPairing.PairingExecutorState.PairingLockCheck.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingExecutorState.PairingLockCheck.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingExecutorState.PairingLockCheck.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingExecutorState.PairingLockCheck
+nominal type descriptor for FindMyPairing.PairingExecutorState.PairingLockCheck
+type metadata for FindMyPairing.PairingExecutorState.PairingLockCheck
+protocol conformance descriptor for FindMyPairing.PairingExecutorState.PairingLockCheck : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorState.PairingLockCheck : Swift.Equatable in FindMyPairing
+enum case for FindMyPairing.PairingExecutorState.pairingAck(FindMyPairing.PairingExecutorState.Type) -> (FindMyPairing.PairingExecutorState.CommandState) -> FindMyPairing.PairingExecutorState
+FindMyPairing.PairingExecutorState.description.getter : Swift.String
+property descriptor for FindMyPairing.PairingExecutorState.description : Swift.String
+enum case for FindMyPairing.PairingExecutorState.interrupted(FindMyPairing.PairingExecutorState.Type) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.RecordCreation.commandStart(FindMyPairing.PairingExecutorState.RecordCreation.Type) -> FindMyPairing.PairingExecutorState.RecordCreation
+enum case for FindMyPairing.PairingExecutorState.RecordCreation.commandFinish(FindMyPairing.PairingExecutorState.RecordCreation.Type) -> (Foundation.UUID) -> FindMyPairing.PairingExecutorState.RecordCreation
+static FindMyPairing.PairingExecutorState.RecordCreation.== infix(FindMyPairing.PairingExecutorState.RecordCreation, FindMyPairing.PairingExecutorState.RecordCreation) -> Swift.Bool
+type metadata accessor for FindMyPairing.PairingExecutorState.RecordCreation
+nominal type descriptor for FindMyPairing.PairingExecutorState.RecordCreation
+type metadata for FindMyPairing.PairingExecutorState.RecordCreation
+protocol conformance descriptor for FindMyPairing.PairingExecutorState.RecordCreation : Swift.Equatable in FindMyPairing
+enum case for FindMyPairing.PairingExecutorState.getBeaconGroup(FindMyPairing.PairingExecutorState.Type) -> (FindMyPairing.PairingExecutorState.CommandState) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.pairingComplete(FindMyPairing.PairingExecutorState.Type) -> (FindMyPairing.PairingExecutorState.PairingComplete?) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.pairingLockCheck(FindMyPairing.PairingExecutorState.Type) -> (FindMyPairing.PairingExecutorState.PairingLockCheck?) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.successfullyPaired(FindMyPairing.PairingExecutorState.Type) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.beaconRecordCreation(FindMyPairing.PairingExecutorState.Type) -> (FindMyPairing.PairingExecutorState.RecordCreation) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.newAccessoryPartsDetected(FindMyPairing.PairingExecutorState.Type) -> ([FindMyPairing.Accessory]) -> FindMyPairing.PairingExecutorState
+static FindMyPairing.PairingExecutorState.== infix(FindMyPairing.PairingExecutorState, FindMyPairing.PairingExecutorState) -> Swift.Bool
+enum case for FindMyPairing.PairingExecutorState.idle(FindMyPairing.PairingExecutorState.Type) -> FindMyPairing.PairingExecutorState
+enum case for FindMyPairing.PairingExecutorState.failed(FindMyPairing.PairingExecutorState.Type) -> (Swift.Error) -> FindMyPairing.PairingExecutorState
+type metadata accessor for FindMyPairing.PairingExecutorState
+nominal type descriptor for FindMyPairing.PairingExecutorState
+type metadata for FindMyPairing.PairingExecutorState
+protocol conformance descriptor for FindMyPairing.PairingExecutorState : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorState : Swift.CustomStringConvertible in FindMyPairing
+FindMyPairing.PairingLatencyReport.initializePairing.getter : Swift.Duration
+property descriptor for FindMyPairing.PairingLatencyReport.initializePairing : Swift.Duration
+FindMyPairing.PairingLatencyReport.init(overallPairing: Swift.Duration, initializePairing: Swift.Duration, pairingLock: Swift.Duration, finalizePairing: Swift.Duration, beaconCreation: Swift.Duration) -> FindMyPairing.PairingLatencyReport
+FindMyPairing.PairingLatencyReport.overallPairing.getter : Swift.Duration
+property descriptor for FindMyPairing.PairingLatencyReport.overallPairing : Swift.Duration
+FindMyPairing.PairingLatencyReport.finalizePairing.getter : Swift.Duration
+property descriptor for FindMyPairing.PairingLatencyReport.finalizePairing : Swift.Duration
+FindMyPairing.PairingLatencyReport.pairingLock.getter : Swift.Duration
+property descriptor for FindMyPairing.PairingLatencyReport.pairingLock : Swift.Duration
+FindMyPairing.PairingLatencyReport.beaconCreation.getter : Swift.Duration
+property descriptor for FindMyPairing.PairingLatencyReport.beaconCreation : Swift.Duration
+type metadata accessor for FindMyPairing.PairingLatencyReport
+nominal type descriptor for FindMyPairing.PairingLatencyReport
+type metadata for FindMyPairing.PairingLatencyReport
+FindMyPairing.PairingSuccessResult.init(location: FindMyPairing.PairingLocation?, beaconIds: [Foundation.UUID]) -> FindMyPairing.PairingSuccessResult
+FindMyPairing.PairingSuccessResult.location.getter : FindMyPairing.PairingLocation?
+property descriptor for FindMyPairing.PairingSuccessResult.location : FindMyPairing.PairingLocation?
+FindMyPairing.PairingSuccessResult.beaconIds.getter : [Foundation.UUID]
+property descriptor for FindMyPairing.PairingSuccessResult.beaconIds : [Foundation.UUID]
+protocol conformance descriptor for FindMyPairing.PairingSuccessResult : FindMyPairing.PairingResult in FindMyPairing
+protocol witness table for FindMyPairing.PairingSuccessResult : FindMyPairing.PairingResult in FindMyPairing
+type metadata accessor for FindMyPairing.PairingSuccessResult
+nominal type descriptor for FindMyPairing.PairingSuccessResult
+type metadata for FindMyPairing.PairingSuccessResult
+enum case for FindMyPairing.PairingInfoStoreError.unsupportedType(FindMyPairing.PairingInfoStoreError.Type) -> FindMyPairing.PairingInfoStoreError
+static FindMyPairing.PairingInfoStoreError.== infix(FindMyPairing.PairingInfoStoreError, FindMyPairing.PairingInfoStoreError) -> Swift.Bool
+FindMyPairing.PairingInfoStoreError.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingInfoStoreError.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingInfoStoreError.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingInfoStoreError
+nominal type descriptor for FindMyPairing.PairingInfoStoreError
+type metadata for FindMyPairing.PairingInfoStoreError
+protocol conformance descriptor for FindMyPairing.PairingInfoStoreError : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingInfoStoreError : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingInfoStoreError : Swift.Error in FindMyPairing
+protocol descriptor for FindMyPairing.PairingPolicyVerifier
+dispatch thunk of FindMyPairing.PairingPolicyVerifier.verifyIfPairingEligibility(A.PairingInfo) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingPolicyVerifier.verifyIfPairingEligibility(A.PairingInfo) async throws -> ()
+method descriptor for FindMyPairing.PairingPolicyVerifier.verifyIfPairingEligibility(A.PairingInfo) async throws -> ()
+associated conformance descriptor for FindMyPairing.PairingPolicyVerifier.FindMyPairing.PairingPolicyVerifier.PairingInfo: FindMyPairing.PairingEligibilityInfo
+(extension in FindMyPairing):FindMyPairing.PairingPolicyVerifier.verifyIfPairingEligibility(FindMyPairing.PairingEligibilityInfo) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingPolicyVerifier.verifyIfPairingEligibility(FindMyPairing.PairingEligibilityInfo) async throws -> ()
+base conformance descriptor for FindMyPairing.PairingPolicyVerifier: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingPolicyVerifier
+protocol descriptor for FindMyPairing.PairingResultListener
+dispatch thunk of FindMyPairing.PairingResultListener.notifyPairingFinished(results: [FindMyPairing.Detection : Swift.Result<FindMyPairing.PairingResult, Swift.Error>]) -> ()
+method descriptor for FindMyPairing.PairingResultListener.notifyPairingFinished(results: [FindMyPairing.Detection : Swift.Result<FindMyPairing.PairingResult, Swift.Error>]) -> ()
+dispatch thunk of FindMyPairing.PairingResultListener.notifyPairingFinished(detection: FindMyPairing.Detection, result: Swift.Result<FindMyPairing.PairingResult, Swift.Error>) -> ()
+method descriptor for FindMyPairing.PairingResultListener.notifyPairingFinished(detection: FindMyPairing.Detection, result: Swift.Result<FindMyPairing.PairingResult, Swift.Error>) -> ()
+(extension in FindMyPairing):FindMyPairing.PairingResultListener.notifyPairingFinished(results: [FindMyPairing.Detection : Swift.Result<FindMyPairing.PairingResult, Swift.Error>]) -> ()
+(extension in FindMyPairing):FindMyPairing.PairingResultListener.notifyPairingFinished(detection: FindMyPairing.Detection, result: Swift.Result<FindMyPairing.PairingResult, Swift.Error>) -> ()
+base conformance descriptor for FindMyPairing.PairingResultListener: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingResultListener
+FindMyPairing.PairingValidatorError.description.getter : Swift.String
+property descriptor for FindMyPairing.PairingValidatorError.description : Swift.String
+enum case for FindMyPairing.PairingValidatorError.invalidRequestType(FindMyPairing.PairingValidatorError.Type) -> FindMyPairing.PairingValidatorError
+enum case for FindMyPairing.PairingValidatorError.pairingLockFailure(FindMyPairing.PairingValidatorError.Type) -> (Swift.Int) -> FindMyPairing.PairingValidatorError
+enum case for FindMyPairing.PairingValidatorError.invalidAckRequestType(FindMyPairing.PairingValidatorError.Type) -> FindMyPairing.PairingValidatorError
+enum case for FindMyPairing.PairingValidatorError.pairedToAnotherAccount(FindMyPairing.PairingValidatorError.Type) -> FindMyPairing.PairingValidatorError
+type metadata accessor for FindMyPairing.PairingValidatorError
+nominal type descriptor for FindMyPairing.PairingValidatorError
+type metadata for FindMyPairing.PairingValidatorError
+protocol conformance descriptor for FindMyPairing.PairingValidatorError : Swift.Error in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingValidatorError : Swift.CustomStringConvertible in FindMyPairing
+protocol descriptor for FindMyPairing.PairingEligibilityInfo
+protocol descriptor for FindMyPairing.PairingExecutorFactory
+dispatch thunk of FindMyPairing.PairingExecutorFactory.pairingExecutor(for: A.PairingInfo) async throws -> FindMyPairing.PairingExecutor
+async function pointer to dispatch thunk of FindMyPairing.PairingExecutorFactory.pairingExecutor(for: A.PairingInfo) async throws -> FindMyPairing.PairingExecutor
+method descriptor for FindMyPairing.PairingExecutorFactory.pairingExecutor(for: A.PairingInfo) async throws -> FindMyPairing.PairingExecutor
+associated conformance descriptor for FindMyPairing.PairingExecutorFactory.FindMyPairing.PairingExecutorFactory.PairingInfo: FindMyPairing.AccessoryPairingInfoType
+(extension in FindMyPairing):FindMyPairing.PairingExecutorFactory._pairingExecutor(for: FindMyPairing.AccessoryPairingInfoType) async throws -> FindMyPairing.PairingExecutor
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingExecutorFactory._pairingExecutor(for: FindMyPairing.AccessoryPairingInfoType) async throws -> FindMyPairing.PairingExecutor
+base conformance descriptor for FindMyPairing.PairingExecutorFactory: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingExecutorFactory
+enum case for FindMyPairing.PairingBeaconStoreError.invalidPairingConfigurationType(FindMyPairing.PairingBeaconStoreError.Type) -> FindMyPairing.PairingBeaconStoreError
+enum case for FindMyPairing.PairingBeaconStoreError.invalidPairingKeysType(FindMyPairing.PairingBeaconStoreError.Type) -> FindMyPairing.PairingBeaconStoreError
+enum case for FindMyPairing.PairingBeaconStoreError.invalidBeaconRecordType(FindMyPairing.PairingBeaconStoreError.Type) -> FindMyPairing.PairingBeaconStoreError
+enum case for FindMyPairing.PairingBeaconStoreError.invalidMacAddress(FindMyPairing.PairingBeaconStoreError.Type) -> FindMyPairing.PairingBeaconStoreError
+enum case for FindMyPairing.PairingBeaconStoreError.invalidProductInfo(FindMyPairing.PairingBeaconStoreError.Type) -> FindMyPairing.PairingBeaconStoreError
+enum case for FindMyPairing.PairingBeaconStoreError.invalidCompletionType(FindMyPairing.PairingBeaconStoreError.Type) -> FindMyPairing.PairingBeaconStoreError
+enum case for FindMyPairing.PairingBeaconStoreError.invalidAccessoryInfoType(FindMyPairing.PairingBeaconStoreError.Type) -> FindMyPairing.PairingBeaconStoreError
+enum case for FindMyPairing.PairingBeaconStoreError.invalidClassicMacAddress(FindMyPairing.PairingBeaconStoreError.Type) -> FindMyPairing.PairingBeaconStoreError
+static FindMyPairing.PairingBeaconStoreError.== infix(FindMyPairing.PairingBeaconStoreError, FindMyPairing.PairingBeaconStoreError) -> Swift.Bool
+FindMyPairing.PairingBeaconStoreError.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingBeaconStoreError.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingBeaconStoreError.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingBeaconStoreError
+nominal type descriptor for FindMyPairing.PairingBeaconStoreError
+type metadata for FindMyPairing.PairingBeaconStoreError
+protocol conformance descriptor for FindMyPairing.PairingBeaconStoreError : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingBeaconStoreError : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingBeaconStoreError : Swift.Error in FindMyPairing
+enum case for FindMyPairing.PairingCoordinatorError.noAvailablePairingExecutors(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.missingPairingConfiguration(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.missingPairingExecutorFactory(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.missingPairingEligibilityVerifier(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.missingPairingExecutor(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.missingPairingUIManager(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.invalidState(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.notSerialized(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.pairingFailed(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.invalidMetadata(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.missingBeaconID(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.invalidDetection(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.invalidPeripheral(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.invalidDependencies(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.mustNotBeSerialized(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.noAccessoriesDetected(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.missingUIConfiguration(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.pairedToAnotherAccount(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.noAccessoryScannerObject(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.wrongAccessoryIdentifier(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.missingPeripheralProvider(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+enum case for FindMyPairing.PairingCoordinatorError.notAllowedForMultiDetection(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+static FindMyPairing.PairingCoordinatorError.== infix(FindMyPairing.PairingCoordinatorError, FindMyPairing.PairingCoordinatorError) -> Swift.Bool
+FindMyPairing.PairingCoordinatorError.hash(into: inout Swift.Hasher) -> ()
+enum case for FindMyPairing.PairingCoordinatorError.timeout(FindMyPairing.PairingCoordinatorError.Type) -> FindMyPairing.PairingCoordinatorError
+FindMyPairing.PairingCoordinatorError.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingCoordinatorError.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingCoordinatorError
+nominal type descriptor for FindMyPairing.PairingCoordinatorError
+type metadata for FindMyPairing.PairingCoordinatorError
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorError : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorError : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorError : Swift.Error in FindMyPairing
+enum case for FindMyPairing.PairingCoordinatorState.prePairingFinished(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.executorPairing(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.initiatePairingFinished(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.verifyIfPairingEligibility(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.pairingAck(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+FindMyPairing.PairingCoordinatorState.description.getter : Swift.String
+property descriptor for FindMyPairing.PairingCoordinatorState.description : Swift.String
+enum case for FindMyPairing.PairingCoordinatorState.interrupted(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.metadataRead(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.userPairAction(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.productInfoRequest(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.successfullyPaired(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.forwardedResultsToUI(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.accessoryConfiguration(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.dependenciesReevaluation(FindMyPairing.PairingCoordinatorState.Type) -> (FindMyPairing.ReevaluationReason, FindMyPairing.Accessory) -> FindMyPairing.PairingCoordinatorState
+static FindMyPairing.PairingCoordinatorState.== infix(FindMyPairing.PairingCoordinatorState, FindMyPairing.PairingCoordinatorState) -> Swift.Bool
+enum case for FindMyPairing.PairingCoordinatorState.idle(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.failed(FindMyPairing.PairingCoordinatorState.Type) -> (Swift.Error) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.finished(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.proxCard(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+enum case for FindMyPairing.PairingCoordinatorState.triggered(FindMyPairing.PairingCoordinatorState.Type) -> FindMyPairing.PairingCoordinatorState
+type metadata accessor for FindMyPairing.PairingCoordinatorState
+nominal type descriptor for FindMyPairing.PairingCoordinatorState
+type metadata for FindMyPairing.PairingCoordinatorState
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorState : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorState : Swift.CustomStringConvertible in FindMyPairing
+protocol descriptor for FindMyPairing.PairingConfigurationType
+protocol descriptor for FindMyPairing.PairingPeripheralProvider
+dispatch thunk of FindMyPairing.PairingPeripheralProvider.getPeripheral(for: A.Transport) async throws -> A.Peripheral
+async function pointer to dispatch thunk of FindMyPairing.PairingPeripheralProvider.getPeripheral(for: A.Transport) async throws -> A.Peripheral
+method descriptor for FindMyPairing.PairingPeripheralProvider.getPeripheral(for: A.Transport) async throws -> A.Peripheral
+dispatch thunk of FindMyPairing.PairingPeripheralProvider.getPeripheral(for: FindMyPairing.PeripheralTransport) async throws -> A.Peripheral
+async function pointer to dispatch thunk of FindMyPairing.PairingPeripheralProvider.getPeripheral(for: FindMyPairing.PeripheralTransport) async throws -> A.Peripheral
+method descriptor for FindMyPairing.PairingPeripheralProvider.getPeripheral(for: FindMyPairing.PeripheralTransport) async throws -> A.Peripheral
+associated conformance descriptor for FindMyPairing.PairingPeripheralProvider.FindMyPairing.PairingPeripheralProvider.Peripheral: FindMyPairing.PeripheralType
+dispatch thunk of FindMyPairing.PairingPeripheralProvider.pairAndReturnService(A.Peripheral) async throws -> A.PeripheralService
+async function pointer to dispatch thunk of FindMyPairing.PairingPeripheralProvider.pairAndReturnService(A.Peripheral) async throws -> A.PeripheralService
+method descriptor for FindMyPairing.PairingPeripheralProvider.pairAndReturnService(A.Peripheral) async throws -> A.PeripheralService
+dispatch thunk of FindMyPairing.PairingPeripheralProvider.pair(A.Peripheral) async throws -> A.Peripheral
+async function pointer to dispatch thunk of FindMyPairing.PairingPeripheralProvider.pair(A.Peripheral) async throws -> A.Peripheral
+method descriptor for FindMyPairing.PairingPeripheralProvider.pair(A.Peripheral) async throws -> A.Peripheral
+dispatch thunk of FindMyPairing.PairingPeripheralProvider.pair(FindMyPairing.PeripheralType) async throws -> FindMyPairing.PeripheralType
+async function pointer to dispatch thunk of FindMyPairing.PairingPeripheralProvider.pair(FindMyPairing.PeripheralType) async throws -> FindMyPairing.PeripheralType
+method descriptor for FindMyPairing.PairingPeripheralProvider.pair(FindMyPairing.PeripheralType) async throws -> FindMyPairing.PeripheralType
+dispatch thunk of FindMyPairing.PairingPeripheralProvider.pair<A where A1: Swift.Sendable>(FindMyPairing.PeripheralType) async throws -> A1
+async function pointer to dispatch thunk of FindMyPairing.PairingPeripheralProvider.pair<A where A1: Swift.Sendable>(FindMyPairing.PeripheralType) async throws -> A1
+method descriptor for FindMyPairing.PairingPeripheralProvider.pair<A where A1: Swift.Sendable>(FindMyPairing.PeripheralType) async throws -> A1
+dispatch thunk of FindMyPairing.PairingPeripheralProvider.unpair(A.Peripheral) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingPeripheralProvider.unpair(A.Peripheral) async throws -> ()
+method descriptor for FindMyPairing.PairingPeripheralProvider.unpair(A.Peripheral) async throws -> ()
+dispatch thunk of FindMyPairing.PairingPeripheralProvider.unpair(FindMyPairing.PeripheralType) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingPeripheralProvider.unpair(FindMyPairing.PeripheralType) async throws -> ()
+method descriptor for FindMyPairing.PairingPeripheralProvider.unpair(FindMyPairing.PeripheralType) async throws -> ()
+associated conformance descriptor for FindMyPairing.PairingPeripheralProvider.FindMyPairing.PairingPeripheralProvider.Transport: FindMyPairing.PeripheralTransport
+(extension in FindMyPairing):FindMyPairing.PairingPeripheralProvider.getPeripheral(for: FindMyPairing.PeripheralTransport) async throws -> A.Peripheral
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingPeripheralProvider.getPeripheral(for: FindMyPairing.PeripheralTransport) async throws -> A.Peripheral
+(extension in FindMyPairing):FindMyPairing.PairingPeripheralProvider.pair(FindMyPairing.PeripheralType) async throws -> FindMyPairing.PeripheralType
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingPeripheralProvider.pair(FindMyPairing.PeripheralType) async throws -> FindMyPairing.PeripheralType
+(extension in FindMyPairing):FindMyPairing.PairingPeripheralProvider.pair<A where A1: Swift.Sendable>(FindMyPairing.PeripheralType) async throws -> A1
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingPeripheralProvider.pair<A where A1: Swift.Sendable>(FindMyPairing.PeripheralType) async throws -> A1
+(extension in FindMyPairing):FindMyPairing.PairingPeripheralProvider.unpair(FindMyPairing.PeripheralType) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingPeripheralProvider.unpair(FindMyPairing.PeripheralType) async throws -> ()
+base conformance descriptor for FindMyPairing.PairingPeripheralProvider: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingPeripheralProvider
+FindMyPairing.PairingCoordinatorsManager.setupAndTriggerPairing(for: FindMyPairing.PairingCoordinator) async throws -> ()
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.setupAndTriggerPairing(for: FindMyPairing.PairingCoordinator) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinatorsManager.setupAndTriggerPairing(for: FindMyPairing.PairingCoordinator) async throws -> ()
+method descriptor for FindMyPairing.PairingCoordinatorsManager.setupAndTriggerPairing(for: FindMyPairing.PairingCoordinator) async throws -> ()
+async function pointer to FindMyPairing.PairingCoordinatorsManager.setupAndTriggerPairing(for: FindMyPairing.PairingCoordinator) async throws -> ()
+FindMyPairing.PairingCoordinatorsManager.failPairing(with: Swift.Error) async throws -> ()
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.failPairing(with: Swift.Error) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinatorsManager.failPairing(with: Swift.Error) async throws -> ()
+method descriptor for FindMyPairing.PairingCoordinatorsManager.failPairing(with: Swift.Error) async throws -> ()
+async function pointer to FindMyPairing.PairingCoordinatorsManager.failPairing(with: Swift.Error) async throws -> ()
+FindMyPairing.PairingCoordinatorsManager.notifyPairingFinished(detection: FindMyPairing.Detection, result: Swift.Result<FindMyPairing.PairingResult, Swift.Error>) -> ()
+FindMyPairing.PairingCoordinatorsManager.triggerPairingFlow() async -> ()
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.triggerPairingFlow() async -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinatorsManager.triggerPairingFlow() async -> ()
+method descriptor for FindMyPairing.PairingCoordinatorsManager.triggerPairingFlow() async -> ()
+async function pointer to FindMyPairing.PairingCoordinatorsManager.triggerPairingFlow() async -> ()
+FindMyPairing.PairingCoordinatorsManager.forceStopPairing() async throws -> ()
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.forceStopPairing() async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinatorsManager.forceStopPairing() async throws -> ()
+method descriptor for FindMyPairing.PairingCoordinatorsManager.forceStopPairing() async throws -> ()
+async function pointer to FindMyPairing.PairingCoordinatorsManager.forceStopPairing() async throws -> ()
+FindMyPairing.PairingCoordinatorsManager.coordinator(for: FindMyPairing.Accessory) async -> FindMyPairing.PairingCoordinator?
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.coordinator(for: FindMyPairing.Accessory) async -> FindMyPairing.PairingCoordinator?
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinatorsManager.coordinator(for: FindMyPairing.Accessory) async -> FindMyPairing.PairingCoordinator?
+method descriptor for FindMyPairing.PairingCoordinatorsManager.coordinator(for: FindMyPairing.Accessory) async -> FindMyPairing.PairingCoordinator?
+async function pointer to FindMyPairing.PairingCoordinatorsManager.coordinator(for: FindMyPairing.Accessory) async -> FindMyPairing.PairingCoordinator?
+FindMyPairing.PairingCoordinatorsManager.__allocating_init(coordinators: [FindMyPairing.PairingCoordinator], dependenciesIdentifier: FindMyPairing.DependenciesIdentifier) throws -> FindMyPairing.PairingCoordinatorsManager
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.__allocating_init(coordinators: [FindMyPairing.PairingCoordinator], dependenciesIdentifier: FindMyPairing.DependenciesIdentifier) throws -> FindMyPairing.PairingCoordinatorsManager
+method descriptor for FindMyPairing.PairingCoordinatorsManager.__allocating_init(coordinators: [FindMyPairing.PairingCoordinator], dependenciesIdentifier: FindMyPairing.DependenciesIdentifier) throws -> FindMyPairing.PairingCoordinatorsManager
+FindMyPairing.PairingCoordinatorsManager.init(coordinators: [FindMyPairing.PairingCoordinator], dependenciesIdentifier: FindMyPairing.DependenciesIdentifier) throws -> FindMyPairing.PairingCoordinatorsManager
+FindMyPairing.PairingCoordinatorsManager.stateHistory.getter : [FindMyPairing.PairingCoordinatorState]
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.stateHistory.getter : [FindMyPairing.PairingCoordinatorState]
+method descriptor for FindMyPairing.PairingCoordinatorsManager.stateHistory.getter : [FindMyPairing.PairingCoordinatorState]
+property descriptor for FindMyPairing.PairingCoordinatorsManager.stateHistory : [FindMyPairing.PairingCoordinatorState]
+direct field offset for FindMyPairing.PairingCoordinatorsManager.stateHistory : [FindMyPairing.PairingCoordinatorState]
+FindMyPairing.PairingCoordinatorsManager.pairingResults.getter : [FindMyPairing.Detection : Swift.Result<FindMyPairing.PairingResult, Swift.Error>]
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.pairingResults.getter : [FindMyPairing.Detection : Swift.Result<FindMyPairing.PairingResult, Swift.Error>]
+method descriptor for FindMyPairing.PairingCoordinatorsManager.pairingResults.getter : [FindMyPairing.Detection : Swift.Result<FindMyPairing.PairingResult, Swift.Error>]
+property descriptor for FindMyPairing.PairingCoordinatorsManager.pairingResults : [FindMyPairing.Detection : Swift.Result<FindMyPairing.PairingResult, Swift.Error>]
+direct field offset for FindMyPairing.PairingCoordinatorsManager.pairingResults : [FindMyPairing.Detection : Swift.Result<FindMyPairing.PairingResult, Swift.Error>]
+FindMyPairing.PairingCoordinatorsManager.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinatorsManager.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+method descriptor for FindMyPairing.PairingCoordinatorsManager.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+async function pointer to FindMyPairing.PairingCoordinatorsManager.analyticsStream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+FindMyPairing.PairingCoordinatorsManager.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyPairing.PairingCoordinatorsManager.unownedExecutor : Swift.UnownedSerialExecutor
+FindMyPairing.PairingCoordinatorsManager.pairingDependencies.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.AccessoryDependencies]
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.pairingDependencies.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.AccessoryDependencies]
+method descriptor for FindMyPairing.PairingCoordinatorsManager.pairingDependencies.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.AccessoryDependencies]
+property descriptor for FindMyPairing.PairingCoordinatorsManager.pairingDependencies : [FindMyPairing.DependenciesIdentifier : FindMyPairing.AccessoryDependencies]
+direct field offset for FindMyPairing.PairingCoordinatorsManager.pairingDependencies : [FindMyPairing.DependenciesIdentifier : FindMyPairing.AccessoryDependencies]
+FindMyPairing.PairingCoordinatorsManager.dependenciesIdentifier.getter : FindMyPairing.DependenciesIdentifier
+property descriptor for FindMyPairing.PairingCoordinatorsManager.dependenciesIdentifier : FindMyPairing.DependenciesIdentifier
+direct field offset for FindMyPairing.PairingCoordinatorsManager.dependenciesIdentifier : FindMyPairing.DependenciesIdentifier
+FindMyPairing.PairingCoordinatorsManager.notifyNewPartsDetected(([FindMyPairing.Accessory]) async throws -> ()) -> ()
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.notifyNewPartsDetected(([FindMyPairing.Accessory]) async throws -> ()) -> ()
+method descriptor for FindMyPairing.PairingCoordinatorsManager.notifyNewPartsDetected(([FindMyPairing.Accessory]) async throws -> ()) -> ()
+FindMyPairing.PairingCoordinatorsManager.pairingResultListeners.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.PairingResultListener]
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.pairingResultListeners.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.PairingResultListener]
+method descriptor for FindMyPairing.PairingCoordinatorsManager.pairingResultListeners.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.PairingResultListener]
+property descriptor for FindMyPairing.PairingCoordinatorsManager.pairingResultListeners : [FindMyPairing.DependenciesIdentifier : FindMyPairing.PairingResultListener]
+direct field offset for FindMyPairing.PairingCoordinatorsManager.pairingResultListeners : [FindMyPairing.DependenciesIdentifier : FindMyPairing.PairingResultListener]
+static FindMyPairing.PairingCoordinatorsManager.Error.== infix(FindMyPairing.PairingCoordinatorsManager.Error, FindMyPairing.PairingCoordinatorsManager.Error) -> Swift.Bool
+FindMyPairing.PairingCoordinatorsManager.Error.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingCoordinatorsManager.Error.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingCoordinatorsManager.Error.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingCoordinatorsManager.Error
+nominal type descriptor for FindMyPairing.PairingCoordinatorsManager.Error
+type metadata for FindMyPairing.PairingCoordinatorsManager.Error
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorsManager.Error : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorsManager.Error : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorsManager.Error : Swift.Error in FindMyPairing
+FindMyPairing.PairingCoordinatorsManager.setup() async throws -> ()
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.setup() async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinatorsManager.setup() async throws -> ()
+method descriptor for FindMyPairing.PairingCoordinatorsManager.setup() async throws -> ()
+async function pointer to FindMyPairing.PairingCoordinatorsManager.setup() async throws -> ()
+FindMyPairing.PairingCoordinatorsManager.state.getter : FindMyPairing.PairingCoordinatorState
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.state.getter : FindMyPairing.PairingCoordinatorState
+method descriptor for FindMyPairing.PairingCoordinatorsManager.state.getter : FindMyPairing.PairingCoordinatorState
+property descriptor for FindMyPairing.PairingCoordinatorsManager.state : FindMyPairing.PairingCoordinatorState
+direct field offset for FindMyPairing.PairingCoordinatorsManager.state : FindMyPairing.PairingCoordinatorState
+FindMyPairing.PairingCoordinatorsManager.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+dispatch thunk of FindMyPairing.PairingCoordinatorsManager.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+async function pointer to dispatch thunk of FindMyPairing.PairingCoordinatorsManager.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+method descriptor for FindMyPairing.PairingCoordinatorsManager.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+async function pointer to FindMyPairing.PairingCoordinatorsManager.stream() async throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorsManager : FindMyPairing.PairingResultListener in FindMyPairing
+protocol witness table for FindMyPairing.PairingCoordinatorsManager : FindMyPairing.PairingResultListener in FindMyPairing
+type metadata accessor for FindMyPairing.PairingCoordinatorsManager
+metaclass for FindMyPairing.PairingCoordinatorsManager
+nominal type descriptor for FindMyPairing.PairingCoordinatorsManager
+class metadata base offset for FindMyPairing.PairingCoordinatorsManager
+method lookup function for FindMyPairing.PairingCoordinatorsManager
+type metadata for FindMyPairing.PairingCoordinatorsManager
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorsManager : Swift.Actor in FindMyPairing
+FindMyPairing.PairingCoordinatorsManager.__deallocating_deinit
+FindMyPairing.PairingCoordinatorsManager.deinit
+enum case for FindMyPairing.PairingPolicyVerifierError.unsupportedType(FindMyPairing.PairingPolicyVerifierError.Type) -> FindMyPairing.PairingPolicyVerifierError
+static FindMyPairing.PairingPolicyVerifierError.== infix(FindMyPairing.PairingPolicyVerifierError, FindMyPairing.PairingPolicyVerifierError) -> Swift.Bool
+FindMyPairing.PairingPolicyVerifierError.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingPolicyVerifierError.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingPolicyVerifierError.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingPolicyVerifierError
+nominal type descriptor for FindMyPairing.PairingPolicyVerifierError
+type metadata for FindMyPairing.PairingPolicyVerifierError
+protocol conformance descriptor for FindMyPairing.PairingPolicyVerifierError : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingPolicyVerifierError : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingPolicyVerifierError : Swift.Error in FindMyPairing
+enum case for FindMyPairing.PairingExecutorFactoryError.unsupportedPairingInfoType(FindMyPairing.PairingExecutorFactoryError.Type) -> FindMyPairing.PairingExecutorFactoryError
+static FindMyPairing.PairingExecutorFactoryError.== infix(FindMyPairing.PairingExecutorFactoryError, FindMyPairing.PairingExecutorFactoryError) -> Swift.Bool
+FindMyPairing.PairingExecutorFactoryError.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingExecutorFactoryError.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingExecutorFactoryError.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingExecutorFactoryError
+nominal type descriptor for FindMyPairing.PairingExecutorFactoryError
+type metadata for FindMyPairing.PairingExecutorFactoryError
+protocol conformance descriptor for FindMyPairing.PairingExecutorFactoryError : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorFactoryError : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingExecutorFactoryError : Swift.Error in FindMyPairing
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canContinuePairingCycle.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canContinuePairingCycle.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canContinuePairingCycle : Swift.Bool
+FindMyPairing.PairingCoordinatorStateManager.setNextAdaptiveState(_: FindMyPairing.PairingCoordinatorState, input: FindMyPairing.PairingInfoStore?) async -> ()
+async function pointer to FindMyPairing.PairingCoordinatorStateManager.setNextAdaptiveState(_: FindMyPairing.PairingCoordinatorState, input: FindMyPairing.PairingInfoStore?) async -> ()
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canHandleFinalizePairingFinish.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandleFinalizePairingFinish.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandleFinalizePairingFinish : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canHandleInitiatePairingFinish.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandleInitiatePairingFinish.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandleInitiatePairingFinish : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.prePairingFinished.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.prePairingFinished.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.prePairingFinished : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canSetStateHandler.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canSetStateHandler.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canSetStateHandler : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.notifyStateUpdated((FindMyPairing.PairingCoordinatorState) async -> ()) -> ()
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.notifyStateUpdated((FindMyPairing.PairingCoordinatorState) async -> ()) -> ()
+FindMyPairing.PairingCoordinatorStateManager.setNextState(_: FindMyPairing.PairingCoordinatorState, input: FindMyPairing.PairingInfoStore?) async -> ()
+async function pointer to FindMyPairing.PairingCoordinatorStateManager.setNextState(_: FindMyPairing.PairingCoordinatorState, input: FindMyPairing.PairingInfoStore?) async -> ()
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canFinishPairing.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canFinishPairing.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canFinishPairing : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canHandlePairingFinish.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandlePairingFinish.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandlePairingFinish : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canPrePair.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canPrePair.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canPrePair : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canTimeout.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canTimeout.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canTimeout : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.pairingError() -> Swift.Error?
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.pairingError() -> Swift.Error?
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.stateHistory.getter : [FindMyPairing.PairingCoordinatorState]
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.stateHistory.getter : [FindMyPairing.PairingCoordinatorState]
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.stateHistory : [FindMyPairing.PairingCoordinatorState]
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canTriggerFlow.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canTriggerFlow.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canTriggerFlow : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.proxCardShowed.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.proxCardShowed.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.proxCardShowed : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.userTappedPair.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.userTappedPair.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.userTappedPair : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canSetupTimeout.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canSetupTimeout.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canSetupTimeout : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canShowProxCard.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canShowProxCard.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canShowProxCard : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.flowInterrupted.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.flowInterrupted.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.flowInterrupted : Swift.Bool
+FindMyPairing.PairingCoordinatorStateManager.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canInterruptFlow.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canInterruptFlow.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canInterruptFlow : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.adaptiveCanPrePair.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.adaptiveCanPrePair.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.adaptiveCanPrePair : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.alreadyInterrupted.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.alreadyInterrupted.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.alreadyInterrupted : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.flowFinishedWithError.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.flowFinishedWithError.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.flowFinishedWithError : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.pairingAlreadyStarted.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.pairingAlreadyStarted.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.pairingAlreadyStarted : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canStartUIObservations.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canStartUIObservations.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canStartUIObservations : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.unsupportedTransitions.modify : [FindMyPairing.StateManagerError]
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.unsupportedTransitions.modify : [FindMyPairing.StateManagerError]
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.unsupportedTransitions.getter : [FindMyPairing.StateManagerError]
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.unsupportedTransitions.getter : [FindMyPairing.StateManagerError]
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.unsupportedTransitions : [FindMyPairing.StateManagerError]
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.unsupportedTransitions.setter : [FindMyPairing.StateManagerError]
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.unsupportedTransitions.setter : [FindMyPairing.StateManagerError]
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.flowFinishedWithTimeout.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.flowFinishedWithTimeout.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.flowFinishedWithTimeout : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.metadataReadingRequired.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.metadataReadingRequired.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.metadataReadingRequired : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.peripheralFetchRequired.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.peripheralFetchRequired.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.peripheralFetchRequired : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.adaptiveCanInterruptFlow.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.adaptiveCanInterruptFlow.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.adaptiveCanInterruptFlow : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.alreadyForwardedResultToUI.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.alreadyForwardedResultToUI.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.alreadyForwardedResultToUI : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canHandleDisplayedProxCard.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandleDisplayedProxCard.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandleDisplayedProxCard : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canProceedWithResultHandling.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canProceedWithResultHandling.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canProceedWithResultHandling : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.afterDependenciesReevaluation.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.afterDependenciesReevaluation.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.afterDependenciesReevaluation : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canHandleAccessoryConfiguration.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandleAccessoryConfiguration.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canHandleAccessoryConfiguration : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.canStartUserSessionObservations.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.canStartUserSessionObservations.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.canStartUserSessionObservations : Swift.Bool
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.state.getter : FindMyPairing.PairingCoordinatorState
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.state.getter : FindMyPairing.PairingCoordinatorState
+property descriptor for FindMyPairing.PairingCoordinatorStateManager.state : FindMyPairing.PairingCoordinatorState
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorStateManager : FindMyPairing.StateManager in FindMyPairing
+protocol witness table for FindMyPairing.PairingCoordinatorStateManager : FindMyPairing.StateManager in FindMyPairing
+FindMyPairing.PairingCoordinatorStateManager.__allocating_init() -> FindMyPairing.PairingCoordinatorStateManager
+dispatch thunk of FindMyPairing.PairingCoordinatorStateManager.__allocating_init() -> FindMyPairing.PairingCoordinatorStateManager
+method descriptor for FindMyPairing.PairingCoordinatorStateManager.__allocating_init() -> FindMyPairing.PairingCoordinatorStateManager
+FindMyPairing.PairingCoordinatorStateManager.init() -> FindMyPairing.PairingCoordinatorStateManager
+type metadata accessor for FindMyPairing.PairingCoordinatorStateManager
+metaclass for FindMyPairing.PairingCoordinatorStateManager
+nominal type descriptor for FindMyPairing.PairingCoordinatorStateManager
+class metadata base offset for FindMyPairing.PairingCoordinatorStateManager
+method lookup function for FindMyPairing.PairingCoordinatorStateManager
+type metadata for FindMyPairing.PairingCoordinatorStateManager
+protocol conformance descriptor for FindMyPairing.PairingCoordinatorStateManager : Swift.Actor in FindMyPairing
+FindMyPairing.PairingCoordinatorStateManager.__deallocating_deinit
+FindMyPairing.PairingCoordinatorStateManager.deinit
+static FindMyPairing.PairingPeripheralProviderError.== infix(FindMyPairing.PairingPeripheralProviderError, FindMyPairing.PairingPeripheralProviderError) -> Swift.Bool
+FindMyPairing.PairingPeripheralProviderError.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingPeripheralProviderError.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingPeripheralProviderError.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingPeripheralProviderError
+nominal type descriptor for FindMyPairing.PairingPeripheralProviderError
+type metadata for FindMyPairing.PairingPeripheralProviderError
+protocol conformance descriptor for FindMyPairing.PairingPeripheralProviderError : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingPeripheralProviderError : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingPeripheralProviderError : Swift.Error in FindMyPairing
+protocol descriptor for FindMyPairing.PairingResult
+enum case for FindMyPairing.PairingCommand.initializePairing(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.prePairingFinished(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.forwardPairingResults(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.finalizePairing(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.productInfo(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.metadataRead(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.peripheralFetch(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.pairingAcknowledgment(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.pairingEligibilityCheck(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.multiDetectionScannerStop(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.multiDetectionScannerStart(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+static FindMyPairing.PairingCommand.== infix(FindMyPairing.PairingCommand, FindMyPairing.PairingCommand) -> Swift.Bool
+enum case for FindMyPairing.PairingCommand.metadataBased_DependenciesReevaluation(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+enum case for FindMyPairing.PairingCommand.productInfoBased_DependenciesReevaluation(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+FindMyPairing.PairingCommand.hash(into: inout Swift.Hasher) -> ()
+enum case for FindMyPairing.PairingCommand.finish(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+FindMyPairing.PairingCommand.execute(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> ()
+async function pointer to FindMyPairing.PairingCommand.execute(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> ()
+enum case for FindMyPairing.PairingCommand.proxCard(FindMyPairing.PairingCommand.Type) -> FindMyPairing.PairingCommand
+FindMyPairing.PairingCommand.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingCommand.hashValue : Swift.Int
+protocol conformance descriptor for FindMyPairing.PairingCommand : FindMyPairing.ExecutionCommand in FindMyPairing
+protocol witness table for FindMyPairing.PairingCommand : FindMyPairing.ExecutionCommand in FindMyPairing
+type metadata accessor for FindMyPairing.PairingCommand
+nominal type descriptor for FindMyPairing.PairingCommand
+type metadata for FindMyPairing.PairingCommand
+protocol conformance descriptor for FindMyPairing.PairingCommand : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingCommand : Swift.Equatable in FindMyPairing
+protocol descriptor for FindMyPairing.PairingRequest
+FindMyPairing.PairingService.dependencies(for: Foundation.UUID) async throws -> FindMyPairing.BaseAccessoryDependencies?
+async function pointer to FindMyPairing.PairingService.dependencies(for: Foundation.UUID) async throws -> FindMyPairing.BaseAccessoryDependencies?
+FindMyPairing.PairingService.dependencies(for: Swift.Set<Foundation.UUID>) async throws -> FindMyPairing.BaseAccessoryDependencies?
+async function pointer to FindMyPairing.PairingService.dependencies(for: Swift.Set<Foundation.UUID>) async throws -> FindMyPairing.BaseAccessoryDependencies?
+FindMyPairing.PairingService.workItemQueue.getter : FindMyBase.WorkItemQueue
+property descriptor for FindMyPairing.PairingService.workItemQueue : FindMyBase.WorkItemQueue
+dispatch thunk of FindMyPairing.PairingService.pairAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+async function pointer to dispatch thunk of FindMyPairing.PairingService.pairAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+method descriptor for FindMyPairing.PairingService.pairAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+FindMyPairing.PairingService.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyPairing.PairingService.unownedExecutor : Swift.UnownedSerialExecutor
+FindMyPairing.PairingService.pairingAccessories.getter : [Foundation.UUID]
+async function pointer to FindMyPairing.PairingService.pairingAccessories.getter : [Foundation.UUID]
+property descriptor for FindMyPairing.PairingService.pairingAccessories : [Foundation.UUID]
+dispatch thunk of FindMyPairing.PairingService.pairingDependencies.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.BaseAccessoryDependencies]
+async function pointer to dispatch thunk of FindMyPairing.PairingService.pairingDependencies.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.BaseAccessoryDependencies]
+method descriptor for FindMyPairing.PairingService.pairingDependencies.getter : [FindMyPairing.DependenciesIdentifier : FindMyPairing.BaseAccessoryDependencies]
+property descriptor for FindMyPairing.PairingService.pairingDependencies : [FindMyPairing.DependenciesIdentifier : FindMyPairing.BaseAccessoryDependencies]
+dispatch thunk of FindMyPairing.PairingService.pairMultipartCompatibleAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+async function pointer to dispatch thunk of FindMyPairing.PairingService.pairMultipartCompatibleAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+method descriptor for FindMyPairing.PairingService.pairMultipartCompatibleAccessories([FindMyPairing.Accessory]) async throws -> FindMyPairing.ObservationStreams
+enum case for FindMyPairing.PairingService.Error.alreadyPairing(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.threadingError(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.deallocated(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.unsupported(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.invalidDetections(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.missingCoordinator(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.invalidCoordinators(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.invalidDependencies(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.invalidConfiguration(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+enum case for FindMyPairing.PairingService.Error.invalidCoordinatorType(FindMyPairing.PairingService.Error.Type) -> FindMyPairing.PairingService.Error
+static FindMyPairing.PairingService.Error.== infix(FindMyPairing.PairingService.Error, FindMyPairing.PairingService.Error) -> Swift.Bool
+FindMyPairing.PairingService.Error.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingService.Error.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingService.Error.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingService.Error
+nominal type descriptor for FindMyPairing.PairingService.Error
+type metadata for FindMyPairing.PairingService.Error
+protocol conformance descriptor for FindMyPairing.PairingService.Error : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingService.Error : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingService.Error : Swift.Error in FindMyPairing
+FindMyPairing.PairingService.__allocating_init(proxy: FindMyPairing.PairingServiceProxy) -> FindMyPairing.PairingService
+dispatch thunk of FindMyPairing.PairingService.__allocating_init(proxy: FindMyPairing.PairingServiceProxy) -> FindMyPairing.PairingService
+method descriptor for FindMyPairing.PairingService.__allocating_init(proxy: FindMyPairing.PairingServiceProxy) -> FindMyPairing.PairingService
+FindMyPairing.PairingService.init(proxy: FindMyPairing.PairingServiceProxy) -> FindMyPairing.PairingService
+protocol conformance descriptor for FindMyPairing.PairingService : FindMyPairing.PairingServiceType in FindMyPairing
+protocol witness table for FindMyPairing.PairingService : FindMyPairing.PairingServiceType in FindMyPairing
+type metadata accessor for FindMyPairing.PairingService
+metaclass for FindMyPairing.PairingService
+nominal type descriptor for FindMyPairing.PairingService
+class metadata base offset for FindMyPairing.PairingService
+method lookup function for FindMyPairing.PairingService
+type metadata for FindMyPairing.PairingService
+protocol conformance descriptor for FindMyPairing.PairingService : Swift.Actor in FindMyPairing
+FindMyPairing.PairingService.__deallocating_deinit
+FindMyPairing.PairingService.deinit
+FindMyPairing.PairingUIState.description.getter : Swift.String
+property descriptor for FindMyPairing.PairingUIState.description : Swift.String
+FindMyPairing.PairingUIState.interruptible.getter : Swift.Bool
+property descriptor for FindMyPairing.PairingUIState.interruptible : Swift.Bool
+enum case for FindMyPairing.PairingUIState.alertPreparation(FindMyPairing.PairingUIState.Type) -> FindMyPairing.PairingUIState
+static FindMyPairing.PairingUIState.== infix(FindMyPairing.PairingUIState, FindMyPairing.PairingUIState) -> Swift.Bool
+enum case for FindMyPairing.PairingUIState.idle(FindMyPairing.PairingUIState.Type) -> FindMyPairing.PairingUIState
+enum case for FindMyPairing.PairingUIState.finished(FindMyPairing.PairingUIState.Type) -> FindMyPairing.PairingUIState
+enum case for FindMyPairing.PairingUIState.Displayed.delayedFinish(FindMyPairing.PairingUIState.Displayed.Type) -> FindMyPairing.PairingUIState.Displayed
+enum case for FindMyPairing.PairingUIState.Displayed.frozen(FindMyPairing.PairingUIState.Displayed.Type) -> FindMyPairing.PairingUIState.Displayed
+FindMyPairing.PairingUIState.Displayed.init(rawValue: Swift.String) -> FindMyPairing.PairingUIState.Displayed?
+FindMyPairing.PairingUIState.Displayed.rawValue.getter : Swift.String
+property descriptor for FindMyPairing.PairingUIState.Displayed.rawValue : Swift.String
+enum case for FindMyPairing.PairingUIState.Displayed.unfrozen(FindMyPairing.PairingUIState.Displayed.Type) -> FindMyPairing.PairingUIState.Displayed
+type metadata accessor for FindMyPairing.PairingUIState.Displayed
+nominal type descriptor for FindMyPairing.PairingUIState.Displayed
+type metadata for FindMyPairing.PairingUIState.Displayed
+protocol conformance descriptor for FindMyPairing.PairingUIState.Displayed : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingUIState.Displayed : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingUIState.Displayed : Swift.RawRepresentable in FindMyPairing
+enum case for FindMyPairing.PairingUIState.displayed(FindMyPairing.PairingUIState.Type) -> (FindMyPairing.PairingUIState.Displayed?) -> FindMyPairing.PairingUIState
+type metadata accessor for FindMyPairing.PairingUIState
+nominal type descriptor for FindMyPairing.PairingUIState
+type metadata for FindMyPairing.PairingUIState
+protocol conformance descriptor for FindMyPairing.PairingUIState : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingUIState : Swift.CustomStringConvertible in FindMyPairing
+protocol descriptor for FindMyPairing.PairingExecutor
+dispatch thunk of FindMyPairing.PairingExecutor.initiatePairing(peripheral: A.Peripheral) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingExecutor.initiatePairing(peripheral: A.Peripheral) async throws -> ()
+method descriptor for FindMyPairing.PairingExecutor.initiatePairing(peripheral: A.Peripheral) async throws -> ()
+associated conformance descriptor for FindMyPairing.PairingExecutor.FindMyPairing.PairingExecutor.Peripheral: FindMyPairing.PeripheralType
+dispatch thunk of FindMyPairing.PairingExecutor.identifier.getter : Foundation.UUID
+method descriptor for FindMyPairing.PairingExecutor.identifier.getter : Foundation.UUID
+dispatch thunk of FindMyPairing.PairingExecutor.pairingAck() async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingExecutor.pairingAck() async throws -> ()
+method descriptor for FindMyPairing.PairingExecutor.pairingAck() async throws -> ()
+dispatch thunk of FindMyPairing.PairingExecutor.peripheral.getter : A.Peripheral?
+method descriptor for FindMyPairing.PairingExecutor.peripheral.getter : A.Peripheral?
+dispatch thunk of FindMyPairing.PairingExecutor.beaconStore.getter : FindMyPairing.PairingBeaconStore
+method descriptor for FindMyPairing.PairingExecutor.beaconStore.getter : FindMyPairing.PairingBeaconStore
+dispatch thunk of FindMyPairing.PairingExecutor.pairingInfo.getter : A.Info
+method descriptor for FindMyPairing.PairingExecutor.pairingInfo.getter : A.Info
+dispatch thunk of FindMyPairing.PairingExecutor.loggingPrefix.getter : Swift.String
+method descriptor for FindMyPairing.PairingExecutor.loggingPrefix.getter : Swift.String
+dispatch thunk of FindMyPairing.PairingExecutor.streamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.PairingExecutorState>
+method descriptor for FindMyPairing.PairingExecutor.streamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.PairingExecutorState>
+dispatch thunk of FindMyPairing.PairingExecutor.pairingComplete() async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingExecutor.pairingComplete() async throws -> ()
+method descriptor for FindMyPairing.PairingExecutor.pairingComplete() async throws -> ()
+dispatch thunk of FindMyPairing.PairingExecutor.pairingLockCheck() async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingExecutor.pairingLockCheck() async throws -> ()
+method descriptor for FindMyPairing.PairingExecutor.pairingLockCheck() async throws -> ()
+dispatch thunk of FindMyPairing.PairingExecutor.createBeaconRecord() async throws -> Foundation.UUID
+async function pointer to dispatch thunk of FindMyPairing.PairingExecutor.createBeaconRecord() async throws -> Foundation.UUID
+method descriptor for FindMyPairing.PairingExecutor.createBeaconRecord() async throws -> Foundation.UUID
+dispatch thunk of FindMyPairing.PairingExecutor.peripheralProvider.getter : FindMyPairing.PairingPeripheralProvider
+method descriptor for FindMyPairing.PairingExecutor.peripheralProvider.getter : FindMyPairing.PairingPeripheralProvider
+dispatch thunk of FindMyPairing.PairingExecutor.pairingConfiguration.modify : FindMyPairing.PairingConfigurationType?
+method descriptor for FindMyPairing.PairingExecutor.pairingConfiguration.modify : FindMyPairing.PairingConfigurationType?
+dispatch thunk of FindMyPairing.PairingExecutor.pairingConfiguration.getter : FindMyPairing.PairingConfigurationType?
+method descriptor for FindMyPairing.PairingExecutor.pairingConfiguration.getter : FindMyPairing.PairingConfigurationType?
+dispatch thunk of FindMyPairing.PairingExecutor.pairingConfiguration.setter : FindMyPairing.PairingConfigurationType?
+method descriptor for FindMyPairing.PairingExecutor.pairingConfiguration.setter : FindMyPairing.PairingConfigurationType?
+dispatch thunk of FindMyPairing.PairingExecutor.beaconRecordIdentifier.modify : Foundation.UUID?
+method descriptor for FindMyPairing.PairingExecutor.beaconRecordIdentifier.modify : Foundation.UUID?
+dispatch thunk of FindMyPairing.PairingExecutor.beaconRecordIdentifier.getter : Foundation.UUID?
+method descriptor for FindMyPairing.PairingExecutor.beaconRecordIdentifier.getter : Foundation.UUID?
+dispatch thunk of FindMyPairing.PairingExecutor.beaconRecordIdentifier.setter : Foundation.UUID?
+method descriptor for FindMyPairing.PairingExecutor.beaconRecordIdentifier.setter : Foundation.UUID?
+dispatch thunk of FindMyPairing.PairingExecutor.stream() -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingExecutorState)>
+method descriptor for FindMyPairing.PairingExecutor.stream() -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingExecutorState)>
+dispatch thunk of FindMyPairing.PairingExecutor.validator.getter : FindMyPairing.PairingValidator
+method descriptor for FindMyPairing.PairingExecutor.validator.getter : FindMyPairing.PairingValidator
+base conformance descriptor for FindMyPairing.PairingExecutor: FindMyPairing.StateModifiable
+(extension in FindMyPairing):FindMyPairing.PairingExecutor._interruptPairing() async -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingExecutor._interruptPairing() async -> ()
+(extension in FindMyPairing):FindMyPairing.PairingExecutor.finalizePairingFinished.getter : Swift.Bool
+property descriptor for (extension in FindMyPairing):FindMyPairing.PairingExecutor.finalizePairingFinished : Swift.Bool
+(extension in FindMyPairing):FindMyPairing.PairingExecutor.initiatePairingFinished.getter : Swift.Bool
+property descriptor for (extension in FindMyPairing):FindMyPairing.PairingExecutor.initiatePairingFinished : Swift.Bool
+(extension in FindMyPairing):FindMyPairing.PairingExecutor._completePairing(with: FindMyPairing.PairingConfigurationType?) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingExecutor._completePairing(with: FindMyPairing.PairingConfigurationType?) async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingExecutor._pairingAck() async -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingExecutor._pairingAck() async -> ()
+(extension in FindMyPairing):FindMyPairing.PairingExecutor._canContinue.getter : Swift.Bool
+property descriptor for (extension in FindMyPairing):FindMyPairing.PairingExecutor._canContinue : Swift.Bool
+(extension in FindMyPairing):FindMyPairing.PairingExecutor._pairingError() -> Swift.Error?
+(extension in FindMyPairing):FindMyPairing.PairingExecutor._handleFailure(error: Swift.Error) async -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingExecutor._handleFailure(error: Swift.Error) async -> ()
+(extension in FindMyPairing):FindMyPairing.PairingExecutor.pairingFinished.getter : Swift.Bool
+property descriptor for (extension in FindMyPairing):FindMyPairing.PairingExecutor.pairingFinished : Swift.Bool
+(extension in FindMyPairing):FindMyPairing.PairingExecutor._pair(peripheral: FindMyPairing.PeripheralType) async -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingExecutor._pair(peripheral: FindMyPairing.PeripheralType) async -> ()
+(extension in FindMyPairing):FindMyPairing.PairingExecutor.stream() -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingExecutorState)>
+(extension in FindMyPairing):FindMyPairing.PairingExecutor._cleanUp() async -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingExecutor._cleanUp() async -> ()
+(extension in FindMyPairing):FindMyPairing.PairingExecutor.setState(FindMyPairing.PairingExecutorState) -> ()
+protocol requirements base descriptor for FindMyPairing.PairingExecutor
+static FindMyPairing.PairingFlowStep.== infix(FindMyPairing.PairingFlowStep, FindMyPairing.PairingFlowStep) -> Swift.Bool
+FindMyPairing.PairingFlowStep.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingFlowStep.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingFlowStep.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingFlowStep
+nominal type descriptor for FindMyPairing.PairingFlowStep
+type metadata for FindMyPairing.PairingFlowStep
+protocol conformance descriptor for FindMyPairing.PairingFlowStep : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingFlowStep : Swift.Equatable in FindMyPairing
+protocol descriptor for FindMyPairing.PairingKeysInfo
+protocol descriptor for FindMyPairing.PairingLocation
+FindMyPairing.PairingObserver.monitorPairing() async throws -> ()
+dispatch thunk of FindMyPairing.PairingObserver.monitorPairing() async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingObserver.monitorPairing() async throws -> ()
+method descriptor for FindMyPairing.PairingObserver.monitorPairing() async throws -> ()
+async function pointer to FindMyPairing.PairingObserver.monitorPairing() async throws -> ()
+FindMyPairing.PairingObserver.setNewState(((FindMyPairing.PairingCoordinatorState, FindMyPairing.DependenciesIdentifier) async -> ())?) -> ()
+dispatch thunk of FindMyPairing.PairingObserver.setNewState(((FindMyPairing.PairingCoordinatorState, FindMyPairing.DependenciesIdentifier) async -> ())?) -> ()
+method descriptor for FindMyPairing.PairingObserver.setNewState(((FindMyPairing.PairingCoordinatorState, FindMyPairing.DependenciesIdentifier) async -> ())?) -> ()
+FindMyPairing.PairingObserver.handleNewState.getter : ((FindMyPairing.PairingCoordinatorState, FindMyPairing.DependenciesIdentifier) async -> ())?
+dispatch thunk of FindMyPairing.PairingObserver.handleNewState.getter : ((FindMyPairing.PairingCoordinatorState, FindMyPairing.DependenciesIdentifier) async -> ())?
+method descriptor for FindMyPairing.PairingObserver.handleNewState.getter : ((FindMyPairing.PairingCoordinatorState, FindMyPairing.DependenciesIdentifier) async -> ())?
+property descriptor for FindMyPairing.PairingObserver.handleNewState : ((FindMyPairing.PairingCoordinatorState, FindMyPairing.DependenciesIdentifier) async -> ())?
+direct field offset for FindMyPairing.PairingObserver.handleNewState : ((FindMyPairing.PairingCoordinatorState, FindMyPairing.DependenciesIdentifier) async -> ())?
+FindMyPairing.PairingObserver.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyPairing.PairingObserver.unownedExecutor : Swift.UnownedSerialExecutor
+FindMyPairing.PairingObserver.setObservationFinish(((FindMyPairing.DependenciesIdentifier) async -> ())?) -> ()
+dispatch thunk of FindMyPairing.PairingObserver.setObservationFinish(((FindMyPairing.DependenciesIdentifier) async -> ())?) -> ()
+method descriptor for FindMyPairing.PairingObserver.setObservationFinish(((FindMyPairing.DependenciesIdentifier) async -> ())?) -> ()
+FindMyPairing.PairingObserver.handleCustomTransition(from: FindMyPairing.PairingCoordinatorState, to: FindMyPairing.PairingCoordinatorState, handler: (Swift.Duration) async -> ()) throws -> ()
+dispatch thunk of FindMyPairing.PairingObserver.handleCustomTransition(from: FindMyPairing.PairingCoordinatorState, to: FindMyPairing.PairingCoordinatorState, handler: (Swift.Duration) async -> ()) throws -> ()
+method descriptor for FindMyPairing.PairingObserver.handleCustomTransition(from: FindMyPairing.PairingCoordinatorState, to: FindMyPairing.PairingCoordinatorState, handler: (Swift.Duration) async -> ()) throws -> ()
+FindMyPairing.PairingObserver.checkCustomObservations(with: FindMyBase.TimeTracker) async -> ()
+dispatch thunk of FindMyPairing.PairingObserver.checkCustomObservations(with: FindMyBase.TimeTracker) async -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingObserver.checkCustomObservations(with: FindMyBase.TimeTracker) async -> ()
+method descriptor for FindMyPairing.PairingObserver.checkCustomObservations(with: FindMyBase.TimeTracker) async -> ()
+async function pointer to FindMyPairing.PairingObserver.checkCustomObservations(with: FindMyBase.TimeTracker) async -> ()
+FindMyPairing.PairingObserver.handleObservationFinish.getter : ((FindMyPairing.DependenciesIdentifier) async -> ())?
+dispatch thunk of FindMyPairing.PairingObserver.handleObservationFinish.getter : ((FindMyPairing.DependenciesIdentifier) async -> ())?
+method descriptor for FindMyPairing.PairingObserver.handleObservationFinish.getter : ((FindMyPairing.DependenciesIdentifier) async -> ())?
+property descriptor for FindMyPairing.PairingObserver.handleObservationFinish : ((FindMyPairing.DependenciesIdentifier) async -> ())?
+direct field offset for FindMyPairing.PairingObserver.handleObservationFinish : ((FindMyPairing.DependenciesIdentifier) async -> ())?
+static FindMyPairing.PairingObserver.Error.== infix(FindMyPairing.PairingObserver.Error, FindMyPairing.PairingObserver.Error) -> Swift.Bool
+FindMyPairing.PairingObserver.Error.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.PairingObserver.Error.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.PairingObserver.Error.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.PairingObserver.Error
+nominal type descriptor for FindMyPairing.PairingObserver.Error
+type metadata for FindMyPairing.PairingObserver.Error
+protocol conformance descriptor for FindMyPairing.PairingObserver.Error : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingObserver.Error : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingObserver.Error : Swift.Error in FindMyPairing
+FindMyPairing.PairingObserver.__allocating_init(stream: Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>, identifier: FindMyPairing.DependenciesIdentifier) -> FindMyPairing.PairingObserver
+dispatch thunk of FindMyPairing.PairingObserver.__allocating_init(stream: Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>, identifier: FindMyPairing.DependenciesIdentifier) -> FindMyPairing.PairingObserver
+method descriptor for FindMyPairing.PairingObserver.__allocating_init(stream: Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>, identifier: FindMyPairing.DependenciesIdentifier) -> FindMyPairing.PairingObserver
+FindMyPairing.PairingObserver.init(stream: Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>, identifier: FindMyPairing.DependenciesIdentifier) -> FindMyPairing.PairingObserver
+type metadata accessor for FindMyPairing.PairingObserver
+metaclass for FindMyPairing.PairingObserver
+nominal type descriptor for FindMyPairing.PairingObserver
+class metadata base offset for FindMyPairing.PairingObserver
+method lookup function for FindMyPairing.PairingObserver
+type metadata for FindMyPairing.PairingObserver
+protocol conformance descriptor for FindMyPairing.PairingObserver : Swift.Actor in FindMyPairing
+FindMyPairing.PairingObserver.__deallocating_deinit
+FindMyPairing.PairingObserver.deinit
+protocol descriptor for FindMyPairing.PairingResponse
+protocol descriptor for FindMyPairing.PairingInfoStore
+dispatch thunk of FindMyPairing.PairingInfoStore.accessoryProductInfoValue.getter : FindMyPairing.AccessoryProductInfoType?
+method descriptor for FindMyPairing.PairingInfoStore.accessoryProductInfoValue.getter : FindMyPairing.AccessoryProductInfoType?
+dispatch thunk of FindMyPairing.PairingInfoStore.updateAccessoryProductInfo<A where A1: FindMyPairing.AccessoryProductInfoType>(A1) throws -> ()
+method descriptor for FindMyPairing.PairingInfoStore.updateAccessoryProductInfo<A where A1: FindMyPairing.AccessoryProductInfoType>(A1) throws -> ()
+dispatch thunk of FindMyPairing.PairingInfoStore.pairingInfo.getter : FindMyPairing.AccessoryPairingInfoType
+method descriptor for FindMyPairing.PairingInfoStore.pairingInfo.getter : FindMyPairing.AccessoryPairingInfoType
+dispatch thunk of FindMyPairing.PairingInfoStore.accessoryPairingConfiguration.getter : FindMyPairing.PairingConfigurationType?
+method descriptor for FindMyPairing.PairingInfoStore.accessoryPairingConfiguration.getter : FindMyPairing.PairingConfigurationType?
+dispatch thunk of FindMyPairing.PairingInfoStore.pairingUIInfo.getter : FindMyPairing.PairingUIInfoType?
+async function pointer to dispatch thunk of FindMyPairing.PairingInfoStore.pairingUIInfo.getter : FindMyPairing.PairingUIInfoType?
+method descriptor for FindMyPairing.PairingInfoStore.pairingUIInfo.getter : FindMyPairing.PairingUIInfoType?
+dispatch thunk of FindMyPairing.PairingInfoStore.accessoryDetails.modify : [FindMyPairing.AccessoryDetails]?
+method descriptor for FindMyPairing.PairingInfoStore.accessoryDetails.modify : [FindMyPairing.AccessoryDetails]?
+dispatch thunk of FindMyPairing.PairingInfoStore.accessoryDetails.getter : [FindMyPairing.AccessoryDetails]?
+method descriptor for FindMyPairing.PairingInfoStore.accessoryDetails.getter : [FindMyPairing.AccessoryDetails]?
+dispatch thunk of FindMyPairing.PairingInfoStore.accessoryDetails.setter : [FindMyPairing.AccessoryDetails]?
+method descriptor for FindMyPairing.PairingInfoStore.accessoryDetails.setter : [FindMyPairing.AccessoryDetails]?
+dispatch thunk of FindMyPairing.PairingInfoStore.isUserActionable.getter : Swift.Bool
+method descriptor for FindMyPairing.PairingInfoStore.isUserActionable.getter : Swift.Bool
+dispatch thunk of FindMyPairing.PairingInfoStore.updatePeripheral<A where A1: FindMyPairing.PeripheralType>(A1) throws -> ()
+method descriptor for FindMyPairing.PairingInfoStore.updatePeripheral<A where A1: FindMyPairing.PeripheralType>(A1) throws -> ()
+dispatch thunk of FindMyPairing.PairingInfoStore.accessoryMetadataValue.getter : FindMyPairing.MetadataType?
+method descriptor for FindMyPairing.PairingInfoStore.accessoryMetadataValue.getter : FindMyPairing.MetadataType?
+dispatch thunk of FindMyPairing.PairingInfoStore.updateAccessoryMetadata<A where A1: FindMyPairing.MetadataType>(A1) throws -> ()
+method descriptor for FindMyPairing.PairingInfoStore.updateAccessoryMetadata<A where A1: FindMyPairing.MetadataType>(A1) throws -> ()
+dispatch thunk of FindMyPairing.PairingInfoStore.accessoryPeripheralValue.getter : FindMyPairing.PeripheralType?
+method descriptor for FindMyPairing.PairingInfoStore.accessoryPeripheralValue.getter : FindMyPairing.PeripheralType?
+dispatch thunk of FindMyPairing.PairingInfoStore.pairingPolicyInformationValue.getter : FindMyPairing.PairingEligibilityInfo
+method descriptor for FindMyPairing.PairingInfoStore.pairingPolicyInformationValue.getter : FindMyPairing.PairingEligibilityInfo
+dispatch thunk of FindMyPairing.PairingInfoStore.accessoryUserConfigurationValue.getter : FindMyPairing.PairingConfigurationType?
+method descriptor for FindMyPairing.PairingInfoStore.accessoryUserConfigurationValue.getter : FindMyPairing.PairingConfigurationType?
+dispatch thunk of FindMyPairing.PairingInfoStore.updateAccessoryUserConfiguration<A where A1: FindMyPairing.PairingConfigurationType>(A1) throws -> ()
+method descriptor for FindMyPairing.PairingInfoStore.updateAccessoryUserConfiguration<A where A1: FindMyPairing.PairingConfigurationType>(A1) throws -> ()
+dispatch thunk of FindMyPairing.PairingInfoStore.detection.modify : FindMyPairing.Detection
+method descriptor for FindMyPairing.PairingInfoStore.detection.modify : FindMyPairing.Detection
+dispatch thunk of FindMyPairing.PairingInfoStore.detection.getter : FindMyPairing.Detection
+method descriptor for FindMyPairing.PairingInfoStore.detection.getter : FindMyPairing.Detection
+dispatch thunk of FindMyPairing.PairingInfoStore.detection.setter : FindMyPairing.Detection
+method descriptor for FindMyPairing.PairingInfoStore.detection.setter : FindMyPairing.Detection
+(extension in FindMyPairing):FindMyPairing.PairingInfoStore.updateDetection(FindMyPairing.Detection) throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingInfoStore.appendAccessoryDetails(executorIdentifier: Foundation.UUID, serialNumber: Swift.String, systemVersion: Swift.String) throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingInfoStore.merge(FindMyPairing.PairingInfoStore) async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingInfoStore.merge(FindMyPairing.PairingInfoStore) async throws -> ()
+base conformance descriptor for FindMyPairing.PairingInfoStore: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingInfoStore
+enum case for FindMyPairing.PairingOperation.overallPairing(FindMyPairing.PairingOperation.Type) -> FindMyPairing.PairingOperation
+enum case for FindMyPairing.PairingOperation.metadataRead(FindMyPairing.PairingOperation.Type) -> FindMyPairing.PairingOperation
+enum case for FindMyPairing.PairingOperation.pairingStart(FindMyPairing.PairingOperation.Type) -> FindMyPairing.PairingOperation
+enum case for FindMyPairing.PairingOperation.productInfoFetch(FindMyPairing.PairingOperation.Type) -> FindMyPairing.PairingOperation
+enum case for FindMyPairing.PairingOperation.peripheralRetrieval(FindMyPairing.PairingOperation.Type) -> FindMyPairing.PairingOperation
+static FindMyPairing.PairingOperation.allCases.getter : [FindMyPairing.PairingOperation]
+property descriptor for static FindMyPairing.PairingOperation.allCases : [FindMyPairing.PairingOperation]
+FindMyPairing.PairingOperation.init(rawValue: Swift.String) -> FindMyPairing.PairingOperation?
+FindMyPairing.PairingOperation.rawValue.getter : Swift.String
+property descriptor for FindMyPairing.PairingOperation.rawValue : Swift.String
+type metadata accessor for FindMyPairing.PairingOperation
+nominal type descriptor for FindMyPairing.PairingOperation
+type metadata for FindMyPairing.PairingOperation
+protocol conformance descriptor for FindMyPairing.PairingOperation : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingOperation : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingOperation : Swift.RawRepresentable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.PairingOperation : Swift.CaseIterable in FindMyPairing
+protocol descriptor for FindMyPairing.PairingUIManager
+dispatch thunk of FindMyPairing.PairingUIManager.interruptPairing() async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingUIManager.interruptPairing() async throws -> ()
+method descriptor for FindMyPairing.PairingUIManager.interruptPairing() async throws -> ()
+dispatch thunk of FindMyPairing.PairingUIManager.showDetectionIfNeeded(with: FindMyPairing.PairingUIInfoType) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.PairingUIManager.showDetectionIfNeeded(with: FindMyPairing.PairingUIInfoType) async throws -> ()
+method descriptor for FindMyPairing.PairingUIManager.showDetectionIfNeeded(with: FindMyPairing.PairingUIInfoType) async throws -> ()
+dispatch thunk of FindMyPairing.PairingUIManager.pairingUIStreamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.PairingUIState>
+method descriptor for FindMyPairing.PairingUIManager.pairingUIStreamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.PairingUIState>
+dispatch thunk of FindMyPairing.PairingUIManager.setUI(frozen: Swift.Bool) -> ()
+method descriptor for FindMyPairing.PairingUIManager.setUI(frozen: Swift.Bool) -> ()
+dispatch thunk of FindMyPairing.PairingUIManager.state.getter : FindMyPairing.PairingUIState
+method descriptor for FindMyPairing.PairingUIManager.state.getter : FindMyPairing.PairingUIState
+dispatch thunk of FindMyPairing.PairingUIManager.stream() -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingUIState)>
+method descriptor for FindMyPairing.PairingUIManager.stream() -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingUIState)>
+(extension in FindMyPairing):FindMyPairing.PairingUIManager._pairingFinish() async throws -> ()
+async function pointer to (extension in FindMyPairing):FindMyPairing.PairingUIManager._pairingFinish() async throws -> ()
+(extension in FindMyPairing):FindMyPairing.PairingUIManager.stream() -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingUIState)>
+(extension in FindMyPairing):FindMyPairing.PairingUIManager.activeUI.getter : Swift.Bool
+property descriptor for (extension in FindMyPairing):FindMyPairing.PairingUIManager.activeUI : Swift.Bool
+base conformance descriptor for FindMyPairing.PairingUIManager: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingUIManager
+protocol descriptor for FindMyPairing.PairingValidator
+associated conformance descriptor for FindMyPairing.PairingValidator.FindMyPairing.PairingValidator.AckRequest: FindMyPairing.PairingAckRequest
+associated conformance descriptor for FindMyPairing.PairingValidator.FindMyPairing.PairingValidator.AckResponse: FindMyPairing.PairingAckResponse
+dispatch thunk of FindMyPairing.PairingValidator.validateRequest(FindMyPairing.PairingRequest) async throws -> FindMyPairing.PairingResponse
+async function pointer to dispatch thunk of FindMyPairing.PairingValidator.validateRequest(FindMyPairing.PairingRequest) async throws -> FindMyPairing.PairingResponse
+method descriptor for FindMyPairing.PairingValidator.validateRequest(FindMyPairing.PairingRequest) async throws -> FindMyPairing.PairingResponse
+dispatch thunk of FindMyPairing.PairingValidator.ack(FindMyPairing.PairingAckRequest) async throws -> FindMyPairing.PairingAckResponse
+async function pointer to dispatch thunk of FindMyPairing.PairingValidator.ack(FindMyPairing.PairingAckRequest) async throws -> FindMyPairing.PairingAckResponse
+method descriptor for FindMyPairing.PairingValidator.ack(FindMyPairing.PairingAckRequest) async throws -> FindMyPairing.PairingAckResponse
+associated conformance descriptor for FindMyPairing.PairingValidator.FindMyPairing.PairingValidator.Request: FindMyPairing.PairingRequest
+associated conformance descriptor for FindMyPairing.PairingValidator.FindMyPairing.PairingValidator.Response: FindMyPairing.PairingResponse
+base conformance descriptor for FindMyPairing.PairingValidator: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.PairingValidator
+protocol descriptor for FindMyPairing.MetadataType
+dispatch thunk of FindMyPairing.MetadataType.versionNumber.getter : FindMyPairing.FWVersionNumber
+method descriptor for FindMyPairing.MetadataType.versionNumber.getter : FindMyPairing.FWVersionNumber
+protocol requirements base descriptor for FindMyPairing.MetadataType
+protocol descriptor for FindMyPairing.StateManager
+dispatch thunk of FindMyPairing.StateManager.notifyStateUpdated((A.State) async -> ()) -> ()
+method descriptor for FindMyPairing.StateManager.notifyStateUpdated((A.State) async -> ()) -> ()
+dispatch thunk of FindMyPairing.StateManager.setNextState(_: A.State, input: A.Input?) async -> ()
+async function pointer to dispatch thunk of FindMyPairing.StateManager.setNextState(_: A.State, input: A.Input?) async -> ()
+method descriptor for FindMyPairing.StateManager.setNextState(_: A.State, input: A.Input?) async -> ()
+dispatch thunk of FindMyPairing.StateManager.stateHistory.getter : [A.State]
+method descriptor for FindMyPairing.StateManager.stateHistory.getter : [A.State]
+dispatch thunk of FindMyPairing.StateManager.unsupportedTransitions.getter : [FindMyPairing.StateManagerError]
+method descriptor for FindMyPairing.StateManager.unsupportedTransitions.getter : [FindMyPairing.StateManagerError]
+dispatch thunk of FindMyPairing.StateManager.state.getter : A.State
+method descriptor for FindMyPairing.StateManager.state.getter : A.State
+base conformance descriptor for FindMyPairing.StateManager: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.StateManager
+protocol descriptor for FindMyPairing.AccessoryInfo
+enum case for FindMyPairing.AnalyticsEvent.userPairingDecision(FindMyPairing.AnalyticsEvent.Type) -> (Swift.Duration) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.finalizePairingStart(FindMyPairing.AnalyticsEvent.Type) -> (Foundation.UUID) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.finalizePairingFinish(FindMyPairing.AnalyticsEvent.Type) -> (Foundation.UUID) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.initiatePairingFinished(FindMyPairing.AnalyticsEvent.Type) -> (FindMyPairing.AccessoryDetails?, Foundation.UUID) -> FindMyPairing.AnalyticsEvent
+FindMyPairing.AnalyticsEvent.description.getter : Swift.String
+property descriptor for FindMyPairing.AnalyticsEvent.description : Swift.String
+enum case for FindMyPairing.AnalyticsEvent.interrupted(FindMyPairing.AnalyticsEvent.Type) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.pairingAckStart(FindMyPairing.AnalyticsEvent.Type) -> (Foundation.UUID) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.pairingAckFinish(FindMyPairing.AnalyticsEvent.Type) -> (Foundation.UUID) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.pairingLockStart(FindMyPairing.AnalyticsEvent.Type) -> (Foundation.UUID) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.pairingLockFinish(FindMyPairing.AnalyticsEvent.Type) -> (Foundation.UUID) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.successfullyPaired(FindMyPairing.AnalyticsEvent.Type) -> (Foundation.UUID, FindMyPairing.PairingLatencyReport) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.beaconRecordCreated(FindMyPairing.AnalyticsEvent.Type) -> (Foundation.UUID, Foundation.UUID) -> FindMyPairing.AnalyticsEvent
+enum case for FindMyPairing.AnalyticsEvent.failed(FindMyPairing.AnalyticsEvent.Type) -> (Swift.Error, Foundation.UUID?) -> FindMyPairing.AnalyticsEvent
+type metadata accessor for FindMyPairing.AnalyticsEvent
+nominal type descriptor for FindMyPairing.AnalyticsEvent
+type metadata for FindMyPairing.AnalyticsEvent
+protocol conformance descriptor for FindMyPairing.AnalyticsEvent : Swift.CustomStringConvertible in FindMyPairing
+protocol descriptor for FindMyPairing.PeripheralType
+protocol descriptor for FindMyPairing.BeaconGroupType
+dispatch thunk of FindMyPairing.BeaconGroupType.identifier.getter : Foundation.UUID
+method descriptor for FindMyPairing.BeaconGroupType.identifier.getter : Foundation.UUID
+dispatch thunk of FindMyPairing.BeaconGroupType.serialNumbers.getter : [Foundation.Data]
+method descriptor for FindMyPairing.BeaconGroupType.serialNumbers.getter : [Foundation.Data]
+protocol requirements base descriptor for FindMyPairing.BeaconGroupType
+protocol descriptor for FindMyPairing.FWVersionNumber
+protocol descriptor for FindMyPairing.StateModifiable
+dispatch thunk of FindMyPairing.StateModifiable.setState(A.State) -> ()
+method descriptor for FindMyPairing.StateModifiable.setState(A.State) -> ()
+associated conformance descriptor for FindMyPairing.StateModifiable.FindMyPairing.StateModifiable.State: Swift.Equatable
+dispatch thunk of FindMyPairing.StateModifiable.stateHistory.modify : [A.State]
+method descriptor for FindMyPairing.StateModifiable.stateHistory.modify : [A.State]
+dispatch thunk of FindMyPairing.StateModifiable.stateHistory.getter : [A.State]
+method descriptor for FindMyPairing.StateModifiable.stateHistory.getter : [A.State]
+dispatch thunk of FindMyPairing.StateModifiable.stateHistory.setter : [A.State]
+method descriptor for FindMyPairing.StateModifiable.stateHistory.setter : [A.State]
+dispatch thunk of FindMyPairing.StateModifiable.state.modify : A.State
+method descriptor for FindMyPairing.StateModifiable.state.modify : A.State
+dispatch thunk of FindMyPairing.StateModifiable.state.getter : A.State
+method descriptor for FindMyPairing.StateModifiable.state.getter : A.State
+dispatch thunk of FindMyPairing.StateModifiable.state.setter : A.State
+method descriptor for FindMyPairing.StateModifiable.state.setter : A.State
+base conformance descriptor for FindMyPairing.StateModifiable: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.StateModifiable
+FindMyPairing.AccessoryDetails.serialNumber.getter : Swift.String
+property descriptor for FindMyPairing.AccessoryDetails.serialNumber : Swift.String
+FindMyPairing.AccessoryDetails.systemVersion.getter : Swift.String
+property descriptor for FindMyPairing.AccessoryDetails.systemVersion : Swift.String
+FindMyPairing.AccessoryDetails.executorIdentifier.getter : Foundation.UUID
+property descriptor for FindMyPairing.AccessoryDetails.executorIdentifier : Foundation.UUID
+FindMyPairing.AccessoryDetails.init(executorIdentifier: Foundation.UUID, systemVersion: Swift.String, serialNumber: Swift.String, productID: Swift.String) -> FindMyPairing.AccessoryDetails
+FindMyPairing.AccessoryDetails.productID.getter : Swift.String
+property descriptor for FindMyPairing.AccessoryDetails.productID : Swift.String
+type metadata accessor for FindMyPairing.AccessoryDetails
+nominal type descriptor for FindMyPairing.AccessoryDetails
+type metadata for FindMyPairing.AccessoryDetails
+protocol descriptor for FindMyPairing.AccessoryScanner
+dispatch thunk of FindMyPairing.AccessoryScanner.stopAndReturnResult() async -> Swift.Result<FindMyPairing.Accessory, Swift.Error>
+async function pointer to dispatch thunk of FindMyPairing.AccessoryScanner.stopAndReturnResult() async -> Swift.Result<FindMyPairing.Accessory, Swift.Error>
+method descriptor for FindMyPairing.AccessoryScanner.stopAndReturnResult() async -> Swift.Result<FindMyPairing.Accessory, Swift.Error>
+dispatch thunk of FindMyPairing.AccessoryScanner.start() -> ()
+method descriptor for FindMyPairing.AccessoryScanner.start() -> ()
+dispatch thunk of FindMyPairing.AccessoryScanner.forceStop() -> ()
+method descriptor for FindMyPairing.AccessoryScanner.forceStop() -> ()
+(extension in FindMyPairing):FindMyPairing.AccessoryScanner._pairingFinish() -> ()
+base conformance descriptor for FindMyPairing.AccessoryScanner: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.AccessoryScanner
+protocol descriptor for FindMyPairing.BeaconRecordType
+dispatch thunk of FindMyPairing.BeaconRecordType.identifier.getter : Foundation.UUID
+method descriptor for FindMyPairing.BeaconRecordType.identifier.getter : Foundation.UUID
+protocol requirements base descriptor for FindMyPairing.BeaconRecordType
+enum case for FindMyPairing.CommandCondition.checkPrePairingAndUserTapAction(FindMyPairing.CommandCondition.Type) -> FindMyPairing.CommandCondition
+enum case for FindMyPairing.CommandCondition.finalizePairingDone(FindMyPairing.CommandCondition.Type) -> FindMyPairing.CommandCondition
+enum case for FindMyPairing.CommandCondition.dismissedUI(FindMyPairing.CommandCondition.Type) -> FindMyPairing.CommandCondition
+enum case for FindMyPairing.CommandCondition.checkUserInput(FindMyPairing.CommandCondition.Type) -> FindMyPairing.CommandCondition
+enum case for FindMyPairing.CommandCondition.checkUserPairAction(FindMyPairing.CommandCondition.Type) -> FindMyPairing.CommandCondition
+static FindMyPairing.CommandCondition.== infix(FindMyPairing.CommandCondition, FindMyPairing.CommandCondition) -> Swift.Bool
+FindMyPairing.CommandCondition.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.CommandCondition.verify(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> Swift.Bool
+async function pointer to FindMyPairing.CommandCondition.verify(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> Swift.Bool
+FindMyPairing.CommandCondition.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.CommandCondition.hashValue : Swift.Int
+protocol conformance descriptor for FindMyPairing.CommandCondition : FindMyPairing.ExecutionCondition in FindMyPairing
+protocol witness table for FindMyPairing.CommandCondition : FindMyPairing.ExecutionCondition in FindMyPairing
+type metadata accessor for FindMyPairing.CommandCondition
+nominal type descriptor for FindMyPairing.CommandCondition
+type metadata for FindMyPairing.CommandCondition
+protocol conformance descriptor for FindMyPairing.CommandCondition : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.CommandCondition : Swift.Equatable in FindMyPairing
+protocol descriptor for FindMyPairing.ExecutionCommand
+dispatch thunk of FindMyPairing.ExecutionCommand.execute(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.ExecutionCommand.execute(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> ()
+method descriptor for FindMyPairing.ExecutionCommand.execute(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> ()
+protocol requirements base descriptor for FindMyPairing.ExecutionCommand
+enum case for FindMyPairing.UserSessionState.pairingStarted(FindMyPairing.UserSessionState.Type) -> (Foundation.UUID) -> FindMyPairing.UserSessionState
+enum case for FindMyPairing.UserSessionState.accessoryConfigured(FindMyPairing.UserSessionState.Type) -> (Foundation.UUID, FindMyPairing.PairingConfigurationType) -> FindMyPairing.UserSessionState
+enum case for FindMyPairing.UserSessionState.idle(FindMyPairing.UserSessionState.Type) -> FindMyPairing.UserSessionState
+type metadata accessor for FindMyPairing.UserSessionState
+nominal type descriptor for FindMyPairing.UserSessionState
+type metadata for FindMyPairing.UserSessionState
+dispatch thunk of FindMyPairing.ExecutionDirector.interruptExecution() -> ()
+method descriptor for FindMyPairing.ExecutionDirector.interruptExecution() -> ()
+static FindMyPairing.ExecutionDirector.ExecutionResult.== infix(FindMyPairing.ExecutionDirector.ExecutionResult, FindMyPairing.ExecutionDirector.ExecutionResult) -> Swift.Bool
+FindMyPairing.ExecutionDirector.ExecutionResult.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.ExecutionDirector.ExecutionResult.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.ExecutionDirector.ExecutionResult.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.ExecutionDirector.ExecutionResult
+nominal type descriptor for FindMyPairing.ExecutionDirector.ExecutionResult
+type metadata for FindMyPairing.ExecutionDirector.ExecutionResult
+protocol conformance descriptor for FindMyPairing.ExecutionDirector.ExecutionResult : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.ExecutionDirector.ExecutionResult : Swift.Equatable in FindMyPairing
+dispatch thunk of FindMyPairing.ExecutionDirector.executeAll(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> ()
+async function pointer to dispatch thunk of FindMyPairing.ExecutionDirector.executeAll(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> ()
+method descriptor for FindMyPairing.ExecutionDirector.executeAll(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> ()
+dispatch thunk of FindMyPairing.ExecutionDirector.replaceCommands([FindMyPairing.ExecutionDirective]) -> ()
+method descriptor for FindMyPairing.ExecutionDirector.replaceCommands([FindMyPairing.ExecutionDirective]) -> ()
+FindMyPairing.ExecutionDirector.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyPairing.ExecutionDirector.unownedExecutor : Swift.UnownedSerialExecutor
+static FindMyPairing.ExecutionDirector.Error.== infix(FindMyPairing.ExecutionDirector.Error, FindMyPairing.ExecutionDirector.Error) -> Swift.Bool
+FindMyPairing.ExecutionDirector.Error.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.ExecutionDirector.Error.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.ExecutionDirector.Error.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.ExecutionDirector.Error
+nominal type descriptor for FindMyPairing.ExecutionDirector.Error
+type metadata for FindMyPairing.ExecutionDirector.Error
+protocol conformance descriptor for FindMyPairing.ExecutionDirector.Error : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.ExecutionDirector.Error : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.ExecutionDirector.Error : Swift.Error in FindMyPairing
+FindMyPairing.ExecutionDirector.__allocating_init(commands: [FindMyPairing.ExecutionDirective]) -> FindMyPairing.ExecutionDirector
+dispatch thunk of FindMyPairing.ExecutionDirector.__allocating_init(commands: [FindMyPairing.ExecutionDirective]) -> FindMyPairing.ExecutionDirector
+method descriptor for FindMyPairing.ExecutionDirector.__allocating_init(commands: [FindMyPairing.ExecutionDirective]) -> FindMyPairing.ExecutionDirector
+FindMyPairing.ExecutionDirector.init(commands: [FindMyPairing.ExecutionDirective]) -> FindMyPairing.ExecutionDirector
+dispatch thunk of FindMyPairing.ExecutionDirector.commands.getter : [FindMyPairing.ExecutionDirective]
+method descriptor for FindMyPairing.ExecutionDirector.commands.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for FindMyPairing.ExecutionDirector.commands : [FindMyPairing.ExecutionDirective]
+type metadata accessor for FindMyPairing.ExecutionDirector
+metaclass for FindMyPairing.ExecutionDirector
+nominal type descriptor for FindMyPairing.ExecutionDirector
+class metadata base offset for FindMyPairing.ExecutionDirector
+method lookup function for FindMyPairing.ExecutionDirector
+type metadata for FindMyPairing.ExecutionDirector
+protocol conformance descriptor for FindMyPairing.ExecutionDirector : Swift.Actor in FindMyPairing
+FindMyPairing.ExecutionDirector.__deallocating_deinit
+FindMyPairing.ExecutionDirector.deinit
+enum case for FindMyPairing.StateManagerError.unsupportedTransition(FindMyPairing.StateManagerError.Type) -> (Swift.String) -> FindMyPairing.StateManagerError
+type metadata accessor for FindMyPairing.StateManagerError
+nominal type descriptor for FindMyPairing.StateManagerError
+type metadata for FindMyPairing.StateManagerError
+protocol conformance descriptor for FindMyPairing.StateManagerError : Swift.Error in FindMyPairing
+protocol descriptor for FindMyPairing.BeaconCreationInfo
+associated conformance descriptor for FindMyPairing.BeaconCreationInfo.FindMyPairing.BeaconCreationInfo.Keys: FindMyPairing.PairingKeysInfo
+dispatch thunk of FindMyPairing.BeaconCreationInfo.keys.getter : A.Keys
+method descriptor for FindMyPairing.BeaconCreationInfo.keys.getter : A.Keys
+associated conformance descriptor for FindMyPairing.BeaconCreationInfo.FindMyPairing.BeaconCreationInfo.Accessory: FindMyPairing.AccessoryInfo
+dispatch thunk of FindMyPairing.BeaconCreationInfo.accessory.getter : A.Accessory
+method descriptor for FindMyPairing.BeaconCreationInfo.accessory.getter : A.Accessory
+protocol requirements base descriptor for FindMyPairing.BeaconCreationInfo
+protocol descriptor for FindMyPairing.ExecutionCondition
+dispatch thunk of FindMyPairing.ExecutionCondition.verify(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> Swift.Bool
+async function pointer to dispatch thunk of FindMyPairing.ExecutionCondition.verify(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> Swift.Bool
+method descriptor for FindMyPairing.ExecutionCondition.verify(with: FindMyPairing.AdaptivePairingCoordinator) async throws -> Swift.Bool
+protocol requirements base descriptor for FindMyPairing.ExecutionCondition
+enum case for FindMyPairing.ExecutionDirective.conditional(FindMyPairing.ExecutionDirective.Type) -> (FindMyPairing.ExecutionCondition, FindMyPairing.ExecutionDirective) -> FindMyPairing.ExecutionDirective
+enum case for FindMyPairing.ExecutionDirective.waitForInput(FindMyPairing.ExecutionDirective.Type) -> FindMyPairing.ExecutionDirective
+static FindMyPairing.ExecutionDirective.adaptiveStart.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.adaptiveStart : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.adaptiveAirTag.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.adaptiveAirTag : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.adaptiveAirPods.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.adaptiveAirPods : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.adaptiveProximity.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.adaptiveProximity : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.fullAdaptiveAirTag.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.fullAdaptiveAirTag : [FindMyPairing.ExecutionDirective]
+enum case for FindMyPairing.ExecutionDirective.parallelDirectives(FindMyPairing.ExecutionDirective.Type) -> ([FindMyPairing.ExecutionDirective]) -> FindMyPairing.ExecutionDirective
+static FindMyPairing.ExecutionDirective.fullAdaptiveAirPods.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.fullAdaptiveAirPods : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.multiDetectionStart.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.multiDetectionStart : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.fullAdaptiveProximity.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.fullAdaptiveProximity : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.fullMultiDetectionAirTag.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.fullMultiDetectionAirTag : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.afterMultiDetectionAirTag.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.afterMultiDetectionAirTag : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.fullMultiDetectionProximity.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.fullMultiDetectionProximity : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.afterMultiDetectionProximity.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.afterMultiDetectionProximity : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.== infix(FindMyPairing.ExecutionDirective, FindMyPairing.ExecutionDirective) -> Swift.Bool
+static FindMyPairing.ExecutionDirective.fullMultiDetectionAdaptiveAirTag.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.fullMultiDetectionAdaptiveAirTag : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.afterMultiDetectionAdaptiveAirTag.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.afterMultiDetectionAdaptiveAirTag : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.fullMultiDetectionAdaptiveProximity.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.fullMultiDetectionAdaptiveProximity : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.adaptiveAfterMultiDetectionProximity.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.adaptiveAfterMultiDetectionProximity : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.fullAdaptiveAfterMultiDetectionAirTag.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.fullAdaptiveAfterMultiDetectionAirTag : [FindMyPairing.ExecutionDirective]
+static FindMyPairing.ExecutionDirective.airTag.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.airTag : [FindMyPairing.ExecutionDirective]
+enum case for FindMyPairing.ExecutionDirective.serial(FindMyPairing.ExecutionDirective.Type) -> (FindMyPairing.ExecutionCommand) -> FindMyPairing.ExecutionDirective
+static FindMyPairing.ExecutionDirective.airPods.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.airPods : [FindMyPairing.ExecutionDirective]
+enum case for FindMyPairing.ExecutionDirective.parallel(FindMyPairing.ExecutionDirective.Type) -> ([FindMyPairing.ExecutionCommand]) -> FindMyPairing.ExecutionDirective
+static FindMyPairing.ExecutionDirective.proximity.getter : [FindMyPairing.ExecutionDirective]
+property descriptor for static FindMyPairing.ExecutionDirective.proximity : [FindMyPairing.ExecutionDirective]
+type metadata accessor for FindMyPairing.ExecutionDirective
+nominal type descriptor for FindMyPairing.ExecutionDirective
+type metadata for FindMyPairing.ExecutionDirective
+protocol conformance descriptor for FindMyPairing.ExecutionDirective : Swift.Equatable in FindMyPairing
+FindMyPairing.ObservationStreams.init(pairingStream: Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>, analyticsStream: Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>) -> FindMyPairing.ObservationStreams
+FindMyPairing.ObservationStreams.pairingStream.getter : Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+property descriptor for FindMyPairing.ObservationStreams.pairingStream : Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.PairingCoordinatorState)>
+FindMyPairing.ObservationStreams.analyticsStream.getter : Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+property descriptor for FindMyPairing.ObservationStreams.analyticsStream : Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.AnalyticsEvent)>
+type metadata accessor for FindMyPairing.ObservationStreams
+nominal type descriptor for FindMyPairing.ObservationStreams
+type metadata for FindMyPairing.ObservationStreams
+enum case for FindMyPairing.ReevaluationReason.accessoryChanged(FindMyPairing.ReevaluationReason.Type) -> FindMyPairing.ReevaluationReason
+enum case for FindMyPairing.ReevaluationReason.fwVersionAvailable(FindMyPairing.ReevaluationReason.Type) -> FindMyPairing.ReevaluationReason
+enum case for FindMyPairing.ReevaluationReason.productInfoFetched(FindMyPairing.ReevaluationReason.Type) -> FindMyPairing.ReevaluationReason
+static FindMyPairing.ReevaluationReason.== infix(FindMyPairing.ReevaluationReason, FindMyPairing.ReevaluationReason) -> Swift.Bool
+FindMyPairing.ReevaluationReason.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.ReevaluationReason.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.ReevaluationReason.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.ReevaluationReason
+nominal type descriptor for FindMyPairing.ReevaluationReason
+type metadata for FindMyPairing.ReevaluationReason
+protocol conformance descriptor for FindMyPairing.ReevaluationReason : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.ReevaluationReason : Swift.Equatable in FindMyPairing
+protocol descriptor for FindMyPairing.PeripheralTransport
+protocol descriptor for FindMyPairing.UserSessionListener
+dispatch thunk of FindMyPairing.UserSessionListener.notifyPairingAccessoryChanged(Foundation.UUID) -> ()
+method descriptor for FindMyPairing.UserSessionListener.notifyPairingAccessoryChanged(Foundation.UUID) -> ()
+dispatch thunk of FindMyPairing.UserSessionListener.sessionState.getter : FindMyPairing.UserSessionState
+async function pointer to dispatch thunk of FindMyPairing.UserSessionListener.sessionState.getter : FindMyPairing.UserSessionState
+method descriptor for FindMyPairing.UserSessionListener.sessionState.getter : FindMyPairing.UserSessionState
+dispatch thunk of FindMyPairing.UserSessionListener.streamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.UserSessionState>
+method descriptor for FindMyPairing.UserSessionListener.streamProvider.getter : FindMyBase.AsyncStreamProvider<FindMyPairing.UserSessionState>
+dispatch thunk of FindMyPairing.UserSessionListener.stream() async -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.UserSessionState)>
+async function pointer to dispatch thunk of FindMyPairing.UserSessionListener.stream() async -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.UserSessionState)>
+method descriptor for FindMyPairing.UserSessionListener.stream() async -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.UserSessionState)>
+(extension in FindMyPairing):FindMyPairing.UserSessionListener._pairingFinish() -> ()
+(extension in FindMyPairing):FindMyPairing.UserSessionListener.stream() async -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.UserSessionState)>
+async function pointer to (extension in FindMyPairing):FindMyPairing.UserSessionListener.stream() async -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyPairing.UserSessionState)>
+base conformance descriptor for FindMyPairing.UserSessionListener: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.UserSessionListener
+FindMyPairing.AccessoryDependencies.init(coordinator: FindMyPairing.PairingCoordinator, observer: FindMyPairing.PairingObserver) -> FindMyPairing.AccessoryDependencies
+FindMyPairing.AccessoryDependencies.coordinator.getter : FindMyPairing.PairingCoordinator
+property descriptor for FindMyPairing.AccessoryDependencies.coordinator : FindMyPairing.PairingCoordinator
+FindMyPairing.AccessoryDependencies.pairingStart.getter : Foundation.Date
+property descriptor for FindMyPairing.AccessoryDependencies.pairingStart : Foundation.Date
+FindMyPairing.AccessoryDependencies.observer.getter : FindMyPairing.PairingObserver
+property descriptor for FindMyPairing.AccessoryDependencies.observer : FindMyPairing.PairingObserver
+protocol conformance descriptor for FindMyPairing.AccessoryDependencies : FindMyPairing.BaseAccessoryDependencies in FindMyPairing
+protocol witness table for FindMyPairing.AccessoryDependencies : FindMyPairing.BaseAccessoryDependencies in FindMyPairing
+type metadata accessor for FindMyPairing.AccessoryDependencies
+nominal type descriptor for FindMyPairing.AccessoryDependencies
+type metadata for FindMyPairing.AccessoryDependencies
+FindMyPairing.DependenciesIdentifier.description.getter : Swift.String
+property descriptor for FindMyPairing.DependenciesIdentifier.description : Swift.String
+static FindMyPairing.DependenciesIdentifier.== infix(FindMyPairing.DependenciesIdentifier, FindMyPairing.DependenciesIdentifier) -> Swift.Bool
+FindMyPairing.DependenciesIdentifier.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.DependenciesIdentifier.rawValue.getter : [Foundation.UUID]
+property descriptor for FindMyPairing.DependenciesIdentifier.rawValue : [Foundation.UUID]
+FindMyPairing.DependenciesIdentifier.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.DependenciesIdentifier.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.DependenciesIdentifier
+nominal type descriptor for FindMyPairing.DependenciesIdentifier
+type metadata for FindMyPairing.DependenciesIdentifier
+protocol conformance descriptor for FindMyPairing.DependenciesIdentifier : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.DependenciesIdentifier : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.DependenciesIdentifier : Swift.CustomStringConvertible in FindMyPairing
+protocol descriptor for FindMyPairing.CoordinatorDependencies
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingExecutor.modify : FindMyPairing.PairingExecutor?
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingExecutor.modify : FindMyPairing.PairingExecutor?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingExecutor.getter : FindMyPairing.PairingExecutor?
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingExecutor.getter : FindMyPairing.PairingExecutor?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingExecutor.setter : FindMyPairing.PairingExecutor?
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingExecutor.setter : FindMyPairing.PairingExecutor?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.metadataProvider.getter : FindMyPairing.AccessoryMetadataProvider
+method descriptor for FindMyPairing.CoordinatorDependencies.metadataProvider.getter : FindMyPairing.AccessoryMetadataProvider
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingInfoStore.getter : FindMyPairing.PairingInfoStore
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingInfoStore.getter : FindMyPairing.PairingInfoStore
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingUIManager.getter : FindMyPairing.PairingUIManager?
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingUIManager.getter : FindMyPairing.PairingUIManager?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.peripheralProvider.getter : FindMyPairing.PairingPeripheralProvider?
+method descriptor for FindMyPairing.CoordinatorDependencies.peripheralProvider.getter : FindMyPairing.PairingPeripheralProvider?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.userSessionListener.getter : FindMyPairing.UserSessionListener?
+method descriptor for FindMyPairing.CoordinatorDependencies.userSessionListener.getter : FindMyPairing.UserSessionListener?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingResultListener.modify : FindMyPairing.PairingResultListener?
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingResultListener.modify : FindMyPairing.PairingResultListener?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingResultListener.getter : FindMyPairing.PairingResultListener?
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingResultListener.getter : FindMyPairing.PairingResultListener?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingResultListener.setter : FindMyPairing.PairingResultListener?
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingResultListener.setter : FindMyPairing.PairingResultListener?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.pairingExecutorFactory.getter : FindMyPairing.PairingExecutorFactory?
+method descriptor for FindMyPairing.CoordinatorDependencies.pairingExecutorFactory.getter : FindMyPairing.PairingExecutorFactory?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.scanner.getter : FindMyPairing.AccessoryScanner?
+method descriptor for FindMyPairing.CoordinatorDependencies.scanner.getter : FindMyPairing.AccessoryScanner?
+dispatch thunk of FindMyPairing.CoordinatorDependencies.validator.getter : FindMyPairing.PairingPolicyVerifier?
+method descriptor for FindMyPairing.CoordinatorDependencies.validator.getter : FindMyPairing.PairingPolicyVerifier?
+protocol requirements base descriptor for FindMyPairing.CoordinatorDependencies
+protocol descriptor for FindMyPairing.AccessoryProductInfoType
+protocol descriptor for FindMyPairing.AccessoryMetadataProvider
+dispatch thunk of FindMyPairing.AccessoryMetadataProvider.readAccessoryMetadata(peripheral: A.Peripheral, accessory: A.Device) async throws -> A.Metadata
+async function pointer to dispatch thunk of FindMyPairing.AccessoryMetadataProvider.readAccessoryMetadata(peripheral: A.Peripheral, accessory: A.Device) async throws -> A.Metadata
+method descriptor for FindMyPairing.AccessoryMetadataProvider.readAccessoryMetadata(peripheral: A.Peripheral, accessory: A.Device) async throws -> A.Metadata
+associated conformance descriptor for FindMyPairing.AccessoryMetadataProvider.FindMyPairing.AccessoryMetadataProvider.Metadata: FindMyPairing.MetadataType
+associated conformance descriptor for FindMyPairing.AccessoryMetadataProvider.FindMyPairing.AccessoryMetadataProvider.Peripheral: FindMyPairing.PeripheralType
+dispatch thunk of FindMyPairing.AccessoryMetadataProvider.retrieveProductInfo(for: A.Metadata) async throws -> FindMyPairing.AccessoryProductInfoType
+async function pointer to dispatch thunk of FindMyPairing.AccessoryMetadataProvider.retrieveProductInfo(for: A.Metadata) async throws -> FindMyPairing.AccessoryProductInfoType
+method descriptor for FindMyPairing.AccessoryMetadataProvider.retrieveProductInfo(for: A.Metadata) async throws -> FindMyPairing.AccessoryProductInfoType
+dispatch thunk of FindMyPairing.AccessoryMetadataProvider.retrieveProductInfo(for: FindMyPairing.Accessory) async throws -> FindMyPairing.AccessoryProductInfoType
+async function pointer to dispatch thunk of FindMyPairing.AccessoryMetadataProvider.retrieveProductInfo(for: FindMyPairing.Accessory) async throws -> FindMyPairing.AccessoryProductInfoType
+method descriptor for FindMyPairing.AccessoryMetadataProvider.retrieveProductInfo(for: FindMyPairing.Accessory) async throws -> FindMyPairing.AccessoryProductInfoType
+associated conformance descriptor for FindMyPairing.AccessoryMetadataProvider.FindMyPairing.AccessoryMetadataProvider.Device: FindMyPairing.Accessory
+(extension in FindMyPairing):FindMyPairing.AccessoryMetadataProvider._readAccessoryMetadata(peripheral: FindMyPairing.PeripheralType, accessory: FindMyPairing.Accessory) async throws -> FindMyPairing.MetadataType
+async function pointer to (extension in FindMyPairing):FindMyPairing.AccessoryMetadataProvider._readAccessoryMetadata(peripheral: FindMyPairing.PeripheralType, accessory: FindMyPairing.Accessory) async throws -> FindMyPairing.MetadataType
+(extension in FindMyPairing):FindMyPairing.AccessoryMetadataProvider._retrieveProductInfo(for: FindMyPairing.Accessory) async throws -> FindMyPairing.AccessoryProductInfoType
+async function pointer to (extension in FindMyPairing):FindMyPairing.AccessoryMetadataProvider._retrieveProductInfo(for: FindMyPairing.Accessory) async throws -> FindMyPairing.AccessoryProductInfoType
+(extension in FindMyPairing):FindMyPairing.AccessoryMetadataProvider._retrieveProductInfo(for: FindMyPairing.MetadataType) async throws -> FindMyPairing.AccessoryProductInfoType
+async function pointer to (extension in FindMyPairing):FindMyPairing.AccessoryMetadataProvider._retrieveProductInfo(for: FindMyPairing.MetadataType) async throws -> FindMyPairing.AccessoryProductInfoType
+base conformance descriptor for FindMyPairing.AccessoryMetadataProvider: Swift.Actor
+protocol requirements base descriptor for FindMyPairing.AccessoryMetadataProvider
+protocol descriptor for FindMyPairing.BaseAccessoryDependencies
+dispatch thunk of FindMyPairing.BaseAccessoryDependencies.pairingStart.getter : Foundation.Date
+method descriptor for FindMyPairing.BaseAccessoryDependencies.pairingStart.getter : Foundation.Date
+dispatch thunk of FindMyPairing.BaseAccessoryDependencies.observer.getter : FindMyPairing.PairingObserver
+method descriptor for FindMyPairing.BaseAccessoryDependencies.observer.getter : FindMyPairing.PairingObserver
+protocol requirements base descriptor for FindMyPairing.BaseAccessoryDependencies
+enum case for FindMyPairing.AccessoryMetadataProviderError.unsupportedMetadataType(FindMyPairing.AccessoryMetadataProviderError.Type) -> FindMyPairing.AccessoryMetadataProviderError
+enum case for FindMyPairing.AccessoryMetadataProviderError.unsupportedDeviceType(FindMyPairing.AccessoryMetadataProviderError.Type) -> FindMyPairing.AccessoryMetadataProviderError
+enum case for FindMyPairing.AccessoryMetadataProviderError.unsupportedPeripheralType(FindMyPairing.AccessoryMetadataProviderError.Type) -> FindMyPairing.AccessoryMetadataProviderError
+static FindMyPairing.AccessoryMetadataProviderError.== infix(FindMyPairing.AccessoryMetadataProviderError, FindMyPairing.AccessoryMetadataProviderError) -> Swift.Bool
+FindMyPairing.AccessoryMetadataProviderError.hash(into: inout Swift.Hasher) -> ()
+FindMyPairing.AccessoryMetadataProviderError.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.AccessoryMetadataProviderError.hashValue : Swift.Int
+type metadata accessor for FindMyPairing.AccessoryMetadataProviderError
+nominal type descriptor for FindMyPairing.AccessoryMetadataProviderError
+type metadata for FindMyPairing.AccessoryMetadataProviderError
+protocol conformance descriptor for FindMyPairing.AccessoryMetadataProviderError : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.AccessoryMetadataProviderError : Swift.Equatable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.AccessoryMetadataProviderError : Swift.Error in FindMyPairing
+FindMyPairing.MultipartAccessoryDependencies.pairingStart.getter : Foundation.Date
+property descriptor for FindMyPairing.MultipartAccessoryDependencies.pairingStart : Foundation.Date
+FindMyPairing.MultipartAccessoryDependencies.init(manager: FindMyPairing.PairingCoordinatorsManager, observer: FindMyPairing.PairingObserver) -> FindMyPairing.MultipartAccessoryDependencies
+FindMyPairing.MultipartAccessoryDependencies.manager.getter : FindMyPairing.PairingCoordinatorsManager
+property descriptor for FindMyPairing.MultipartAccessoryDependencies.manager : FindMyPairing.PairingCoordinatorsManager
+FindMyPairing.MultipartAccessoryDependencies.observer.getter : FindMyPairing.PairingObserver
+property descriptor for FindMyPairing.MultipartAccessoryDependencies.observer : FindMyPairing.PairingObserver
+protocol conformance descriptor for FindMyPairing.MultipartAccessoryDependencies : FindMyPairing.BaseAccessoryDependencies in FindMyPairing
+protocol witness table for FindMyPairing.MultipartAccessoryDependencies : FindMyPairing.BaseAccessoryDependencies in FindMyPairing
+type metadata accessor for FindMyPairing.MultipartAccessoryDependencies
+nominal type descriptor for FindMyPairing.MultipartAccessoryDependencies
+type metadata for FindMyPairing.MultipartAccessoryDependencies
+protocol descriptor for FindMyPairing.AdaptiveCoordinatorDependencies
+dispatch thunk of FindMyPairing.AdaptiveCoordinatorDependencies.directives.getter : [FindMyPairing.ExecutionDirective]
+method descriptor for FindMyPairing.AdaptiveCoordinatorDependencies.directives.getter : [FindMyPairing.ExecutionDirective]
+base conformance descriptor for FindMyPairing.AdaptiveCoordinatorDependencies: FindMyPairing.CoordinatorDependencies
+protocol requirements base descriptor for FindMyPairing.AdaptiveCoordinatorDependencies
+FindMyPairing.Logger.pairingTime.unsafeMutableAddressor : os.Logger
+static FindMyPairing.Logger.pairingTime.getter : os.Logger
+static FindMyPairing.Logger.pairingTime : os.Logger
+FindMyPairing.Logger.pairingService.unsafeMutableAddressor : os.Logger
+static FindMyPairing.Logger.pairingService.getter : os.Logger
+static FindMyPairing.Logger.pairingService : os.Logger
+FindMyPairing.Logger.pairingExecutor.unsafeMutableAddressor : os.Logger
+static FindMyPairing.Logger.pairingExecutor.getter : os.Logger
+static FindMyPairing.Logger.pairingExecutor : os.Logger
+FindMyPairing.Logger.pairingInfoStore.unsafeMutableAddressor : os.Logger
+static FindMyPairing.Logger.pairingInfoStore.getter : os.Logger
+static FindMyPairing.Logger.pairingInfoStore : os.Logger
+FindMyPairing.Logger.executionDirector.unsafeMutableAddressor : os.Logger
+static FindMyPairing.Logger.executionDirector.getter : os.Logger
+static FindMyPairing.Logger.executionDirector : os.Logger
+FindMyPairing.Logger.pairingCoordinator.unsafeMutableAddressor : os.Logger
+static FindMyPairing.Logger.pairingCoordinator.getter : os.Logger
+static FindMyPairing.Logger.pairingCoordinator : os.Logger
+FindMyPairing.Logger.pairingCoordinatorsManager.unsafeMutableAddressor : os.Logger
+static FindMyPairing.Logger.pairingCoordinatorsManager.getter : os.Logger
+static FindMyPairing.Logger.pairingCoordinatorsManager : os.Logger
+FindMyPairing.Logger.default.unsafeMutableAddressor : os.Logger
+static FindMyPairing.Logger.default.getter : os.Logger
+static FindMyPairing.Logger.default : os.Logger
+property descriptor for static FindMyPairing.Logger.default : os.Logger
+FindMyPairing.Logger.subsystem.unsafeMutableAddressor : Swift.String
+static FindMyPairing.Logger.subsystem.getter : Swift.String
+static FindMyPairing.Logger.subsystem : Swift.String
+property descriptor for static FindMyPairing.Logger.subsystem : Swift.String
+type metadata accessor for FindMyPairing.Logger
+nominal type descriptor for FindMyPairing.Logger
+type metadata for FindMyPairing.Logger
+protocol descriptor for FindMyPairing.Accessory
+dispatch thunk of FindMyPairing.Accessory.standalonePairing.getter : Swift.Bool
+method descriptor for FindMyPairing.Accessory.standalonePairing.getter : Swift.Bool
+dispatch thunk of FindMyPairing.Accessory.identifier.getter : Foundation.UUID
+method descriptor for FindMyPairing.Accessory.identifier.getter : Foundation.UUID
+dispatch thunk of FindMyPairing.Accessory.vendorID.getter : Swift.UInt32
+method descriptor for FindMyPairing.Accessory.vendorID.getter : Swift.UInt32
+dispatch thunk of FindMyPairing.Accessory.productID.getter : Swift.UInt32
+method descriptor for FindMyPairing.Accessory.productID.getter : Swift.UInt32
+dispatch thunk of FindMyPairing.Accessory.transport.getter : FindMyPairing.PeripheralTransport
+method descriptor for FindMyPairing.Accessory.transport.getter : FindMyPairing.PeripheralTransport
+protocol requirements base descriptor for FindMyPairing.Accessory
+FindMyPairing.Detection.identifier.getter : Foundation.UUID?
+property descriptor for FindMyPairing.Detection.identifier : Foundation.UUID?
+static FindMyPairing.Detection.== infix(FindMyPairing.Detection, FindMyPairing.Detection) -> Swift.Bool
+FindMyPairing.Detection.hash(into: inout Swift.Hasher) -> ()
+enum case for FindMyPairing.Detection.none(FindMyPairing.Detection.Type) -> FindMyPairing.Detection
+enum case for FindMyPairing.Detection.single(FindMyPairing.Detection.Type) -> (FindMyPairing.Accessory) -> FindMyPairing.Detection
+FindMyPairing.Detection.hashValue.getter : Swift.Int
+property descriptor for FindMyPairing.Detection.hashValue : Swift.Int
+enum case for FindMyPairing.Detection.uncertain(FindMyPairing.Detection.Type) -> ([FindMyPairing.Accessory]) -> FindMyPairing.Detection
+type metadata accessor for FindMyPairing.Detection
+nominal type descriptor for FindMyPairing.Detection
+type metadata for FindMyPairing.Detection
+protocol conformance descriptor for FindMyPairing.Detection : Swift.Hashable in FindMyPairing
+protocol conformance descriptor for FindMyPairing.Detection : Swift.Equatable in FindMyPairing
+protocol descriptor for FindMyPairing.ProductID
+associated type descriptor for FindMyPairing.TypedPairingInfoStore.VerificationInfo
+associated type descriptor for FindMyPairing.PairingPeripheralProvider.PeripheralService
+associated type descriptor for FindMyPairing.TypedPairingInfoStore.AccessoryConfiguration
+associated type descriptor for FindMyPairing.PairingExecutor.Info
+associated type descriptor for FindMyPairing.BeaconCreationInfo.Keys
+associated type descriptor for FindMyPairing.StateManager.Input
+associated type descriptor for FindMyPairing.StateModifiable.State
+associated type descriptor for FindMyPairing.StateManager.State
+associated type descriptor for FindMyPairing.AccessoryMetadataProvider.Device
+associated type descriptor for FindMyPairing.TypedPairingInfoStore.Product
+associated type descriptor for FindMyPairing.PairingValidator.Request
+associated type descriptor for FindMyPairing.TypedPairingInfoStore.Metadata
+associated type descriptor for FindMyPairing.AccessoryMetadataProvider.Metadata
+associated type descriptor for FindMyPairing.PairingValidator.Response
+associated type descriptor for FindMyPairing.BeaconCreationInfo.Accessory
+associated type descriptor for FindMyPairing.PairingPeripheralProvider.Transport

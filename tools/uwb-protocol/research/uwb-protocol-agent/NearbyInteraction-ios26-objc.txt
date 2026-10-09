@@ -1,0 +1,2464 @@
+@protocol ARInternalSessionObserver <ARSessionDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[ARInternalSessionObserver session:didChangeState:];
+-[ARInternalSessionObserver session:didUpdateExternalAnchors:];
+-[ARInternalSessionObserver sessionShouldAttemptRelocalization:completion:];
+-[ARInternalSessionObserver session:willRunWithConfiguration:];
+-[ARInternalSessionObserver session:didUpdateSpatialMappingPointClouds:];
+-[ARInternalSessionObserver session:requestedRunWithConfiguration:options:];
+
+@end
+
+@protocol ARSessionDelegate <ARSessionObserver>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[ARSessionDelegate session:didUpdateFrame:];
+-[ARSessionDelegate session:didUpdateAnchors:];
+-[ARSessionDelegate session:didAddAnchors:];
+-[ARSessionDelegate session:didRemoveAnchors:];
+
+@end
+
+@protocol ARSessionObserver <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[ARSessionObserver session:didChangeGeoTrackingStatus:];
+-[ARSessionObserver sessionInterruptionEnded:];
+-[ARSessionObserver session:didFailWithError:];
+-[ARSessionObserver sessionWasInterrupted:];
+-[ARSessionObserver session:cameraDidChangeTrackingState:];
+-[ARSessionObserver session:didOutputAudioSampleBuffer:];
+-[ARSessionObserver session:didOutputCollaborationData:];
+-[ARSessionObserver sessionShouldAttemptRelocalization:];
+
+@end
+
+@protocol NIDeviceCapability
+
+@required
+
+@property (TB,R,N) supportsPreciseDistanceMeasurement;
+@property (TB,R,N) supportsDirectionMeasurement;
+@property (TB,R,N) supportsCameraAssistance;
+@property (TB,R,N) supportsExtendedDistanceMeasurement;
+@property (TB,R,N) supportsDLTDOAMeasurement;
+
+/* required instance methods */
+-[NIDeviceCapability supportsDLTDOAMeasurement];
+-[NIDeviceCapability supportsExtendedDistanceMeasurement];
+-[NIDeviceCapability supportsPreciseDistanceMeasurement];
+-[NIDeviceCapability supportsDirectionMeasurement];
+-[NIDeviceCapability supportsCameraAssistance];
+
+@optional
+
+@end
+
+@protocol NIInternalDeviceCapability <NIDeviceCapability>
+
+@required
+
+@property (TB,R,N) supportsCoarseDistanceMeasurement;
+
+/* required instance methods */
+-[NIInternalDeviceCapability supportsCoarseDistanceMeasurement];
+
+@optional
+
+@end
+
+@protocol NSCoding
+
+@required
+
+/* required instance methods */
+-[NSCoding initWithCoder:];
+-[NSCoding encodeWithCoder:];
+
+@optional
+
+@end
+
+@protocol NSCopying
+
+@required
+
+/* required instance methods */
+-[NSCopying copyWithZone:];
+
+@optional
+
+@end
+
+@protocol NSObject
+
+@required
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* required instance methods */
+-[NSObject zone];
+-[NSObject retain];
+-[NSObject superclass];
+-[NSObject conformsToProtocol:];
+-[NSObject release];
+-[NSObject isMemberOfClass:];
+-[NSObject respondsToSelector:];
+-[NSObject isKindOfClass:];
+-[NSObject class];
+-[NSObject hash];
+-[NSObject description];
+-[NSObject autorelease];
+-[NSObject isProxy];
+-[NSObject retainCount];
+-[NSObject isEqual:];
+-[NSObject performSelector:];
+-[NSObject performSelector:withObject:];
+-[NSObject performSelector:withObject:withObject:];
+-[NSObject self];
+
+@optional
+
+/* optional instance methods */
+-[NSObject debugDescription];
+
+@end
+
+@protocol NSSecureCoding <NSCoding>
+
+@required
+
+@property (class, TB,R) supportsSecureCoding;
+
+/* class methods */
++[NSSecureCoding supportsSecureCoding];
+
+@optional
+
+@end
+
+@protocol UWBSessionDelegateProxyProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[UWBSessionDelegateProxyProtocol didGenerateShareableConfigurationData:forObject:];
+-[UWBSessionDelegateProxyProtocol didUpdateNearbyObjects:];
+-[UWBSessionDelegateProxyProtocol systemDidUpdateResourceUsageLimitExceeded:forSessionConfigurationTypeWithName:];
+-[UWBSessionDelegateProxyProtocol didUpdateHomeDeviceUWBRangingAvailability:];
+-[UWBSessionDelegateProxyProtocol didSuspendAcwgRanging:];
+-[UWBSessionDelegateProxyProtocol didProcessAcwgM1MsgWithResponse:error:];
+-[UWBSessionDelegateProxyProtocol didDiscoverNearbyObject:];
+-[UWBSessionDelegateProxyProtocol didUpdateDLTDOAMeasurements:];
+-[UWBSessionDelegateProxyProtocol object:didUpdateRegion:previousRegion:];
+-[UWBSessionDelegateProxyProtocol uwbSessionInterruptionReasonEnded:timestamp:];
+-[UWBSessionDelegateProxyProtocol didUpdateNICoordinates:];
+-[UWBSessionDelegateProxyProtocol systemDidUpdateState:];
+-[UWBSessionDelegateProxyProtocol relayDCKMessage:];
+-[UWBSessionDelegateProxyProtocol didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error:];
+-[UWBSessionDelegateProxyProtocol didUpdateAlgorithmState:forObject:];
+-[UWBSessionDelegateProxyProtocol didPrefetchAcwgUrsk:error:];
+-[UWBSessionDelegateProxyProtocol didUpdateState:forItem:];
+-[UWBSessionDelegateProxyProtocol requestAcwgRangingSessionSuspend:withSuspendTriggerReason:];
+-[UWBSessionDelegateProxyProtocol didReceiveRangingAuthRecommendation:forObject:];
+-[UWBSessionDelegateProxyProtocol didStartAcwgRanging:];
+-[UWBSessionDelegateProxyProtocol didUpdateMotionState:];
+-[UWBSessionDelegateProxyProtocol uwbSessionInterruptedWithReason:timestamp:];
+-[UWBSessionDelegateProxyProtocol didReceiveAopSFZoneUpdate:];
+-[UWBSessionDelegateProxyProtocol didProcessAcwgM3MsgWithResponse:error:];
+-[UWBSessionDelegateProxyProtocol didUpdateLocalDiscoveryToken:];
+-[UWBSessionDelegateProxyProtocol uwbSessionDidFailWithError:];
+-[UWBSessionDelegateProxyProtocol didRemoveNearbyObjects:withReason:];
+-[UWBSessionDelegateProxyProtocol didUpdateHealthStatus:];
+-[UWBSessionDelegateProxyProtocol uwbSessionDidInvalidateWithError:];
+
+@optional
+
+@end
+
+@protocol UWBSessionServerProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[UWBSessionServerProtocol activate:];
+-[UWBSessionServerProtocol pause:];
+-[UWBSessionServerProtocol generateDiscoveryToken];
+-[UWBSessionServerProtocol runWithConfiguration:reply:];
+
+@optional
+
+/* optional instance methods */
+-[UWBSessionServerProtocol processAcwgM3Msg:];
+-[UWBSessionServerProtocol prefetchAcwgUrsk:];
+-[UWBSessionServerProtocol processAcwgRangingSessionResumeRequestMsg:withResumeTriggerReason:];
+-[UWBSessionServerProtocol processVisionInput:];
+-[UWBSessionServerProtocol processAcwgM1Msg:withSessionTriggerReason:];
+-[UWBSessionServerProtocol _provideTruthTag:];
+-[UWBSessionServerProtocol suspendAcwgRanging:withSuspendTriggerReason:];
+-[UWBSessionServerProtocol getInteractableDiscoveryTokens:];
+-[UWBSessionServerProtocol _addObject:reply:];
+-[UWBSessionServerProtocol _processBluetoothSample:];
+-[UWBSessionServerProtocol _processCarKeyEvent:reply:];
+-[UWBSessionServerProtocol _processFindingEvent:reply:];
+-[UWBSessionServerProtocol _processSystemEvent:reply:];
+-[UWBSessionServerProtocol _removeObject:reply:];
+-[UWBSessionServerProtocol _setDebugURSK:transactionIdentifier:reply:];
+-[UWBSessionServerProtocol _setURSKTTL:reply:];
+-[UWBSessionServerProtocol arSessionDidFailWithError:];
+-[UWBSessionServerProtocol arSessionInterruptionEnded];
+-[UWBSessionServerProtocol arSessionWasInterrupted];
+-[UWBSessionServerProtocol arSessionWillRunWithInvalidConfiguration];
+-[UWBSessionServerProtocol deleteURSKs:];
+-[UWBSessionServerProtocol generateSOSBeaconDataForSubject:peerData:reply:];
+-[UWBSessionServerProtocol getActivelyInteractingDiscoveryTokens:];
+-[UWBSessionServerProtocol getLocalDevicePrintableState:];
+-[UWBSessionServerProtocol isExtendedDistanceMeasurementAllowed:];
+-[UWBSessionServerProtocol isPreciseRangingAllowed:];
+-[UWBSessionServerProtocol isRangingLimitExceeded:];
+-[UWBSessionServerProtocol notifySystemShutdownWithReason:reply:];
+-[UWBSessionServerProtocol processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:reply:];
+-[UWBSessionServerProtocol processDCKMessage:reply:];
+-[UWBSessionServerProtocol processUpdatedLockState:];
+-[UWBSessionServerProtocol queryDeviceCapabilities:];
+-[UWBSessionServerProtocol setLocalDeviceCanInteract:withDiscoveryTokens:reply:];
+-[UWBSessionServerProtocol setLocalDeviceDebugParameters:reply:];
+-[UWBSessionServerProtocol setLocalDeviceInteractableDiscoveryTokens:reply:];
+
+@end
+
+@interface BiasEstimatorFeatures : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    i _antennaMask;
+    i _rxAntennaPacket1;
+    i _rxAntennaPacket2;
+    d _timestamp;
+    d _uwbTime;
+    d _tofPicSecond;
+    d _rssiDbm;
+    d _soiRssiDbm;
+    d _toaNoiseRms;
+    d _toaPpwinRms;
+    d _toaPpwinPeak;
+    d _rttInitiator;
+    d _tatInitiator;
+    d _rttResponder;
+    d _tatResponder;
+    @"NSArray" _cirPacket1;
+    d _leadingEdgePacket1;
+    d _firstPathIndexPacket1;
+    @"NSArray" _cirPacket2;
+    d _leadingEdgePacket2;
+    d _firstPathIndexPacket2;
+}
+
+@property (Ti,N,V_antennaMask) antennaMask;
+@property (Td,N,V_timestamp) timestamp;
+@property (Td,N,V_uwbTime) uwbTime;
+@property (Td,N,V_tofPicSecond) tofPicSecond;
+@property (Td,N,V_rssiDbm) rssiDbm;
+@property (Td,N,V_soiRssiDbm) soiRssiDbm;
+@property (Td,N,V_toaNoiseRms) toaNoiseRms;
+@property (Td,N,V_toaPpwinRms) toaPpwinRms;
+@property (Td,N,V_toaPpwinPeak) toaPpwinPeak;
+@property (Td,N,V_rttInitiator) rttInitiator;
+@property (Td,N,V_tatInitiator) tatInitiator;
+@property (Td,N,V_rttResponder) rttResponder;
+@property (Td,N,V_tatResponder) tatResponder;
+@property (T@"NSArray",C,N,V_cirPacket1) cirPacket1;
+@property (Td,N,V_leadingEdgePacket1) leadingEdgePacket1;
+@property (Td,N,V_firstPathIndexPacket1) firstPathIndexPacket1;
+@property (Ti,N,V_rxAntennaPacket1) rxAntennaPacket1;
+@property (T@"NSArray",C,N,V_cirPacket2) cirPacket2;
+@property (Td,N,V_leadingEdgePacket2) leadingEdgePacket2;
+@property (Td,N,V_firstPathIndexPacket2) firstPathIndexPacket2;
+@property (Ti,N,V_rxAntennaPacket2) rxAntennaPacket2;
+
+/* class methods */
++[BiasEstimatorFeatures supportsSecureCoding];
+
+/* instance methods */
+-[BiasEstimatorFeatures timestamp];
+-[BiasEstimatorFeatures copyWithZone:];
+-[BiasEstimatorFeatures initWithCoder:];
+-[BiasEstimatorFeatures encodeWithCoder:];
+-[BiasEstimatorFeatures setTimestamp:];
+-[BiasEstimatorFeatures hash];
+-[BiasEstimatorFeatures description];
+-[BiasEstimatorFeatures isEqual:];
+-[BiasEstimatorFeatures setAntennaMask:];
+-[BiasEstimatorFeatures setToaNoiseRms:];
+-[BiasEstimatorFeatures rssiDbm];
+-[BiasEstimatorFeatures setToaPpwinRms:];
+-[BiasEstimatorFeatures uwbTime];
+-[BiasEstimatorFeatures antennaMask];
+-[BiasEstimatorFeatures cirPacket1];
+-[BiasEstimatorFeatures cirPacket2];
+-[BiasEstimatorFeatures firstPathIndexPacket1];
+-[BiasEstimatorFeatures firstPathIndexPacket2];
+-[BiasEstimatorFeatures initWithBiasEstimatorFeatures:];
+-[BiasEstimatorFeatures leadingEdgePacket1];
+-[BiasEstimatorFeatures leadingEdgePacket2];
+-[BiasEstimatorFeatures populateOrderedInputFeature];
+-[BiasEstimatorFeatures rttInitiator];
+-[BiasEstimatorFeatures rttResponder];
+-[BiasEstimatorFeatures rxAntennaPacket1];
+-[BiasEstimatorFeatures rxAntennaPacket2];
+-[BiasEstimatorFeatures setCirPacket1:];
+-[BiasEstimatorFeatures setCirPacket2:];
+-[BiasEstimatorFeatures setFirstPathIndexPacket1:];
+-[BiasEstimatorFeatures setFirstPathIndexPacket2:];
+-[BiasEstimatorFeatures setLeadingEdgePacket1:];
+-[BiasEstimatorFeatures setLeadingEdgePacket2:];
+-[BiasEstimatorFeatures setRssiDbm:];
+-[BiasEstimatorFeatures setRttInitiator:];
+-[BiasEstimatorFeatures setRttResponder:];
+-[BiasEstimatorFeatures setRxAntennaPacket1:];
+-[BiasEstimatorFeatures setRxAntennaPacket2:];
+-[BiasEstimatorFeatures setSoiRssiDbm:];
+-[BiasEstimatorFeatures setTatInitiator:];
+-[BiasEstimatorFeatures setTatResponder:];
+-[BiasEstimatorFeatures setToaPpwinPeak:];
+-[BiasEstimatorFeatures setTofPicSecond:];
+-[BiasEstimatorFeatures setUwbTime:];
+-[BiasEstimatorFeatures soiRssiDbm];
+-[BiasEstimatorFeatures tatInitiator];
+-[BiasEstimatorFeatures tatResponder];
+-[BiasEstimatorFeatures toaNoiseRms];
+-[BiasEstimatorFeatures toaPpwinPeak];
+-[BiasEstimatorFeatures toaPpwinRms];
+-[BiasEstimatorFeatures tofPicSecond];
+
+@end
+
+@interface BiasEstimatorOutputs : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSArray" _outProbabilities;
+    d _rawRange;
+    d _correctedRange;
+}
+
+@property (T@"NSArray",C,N,V_outProbabilities) outProbabilities;
+@property (Td,N,V_rawRange) rawRange;
+@property (Td,N,V_correctedRange) correctedRange;
+
+/* class methods */
++[BiasEstimatorOutputs supportsSecureCoding];
+
+/* instance methods */
+-[BiasEstimatorOutputs copyWithZone:];
+-[BiasEstimatorOutputs initWithCoder:];
+-[BiasEstimatorOutputs encodeWithCoder:];
+-[BiasEstimatorOutputs hash];
+-[BiasEstimatorOutputs description];
+-[BiasEstimatorOutputs isEqual:];
+-[BiasEstimatorOutputs correctedRange];
+-[BiasEstimatorOutputs initWithBiasEstimatorOutputs:];
+-[BiasEstimatorOutputs initWithOuputProbabilities:rawRange:correctedRange:];
+-[BiasEstimatorOutputs outProbabilities];
+-[BiasEstimatorOutputs populateOrderedBiasEstimatorOutputs];
+-[BiasEstimatorOutputs rawRange];
+-[BiasEstimatorOutputs setCorrectedRange:];
+-[BiasEstimatorOutputs setOutProbabilities:];
+-[BiasEstimatorOutputs setRawRange:];
+
+@end
+
+@interface Complex : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSNumber" _real;
+    @"NSNumber" _imag;
+}
+
+@property (T@"NSNumber",&,V_real) real;
+@property (T@"NSNumber",&,V_imag) imag;
+
+/* class methods */
++[Complex supportsSecureCoding];
+
+/* instance methods */
+-[Complex copyWithZone:];
+-[Complex initWithCoder:];
+-[Complex encodeWithCoder:];
+-[Complex hash];
+-[Complex description];
+-[Complex isEqual:];
+-[Complex imag];
+-[Complex initWithRealPart:imagPart:];
+-[Complex real];
+-[Complex setImag:];
+-[Complex setReal:];
+
+@end
+
+@interface NIAcwgConfiguration : NIConfiguration {
+    /* instance variables */
+    q _configurationTypeInternal;
+    S _lockBtConnHandle;
+    @"NSString" _lockIdentifier;
+    @"NSDictionary" _debugOptions;
+}
+
+@property (Tq,R) configurationType;
+@property (T@"NSString",C,V_lockIdentifier) lockIdentifier;
+@property (TS,V_lockBtConnHandle) lockBtConnHandle;
+@property (T@"NSDictionary",C,V_debugOptions) debugOptions;
+
+/* class methods */
++[NIAcwgConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIAcwgConfiguration descriptionInternal];
+-[NIAcwgConfiguration setDebugOptions:];
+-[NIAcwgConfiguration copyWithZone:];
+-[NIAcwgConfiguration initWithCoder:];
+-[NIAcwgConfiguration initWithConfiguration:];
+-[NIAcwgConfiguration debugOptions];
+-[NIAcwgConfiguration encodeWithCoder:];
+-[NIAcwgConfiguration configurationType];
+-[NIAcwgConfiguration hash];
+-[NIAcwgConfiguration description];
+-[NIAcwgConfiguration isEqual:];
+-[NIAcwgConfiguration initWithLockIdentifier:];
+-[NIAcwgConfiguration lockBtConnHandle];
+-[NIAcwgConfiguration lockIdentifier];
+-[NIAcwgConfiguration setLockBtConnHandle:];
+-[NIAcwgConfiguration setLockIdentifier:];
+
+@end
+
+@interface NIAcwgEventNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NIAcwgEventNotifier initWithParentSession:];
+-[NIAcwgEventNotifier notifyLockStatusChanged:];
+-[NIAcwgEventNotifier notifyUrskCreated:];
+
+@end
+
+@interface NIAcwgM1Msg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _channelBitmask;
+    C _finalData2Bitmask;
+    S _selectedProtocolVersion;
+    I _uwbSessionId;
+    @"NSArray" _supportedUwbConfigIds;
+    @"NSArray" _supportedPulseShapeCombos;
+}
+
+@property (T@"NSArray",R,N,V_supportedUwbConfigIds) supportedUwbConfigIds;
+@property (T@"NSArray",R,N,V_supportedPulseShapeCombos) supportedPulseShapeCombos;
+@property (TC,R,N,V_channelBitmask) channelBitmask;
+@property (TI,R,N,V_uwbSessionId) uwbSessionId;
+@property (TC,R,N,V_finalData2Bitmask) finalData2Bitmask;
+@property (TS,R,N,V_selectedProtocolVersion) selectedProtocolVersion;
+
+/* class methods */
++[NIAcwgM1Msg supportsSecureCoding];
+
+/* instance methods */
+-[NIAcwgM1Msg copyWithZone:];
+-[NIAcwgM1Msg initWithCoder:];
+-[NIAcwgM1Msg encodeWithCoder:];
+-[NIAcwgM1Msg description];
+-[NIAcwgM1Msg channelBitmask];
+-[NIAcwgM1Msg finalData2Bitmask];
+-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:];
+-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:finalData2Bitmask:];
+-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:finalData2Bitmask:selectedProtocolVersion:];
+-[NIAcwgM1Msg selectedProtocolVersion];
+-[NIAcwgM1Msg supportedPulseShapeCombos];
+-[NIAcwgM1Msg supportedUwbConfigIds];
+-[NIAcwgM1Msg toStruct];
+-[NIAcwgM1Msg uwbSessionId];
+
+@end
+
+@interface NIAcwgM2Msg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _selectedPulseShapeCombo;
+    C _selectedChannelBitmask;
+    C _minRanMultiplier;
+    C _supportedSlotBitmask;
+    C _supportedHoppingConfigBitmask;
+    C _selectedFinalData2Bitmask;
+    S _selectedUwbConfigId;
+    I _supportedSyncCodeIndexBitmask;
+}
+
+@property (TS,R,N,V_selectedUwbConfigId) selectedUwbConfigId;
+@property (TC,R,N,V_selectedPulseShapeCombo) selectedPulseShapeCombo;
+@property (TC,R,N,V_selectedChannelBitmask) selectedChannelBitmask;
+@property (TI,R,N,V_supportedSyncCodeIndexBitmask) supportedSyncCodeIndexBitmask;
+@property (TC,R,N,V_minRanMultiplier) minRanMultiplier;
+@property (TC,R,N,V_supportedSlotBitmask) supportedSlotBitmask;
+@property (TC,R,N,V_supportedHoppingConfigBitmask) supportedHoppingConfigBitmask;
+@property (TC,R,N,V_selectedFinalData2Bitmask) selectedFinalData2Bitmask;
+
+/* class methods */
++[NIAcwgM2Msg supportsSecureCoding];
++[NIAcwgM2Msg fromStruct:];
+
+/* instance methods */
+-[NIAcwgM2Msg copyWithZone:];
+-[NIAcwgM2Msg initWithCoder:];
+-[NIAcwgM2Msg encodeWithCoder:];
+-[NIAcwgM2Msg description];
+-[NIAcwgM2Msg initWithSelectedUwbConfigId:selectedPulseShapeCombo:selectedChannelBitmask:supportedSyncCodeIndexBitmask:minRanMultiplier:supportedSlotBitmask:supportedHoppingConfigBitmask:];
+-[NIAcwgM2Msg initWithSelectedUwbConfigId:selectedPulseShapeCombo:selectedChannelBitmask:supportedSyncCodeIndexBitmask:minRanMultiplier:supportedSlotBitmask:supportedHoppingConfigBitmask:selectedFinalData2Bitmask:];
+-[NIAcwgM2Msg minRanMultiplier];
+-[NIAcwgM2Msg selectedChannelBitmask];
+-[NIAcwgM2Msg selectedFinalData2Bitmask];
+-[NIAcwgM2Msg selectedPulseShapeCombo];
+-[NIAcwgM2Msg selectedUwbConfigId];
+-[NIAcwgM2Msg supportedHoppingConfigBitmask];
+-[NIAcwgM2Msg supportedSlotBitmask];
+-[NIAcwgM2Msg supportedSyncCodeIndexBitmask];
+-[NIAcwgM2Msg toStruct];
+
+@end
+
+@interface NIAcwgM3Msg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _selectedRanMultiplier;
+    C _selectedNumChapsPerSlot;
+    C _numResponders;
+    C _numSlotsPerRound;
+    C _selectedHoppingConfigBitmask;
+    C _macMode;
+    I _supportedSyncCodeIndexBitmask;
+}
+
+@property (TC,R,N,V_selectedRanMultiplier) selectedRanMultiplier;
+@property (TC,R,N,V_selectedNumChapsPerSlot) selectedNumChapsPerSlot;
+@property (TC,R,N,V_numResponders) numResponders;
+@property (TC,R,N,V_numSlotsPerRound) numSlotsPerRound;
+@property (TI,R,N,V_supportedSyncCodeIndexBitmask) supportedSyncCodeIndexBitmask;
+@property (TC,R,N,V_selectedHoppingConfigBitmask) selectedHoppingConfigBitmask;
+@property (TC,R,N,V_macMode) macMode;
+
+/* class methods */
++[NIAcwgM3Msg supportsSecureCoding];
+
+/* instance methods */
+-[NIAcwgM3Msg copyWithZone:];
+-[NIAcwgM3Msg initWithCoder:];
+-[NIAcwgM3Msg encodeWithCoder:];
+-[NIAcwgM3Msg description];
+-[NIAcwgM3Msg macMode];
+-[NIAcwgM3Msg initWithSelectedRanMultiplier:selectedNumChapsPerSlot:numResponders:numSlotsPerRound:supportedSyncCodeIndexBitmask:selectedHoppingConfigBitmask:macMode:];
+-[NIAcwgM3Msg numResponders];
+-[NIAcwgM3Msg numSlotsPerRound];
+-[NIAcwgM3Msg selectedHoppingConfigBitmask];
+-[NIAcwgM3Msg selectedNumChapsPerSlot];
+-[NIAcwgM3Msg selectedRanMultiplier];
+-[NIAcwgM3Msg supportedSyncCodeIndexBitmask];
+-[NIAcwgM3Msg toStruct];
+
+@end
+
+@interface NIAcwgM4Msg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _selectedSyncCodeIndex;
+    I _stsIndex0;
+    I _hopKey;
+    Q _uwbTime0;
+}
+
+@property (TI,R,N,V_stsIndex0) stsIndex0;
+@property (TQ,R,N,V_uwbTime0) uwbTime0;
+@property (TI,R,N,V_hopKey) hopKey;
+@property (TC,R,N,V_selectedSyncCodeIndex) selectedSyncCodeIndex;
+
+/* class methods */
++[NIAcwgM4Msg supportsSecureCoding];
++[NIAcwgM4Msg fromStruct:];
+
+/* instance methods */
+-[NIAcwgM4Msg copyWithZone:];
+-[NIAcwgM4Msg initWithCoder:];
+-[NIAcwgM4Msg encodeWithCoder:];
+-[NIAcwgM4Msg description];
+-[NIAcwgM4Msg hopKey];
+-[NIAcwgM4Msg initWithStsIndex0:uwbTime0:hopKey:selectedSyncCodeIndex:];
+-[NIAcwgM4Msg selectedSyncCodeIndex];
+-[NIAcwgM4Msg stsIndex0];
+-[NIAcwgM4Msg toStruct];
+-[NIAcwgM4Msg uwbTime0];
+
+@end
+
+@interface NIAcwgRangingSessionResumeResponseMsg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    I _stsIndex0;
+    Q _uwbTime0;
+}
+
+@property (TI,R,N,V_stsIndex0) stsIndex0;
+@property (TQ,R,N,V_uwbTime0) uwbTime0;
+
+/* class methods */
++[NIAcwgRangingSessionResumeResponseMsg supportsSecureCoding];
++[NIAcwgRangingSessionResumeResponseMsg fromStruct:];
+
+/* instance methods */
+-[NIAcwgRangingSessionResumeResponseMsg copyWithZone:];
+-[NIAcwgRangingSessionResumeResponseMsg initWithCoder:];
+-[NIAcwgRangingSessionResumeResponseMsg encodeWithCoder:];
+-[NIAcwgRangingSessionResumeResponseMsg description];
+-[NIAcwgRangingSessionResumeResponseMsg initWithStsIndex0:uwbTime0:];
+-[NIAcwgRangingSessionResumeResponseMsg stsIndex0];
+-[NIAcwgRangingSessionResumeResponseMsg uwbTime0];
+
+@end
+
+@interface NIAcwgSFZoneUpdate : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    c _lastBtRssiValue;
+    B _ioStateDisplacing;
+    B _explicitPAITriggered;
+    B _currentSFInBubble;
+    S _btConnHandle;
+    q _currentZone;
+}
+
+@property (Tq,R,N,V_currentZone) currentZone;
+@property (TS,R,N,V_btConnHandle) btConnHandle;
+@property (Tc,R,N,V_lastBtRssiValue) lastBtRssiValue;
+@property (TB,R,N,V_ioStateDisplacing) ioStateDisplacing;
+@property (TB,R,N,V_explicitPAITriggered) explicitPAITriggered;
+@property (TB,R,N,V_currentSFInBubble) currentSFInBubble;
+
+/* class methods */
++[NIAcwgSFZoneUpdate supportsSecureCoding];
+
+/* instance methods */
+-[NIAcwgSFZoneUpdate copyWithZone:];
+-[NIAcwgSFZoneUpdate initWithCoder:];
+-[NIAcwgSFZoneUpdate encodeWithCoder:];
+-[NIAcwgSFZoneUpdate description];
+-[NIAcwgSFZoneUpdate lastBtRssiValue];
+-[NIAcwgSFZoneUpdate btConnHandle];
+-[NIAcwgSFZoneUpdate currentSFInBubble];
+-[NIAcwgSFZoneUpdate currentZone];
+-[NIAcwgSFZoneUpdate explicitPAITriggered];
+-[NIAcwgSFZoneUpdate initWithSFZone:btConnHandle:lastBtRssiValue:ioStateDisplacing:explicitPAITriggered:currentSFInBubble:];
+-[NIAcwgSFZoneUpdate ioStateDisplacing];
+
+@end
+
+@interface NIAlgorithmConvergence : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    q _status;
+    @"NSArray" _reasons;
+}
+
+@property (Tq,N,V_status) status;
+@property (T@"NSArray",C,N,V_reasons) reasons;
+
+/* class methods */
++[NIAlgorithmConvergence supportsSecureCoding];
+
+/* instance methods */
+-[NIAlgorithmConvergence status];
+-[NIAlgorithmConvergence copyWithZone:];
+-[NIAlgorithmConvergence initWithCoder:];
+-[NIAlgorithmConvergence reasons];
+-[NIAlgorithmConvergence encodeWithCoder:];
+-[NIAlgorithmConvergence hash];
+-[NIAlgorithmConvergence setStatus:];
+-[NIAlgorithmConvergence isEqual:];
+-[NIAlgorithmConvergence setReasons:];
+-[NIAlgorithmConvergence initWithStatus:andReasons:];
+-[NIAlgorithmConvergence reasonsPrivate];
+
+@end
+
+@interface NIAlgorithmConvergenceState : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    B _insufficientSignalStrength;
+    B _insufficientHorizontalSweep;
+    B _insufficientVerticalSweep;
+    B _insufficientMovement;
+    B _insufficientLighting;
+    q _convergence;
+}
+
+@property (Tq,N,V_convergence) convergence;
+@property (TB,N,V_insufficientSignalStrength) insufficientSignalStrength;
+@property (TB,N,V_insufficientHorizontalSweep) insufficientHorizontalSweep;
+@property (TB,N,V_insufficientVerticalSweep) insufficientVerticalSweep;
+@property (TB,N,V_insufficientMovement) insufficientMovement;
+@property (TB,N,V_insufficientLighting) insufficientLighting;
+
+/* class methods */
++[NIAlgorithmConvergenceState supportsSecureCoding];
+
+/* instance methods */
+-[NIAlgorithmConvergenceState copyWithZone:];
+-[NIAlgorithmConvergenceState initWithCoder:];
+-[NIAlgorithmConvergenceState encodeWithCoder:];
+-[NIAlgorithmConvergenceState hash];
+-[NIAlgorithmConvergenceState description];
+-[NIAlgorithmConvergenceState isEqual:];
+-[NIAlgorithmConvergenceState setConvergence:];
+-[NIAlgorithmConvergenceState setInsufficientHorizontalSweep:];
+-[NIAlgorithmConvergenceState convergence];
+-[NIAlgorithmConvergenceState initWithAlgorithmConvergenceState:];
+-[NIAlgorithmConvergenceState initWithConvergenceStatus:];
+-[NIAlgorithmConvergenceState insufficientHorizontalSweep];
+-[NIAlgorithmConvergenceState insufficientLighting];
+-[NIAlgorithmConvergenceState insufficientMovement];
+-[NIAlgorithmConvergenceState insufficientSignalStrength];
+-[NIAlgorithmConvergenceState insufficientVerticalSweep];
+-[NIAlgorithmConvergenceState setInsufficientLighting:];
+-[NIAlgorithmConvergenceState setInsufficientMovement:];
+-[NIAlgorithmConvergenceState setInsufficientSignalStrength:];
+-[NIAlgorithmConvergenceState setInsufficientVerticalSweep:];
+
+@end
+
+@interface NIBluetoothHostTimeSyncResponse : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _uwbDeviceTimeUncertainty;
+    C _uwbClockSkewMeasurementAvailable;
+    C _success;
+    S _deviceMaxPpm;
+    S _retryDelay;
+    Q _deviceEventCount;
+    Q _uwbDeviceTimeUs;
+}
+
+@property (TQ,R,N,V_deviceEventCount) deviceEventCount;
+@property (TQ,R,N,V_uwbDeviceTimeUs) uwbDeviceTimeUs;
+@property (TC,R,N,V_uwbDeviceTimeUncertainty) uwbDeviceTimeUncertainty;
+@property (TC,R,N,V_uwbClockSkewMeasurementAvailable) uwbClockSkewMeasurementAvailable;
+@property (TS,R,N,V_deviceMaxPpm) deviceMaxPpm;
+@property (TC,R,N,V_success) success;
+@property (TS,R,N,V_retryDelay) retryDelay;
+
+/* class methods */
++[NIBluetoothHostTimeSyncResponse supportsSecureCoding];
+
+/* instance methods */
+-[NIBluetoothHostTimeSyncResponse success];
+-[NIBluetoothHostTimeSyncResponse copyWithZone:];
+-[NIBluetoothHostTimeSyncResponse initWithCoder:];
+-[NIBluetoothHostTimeSyncResponse encodeWithCoder:];
+-[NIBluetoothHostTimeSyncResponse description];
+-[NIBluetoothHostTimeSyncResponse retryDelay];
+-[NIBluetoothHostTimeSyncResponse uwbDeviceTimeUs];
+-[NIBluetoothHostTimeSyncResponse deviceEventCount];
+-[NIBluetoothHostTimeSyncResponse deviceMaxPpm];
+-[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:];
+-[NIBluetoothHostTimeSyncResponse uwbClockSkewMeasurementAvailable];
+-[NIBluetoothHostTimeSyncResponse uwbDeviceTimeUncertainty];
+
+@end
+
+@interface NIBluetoothSample : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    i _channel;
+    d _rssi;
+    @"NSString" _identifier;
+    @"NSString" _model;
+    d _machContinuousTimeSeconds;
+    @"NSString" _partIdentifier;
+    @"NSString" _name;
+    @"NSData" _presenceConfigData;
+    q _devicePlacement;
+}
+
+@property (T@"NSString",R,V_partIdentifier) partIdentifier;
+@property (T@"NSString",C,N,V_name) name;
+@property (T@"NSData",C,N,V_presenceConfigData) presenceConfigData;
+@property (Tq,V_devicePlacement) devicePlacement;
+@property (Td,R,V_rssi) rssi;
+@property (T@"NSString",R,V_identifier) identifier;
+@property (T@"NSString",R,V_model) model;
+@property (Ti,R,V_channel) channel;
+@property (Td,R,V_machContinuousTimeSeconds) machContinuousTimeSeconds;
+
+/* class methods */
++[NIBluetoothSample supportsSecureCoding];
+
+/* instance methods */
+-[NIBluetoothSample descriptionInternal];
+-[NIBluetoothSample name];
+-[NIBluetoothSample rssi];
+-[NIBluetoothSample copyWithZone:];
+-[NIBluetoothSample initWithCoder:];
+-[NIBluetoothSample channel];
+-[NIBluetoothSample setPresenceConfigData:];
+-[NIBluetoothSample identifier];
+-[NIBluetoothSample presenceConfigData];
+-[NIBluetoothSample encodeWithCoder:];
+-[NIBluetoothSample hash];
+-[NIBluetoothSample model];
+-[NIBluetoothSample setName:];
+-[NIBluetoothSample description];
+-[NIBluetoothSample isEqual:];
+-[NIBluetoothSample machContinuousTimeSeconds];
+-[NIBluetoothSample devicePlacement];
+-[NIBluetoothSample initWithBluetoothSample:];
+-[NIBluetoothSample initWithRSSI:identifier:model:channel:machContinuousTimeSeconds:];
+-[NIBluetoothSample initWithRSSI:identifier:model:channel:machContinuousTimeSeconds:partIdentifier:name:presenceConfigData:];
+-[NIBluetoothSample partIdentifier];
+-[NIBluetoothSample setDevicePlacement:];
+
+@end
+
+@interface NICarKeyConfiguration : NIConfiguration {
+    /* instance variables */
+    q _configurationTypeInternal;
+    S _protocolVersion;
+    @"NSString" _vehicleIdentifier;
+    @"NSDictionary" _debugOptions;
+}
+
+@property (Tq,R) configurationType;
+@property (T@"NSString",C,V_vehicleIdentifier) vehicleIdentifier;
+@property (TS,V_protocolVersion) protocolVersion;
+@property (T@"NSDictionary",C,V_debugOptions) debugOptions;
+
+/* class methods */
++[NICarKeyConfiguration supportsSecureCoding];
++[NICarKeyConfiguration _labTestModeConfigurationWithOptions:];
++[NICarKeyConfiguration _vehicleSimConfigurationWithOptions:];
+
+/* instance methods */
+-[NICarKeyConfiguration descriptionInternal];
+-[NICarKeyConfiguration protocolVersion];
+-[NICarKeyConfiguration setProtocolVersion:];
+-[NICarKeyConfiguration initVehicleSimConfiguration:];
+-[NICarKeyConfiguration setDebugOptions:];
+-[NICarKeyConfiguration copyWithZone:];
+-[NICarKeyConfiguration initWithVehicleIdentifier:];
+-[NICarKeyConfiguration initWithCoder:];
+-[NICarKeyConfiguration initWithConfiguration:];
+-[NICarKeyConfiguration debugOptions];
+-[NICarKeyConfiguration encodeWithCoder:];
+-[NICarKeyConfiguration configurationType];
+-[NICarKeyConfiguration setVehicleIdentifier:];
+-[NICarKeyConfiguration hash];
+-[NICarKeyConfiguration canUpdateToConfiguration:];
+-[NICarKeyConfiguration description];
+-[NICarKeyConfiguration initLabTestModeConfiguration:];
+-[NICarKeyConfiguration isEqual:];
+-[NICarKeyConfiguration vehicleIdentifier];
+
+@end
+
+@interface NICarKeyEventNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NICarKeyEventNotifier initWithParentSession:];
+-[NICarKeyEventNotifier notifyRangingIntentSentToVehicleWithReason:];
+-[NICarKeyEventNotifier notifyVehicleLockedWithReason:];
+-[NICarKeyEventNotifier notifyVehicleReadyToDriveWithReason:];
+-[NICarKeyEventNotifier notifyVehicleSentRangingSuspendedSubEvent];
+-[NICarKeyEventNotifier notifyVehicleTerminatedRangingSession];
+-[NICarKeyEventNotifier notifyVehicleUnlockedWithReason:];
+
+@end
+
+@interface NIConfiguration : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    B _supportsCameraAssistance;
+    Q _suspensionPolicy;
+    Q _enabledGestures;
+}
+
+@property (TB,V_supportsCameraAssistance) supportsCameraAssistance;
+@property (TQ,V_suspensionPolicy) suspensionPolicy;
+@property (TQ,V_enabledGestures) enabledGestures;
+
+/* class methods */
++[NIConfiguration supportsSecureCoding];
++[NIConfiguration new];
+
+/* instance methods */
+-[NIConfiguration suspensionPolicy];
+-[NIConfiguration _internalIsExtendedDistanceMeasurementEnabled];
+-[NIConfiguration enabledGestures];
+-[NIConfiguration setEnabledGestures:];
+-[NIConfiguration descriptionInternal];
+-[NIConfiguration _internalIsMemoryAssertionRequired];
+-[NIConfiguration setSuspensionPolicy:];
+-[NIConfiguration setSupportsCameraAssistance:];
+-[NIConfiguration _internalIsCameraAssistanceEnabled];
+-[NIConfiguration _internalIsCameraAssistanceInClientProcess];
+-[NIConfiguration _internalIsPowerAssertionRequired];
+-[NIConfiguration init];
+-[NIConfiguration copyWithZone:];
+-[NIConfiguration initWithCoder:];
+-[NIConfiguration initWithConfiguration:];
+-[NIConfiguration initInternal];
+-[NIConfiguration encodeWithCoder:];
+-[NIConfiguration supportsCameraAssistance];
+
+@end
+
+@interface NIDLTDOAConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    q _networkIdentifier;
+    @"NSDictionary" _debugParameters;
+}
+
+@property (T@"NSDictionary",C,V_debugParameters) debugParameters;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (Tq,N,V_networkIdentifier) networkIdentifier;
+
+/* class methods */
++[NIDLTDOAConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIDLTDOAConfiguration descriptionInternal];
+-[NIDLTDOAConfiguration _internalIsCameraAssistanceEnabled];
+-[NIDLTDOAConfiguration copyWithZone:];
+-[NIDLTDOAConfiguration initWithCoder:];
+-[NIDLTDOAConfiguration debugParameters];
+-[NIDLTDOAConfiguration isCameraAssistanceEnabled];
+-[NIDLTDOAConfiguration encodeWithCoder:];
+-[NIDLTDOAConfiguration setDebugParameters:];
+-[NIDLTDOAConfiguration hash];
+-[NIDLTDOAConfiguration setCameraAssistanceEnabled:];
+-[NIDLTDOAConfiguration description];
+-[NIDLTDOAConfiguration isEqual:];
+-[NIDLTDOAConfiguration networkIdentifier];
+-[NIDLTDOAConfiguration setNetworkIdentifier:];
+-[NIDLTDOAConfiguration initWithConfigParametersOverride:];
+-[NIDLTDOAConfiguration initWithNetworkIdentifier:];
+
+@end
+
+@interface NIDLTDOACoordinatesUpdate : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    q _coordinatesType;
+     _coordinates;
+}
+
+@property (Tq,R,N,V_coordinatesType) coordinatesType;
+@property (T,R,N,V_coordinates) coordinates;
+
+/* class methods */
++[NIDLTDOACoordinatesUpdate supportsSecureCoding];
+
+/* instance methods */
+-[NIDLTDOACoordinatesUpdate copyWithZone:];
+-[NIDLTDOACoordinatesUpdate initWithCoder:];
+-[NIDLTDOACoordinatesUpdate encodeWithCoder:];
+-[NIDLTDOACoordinatesUpdate hash];
+-[NIDLTDOACoordinatesUpdate coordinates];
+-[NIDLTDOACoordinatesUpdate description];
+-[NIDLTDOACoordinatesUpdate isEqual:];
+-[NIDLTDOACoordinatesUpdate coordinatesType];
+-[NIDLTDOACoordinatesUpdate initWithDLTDOACoordinatesType:coordinates:];
+
+@end
+
+@interface NIDLTDOAMeasurement : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    Q _address;
+    q _measurementType;
+    q _coordinatesType;
+    d _transmitTime;
+    d _receiveTime;
+    d _signalStrength;
+    d _carrierFrequencyOffset;
+     _coordinates;
+}
+
+@property (TQ,R,N,V_address) address;
+@property (Tq,R,N,V_measurementType) measurementType;
+@property (Td,R,N,V_transmitTime) transmitTime;
+@property (Td,R,N,V_receiveTime) receiveTime;
+@property (Td,R,N,V_signalStrength) signalStrength;
+@property (Td,R,N,V_carrierFrequencyOffset) carrierFrequencyOffset;
+@property (Tq,R,N,V_coordinatesType) coordinatesType;
+@property (T,R,N,V_coordinates) coordinates;
+
+/* class methods */
++[NIDLTDOAMeasurement supportsSecureCoding];
+
+/* instance methods */
+-[NIDLTDOAMeasurement signalStrength];
+-[NIDLTDOAMeasurement setAddress:];
+-[NIDLTDOAMeasurement setSignalStrength:];
+-[NIDLTDOAMeasurement copyWithZone:];
+-[NIDLTDOAMeasurement initWithCoder:];
+-[NIDLTDOAMeasurement address];
+-[NIDLTDOAMeasurement encodeWithCoder:];
+-[NIDLTDOAMeasurement hash];
+-[NIDLTDOAMeasurement coordinates];
+-[NIDLTDOAMeasurement description];
+-[NIDLTDOAMeasurement isEqual:];
+-[NIDLTDOAMeasurement setCoordinates:];
+-[NIDLTDOAMeasurement coordinatesType];
+-[NIDLTDOAMeasurement measurementType];
+-[NIDLTDOAMeasurement setReceiveTime:];
+-[NIDLTDOAMeasurement carrierFrequencyOffset];
+-[NIDLTDOAMeasurement initWithAnchorAddress:measurementType:coordinatesType:transmitTime:receiveTime:signalStrength:carrierFrequencyOffset:coordinates:];
+-[NIDLTDOAMeasurement receiveTime];
+-[NIDLTDOAMeasurement setCarrierFrequencyOffset:];
+-[NIDLTDOAMeasurement setCoordinatesType:];
+-[NIDLTDOAMeasurement setMeasurementType:];
+-[NIDLTDOAMeasurement setTransmitTime:];
+-[NIDLTDOAMeasurement transmitTime];
+
+@end
+
+@interface NIDeviceCapabilities : NSObject <NIInternalDeviceCapability> {
+    /* instance variables */
+    B _supportsPreciseDistanceMeasurement;
+    B _supportsDirectionMeasurement;
+    B _supportsCameraAssistance;
+    B _supportsCoarseDistanceMeasurement;
+    B _supportsExtendedDistanceMeasurement;
+    B _supportsDLTDOAMeasurement;
+}
+
+@property (TB,R,N,V_supportsCoarseDistanceMeasurement) supportsCoarseDistanceMeasurement;
+@property (TB,R,N,V_supportsPreciseDistanceMeasurement) supportsPreciseDistanceMeasurement;
+@property (TB,R,N,V_supportsDirectionMeasurement) supportsDirectionMeasurement;
+@property (TB,R,N,V_supportsCameraAssistance) supportsCameraAssistance;
+@property (TB,R,N,V_supportsExtendedDistanceMeasurement) supportsExtendedDistanceMeasurement;
+@property (TB,R,N,V_supportsDLTDOAMeasurement) supportsDLTDOAMeasurement;
+
+/* class methods */
++[NIDeviceCapabilities new];
+
+/* instance methods */
+-[NIDeviceCapabilities supportsDLTDOAMeasurement];
+-[NIDeviceCapabilities init];
+-[NIDeviceCapabilities supportsCoarseDistanceMeasurement];
+-[NIDeviceCapabilities supportsExtendedDistanceMeasurement];
+-[NIDeviceCapabilities supportsPreciseDistanceMeasurement];
+-[NIDeviceCapabilities toBitmap];
+-[NIDeviceCapabilities initWithBitmap:];
+-[NIDeviceCapabilities initWithFineRangingSupport:aoaSupport:extendedDistanceMeasurementSupport:syntheticApertureSupport:dltdoaSupport:];
+-[NIDeviceCapabilities initWithFineRangingSupport:coarseRangingSupport:aoaSupport:extendedDistanceMeasurementSupport:syntheticApertureSupport:dltdoaSupport:];
+-[NIDeviceCapabilities supportsDirectionMeasurement];
+-[NIDeviceCapabilities supportsCameraAssistance];
+
+@end
+
+@interface NIDevicePresenceConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    Q _monitoringOption;
+    Q _allowedDevices;
+    @"NIRegionPredicate" _innerBoundary;
+    @"NIRegionPredicate" _outerBoundary;
+    @"NSArray" _monitoredRegions;
+    @"NIDiscoveryToken" _token;
+}
+
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (TQ,V_monitoringOption) monitoringOption;
+@property (TQ,V_allowedDevices) allowedDevices;
+@property (T@"NIRegionPredicate",R,V_innerBoundary) innerBoundary;
+@property (T@"NIRegionPredicate",R,V_outerBoundary) outerBoundary;
+@property (T@"NSArray",R,V_monitoredRegions) monitoredRegions;
+@property (T@"NIDiscoveryToken",R,V_token) token;
+
+/* class methods */
++[NIDevicePresenceConfiguration supportsSecureCoding];
++[NIDevicePresenceConfiguration _validateRegionPredicates:outer:];
++[NIDevicePresenceConfiguration _validateRegionIsPreset:];
++[NIDevicePresenceConfiguration _radiusFromDevicePresencePreset:];
++[NIDevicePresenceConfiguration _NIDevicePresenceMonitoringOptionToString:];
+
+/* instance methods */
+-[NIDevicePresenceConfiguration descriptionInternal];
+-[NIDevicePresenceConfiguration _internalIsCameraAssistanceEnabled];
+-[NIDevicePresenceConfiguration monitoringOption];
+-[NIDevicePresenceConfiguration initWithInnerBoundary:outerBoundary:monitoringOption:allowedDevices:error:];
+-[NIDevicePresenceConfiguration outerBoundary];
+-[NIDevicePresenceConfiguration copyWithZone:];
+-[NIDevicePresenceConfiguration token];
+-[NIDevicePresenceConfiguration initWithCoder:];
+-[NIDevicePresenceConfiguration initWithDiscoveryToken:regions:preferredUpdateRate:error:];
+-[NIDevicePresenceConfiguration setAllowedDevices:];
+-[NIDevicePresenceConfiguration allowedDevices];
+-[NIDevicePresenceConfiguration isCameraAssistanceEnabled];
+-[NIDevicePresenceConfiguration encodeWithCoder:];
+-[NIDevicePresenceConfiguration monitoredRegions];
+-[NIDevicePresenceConfiguration innerBoundary];
+-[NIDevicePresenceConfiguration hash];
+-[NIDevicePresenceConfiguration setCameraAssistanceEnabled:];
+-[NIDevicePresenceConfiguration initWithInnerBoundary:outerBoundary:error:];
+-[NIDevicePresenceConfiguration description];
+-[NIDevicePresenceConfiguration setMonitoringOption:];
+-[NIDevicePresenceConfiguration isEqual:];
+
+@end
+
+@interface NIDevicePresenceNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NIDevicePresenceNotifier initWithParentSession:];
+-[NIDevicePresenceNotifier notifyBluetoothSample:];
+
+@end
+
+@interface NIDiscoveryToken : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSData" _rawToken;
+    @"NSNumber" _shortDeviceAddress;
+    @"NSData" _identifyingSequence;
+}
+
+@property (T@"NSData",R,C,V_rawToken) rawToken;
+@property (T@"NSString",R) rawTokenAsString;
+@property (Tq,R) tokenVariant;
+@property (T@"<NIDeviceCapability>",R,C,N) deviceCapabilities;
+
+/* class methods */
++[NIDiscoveryToken supportsSecureCoding];
++[NIDiscoveryToken generateTokenWithUUID:];
++[NIDiscoveryToken _identifyingSequenceFromBytes:];
++[NIDiscoveryToken deserialize:];
++[NIDiscoveryToken serialize:];
++[NIDiscoveryToken generateDiscoveryTokenFromBeaconIdentifier:];
++[NIDiscoveryToken generateFindingTokenWithIRK:forExternalUse:];
++[NIDiscoveryToken generateFindingTokenWithServiceID:deviceName:];
++[NIDiscoveryToken generateFindingTokenWithIRK:];
+
+/* instance methods */
+-[NIDiscoveryToken descriptionInternal];
+-[NIDiscoveryToken tokenVariant];
+-[NIDiscoveryToken copyWithZone:];
+-[NIDiscoveryToken initWithCoder:];
+-[NIDiscoveryToken initWithDeviceAddress:];
+-[NIDiscoveryToken shortDeviceAddress];
+-[NIDiscoveryToken objectInRawTokenOPACKDictForKey:];
+-[NIDiscoveryToken rawTokenAsString];
+-[NIDiscoveryToken initWithBytes:];
+-[NIDiscoveryToken rawToken];
+-[NIDiscoveryToken encodeWithCoder:];
+-[NIDiscoveryToken deviceCapabilities];
+-[NIDiscoveryToken hash];
+-[NIDiscoveryToken description];
+-[NIDiscoveryToken getIRK];
+-[NIDiscoveryToken getSessionIdentifier];
+-[NIDiscoveryToken isEqual:];
+
+@end
+
+@interface NIExportedObjectForwarder : NSObject {
+    /* instance variables */
+    @ _exportedObject;
+    # _exportedObjectClass;
+}
+
+@property (T@,W,N,V_exportedObject) exportedObject;
+@property (T#,&,N,V_exportedObjectClass) exportedObjectClass;
+
+/* instance methods */
+-[NIExportedObjectForwarder forwardingTargetForSelector:];
+-[NIExportedObjectForwarder initWithExportedObject:];
+-[NIExportedObjectForwarder exportedObject];
+-[NIExportedObjectForwarder methodSignatureForSelector:];
+-[NIExportedObjectForwarder exportedObjectClass];
+-[NIExportedObjectForwarder setExportedObjectClass:];
+-[NIExportedObjectForwarder setExportedObject:];
+-[NIExportedObjectForwarder forwardInvocation:];
+
+@end
+
+@interface NIFindingConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    B _cameraAssistanceInClientProcess;
+    B _isFinder;
+    B _isObserver;
+    q _preferredUpdateRate;
+    q _preferredDiscoveryPriority;
+    @"NSArray" _monitoredRegions;
+    q _configType;
+    @"NIDiscoveryToken" _specifiedToken;
+    @"NSDictionary" _debugParameters;
+    q _discoveryTokenVariant;
+    q _requestedMeasurementQuality;
+}
+
+@property (TB,N,V_isFinder) isFinder;
+@property (TB,N,V_isObserver) isObserver;
+@property (Tq,N,V_configType) configType;
+@property (T@"NIDiscoveryToken",C,N,V_specifiedToken) specifiedToken;
+@property (T@"NIDiscoveryToken",R,C,N) findingDiscoveryToken;
+@property (T@"NSDictionary",C,N,V_debugParameters) debugParameters;
+@property (Tq,N,V_discoveryTokenVariant) discoveryTokenVariant;
+@property (Tq,N,V_requestedMeasurementQuality) requestedMeasurementQuality;
+@property (T@"NIDiscoveryToken",R,C,N) sessionDiscoveryToken;
+@property (Tq,N,V_preferredUpdateRate) preferredUpdateRate;
+@property (Tq,N,V_preferredDiscoveryPriority) preferredDiscoveryPriority;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (TB,N,GisCameraAssistanceInClientProcess,V_cameraAssistanceInClientProcess) cameraAssistanceInClientProcess;
+@property (T@"NSArray",&,V_monitoredRegions) monitoredRegions;
+
+/* class methods */
++[NIFindingConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIFindingConfiguration isFinder];
+-[NIFindingConfiguration descriptionInternal];
+-[NIFindingConfiguration _internalIsCameraAssistanceEnabled];
+-[NIFindingConfiguration _internalIsCameraAssistanceInClientProcess];
+-[NIFindingConfiguration setMonitoredRegions:];
+-[NIFindingConfiguration copyWithZone:];
+-[NIFindingConfiguration initWithCoder:];
+-[NIFindingConfiguration setPreferredUpdateRate:];
+-[NIFindingConfiguration debugParameters];
+-[NIFindingConfiguration isCameraAssistanceEnabled];
+-[NIFindingConfiguration encodeWithCoder:];
+-[NIFindingConfiguration setDebugParameters:];
+-[NIFindingConfiguration monitoredRegions];
+-[NIFindingConfiguration hash];
+-[NIFindingConfiguration canUpdateToConfiguration:];
+-[NIFindingConfiguration preferredUpdateRate];
+-[NIFindingConfiguration setCameraAssistanceEnabled:];
+-[NIFindingConfiguration description];
+-[NIFindingConfiguration isEqual:];
+-[NIFindingConfiguration configType];
+-[NIFindingConfiguration setConfigType:];
+-[NIFindingConfiguration isObserver];
+-[NIFindingConfiguration setRequestedMeasurementQuality:];
+-[NIFindingConfiguration _initInternalWithConfigType:isFinder:isObserver:specifiedToken:preferredUpdateRate:requestedMeasurementQuality:];
+-[NIFindingConfiguration discoveryTokenVariant];
+-[NIFindingConfiguration findingDiscoveryToken];
+-[NIFindingConfiguration initWithDiscoveryToken:requestedUpdateRate:requestedMeasaurementQuality:];
+-[NIFindingConfiguration initWithRole:discoveryToken:preferredUpdateRate:];
+-[NIFindingConfiguration isCameraAssistanceInClientProcess];
+-[NIFindingConfiguration preferredDiscoveryPriority];
+-[NIFindingConfiguration requestedMeasurementQuality];
+-[NIFindingConfiguration sessionDiscoveryToken];
+-[NIFindingConfiguration setCameraAssistanceInClientProcess:];
+-[NIFindingConfiguration setDiscoveryTokenVariant:];
+-[NIFindingConfiguration setIsFinder:];
+-[NIFindingConfiguration setIsObserver:];
+-[NIFindingConfiguration setPreferredDiscoveryPriority:];
+-[NIFindingConfiguration setSpecifiedToken:];
+-[NIFindingConfiguration specifiedToken];
+
+@end
+
+@interface NIFindingNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NIFindingNotifier initWithParentSession:];
+-[NIFindingNotifier notifyDiscoveredNearbyObjectWithToken:sharedConfigurationData:];
+-[NIFindingNotifier notifyRemovedNearbyObjectWithToken:];
+-[NIFindingNotifier notifyUpdatedHeadingForLocalDevice:];
+-[NIFindingNotifier notifyUpdatedLocation:forNearbyObjectWithToken:];
+-[NIFindingNotifier notifyUpdatedLocationForLocalDevice:];
+
+@end
+
+@interface NIHeading : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSDate" _timestamp;
+    d _trueHeading;
+    d _magneticHeading;
+    d _headingAccuracy;
+}
+
+@property (T@"NSDate",C,N,V_timestamp) timestamp;
+@property (Td,N,V_trueHeading) trueHeading;
+@property (Td,N,V_magneticHeading) magneticHeading;
+@property (Td,N,V_headingAccuracy) headingAccuracy;
+
+/* class methods */
++[NIHeading supportsSecureCoding];
+
+/* instance methods */
+-[NIHeading descriptionInternal];
+-[NIHeading timestamp];
+-[NIHeading headingAccuracy];
+-[NIHeading copyWithZone:];
+-[NIHeading initWithCoder:];
+-[NIHeading encodeWithCoder:];
+-[NIHeading setTimestamp:];
+-[NIHeading hash];
+-[NIHeading description];
+-[NIHeading isEqual:];
+-[NIHeading magneticHeading];
+-[NIHeading trueHeading];
+-[NIHeading setHeadingAccuracy:];
+-[NIHeading setTrueHeading:];
+-[NIHeading initWithTimestamp:trueHeading:magneticHeading:headingAccuracy:];
+-[NIHeading setMagneticHeading:];
+
+@end
+
+@interface NIHomeDeviceConfiguration : NIConfiguration {
+    /* instance variables */
+    @"NSArray" _monitoredRegions;
+    @"NSString" _regionDescription;
+    B _anchor;
+    Q _allowedDevices;
+    @"NSData" _sessionKey;
+    q _minimumPreferredUpdatedRate;
+    q _antennaDiversityOverride;
+}
+
+@property (Tq,V_antennaDiversityOverride) antennaDiversityOverride;
+@property (TQ,V_allowedDevices) allowedDevices;
+@property (T@"NSData",C,V_sessionKey) sessionKey;
+@property (TB,GisAnchor,V_anchor) anchor;
+@property (T@"NSArray",C) monitoredRegions;
+@property (Tq,V_minimumPreferredUpdatedRate) minimumPreferredUpdatedRate;
+
+/* class methods */
++[NIHomeDeviceConfiguration supportsSecureCoding];
++[NIHomeDeviceConfiguration new];
+
+/* instance methods */
+-[NIHomeDeviceConfiguration descriptionInternal];
+-[NIHomeDeviceConfiguration setAnchor:];
+-[NIHomeDeviceConfiguration setAntennaDiversityOverride:];
+-[NIHomeDeviceConfiguration setMonitoredRegions:];
+-[NIHomeDeviceConfiguration _updateRegionDescription];
+-[NIHomeDeviceConfiguration minimumPreferredUpdatedRate];
+-[NIHomeDeviceConfiguration isAnchor];
+-[NIHomeDeviceConfiguration init];
+-[NIHomeDeviceConfiguration copyWithZone:];
+-[NIHomeDeviceConfiguration initWithCoder:];
+-[NIHomeDeviceConfiguration setAllowedDevices:];
+-[NIHomeDeviceConfiguration allowedDevices];
+-[NIHomeDeviceConfiguration encodeWithCoder:];
+-[NIHomeDeviceConfiguration monitoredRegions];
+-[NIHomeDeviceConfiguration initWithRegions:];
+-[NIHomeDeviceConfiguration hash];
+-[NIHomeDeviceConfiguration canUpdateToConfiguration:];
+-[NIHomeDeviceConfiguration setMinimumPreferredUpdatedRate:];
+-[NIHomeDeviceConfiguration initWithAllowedDevices:sessionKey:asAnchor:regions:];
+-[NIHomeDeviceConfiguration antennaDiversityOverride];
+-[NIHomeDeviceConfiguration description];
+-[NIHomeDeviceConfiguration sessionKey];
+-[NIHomeDeviceConfiguration setSessionKey:];
+-[NIHomeDeviceConfiguration isEqual:];
+
+@end
+
+@interface NIHomePassiveSensingConfiguration : NIConfiguration {
+    /* instance variables */
+    q _minimumPreferredUpdatedRate;
+}
+
+@property (Tq,V_minimumPreferredUpdatedRate) minimumPreferredUpdatedRate;
+
+/* class methods */
++[NIHomePassiveSensingConfiguration supportsSecureCoding];
++[NIHomePassiveSensingConfiguration new];
+
+/* instance methods */
+-[NIHomePassiveSensingConfiguration descriptionInternal];
+-[NIHomePassiveSensingConfiguration minimumPreferredUpdatedRate];
+-[NIHomePassiveSensingConfiguration init];
+-[NIHomePassiveSensingConfiguration copyWithZone:];
+-[NIHomePassiveSensingConfiguration initWithCoder:];
+-[NIHomePassiveSensingConfiguration encodeWithCoder:];
+-[NIHomePassiveSensingConfiguration hash];
+-[NIHomePassiveSensingConfiguration canUpdateToConfiguration:];
+-[NIHomePassiveSensingConfiguration setMinimumPreferredUpdatedRate:];
+-[NIHomePassiveSensingConfiguration description];
+-[NIHomePassiveSensingConfiguration isEqual:];
+
+@end
+
+@interface NIInternalUtils : NSObject
+
+/* class methods */
++[NIInternalUtils NINearbyObjectDiscoveryPriorityToString:];
++[NIInternalUtils NINearbyObjectUpdateRateToString:];
++[NIInternalUtils NIRelationshipSpecifierToString:];
++[NIInternalUtils NISystemPassiveAccessIntentToString:];
++[NIInternalUtils AntennaDiversityOverrideToString:];
++[NIInternalUtils NINearbyObjectUpdateRateToShortString:];
++[NIInternalUtils NINearbyPeerUseCaseToString:];
++[NIInternalUtils NISessionBackgroundModeToString:];
++[NIInternalUtils NISystemResourceAvailabilityToString:];
++[NIInternalUtils isIntValidAntennaDiversityOverride:];
++[NIInternalUtils isIntValidNearbyObjectDiscoveryPriority:];
++[NIInternalUtils isIntValidNearbyObjectUpdateRate:];
++[NIInternalUtils isIntValidRelationshipSpecifier:];
++[NIInternalUtils nearbyObjectUpdateRate:isGreaterThan:];
+
+@end
+
+@interface NIItemLocalizerConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    @"NSUUID" _itemUUID;
+    @"NIDiscoveryToken" _discoveryToken;
+    q _preferredUpdateRate;
+    @"NSDictionary" _debugParameters;
+}
+
+@property (T@"NSUUID",C,N,V_itemUUID) itemUUID;
+@property (T@"NIDiscoveryToken",C,N,V_discoveryToken) discoveryToken;
+@property (T@"NSDictionary",C,N,V_debugParameters) debugParameters;
+@property (Tq,N,V_preferredUpdateRate) preferredUpdateRate;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+
+/* class methods */
++[NIItemLocalizerConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIItemLocalizerConfiguration descriptionInternal];
+-[NIItemLocalizerConfiguration _internalIsCameraAssistanceEnabled];
+-[NIItemLocalizerConfiguration discoveryToken];
+-[NIItemLocalizerConfiguration copyWithZone:];
+-[NIItemLocalizerConfiguration initWithCoder:];
+-[NIItemLocalizerConfiguration setPreferredUpdateRate:];
+-[NIItemLocalizerConfiguration debugParameters];
+-[NIItemLocalizerConfiguration isCameraAssistanceEnabled];
+-[NIItemLocalizerConfiguration encodeWithCoder:];
+-[NIItemLocalizerConfiguration setDebugParameters:];
+-[NIItemLocalizerConfiguration hash];
+-[NIItemLocalizerConfiguration canUpdateToConfiguration:];
+-[NIItemLocalizerConfiguration preferredUpdateRate];
+-[NIItemLocalizerConfiguration setCameraAssistanceEnabled:];
+-[NIItemLocalizerConfiguration description];
+-[NIItemLocalizerConfiguration isEqual:];
+-[NIItemLocalizerConfiguration itemUUID];
+-[NIItemLocalizerConfiguration initWithItemUUID:preferredUpdateRate:];
+-[NIItemLocalizerConfiguration setDiscoveryToken:];
+-[NIItemLocalizerConfiguration setItemUUID:];
+
+@end
+
+@interface NILocalization : NSObject
+
+/* class methods */
++[NILocalization fallbackBundle];
++[NILocalization localizedBundle];
++[NILocalization _niFrameworkBundle];
++[NILocalization _niLocalizedStringFromBundle:withKey:];
++[NILocalization _niLocalizedStringFromFrameworkBundleWithKey:];
++[NILocalization fallbackBundleWithBundle:];
++[NILocalization localizedBundleWithBundle:];
+
+@end
+
+@interface NILocation : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSDate" _timestamp;
+    d _latitude;
+    d _longitude;
+    d _altitude;
+    d _ellipsoidalAltitude;
+    d _horizontalAccuracy;
+    d _verticalAccuracy;
+    d _speed;
+    d _speedAccuracy;
+    d _course;
+    d _courseAccuracy;
+    q _floor;
+    q _locationType;
+    q _signalEnvironment;
+}
+
+@property (T@"NSDate",C,N,V_timestamp) timestamp;
+@property (Td,N,V_latitude) latitude;
+@property (Td,N,V_longitude) longitude;
+@property (Td,N,V_altitude) altitude;
+@property (Td,N,V_ellipsoidalAltitude) ellipsoidalAltitude;
+@property (Td,N,V_horizontalAccuracy) horizontalAccuracy;
+@property (Td,N,V_verticalAccuracy) verticalAccuracy;
+@property (Td,N,V_speed) speed;
+@property (Td,N,V_speedAccuracy) speedAccuracy;
+@property (Td,N,V_course) course;
+@property (Td,N,V_courseAccuracy) courseAccuracy;
+@property (Tq,N,V_floor) floor;
+@property (Tq,N,V_locationType) locationType;
+@property (Tq,N,V_signalEnvironment) signalEnvironment;
+
+/* class methods */
++[NILocation supportsSecureCoding];
+
+/* instance methods */
+-[NILocation descriptionInternal];
+-[NILocation speedAccuracy];
+-[NILocation timestamp];
+-[NILocation course];
+-[NILocation horizontalAccuracy];
+-[NILocation verticalAccuracy];
+-[NILocation altitude];
+-[NILocation locationType];
+-[NILocation setLocationType:];
+-[NILocation courseAccuracy];
+-[NILocation copyWithZone:];
+-[NILocation initWithCoder:];
+-[NILocation speed];
+-[NILocation latitude];
+-[NILocation encodeWithCoder:];
+-[NILocation setTimestamp:];
+-[NILocation hash];
+-[NILocation setHorizontalAccuracy:];
+-[NILocation setCourse:];
+-[NILocation description];
+-[NILocation setAltitude:];
+-[NILocation setLongitude:];
+-[NILocation longitude];
+-[NILocation setLatitude:];
+-[NILocation setSpeed:];
+-[NILocation isEqual:];
+-[NILocation floor];
+-[NILocation setCourseAccuracy:];
+-[NILocation setSpeedAccuracy:];
+-[NILocation setVerticalAccuracy:];
+-[NILocation ellipsoidalAltitude];
+-[NILocation initWithTimestamp:latitude:longitude:altitude:ellipsoidalAltitude:horizontalAccuracy:verticalAccuracy:speed:speedAccuracy:course:courseAccuracy:floor:locationType:signalEnvironment:];
+-[NILocation setEllipsoidalAltitude:];
+-[NILocation setFloor:];
+-[NILocation setSignalEnvironment:];
+-[NILocation signalEnvironment];
+
+@end
+
+@interface NINearbyAccessoryConfiguration : NIConfiguration {
+    /* instance variables */
+    @"NSData" _rawData;
+    B _cameraAssistanceEnabled;
+    @"NIDiscoveryToken" _accessoryDiscoveryToken;
+    @"NSUUID" _bluetoothDeviceIdentifier;
+    @"NSDictionary" _debugParameters;
+    q _backgroundMode;
+}
+
+@property (T@"NSData",R,C) accessoryConfigData;
+@property (T@"NSUUID",C,V_bluetoothDeviceIdentifier) bluetoothDeviceIdentifier;
+@property (T@"NSDictionary",C,V_debugParameters) debugParameters;
+@property (TB,R) dataExchangeDisabledAndUsingParameterOverrides;
+@property (Tq,N,V_backgroundMode) backgroundMode;
+@property (T@"NIDiscoveryToken",R,C,N,V_accessoryDiscoveryToken) accessoryDiscoveryToken;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+
+/* class methods */
++[NINearbyAccessoryConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NINearbyAccessoryConfiguration descriptionInternal];
+-[NINearbyAccessoryConfiguration _internalIsCameraAssistanceEnabled];
+-[NINearbyAccessoryConfiguration _internalIsPowerAssertionRequired];
+-[NINearbyAccessoryConfiguration initWithData:error:];
+-[NINearbyAccessoryConfiguration initWithAccessoryData:bluetoothPeerIdentifier:error:];
+-[NINearbyAccessoryConfiguration backgroundMode];
+-[NINearbyAccessoryConfiguration setBackgroundMode:];
+-[NINearbyAccessoryConfiguration copyWithZone:];
+-[NINearbyAccessoryConfiguration initWithCoder:];
+-[NINearbyAccessoryConfiguration accessoryConfigData];
+-[NINearbyAccessoryConfiguration debugParameters];
+-[NINearbyAccessoryConfiguration isCameraAssistanceEnabled];
+-[NINearbyAccessoryConfiguration encodeWithCoder:];
+-[NINearbyAccessoryConfiguration setDebugParameters:];
+-[NINearbyAccessoryConfiguration hash];
+-[NINearbyAccessoryConfiguration accessoryDiscoveryToken];
+-[NINearbyAccessoryConfiguration setCameraAssistanceEnabled:];
+-[NINearbyAccessoryConfiguration bluetoothDeviceIdentifier];
+-[NINearbyAccessoryConfiguration description];
+-[NINearbyAccessoryConfiguration initWithDataExchangeDisabledAndUsingParameterOverrides:];
+-[NINearbyAccessoryConfiguration setBluetoothDeviceIdentifier:];
+-[NINearbyAccessoryConfiguration dataExchangeDisabledAndUsingParameterOverrides];
+-[NINearbyAccessoryConfiguration isEqual:];
+
+@end
+
+@interface NINearbyObject : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _remoteTxAntennaMask;
+    B _requiresBiasCorrection;
+    C _nbRxStatus;
+    C _mmsRxStatus;
+    B _canInteract;
+    B _vioMajorRelocalization;
+    B _resetARSession;
+    B _revokeFindingExperience;
+    f _distance;
+    f _horizontalAngle;
+    f _azimuth;
+    f _elevation;
+    f _horizontalAngleAccuracy;
+    f _boundedRegionRange;
+    f _horizontalDistance;
+    f _rawRange;
+    @"NIDiscoveryToken" _discoveryToken;
+    q _verticalDirectionEstimate;
+    Q _relationship;
+    @"NSString" _deviceIdentifier;
+    d _timestamp;
+    q _distanceMeasurementQuality;
+    q _motionState;
+    @"NSString" _name;
+    @"NSNumber" _spatialScore;
+    @"NSData" _bluetoothAdvertisingAddress;
+    @"NSUUID" _bluetoothPeerIdentifier;
+    d _signalStrength;
+    d _rangeBiasEstimate;
+    d _rangeUncertainty;
+    @"UWBSignalFeatures" _uwbSignalFeatures;
+    d _nbRssi;
+    q _algorithmSource;
+    @"NSString" _debugDisplayInfo;
+    q _itemState;
+    @"NILocation" _location;
+    q _vioTrackingState;
+     _direction;
+    {?="vector"} _quaternion;
+     _worldPosition;
+}
+
+@property (T@"NIDiscoveryToken",C,N,V_discoveryToken) discoveryToken;
+@property (Tf,N,V_distance) distance;
+@property (T,N,V_direction) direction;
+@property (T{?=},N,V_quaternion) quaternion;
+@property (Tf,N,V_azimuth) azimuth;
+@property (Tf,N,V_elevation) elevation;
+@property (TQ,N,V_relationship) relationship;
+@property (T@"NSString",C,N,V_deviceIdentifier) deviceIdentifier;
+@property (Td,N,V_timestamp) timestamp;
+@property (Tq,N,V_distanceMeasurementQuality) distanceMeasurementQuality;
+@property (Tq,N,V_motionState) motionState;
+@property (T@"NSString",C,N,V_name) name;
+@property (T@"NSNumber",C,N,V_spatialScore) spatialScore;
+@property (T@"NSData",C,N,V_bluetoothAdvertisingAddress) bluetoothAdvertisingAddress;
+@property (T@"NSUUID",C,N,V_bluetoothPeerIdentifier) bluetoothPeerIdentifier;
+@property (Tq,N,V_verticalDirectionEstimate) verticalDirectionEstimate;
+@property (Tf,N,V_horizontalAngle) horizontalAngle;
+@property (Tf,N,V_horizontalAngleAccuracy) horizontalAngleAccuracy;
+@property (Td,N,V_signalStrength) signalStrength;
+@property (Td,N,V_rangeBiasEstimate) rangeBiasEstimate;
+@property (Td,N,V_rangeUncertainty) rangeUncertainty;
+@property (TC,N,V_remoteTxAntennaMask) remoteTxAntennaMask;
+@property (T,N,V_worldPosition) worldPosition;
+@property (TB,N,V_requiresBiasCorrection) requiresBiasCorrection;
+@property (T@"UWBSignalFeatures",C,N,V_uwbSignalFeatures) uwbSignalFeatures;
+@property (TC,N,V_nbRxStatus) nbRxStatus;
+@property (TC,N,V_mmsRxStatus) mmsRxStatus;
+@property (Td,N,V_nbRssi) nbRssi;
+@property (TB,N,V_canInteract) canInteract;
+@property (Tf,N,V_boundedRegionRange) boundedRegionRange;
+@property (Tq,N,V_algorithmSource) algorithmSource;
+@property (T@"NSString",C,N,V_debugDisplayInfo) debugDisplayInfo;
+@property (Tf,N,V_horizontalDistance) horizontalDistance;
+@property (Tq,N,V_itemState) itemState;
+@property (T@"NILocation",C,N,V_location) location;
+@property (Tf,N,V_rawRange) rawRange;
+@property (Tq,N,V_vioTrackingState) vioTrackingState;
+@property (TB,N,V_vioMajorRelocalization) vioMajorRelocalization;
+@property (TB,N,V_resetARSession) resetARSession;
+@property (TB,N,V_revokeFindingExperience) revokeFindingExperience;
+
+/* class methods */
++[NINearbyObject supportsSecureCoding];
++[NINearbyObject fauxObjectWithDiscoveryToken:name:deviceIdentifier:];
++[NINearbyObject new];
+
+/* instance methods */
+-[NINearbyObject motionState];
+-[NINearbyObject quaternion];
+-[NINearbyObject descriptionInternal];
+-[NINearbyObject setDeviceIdentifier:];
+-[NINearbyObject setDistance:];
+-[NINearbyObject signalStrength];
+-[NINearbyObject initWithToken:];
+-[NINearbyObject timestamp];
+-[NINearbyObject direction];
+-[NINearbyObject distance];
+-[NINearbyObject setRelationship:];
+-[NINearbyObject name];
+-[NINearbyObject relationship];
+-[NINearbyObject deviceIdentifier];
+-[NINearbyObject setQuaternion:];
+-[NINearbyObject discoveryToken];
+-[NINearbyObject init];
+-[NINearbyObject setLocation:];
+-[NINearbyObject setSignalStrength:];
+-[NINearbyObject copyWithZone:];
+-[NINearbyObject initWithCoder:];
+-[NINearbyObject location];
+-[NINearbyObject setDirection:];
+-[NINearbyObject setItemState:];
+-[NINearbyObject encodeWithCoder:];
+-[NINearbyObject setTimestamp:];
+-[NINearbyObject setMotionState:];
+-[NINearbyObject hash];
+-[NINearbyObject azimuth];
+-[NINearbyObject setName:];
+-[NINearbyObject description];
+-[NINearbyObject itemState];
+-[NINearbyObject isEqual:];
+-[NINearbyObject elevation];
+-[NINearbyObject setAzimuth:];
+-[NINearbyObject horizontalAngle];
+-[NINearbyObject setHorizontalAngle:];
+-[NINearbyObject worldPosition];
+-[NINearbyObject setWorldPosition:];
+-[NINearbyObject deviceIdentifer];
+-[NINearbyObject setCanInteract:];
+-[NINearbyObject algorithmSource];
+-[NINearbyObject setBluetoothAdvertisingAddress:];
+-[NINearbyObject setMmsRxStatus:];
+-[NINearbyObject bluetoothAdvertisingAddress];
+-[NINearbyObject bluetoothPeerIdentifier];
+-[NINearbyObject boundedRegionRange];
+-[NINearbyObject canInteract];
+-[NINearbyObject debugDisplayInfo];
+-[NINearbyObject distanceMeasurementQuality];
+-[NINearbyObject horizontalAngleAccuracy];
+-[NINearbyObject horizontalDistance];
+-[NINearbyObject initWithNearbyObject:];
+-[NINearbyObject mmsRxStatus];
+-[NINearbyObject nbRssi];
+-[NINearbyObject nbRxStatus];
+-[NINearbyObject overrideDirection:];
+-[NINearbyObject overrideDistance:];
+-[NINearbyObject overrideDistanceMeasurementQuality:];
+-[NINearbyObject overrideMotionState:];
+-[NINearbyObject overrideRelationship:];
+-[NINearbyObject overrideSpatialScore:];
+-[NINearbyObject overrideTimestamp:];
+-[NINearbyObject rangeBiasEstimate];
+-[NINearbyObject rangeUncertainty];
+-[NINearbyObject rawRange];
+-[NINearbyObject remoteTxAntennaMask];
+-[NINearbyObject requiresBiasCorrection];
+-[NINearbyObject resetARSession];
+-[NINearbyObject revokeFindingExperience];
+-[NINearbyObject setAlgorithmSource:];
+-[NINearbyObject setBluetoothPeerIdentifier:];
+-[NINearbyObject setBoundedRegionRange:];
+-[NINearbyObject setDebugDisplayInfo:];
+-[NINearbyObject setDiscoveryToken:];
+-[NINearbyObject setDistanceMeasurementQuality:];
+-[NINearbyObject setElevation:];
+-[NINearbyObject setHorizontalAngleAccuracy:];
+-[NINearbyObject setHorizontalDistance:];
+-[NINearbyObject setNbRssi:];
+-[NINearbyObject setNbRxStatus:];
+-[NINearbyObject setRangeBiasEstimate:];
+-[NINearbyObject setRangeUncertainty:];
+-[NINearbyObject setRawRange:];
+-[NINearbyObject setRemoteTxAntennaMask:];
+-[NINearbyObject setRequiresBiasCorrection:];
+-[NINearbyObject setResetARSession:];
+-[NINearbyObject setRevokeFindingExperience:];
+-[NINearbyObject setSpatialScore:];
+-[NINearbyObject setUwbSignalFeatures:];
+-[NINearbyObject setVerticalDirectionEstimate:];
+-[NINearbyObject setVioMajorRelocalization:];
+-[NINearbyObject setVioTrackingState:];
+-[NINearbyObject spatialScore];
+-[NINearbyObject uwbSignalFeatures];
+-[NINearbyObject verticalDirectionEstimate];
+-[NINearbyObject vioMajorRelocalization];
+-[NINearbyObject vioTrackingState];
+
+@end
+
+@interface NINearbyPeerConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    B _extendedDistanceMeasurementEnabled;
+    B _useCaseCameraAssistanceInClientProcess;
+    B _longRangeEnabled;
+    @"NIDiscoveryToken" _peerDiscoveryToken;
+    q _useCase;
+    q _backgroundMode;
+    @"NSDictionary" _debugParameters;
+}
+
+@property (T@"NIDiscoveryToken",C,N,V_peerDiscoveryToken) peerDiscoveryToken;
+@property (Tq,N,V_useCase) useCase;
+@property (TB,N,V_useCaseCameraAssistanceInClientProcess) useCaseCameraAssistanceInClientProcess;
+@property (TB,N,GisLongRangeEnabled,V_longRangeEnabled) longRangeEnabled;
+@property (Tq,N,V_backgroundMode) backgroundMode;
+@property (T@"NSDictionary",C,V_debugParameters) debugParameters;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (TB,N,GisExtendedDistanceMeasurementEnabled,V_extendedDistanceMeasurementEnabled) extendedDistanceMeasurementEnabled;
+
+/* class methods */
++[NINearbyPeerConfiguration supportsSecureCoding];
++[NINearbyPeerConfiguration new];
++[NINearbyPeerConfiguration createSOSBeaconSearcherConfigWithSessionKey:selfData:peerData:usingCameraAssistance:];
++[NINearbyPeerConfiguration createSOSBeaconSubjectConfigWithSessionKey:selfData:peerData:];
+
+/* instance methods */
+-[NINearbyPeerConfiguration useCase];
+-[NINearbyPeerConfiguration _internalIsExtendedDistanceMeasurementEnabled];
+-[NINearbyPeerConfiguration descriptionInternal];
+-[NINearbyPeerConfiguration _internalIsCameraAssistanceEnabled];
+-[NINearbyPeerConfiguration _internalIsCameraAssistanceInClientProcess];
+-[NINearbyPeerConfiguration _internalIsPowerAssertionRequired];
+-[NINearbyPeerConfiguration isLongRangeEnabled];
+-[NINearbyPeerConfiguration initWithPeerToken:];
+-[NINearbyPeerConfiguration backgroundMode];
+-[NINearbyPeerConfiguration init];
+-[NINearbyPeerConfiguration setUseCase:];
+-[NINearbyPeerConfiguration setBackgroundMode:];
+-[NINearbyPeerConfiguration copyWithZone:];
+-[NINearbyPeerConfiguration initWithCoder:];
+-[NINearbyPeerConfiguration isExtendedDistanceMeasurementEnabled];
+-[NINearbyPeerConfiguration setLongRangeEnabled:];
+-[NINearbyPeerConfiguration useCaseCameraAssistanceInClientProcess];
+-[NINearbyPeerConfiguration debugParameters];
+-[NINearbyPeerConfiguration isCameraAssistanceEnabled];
+-[NINearbyPeerConfiguration encodeWithCoder:];
+-[NINearbyPeerConfiguration setDebugParameters:];
+-[NINearbyPeerConfiguration setUseCaseCameraAssistanceInClientProcess:];
+-[NINearbyPeerConfiguration hash];
+-[NINearbyPeerConfiguration setPeerDiscoveryToken:];
+-[NINearbyPeerConfiguration setExtendedDistanceMeasurementEnabled:];
+-[NINearbyPeerConfiguration setCameraAssistanceEnabled:];
+-[NINearbyPeerConfiguration description];
+-[NINearbyPeerConfiguration peerDiscoveryToken];
+-[NINearbyPeerConfiguration isEqual:];
+
+@end
+
+@interface NIPlatformInfo : NSObject
+
+/* class methods */
++[NIPlatformInfo isInternalBuild];
++[NIPlatformInfo supportsAoA];
++[NIPlatformInfo supportsARKit];
++[NIPlatformInfo supportsSyntheticAperture];
++[NIPlatformInfo supportsNBAMMS];
++[NIPlatformInfo supportsUWB];
++[NIPlatformInfo supportsDLTDoA];
+
+@end
+
+@interface NIRangingAuthConfiguration : NIConfiguration {
+    /* instance variables */
+    B _isResponder;
+    @"NIDiscoveryToken" _peerToken;
+    @"NSData" _macAddress;
+    @"NSData" _secureKey;
+}
+
+@property (TB,R,N,V_isResponder) isResponder;
+@property (T@"NIDiscoveryToken",R,C,N,V_peerToken) peerToken;
+@property (T@"NSData",R,C,N,V_macAddress) macAddress;
+@property (T@"NSData",R,C,N,V_secureKey) secureKey;
+
+/* class methods */
++[NIRangingAuthConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIRangingAuthConfiguration descriptionInternal];
+-[NIRangingAuthConfiguration secureKey];
+-[NIRangingAuthConfiguration peerToken];
+-[NIRangingAuthConfiguration macAddress];
+-[NIRangingAuthConfiguration copyWithZone:];
+-[NIRangingAuthConfiguration isResponder];
+-[NIRangingAuthConfiguration initWithCoder:];
+-[NIRangingAuthConfiguration encodeWithCoder:];
+-[NIRangingAuthConfiguration hash];
+-[NIRangingAuthConfiguration description];
+-[NIRangingAuthConfiguration initAsResponder:macAddress:key:];
+-[NIRangingAuthConfiguration isEqual:];
+
+@end
+
+@interface NIRegionPredicate : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    q _devicePresencePreset;
+    B _requiresUserIntent;
+    B _coarseEstimation;
+    f _radius;
+    @"NSString" _name;
+    q _regionSizeCategory;
+    q _preferredUpdateRate;
+}
+
+@property (T@"NSString",R,V_name) name;
+@property (Tq,V_regionSizeCategory) regionSizeCategory;
+@property (Tf,R,V_radius) radius;
+@property (Tq,V_preferredUpdateRate) preferredUpdateRate;
+@property (TB,V_requiresUserIntent) requiresUserIntent;
+@property (TB,V_coarseEstimation) coarseEstimation;
+
+/* class methods */
++[NIRegionPredicate supportsSecureCoding];
++[NIRegionPredicate _isExecuteRegion:];
+
+/* instance methods */
+-[NIRegionPredicate descriptionInternal];
+-[NIRegionPredicate radius];
+-[NIRegionPredicate coarseEstimation];
+-[NIRegionPredicate name];
+-[NIRegionPredicate devicePresencePreset];
+-[NIRegionPredicate shortDescription];
+-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:coarseEstimation:devicePresencePreset:];
+-[NIRegionPredicate setCoarseEstimation:];
+-[NIRegionPredicate requiresUserIntent];
+-[NIRegionPredicate copyWithZone:];
+-[NIRegionPredicate initWithName:radius:];
+-[NIRegionPredicate initWithCoder:];
+-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:devicePresencePreset:];
+-[NIRegionPredicate initWithName:devicePresencePreset:];
+-[NIRegionPredicate setPreferredUpdateRate:];
+-[NIRegionPredicate regionSizeCategory];
+-[NIRegionPredicate encodeWithCoder:];
+-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:];
+-[NIRegionPredicate hash];
+-[NIRegionPredicate preferredUpdateRate];
+-[NIRegionPredicate initWithName:radius:preferredUpdateRate:requiresUserIntent:];
+-[NIRegionPredicate initWithName:radius:preferredUpdateRate:requiresUserIntent:devicePresencePreset:];
+-[NIRegionPredicate setDevicePresencePreset:];
+-[NIRegionPredicate description];
+-[NIRegionPredicate setRegionSizeCategory:];
+-[NIRegionPredicate initWithName:radius:preferredUpdateRate:];
+-[NIRegionPredicate setRequiresUserIntent:];
+-[NIRegionPredicate isEqual:];
+
+@end
+
+@interface NIServerConnection : NSObject {
+    /* instance variables */
+    @"NSXPCConnection" _connection;
+    Q _options;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSObject<OS_os_log>" _log;
+    @"NSUUID" _sessionID;
+    @ _exportedObject;
+}
+
+@property (T@?,C) interruptionHandler;
+@property (T@?,C) invalidationHandler;
+@property (T@"NSUUID",R,V_sessionID) sessionID;
+@property (T@,&,V_exportedObject) exportedObject;
+
+/* class methods */
++[NIServerConnection _internalBuildShouldDenyConnection];
++[NIServerConnection createOneShotConnectionAndResume:];
+
+/* instance methods */
+-[NIServerConnection setInterruptionHandler:];
+-[NIServerConnection synchronousRemoteObjectProxy];
+-[NIServerConnection setInvalidationHandler:];
+-[NIServerConnection resume];
+-[NIServerConnection auditTokenForConnection];
+-[NIServerConnection remoteObjectProxy];
+-[NIServerConnection invalidate];
+-[NIServerConnection exportedObject];
+-[NIServerConnection interruptionHandler];
+-[NIServerConnection sessionID];
+-[NIServerConnection setExportedObject:];
+-[NIServerConnection dealloc];
+-[NIServerConnection invalidationHandler];
+-[NIServerConnection initWithSessionID:queue:exportedObject:options:];
+
+@end
+
+@interface NISession : NSObject <UWBSessionDelegateProxyProtocol, ARInternalSessionObserver> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSUUID" _internalID;
+    @"NIServerConnection" _connection;
+    @"NIExportedObjectForwarder" _exportedObjectForwarder;
+    @"NIConfiguration" _currentConfiguration;
+    @"NSObject<OS_dispatch_semaphore>" _discoveryTokenSemaphore;
+    {vector<UWBSessionInterruptionBookkeeping, std::allocator<UWBSessionInterruptionBookkeeping>>="__begin_"^{UWBSessionInterruptionBookkeeping}"__end_"^{UWBSessionInterruptionBookkeeping}""{?="__cap_"^{UWBSessionInterruptionBookkeeping}}} _interruptions;
+    {atomic<bool>="__a_"{__cxx_atomic_impl<bool, std::__cxx_atomic_base_impl<bool>>="__a_value"AB}} _readyForCallbacks;
+    @"NSObject<OS_os_log>" _log;
+    d _startTime;
+    d _duration;
+    B _updatedNearbyObjects;
+    q _motionState;
+    @"NIDiscoveryToken" _discoveryToken;
+    @"NICarKeyEventNotifier" _carKeyEventNotifier;
+    Q _connectionOptions;
+    @"NIAcwgEventNotifier" _acwgEventNotifier;
+    @"NIDevicePresenceNotifier" _devicePresenceNotifier;
+    @"NIFindingNotifier" _findingNotifier;
+    @"NISystemEventNotifier" _systemEventNotifier;
+    @"NISessionVisionContext" _visionContext;
+    @"NSDate" _lastObjectUpdateLogTime;
+    {NearbyObjectUpdateLogging="totalUpdates"i"totalObjects"i"objectsWithDistance"i"objectsWithHorizontalAngle"i"firstDistance"f"lastDistance"f"minDistance"f"maxDistance"f"firstHorizontalAngleRad"f"lastHorizontalAngleRad"f} _objectUpdateLogging;
+    B _itemLocalizerDidPrewarmRanging;
+    i _internalState;
+    @"<NISessionDelegate>" _delegate;
+    @"NSObject<OS_dispatch_queue>" _delegateQueue;
+    @"NSError" _invalidationError;
+    @"NSDictionary" _activationResponse;
+    @"<NIInternalSessionDelegate>" _internalDelegate;
+}
+
+@property (Tq,R) motionState;
+@property (TB,R,GisPreciseRangingAllowed) preciseRangingAllowed;
+@property (TB,R,GisExtendedDistanceMeasurementAllowed) extendedDistanceMeasurementAllowed;
+@property (TB,R,GisRangingLimitExceeded) rangingLimitExceeded;
+@property (T@"NICarKeyEventNotifier",R) carKeyEventNotifier;
+@property (T@"NIAcwgEventNotifier",R) acwgEventNotifier;
+@property (TB,R,GisRangingLimitExceeded) rangingLimitExceeded;
+@property (T@"NIDevicePresenceNotifier",R) devicePresenceNotifier;
+@property (T@"NIFindingNotifier",R) findingNotifier;
+@property (T@"NISystemEventNotifier",R,N) systemEventNotifier;
+@property (Ti,V_internalState) internalState;
+@property (T@"NSError",&,V_invalidationError) invalidationError;
+@property (T@"NSDictionary",&,V_activationResponse) activationResponse;
+@property (T@"<NIInternalSessionDelegate>",W,V_internalDelegate) internalDelegate;
+@property (T@"<NISessionDelegate>",W,N,V_delegate) delegate;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_delegateQueue) delegateQueue;
+@property (T@"NIDiscoveryToken",R,C,N) discoveryToken;
+@property (T@"NIConfiguration",R,C,N) configuration;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[NISession _localDeviceLogger];
++[NISession interactableDiscoveryTokens];
++[NISession generateSOSBeaconSearcherDataMatchingSubjectData:completion:];
++[NISession _queryAndCacheCapabilities];
++[NISession observerSession];
++[NISession cachedPlatformCapabilities];
++[NISession localDevicePrintableState];
++[NISession generateDiscoveryTokenFromBeaconIdentifier:];
++[NISession _supportedPlatform:];
++[NISession internalDeviceCapabilities];
++[NISession generateBluetoothDeviceTokenWithPublicAddress:IRK:];
++[NISession generateFindingDiscoveryTokenWithSharedSecret:];
++[NISession deviceCapabilities];
++[NISession isSupported];
++[NISession setAsyncLocalDeviceInteractableDiscoveryTokens:completion:];
++[NISession generateFindingDiscoveryToken];
++[NISession activelyInteractingDiscoveryTokens];
++[NISession setLocalDeviceDebugParameters:];
++[NISession setLocalDeviceCanInteract:withDiscoveryTokens:];
++[NISession getAsyncInteractableDiscoveryTokens:];
++[NISession getAsyncActivelyInteractingDiscoveryTokens:];
++[NISession setLocalDeviceInteractableDiscoveryTokens:];
++[NISession generateSOSBeaconSubjectDataWithCompletion:];
++[NISession setCachedPlatformCapabilities:];
++[NISession generateFindingDiscoveryTokenWithIdentityResolvingKey:];
+
+/* instance methods */
+-[NISession motionState];
+-[NISession invalidationError];
+-[NISession setDelegateQueue:];
+-[NISession _removeObject:];
+-[NISession processAcwgM3Msg:];
+-[NISession _handlePauseSessionSuccess];
+-[NISession _invalidateInternal];
+-[NISession didGenerateShareableConfigurationData:forObject:];
+-[NISession prefetchAcwgUrsk:];
+-[NISession delegateQueue];
+-[NISession updateResponderDeviceIdentifier:completionHandler:];
+-[NISession _handleRunSessionSuccess];
+-[NISession _logTime];
+-[NISession processAcwgRangingSessionResumeRequestMsg:withResumeTriggerReason:];
+-[NISession _handleARSessionDidChangeState:];
+-[NISession didUpdateNearbyObjects:];
+-[NISession _addObject:];
+-[NISession systemDidUpdateResourceUsageLimitExceeded:forSessionConfigurationTypeWithName:];
+-[NISession _isValidARSession:andConfiguration:];
+-[NISession session:didChangeState:];
+-[NISession didUpdateHomeDeviceUWBRangingAvailability:];
+-[NISession _submitErrorMetric:];
+-[NISession didSuspendAcwgRanging:];
+-[NISession didProcessAcwgM1MsgWithResponse:error:];
+-[NISession _handleActivationSuccess:];
+-[NISession _remoteObject];
+-[NISession _setURSKTTL:];
+-[NISession _addRegionPredicate:];
+-[NISession _handleARSessionInterruptionEnded];
+-[NISession setConfigurationForTesting:];
+-[NISession discoveryToken];
+-[NISession didDiscoverNearbyObject:];
+-[NISession init];
+-[NISession didUpdateDLTDOAMeasurements:];
+-[NISession object:didUpdateRegion:previousRegion:];
+-[NISession _invalidateSessionAndNotifyError:];
+-[NISession _interruptSessionWithInternalReason:cachedInterruption:nearbydReSuspension:];
+-[NISession _initAndConnectToServerWithOptions:];
+-[NISession processVisionInput:];
+-[NISession _setARSessionInternal:];
+-[NISession findingNotifier];
+-[NISession _handleActivationError:];
+-[NISession pause];
+-[NISession _logDurationAndSubmit:];
+-[NISession _processUpdatedLockState:];
+-[NISession uwbSessionInterruptionReasonEnded:timestamp:];
+-[NISession sessionInterruptionEnded:];
+-[NISession setDelegate:];
+-[NISession didUpdateNICoordinates:];
+-[NISession session:didFailWithError:];
+-[NISession setInternalDelegate:];
+-[NISession session:didUpdateFrame:];
+-[NISession _isInternalClient];
+-[NISession processAcwgM1Msg:withSessionTriggerReason:];
+-[NISession processBluetoothEventWithType:btcClockTicks:];
+-[NISession processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:];
+-[NISession _configurationSupportsRetry];
+-[NISession setActivationResponse:];
+-[NISession deleteURSKs];
+-[NISession _removeRegionPredicate:];
+-[NISession _getSessionFailureError];
+-[NISession _handleARSessionWasInterrupted];
+-[NISession _internalRunWithConfiguration:];
+-[NISession systemDidUpdateState:];
+-[NISession _serverConnectionInterrupted];
+-[NISession niVisionInputTrackingStateFromARTRackingState:];
+-[NISession _provideTruthTag:];
+-[NISession relayDCKMessage:];
+-[NISession _handleARSessionDidFailWithError:];
+-[NISession _invalidateInternalARSessionIfNeeded];
+-[NISession configuration];
+-[NISession session:didUpdateExternalAnchors:];
+-[NISession _reinterruptSessionWithCachedInterruption];
+-[NISession _pauseInternalARSessionIfNeeded];
+-[NISession _configureAndRunInternalARSession];
+-[NISession devicePresenceNotifier];
+-[NISession getInternalIdentifier];
+-[NISession activationResponse];
+-[NISession sessionShouldAttemptRelocalization:completion:];
+-[NISession isPreciseRangingAllowed];
+-[NISession invalidate];
+-[NISession didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error:];
+-[NISession didUpdateAlgorithmState:forObject:];
+-[NISession setInvalidationError:];
+-[NISession _shouldReConnectToDaemonAfterCrash];
+-[NISession carKeyEventNotifier];
+-[NISession didPrefetchAcwgUrsk:error:];
+-[NISession didUpdateState:forItem:];
+-[NISession hash];
+-[NISession lightEstimateFromARLightEstimate:];
+-[NISession worldTransformForObject:];
+-[NISession getInternalLogObject];
+-[NISession requestAcwgRangingSessionSuspend:withSuspendTriggerReason:];
+-[NISession _serverConnectionInvalidated];
+-[NISession _handlePauseSessionError:];
+-[NISession _performBlockOnDelegateQueue:ifRespondsToSelector:evenIfNotRunning:];
+-[NISession processDCKMessage:responseCallback:];
+-[NISession runWithConfiguration:];
+-[NISession didReceiveRangingAuthRecommendation:forObject:];
+-[NISession didStartAcwgRanging:];
+-[NISession isExtendedDistanceMeasurementAllowed];
+-[NISession systemEventNotifier];
+-[NISession suspendAcwgRanging:withSuspendTriggerReason:];
+-[NISession didUpdateMotionState:];
+-[NISession acwgEventNotifier];
+-[NISession _tryToRecoverFromFailure:];
+-[NISession isRangingLimitExceeded];
+-[NISession setARSession:];
+-[NISession _handleARSessionDidUpdateFrame:];
+-[NISession getInternalConnectionQueue];
+-[NISession _sendRemoteDevice:changedState:];
+-[NISession uwbSessionInterruptedWithReason:timestamp:];
+-[NISession didReceiveAopSFZoneUpdate:];
+-[NISession description];
+-[NISession _performBlockOnDelegateQueue:ifRespondsToSelector:];
+-[NISession didProcessAcwgM3MsgWithResponse:error:];
+-[NISession sessionWasInterrupted:];
+-[NISession didUpdateLocalDiscoveryToken:];
+-[NISession uwbSessionDidFailWithError:];
+-[NISession delegate];
+-[NISession _osLogNearbyObjectUpdate:];
+-[NISession _shouldReRunSessionAfterSessionInterruptionEnded];
+-[NISession internalDelegate];
+-[NISession dealloc];
+-[NISession processBluetoothEventWithType:btcClockTicks:eventCounter:];
+-[NISession internalState];
+-[NISession _notifyDidInvalidateWithError:];
+-[NISession _handleARSession:willRunWithConfiguration:];
+-[NISession session:willRunWithConfiguration:];
+-[NISession didRemoveNearbyObjects:withReason:];
+-[NISession didUpdateHealthStatus:];
+-[NISession uwbSessionDidInvalidateWithError:];
+-[NISession _synchronousRemoteObject];
+-[NISession _setDebugURSK:transactionIdentifier:];
+-[NISession _verifyError:];
+-[NISession isEqual:];
+-[NISession setInternalState:];
+-[NISession _handleRunSessionError:];
+
+@end
+
+@interface NISessionVisionContext : NSObject {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    B _arSessionInternal;
+    B _arSessionInClientProcess;
+    @"ARSession" _arSession;
+    Q _arSessionState;
+    @"ARFrame" _latestARFrame;
+}
+
+@property (T@"ARSession",&,N,V_arSession) arSession;
+@property (TQ,N,V_arSessionState) arSessionState;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (TB,N,GisARSessionInternal,V_arSessionInternal) arSessionInternal;
+@property (TB,N,GisARSessionInClientProcess,V_arSessionInClientProcess) arSessionInClientProcess;
+@property (T@"ARFrame",C,N,V_latestARFrame) latestARFrame;
+
+/* instance methods */
+-[NISessionVisionContext setArSessionInClientProcess:];
+-[NISessionVisionContext setArSessionState:];
+-[NISessionVisionContext init];
+-[NISessionVisionContext latestARFrame];
+-[NISessionVisionContext setArSession:];
+-[NISessionVisionContext arSession];
+-[NISessionVisionContext setArSessionInternal:];
+-[NISessionVisionContext isCameraAssistanceEnabled];
+-[NISessionVisionContext isARSessionInternal];
+-[NISessionVisionContext setCameraAssistanceEnabled:];
+-[NISessionVisionContext setLatestARFrame:];
+-[NISessionVisionContext isARSessionInClientProcess];
+-[NISessionVisionContext arSessionState];
+
+@end
+
+@interface NISpatialBrowsingConfiguration : NIConfiguration {
+    /* instance variables */
+    B _responder;
+    q _updatesPolicy;
+    @"NSString" _deviceIdentifier;
+    d _maxNearbyObjectAge;
+}
+
+@property (Tq,V_updatesPolicy) updatesPolicy;
+@property (TB,GisResponder,V_responder) responder;
+@property (T@"NSString",C,V_deviceIdentifier) deviceIdentifier;
+@property (Td,V_maxNearbyObjectAge) maxNearbyObjectAge;
+
+/* class methods */
++[NISpatialBrowsingConfiguration supportsSecureCoding];
++[NISpatialBrowsingConfiguration new];
++[NISpatialBrowsingConfiguration responderConfigurationWithIdentifier:];
+
+/* instance methods */
+-[NISpatialBrowsingConfiguration descriptionInternal];
+-[NISpatialBrowsingConfiguration setDeviceIdentifier:];
+-[NISpatialBrowsingConfiguration maxNearbyObjectAge];
+-[NISpatialBrowsingConfiguration deviceIdentifier];
+-[NISpatialBrowsingConfiguration setUpdatesPolicy:];
+-[NISpatialBrowsingConfiguration init];
+-[NISpatialBrowsingConfiguration copyWithZone:];
+-[NISpatialBrowsingConfiguration isResponder];
+-[NISpatialBrowsingConfiguration initWithCoder:];
+-[NISpatialBrowsingConfiguration setResponder:];
+-[NISpatialBrowsingConfiguration setMaxNearbyObjectAge:];
+-[NISpatialBrowsingConfiguration encodeWithCoder:];
+-[NISpatialBrowsingConfiguration hash];
+-[NISpatialBrowsingConfiguration description];
+-[NISpatialBrowsingConfiguration updatesPolicy];
+-[NISpatialBrowsingConfiguration isEqual:];
+
+@end
+
+@interface NISystemConfiguration : NIConfiguration {
+    /* instance variables */
+    B _prewarmUWB;
+    B _prewarmSecureElementChannel;
+}
+
+@property (TB,N,V_prewarmUWB) prewarmUWB;
+@property (TB,N,V_prewarmSecureElementChannel) prewarmSecureElementChannel;
+
+/* class methods */
++[NISystemConfiguration supportsSecureCoding];
++[NISystemConfiguration new];
+
+/* instance methods */
+-[NISystemConfiguration descriptionInternal];
+-[NISystemConfiguration _internalIsMemoryAssertionRequired];
+-[NISystemConfiguration init];
+-[NISystemConfiguration copyWithZone:];
+-[NISystemConfiguration initWithCoder:];
+-[NISystemConfiguration encodeWithCoder:];
+-[NISystemConfiguration hash];
+-[NISystemConfiguration description];
+-[NISystemConfiguration isEqual:];
+-[NISystemConfiguration setPrewarmSecureElementChannel:];
+-[NISystemConfiguration prewarmSecureElementChannel];
+-[NISystemConfiguration prewarmUWB];
+-[NISystemConfiguration setPrewarmUWB:];
+
+@end
+
+@interface NISystemEventNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NISystemEventNotifier _notifyResourceUsageLimitExceeded:forSessionConfigurationType:];
+-[NISystemEventNotifier initWithParentSession:];
+-[NISystemEventNotifier notifyPassiveAccessIntent:];
+
+@end
+
+@interface NISystemState : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    Q _uwbPreciseDistanceAvailability;
+    Q _uwbExtendedDistanceAvailability;
+}
+
+@property (TQ,N,V_uwbPreciseDistanceAvailability) uwbPreciseDistanceAvailability;
+@property (TQ,N,V_uwbExtendedDistanceAvailability) uwbExtendedDistanceAvailability;
+
+/* class methods */
++[NISystemState supportsSecureCoding];
+
+/* instance methods */
+-[NISystemState descriptionInternal];
+-[NISystemState init];
+-[NISystemState copyWithZone:];
+-[NISystemState initWithCoder:];
+-[NISystemState encodeWithCoder:];
+-[NISystemState hash];
+-[NISystemState description];
+-[NISystemState isEqual:];
+-[NISystemState uwbExtendedDistanceAvailability];
+-[NISystemState initWithUWBPreciseDistanceAvailability:uwbExtendedDistanceAvailability:];
+-[NISystemState setUwbExtendedDistanceAvailability:];
+-[NISystemState setUwbPreciseDistanceAvailability:];
+-[NISystemState uwbPreciseDistanceAvailability];
+
+@end
+
+@interface NIVisionInput : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    B _majorRelocalization;
+    B _minorRelocalization;
+    d _timestamp;
+    q _trackingState;
+    d _lightEstimate;
+    {?="columns"[4]} _devicePose;
+}
+
+@property (Td,R,V_timestamp) timestamp;
+@property (T{?=[4]},R,V_devicePose) devicePose;
+@property (Tq,R,V_trackingState) trackingState;
+@property (Td,R,V_lightEstimate) lightEstimate;
+@property (TB,R,V_majorRelocalization) majorRelocalization;
+@property (TB,R,V_minorRelocalization) minorRelocalization;
+
+/* class methods */
++[NIVisionInput supportsSecureCoding];
+
+/* instance methods */
+-[NIVisionInput timestamp];
+-[NIVisionInput copyWithZone:];
+-[NIVisionInput initWithCoder:];
+-[NIVisionInput encodeWithCoder:];
+-[NIVisionInput hash];
+-[NIVisionInput isEqual:];
+-[NIVisionInput trackingState];
+-[NIVisionInput devicePose];
+-[NIVisionInput initWithTimestamp:devicePose:trackingState:lightEstimate:majorRelocalization:minorRelocalization:];
+-[NIVisionInput lightEstimate];
+-[NIVisionInput majorRelocalization];
+-[NIVisionInput minorRelocalization];
+-[NIVisionInput overrideTimestamp:];
+
+@end
+
+@interface UWBSignalFeatures : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"BiasEstimatorFeatures" _inputFeatures;
+    @"BiasEstimatorOutputs" _outputs;
+}
+
+@property (T@"BiasEstimatorFeatures",C,N,V_inputFeatures) inputFeatures;
+@property (T@"BiasEstimatorOutputs",C,N,V_outputs) outputs;
+
+/* class methods */
++[UWBSignalFeatures supportsSecureCoding];
+
+/* instance methods */
+-[UWBSignalFeatures outputs];
+-[UWBSignalFeatures copyWithZone:];
+-[UWBSignalFeatures initWithCoder:];
+-[UWBSignalFeatures encodeWithCoder:];
+-[UWBSignalFeatures hash];
+-[UWBSignalFeatures description];
+-[UWBSignalFeatures isEqual:];
+-[UWBSignalFeatures inputFeatures];
+-[UWBSignalFeatures setOutputs:];
+-[UWBSignalFeatures initWithUWBSignalFeatures:];
+-[UWBSignalFeatures orderedBiasEstimatorFeatutes];
+-[UWBSignalFeatures setInputFeatures:];
+
+@end
+
+@interface _NIWiFiRangingTestConfiguration : NIConfiguration {
+    /* instance variables */
+    @"NIDiscoveryToken" _peerDiscoveryToken;
+    @"NSDictionary" _parameters;
+    @"NSArray" _monitoredRegions;
+}
+
+@property (T@"NIDiscoveryToken",R,C,N,V_peerDiscoveryToken) peerDiscoveryToken;
+@property (T@"NSDictionary",R,N,V_parameters) parameters;
+@property (T@"NSArray",C,V_monitoredRegions) monitoredRegions;
+
+/* class methods */
++[_NIWiFiRangingTestConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[_NIWiFiRangingTestConfiguration descriptionInternal];
+-[_NIWiFiRangingTestConfiguration setMonitoredRegions:];
+-[_NIWiFiRangingTestConfiguration copyWithZone:];
+-[_NIWiFiRangingTestConfiguration parameters];
+-[_NIWiFiRangingTestConfiguration initWithCoder:];
+-[_NIWiFiRangingTestConfiguration initWithDiscoveryToken:wifiRangingParameters:regions:];
+-[_NIWiFiRangingTestConfiguration encodeWithCoder:];
+-[_NIWiFiRangingTestConfiguration monitoredRegions];
+-[_NIWiFiRangingTestConfiguration hash];
+-[_NIWiFiRangingTestConfiguration description];
+-[_NIWiFiRangingTestConfiguration peerDiscoveryToken];
+-[_NIWiFiRangingTestConfiguration isEqual:];
+
+@end
+
+@interface NSCoder (NearbyInteraction)
+
+/* instance methods */
+-[NSCoder  decodeDoubleVector3ForKey:];
+-[NSCoder  decodeMatrix4x4ForKey:];
+-[NSCoder  decodeQuatForKey:];
+-[NSCoder  decodeVector3ForKey:];
+-[NSCoder  encodeDoubleVector3:forKey:];
+-[NSCoder  encodeMatrix4x4:forKey:];
+-[NSCoder  encodeQuat:forKey:];
+-[NSCoder  encodeVector3:forKey:];
+
+@end
+

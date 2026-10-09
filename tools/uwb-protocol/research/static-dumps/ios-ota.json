@@ -1,0 +1,81 @@
+{
+  "schema_version": 1,
+  "otas": [
+    {
+      "os": "iOS",
+      "version": "27.0.1",
+      "version_extra": null,
+      "build": "24A446",
+      "channel": {
+        "kind": "release",
+        "release_type": null,
+        "documentation_id": "iOS2701Long",
+        "train_name": "Rave",
+        "is_seed": null,
+        "audiences": [
+          {
+            "id": "01c1d682-6e8f-4908-b724-5501fe3f5e5c",
+            "name": "release",
+            "version": null
+          }
+        ]
+      },
+      "posting_date": "2026-10-08",
+      "delivery": "full",
+      "prerequisite": null,
+      "supported_devices": [
+        "iPhone17,1"
+      ],
+      "supported_models": [
+        "D93AP"
+      ],
+      "url": "https://updates.cdn-apple.com/2026FallFCS/67a2f6e9-79df-4ead-a96e-ea30ff4545a6/com_apple_MobileAsset_SoftwareUpdate/3e856b2ed92cb6b0078824c08b479af8f963ecf32f9ac57261e5ac0e6b2a5eea.aea",
+      "download_size": 9126805504,
+      "unarchived_size": 9327538176,
+      "sha1": "4541e71fe71a6e7ed1acfb02bace8b8780731448",
+      "sha256": "09124c956219495e73819d9efdfece2c75347bbbd89a006178e4a5c1bc3f3296",
+      "encryption": {
+        "encrypted": true,
+        "format": "AppleEncryptedArchive",
+        "decryption_key_available": true
+      },
+      "provenance": {
+        "asset_type": "com.apple.MobileAsset.SoftwareUpdate",
+        "sightings": [
+          {
+            "source": "pallas",
+            "audience_id": "01c1d682-6e8f-4908-b724-5501fe3f5e5c",
+            "asset_set_id": "164776ee-08ea-4727-95e2-2a257388f7b2",
+            "posting_date": "2026-10-08",
+            "build": "24A446",
+            "documentation_id": "iOS2701Long",
+            "release_type": null,
+            "is_seed": null
+          }
+        ],
+        "asset_sets": [
+          {
+            "list": "PublicAssetSets",
+            "os": "iOS",
+            "product_version": "27.0.1",
+            "product_version_extra": null,
+            "build": "24A446",
+            "prerequisite_build": null,
+            "posting_date": "2026-10-08",
+            "expiration_date": "2027-01-06"
+          },
+          {
+            "list": "AssetSets",
+            "os": "iOS",
+            "product_version": "27.0.1",
+            "product_version_extra": null,
+            "build": "24A446",
+            "prerequisite_build": null,
+            "posting_date": "2026-09-28",
+            "expiration_date": "2027-01-06"
+          }
+        ]
+      }
+    }
+  ]
+}

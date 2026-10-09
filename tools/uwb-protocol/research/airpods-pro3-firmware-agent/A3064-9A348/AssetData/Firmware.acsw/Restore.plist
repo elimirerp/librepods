@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DeviceMap</key>
+	<array>
+		<dict>
+			<key>BDID</key>
+			<integer>112</integer>
+			<key>BoardConfig</key>
+			<string>b788ap</string>
+			<key>CPID</key>
+			<integer>8214</integer>
+			<key>Platform</key>
+			<string>t2016</string>
+			<key>SCEP</key>
+			<integer>0</integer>
+			<key>SDOM</key>
+			<integer>1</integer>
+		</dict>
+	</array>
+	<key>ProductBuildVersion</key>
+	<string>9A348</string>
+	<key>ProductVersion</key>
+	<string>9.0</string>
+	<key>SupportedProductTypeIDs</key>
+	<dict>
+		<key>DFU</key>
+		<array>
+			<integer>1879056406</integer>
+		</array>
+		<key>Recovery</key>
+		<array>
+			<integer>1879056406</integer>
+		</array>
+	</dict>
+	<key>SupportedProductTypes</key>
+	<array>
+		<string>AirPods3,4</string>
+	</array>
+	<key>SystemRestoreImageFileSystems</key>
+	<dict/>
+</dict>
+</plist>

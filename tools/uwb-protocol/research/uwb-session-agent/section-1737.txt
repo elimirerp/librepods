@@ -1,0 +1,155 @@
+-[NIServerFindingService _generateShareableConfigurationDataForAllListenersUsingAdvertisement:]:
+0x10021AA77   pushq    %rbp                 
+0x10021AA78   movq     %rsp, %rbp           
+0x10021AA7B   pushq    %r15                 
+0x10021AA7D   pushq    %r14                 
+0x10021AA7F   pushq    %r13                 
+0x10021AA81   pushq    %r12                 
+0x10021AA83   pushq    %rbx                 
+0x10021AA84   subq     $0x68, %rsp          
+0x10021AA88   movq     %rdx, %rbx           
+0x10021AA8B   movq     %rdi, %r14           
+0x10021AA8E   movq     %rdx, %rdi           
+0x10021AA91   callq    *0x724779(%rip)      ; _objc_retain
+0x10021AA97   cmpq     $0x0, 0x58(%r14)     
+0x10021AA9C   je       0x10021ac1e          
+0x10021AAA2   movq     %r14, -0x50(%rbp)    
+0x10021AAA6   movq     0x789cd3(%rip), %rsi  ; selector "byteRepresentation"
+0x10021AAAD   movq     %rbx, %rdi           
+0x10021AAB0   movq     %rbx, -0x48(%rbp)    
+0x10021AAB4   callq    *0x724716(%rip)      ; _objc_msgSend
+0x10021AABA   movq     %rax, %rdi           
+0x10021AABD   callq    _objc_retainAutoreleasedReturnValue 
+0x10021AAC2   leaq     0x790a17(%rip), %rdi  ; NINearbyObject
+0x10021AAC9   movq     %rax, -0x38(%rbp)    
+0x10021AACD   callq    _objc_alloc          
+0x10021AAD2   movq     -0x50(%rbp), %r15    
+0x10021AAD6   movq     0x58(%r15), %rdx     
+0x10021AADA   movq     0x788a0f(%rip), %rsi  ; selector "initWithToken:"
+0x10021AAE1   movq     %rax, %rdi           
+0x10021AAE4   callq    *0x7246e6(%rip)      ; _objc_msgSend
+0x10021AAEA   movq     %rax, -0x30(%rbp)    
+0x10021AAEE   movq     0x20(%r15), %rdi     
+0x10021AAF2   movq     0x78a487(%rip), %rsi  ; selector "objectEnumerator"
+0x10021AAF9   callq    *0x7246d1(%rip)      ; _objc_msgSend
+0x10021AAFF   movq     %rax, %rdi           
+0x10021AB02   callq    _objc_retainAutoreleasedReturnValue 
+0x10021AB07   movq     %rax, -0x40(%rbp)    
+0x10021AB0B   movq     0x78a476(%rip), %rbx  ; selector "nextObject"
+0x10021AB12   movq     0x78a69f(%rip), %r13  ; selector "serviceDidGenerateShareableConfigurationData:forObject:"
+0x10021AB19   xorl     %r15d, %r15d         
+0x10021AB1C   movq     0x7246ad(%rip), %r12  ; _objc_msgSend
+0x10021AB23   movq     -0x40(%rbp), %rdi    
+0x10021AB27   movq     %rbx, %rsi           
+0x10021AB2A   callq    *0x7246a0(%rip)      ; _objc_msgSend
+0x10021AB30   movq     %rax, %rdi           
+0x10021AB33   callq    _objc_retainAutoreleasedReturnValue 
+0x10021AB38   movq     %rax, %r14           
+0x10021AB3B   movq     %r15, %rdi           
+0x10021AB3E   callq    *0x7246c4(%rip)      ; _objc_release
+0x10021AB44   testq    %r14, %r14           
+0x10021AB47   je       0x10021ab5f          
+0x10021AB49   movq     %r14, %r15           
+0x10021AB4C   movq     %r14, %rdi           
+0x10021AB4F   movq     %r13, %rsi           
+0x10021AB52   movq     -0x38(%rbp), %rdx    
+0x10021AB56   movq     -0x30(%rbp), %rcx    
+0x10021AB5A   callq    *%r12                
+0x10021AB5D   jmp      0x10021ab23          
+0x10021AB5F   leaq     0x790cea(%rip), %rdi  ; NIServerFindingServiceObserverRelay
+0x10021AB66   movq     0x787b8b(%rip), %rsi  ; selector "sharedInstance"
+0x10021AB6D   callq    *0x72465d(%rip)      ; _objc_msgSend
+0x10021AB73   movq     %rax, %rdi           
+0x10021AB76   callq    _objc_retainAutoreleasedReturnValue 
+0x10021AB7B   movq     %rax, -0x58(%rbp)    
+0x10021AB7F   movq     -0x50(%rbp), %rax    
+0x10021AB83   movq     0x58(%rax), %r14     
+0x10021AB87   movq     0x723df2(%rip), %rax  ; __NSConcreteStackBlock
+0x10021AB8E   leaq     -0x88(%rbp), %r15    
+0x10021AB95   movq     %rax, (%r15)         
+0x10021AB98   movl     $0xc2000000, %eax    
+0x10021AB9D   movq     %rax, 0x8(%r15)      
+0x10021ABA1   leaq     0x101(%rip), %rax    ; 
+0x10021ABA8   movq     %rax, 0x10(%r15)     
+0x10021ABAC   leaq     0x736b65(%rip), %rax  ; 
+0x10021ABB3   movq     %rax, 0x18(%r15)     
+0x10021ABB7   movq     0x724652(%rip), %rbx  ; _objc_retain
+0x10021ABBE   movq     -0x38(%rbp), %r13    
+0x10021ABC2   movq     %r13, %rdi           
+0x10021ABC5   callq    *%rbx                
+0x10021ABC7   movq     %r13, 0x20(%r15)     
+0x10021ABCB   movq     -0x30(%rbp), %r12    
+0x10021ABCF   movq     %r12, %rdi           
+0x10021ABD2   callq    *%rbx                
+0x10021ABD4   movq     %r12, 0x28(%r15)     
+0x10021ABD8   movq     0x78a6a9(%rip), %rsi  ; selector "relayToObserversForToken:blockToRelay:"
+0x10021ABDF   movq     -0x58(%rbp), %rbx    
+0x10021ABE3   movq     %rbx, %rdi           
+0x10021ABE6   movq     %r14, %rdx           
+0x10021ABE9   movq     %r15, %rcx           
+0x10021ABEC   callq    *0x7245de(%rip)      ; _objc_msgSend
+0x10021ABF2   movq     %rbx, %rdi           
+0x10021ABF5   movq     0x72460c(%rip), %rbx  ; _objc_release
+0x10021ABFC   callq    *%rbx                
+0x10021ABFE   movq     -0x60(%rbp), %rdi    
+0x10021AC02   callq    *%rbx                
+0x10021AC04   movq     -0x68(%rbp), %rdi    
+0x10021AC08   callq    *%rbx                
+0x10021AC0A   movq     -0x40(%rbp), %rdi    
+0x10021AC0E   callq    *%rbx                
+0x10021AC10   movq     %r12, %rdi           
+0x10021AC13   callq    *%rbx                
+0x10021AC15   movq     %r13, %rdi           
+0x10021AC18   callq    *%rbx                
+0x10021AC1A   movq     -0x48(%rbp), %rbx    
+0x10021AC1E   movq     %rbx, %rdi           
+0x10021AC21   callq    *0x7245e1(%rip)      ; _objc_release
+0x10021AC27   addq     $0x68, %rsp          
+0x10021AC2B   popq     %rbx                 
+0x10021AC2C   popq     %r12                 
+0x10021AC2E   popq     %r13                 
+0x10021AC30   popq     %r14                 
+0x10021AC32   popq     %r15                 
+0x10021AC34   popq     %rbp                 
+0x10021AC35   retq                          
+0x10021AC36   movq     %rax, %r13           
+0x10021AC39   movq     -0x60(%rbp), %rdi    
+0x10021AC3D   movq     0x7245c4(%rip), %rax  ; _objc_release
+0x10021AC44   movq     %rbx, %r14           
+0x10021AC47   movq     %rax, %rbx           
+0x10021AC4A   callq    *%rax                
+0x10021AC4C   movq     -0x68(%rbp), %rdi    
+0x10021AC50   callq    *%rbx                
+0x10021AC52   movq     %r14, %rdi           
+0x10021AC55   callq    *%rbx                
+0x10021AC57   jmp      0x10021ac79          
+0x10021AC59   movq     %rax, %r13           
+0x10021AC5C   jmp      0x10021ac79          
+0x10021AC5E   movq     %rax, %r13           
+0x10021AC61   jmp      0x10021ac83          
+0x10021AC63   movq     %rax, %r13           
+0x10021AC66   jmp      0x10021ac97          
+0x10021AC68   movq     %rax, %r13           
+0x10021AC6B   jmp      0x10021ac8d          
+0x10021AC6D   movq     %rax, %r13           
+0x10021AC70   movq     %r15, %rdi           
+0x10021AC73   callq    *0x72458f(%rip)      ; _objc_release
+0x10021AC79   movq     -0x40(%rbp), %rdi    
+0x10021AC7D   callq    *0x724585(%rip)      ; _objc_release
+0x10021AC83   movq     -0x30(%rbp), %rdi    
+0x10021AC87   callq    *0x72457b(%rip)      ; _objc_release
+0x10021AC8D   movq     -0x38(%rbp), %rdi    
+0x10021AC91   callq    *0x724571(%rip)      ; _objc_release
+0x10021AC97   movq     -0x48(%rbp), %rdi    
+0x10021AC9B   callq    *0x724567(%rip)      ; _objc_release
+0x10021ACA1   movq     %r13, %rdi           
+0x10021ACA4   callq    __Unwind_Resume      
+0x10021ACA9   pushq    %rbp                 
+0x10021ACAA   movq     %rsp, %rbp           
+0x10021ACAD   movq     %rsi, %rax           
+0x10021ACB0   movq     0x20(%rdi), %rdx     
+0x10021ACB4   movq     0x28(%rdi), %rcx     
+0x10021ACB8   movq     0x78a4f9(%rip), %rsi  ; selector "serviceDidGenerateShareableConfigurationData:forObject:"
+0x10021ACBF   movq     %rax, %rdi           
+0x10021ACC2   popq     %rbp                 
+0x10021ACC3   jmpq     *0x724507(%rip)      ; _objc_msgSend

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleIdentifier</key>
+	<string>com.apple.MobileAsset.UARP.A3064</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6</string>
+	<key>CFBundleName</key>
+	<string>A3064-FirmwareUpdate-90.3431000025000000.6807</string>
+	<key>CFBundleShortVersionString</key>
+	<string>90.3431000025000000.6807</string>
+	<key>CFBundleVersion</key>
+	<string>90.3431000025000000.6807</string>
+	<key>MobileAssetProperties</key>
+	<dict>
+		<key>Build</key>
+		<string>9A348</string>
+		<key>DeviceName</key>
+		<string>A3064</string>
+		<key>FirmwareBundle</key>
+		<string>Firmware.acsw</string>
+		<key>FirmwareVersionBuild</key>
+		<integer>0</integer>
+		<key>FirmwareVersionMajor</key>
+		<integer>90</integer>
+		<key>FirmwareVersionMinor</key>
+		<integer>3431000025000000</integer>
+		<key>FirmwareVersionRelease</key>
+		<integer>6807</integer>
+		<key>FormatVersion</key>
+		<integer>1</integer>
+	</dict>
+</dict>
+</plist>

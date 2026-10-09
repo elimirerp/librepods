@@ -1,5 +1,5 @@
 {
-  "scope": "Author research and redacted historical enrollment sources; proprietary executable images, credentials and live identities are excluded",
+  "scope": "Author research, redacted historical enrollment sources and firmware provenance. Additional actual static binary/text inputs are indexed separately in binary-input-manifest.json; private account state is excluded.",
   "files": [
     {
       "path": "tools/uwb-protocol/research/uwb-protocol-agent/root-LE-security-encrypt.asm",
@@ -2179,7 +2179,7 @@
     {
       "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/README.md",
       "source": "work/airpods-pro3-firmware-agent/README.md",
-      "sha256": "cf11ecead9027f33f49207542691ac0a35488321759d8639d497e4c6b736c0ff"
+      "sha256": "9f4f84864793f5149a646ce327a06d09eaee82c82688efda3ca80fb6ec84da6f"
     },
     {
       "path": "tools/uwb-protocol/research/airpods-pro3-firmware-agent/A3064-9A348-provenance.json",

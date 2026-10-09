@@ -1,0 +1,18 @@
+Final extension-profile audit (2026-10-08)
+
+Static findings
+- FMDExtHelper deviceIDFromAddress: (iOS26 disassembly lines 505141 onward) hashes UTF8 BT_ + Bluetooth address, lowercase SHA256 hex. Existing URL target remains correct.
+- FMDExtHelper deviceTypeFromVendorId:productId: (505176 onward) hashes UTF8 BT_<vendor>_<product>. Product hash for BT_76_8231 matches gateway configuration.
+- FMDExtAccessory.deviceInfo (428515 onward) uses accessoryIdentifier.stringValue for udid; separately uses accessoryType for productType, configForAccessoryType.version for cachedConfigVersion. Catalogue version is string "27".
+- baUUID is a separate body field, not URL identity on extension accessory path.
+- ServerDeviceInfo.deviceInfoForAccount:accessory: (377186 onward) mutably copies accessory.deviceInfo, maps aps-token into TOKEN, then adds _accessoryConfigurationDeviceInfo.
+- _accessoryConfigurationDeviceInfo (17760 onward) adds supportsDataUpdate string "true", and optional cached accessoryTypeListVersion, nwdListVersion, lostModeInfoVersion. Native safeSet omits nil optional versions.
+- AccessoryRegisterAction uses standard registerDeviceContextForAccount, adding cause; request headers add X-Apple-PrsId from authId; serverContext omitted if nil.
+- FMDExtAccessory.otherDeviceInfo contains genuine host name, host class, platform, host UDID, productType, and accessory lastActiveTime.
+
+Observed conclusion
+Parent reported successful same-MAC-ID extension profile registration: hashed productType plus cachedConfigVersion "27", macosx_proxy. Native Find My UI now shows AirPods Pro device row, map pin, and current location. No more experiments needed.
+The result supports payload classification/config compatibility as the missing condition for prior 204 no-ops. It does not isolate hash versus version versus other simultaneously updated extension fields.
+
+Scope
+All my tests were local synthetic Python/ObjC model experiments and static disassembly inspection. No account/system/Bluetooth/live server mutation performed by this agent. Existing exact tests and rationale are in findings.txt, host-snapshot-procedure.txt, and local-accessory-route.txt.

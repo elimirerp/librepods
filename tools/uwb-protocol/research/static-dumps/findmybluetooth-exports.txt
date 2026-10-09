@@ -1,0 +1,1543 @@
+(extension in FindMyBluetooth):FindMyBase.Identifier<A where A == FindMyBluetooth.Characteristic>.description.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBase.Identifier<A where A == FindMyBluetooth.Characteristic>.description : Swift.String
+(extension in FindMyBluetooth):FindMyBase.Identifier<A where A == FindMyBluetooth.Service>.description.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBase.Identifier<A where A == FindMyBluetooth.Service>.description : Swift.String
+(extension in FindMyBluetooth):FindMyBase.Identifier.init(stringLiteral: Swift.StaticString) -> FindMyBase.Identifier<A>
+protocol conformance descriptor for FindMyBase.Identifier<A> : Swift.ExpressibleByStringLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBase.Identifier<A> : Swift.ExpressibleByUnicodeScalarLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBase.Identifier<A> : Swift.ExpressibleByExtendedGraphemeClusterLiteral in FindMyBluetooth
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.rawPayload.getter : Foundation.Data
+property descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.rawPayload : Foundation.Data
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.proximityPairing(FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.legacyAppleTVProximitySetup(FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.hash(FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.airdrop(FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.iBeacon(FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.airprint(FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.init(rawValue: Swift.UInt8) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType?
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.rawValue.getter : Swift.UInt8
+property descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.rawValue : Swift.UInt8
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.reserved(FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.homekitV1(FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+type metadata accessor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+nominal type descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+type metadata for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType : Swift.Decodable in FindMyBluetooth
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.description.getter : Swift.String
+property descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.description : Swift.String
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.payloadType.getter : FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+property descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.payloadType : FindMyBluetooth.BluetoothManufacturerAdvertisementData.PayloadType
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.init(from: Swift.Decoder) throws -> FindMyBluetooth.BluetoothManufacturerAdvertisementData
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.invalidPayload(FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.invalidPayloadType(FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.invalidPayloadLength(FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error
+static FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.== infix(FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error, FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error) -> Swift.Bool
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.hash(into: inout Swift.Hasher) -> ()
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.unknown(FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error
+nominal type descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error
+type metadata for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.Error : Swift.Error in FindMyBluetooth
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.encode(to: Swift.Encoder) throws -> ()
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.findMyAccessory(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.objectSetup(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.appleTVRemote(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.objectSetupV2(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.accessoryStatus(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.airPodsMismatchedBuds(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.applePencilOOBPairing(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.status(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.pairing(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.init(rawValue: Swift.UInt8) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType?
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.rawValue.getter : Swift.UInt8
+property descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.rawValue : Swift.UInt8
+enum case for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.pairingV2(FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType.Type) -> FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+type metadata accessor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+nominal type descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+type metadata for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType : Swift.Decodable in FindMyBluetooth
+FindMyBluetooth.BluetoothManufacturerAdvertisementData.subType.getter : FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+property descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData.subType : FindMyBluetooth.BluetoothManufacturerAdvertisementData.SubType
+type metadata accessor for FindMyBluetooth.BluetoothManufacturerAdvertisementData
+nominal type descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData
+type metadata for FindMyBluetooth.BluetoothManufacturerAdvertisementData
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData : Swift.Decodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.BluetoothManufacturerAdvertisementData : Swift.CustomStringConvertible in FindMyBluetooth
+FindMyBluetooth.Controller.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.Controller.unownedExecutor : Swift.UnownedSerialExecutor
+enum case for FindMyBluetooth.Controller.Error.missingCBDevice(FindMyBluetooth.Controller.Error.Type) -> FindMyBluetooth.Controller.Error
+static FindMyBluetooth.Controller.Error.== infix(FindMyBluetooth.Controller.Error, FindMyBluetooth.Controller.Error) -> Swift.Bool
+FindMyBluetooth.Controller.Error.hash(into: inout Swift.Hasher) -> ()
+enum case for FindMyBluetooth.Controller.Error.unknown(FindMyBluetooth.Controller.Error.Type) -> FindMyBluetooth.Controller.Error
+FindMyBluetooth.Controller.Error.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.Controller.Error.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.Controller.Error
+nominal type descriptor for FindMyBluetooth.Controller.Error
+type metadata for FindMyBluetooth.Controller.Error
+protocol conformance descriptor for FindMyBluetooth.Controller.Error : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Controller.Error : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Controller.Error : Swift.Error in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.Controller.unpair(device: FindMyBluetooth.Device) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Controller.unpair(device: FindMyBluetooth.Device) async throws -> ()
+method descriptor for FindMyBluetooth.Controller.unpair(device: FindMyBluetooth.Device) async throws -> ()
+protocol conformance descriptor for FindMyBluetooth.Controller : FindMyBluetooth.ControllerProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.Controller : FindMyBluetooth.ControllerProtocol in FindMyBluetooth
+FindMyBluetooth.Controller.__allocating_init() -> FindMyBluetooth.Controller
+dispatch thunk of FindMyBluetooth.Controller.__allocating_init() -> FindMyBluetooth.Controller
+method descriptor for FindMyBluetooth.Controller.__allocating_init() -> FindMyBluetooth.Controller
+FindMyBluetooth.Controller.init() -> FindMyBluetooth.Controller
+type metadata accessor for FindMyBluetooth.Controller
+metaclass for FindMyBluetooth.Controller
+nominal type descriptor for FindMyBluetooth.Controller
+class metadata base offset for FindMyBluetooth.Controller
+method lookup function for FindMyBluetooth.Controller
+type metadata for FindMyBluetooth.Controller
+protocol conformance descriptor for FindMyBluetooth.Controller : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.Controller.__deallocating_deinit
+FindMyBluetooth.Controller.deinit
+protocol conformance descriptor for FindMyBluetooth.Controller : Swift.Identifiable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Controller : Swift.CustomStringConvertible in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral : FindMyBase.IsolatedCustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.Peripheral.macAddress.modify : FindMyBase.MACAddress?
+method descriptor for FindMyBluetooth.Peripheral.macAddress.modify : FindMyBase.MACAddress?
+dispatch thunk of FindMyBluetooth.Peripheral.macAddress.getter : FindMyBase.MACAddress?
+method descriptor for FindMyBluetooth.Peripheral.macAddress.getter : FindMyBase.MACAddress?
+property descriptor for FindMyBluetooth.Peripheral.macAddress : FindMyBase.MACAddress?
+dispatch thunk of FindMyBluetooth.Peripheral.macAddress.setter : FindMyBase.MACAddress?
+method descriptor for FindMyBluetooth.Peripheral.macAddress.setter : FindMyBase.MACAddress?
+dispatch thunk of FindMyBluetooth.Peripheral.isConnected.getter : Swift.Bool
+method descriptor for FindMyBluetooth.Peripheral.isConnected.getter : Swift.Bool
+property descriptor for FindMyBluetooth.Peripheral.isConnected : Swift.Bool
+dispatch thunk of FindMyBluetooth.Peripheral.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+method descriptor for FindMyBluetooth.Peripheral.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+property descriptor for FindMyBluetooth.Peripheral.pairingInfo : FindMyBluetooth.PeripheralPairingInfo
+FindMyBluetooth.Peripheral.isConnectable.getter : Swift.Bool
+property descriptor for FindMyBluetooth.Peripheral.isConnectable : Swift.Bool
+dispatch thunk of FindMyBluetooth.Peripheral.transportType.getter : FindMyBluetooth.TransportType
+method descriptor for FindMyBluetooth.Peripheral.transportType.getter : FindMyBluetooth.TransportType
+property descriptor for FindMyBluetooth.Peripheral.transportType : FindMyBluetooth.TransportType
+dispatch thunk of FindMyBluetooth.Peripheral.customProperty(Swift.String) -> Swift.String?
+method descriptor for FindMyBluetooth.Peripheral.customProperty(Swift.String) -> Swift.String?
+FindMyBluetooth.Peripheral.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.Peripheral.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.Peripheral.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+method descriptor for FindMyBluetooth.Peripheral.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+dispatch thunk of FindMyBluetooth.Peripheral.cancelConnection() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.cancelConnection() async throws -> ()
+method descriptor for FindMyBluetooth.Peripheral.cancelConnection() async throws -> ()
+static FindMyBluetooth.Peripheral.ConnectionOptions.useTempLTK.getter : FindMyBluetooth.Peripheral.ConnectionOptions
+property descriptor for static FindMyBluetooth.Peripheral.ConnectionOptions.useTempLTK : FindMyBluetooth.Peripheral.ConnectionOptions
+static FindMyBluetooth.Peripheral.ConnectionOptions.shouldSkipUnpair.getter : FindMyBluetooth.Peripheral.ConnectionOptions
+property descriptor for static FindMyBluetooth.Peripheral.ConnectionOptions.shouldSkipUnpair : FindMyBluetooth.Peripheral.ConnectionOptions
+static FindMyBluetooth.Peripheral.ConnectionOptions.hideFromBTSettings.getter : FindMyBluetooth.Peripheral.ConnectionOptions
+property descriptor for static FindMyBluetooth.Peripheral.ConnectionOptions.hideFromBTSettings : FindMyBluetooth.Peripheral.ConnectionOptions
+static FindMyBluetooth.Peripheral.ConnectionOptions.allCases.getter : [FindMyBluetooth.Peripheral.ConnectionOptions]
+property descriptor for static FindMyBluetooth.Peripheral.ConnectionOptions.allCases : [FindMyBluetooth.Peripheral.ConnectionOptions]
+FindMyBluetooth.Peripheral.ConnectionOptions.init(rawValue: Swift.UInt64) -> FindMyBluetooth.Peripheral.ConnectionOptions
+FindMyBluetooth.Peripheral.ConnectionOptions.rawValue.getter : Swift.UInt64
+property descriptor for FindMyBluetooth.Peripheral.ConnectionOptions.rawValue : Swift.UInt64
+type metadata accessor for FindMyBluetooth.Peripheral.ConnectionOptions
+nominal type descriptor for FindMyBluetooth.Peripheral.ConnectionOptions
+type metadata for FindMyBluetooth.Peripheral.ConnectionOptions
+protocol conformance descriptor for FindMyBluetooth.Peripheral.ConnectionOptions : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.ConnectionOptions : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.ConnectionOptions : Swift.SetAlgebra in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.ConnectionOptions : Swift.CaseIterable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.ConnectionOptions : Swift.ExpressibleByArrayLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.ConnectionOptions : Swift.OptionSet in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.Peripheral.advertisementData.modify : [Swift.String : Swift.Sendable]?
+method descriptor for FindMyBluetooth.Peripheral.advertisementData.modify : [Swift.String : Swift.Sendable]?
+dispatch thunk of FindMyBluetooth.Peripheral.advertisementData.getter : [Swift.String : Swift.Sendable]?
+method descriptor for FindMyBluetooth.Peripheral.advertisementData.getter : [Swift.String : Swift.Sendable]?
+property descriptor for FindMyBluetooth.Peripheral.advertisementData : [Swift.String : Swift.Sendable]?
+dispatch thunk of FindMyBluetooth.Peripheral.advertisementData.setter : [Swift.String : Swift.Sendable]?
+method descriptor for FindMyBluetooth.Peripheral.advertisementData.setter : [Swift.String : Swift.Sendable]?
+dispatch thunk of FindMyBluetooth.Peripheral.customPropertyNames.getter : [Swift.String]
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.customPropertyNames.getter : [Swift.String]
+method descriptor for FindMyBluetooth.Peripheral.customPropertyNames.getter : [Swift.String]
+property descriptor for FindMyBluetooth.Peripheral.customPropertyNames : [Swift.String]
+dispatch thunk of FindMyBluetooth.Peripheral.isConnectedToSystem.getter : Swift.Bool
+method descriptor for FindMyBluetooth.Peripheral.isConnectedToSystem.getter : Swift.Bool
+property descriptor for FindMyBluetooth.Peripheral.isConnectedToSystem : Swift.Bool
+static FindMyBluetooth.Peripheral.DisconnectionOptions.doNotAutoConnectBuiltInServices.getter : FindMyBluetooth.Peripheral.DisconnectionOptions
+property descriptor for static FindMyBluetooth.Peripheral.DisconnectionOptions.doNotAutoConnectBuiltInServices : FindMyBluetooth.Peripheral.DisconnectionOptions
+static FindMyBluetooth.Peripheral.DisconnectionOptions.force.getter : FindMyBluetooth.Peripheral.DisconnectionOptions
+property descriptor for static FindMyBluetooth.Peripheral.DisconnectionOptions.force : FindMyBluetooth.Peripheral.DisconnectionOptions
+static FindMyBluetooth.Peripheral.DisconnectionOptions.allCases.getter : [FindMyBluetooth.Peripheral.DisconnectionOptions]
+property descriptor for static FindMyBluetooth.Peripheral.DisconnectionOptions.allCases : [FindMyBluetooth.Peripheral.DisconnectionOptions]
+FindMyBluetooth.Peripheral.DisconnectionOptions.init(rawValue: Swift.UInt64) -> FindMyBluetooth.Peripheral.DisconnectionOptions
+FindMyBluetooth.Peripheral.DisconnectionOptions.rawValue.getter : Swift.UInt64
+property descriptor for FindMyBluetooth.Peripheral.DisconnectionOptions.rawValue : Swift.UInt64
+type metadata accessor for FindMyBluetooth.Peripheral.DisconnectionOptions
+nominal type descriptor for FindMyBluetooth.Peripheral.DisconnectionOptions
+type metadata for FindMyBluetooth.Peripheral.DisconnectionOptions
+protocol conformance descriptor for FindMyBluetooth.Peripheral.DisconnectionOptions : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.DisconnectionOptions : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.DisconnectionOptions : Swift.SetAlgebra in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.DisconnectionOptions : Swift.CaseIterable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.DisconnectionOptions : Swift.ExpressibleByArrayLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Peripheral.DisconnectionOptions : Swift.OptionSet in FindMyBluetooth
+FindMyBluetooth.Peripheral.id.getter : FindMyBase.Identifier<FindMyBluetooth.Peripheral>
+property descriptor for FindMyBluetooth.Peripheral.id : FindMyBase.Identifier<FindMyBluetooth.Peripheral>
+dispatch thunk of FindMyBluetooth.Peripheral.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+method descriptor for FindMyBluetooth.Peripheral.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+dispatch thunk of FindMyBluetooth.Peripheral.set(customProperty: Swift.String, value: Swift.String) -> ()
+method descriptor for FindMyBluetooth.Peripheral.set(customProperty: Swift.String, value: Swift.String) -> ()
+dispatch thunk of FindMyBluetooth.Peripheral.tag(Swift.String) -> ()
+method descriptor for FindMyBluetooth.Peripheral.tag(Swift.String) -> ()
+dispatch thunk of FindMyBluetooth.Peripheral.pair() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.pair() async throws -> ()
+method descriptor for FindMyBluetooth.Peripheral.pair() async throws -> ()
+dispatch thunk of FindMyBluetooth.Peripheral.rssi.modify : Swift.Int?
+method descriptor for FindMyBluetooth.Peripheral.rssi.modify : Swift.Int?
+dispatch thunk of FindMyBluetooth.Peripheral.rssi.getter : Swift.Int?
+method descriptor for FindMyBluetooth.Peripheral.rssi.getter : Swift.Int?
+property descriptor for FindMyBluetooth.Peripheral.rssi : Swift.Int?
+dispatch thunk of FindMyBluetooth.Peripheral.rssi.setter : Swift.Int?
+method descriptor for FindMyBluetooth.Peripheral.rssi.setter : Swift.Int?
+dispatch thunk of FindMyBluetooth.Peripheral.state.getter : FindMyBluetooth.PeripheralState
+method descriptor for FindMyBluetooth.Peripheral.state.getter : FindMyBluetooth.PeripheralState
+property descriptor for FindMyBluetooth.Peripheral.state : FindMyBluetooth.PeripheralState
+dispatch thunk of FindMyBluetooth.Peripheral.untag(Swift.String) -> ()
+method descriptor for FindMyBluetooth.Peripheral.untag(Swift.String) -> ()
+dispatch thunk of FindMyBluetooth.Peripheral.hasTag(Swift.String) -> Swift.Bool
+method descriptor for FindMyBluetooth.Peripheral.hasTag(Swift.String) -> Swift.Bool
+dispatch thunk of FindMyBluetooth.Peripheral.unpair() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.unpair() async throws -> ()
+method descriptor for FindMyBluetooth.Peripheral.unpair() async throws -> ()
+FindMyBluetooth.Peripheral.Options.init(connectionOptions: FindMyBluetooth.Peripheral.ConnectionOptions, pairingInfo: FindMyBluetooth.PeripheralPairingInfo?, temporaryLTK: FindMyCrypto.LongTermKey?) -> FindMyBluetooth.Peripheral.Options
+FindMyBluetooth.Peripheral.Options.connectionOptions.getter : FindMyBluetooth.Peripheral.ConnectionOptions
+property descriptor for FindMyBluetooth.Peripheral.Options.connectionOptions : FindMyBluetooth.Peripheral.ConnectionOptions
+FindMyBluetooth.Peripheral.Options.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo?
+property descriptor for FindMyBluetooth.Peripheral.Options.pairingInfo : FindMyBluetooth.PeripheralPairingInfo?
+FindMyBluetooth.Peripheral.Options.temporaryLTK.getter : FindMyCrypto.LongTermKey?
+property descriptor for FindMyBluetooth.Peripheral.Options.temporaryLTK : FindMyCrypto.LongTermKey?
+type metadata accessor for FindMyBluetooth.Peripheral.Options
+nominal type descriptor for FindMyBluetooth.Peripheral.Options
+type metadata for FindMyBluetooth.Peripheral.Options
+dispatch thunk of FindMyBluetooth.Peripheral.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+method descriptor for FindMyBluetooth.Peripheral.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+dispatch thunk of FindMyBluetooth.Peripheral.connect() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.connect() async throws -> ()
+method descriptor for FindMyBluetooth.Peripheral.connect() async throws -> ()
+dispatch thunk of FindMyBluetooth.Peripheral.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [FindMyBluetooth.Service]
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [FindMyBluetooth.Service]
+method descriptor for FindMyBluetooth.Peripheral.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [FindMyBluetooth.Service]
+dispatch thunk of FindMyBluetooth.Peripheral.isPaired.getter : Swift.Bool
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.isPaired.getter : Swift.Bool
+method descriptor for FindMyBluetooth.Peripheral.isPaired.getter : Swift.Bool
+property descriptor for FindMyBluetooth.Peripheral.isPaired : Swift.Bool
+dispatch thunk of FindMyBluetooth.Peripheral.lastSeen.modify : Foundation.Date
+method descriptor for FindMyBluetooth.Peripheral.lastSeen.modify : Foundation.Date
+dispatch thunk of FindMyBluetooth.Peripheral.lastSeen.getter : Foundation.Date
+method descriptor for FindMyBluetooth.Peripheral.lastSeen.getter : Foundation.Date
+property descriptor for FindMyBluetooth.Peripheral.lastSeen : Foundation.Date
+dispatch thunk of FindMyBluetooth.Peripheral.lastSeen.setter : Foundation.Date
+method descriptor for FindMyBluetooth.Peripheral.lastSeen.setter : Foundation.Date
+dispatch thunk of FindMyBluetooth.Peripheral.connected.getter : Swift.Bool
+method descriptor for FindMyBluetooth.Peripheral.connected.getter : Swift.Bool
+property descriptor for FindMyBluetooth.Peripheral.connected : Swift.Bool
+protocol conformance descriptor for FindMyBluetooth.Peripheral : FindMyBluetooth.PeripheralProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.Peripheral : FindMyBluetooth.PeripheralProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.Peripheral
+metaclass for FindMyBluetooth.Peripheral
+nominal type descriptor for FindMyBluetooth.Peripheral
+class metadata base offset for FindMyBluetooth.Peripheral
+method lookup function for FindMyBluetooth.Peripheral
+type metadata for FindMyBluetooth.Peripheral
+protocol conformance descriptor for FindMyBluetooth.Peripheral : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.Peripheral.__deallocating_deinit
+FindMyBluetooth.Peripheral.deinit
+protocol conformance descriptor for FindMyBluetooth.Peripheral : Swift.CustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.Peripheral.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> FindMyBluetooth.Service
+async function pointer to dispatch thunk of FindMyBluetooth.Peripheral.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> FindMyBluetooth.Service
+method descriptor for FindMyBluetooth.Peripheral.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> FindMyBluetooth.Service
+property descriptor for FindMyBluetooth.Peripheral.subscript(FindMyBase.Identifier<FindMyBluetooth.Service>) -> FindMyBluetooth.Service
+FindMyBluetooth.CBDiscovery.OOBKeyInfo.description.getter : Swift.String
+property descriptor for FindMyBluetooth.CBDiscovery.OOBKeyInfo.description : Swift.String
+static FindMyBluetooth.CBDiscovery.OOBKeyInfo.== infix(FindMyBluetooth.CBDiscovery.OOBKeyInfo, FindMyBluetooth.CBDiscovery.OOBKeyInfo) -> Swift.Bool
+FindMyBluetooth.CBDiscovery.OOBKeyInfo.init(from: Swift.Decoder) throws -> FindMyBluetooth.CBDiscovery.OOBKeyInfo
+FindMyBluetooth.CBDiscovery.OOBKeyInfo.encode(to: Swift.Encoder) throws -> ()
+FindMyBluetooth.CBDiscovery.OOBKeyInfo.irkData.getter : Foundation.Data
+property descriptor for FindMyBluetooth.CBDiscovery.OOBKeyInfo.irkData : Foundation.Data
+FindMyBluetooth.CBDiscovery.OOBKeyInfo.btAddress.getter : FindMyBase.MACAddress
+property descriptor for FindMyBluetooth.CBDiscovery.OOBKeyInfo.btAddress : FindMyBase.MACAddress
+FindMyBluetooth.CBDiscovery.OOBKeyInfo.init(btAddress: FindMyBase.MACAddress, irkData: Foundation.Data) -> FindMyBluetooth.CBDiscovery.OOBKeyInfo
+type metadata accessor for FindMyBluetooth.CBDiscovery.OOBKeyInfo
+nominal type descriptor for FindMyBluetooth.CBDiscovery.OOBKeyInfo
+type metadata for FindMyBluetooth.CBDiscovery.OOBKeyInfo
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.OOBKeyInfo : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.OOBKeyInfo : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.OOBKeyInfo : Swift.Decodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.OOBKeyInfo : Swift.CustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.CBDiscovery.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.CBDiscovery.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+method descriptor for FindMyBluetooth.CBDiscovery.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+enum case for FindMyBluetooth.CBDiscovery.DiscoveryType.findMyAccessory(FindMyBluetooth.CBDiscovery.DiscoveryType.Type) -> FindMyBluetooth.CBDiscovery.DiscoveryType
+FindMyBluetooth.CBDiscovery.DiscoveryType.description.getter : Swift.String
+property descriptor for FindMyBluetooth.CBDiscovery.DiscoveryType.description : Swift.String
+enum case for FindMyBluetooth.CBDiscovery.DiscoveryType.proximityPairingBuffer(FindMyBluetooth.CBDiscovery.DiscoveryType.Type) -> FindMyBluetooth.CBDiscovery.DiscoveryType
+static FindMyBluetooth.CBDiscovery.DiscoveryType.== infix(FindMyBluetooth.CBDiscovery.DiscoveryType, FindMyBluetooth.CBDiscovery.DiscoveryType) -> Swift.Bool
+FindMyBluetooth.CBDiscovery.DiscoveryType.init(from: Swift.Decoder) throws -> FindMyBluetooth.CBDiscovery.DiscoveryType
+FindMyBluetooth.CBDiscovery.DiscoveryType.hash(into: inout Swift.Hasher) -> ()
+FindMyBluetooth.CBDiscovery.DiscoveryType.encode(to: Swift.Encoder) throws -> ()
+FindMyBluetooth.CBDiscovery.DiscoveryType.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.CBDiscovery.DiscoveryType.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.CBDiscovery.DiscoveryType
+nominal type descriptor for FindMyBluetooth.CBDiscovery.DiscoveryType
+type metadata for FindMyBluetooth.CBDiscovery.DiscoveryType
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryType : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryType : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryType : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryType : Swift.Decodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryType : Swift.CustomStringConvertible in FindMyBluetooth
+static FindMyBluetooth.CBDiscovery.DiscoveryFlags.attributes.getter : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+property descriptor for static FindMyBluetooth.CBDiscovery.DiscoveryFlags.attributes : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+FindMyBluetooth.CBDiscovery.DiscoveryFlags.description.getter : Swift.String
+property descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags.description : Swift.String
+static FindMyBluetooth.CBDiscovery.DiscoveryFlags.objectSetup.getter : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+property descriptor for static FindMyBluetooth.CBDiscovery.DiscoveryFlags.objectSetup : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+static FindMyBluetooth.CBDiscovery.DiscoveryFlags.rssi.getter : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+property descriptor for static FindMyBluetooth.CBDiscovery.DiscoveryFlags.rssi : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+static FindMyBluetooth.CBDiscovery.DiscoveryFlags.pairing.getter : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+property descriptor for static FindMyBluetooth.CBDiscovery.DiscoveryFlags.pairing : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+static FindMyBluetooth.CBDiscovery.DiscoveryFlags.allCases.getter : [FindMyBluetooth.CBDiscovery.DiscoveryFlags]
+property descriptor for static FindMyBluetooth.CBDiscovery.DiscoveryFlags.allCases : [FindMyBluetooth.CBDiscovery.DiscoveryFlags]
+FindMyBluetooth.CBDiscovery.DiscoveryFlags.init(rawValue: Swift.UInt64) -> FindMyBluetooth.CBDiscovery.DiscoveryFlags
+FindMyBluetooth.CBDiscovery.DiscoveryFlags.rawValue.getter : Swift.UInt64
+property descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags.rawValue : Swift.UInt64
+static FindMyBluetooth.CBDiscovery.DiscoveryFlags.screenOff.getter : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+property descriptor for static FindMyBluetooth.CBDiscovery.DiscoveryFlags.screenOff : FindMyBluetooth.CBDiscovery.DiscoveryFlags
+type metadata accessor for FindMyBluetooth.CBDiscovery.DiscoveryFlags
+nominal type descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags
+type metadata for FindMyBluetooth.CBDiscovery.DiscoveryFlags
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.Decodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.SetAlgebra in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.CaseIterable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.CustomStringConvertible in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.ExpressibleByArrayLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.DiscoveryFlags : Swift.OptionSet in FindMyBluetooth
+FindMyBluetooth.CBDiscovery.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.CBDiscovery.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.CBDiscovery.discoveredDevices.getter : [FindMyBluetooth.Device]
+method descriptor for FindMyBluetooth.CBDiscovery.discoveredDevices.getter : [FindMyBluetooth.Device]
+property descriptor for FindMyBluetooth.CBDiscovery.discoveredDevices : [FindMyBluetooth.Device]
+dispatch thunk of FindMyBluetooth.CBDiscovery.subscribeToAttributesChanges() async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CBDiscovery.subscribeToAttributesChanges() async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+method descriptor for FindMyBluetooth.CBDiscovery.subscribeToAttributesChanges() async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+static FindMyBluetooth.CBDiscovery.subscribeToXPCDiscoveryEvents(for: Swift.String) -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.DeviceChange)>
+FindMyBluetooth.CBDiscovery.id.getter : FindMyBase.Identifier<FindMyBluetooth.CBDiscovery>
+property descriptor for FindMyBluetooth.CBDiscovery.id : FindMyBase.Identifier<FindMyBluetooth.CBDiscovery>
+dispatch thunk of FindMyBluetooth.CBDiscovery.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CBDiscovery.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+method descriptor for FindMyBluetooth.CBDiscovery.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+dispatch thunk of FindMyBluetooth.CBDiscovery.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CBDiscovery.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+method descriptor for FindMyBluetooth.CBDiscovery.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+enum case for FindMyBluetooth.CBDiscovery.Error.missingIdentifier(FindMyBluetooth.CBDiscovery.Error.Type) -> FindMyBluetooth.CBDiscovery.Error
+enum case for FindMyBluetooth.CBDiscovery.Error.missingBTAddressData(FindMyBluetooth.CBDiscovery.Error.Type) -> FindMyBluetooth.CBDiscovery.Error
+enum case for FindMyBluetooth.CBDiscovery.Error.scanAlreadyInProgress(FindMyBluetooth.CBDiscovery.Error.Type) -> FindMyBluetooth.CBDiscovery.Error
+enum case for FindMyBluetooth.CBDiscovery.Error.missingAdvertisementData(FindMyBluetooth.CBDiscovery.Error.Type) -> FindMyBluetooth.CBDiscovery.Error
+static FindMyBluetooth.CBDiscovery.Error.== infix(FindMyBluetooth.CBDiscovery.Error, FindMyBluetooth.CBDiscovery.Error) -> Swift.Bool
+FindMyBluetooth.CBDiscovery.Error.hash(into: inout Swift.Hasher) -> ()
+enum case for FindMyBluetooth.CBDiscovery.Error.unknown(FindMyBluetooth.CBDiscovery.Error.Type) -> FindMyBluetooth.CBDiscovery.Error
+FindMyBluetooth.CBDiscovery.Error.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.CBDiscovery.Error.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.CBDiscovery.Error
+nominal type descriptor for FindMyBluetooth.CBDiscovery.Error
+type metadata for FindMyBluetooth.CBDiscovery.Error
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.Error : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.Error : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.Error : Swift.Error in FindMyBluetooth
+FindMyBluetooth.CBDiscovery.Config.description.getter : Swift.String
+property descriptor for FindMyBluetooth.CBDiscovery.Config.description : Swift.String
+static FindMyBluetooth.CBDiscovery.Config.== infix(FindMyBluetooth.CBDiscovery.Config, FindMyBluetooth.CBDiscovery.Config) -> Swift.Bool
+FindMyBluetooth.CBDiscovery.Config.init(from: Swift.Decoder) throws -> FindMyBluetooth.CBDiscovery.Config
+FindMyBluetooth.CBDiscovery.Config.encode(to: Swift.Encoder) throws -> ()
+FindMyBluetooth.CBDiscovery.Config.init(useCase: FindMyBluetooth.CBDiscovery.UseCase?, discoveryFlags: FindMyBluetooth.CBDiscovery.DiscoveryFlags, discoveryTypes: [FindMyBluetooth.CBDiscovery.DiscoveryType], oobKeys: [FindMyBluetooth.CBDiscovery.OOBKeyInfo], scanRate: FindMyBluetooth.ScanRate, rssiThreshold: FindMyBluetooth.RSSIValue?) -> FindMyBluetooth.CBDiscovery.Config
+type metadata accessor for FindMyBluetooth.CBDiscovery.Config
+nominal type descriptor for FindMyBluetooth.CBDiscovery.Config
+type metadata for FindMyBluetooth.CBDiscovery.Config
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.Config : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.Config : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.Config : Swift.Decodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.Config : Swift.CustomStringConvertible in FindMyBluetooth
+FindMyBluetooth.CBDiscovery.UseCase.description.getter : Swift.String
+property descriptor for FindMyBluetooth.CBDiscovery.UseCase.description : Swift.String
+enum case for FindMyBluetooth.CBDiscovery.UseCase.aopBufferLeech(FindMyBluetooth.CBDiscovery.UseCase.Type) -> FindMyBluetooth.CBDiscovery.UseCase
+enum case for FindMyBluetooth.CBDiscovery.UseCase.findNearbyPencil(FindMyBluetooth.CBDiscovery.UseCase.Type) -> FindMyBluetooth.CBDiscovery.UseCase
+enum case for FindMyBluetooth.CBDiscovery.UseCase.findNearbyRemote(FindMyBluetooth.CBDiscovery.UseCase.Type) -> FindMyBluetooth.CBDiscovery.UseCase
+static FindMyBluetooth.CBDiscovery.UseCase.== infix(FindMyBluetooth.CBDiscovery.UseCase, FindMyBluetooth.CBDiscovery.UseCase) -> Swift.Bool
+FindMyBluetooth.CBDiscovery.UseCase.init(from: Swift.Decoder) throws -> FindMyBluetooth.CBDiscovery.UseCase
+FindMyBluetooth.CBDiscovery.UseCase.hash(into: inout Swift.Hasher) -> ()
+FindMyBluetooth.CBDiscovery.UseCase.encode(to: Swift.Encoder) throws -> ()
+static FindMyBluetooth.CBDiscovery.UseCase.allCases.getter : [FindMyBluetooth.CBDiscovery.UseCase]
+property descriptor for static FindMyBluetooth.CBDiscovery.UseCase.allCases : [FindMyBluetooth.CBDiscovery.UseCase]
+FindMyBluetooth.CBDiscovery.UseCase.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.CBDiscovery.UseCase.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.CBDiscovery.UseCase
+nominal type descriptor for FindMyBluetooth.CBDiscovery.UseCase
+type metadata for FindMyBluetooth.CBDiscovery.UseCase
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.UseCase : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.UseCase : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.UseCase : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.UseCase : Swift.Decodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.UseCase : Swift.CaseIterable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery.UseCase : Swift.CustomStringConvertible in FindMyBluetooth
+static FindMyBluetooth.CBDiscovery.devices(with: FindMyBluetooth.CBDiscovery.DiscoveryFlags) async throws -> [FindMyBluetooth.Device]
+async function pointer to static FindMyBluetooth.CBDiscovery.devices(with: FindMyBluetooth.CBDiscovery.DiscoveryFlags) async throws -> [FindMyBluetooth.Device]
+FindMyBluetooth.CBDiscovery.__allocating_init(scanRate: FindMyBluetooth.ScanRate, rssiThreshold: FindMyBluetooth.RSSIValue) async -> FindMyBluetooth.CBDiscovery
+dispatch thunk of FindMyBluetooth.CBDiscovery.__allocating_init(scanRate: FindMyBluetooth.ScanRate, rssiThreshold: FindMyBluetooth.RSSIValue) async -> FindMyBluetooth.CBDiscovery
+async function pointer to dispatch thunk of FindMyBluetooth.CBDiscovery.__allocating_init(scanRate: FindMyBluetooth.ScanRate, rssiThreshold: FindMyBluetooth.RSSIValue) async -> FindMyBluetooth.CBDiscovery
+method descriptor for FindMyBluetooth.CBDiscovery.__allocating_init(scanRate: FindMyBluetooth.ScanRate, rssiThreshold: FindMyBluetooth.RSSIValue) async -> FindMyBluetooth.CBDiscovery
+async function pointer to FindMyBluetooth.CBDiscovery.__allocating_init(scanRate: FindMyBluetooth.ScanRate, rssiThreshold: FindMyBluetooth.RSSIValue) async -> FindMyBluetooth.CBDiscovery
+FindMyBluetooth.CBDiscovery.init(scanRate: FindMyBluetooth.ScanRate, rssiThreshold: FindMyBluetooth.RSSIValue) async -> FindMyBluetooth.CBDiscovery
+async function pointer to FindMyBluetooth.CBDiscovery.init(scanRate: FindMyBluetooth.ScanRate, rssiThreshold: FindMyBluetooth.RSSIValue) async -> FindMyBluetooth.CBDiscovery
+dispatch thunk of FindMyBluetooth.CBDiscovery.scanRate.getter : FindMyBluetooth.ScanRate
+method descriptor for FindMyBluetooth.CBDiscovery.scanRate.getter : FindMyBluetooth.ScanRate
+property descriptor for FindMyBluetooth.CBDiscovery.scanRate : FindMyBluetooth.ScanRate
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery : FindMyBluetooth.CBDiscoveryProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.CBDiscovery : FindMyBluetooth.CBDiscoveryProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.CBDiscovery
+metaclass for FindMyBluetooth.CBDiscovery
+nominal type descriptor for FindMyBluetooth.CBDiscovery
+class metadata base offset for FindMyBluetooth.CBDiscovery
+method lookup function for FindMyBluetooth.CBDiscovery
+type metadata for FindMyBluetooth.CBDiscovery
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.CBDiscovery.__deallocating_deinit
+FindMyBluetooth.CBDiscovery.deinit
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery : Swift.Identifiable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CBDiscovery : Swift.CustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.MockService.setMockCharacteristics([FindMyBluetooth.MockCharacteristic]) -> ()
+method descriptor for FindMyBluetooth.MockService.setMockCharacteristics([FindMyBluetooth.MockCharacteristic]) -> ()
+protocol conformance descriptor for FindMyBluetooth.MockService : FindMyBase.IsolatedCustomStringConvertible in FindMyBluetooth
+FindMyBluetooth.MockService.__allocating_init(peripheral: FindMyBluetooth.MockPeripheral, identifier: Foundation.UUID, isPrimary: Swift.Bool) async throws -> FindMyBluetooth.MockService
+dispatch thunk of FindMyBluetooth.MockService.__allocating_init(peripheral: FindMyBluetooth.MockPeripheral, identifier: Foundation.UUID, isPrimary: Swift.Bool) async throws -> FindMyBluetooth.MockService
+async function pointer to dispatch thunk of FindMyBluetooth.MockService.__allocating_init(peripheral: FindMyBluetooth.MockPeripheral, identifier: Foundation.UUID, isPrimary: Swift.Bool) async throws -> FindMyBluetooth.MockService
+method descriptor for FindMyBluetooth.MockService.__allocating_init(peripheral: FindMyBluetooth.MockPeripheral, identifier: Foundation.UUID, isPrimary: Swift.Bool) async throws -> FindMyBluetooth.MockService
+async function pointer to FindMyBluetooth.MockService.__allocating_init(peripheral: FindMyBluetooth.MockPeripheral, identifier: Foundation.UUID, isPrimary: Swift.Bool) async throws -> FindMyBluetooth.MockService
+FindMyBluetooth.MockService.init(peripheral: FindMyBluetooth.MockPeripheral, identifier: Foundation.UUID, isPrimary: Swift.Bool) async throws -> FindMyBluetooth.MockService
+async function pointer to FindMyBluetooth.MockService.init(peripheral: FindMyBluetooth.MockPeripheral, identifier: Foundation.UUID, isPrimary: Swift.Bool) async throws -> FindMyBluetooth.MockService
+dispatch thunk of FindMyBluetooth.MockService.mockBehavior.modify : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockService.mockBehavior.modify : FindMyBluetooth.MockBehavior
+dispatch thunk of FindMyBluetooth.MockService.mockBehavior.getter : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockService.mockBehavior.getter : FindMyBluetooth.MockBehavior
+property descriptor for FindMyBluetooth.MockService.mockBehavior : FindMyBluetooth.MockBehavior
+dispatch thunk of FindMyBluetooth.MockService.mockBehavior.setter : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockService.mockBehavior.setter : FindMyBluetooth.MockBehavior
+FindMyBluetooth.MockService.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.MockService.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.MockService.setMockingBehavior(FindMyBluetooth.MockBehavior) async -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockService.setMockingBehavior(FindMyBluetooth.MockBehavior) async -> ()
+method descriptor for FindMyBluetooth.MockService.setMockingBehavior(FindMyBluetooth.MockBehavior) async -> ()
+FindMyBluetooth.MockService.id.getter : FindMyBase.Identifier<FindMyBluetooth.Service>
+property descriptor for FindMyBluetooth.MockService.id : FindMyBase.Identifier<FindMyBluetooth.Service>
+dispatch thunk of FindMyBluetooth.MockService.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [FindMyBluetooth.MockCharacteristic]
+async function pointer to dispatch thunk of FindMyBluetooth.MockService.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [FindMyBluetooth.MockCharacteristic]
+method descriptor for FindMyBluetooth.MockService.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [FindMyBluetooth.MockCharacteristic]
+FindMyBluetooth.MockService.isPrimary.getter : Swift.Bool
+property descriptor for FindMyBluetooth.MockService.isPrimary : Swift.Bool
+protocol conformance descriptor for FindMyBluetooth.MockService : FindMyBluetooth.ServiceProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.MockService : FindMyBluetooth.ServiceProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.MockService
+metaclass for FindMyBluetooth.MockService
+nominal type descriptor for FindMyBluetooth.MockService
+class metadata base offset for FindMyBluetooth.MockService
+method lookup function for FindMyBluetooth.MockService
+type metadata for FindMyBluetooth.MockService
+protocol conformance descriptor for FindMyBluetooth.MockService : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.MockService.__deallocating_deinit
+FindMyBluetooth.MockService.deinit
+protocol conformance descriptor for FindMyBluetooth.MockService : Swift.CustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.MockService.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> FindMyBluetooth.MockCharacteristic
+async function pointer to dispatch thunk of FindMyBluetooth.MockService.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> FindMyBluetooth.MockCharacteristic
+method descriptor for FindMyBluetooth.MockService.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> FindMyBluetooth.MockCharacteristic
+property descriptor for FindMyBluetooth.MockService.subscript(FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> FindMyBluetooth.MockCharacteristic
+enum case for FindMyBluetooth.ScanUseCase.backgroundLeechScan(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.beaconScan(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.notOptedIn(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+FindMyBluetooth.ScanUseCase.description.getter : Swift.String
+property descriptor for FindMyBluetooth.ScanUseCase.description : Swift.String
+enum case for FindMyBluetooth.ScanUseCase.snifferMode(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.userInitiated(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.wildItemDiscovery(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.separationAlertsEnabled(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.temporaryLongAggressive(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.temporaryAggressiveLegacy(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+static FindMyBluetooth.ScanUseCase.== infix(FindMyBluetooth.ScanUseCase, FindMyBluetooth.ScanUseCase) -> Swift.Bool
+FindMyBluetooth.ScanUseCase.hash(into: inout Swift.Hasher) -> ()
+enum case for FindMyBluetooth.ScanUseCase.hele(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.optedIn(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+enum case for FindMyBluetooth.ScanUseCase.btFinding(FindMyBluetooth.ScanUseCase.Type) -> FindMyBluetooth.ScanUseCase
+FindMyBluetooth.ScanUseCase.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.ScanUseCase.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.ScanUseCase
+nominal type descriptor for FindMyBluetooth.ScanUseCase
+type metadata for FindMyBluetooth.ScanUseCase
+protocol conformance descriptor for FindMyBluetooth.ScanUseCase : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ScanUseCase : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ScanUseCase : Swift.CustomStringConvertible in FindMyBluetooth
+FindMyBluetooth.ServiceUUID.description.getter : Swift.String
+property descriptor for FindMyBluetooth.ServiceUUID.description : Swift.String
+FindMyBluetooth.ServiceUUID.init(stringLiteral: Swift.String) -> FindMyBluetooth.ServiceUUID
+static FindMyBluetooth.ServiceUUID.== infix(FindMyBluetooth.ServiceUUID, FindMyBluetooth.ServiceUUID) -> Swift.Bool
+FindMyBluetooth.ServiceUUID.hash(into: inout Swift.Hasher) -> ()
+FindMyBluetooth.ServiceUUID.uuid.getter : Foundation.UUID
+property descriptor for FindMyBluetooth.ServiceUUID.uuid : Foundation.UUID
+FindMyBluetooth.ServiceUUID.init(uuid: Foundation.UUID) -> FindMyBluetooth.ServiceUUID
+FindMyBluetooth.ServiceUUID.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.ServiceUUID.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.ServiceUUID
+nominal type descriptor for FindMyBluetooth.ServiceUUID
+type metadata for FindMyBluetooth.ServiceUUID
+protocol conformance descriptor for FindMyBluetooth.ServiceUUID : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ServiceUUID : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ServiceUUID : Swift.CustomStringConvertible in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ServiceUUID : Swift.ExpressibleByStringLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ServiceUUID : Swift.ExpressibleByUnicodeScalarLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ServiceUUID : Swift.ExpressibleByExtendedGraphemeClusterLiteral in FindMyBluetooth
+FindMyBluetooth.TLVSequence.makeIterator() -> FindMyBluetooth.TLVSequence
+FindMyBluetooth.TLVSequence.next() -> (Swift.UInt8, Swift.ArraySlice<Swift.UInt8>)?
+type metadata accessor for FindMyBluetooth.TLVSequence
+nominal type descriptor for FindMyBluetooth.TLVSequence
+type metadata for FindMyBluetooth.TLVSequence
+protocol conformance descriptor for FindMyBluetooth.TLVSequence : Swift.Sequence in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.TLVSequence : Swift.IteratorProtocol in FindMyBluetooth
+FindMyBluetooth.TLVSequence.init(Foundation.Data) -> FindMyBluetooth.TLVSequence
+FindMyBluetooth.DeviceChange.description.getter : Swift.String
+property descriptor for FindMyBluetooth.DeviceChange.description : Swift.String
+type metadata accessor for FindMyBluetooth.DeviceChange
+nominal type descriptor for FindMyBluetooth.DeviceChange
+type metadata for FindMyBluetooth.DeviceChange
+protocol conformance descriptor for FindMyBluetooth.DeviceChange : Swift.CustomStringConvertible in FindMyBluetooth
+enum case for FindMyBluetooth.MockBehavior.fail(FindMyBluetooth.MockBehavior.Type) -> (Swift.Duration, Swift.Error) -> FindMyBluetooth.MockBehavior
+enum case for FindMyBluetooth.MockBehavior.succeed(FindMyBluetooth.MockBehavior.Type) -> (Swift.Duration) -> FindMyBluetooth.MockBehavior
+type metadata accessor for FindMyBluetooth.MockBehavior
+nominal type descriptor for FindMyBluetooth.MockBehavior
+type metadata for FindMyBluetooth.MockBehavior
+FindMyBluetooth.TransportType.description.getter : Swift.String
+property descriptor for FindMyBluetooth.TransportType.description : Swift.String
+enum case for FindMyBluetooth.TransportType.classic(FindMyBluetooth.TransportType.Type) -> FindMyBluetooth.TransportType
+enum case for FindMyBluetooth.TransportType.unknown(FindMyBluetooth.TransportType.Type) -> FindMyBluetooth.TransportType
+FindMyBluetooth.TransportType.init(rawValue: Swift.UInt8) -> FindMyBluetooth.TransportType?
+FindMyBluetooth.TransportType.rawValue.getter : Swift.UInt8
+property descriptor for FindMyBluetooth.TransportType.rawValue : Swift.UInt8
+enum case for FindMyBluetooth.TransportType.lowEnergy(FindMyBluetooth.TransportType.Type) -> FindMyBluetooth.TransportType
+type metadata accessor for FindMyBluetooth.TransportType
+nominal type descriptor for FindMyBluetooth.TransportType
+type metadata for FindMyBluetooth.TransportType
+protocol conformance descriptor for FindMyBluetooth.TransportType : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.TransportType : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.TransportType : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.TransportType : Swift.CustomStringConvertible in FindMyBluetooth
+static FindMyBluetooth.CentralManager.pairingCentralManager.getter : FindMyBluetooth.CentralManager
+async function pointer to static FindMyBluetooth.CentralManager.pairingCentralManager.getter : FindMyBluetooth.CentralManager
+property descriptor for static FindMyBluetooth.CentralManager.pairingCentralManager : FindMyBluetooth.CentralManager
+FindMyBluetooth.CentralManager.isPairingCentralManager.getter : Swift.Bool
+property descriptor for FindMyBluetooth.CentralManager.isPairingCentralManager : Swift.Bool
+protocol conformance descriptor for FindMyBluetooth.CentralManager : FindMyBase.IsolatedCustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.CentralManager.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManager.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+method descriptor for FindMyBluetooth.CentralManager.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+type metadata accessor for FindMyBluetooth.CentralManager.ConnectedState
+nominal type descriptor for FindMyBluetooth.CentralManager.ConnectedState
+type metadata for FindMyBluetooth.CentralManager.ConnectedState
+FindMyBluetooth.CentralManager.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.CentralManager.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.CentralManager.connectionEvents(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+method descriptor for FindMyBluetooth.CentralManager.connectionEvents(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+dispatch thunk of FindMyBluetooth.CentralManager.connectionEvents(peripheralIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Peripheral>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+method descriptor for FindMyBluetooth.CentralManager.connectionEvents(peripheralIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Peripheral>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+dispatch thunk of FindMyBluetooth.CentralManager.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> FindMyBluetooth.Peripheral?
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManager.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> FindMyBluetooth.Peripheral?
+method descriptor for FindMyBluetooth.CentralManager.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> FindMyBluetooth.Peripheral?
+dispatch thunk of FindMyBluetooth.CentralManager.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<FindMyBluetooth.Peripheral>, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManager.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<FindMyBluetooth.Peripheral>, Swift.Error>
+method descriptor for FindMyBluetooth.CentralManager.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<FindMyBluetooth.Peripheral>, Swift.Error>
+dispatch thunk of FindMyBluetooth.CentralManager.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.Peripheral]
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManager.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.Peripheral]
+method descriptor for FindMyBluetooth.CentralManager.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.Peripheral]
+dispatch thunk of FindMyBluetooth.CentralManager.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [FindMyBluetooth.Peripheral]
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManager.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [FindMyBluetooth.Peripheral]
+method descriptor for FindMyBluetooth.CentralManager.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [FindMyBluetooth.Peripheral]
+dispatch thunk of FindMyBluetooth.CentralManager.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.Peripheral]
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManager.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.Peripheral]
+method descriptor for FindMyBluetooth.CentralManager.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.Peripheral]
+dispatch thunk of FindMyBluetooth.CentralManager.retrieveConnectedPeripherals(services: [FindMyBase.Identifier<FindMyBluetooth.Service>]) async throws -> [FindMyBluetooth.Peripheral]
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManager.retrieveConnectedPeripherals(services: [FindMyBase.Identifier<FindMyBluetooth.Service>]) async throws -> [FindMyBluetooth.Peripheral]
+method descriptor for FindMyBluetooth.CentralManager.retrieveConnectedPeripherals(services: [FindMyBase.Identifier<FindMyBluetooth.Service>]) async throws -> [FindMyBluetooth.Peripheral]
+FindMyBluetooth.CentralManager.id.getter : FindMyBase.Identifier<FindMyBluetooth.CentralManager>
+property descriptor for FindMyBluetooth.CentralManager.id : FindMyBase.Identifier<FindMyBluetooth.CentralManager>
+enum case for FindMyBluetooth.CentralManager.Error.missingCentralManager(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.deallocated(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.missingData(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.disconnected(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.notConnected(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.writeTooLarge(FindMyBluetooth.CentralManager.Error.Type) -> (Swift.Int) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.missingService(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.notConnectable(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.missingProperty(FindMyBluetooth.CentralManager.Error.Type) -> (FindMyBluetooth.Characteristic.Properties) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.payloadRequired(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.bluetoothNotReady(FindMyBluetooth.CentralManager.Error.Type) -> (FindMyBluetooth.CentralManager.State) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.invalidMacAddress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.invalidPowerState(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.missingPeripheral(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.pairingNotAllowed(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.existingMACAddress(FindMyBluetooth.CentralManager.Error.Type) -> (FindMyBase.MACAddress) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.missingPairingInfo(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.peripheralMismatch(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.missingContinuation(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.notifyNotInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.missingCharacteristic(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.readAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.scanAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.writeAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.notifyAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.connectAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.pairingAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.discoverAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.connectionEventsNotAllowed(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.cbPeripheralAlreadyHasDelegate(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.cancelConnectionAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.connectionEventsAlreadyInProgress(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+enum case for FindMyBluetooth.CentralManager.Error.unknown(FindMyBluetooth.CentralManager.Error.Type) -> FindMyBluetooth.CentralManager.Error
+type metadata accessor for FindMyBluetooth.CentralManager.Error
+nominal type descriptor for FindMyBluetooth.CentralManager.Error
+type metadata for FindMyBluetooth.CentralManager.Error
+protocol conformance descriptor for FindMyBluetooth.CentralManager.Error : Swift.Error in FindMyBluetooth
+enum case for FindMyBluetooth.CentralManager.State.poweredOff(FindMyBluetooth.CentralManager.State.Type) -> FindMyBluetooth.CentralManager.State
+enum case for FindMyBluetooth.CentralManager.State.restricted(FindMyBluetooth.CentralManager.State.Type) -> FindMyBluetooth.CentralManager.State
+enum case for FindMyBluetooth.CentralManager.State.unsupported(FindMyBluetooth.CentralManager.State.Type) -> FindMyBluetooth.CentralManager.State
+enum case for FindMyBluetooth.CentralManager.State.unauthorized(FindMyBluetooth.CentralManager.State.Type) -> FindMyBluetooth.CentralManager.State
+enum case for FindMyBluetooth.CentralManager.State.unknown(FindMyBluetooth.CentralManager.State.Type) -> FindMyBluetooth.CentralManager.State
+FindMyBluetooth.CentralManager.State.init(rawValue: Swift.Int) -> FindMyBluetooth.CentralManager.State?
+FindMyBluetooth.CentralManager.State.rawValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.CentralManager.State.rawValue : Swift.Int
+enum case for FindMyBluetooth.CentralManager.State.poweredOn(FindMyBluetooth.CentralManager.State.Type) -> FindMyBluetooth.CentralManager.State
+enum case for FindMyBluetooth.CentralManager.State.resetting(FindMyBluetooth.CentralManager.State.Type) -> FindMyBluetooth.CentralManager.State
+type metadata accessor for FindMyBluetooth.CentralManager.State
+nominal type descriptor for FindMyBluetooth.CentralManager.State
+type metadata for FindMyBluetooth.CentralManager.State
+protocol conformance descriptor for FindMyBluetooth.CentralManager.State : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CentralManager.State : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CentralManager.State : Swift.RawRepresentable in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.CentralManager.state.getter : FindMyBluetooth.CentralManager.State
+method descriptor for FindMyBluetooth.CentralManager.state.getter : FindMyBluetooth.CentralManager.State
+property descriptor for FindMyBluetooth.CentralManager.state : FindMyBluetooth.CentralManager.State
+static FindMyBluetooth.CentralManager.Options.enableFindMy.getter : FindMyBluetooth.CentralManager.Options
+property descriptor for static FindMyBluetooth.CentralManager.Options.enableFindMy : FindMyBluetooth.CentralManager.Options
+static FindMyBluetooth.CentralManager.Options.allowDuplicates.getter : FindMyBluetooth.CentralManager.Options
+property descriptor for static FindMyBluetooth.CentralManager.Options.allowDuplicates : FindMyBluetooth.CentralManager.Options
+static FindMyBluetooth.CentralManager.Options.receiveSystemEvents.getter : FindMyBluetooth.CentralManager.Options
+property descriptor for static FindMyBluetooth.CentralManager.Options.receiveSystemEvents : FindMyBluetooth.CentralManager.Options
+static FindMyBluetooth.CentralManager.Options.needsRestrictedStateOperation.getter : FindMyBluetooth.CentralManager.Options
+property descriptor for static FindMyBluetooth.CentralManager.Options.needsRestrictedStateOperation : FindMyBluetooth.CentralManager.Options
+static FindMyBluetooth.CentralManager.Options.receiveIncomingObjectDiscoveryData.getter : FindMyBluetooth.CentralManager.Options
+property descriptor for static FindMyBluetooth.CentralManager.Options.receiveIncomingObjectDiscoveryData : FindMyBluetooth.CentralManager.Options
+static FindMyBluetooth.CentralManager.Options.allCases.getter : [FindMyBluetooth.CentralManager.Options]
+property descriptor for static FindMyBluetooth.CentralManager.Options.allCases : [FindMyBluetooth.CentralManager.Options]
+FindMyBluetooth.CentralManager.Options.init(rawValue: Swift.UInt64) -> FindMyBluetooth.CentralManager.Options
+FindMyBluetooth.CentralManager.Options.rawValue.getter : Swift.UInt64
+property descriptor for FindMyBluetooth.CentralManager.Options.rawValue : Swift.UInt64
+type metadata accessor for FindMyBluetooth.CentralManager.Options
+nominal type descriptor for FindMyBluetooth.CentralManager.Options
+type metadata for FindMyBluetooth.CentralManager.Options
+protocol conformance descriptor for FindMyBluetooth.CentralManager.Options : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CentralManager.Options : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CentralManager.Options : Swift.SetAlgebra in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CentralManager.Options : Swift.CaseIterable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CentralManager.Options : Swift.ExpressibleByArrayLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CentralManager.Options : Swift.OptionSet in FindMyBluetooth
+FindMyBluetooth.CentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?) async -> FindMyBluetooth.CentralManager
+async function pointer to FindMyBluetooth.CentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?) async -> FindMyBluetooth.CentralManager
+protocol conformance descriptor for FindMyBluetooth.CentralManager : FindMyBluetooth.CentralManagerProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.CentralManager : FindMyBluetooth.CentralManagerProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.CentralManager
+metaclass for FindMyBluetooth.CentralManager
+nominal type descriptor for FindMyBluetooth.CentralManager
+class metadata base offset for FindMyBluetooth.CentralManager
+method lookup function for FindMyBluetooth.CentralManager
+type metadata for FindMyBluetooth.CentralManager
+protocol conformance descriptor for FindMyBluetooth.CentralManager : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.CentralManager.__deallocating_deinit
+FindMyBluetooth.CentralManager.deinit
+protocol conformance descriptor for FindMyBluetooth.CentralManager : Swift.Identifiable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CentralManager : Swift.CustomStringConvertible in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Characteristic : FindMyBase.IsolatedCustomStringConvertible in FindMyBluetooth
+static FindMyBluetooth.Characteristic.Properties.extendedProperties.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.extendedProperties : FindMyBluetooth.Characteristic.Properties
+FindMyBluetooth.Characteristic.Properties.description.getter : Swift.String
+property descriptor for FindMyBluetooth.Characteristic.Properties.description : Swift.String
+static FindMyBluetooth.Characteristic.Properties.writeWithoutResponse.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.writeWithoutResponse : FindMyBluetooth.Characteristic.Properties
+static FindMyBluetooth.Characteristic.Properties.notifyEncryptionRequired.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.notifyEncryptionRequired : FindMyBluetooth.Characteristic.Properties
+static FindMyBluetooth.Characteristic.Properties.authenticatedSignedWrites.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.authenticatedSignedWrites : FindMyBluetooth.Characteristic.Properties
+static FindMyBluetooth.Characteristic.Properties.indicateEncryptionRequired.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.indicateEncryptionRequired : FindMyBluetooth.Characteristic.Properties
+static FindMyBluetooth.Characteristic.Properties.read.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.read : FindMyBluetooth.Characteristic.Properties
+static FindMyBluetooth.Characteristic.Properties.write.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.write : FindMyBluetooth.Characteristic.Properties
+static FindMyBluetooth.Characteristic.Properties.notify.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.notify : FindMyBluetooth.Characteristic.Properties
+static FindMyBluetooth.Characteristic.Properties.indicate.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.indicate : FindMyBluetooth.Characteristic.Properties
+FindMyBluetooth.Characteristic.Properties.init(rawValue: Swift.UInt64) -> FindMyBluetooth.Characteristic.Properties
+FindMyBluetooth.Characteristic.Properties.rawValue.getter : Swift.UInt64
+property descriptor for FindMyBluetooth.Characteristic.Properties.rawValue : Swift.UInt64
+static FindMyBluetooth.Characteristic.Properties.broadcast.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for static FindMyBluetooth.Characteristic.Properties.broadcast : FindMyBluetooth.Characteristic.Properties
+type metadata accessor for FindMyBluetooth.Characteristic.Properties
+nominal type descriptor for FindMyBluetooth.Characteristic.Properties
+type metadata for FindMyBluetooth.Characteristic.Properties
+protocol conformance descriptor for FindMyBluetooth.Characteristic.Properties : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Characteristic.Properties : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Characteristic.Properties : Swift.SetAlgebra in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Characteristic.Properties : Swift.CustomStringConvertible in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Characteristic.Properties : Swift.ExpressibleByArrayLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Characteristic.Properties : Swift.OptionSet in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.Characteristic.properties.getter : FindMyBluetooth.Characteristic.Properties
+method descriptor for FindMyBluetooth.Characteristic.properties.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for FindMyBluetooth.Characteristic.properties : FindMyBluetooth.Characteristic.Properties
+dispatch thunk of FindMyBluetooth.Characteristic.isNotifying.getter : Swift.Bool
+method descriptor for FindMyBluetooth.Characteristic.isNotifying.getter : Swift.Bool
+property descriptor for FindMyBluetooth.Characteristic.isNotifying : Swift.Bool
+static FindMyBluetooth.Characteristic.UpdatingState.== infix(FindMyBluetooth.Characteristic.UpdatingState, FindMyBluetooth.Characteristic.UpdatingState) -> Swift.Bool
+FindMyBluetooth.Characteristic.UpdatingState.hash(into: inout Swift.Hasher) -> ()
+FindMyBluetooth.Characteristic.UpdatingState.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.Characteristic.UpdatingState.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.Characteristic.UpdatingState
+nominal type descriptor for FindMyBluetooth.Characteristic.UpdatingState
+type metadata for FindMyBluetooth.Characteristic.UpdatingState
+protocol conformance descriptor for FindMyBluetooth.Characteristic.UpdatingState : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Characteristic.UpdatingState : Swift.Equatable in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.Characteristic.readUnderlying() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Characteristic.readUnderlying() async throws -> ()
+method descriptor for FindMyBluetooth.Characteristic.readUnderlying() async throws -> ()
+FindMyBluetooth.Characteristic.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.Characteristic.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.Characteristic.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.Characteristic.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+method descriptor for FindMyBluetooth.Characteristic.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+FindMyBluetooth.Characteristic.id.getter : FindMyBase.Identifier<FindMyBluetooth.Characteristic>
+property descriptor for FindMyBluetooth.Characteristic.id : FindMyBase.Identifier<FindMyBluetooth.Characteristic>
+dispatch thunk of FindMyBluetooth.Characteristic.mtu.getter : Swift.Int
+async function pointer to dispatch thunk of FindMyBluetooth.Characteristic.mtu.getter : Swift.Int
+method descriptor for FindMyBluetooth.Characteristic.mtu.getter : Swift.Int
+property descriptor for FindMyBluetooth.Characteristic.mtu : Swift.Int
+dispatch thunk of FindMyBluetooth.Characteristic.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.Characteristic.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.Characteristic.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+dispatch thunk of FindMyBluetooth.Characteristic.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.Characteristic.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.Characteristic.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+dispatch thunk of FindMyBluetooth.Characteristic.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.Characteristic.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.Characteristic.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+protocol conformance descriptor for FindMyBluetooth.Characteristic : FindMyBluetooth.CharacteristicProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.Characteristic : FindMyBluetooth.CharacteristicProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.Characteristic
+metaclass for FindMyBluetooth.Characteristic
+nominal type descriptor for FindMyBluetooth.Characteristic
+class metadata base offset for FindMyBluetooth.Characteristic
+method lookup function for FindMyBluetooth.Characteristic
+type metadata for FindMyBluetooth.Characteristic
+protocol conformance descriptor for FindMyBluetooth.Characteristic : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.Characteristic.__deallocating_deinit
+FindMyBluetooth.Characteristic.deinit
+protocol conformance descriptor for FindMyBluetooth.Characteristic : Swift.CustomStringConvertible in FindMyBluetooth
+enum case for FindMyBluetooth.ConnectUseCase.findMyActionHELE(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyBackground(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyUnpairHELE(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyUTTransient(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyPlaySoundHELE(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyBackgroundHELE(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyActionTransient(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyUTHELETransient(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyActionHELETransient(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyBackgroundTransient(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyPair(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyAction(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyUnpair(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findMyPlaySound(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.unpairHELE(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+FindMyBluetooth.ConnectUseCase.description.getter : Swift.String
+property descriptor for FindMyBluetooth.ConnectUseCase.description : Swift.String
+enum case for FindMyBluetooth.ConnectUseCase.playSoundHELE(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findNearbyPencil(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+enum case for FindMyBluetooth.ConnectUseCase.findNearbyRemote(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+static FindMyBluetooth.ConnectUseCase.== infix(FindMyBluetooth.ConnectUseCase, FindMyBluetooth.ConnectUseCase) -> Swift.Bool
+FindMyBluetooth.ConnectUseCase.hash(into: inout Swift.Hasher) -> ()
+enum case for FindMyBluetooth.ConnectUseCase.unpair(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+FindMyBluetooth.ConnectUseCase.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.ConnectUseCase.hashValue : Swift.Int
+enum case for FindMyBluetooth.ConnectUseCase.playSound(FindMyBluetooth.ConnectUseCase.Type) -> FindMyBluetooth.ConnectUseCase
+type metadata accessor for FindMyBluetooth.ConnectUseCase
+nominal type descriptor for FindMyBluetooth.ConnectUseCase
+type metadata for FindMyBluetooth.ConnectUseCase
+protocol conformance descriptor for FindMyBluetooth.ConnectUseCase : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ConnectUseCase : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ConnectUseCase : Swift.CustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.MockPeripheral.setMockServices([FindMyBluetooth.MockService]) -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.setMockServices([FindMyBluetooth.MockService]) -> ()
+protocol conformance descriptor for FindMyBluetooth.MockPeripheral : FindMyBase.IsolatedCustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.MockPeripheral.macAddress.modify : FindMyBase.MACAddress?
+method descriptor for FindMyBluetooth.MockPeripheral.macAddress.modify : FindMyBase.MACAddress?
+dispatch thunk of FindMyBluetooth.MockPeripheral.macAddress.getter : FindMyBase.MACAddress?
+method descriptor for FindMyBluetooth.MockPeripheral.macAddress.getter : FindMyBase.MACAddress?
+property descriptor for FindMyBluetooth.MockPeripheral.macAddress : FindMyBase.MACAddress?
+dispatch thunk of FindMyBluetooth.MockPeripheral.macAddress.setter : FindMyBase.MACAddress?
+method descriptor for FindMyBluetooth.MockPeripheral.macAddress.setter : FindMyBase.MACAddress?
+dispatch thunk of FindMyBluetooth.MockPeripheral.isConnected.getter : Swift.Bool
+method descriptor for FindMyBluetooth.MockPeripheral.isConnected.getter : Swift.Bool
+property descriptor for FindMyBluetooth.MockPeripheral.isConnected : Swift.Bool
+dispatch thunk of FindMyBluetooth.MockPeripheral.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+method descriptor for FindMyBluetooth.MockPeripheral.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+property descriptor for FindMyBluetooth.MockPeripheral.pairingInfo : FindMyBluetooth.PeripheralPairingInfo
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockBehavior.modify : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockPeripheral.mockBehavior.modify : FindMyBluetooth.MockBehavior
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockBehavior.getter : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockPeripheral.mockBehavior.getter : FindMyBluetooth.MockBehavior
+property descriptor for FindMyBluetooth.MockPeripheral.mockBehavior : FindMyBluetooth.MockBehavior
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockBehavior.setter : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockPeripheral.mockBehavior.setter : FindMyBluetooth.MockBehavior
+FindMyBluetooth.MockPeripheral.isConnectable.getter : Swift.Bool
+property descriptor for FindMyBluetooth.MockPeripheral.isConnectable : Swift.Bool
+dispatch thunk of FindMyBluetooth.MockPeripheral.transportType.getter : FindMyBluetooth.TransportType
+method descriptor for FindMyBluetooth.MockPeripheral.transportType.getter : FindMyBluetooth.TransportType
+property descriptor for FindMyBluetooth.MockPeripheral.transportType : FindMyBluetooth.TransportType
+FindMyBluetooth.MockPeripheral.__allocating_init(centralManager: FindMyBluetooth.MockCentralManager, identifier: Foundation.UUID, macAddress: FindMyBase.MACAddress?, isConnectable: Swift.Bool) async throws -> FindMyBluetooth.MockPeripheral
+dispatch thunk of FindMyBluetooth.MockPeripheral.__allocating_init(centralManager: FindMyBluetooth.MockCentralManager, identifier: Foundation.UUID, macAddress: FindMyBase.MACAddress?, isConnectable: Swift.Bool) async throws -> FindMyBluetooth.MockPeripheral
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.__allocating_init(centralManager: FindMyBluetooth.MockCentralManager, identifier: Foundation.UUID, macAddress: FindMyBase.MACAddress?, isConnectable: Swift.Bool) async throws -> FindMyBluetooth.MockPeripheral
+method descriptor for FindMyBluetooth.MockPeripheral.__allocating_init(centralManager: FindMyBluetooth.MockCentralManager, identifier: Foundation.UUID, macAddress: FindMyBase.MACAddress?, isConnectable: Swift.Bool) async throws -> FindMyBluetooth.MockPeripheral
+async function pointer to FindMyBluetooth.MockPeripheral.__allocating_init(centralManager: FindMyBluetooth.MockCentralManager, identifier: Foundation.UUID, macAddress: FindMyBase.MACAddress?, isConnectable: Swift.Bool) async throws -> FindMyBluetooth.MockPeripheral
+FindMyBluetooth.MockPeripheral.init(centralManager: FindMyBluetooth.MockCentralManager, identifier: Foundation.UUID, macAddress: FindMyBase.MACAddress?, isConnectable: Swift.Bool) async throws -> FindMyBluetooth.MockPeripheral
+async function pointer to FindMyBluetooth.MockPeripheral.init(centralManager: FindMyBluetooth.MockCentralManager, identifier: Foundation.UUID, macAddress: FindMyBase.MACAddress?, isConnectable: Swift.Bool) async throws -> FindMyBluetooth.MockPeripheral
+FindMyBluetooth.MockPeripheral.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.MockPeripheral.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.MockPeripheral.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+dispatch thunk of FindMyBluetooth.MockPeripheral.cancelConnection() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.cancelConnection() async throws -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.cancelConnection() async throws -> ()
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockSerialNumber.modify : Swift.String?
+method descriptor for FindMyBluetooth.MockPeripheral.mockSerialNumber.modify : Swift.String?
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockSerialNumber.getter : Swift.String?
+method descriptor for FindMyBluetooth.MockPeripheral.mockSerialNumber.getter : Swift.String?
+property descriptor for FindMyBluetooth.MockPeripheral.mockSerialNumber : Swift.String?
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockSerialNumber.setter : Swift.String?
+method descriptor for FindMyBluetooth.MockPeripheral.mockSerialNumber.setter : Swift.String?
+FindMyBluetooth.MockPeripheral.advertisementData.getter : [Swift.String : Swift.Sendable]?
+property descriptor for FindMyBluetooth.MockPeripheral.advertisementData : [Swift.String : Swift.Sendable]?
+dispatch thunk of FindMyBluetooth.MockPeripheral.setMockingBehavior(FindMyBluetooth.MockBehavior) async -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.setMockingBehavior(FindMyBluetooth.MockBehavior) async -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.setMockingBehavior(FindMyBluetooth.MockBehavior) async -> ()
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockBeaconIdentifier.modify : Foundation.UUID?
+method descriptor for FindMyBluetooth.MockPeripheral.mockBeaconIdentifier.modify : Foundation.UUID?
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockBeaconIdentifier.getter : Foundation.UUID?
+method descriptor for FindMyBluetooth.MockPeripheral.mockBeaconIdentifier.getter : Foundation.UUID?
+property descriptor for FindMyBluetooth.MockPeripheral.mockBeaconIdentifier : Foundation.UUID?
+dispatch thunk of FindMyBluetooth.MockPeripheral.mockBeaconIdentifier.setter : Foundation.UUID?
+method descriptor for FindMyBluetooth.MockPeripheral.mockBeaconIdentifier.setter : Foundation.UUID?
+FindMyBluetooth.MockPeripheral.id.getter : FindMyBase.Identifier<FindMyBluetooth.Peripheral>
+property descriptor for FindMyBluetooth.MockPeripheral.id : FindMyBase.Identifier<FindMyBluetooth.Peripheral>
+dispatch thunk of FindMyBluetooth.MockPeripheral.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+dispatch thunk of FindMyBluetooth.MockPeripheral.pair() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.pair() async throws -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.pair() async throws -> ()
+dispatch thunk of FindMyBluetooth.MockPeripheral.state.modify : FindMyBluetooth.PeripheralState
+method descriptor for FindMyBluetooth.MockPeripheral.state.modify : FindMyBluetooth.PeripheralState
+dispatch thunk of FindMyBluetooth.MockPeripheral.state.getter : FindMyBluetooth.PeripheralState
+method descriptor for FindMyBluetooth.MockPeripheral.state.getter : FindMyBluetooth.PeripheralState
+property descriptor for FindMyBluetooth.MockPeripheral.state : FindMyBluetooth.PeripheralState
+dispatch thunk of FindMyBluetooth.MockPeripheral.state.setter : FindMyBluetooth.PeripheralState
+method descriptor for FindMyBluetooth.MockPeripheral.state.setter : FindMyBluetooth.PeripheralState
+dispatch thunk of FindMyBluetooth.MockPeripheral.unpair() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.unpair() async throws -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.unpair() async throws -> ()
+dispatch thunk of FindMyBluetooth.MockPeripheral.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+dispatch thunk of FindMyBluetooth.MockPeripheral.connect() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.connect() async throws -> ()
+method descriptor for FindMyBluetooth.MockPeripheral.connect() async throws -> ()
+dispatch thunk of FindMyBluetooth.MockPeripheral.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [FindMyBluetooth.MockService]
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [FindMyBluetooth.MockService]
+method descriptor for FindMyBluetooth.MockPeripheral.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [FindMyBluetooth.MockService]
+dispatch thunk of FindMyBluetooth.MockPeripheral.isPaired.getter : Swift.Bool
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.isPaired.getter : Swift.Bool
+method descriptor for FindMyBluetooth.MockPeripheral.isPaired.getter : Swift.Bool
+property descriptor for FindMyBluetooth.MockPeripheral.isPaired : Swift.Bool
+dispatch thunk of FindMyBluetooth.MockPeripheral.lastSeen.modify : Foundation.Date
+method descriptor for FindMyBluetooth.MockPeripheral.lastSeen.modify : Foundation.Date
+dispatch thunk of FindMyBluetooth.MockPeripheral.lastSeen.getter : Foundation.Date
+method descriptor for FindMyBluetooth.MockPeripheral.lastSeen.getter : Foundation.Date
+property descriptor for FindMyBluetooth.MockPeripheral.lastSeen : Foundation.Date
+dispatch thunk of FindMyBluetooth.MockPeripheral.lastSeen.setter : Foundation.Date
+method descriptor for FindMyBluetooth.MockPeripheral.lastSeen.setter : Foundation.Date
+protocol conformance descriptor for FindMyBluetooth.MockPeripheral : FindMyBluetooth.PeripheralProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.MockPeripheral : FindMyBluetooth.PeripheralProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.MockPeripheral
+metaclass for FindMyBluetooth.MockPeripheral
+nominal type descriptor for FindMyBluetooth.MockPeripheral
+class metadata base offset for FindMyBluetooth.MockPeripheral
+method lookup function for FindMyBluetooth.MockPeripheral
+type metadata for FindMyBluetooth.MockPeripheral
+protocol conformance descriptor for FindMyBluetooth.MockPeripheral : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.MockPeripheral.__deallocating_deinit
+FindMyBluetooth.MockPeripheral.deinit
+protocol conformance descriptor for FindMyBluetooth.MockPeripheral : Swift.CustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.MockPeripheral.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> FindMyBluetooth.MockService
+async function pointer to dispatch thunk of FindMyBluetooth.MockPeripheral.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> FindMyBluetooth.MockService
+method descriptor for FindMyBluetooth.MockPeripheral.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> FindMyBluetooth.MockService
+property descriptor for FindMyBluetooth.MockPeripheral.subscript(FindMyBase.Identifier<FindMyBluetooth.Service>) -> FindMyBluetooth.MockService
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.setMockScanResponder(@Sendable () async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>) -> ()
+method descriptor for FindMyBluetooth.MockCBDiscovery.setMockScanResponder(@Sendable () async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>) -> ()
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockCBDiscovery.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+method descriptor for FindMyBluetooth.MockCBDiscovery.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+FindMyBluetooth.MockCBDiscovery.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.MockCBDiscovery.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.discoveredDevices.modify : [FindMyBluetooth.Device]
+method descriptor for FindMyBluetooth.MockCBDiscovery.discoveredDevices.modify : [FindMyBluetooth.Device]
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.discoveredDevices.getter : [FindMyBluetooth.Device]
+method descriptor for FindMyBluetooth.MockCBDiscovery.discoveredDevices.getter : [FindMyBluetooth.Device]
+property descriptor for FindMyBluetooth.MockCBDiscovery.discoveredDevices : [FindMyBluetooth.Device]
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.discoveredDevices.setter : [FindMyBluetooth.Device]
+method descriptor for FindMyBluetooth.MockCBDiscovery.discoveredDevices.setter : [FindMyBluetooth.Device]
+FindMyBluetooth.MockCBDiscovery.id.getter : FindMyBase.Identifier<FindMyBluetooth.CBDiscovery>
+property descriptor for FindMyBluetooth.MockCBDiscovery.id : FindMyBase.Identifier<FindMyBluetooth.CBDiscovery>
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.MockCBDiscovery.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+method descriptor for FindMyBluetooth.MockCBDiscovery.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.MockCBDiscovery.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+method descriptor for FindMyBluetooth.MockCBDiscovery.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+static FindMyBluetooth.MockCBDiscovery.devices(with: FindMyBluetooth.CBDiscovery.DiscoveryFlags) async throws -> [FindMyBluetooth.Device]
+async function pointer to static FindMyBluetooth.MockCBDiscovery.devices(with: FindMyBluetooth.CBDiscovery.DiscoveryFlags) async throws -> [FindMyBluetooth.Device]
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.scanRate.modify : FindMyBluetooth.ScanRate
+method descriptor for FindMyBluetooth.MockCBDiscovery.scanRate.modify : FindMyBluetooth.ScanRate
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.scanRate.getter : FindMyBluetooth.ScanRate
+method descriptor for FindMyBluetooth.MockCBDiscovery.scanRate.getter : FindMyBluetooth.ScanRate
+property descriptor for FindMyBluetooth.MockCBDiscovery.scanRate : FindMyBluetooth.ScanRate
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.scanRate.setter : FindMyBluetooth.ScanRate
+method descriptor for FindMyBluetooth.MockCBDiscovery.scanRate.setter : FindMyBluetooth.ScanRate
+protocol conformance descriptor for FindMyBluetooth.MockCBDiscovery : FindMyBluetooth.CBDiscoveryProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.MockCBDiscovery : FindMyBluetooth.CBDiscoveryProtocol in FindMyBluetooth
+FindMyBluetooth.MockCBDiscovery.__allocating_init() async -> FindMyBluetooth.MockCBDiscovery
+dispatch thunk of FindMyBluetooth.MockCBDiscovery.__allocating_init() async -> FindMyBluetooth.MockCBDiscovery
+async function pointer to dispatch thunk of FindMyBluetooth.MockCBDiscovery.__allocating_init() async -> FindMyBluetooth.MockCBDiscovery
+method descriptor for FindMyBluetooth.MockCBDiscovery.__allocating_init() async -> FindMyBluetooth.MockCBDiscovery
+async function pointer to FindMyBluetooth.MockCBDiscovery.__allocating_init() async -> FindMyBluetooth.MockCBDiscovery
+FindMyBluetooth.MockCBDiscovery.init() async -> FindMyBluetooth.MockCBDiscovery
+async function pointer to FindMyBluetooth.MockCBDiscovery.init() async -> FindMyBluetooth.MockCBDiscovery
+type metadata accessor for FindMyBluetooth.MockCBDiscovery
+metaclass for FindMyBluetooth.MockCBDiscovery
+nominal type descriptor for FindMyBluetooth.MockCBDiscovery
+class metadata base offset for FindMyBluetooth.MockCBDiscovery
+method lookup function for FindMyBluetooth.MockCBDiscovery
+type metadata for FindMyBluetooth.MockCBDiscovery
+protocol conformance descriptor for FindMyBluetooth.MockCBDiscovery : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.MockCBDiscovery.__deallocating_deinit
+FindMyBluetooth.MockCBDiscovery.deinit
+protocol conformance descriptor for FindMyBluetooth.MockCBDiscovery : Swift.Identifiable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.MockCBDiscovery : Swift.CustomStringConvertible in FindMyBluetooth
+enum case for FindMyBluetooth.PeripheralState.connecting(FindMyBluetooth.PeripheralState.Type) -> FindMyBluetooth.PeripheralState
+enum case for FindMyBluetooth.PeripheralState.disconnected(FindMyBluetooth.PeripheralState.Type) -> FindMyBluetooth.PeripheralState
+enum case for FindMyBluetooth.PeripheralState.disconnecting(FindMyBluetooth.PeripheralState.Type) -> FindMyBluetooth.PeripheralState
+enum case for FindMyBluetooth.PeripheralState.unknown(FindMyBluetooth.PeripheralState.Type) -> FindMyBluetooth.PeripheralState
+FindMyBluetooth.PeripheralState.init(rawValue: Swift.Int) -> FindMyBluetooth.PeripheralState?
+FindMyBluetooth.PeripheralState.rawValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.PeripheralState.rawValue : Swift.Int
+enum case for FindMyBluetooth.PeripheralState.connected(FindMyBluetooth.PeripheralState.Type) -> FindMyBluetooth.PeripheralState
+type metadata accessor for FindMyBluetooth.PeripheralState
+nominal type descriptor for FindMyBluetooth.PeripheralState
+type metadata for FindMyBluetooth.PeripheralState
+protocol conformance descriptor for FindMyBluetooth.PeripheralState : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.PeripheralState : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.PeripheralState : Swift.RawRepresentable in FindMyBluetooth
+protocol descriptor for FindMyBluetooth.ServiceProtocol
+base conformance descriptor for FindMyBluetooth.ServiceProtocol: FindMyBase.IsolatedCustomStringConvertible
+associated conformance descriptor for FindMyBluetooth.ServiceProtocol.FindMyBluetooth.ServiceProtocol.C: FindMyBluetooth.CharacteristicProtocol
+dispatch thunk of FindMyBluetooth.ServiceProtocol.id.getter : FindMyBase.Identifier<FindMyBluetooth.Service>
+method descriptor for FindMyBluetooth.ServiceProtocol.id.getter : FindMyBase.Identifier<FindMyBluetooth.Service>
+dispatch thunk of FindMyBluetooth.ServiceProtocol.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [A.C]
+async function pointer to dispatch thunk of FindMyBluetooth.ServiceProtocol.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [A.C]
+method descriptor for FindMyBluetooth.ServiceProtocol.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [A.C]
+dispatch thunk of FindMyBluetooth.ServiceProtocol.isPrimary.getter : Swift.Bool
+method descriptor for FindMyBluetooth.ServiceProtocol.isPrimary.getter : Swift.Bool
+(extension in FindMyBluetooth):FindMyBluetooth.ServiceProtocol.description.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.ServiceProtocol.description : Swift.String
+(extension in FindMyBluetooth):FindMyBluetooth.ServiceProtocol.isolatedDescription.getter : Swift.String
+async function pointer to (extension in FindMyBluetooth):FindMyBluetooth.ServiceProtocol.isolatedDescription.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.ServiceProtocol.isolatedDescription : Swift.String
+base conformance descriptor for FindMyBluetooth.ServiceProtocol: Swift.CustomStringConvertible
+dispatch thunk of FindMyBluetooth.ServiceProtocol.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> A.C
+async function pointer to dispatch thunk of FindMyBluetooth.ServiceProtocol.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> A.C
+method descriptor for FindMyBluetooth.ServiceProtocol.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> A.C
+protocol requirements base descriptor for FindMyBluetooth.ServiceProtocol
+type metadata accessor for FindMyBluetooth.PeripheralChange
+nominal type descriptor for FindMyBluetooth.PeripheralChange
+protocol descriptor for FindMyBluetooth.ServiceIdentifier
+dispatch thunk of FindMyBluetooth.ServiceIdentifier.id.getter : FindMyBase.Identifier<FindMyBluetooth.Service>
+method descriptor for FindMyBluetooth.ServiceIdentifier.id.getter : FindMyBase.Identifier<FindMyBluetooth.Service>
+protocol requirements base descriptor for FindMyBluetooth.ServiceIdentifier
+FindMyBluetooth.CharacteristicUUID.init(stringLiteral: Swift.String) -> FindMyBluetooth.CharacteristicUUID
+FindMyBluetooth.CharacteristicUUID.debugDescription.getter : Swift.String
+property descriptor for FindMyBluetooth.CharacteristicUUID.debugDescription : Swift.String
+static FindMyBluetooth.CharacteristicUUID.== infix(FindMyBluetooth.CharacteristicUUID, FindMyBluetooth.CharacteristicUUID) -> Swift.Bool
+FindMyBluetooth.CharacteristicUUID.hash(into: inout Swift.Hasher) -> ()
+FindMyBluetooth.CharacteristicUUID.init(uuid: Foundation.UUID) -> FindMyBluetooth.CharacteristicUUID
+FindMyBluetooth.CharacteristicUUID.hashValue.getter : Swift.Int
+property descriptor for FindMyBluetooth.CharacteristicUUID.hashValue : Swift.Int
+type metadata accessor for FindMyBluetooth.CharacteristicUUID
+nominal type descriptor for FindMyBluetooth.CharacteristicUUID
+type metadata for FindMyBluetooth.CharacteristicUUID
+protocol conformance descriptor for FindMyBluetooth.CharacteristicUUID : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CharacteristicUUID : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CharacteristicUUID : Swift.ExpressibleByStringLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CharacteristicUUID : Swift.CustomDebugStringConvertible in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CharacteristicUUID : Swift.ExpressibleByUnicodeScalarLiteral in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.CharacteristicUUID : Swift.ExpressibleByExtendedGraphemeClusterLiteral in FindMyBluetooth
+protocol descriptor for FindMyBluetooth.ControllerProtocol
+dispatch thunk of FindMyBluetooth.ControllerProtocol.unpair(device: FindMyBluetooth.Device) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.ControllerProtocol.unpair(device: FindMyBluetooth.Device) async throws -> ()
+method descriptor for FindMyBluetooth.ControllerProtocol.unpair(device: FindMyBluetooth.Device) async throws -> ()
+(extension in FindMyBluetooth):FindMyBluetooth.ControllerProtocol.description.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.ControllerProtocol.description : Swift.String
+base conformance descriptor for FindMyBluetooth.ControllerProtocol: Swift.Actor
+base conformance descriptor for FindMyBluetooth.ControllerProtocol: Swift.Identifiable
+base conformance descriptor for FindMyBluetooth.ControllerProtocol: Swift.CustomStringConvertible
+protocol requirements base descriptor for FindMyBluetooth.ControllerProtocol
+dispatch thunk of FindMyBluetooth.MockCentralManager.setMockScanResponder(@Sendable () async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.MockPeripheral, Swift.Error>) -> ()
+method descriptor for FindMyBluetooth.MockCentralManager.setMockScanResponder(@Sendable () async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.MockPeripheral, Swift.Error>) -> ()
+FindMyBluetooth.MockCentralManager.setMockBehavior(FindMyBluetooth.MockBehavior) -> ()
+static FindMyBluetooth.MockCentralManager.pairingCentralManager.getter : FindMyBluetooth.MockCentralManager
+async function pointer to static FindMyBluetooth.MockCentralManager.pairingCentralManager.getter : FindMyBluetooth.MockCentralManager
+property descriptor for static FindMyBluetooth.MockCentralManager.pairingCentralManager : FindMyBluetooth.MockCentralManager
+FindMyBluetooth.MockCentralManager.isPairingCentralManager.getter : Swift.Bool
+property descriptor for FindMyBluetooth.MockCentralManager.isPairingCentralManager : Swift.Bool
+protocol conformance descriptor for FindMyBluetooth.MockCentralManager : FindMyBase.IsolatedCustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.MockCentralManager.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+method descriptor for FindMyBluetooth.MockCentralManager.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+dispatch thunk of FindMyBluetooth.MockCentralManager.mockBehavior.modify : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockCentralManager.mockBehavior.modify : FindMyBluetooth.MockBehavior
+dispatch thunk of FindMyBluetooth.MockCentralManager.mockBehavior.getter : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockCentralManager.mockBehavior.getter : FindMyBluetooth.MockBehavior
+property descriptor for FindMyBluetooth.MockCentralManager.mockBehavior : FindMyBluetooth.MockBehavior
+dispatch thunk of FindMyBluetooth.MockCentralManager.mockBehavior.setter : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockCentralManager.mockBehavior.setter : FindMyBluetooth.MockBehavior
+FindMyBluetooth.MockCentralManager.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.MockCentralManager.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.MockCentralManager.connectionEvents(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+method descriptor for FindMyBluetooth.MockCentralManager.connectionEvents(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+dispatch thunk of FindMyBluetooth.MockCentralManager.connectionEvents(peripheralIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Peripheral>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+method descriptor for FindMyBluetooth.MockCentralManager.connectionEvents(peripheralIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Peripheral>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+dispatch thunk of FindMyBluetooth.MockCentralManager._connectionEvents() -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+method descriptor for FindMyBluetooth.MockCentralManager._connectionEvents() -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+dispatch thunk of FindMyBluetooth.MockCentralManager.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> FindMyBluetooth.MockPeripheral?
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> FindMyBluetooth.MockPeripheral?
+method descriptor for FindMyBluetooth.MockCentralManager.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> FindMyBluetooth.MockPeripheral?
+dispatch thunk of FindMyBluetooth.MockCentralManager.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<FindMyBluetooth.MockPeripheral>, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<FindMyBluetooth.MockPeripheral>, Swift.Error>
+method descriptor for FindMyBluetooth.MockCentralManager.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<FindMyBluetooth.MockPeripheral>, Swift.Error>
+dispatch thunk of FindMyBluetooth.MockCentralManager.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.MockPeripheral]
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.MockPeripheral]
+method descriptor for FindMyBluetooth.MockCentralManager.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.MockPeripheral]
+dispatch thunk of FindMyBluetooth.MockCentralManager.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [FindMyBluetooth.MockPeripheral]
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [FindMyBluetooth.MockPeripheral]
+method descriptor for FindMyBluetooth.MockCentralManager.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [FindMyBluetooth.MockPeripheral]
+dispatch thunk of FindMyBluetooth.MockCentralManager.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.MockPeripheral]
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.MockPeripheral]
+method descriptor for FindMyBluetooth.MockCentralManager.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [FindMyBluetooth.MockPeripheral]
+FindMyBluetooth.MockCentralManager.id.getter : FindMyBase.Identifier<FindMyBluetooth.CentralManager>
+property descriptor for FindMyBluetooth.MockCentralManager.id : FindMyBase.Identifier<FindMyBluetooth.CentralManager>
+dispatch thunk of FindMyBluetooth.MockCentralManager.pair(peripheral: FindMyBluetooth.MockPeripheral) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.pair(peripheral: FindMyBluetooth.MockPeripheral) async throws -> ()
+method descriptor for FindMyBluetooth.MockCentralManager.pair(peripheral: FindMyBluetooth.MockPeripheral) async throws -> ()
+dispatch thunk of FindMyBluetooth.MockCentralManager.state.modify : FindMyBluetooth.CentralManager.State
+method descriptor for FindMyBluetooth.MockCentralManager.state.modify : FindMyBluetooth.CentralManager.State
+dispatch thunk of FindMyBluetooth.MockCentralManager.state.getter : FindMyBluetooth.CentralManager.State
+method descriptor for FindMyBluetooth.MockCentralManager.state.getter : FindMyBluetooth.CentralManager.State
+property descriptor for FindMyBluetooth.MockCentralManager.state : FindMyBluetooth.CentralManager.State
+dispatch thunk of FindMyBluetooth.MockCentralManager.state.setter : FindMyBluetooth.CentralManager.State
+method descriptor for FindMyBluetooth.MockCentralManager.state.setter : FindMyBluetooth.CentralManager.State
+FindMyBluetooth.MockCentralManager.yield(connectionEvent: FindMyBluetooth.CentralManager.ConnectedState) -> ()
+dispatch thunk of FindMyBluetooth.MockCentralManager.unpair(peripheral: FindMyBluetooth.MockPeripheral) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.unpair(peripheral: FindMyBluetooth.MockPeripheral) async throws -> ()
+method descriptor for FindMyBluetooth.MockCentralManager.unpair(peripheral: FindMyBluetooth.MockPeripheral) async throws -> ()
+FindMyBluetooth.MockCentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?, initialState: FindMyBluetooth.CentralManager.State) async -> FindMyBluetooth.MockCentralManager
+dispatch thunk of FindMyBluetooth.MockCentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?, initialState: FindMyBluetooth.CentralManager.State) async -> FindMyBluetooth.MockCentralManager
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?, initialState: FindMyBluetooth.CentralManager.State) async -> FindMyBluetooth.MockCentralManager
+method descriptor for FindMyBluetooth.MockCentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?, initialState: FindMyBluetooth.CentralManager.State) async -> FindMyBluetooth.MockCentralManager
+async function pointer to FindMyBluetooth.MockCentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?, initialState: FindMyBluetooth.CentralManager.State) async -> FindMyBluetooth.MockCentralManager
+FindMyBluetooth.MockCentralManager.init(options: FindMyBluetooth.CentralManager.Options?, initialState: FindMyBluetooth.CentralManager.State) async -> FindMyBluetooth.MockCentralManager
+async function pointer to FindMyBluetooth.MockCentralManager.init(options: FindMyBluetooth.CentralManager.Options?, initialState: FindMyBluetooth.CentralManager.State) async -> FindMyBluetooth.MockCentralManager
+FindMyBluetooth.MockCentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?) async -> FindMyBluetooth.MockCentralManager
+async function pointer to FindMyBluetooth.MockCentralManager.__allocating_init(options: FindMyBluetooth.CentralManager.Options?) async -> FindMyBluetooth.MockCentralManager
+dispatch thunk of FindMyBluetooth.MockCentralManager.isPaired(peripheral: FindMyBluetooth.MockPeripheral) async throws -> Swift.Bool
+async function pointer to dispatch thunk of FindMyBluetooth.MockCentralManager.isPaired(peripheral: FindMyBluetooth.MockPeripheral) async throws -> Swift.Bool
+method descriptor for FindMyBluetooth.MockCentralManager.isPaired(peripheral: FindMyBluetooth.MockPeripheral) async throws -> Swift.Bool
+protocol conformance descriptor for FindMyBluetooth.MockCentralManager : FindMyBluetooth.CentralManagerProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.MockCentralManager : FindMyBluetooth.CentralManagerProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.MockCentralManager
+metaclass for FindMyBluetooth.MockCentralManager
+nominal type descriptor for FindMyBluetooth.MockCentralManager
+class metadata base offset for FindMyBluetooth.MockCentralManager
+method lookup function for FindMyBluetooth.MockCentralManager
+type metadata for FindMyBluetooth.MockCentralManager
+protocol conformance descriptor for FindMyBluetooth.MockCentralManager : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.MockCentralManager.__deallocating_deinit
+FindMyBluetooth.MockCentralManager.deinit
+protocol conformance descriptor for FindMyBluetooth.MockCentralManager : Swift.Identifiable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.MockCentralManager : Swift.CustomStringConvertible in FindMyBluetooth
+FindMyBluetooth.MockCharacteristic.writeWithoutResponseWithoutTaskCancellation(data: [Foundation.Data]) async throws -> ()
+async function pointer to FindMyBluetooth.MockCharacteristic.writeWithoutResponseWithoutTaskCancellation(data: [Foundation.Data]) async throws -> ()
+dispatch thunk of FindMyBluetooth.MockCharacteristic.setMockReadResponder(@Sendable () async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>) -> ()
+method descriptor for FindMyBluetooth.MockCharacteristic.setMockReadResponder(@Sendable () async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>) -> ()
+dispatch thunk of FindMyBluetooth.MockCharacteristic.setMockWriteResponder(@Sendable (Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>) async -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>) -> ()
+method descriptor for FindMyBluetooth.MockCharacteristic.setMockWriteResponder(@Sendable (Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>) async -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>) -> ()
+dispatch thunk of FindMyBluetooth.MockCharacteristic.setMockWriteWithoutResponseCallback(@Sendable (Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>) async throws -> ()) -> ()
+method descriptor for FindMyBluetooth.MockCharacteristic.setMockWriteWithoutResponseCallback(@Sendable (Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>) async throws -> ()) -> ()
+dispatch thunk of FindMyBluetooth.MockCharacteristic.setMockBehavior(FindMyBluetooth.MockBehavior) -> ()
+method descriptor for FindMyBluetooth.MockCharacteristic.setMockBehavior(FindMyBluetooth.MockBehavior) -> ()
+protocol conformance descriptor for FindMyBluetooth.MockCharacteristic : FindMyBase.IsolatedCustomStringConvertible in FindMyBluetooth
+FindMyBluetooth.MockCharacteristic.properties.getter : FindMyBluetooth.Characteristic.Properties
+property descriptor for FindMyBluetooth.MockCharacteristic.properties : FindMyBluetooth.Characteristic.Properties
+dispatch thunk of FindMyBluetooth.MockCharacteristic.isNotifying.modify : Swift.Bool
+method descriptor for FindMyBluetooth.MockCharacteristic.isNotifying.modify : Swift.Bool
+dispatch thunk of FindMyBluetooth.MockCharacteristic.isNotifying.getter : Swift.Bool
+method descriptor for FindMyBluetooth.MockCharacteristic.isNotifying.getter : Swift.Bool
+property descriptor for FindMyBluetooth.MockCharacteristic.isNotifying : Swift.Bool
+dispatch thunk of FindMyBluetooth.MockCharacteristic.isNotifying.setter : Swift.Bool
+method descriptor for FindMyBluetooth.MockCharacteristic.isNotifying.setter : Swift.Bool
+dispatch thunk of FindMyBluetooth.MockCharacteristic.mockBehavior.modify : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockCharacteristic.mockBehavior.modify : FindMyBluetooth.MockBehavior
+dispatch thunk of FindMyBluetooth.MockCharacteristic.mockBehavior.getter : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockCharacteristic.mockBehavior.getter : FindMyBluetooth.MockBehavior
+property descriptor for FindMyBluetooth.MockCharacteristic.mockBehavior : FindMyBluetooth.MockBehavior
+dispatch thunk of FindMyBluetooth.MockCharacteristic.mockBehavior.setter : FindMyBluetooth.MockBehavior
+method descriptor for FindMyBluetooth.MockCharacteristic.mockBehavior.setter : FindMyBluetooth.MockBehavior
+FindMyBluetooth.MockCharacteristic.didWriteValue(with: Swift.Error?) -> ()
+dispatch thunk of FindMyBluetooth.MockCharacteristic.readUnderlying() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockCharacteristic.readUnderlying() async throws -> ()
+method descriptor for FindMyBluetooth.MockCharacteristic.readUnderlying() async throws -> ()
+FindMyBluetooth.MockCharacteristic.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.MockCharacteristic.unownedExecutor : Swift.UnownedSerialExecutor
+dispatch thunk of FindMyBluetooth.MockCharacteristic.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.MockCharacteristic.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+method descriptor for FindMyBluetooth.MockCharacteristic.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+FindMyBluetooth.MockCharacteristic.id.getter : FindMyBase.Identifier<FindMyBluetooth.Characteristic>
+property descriptor for FindMyBluetooth.MockCharacteristic.id : FindMyBase.Identifier<FindMyBluetooth.Characteristic>
+dispatch thunk of FindMyBluetooth.MockCharacteristic.mtu.modify : Swift.Int
+method descriptor for FindMyBluetooth.MockCharacteristic.mtu.modify : Swift.Int
+dispatch thunk of FindMyBluetooth.MockCharacteristic.mtu.getter : Swift.Int
+method descriptor for FindMyBluetooth.MockCharacteristic.mtu.getter : Swift.Int
+property descriptor for FindMyBluetooth.MockCharacteristic.mtu : Swift.Int
+dispatch thunk of FindMyBluetooth.MockCharacteristic.mtu.setter : Swift.Int
+method descriptor for FindMyBluetooth.MockCharacteristic.mtu.setter : Swift.Int
+FindMyBluetooth.MockCharacteristic.writeWithoutResponseWithTaskCancellation(data: [Foundation.Data]) async throws -> ()
+async function pointer to FindMyBluetooth.MockCharacteristic.writeWithoutResponseWithTaskCancellation(data: [Foundation.Data]) async throws -> ()
+dispatch thunk of FindMyBluetooth.MockCharacteristic.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.MockCharacteristic.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.MockCharacteristic.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+dispatch thunk of FindMyBluetooth.MockCharacteristic.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.MockCharacteristic.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.MockCharacteristic.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+dispatch thunk of FindMyBluetooth.MockCharacteristic.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.MockCharacteristic.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.MockCharacteristic.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+FindMyBluetooth.MockCharacteristic.__allocating_init(service: FindMyBluetooth.MockService, identifier: Foundation.UUID, properties: FindMyBluetooth.Characteristic.Properties) async throws -> FindMyBluetooth.MockCharacteristic
+dispatch thunk of FindMyBluetooth.MockCharacteristic.__allocating_init(service: FindMyBluetooth.MockService, identifier: Foundation.UUID, properties: FindMyBluetooth.Characteristic.Properties) async throws -> FindMyBluetooth.MockCharacteristic
+async function pointer to dispatch thunk of FindMyBluetooth.MockCharacteristic.__allocating_init(service: FindMyBluetooth.MockService, identifier: Foundation.UUID, properties: FindMyBluetooth.Characteristic.Properties) async throws -> FindMyBluetooth.MockCharacteristic
+method descriptor for FindMyBluetooth.MockCharacteristic.__allocating_init(service: FindMyBluetooth.MockService, identifier: Foundation.UUID, properties: FindMyBluetooth.Characteristic.Properties) async throws -> FindMyBluetooth.MockCharacteristic
+async function pointer to FindMyBluetooth.MockCharacteristic.__allocating_init(service: FindMyBluetooth.MockService, identifier: Foundation.UUID, properties: FindMyBluetooth.Characteristic.Properties) async throws -> FindMyBluetooth.MockCharacteristic
+FindMyBluetooth.MockCharacteristic.init(service: FindMyBluetooth.MockService, identifier: Foundation.UUID, properties: FindMyBluetooth.Characteristic.Properties) async throws -> FindMyBluetooth.MockCharacteristic
+async function pointer to FindMyBluetooth.MockCharacteristic.init(service: FindMyBluetooth.MockService, identifier: Foundation.UUID, properties: FindMyBluetooth.Characteristic.Properties) async throws -> FindMyBluetooth.MockCharacteristic
+protocol conformance descriptor for FindMyBluetooth.MockCharacteristic : FindMyBluetooth.CharacteristicProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.MockCharacteristic : FindMyBluetooth.CharacteristicProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.MockCharacteristic
+metaclass for FindMyBluetooth.MockCharacteristic
+nominal type descriptor for FindMyBluetooth.MockCharacteristic
+class metadata base offset for FindMyBluetooth.MockCharacteristic
+method lookup function for FindMyBluetooth.MockCharacteristic
+type metadata for FindMyBluetooth.MockCharacteristic
+protocol conformance descriptor for FindMyBluetooth.MockCharacteristic : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.MockCharacteristic.__deallocating_deinit
+FindMyBluetooth.MockCharacteristic.deinit
+protocol conformance descriptor for FindMyBluetooth.MockCharacteristic : Swift.CustomStringConvertible in FindMyBluetooth
+enum case for FindMyBluetooth.ObjectBatteryState.low(FindMyBluetooth.ObjectBatteryState.Type) -> FindMyBluetooth.ObjectBatteryState
+enum case for FindMyBluetooth.ObjectBatteryState.high(FindMyBluetooth.ObjectBatteryState.Type) -> FindMyBluetooth.ObjectBatteryState
+enum case for FindMyBluetooth.ObjectBatteryState.medium(FindMyBluetooth.ObjectBatteryState.Type) -> FindMyBluetooth.ObjectBatteryState
+enum case for FindMyBluetooth.ObjectBatteryState.critical(FindMyBluetooth.ObjectBatteryState.Type) -> FindMyBluetooth.ObjectBatteryState
+FindMyBluetooth.ObjectBatteryState.init(rawValue: Swift.UInt8) -> FindMyBluetooth.ObjectBatteryState?
+FindMyBluetooth.ObjectBatteryState.rawValue.getter : Swift.UInt8
+property descriptor for FindMyBluetooth.ObjectBatteryState.rawValue : Swift.UInt8
+type metadata accessor for FindMyBluetooth.ObjectBatteryState
+nominal type descriptor for FindMyBluetooth.ObjectBatteryState
+type metadata for FindMyBluetooth.ObjectBatteryState
+protocol conformance descriptor for FindMyBluetooth.ObjectBatteryState : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ObjectBatteryState : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ObjectBatteryState : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ObjectBatteryState : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ObjectBatteryState : Swift.Decodable in FindMyBluetooth
+protocol descriptor for FindMyBluetooth.PeripheralProtocol
+base conformance descriptor for FindMyBluetooth.PeripheralProtocol: FindMyBase.IsolatedCustomStringConvertible
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.macAddress.getter : FindMyBase.MACAddress?
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.macAddress.getter : FindMyBase.MACAddress?
+method descriptor for FindMyBluetooth.PeripheralProtocol.macAddress.getter : FindMyBase.MACAddress?
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.isConnected.getter : Swift.Bool
+method descriptor for FindMyBluetooth.PeripheralProtocol.isConnected.getter : Swift.Bool
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+method descriptor for FindMyBluetooth.PeripheralProtocol.pairingInfo.getter : FindMyBluetooth.PeripheralPairingInfo
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.isConnectable.getter : Swift.Bool
+method descriptor for FindMyBluetooth.PeripheralProtocol.isConnectable.getter : Swift.Bool
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.transportType.getter : FindMyBluetooth.TransportType
+method descriptor for FindMyBluetooth.PeripheralProtocol.transportType.getter : FindMyBluetooth.TransportType
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+method descriptor for FindMyBluetooth.PeripheralProtocol.cancelConnection(options: FindMyBluetooth.Peripheral.DisconnectionOptions?) async throws -> ()
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.cancelConnection() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.cancelConnection() async throws -> ()
+method descriptor for FindMyBluetooth.PeripheralProtocol.cancelConnection() async throws -> ()
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.advertisementData.getter : [Swift.String : Swift.Sendable]?
+method descriptor for FindMyBluetooth.PeripheralProtocol.advertisementData.getter : [Swift.String : Swift.Sendable]?
+associated conformance descriptor for FindMyBluetooth.PeripheralProtocol.FindMyBluetooth.PeripheralProtocol.S: FindMyBluetooth.ServiceProtocol
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.id.getter : FindMyBase.Identifier<FindMyBluetooth.Peripheral>
+method descriptor for FindMyBluetooth.PeripheralProtocol.id.getter : FindMyBase.Identifier<FindMyBluetooth.Peripheral>
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+method descriptor for FindMyBluetooth.PeripheralProtocol.set(macAddress: FindMyBase.MACAddress) async throws -> ()
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.pair() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.pair() async throws -> ()
+method descriptor for FindMyBluetooth.PeripheralProtocol.pair() async throws -> ()
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.state.getter : FindMyBluetooth.PeripheralState
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.state.getter : FindMyBluetooth.PeripheralState
+method descriptor for FindMyBluetooth.PeripheralProtocol.state.getter : FindMyBluetooth.PeripheralState
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.unpair() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.unpair() async throws -> ()
+method descriptor for FindMyBluetooth.PeripheralProtocol.unpair() async throws -> ()
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+method descriptor for FindMyBluetooth.PeripheralProtocol.connect(useCase: FindMyBluetooth.ConnectUseCase?, options: FindMyBluetooth.Peripheral.Options?) async throws -> ()
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.connect() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.connect() async throws -> ()
+method descriptor for FindMyBluetooth.PeripheralProtocol.connect() async throws -> ()
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [A.S]
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [A.S]
+method descriptor for FindMyBluetooth.PeripheralProtocol.discover(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]?) async throws -> [A.S]
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.isPaired.getter : Swift.Bool
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.isPaired.getter : Swift.Bool
+method descriptor for FindMyBluetooth.PeripheralProtocol.isPaired.getter : Swift.Bool
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.lastSeen.getter : Foundation.Date
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.lastSeen.getter : Foundation.Date
+method descriptor for FindMyBluetooth.PeripheralProtocol.lastSeen.getter : Foundation.Date
+(extension in FindMyBluetooth):FindMyBluetooth.PeripheralProtocol.description.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.PeripheralProtocol.description : Swift.String
+(extension in FindMyBluetooth):FindMyBluetooth.PeripheralProtocol.isolatedDescription.getter : Swift.String
+async function pointer to (extension in FindMyBluetooth):FindMyBluetooth.PeripheralProtocol.isolatedDescription.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.PeripheralProtocol.isolatedDescription : Swift.String
+base conformance descriptor for FindMyBluetooth.PeripheralProtocol: Swift.CustomStringConvertible
+dispatch thunk of FindMyBluetooth.PeripheralProtocol.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> A.S
+async function pointer to dispatch thunk of FindMyBluetooth.PeripheralProtocol.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> A.S
+method descriptor for FindMyBluetooth.PeripheralProtocol.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Service>) -> A.S
+protocol requirements base descriptor for FindMyBluetooth.PeripheralProtocol
+protocol descriptor for FindMyBluetooth.CBDiscoveryProtocol
+dispatch thunk of FindMyBluetooth.CBDiscoveryProtocol.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.CBDiscoveryProtocol.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+method descriptor for FindMyBluetooth.CBDiscoveryProtocol.setScanRate(FindMyBluetooth.ScanRate) async -> ()
+dispatch thunk of FindMyBluetooth.CBDiscoveryProtocol.discoveredDevices.getter : [FindMyBluetooth.Device]
+method descriptor for FindMyBluetooth.CBDiscoveryProtocol.discoveredDevices.getter : [FindMyBluetooth.Device]
+dispatch thunk of FindMyBluetooth.CBDiscoveryProtocol.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CBDiscoveryProtocol.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+method descriptor for FindMyBluetooth.CBDiscoveryProtocol.registerProximityPairingBuffer(rssiThreshold: FindMyBluetooth.RSSIValue) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+dispatch thunk of FindMyBluetooth.CBDiscoveryProtocol.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CBDiscoveryProtocol.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+method descriptor for FindMyBluetooth.CBDiscoveryProtocol.scan(config: FindMyBluetooth.CBDiscovery.Config) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.DeviceChange, Swift.Error>
+dispatch thunk of static FindMyBluetooth.CBDiscoveryProtocol.devices(with: FindMyBluetooth.CBDiscovery.DiscoveryFlags) async throws -> [FindMyBluetooth.Device]
+async function pointer to dispatch thunk of static FindMyBluetooth.CBDiscoveryProtocol.devices(with: FindMyBluetooth.CBDiscovery.DiscoveryFlags) async throws -> [FindMyBluetooth.Device]
+method descriptor for static FindMyBluetooth.CBDiscoveryProtocol.devices(with: FindMyBluetooth.CBDiscovery.DiscoveryFlags) async throws -> [FindMyBluetooth.Device]
+dispatch thunk of FindMyBluetooth.CBDiscoveryProtocol.scanRate.getter : FindMyBluetooth.ScanRate
+method descriptor for FindMyBluetooth.CBDiscoveryProtocol.scanRate.getter : FindMyBluetooth.ScanRate
+(extension in FindMyBluetooth):FindMyBluetooth.CBDiscoveryProtocol.description.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.CBDiscoveryProtocol.description : Swift.String
+base conformance descriptor for FindMyBluetooth.CBDiscoveryProtocol: Swift.Actor
+base conformance descriptor for FindMyBluetooth.CBDiscoveryProtocol: Swift.Identifiable
+base conformance descriptor for FindMyBluetooth.CBDiscoveryProtocol: Swift.CustomStringConvertible
+protocol requirements base descriptor for FindMyBluetooth.CBDiscoveryProtocol
+FindMyBluetooth.PeripheralPairingInfo.description.getter : Swift.String
+property descriptor for FindMyBluetooth.PeripheralPairingInfo.description : Swift.String
+FindMyBluetooth.PeripheralPairingInfo.init(remoteAddress: FindMyBase.MACAddress, remoteIRK: Foundation.Data) -> FindMyBluetooth.PeripheralPairingInfo
+FindMyBluetooth.PeripheralPairingInfo.remoteAddress.getter : FindMyBase.MACAddress
+property descriptor for FindMyBluetooth.PeripheralPairingInfo.remoteAddress : FindMyBase.MACAddress
+FindMyBluetooth.PeripheralPairingInfo.remoteIRK.getter : Foundation.Data
+property descriptor for FindMyBluetooth.PeripheralPairingInfo.remoteIRK : Foundation.Data
+type metadata accessor for FindMyBluetooth.PeripheralPairingInfo
+nominal type descriptor for FindMyBluetooth.PeripheralPairingInfo
+type metadata for FindMyBluetooth.PeripheralPairingInfo
+protocol conformance descriptor for FindMyBluetooth.PeripheralPairingInfo : Swift.CustomStringConvertible in FindMyBluetooth
+protocol descriptor for FindMyBluetooth.CentralManagerProtocol
+dispatch thunk of static FindMyBluetooth.CentralManagerProtocol.pairingCentralManager.getter : A
+async function pointer to dispatch thunk of static FindMyBluetooth.CentralManagerProtocol.pairingCentralManager.getter : A
+method descriptor for static FindMyBluetooth.CentralManagerProtocol.pairingCentralManager.getter : A
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.isPairingCentralManager.getter : Swift.Bool
+method descriptor for FindMyBluetooth.CentralManagerProtocol.isPairingCentralManager.getter : Swift.Bool
+base conformance descriptor for FindMyBluetooth.CentralManagerProtocol: FindMyBase.IsolatedCustomStringConvertible
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+method descriptor for FindMyBluetooth.CentralManagerProtocol.stateStream() async -> Swift.AsyncStream<FindMyBluetooth.CentralManager.State>
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.connectionEvents(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+method descriptor for FindMyBluetooth.CentralManagerProtocol.connectionEvents(serviceIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Service>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.connectionEvents(peripheralIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Peripheral>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+method descriptor for FindMyBluetooth.CentralManagerProtocol.connectionEvents(peripheralIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Peripheral>]) throws -> Swift.AsyncStream<(FindMyBase.Transaction, FindMyBluetooth.CentralManager.ConnectedState)>
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> A.P?
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> A.P?
+method descriptor for FindMyBluetooth.CentralManagerProtocol.retrievePeripheral(macAddress: FindMyBase.MACAddress) async throws -> A.P?
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<A.P>, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<A.P>, Swift.Error>
+method descriptor for FindMyBluetooth.CentralManagerProtocol.scanForPeripherals(scanMode: FindMyBluetooth.ScanMode, garbageCollectInterval: Swift.Duration) async throws -> Swift.AsyncThrowingStream<FindMyBluetooth.PeripheralChange<A.P>, Swift.Error>
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [A.P]
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [A.P]
+method descriptor for FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(identifiers: [Foundation.UUID]) async throws -> [A.P]
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [A.P]
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [A.P]
+method descriptor for FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(serialNumbers: [Swift.String]) async throws -> [A.P]
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [A.P]
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [A.P]
+method descriptor for FindMyBluetooth.CentralManagerProtocol.retrievePeripherals(beaconIdentifiers: [Foundation.UUID]) async throws -> [A.P]
+associated conformance descriptor for FindMyBluetooth.CentralManagerProtocol.FindMyBluetooth.CentralManagerProtocol.P: FindMyBluetooth.PeripheralProtocol
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.id.getter : FindMyBase.Identifier<FindMyBluetooth.CentralManager>
+method descriptor for FindMyBluetooth.CentralManagerProtocol.id.getter : FindMyBase.Identifier<FindMyBluetooth.CentralManager>
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.await(state: FindMyBluetooth.CentralManager.State) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.await(state: FindMyBluetooth.CentralManager.State) async throws -> ()
+method descriptor for FindMyBluetooth.CentralManagerProtocol.await(state: FindMyBluetooth.CentralManager.State) async throws -> ()
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.await(states: [FindMyBluetooth.CentralManager.State]) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.await(states: [FindMyBluetooth.CentralManager.State]) async throws -> ()
+method descriptor for FindMyBluetooth.CentralManagerProtocol.await(states: [FindMyBluetooth.CentralManager.State]) async throws -> ()
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.state.getter : FindMyBluetooth.CentralManager.State
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.state.getter : FindMyBluetooth.CentralManager.State
+method descriptor for FindMyBluetooth.CentralManagerProtocol.state.getter : FindMyBluetooth.CentralManager.State
+dispatch thunk of FindMyBluetooth.CentralManagerProtocol.init(options: FindMyBluetooth.CentralManager.Options?) async -> A
+async function pointer to dispatch thunk of FindMyBluetooth.CentralManagerProtocol.init(options: FindMyBluetooth.CentralManager.Options?) async -> A
+method descriptor for FindMyBluetooth.CentralManagerProtocol.init(options: FindMyBluetooth.CentralManager.Options?) async -> A
+(extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.description.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.description : Swift.String
+(extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.isolatedDescription.getter : Swift.String
+async function pointer to (extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.isolatedDescription.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.isolatedDescription : Swift.String
+(extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.await(state: FindMyBluetooth.CentralManager.State) async throws -> ()
+async function pointer to (extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.await(state: FindMyBluetooth.CentralManager.State) async throws -> ()
+(extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.await(states: [FindMyBluetooth.CentralManager.State]) async throws -> ()
+async function pointer to (extension in FindMyBluetooth):FindMyBluetooth.CentralManagerProtocol.await(states: [FindMyBluetooth.CentralManager.State]) async throws -> ()
+base conformance descriptor for FindMyBluetooth.CentralManagerProtocol: Swift.Identifiable
+base conformance descriptor for FindMyBluetooth.CentralManagerProtocol: Swift.CustomStringConvertible
+protocol requirements base descriptor for FindMyBluetooth.CentralManagerProtocol
+protocol descriptor for FindMyBluetooth.CharacteristicProtocol
+base conformance descriptor for FindMyBluetooth.CharacteristicProtocol: FindMyBase.IsolatedCustomStringConvertible
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.properties.getter : FindMyBluetooth.Characteristic.Properties
+method descriptor for FindMyBluetooth.CharacteristicProtocol.properties.getter : FindMyBluetooth.Characteristic.Properties
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.isNotifying.getter : Swift.Bool
+method descriptor for FindMyBluetooth.CharacteristicProtocol.isNotifying.getter : Swift.Bool
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.readUnderlying() async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.CharacteristicProtocol.readUnderlying() async throws -> ()
+method descriptor for FindMyBluetooth.CharacteristicProtocol.readUnderlying() async throws -> ()
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+async function pointer to dispatch thunk of FindMyBluetooth.CharacteristicProtocol.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+method descriptor for FindMyBluetooth.CharacteristicProtocol.writeWithoutResponse(data: [Foundation.Data]) async throws -> ()
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.id.getter : FindMyBase.Identifier<FindMyBluetooth.Characteristic>
+method descriptor for FindMyBluetooth.CharacteristicProtocol.id.getter : FindMyBase.Identifier<FindMyBluetooth.Characteristic>
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.mtu.getter : Swift.Int
+async function pointer to dispatch thunk of FindMyBluetooth.CharacteristicProtocol.mtu.getter : Swift.Int
+method descriptor for FindMyBluetooth.CharacteristicProtocol.mtu.getter : Swift.Int
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CharacteristicProtocol.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.CharacteristicProtocol.read() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CharacteristicProtocol.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.CharacteristicProtocol.write(data: [Foundation.Data]) async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+dispatch thunk of FindMyBluetooth.CharacteristicProtocol.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+async function pointer to dispatch thunk of FindMyBluetooth.CharacteristicProtocol.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+method descriptor for FindMyBluetooth.CharacteristicProtocol.notify() async throws -> Swift.AsyncThrowingStream<Foundation.Data, Swift.Error>
+(extension in FindMyBluetooth):FindMyBluetooth.CharacteristicProtocol.description.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.CharacteristicProtocol.description : Swift.String
+(extension in FindMyBluetooth):FindMyBluetooth.CharacteristicProtocol.isolatedDescription.getter : Swift.String
+property descriptor for (extension in FindMyBluetooth):FindMyBluetooth.CharacteristicProtocol.isolatedDescription : Swift.String
+base conformance descriptor for FindMyBluetooth.CharacteristicProtocol: Swift.CustomStringConvertible
+protocol requirements base descriptor for FindMyBluetooth.CharacteristicProtocol
+FindMyBluetooth.shortCBUUIDDescription(uuid: Foundation.UUID) -> Swift.String
+protocol descriptor for FindMyBluetooth.CharacteristicIdentifier
+dispatch thunk of FindMyBluetooth.CharacteristicIdentifier.id.getter : FindMyBase.Identifier<FindMyBluetooth.Characteristic>
+method descriptor for FindMyBluetooth.CharacteristicIdentifier.id.getter : FindMyBase.Identifier<FindMyBluetooth.Characteristic>
+protocol requirements base descriptor for FindMyBluetooth.CharacteristicIdentifier
+FindMyBluetooth.ReassemblingAsyncSequence.makeAsyncIterator() -> FindMyBluetooth.ReassemblingAsyncSequence<A>
+FindMyBluetooth.ReassemblingAsyncSequence.next() async throws -> Foundation.Data?
+async function pointer to FindMyBluetooth.ReassemblingAsyncSequence.next() async throws -> Foundation.Data?
+type metadata accessor for FindMyBluetooth.ReassemblingAsyncSequence
+nominal type descriptor for FindMyBluetooth.ReassemblingAsyncSequence
+protocol conformance descriptor for FindMyBluetooth.ReassemblingAsyncSequence<A> : Swift.AsyncIteratorProtocol in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ReassemblingAsyncSequence<A> : Swift.AsyncSequence in FindMyBluetooth
+static FindMyBluetooth.Device.emptyDevice.getter : FindMyBluetooth.Device
+property descriptor for static FindMyBluetooth.Device.emptyDevice : FindMyBluetooth.Device
+FindMyBluetooth.Device.init(identifier: FindMyBase.Identifier<FindMyBluetooth.Device>, btAddress: FindMyBase.MACAddress, model: Swift.String?, channel: Swift.Int32, rssi: FindMyBluetooth.RSSIValue, bleAdvertisementTimestamp: Swift.Double) -> FindMyBluetooth.Device
+FindMyBluetooth.Device.description.getter : Swift.String
+property descriptor for FindMyBluetooth.Device.description : Swift.String
+FindMyBluetooth.Device.batteryLevel.getter : FindMyBluetooth.ObjectBatteryState?
+property descriptor for FindMyBluetooth.Device.batteryLevel : FindMyBluetooth.ObjectBatteryState?
+FindMyBluetooth.Device.setupMessage.getter : Swift.String?
+property descriptor for FindMyBluetooth.Device.setupMessage : Swift.String?
+FindMyBluetooth.Device.engravingData.getter : Foundation.Data?
+property descriptor for FindMyBluetooth.Device.engravingData : Foundation.Data?
+static FindMyBluetooth.Device.invalidVendorID.getter : Swift.UInt32
+property descriptor for static FindMyBluetooth.Device.invalidVendorID : Swift.UInt32
+static FindMyBluetooth.Device.invalidProductID.getter : Swift.UInt32
+property descriptor for static FindMyBluetooth.Device.invalidProductID : Swift.UInt32
+FindMyBluetooth.Device.manufacturerData.getter : FindMyBluetooth.BluetoothManufacturerAdvertisementData?
+property descriptor for FindMyBluetooth.Device.manufacturerData : FindMyBluetooth.BluetoothManufacturerAdvertisementData?
+FindMyBluetooth.Device.bleAdvertisementTimestamp.getter : Swift.Double
+property descriptor for FindMyBluetooth.Device.bleAdvertisementTimestamp : Swift.Double
+FindMyBluetooth.Device.id.getter : FindMyBase.Identifier<FindMyBluetooth.Device>
+property descriptor for FindMyBluetooth.Device.id : FindMyBase.Identifier<FindMyBluetooth.Device>
+FindMyBluetooth.Device.name.getter : Swift.String?
+property descriptor for FindMyBluetooth.Device.name : Swift.String?
+FindMyBluetooth.Device.rssi.getter : FindMyBluetooth.RSSIValue
+property descriptor for FindMyBluetooth.Device.rssi : FindMyBluetooth.RSSIValue
+FindMyBluetooth.Device.model.getter : Swift.String?
+property descriptor for FindMyBluetooth.Device.model : Swift.String?
+FindMyBluetooth.Device.channel.getter : Swift.Int32
+property descriptor for FindMyBluetooth.Device.channel : Swift.Int32
+FindMyBluetooth.Device.vendorID.getter : Swift.UInt32
+property descriptor for FindMyBluetooth.Device.vendorID : Swift.UInt32
+FindMyBluetooth.Device.btAddress.getter : FindMyBase.MACAddress
+property descriptor for FindMyBluetooth.Device.btAddress : FindMyBase.MACAddress
+FindMyBluetooth.Device.colorCode.getter : Swift.UInt32
+property descriptor for FindMyBluetooth.Device.colorCode : Swift.UInt32
+FindMyBluetooth.Device.productID.getter : Swift.UInt32
+property descriptor for FindMyBluetooth.Device.productID : Swift.UInt32
+FindMyBluetooth.Device.setupFont.getter : Swift.String?
+property descriptor for FindMyBluetooth.Device.setupFont : Swift.String?
+type metadata accessor for FindMyBluetooth.Device
+nominal type descriptor for FindMyBluetooth.Device
+type metadata for FindMyBluetooth.Device
+protocol conformance descriptor for FindMyBluetooth.Device : Swift.Identifiable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.Device : Swift.CustomStringConvertible in FindMyBluetooth
+static FindMyBluetooth.Logger.cbDelegate.getter : os.Logger
+property descriptor for static FindMyBluetooth.Logger.cbDelegate : os.Logger
+static FindMyBluetooth.Logger.centralManager.getter : os.Logger
+property descriptor for static FindMyBluetooth.Logger.centralManager : os.Logger
+static FindMyBluetooth.Logger.subsystem.getter : Swift.String
+property descriptor for static FindMyBluetooth.Logger.subsystem : Swift.String
+type metadata accessor for FindMyBluetooth.Logger
+nominal type descriptor for FindMyBluetooth.Logger
+type metadata for FindMyBluetooth.Logger
+protocol conformance descriptor for FindMyBluetooth.Service : FindMyBase.IsolatedCustomStringConvertible in FindMyBluetooth
+FindMyBluetooth.Service.unownedExecutor.getter : Swift.UnownedSerialExecutor
+property descriptor for FindMyBluetooth.Service.unownedExecutor : Swift.UnownedSerialExecutor
+FindMyBluetooth.Service.id.getter : FindMyBase.Identifier<FindMyBluetooth.Service>
+property descriptor for FindMyBluetooth.Service.id : FindMyBase.Identifier<FindMyBluetooth.Service>
+dispatch thunk of FindMyBluetooth.Service.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [FindMyBluetooth.Characteristic]
+async function pointer to dispatch thunk of FindMyBluetooth.Service.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [FindMyBluetooth.Characteristic]
+method descriptor for FindMyBluetooth.Service.discover(characteristicIdentifiers: [FindMyBase.Identifier<FindMyBluetooth.Characteristic>]?) async throws -> [FindMyBluetooth.Characteristic]
+dispatch thunk of FindMyBluetooth.Service.isPrimary.getter : Swift.Bool
+method descriptor for FindMyBluetooth.Service.isPrimary.getter : Swift.Bool
+property descriptor for FindMyBluetooth.Service.isPrimary : Swift.Bool
+protocol conformance descriptor for FindMyBluetooth.Service : FindMyBluetooth.ServiceProtocol in FindMyBluetooth
+protocol witness table for FindMyBluetooth.Service : FindMyBluetooth.ServiceProtocol in FindMyBluetooth
+type metadata accessor for FindMyBluetooth.Service
+metaclass for FindMyBluetooth.Service
+nominal type descriptor for FindMyBluetooth.Service
+class metadata base offset for FindMyBluetooth.Service
+method lookup function for FindMyBluetooth.Service
+type metadata for FindMyBluetooth.Service
+protocol conformance descriptor for FindMyBluetooth.Service : Swift.Actor in FindMyBluetooth
+FindMyBluetooth.Service.__deallocating_deinit
+FindMyBluetooth.Service.deinit
+protocol conformance descriptor for FindMyBluetooth.Service : Swift.CustomStringConvertible in FindMyBluetooth
+dispatch thunk of FindMyBluetooth.Service.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> FindMyBluetooth.Characteristic
+async function pointer to dispatch thunk of FindMyBluetooth.Service.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> FindMyBluetooth.Characteristic
+method descriptor for FindMyBluetooth.Service.subscript.getter : (FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> FindMyBluetooth.Characteristic
+property descriptor for FindMyBluetooth.Service.subscript(FindMyBase.Identifier<FindMyBluetooth.Characteristic>) -> FindMyBluetooth.Characteristic
+FindMyBluetooth.ScanMode.description.getter : Swift.String
+property descriptor for FindMyBluetooth.ScanMode.description : Swift.String
+enum case for FindMyBluetooth.ScanMode.serviceIdentifiers(FindMyBluetooth.ScanMode.Type) -> ([FindMyBase.Identifier<FindMyBluetooth.Service>]) -> FindMyBluetooth.ScanMode
+enum case for FindMyBluetooth.ScanMode.useCase(FindMyBluetooth.ScanMode.Type) -> (FindMyBluetooth.ScanUseCase) -> FindMyBluetooth.ScanMode
+type metadata accessor for FindMyBluetooth.ScanMode
+nominal type descriptor for FindMyBluetooth.ScanMode
+type metadata for FindMyBluetooth.ScanMode
+protocol conformance descriptor for FindMyBluetooth.ScanMode : Swift.CustomStringConvertible in FindMyBluetooth
+enum case for FindMyBluetooth.ScanRate.background(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+FindMyBluetooth.ScanRate.description.getter : Swift.String
+property descriptor for FindMyBluetooth.ScanRate.description : Swift.String
+enum case for FindMyBluetooth.ScanRate.low(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+enum case for FindMyBluetooth.ScanRate.max(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+enum case for FindMyBluetooth.ScanRate.high(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+enum case for FindMyBluetooth.ScanRate.medium(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+enum case for FindMyBluetooth.ScanRate.default(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+enum case for FindMyBluetooth.ScanRate.unknown(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+enum case for FindMyBluetooth.ScanRate.periodic(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+FindMyBluetooth.ScanRate.init(rawValue: Swift.Int32) -> FindMyBluetooth.ScanRate?
+FindMyBluetooth.ScanRate.rawValue.getter : Swift.Int32
+property descriptor for FindMyBluetooth.ScanRate.rawValue : Swift.Int32
+enum case for FindMyBluetooth.ScanRate.mediumLow(FindMyBluetooth.ScanRate.Type) -> FindMyBluetooth.ScanRate
+type metadata accessor for FindMyBluetooth.ScanRate
+nominal type descriptor for FindMyBluetooth.ScanRate
+type metadata for FindMyBluetooth.ScanRate
+protocol conformance descriptor for FindMyBluetooth.ScanRate : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ScanRate : Swift.Hashable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ScanRate : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ScanRate : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ScanRate : Swift.Decodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.ScanRate : Swift.CustomStringConvertible in FindMyBluetooth
+FindMyBluetooth.fragment(data: Foundation.Data, mtu: Swift.Int) -> [Foundation.Data]
+FindMyBluetooth.RSSIValue.description.getter : Swift.String
+property descriptor for FindMyBluetooth.RSSIValue.description : Swift.String
+static FindMyBluetooth.RSSIValue.< infix(FindMyBluetooth.RSSIValue, FindMyBluetooth.RSSIValue) -> Swift.Bool
+enum case for FindMyBluetooth.RSSIValue.rssi(FindMyBluetooth.RSSIValue.Type) -> (Swift.Int8) -> FindMyBluetooth.RSSIValue
+enum case for FindMyBluetooth.RSSIValue.unknown(FindMyBluetooth.RSSIValue.Type) -> FindMyBluetooth.RSSIValue
+FindMyBluetooth.RSSIValue.init(rawValue: Swift.Int8) -> FindMyBluetooth.RSSIValue
+FindMyBluetooth.RSSIValue.rawValue.getter : Swift.Int8
+property descriptor for FindMyBluetooth.RSSIValue.rawValue : Swift.Int8
+type metadata accessor for FindMyBluetooth.RSSIValue
+nominal type descriptor for FindMyBluetooth.RSSIValue
+type metadata for FindMyBluetooth.RSSIValue
+protocol conformance descriptor for FindMyBluetooth.RSSIValue : Swift.Encodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.RSSIValue : Swift.Comparable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.RSSIValue : Swift.Equatable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.RSSIValue : Swift.RawRepresentable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.RSSIValue : Swift.Decodable in FindMyBluetooth
+protocol conformance descriptor for FindMyBluetooth.RSSIValue : Swift.CustomStringConvertible in FindMyBluetooth
+associated type descriptor for FindMyBluetooth.ServiceProtocol.C
+associated type descriptor for FindMyBluetooth.CentralManagerProtocol.P
+associated type descriptor for FindMyBluetooth.PeripheralProtocol.S
+(extension in FindMyBluetooth):Swift.AsyncSequence< where A.Element == Foundation.Data>.reassemble() async throws -> Foundation.Data
+async function pointer to (extension in FindMyBluetooth):Swift.AsyncSequence< where A.Element == Foundation.Data>.reassemble() async throws -> Foundation.Data
+(extension in FindMyBluetooth):__C.CBUUID.uuidValue.getter : Foundation.UUID
+property descriptor for (extension in FindMyBluetooth):__C.CBUUID.uuidValue : Foundation.UUID

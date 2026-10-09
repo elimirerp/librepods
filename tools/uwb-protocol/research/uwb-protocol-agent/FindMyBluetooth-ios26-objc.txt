@@ -1,0 +1,589 @@
+@protocol CBCentralManagerDelegate <NSObject>
+
+@required
+
+/* required instance methods */
+-[CBCentralManagerDelegate centralManagerDidUpdateState:];
+
+@optional
+
+/* optional instance methods */
+-[CBCentralManagerDelegate centralManager:didDiscoverPeripheral:advertisementData:RSSI:];
+-[CBCentralManagerDelegate centralManager:didDisconnectPeripheral:error:];
+-[CBCentralManagerDelegate centralManager:didFailToConnectPeripheral:error:];
+-[CBCentralManagerDelegate centralManager:didConnectPeripheral:];
+-[CBCentralManagerDelegate centralManager:connectionEventDidOccur:forPeripheral:];
+-[CBCentralManagerDelegate centralManager:didDisconnectPeripheral:timestamp:isReconnecting:error:];
+-[CBCentralManagerDelegate centralManager:didUpdateANCSAuthorizationForPeripheral:];
+-[CBCentralManagerDelegate centralManager:willRestoreState:];
+
+@end
+
+@protocol CBCentralManagerPrivateDelegate <CBCentralManagerDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[CBCentralManagerPrivateDelegate centralManager:didFailToScanWithError:];
+-[CBCentralManagerPrivateDelegate centralManager:didFindPeripheral:forType:];
+-[CBCentralManagerPrivateDelegate retrieveConnectingPeripherals];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdatePeripheralConnectionState:];
+-[CBCentralManagerPrivateDelegate centralManager:didDiscoverMultiplePeripherals:];
+-[CBCentralManagerPrivateDelegate centralManager:didLoseZone:mask:];
+-[CBCentralManagerPrivateDelegate centralManager:didLosePeripheral:forType:];
+-[CBCentralManagerPrivateDelegate centralManager:application:isActive:];
+-[CBCentralManagerPrivateDelegate centralManager:canSendDataToPeripheral:];
+-[CBCentralManagerPrivateDelegate centralManager:didChannelSoundingProcedureEvent:results:error:];
+-[CBCentralManagerPrivateDelegate centralManager:didReceiveData:fromPeripheral:];
+-[CBCentralManagerPrivateDelegate centralManager:didSendBytes:toPeripheral:withError:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateConnectionParameters:interval:latency:supervisionTimeout:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateControllerBTClockDictForPeripheral:results:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateControllerBTClockForPeripheral:eventType:seconds:microseconds:localClock:remoteClock:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateFindMyPeripherals:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateMTUForPeripheral:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdatePhyStatisticEvent:results:error:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateRSSIStatisticsDetectionForPeripheral:results:error:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateScanParams:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateSynchronizationEventForPeripheral:results:];
+-[CBCentralManagerPrivateDelegate centralManager:didUpdateUsageStatisticEvent:results:error:];
+
+@end
+
+@protocol CBPairingAgentDelegate <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[CBPairingAgentDelegate pairingAgent:peerDidCompletePairing:];
+-[CBPairingAgentDelegate pairingAgent:peerDidUnpair:];
+-[CBPairingAgentDelegate pairingAgent:peerDidRequestPairing:type:passkey:];
+-[CBPairingAgentDelegate pairingAgent:peerDidFailToCompletePairing:error:];
+
+@end
+
+@protocol CBPeripheralDelegate <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[CBPeripheralDelegate peripheral:didOpenL2CAPChannel:error:];
+-[CBPeripheralDelegate peripheral:didDiscoverServices:];
+-[CBPeripheralDelegate peripheral:didDiscoverCharacteristicsForService:error:];
+-[CBPeripheralDelegate peripheral:didDiscoverDescriptorsForCharacteristic:error:];
+-[CBPeripheralDelegate peripheral:didDiscoverIncludedServicesForService:error:];
+-[CBPeripheralDelegate peripheral:didModifyServices:];
+-[CBPeripheralDelegate peripheral:didReadRSSI:error:];
+-[CBPeripheralDelegate peripheral:didUpdateNotificationStateForCharacteristic:error:];
+-[CBPeripheralDelegate peripheral:didUpdateValueForCharacteristic:error:];
+-[CBPeripheralDelegate peripheral:didUpdateValueForDescriptor:error:];
+-[CBPeripheralDelegate peripheral:didWriteValueForCharacteristic:error:];
+-[CBPeripheralDelegate peripheral:didWriteValueForDescriptor:error:];
+-[CBPeripheralDelegate peripheralDidUpdateName:];
+-[CBPeripheralDelegate peripheralDidUpdateRSSI:error:];
+-[CBPeripheralDelegate peripheralIsReadyToSendWriteWithoutResponse:];
+
+@end
+
+@protocol NSObject
+
+@required
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* required instance methods */
+-[NSObject zone];
+-[NSObject retain];
+-[NSObject superclass];
+-[NSObject conformsToProtocol:];
+-[NSObject release];
+-[NSObject isMemberOfClass:];
+-[NSObject respondsToSelector:];
+-[NSObject isKindOfClass:];
+-[NSObject class];
+-[NSObject hash];
+-[NSObject description];
+-[NSObject autorelease];
+-[NSObject isProxy];
+-[NSObject retainCount];
+-[NSObject isEqual:];
+-[NSObject performSelector:];
+-[NSObject performSelector:withObject:];
+-[NSObject performSelector:withObject:withObject:];
+-[NSObject self];
+
+@optional
+
+/* optional instance methods */
+-[NSObject debugDescription];
+
+@end
+
+@protocol OS_xpc_object <NSObject>
+
+@required
+
+@optional
+
+@end
+
+@interface _TtC15FindMyBluetooth10Controller : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    _$sSo12CBControllerC underlyingObject;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth10Peripheral : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    FindMyBase.Identifier FindMyBluetooth.Peripheral id;
+    FindMyBase.MACAddress ? macAddress;
+    _$sSDySSypGSg advertisementData;
+    Foundation.Date lastSeen;
+    _$sSiSg rssi;
+    Swift.Bool isConnectable;
+    FindMyBluetooth.PeerPath peerPath;
+    FindMyBluetooth.CentralManager ? owningCentralManager;
+    _$sSo12CBPeripheralC underlyingObject;
+    _$sScCyyt Swift.Error ? connectContinuation;
+    _$sScCyyt Swift.Error ? cancelConnectContinuation;
+    _$sScCyyt Swift.Error ? discoverServicesContinuation;
+    _$sScCyyt Swift.Error ? pairingContinuation;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Service _$sGABSg -> services;
+    FindMyBluetooth.DelegateTrampoline_CBPeripheralPrivateDelegate ? delegateTrampoline;
+    _$sSi autoDiscoverCount;
+    FindMyBase.WorkItemQueue delegateQueue;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth11CBDiscovery : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    _$sSo11CBDiscoveryC underlyingObject;
+    Swift.AsyncThrowingStream.Continuation FindMyBluetooth.DeviceChange Swift.Error _$s_GSg -> scanContinuation;
+    FindMyBluetooth.RSSIValue rssiThreshold;
+    FindMyBase.Identifier FindMyBluetooth.CBDiscovery id;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth11MockService : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    FindMyBase.Identifier FindMyBluetooth.Service id;
+    FindMyBluetooth.MockPeripheral ? owningPeripheral;
+    Swift.Bool isPrimary;
+    _$sSa -> FindMyBluetooth.MockCharacteristic mockCharacteristics;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Characteristic _$sG -> FindMyBluetooth.MockCharacteristic ? characteristics;
+    Swift.Bool discoveryInProgress;
+    FindMyBluetooth.MockBehavior mockBehavior;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth12PairingAgent : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    FindMyBase.Identifier FindMyBluetooth.PairingAgent id;
+    _$sSo14CBPairingAgentC underlyingObject;
+    Swift.Bool isPairingAllowed;
+    FindMyBluetooth.DelegateTrampoline_CBPairingAgentDelegate ? delegateTrampoline;
+    _$sSD -> Foundation.UUID FindMyBluetooth.Peripheral pairingPeripherals;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth14CentralManager : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    FindMyBase.Identifier FindMyBluetooth.CentralManager id;
+    Swift.Bool isPairingCentralManager;
+    DispatchQueue delegateQueue;
+    FindMyBluetooth.DelegateTrampoline_CBCentralManagerPrivateDelegate ? delegateTrampoline;
+    _$sSo16CBCentralManagerCSg underlyingObject;
+    __C.CBManagerState _state;
+    Swift.Duration ? garbageCollectInterval;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Peripheral _$sGScTyyt -> Swift.Error _$sG garbageCollectTasks;
+    Swift.AsyncThrowingStream.Continuation FindMyBluetooth.PeripheralChange FindMyBluetooth.Peripheral _$sG -> Swift.Error _$s_GSg scanContinuation;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Peripheral _$sGAB -> discovered;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Peripheral _$sGAB -> connected;
+    _$sSD -> Foundation.UUID Swift.AsyncStream.Continuation FindMyBluetooth.CentralManager.State _$s_G -> stateContinuations;
+    FindMyBluetooth.PairingAgent ? pairingAgent;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Peripheral _$sGSayScCyAB -> Swift.Error _$sGG peripheralCreationInProgress;
+    _$sScS -> FindMyBase.Transaction _$s_ FindMyBluetooth.CentralManager.ConnectedState _$stGSg connectionEventsStream;
+    Swift.AsyncStream.Continuation FindMyBase.Transaction _$s_ -> FindMyBluetooth.CentralManager.ConnectedState _$st_GSg connectionEventsStreamContinuation;
+    _$sScTyyt Swift.Error ? connectionEventMonitoringTask;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth14Characteristic : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    FindMyBase.Identifier FindMyBluetooth.Characteristic id;
+    FindMyBluetooth.PeerPath peerPath;
+    FindMyBluetooth.Characteristic.UpdatingState updatingState;
+    Swift.AsyncThrowingStream.Continuation Foundation.Data Swift.Error _$s_GSg -> updateValueContinuation;
+    _$sScCyyt Swift.Error ? writeValueContinuation;
+    _$sScCyyt Swift.Error ? notificationStateContinuation;
+    FindMyBluetooth.Service ? owningService;
+    _$sSo16CBCharacteristicC underlyingObject;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth14MockPeripheral : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    FindMyBase.Identifier FindMyBluetooth.Peripheral id;
+    FindMyBase.MACAddress ? macAddress;
+    _$sSDySSypGSg advertisementData;
+    FindMyBluetooth.PeripheralState state;
+    Foundation.Date lastSeen;
+    Swift.Bool isConnectable;
+    FindMyBluetooth.MockBehavior mockBehavior;
+    _$sSSSg mockSerialNumber;
+    Foundation.UUID ? mockBeaconIdentifier;
+    FindMyBluetooth.MockCentralManager ? owningCentralManager;
+    _$sScCyyt Swift.Error ? connectContinuation;
+    _$sScCyyt Swift.Error ? cancelConnectContinuation;
+    _$sSa -> FindMyBluetooth.MockService mockServices;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Service _$sG -> FindMyBluetooth.MockService ? services;
+    Swift.Bool discoveryInProgress;
+    Swift.Bool _isPaired;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth15MockCBDiscovery : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    _$sSa -> FindMyBluetooth.Device discoveredDevices;
+    FindMyBluetooth.ScanRate scanRate;
+    FindMyBase.Identifier FindMyBluetooth.CBDiscovery id;
+    Swift.AsyncThrowingStream.Continuation FindMyBluetooth.DeviceChange Swift.Error _$s_GSg -> scanContinuation;
+    _$sScs -> FindMyBluetooth.DeviceChange Swift.Error _$sGyYaYbKcSg mockScanResponder;
+    _$sScTyyt Swift.Error ? scanTask;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth18MockCentralManager : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    _$sScs -> FindMyBluetooth.MockPeripheral Swift.Error _$sGyYaYbKcSg mockScanResponder;
+    Swift.Bool scanInProgress;
+    Swift.Duration ? garbageCollectInterval;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Peripheral _$sGScTyyt -> Swift.Error _$sG garbageCollectTasks;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Peripheral _$sG -> FindMyBluetooth.MockPeripheral discovered;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Peripheral _$sG -> FindMyBluetooth.MockPeripheral connected;
+    _$sSD -> Foundation.UUID Swift.AsyncStream.Continuation FindMyBluetooth.CentralManager.State _$s_G -> stateContinuations;
+    _$sScS -> FindMyBase.Transaction _$s_ FindMyBluetooth.CentralManager.ConnectedState _$stGSg connectionEventsStream;
+    Swift.AsyncStream.Continuation FindMyBase.Transaction _$s_ -> FindMyBluetooth.CentralManager.ConnectedState _$st_GSg connectionEventsStreamContinuation;
+    FindMyBase.Identifier FindMyBluetooth.CentralManager id;
+    Swift.Bool isPairingCentralManager;
+    FindMyBluetooth.CentralManager.State state;
+    FindMyBluetooth.MockBehavior mockBehavior;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth18MockCharacteristic : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    _$sSi mtu;
+    FindMyBase.Identifier FindMyBluetooth.Characteristic id;
+    FindMyBluetooth.MockService ? owningService;
+    FindMyBluetooth.Characteristic.Properties properties;
+    Swift.Bool isNotifying;
+    _$sScCyyt Swift.Error ? writeValueContinuation;
+    FindMyBluetooth.Characteristic.UpdatingState updatingState;
+    _$sScs -> Foundation.Data Swift.Error _$sGyYaYbKcSg mockReadResponder;
+    _$syScs -> Foundation.Data Swift.Error _$sGYaYbKcSg mockWriteWithoutResponseCallback;
+    _$sScs -> Foundation.Data Swift.Error _$sGACYaYbKcSg mockWriteResponder;
+    FindMyBluetooth.MockBehavior mockBehavior;
+}
+
+@end
+
+@interface _TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate : NSObject <CBPeripheralDelegate> {
+    /* instance variables */
+    DispatchQueue delegateQueue;
+    FindMyBase.WorkItemQueue workItemQueue;
+    FindMyBluetooth.Peripheral ? peripheral;
+}
+
+/* instance methods */
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate init];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheral:didDiscoverServices:];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheral:didDiscoverCharacteristicsForService:error:];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheral:didModifyServices:];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheral:didReadRSSI:error:];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheral:didUpdateNotificationStateForCharacteristic:error:];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheral:didUpdateValueForCharacteristic:error:];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheral:didWriteValueForCharacteristic:error:];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheralDidUpdateName:];
+-[_TtC15FindMyBluetooth46DelegateTrampoline_CBPeripheralPrivateDelegate peripheralIsReadyToSendWriteWithoutResponse:];
+
+@end
+
+@interface _TtC15FindMyBluetooth7Service : _TtCs12_SwiftObject {
+    /* instance variables */
+    Builtin.DefaultActorStorage $defaultActor;
+    FindMyBase.Identifier FindMyBluetooth.Service id;
+    FindMyBluetooth.PeerPath peerPath;
+    FindMyBluetooth.Peripheral ? owningPeripheral;
+    _$sScCyyt Swift.Error ? discoverCharacteristicsContinuation;
+    _$sSo9CBServiceC underlyingObject;
+    _$sSD -> FindMyBase.Identifier FindMyBluetooth.Characteristic _$sGABSg -> characteristics;
+    _$sSi autoDiscoverCount;
+}
+
+@end
+
+@interface _TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A730PairingManagerAccessController : _TtCs12_SwiftObject {
+    /* instance variables */
+    v32@0:8@16@24 $defaultActor;
+    v32@0:8@16@24 _pairingCentralManager;
+}
+
+@end
+
+@interface _TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A750DelegateTrampoline_CBCentralManagerPrivateDelegate : NSObject <CBCentralManagerPrivateDelegate> {
+    /* instance variables */
+    v32@0:8@16@24 delegateQueue;
+    v32@0:8@16@24 centralManager;
+}
+
+/* instance methods */
+-[_TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A750DelegateTrampoline_CBCentralManagerPrivateDelegate centralManagerDidUpdateState:];
+-[_TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A750DelegateTrampoline_CBCentralManagerPrivateDelegate init];
+-[_TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A750DelegateTrampoline_CBCentralManagerPrivateDelegate centralManager:didDiscoverPeripheral:advertisementData:RSSI:];
+-[_TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A750DelegateTrampoline_CBCentralManagerPrivateDelegate centralManager:didDisconnectPeripheral:error:];
+-[_TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A750DelegateTrampoline_CBCentralManagerPrivateDelegate centralManager:didFailToConnectPeripheral:error:];
+-[_TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A750DelegateTrampoline_CBCentralManagerPrivateDelegate centralManager:didConnectPeripheral:];
+-[_TtC15FindMyBluetoothP33_70F3B43C606FCD1D14F1E1CF221D31A750DelegateTrampoline_CBCentralManagerPrivateDelegate centralManager:connectionEventDidOccur:forPeripheral:];
+
+@end
+
+@interface _TtC15FindMyBluetoothP33_C0E4618DEAF624C902833D9CBB3774C830PairingManagerAccessController : _TtCs12_SwiftObject {
+    /* instance variables */
+    v32@0:8@16@24 $defaultActor;
+    v32@0:8@16@24 _pairingCentralManager;
+}
+
+@end
+
+@interface _TtC15FindMyBluetoothP33_FB9F492088B4C388E3479FD29311B1A941DelegateTrampoline_CBPairingAgentDelegate : NSObject <CBPairingAgentDelegate> {
+    /* instance variables */
+    v32@0:8@16@24 delegateQueue;
+    v32@0:8@16@24 pairingAgent;
+}
+
+/* instance methods */
+-[_TtC15FindMyBluetoothP33_FB9F492088B4C388E3479FD29311B1A941DelegateTrampoline_CBPairingAgentDelegate pairingAgent:peerDidCompletePairing:];
+-[_TtC15FindMyBluetoothP33_FB9F492088B4C388E3479FD29311B1A941DelegateTrampoline_CBPairingAgentDelegate pairingAgent:peerDidUnpair:];
+-[_TtC15FindMyBluetoothP33_FB9F492088B4C388E3479FD29311B1A941DelegateTrampoline_CBPairingAgentDelegate pairingAgent:peerDidRequestPairing:type:passkey:];
+-[_TtC15FindMyBluetoothP33_FB9F492088B4C388E3479FD29311B1A941DelegateTrampoline_CBPairingAgentDelegate init];
+-[_TtC15FindMyBluetoothP33_FB9F492088B4C388E3479FD29311B1A941DelegateTrampoline_CBPairingAgentDelegate pairingAgent:peerDidFailToCompletePairing:error:];
+
+@end
+
+
+@protocol refs
+0x00279af7f18 => 0x0027f181320: OS_xpc_object
+0x00279af7f58 => 0x0027f181bc0: CBCentralManagerPrivateDelegate
+0x00279af7f68 => 0x0027f181cd0: CBCentralManagerDelegate
+0x00279af8490 => 0x001ec932b08: CBPeripheralDelegate
+0x00279af84a0 => 0x001ec932aa8: CBPairingAgentDelegate
+0x00279af7f38 => 0x0027f181398: CBPeripheralDelegate
+0x00279af8488 => 0x001ec8f9b08: OS_xpc_object
+0x00279af8498 => 0x001ec8f7828: NSObject
+0x00279af84b0 => 0x001ec9329e8: CBCentralManagerDelegate
+0x00279af7f28 => 0x0027f181320: OS_xpc_object
+0x00279af7f40 => 0x0027f181440: NSObject
+0x00279af7f50 => 0x0027f181a30: CBPairingAgentDelegate
+0x00279af7f70 => 0x0027f181cd0: CBCentralManagerDelegate
+0x00279af84a8 => 0x001ec932a48: CBCentralManagerPrivateDelegate
+0x00279af7f20 => 0x0027f181398: CBPeripheralDelegate
+0x00279af7f30 => 0x0027f181440: NSObject
+0x00279af7f48 => 0x0027f181a30: CBPairingAgentDelegate
+0x00279af7f60 => 0x0027f181bc0: CBCentralManagerPrivateDelegate
+
+@class refs
+
+@super refs
+
+@selectors refs
+0x00279af8118 => 0x001fb655a6a: proximityPairingProductID
+0x00279af8238 => 0x001fb1999e8: value
+0x00279af8088 => 0x001fb4815ec: isConnectedToSystem
+0x00279af80e8 => 0x001fb6553e8: objectSetupFontCode
+0x00279af8338 => 0x001fb1c50e4: performSelector:
+0x00279af7fb8 => 0x001fbf2ce5b: bleAppleManufacturerData
+0x00279af8030 => 0x001fbf2d372: discoverCharacteristics:forService:
+0x00279af8198 => 0x001fb29f74f: setAddressType:
+0x00279af8290 => 0x001fb482c60: peripheralIsReadyToSendWriteWithoutResponse:
+0x00279af82b0 => 0x001fa2a26e8: pairingAgent:peerDidUnpair:
+0x00279af8390 => 0x001fb0fa068: retainCount
+0x00279af83f8 => 0x001fb47f64f: centralManager:didReceiveData:fromPeripheral:
+0x00279af82c0 => 0x001fa1ce546: centralManagerDidUpdateState:
+0x00279af7fa8 => 0x001fbf2cdff: bleAddressData
+0x00279af8100 => 0x001facbd3db: peripheral
+0x00279af81c0 => 0x001fa209d68: setDeviceFoundHandler:
+0x00279af8210 => 0x001faff2ae8: state
+0x00279af8368 => 0x001fa3cb1e8: conformsToProtocol:
+0x00279af8000 => 0x001fa2d88e8: customProperty:
+0x00279af80e0 => 0x001fb6553d7: objectSetupFlags
+0x00279af8160 => 0x001faf2ab68: retrievePeripheralsWithFindMySerialNumberStrings:completion:
+0x00279af83c0 => 0x001faa643e8: centralManager:didUpdatePeripheralConnectionState:
+0x00279af8460 => 0x001fa8396fc: retrieveConnectingPeripherals
+0x00279af8138 => 0x001fae1d0a4: respondToPairingRequest:type:accept:data:
+0x00279af8230 => 0x001faf550e8: untag:
+0x00279af83b8 => 0x001faa728e8: debugDescription
+0x00279af8410 => 0x001fa258c26: centralManager:didFailToScanWithError:
+0x00279af8050 => 0x001fa7b1568: finish
+0x00279af80c8 => 0x001fb65538c: objectSetupBatteryPerformance
+0x00279af8168 => 0x001fada8582: retrievePeripheralsWithIdentifiers:completion:
+0x00279af8170 => 0x001fa3fd6e8: rssi
+0x00279af81a0 => 0x001fa89b868: setBleScanRate:
+0x00279af8248 => 0x001fbf313ab: writeValue:forCharacteristic:type:
+0x00279af82f8 => 0x001fb482ab8: peripheral:didDiscoverIncludedServicesForService:error:
+0x00279af8430 => 0x001fb47f73b: centralManager:didUpdateControllerBTClockDictForPeripheral:results:
+0x00279af8008 => 0x001fa1ed8e8: customPropertyNames
+0x00279af8310 => 0x001fb482bfb: peripheral:didWriteValueForDescriptor:error:
+0x00279af8398 => 0x001fa23c5da: zone
+0x00279af8438 => 0x001fb47f8eb: centralManager:didUpdateSynchronizationEventForPeripheral:results:
+0x00279af8450 => 0x001fb47f842: centralManager:didUpdatePhyStatisticEvent:results:error:
+0x00279af8038 => 0x001fbf2d3e1: discoverServices:
+0x00279af8260 => 0x001fb482b0e: peripheral:didReadRSSI:error:
+0x00279af8278 => 0x001fb482b6a: peripheral:didUpdateValueForCharacteristic:error:
+0x00279af82e8 => 0x001fb47f593: centralManager:connectionEventDidOccur:forPeripheral:
+0x00279af8330 => 0x001fb1c514c: self
+0x00279af7fa0 => 0x001fa473d3c: addDiscoveryType:
+0x00279af8140 => 0x001fa291ca2: retrieveConnectedPeripheralsWithServices:
+0x00279af8190 => 0x001fa9c0668: services
+0x00279af81e8 => 0x001fa76013e: setIrkData:
+0x00279af8308 => 0x001fb482b9c: peripheral:didUpdateValueForDescriptor:error:
+0x00279af7f98 => 0x001fa640ee8: activateWithCompletion:
+0x00279af7fe0 => 0x001fb09d520: characteristics
+0x00279af81b8 => 0x001fa777668: setDelegate:
+0x00279af8360 => 0x001fa51d468: isMemberOfClass:
+0x00279af83d0 => 0x001faf3d9e8: centralManager:didLosePeripheral:forType:
+0x00279af8428 => 0x001fb47f77f: centralManager:didUpdateControllerBTClockForPeripheral:eventType:seconds:microseconds:localClock:remoteClock:
+0x00279af8020 => 0x001faed7139: deleteDevice:completion:
+0x00279af8040 => 0x001fa1d663c: discoveredDevices
+0x00279af8108 => 0x001fadcb2e8: productID
+0x00279af8250 => 0x001fb482c28: peripheralDidUpdateName:
+0x00279af8258 => 0x001fb482af0: peripheral:didModifyServices:
+0x00279af82e0 => 0x001fa68d527: centralManager:didDisconnectPeripheral:error:
+0x00279af83e8 => 0x001fb47f546: centralManager:application:isActive:
+0x00279af7f80 => 0x001fb04d368: dealloc
+0x00279af80c0 => 0x001fb65530b: objectDiscoveryBatteryState
+0x00279af8180 => 0x001fbf2f038: scanTime
+0x00279af82a0 => 0x001fa2982fa: pairingAgent:peerDidCompletePairing:
+0x00279af8300 => 0x001fb482a7e: peripheral:didDiscoverDescriptorsForCharacteristic:error:
+0x00279af7fc0 => 0x001fbf2ce74: bleChannel
+0x00279af8018 => 0x001faf89968: delegate
+0x00279af8148 => 0x001fa2c922d: retrievePairingInfoForPeripheral:
+0x00279af8328 => 0x001fabcd0f6: class
+0x00279af8420 => 0x001fb47f8c7: centralManager:didUpdateScanParams:
+0x00279af80f0 => 0x001fb6553fc: objectSetupMessage
+0x00279af8200 => 0x001fa54f768: setUseCase:
+0x00279af7fc8 => 0x001fa858168: bleScanRate
+0x00279af8120 => 0x001fb655a84: proximityPairingSubType
+0x00279af8178 => 0x001fb1c1304: scanForPeripheralsWithServices:options:completion:
+0x00279af81e0 => 0x001fa893709: setFinishHandler:
+0x00279af8220 => 0x001faae08e8: tag:
+0x00279af82c8 => 0x001fa649ae8: centralManager:didDiscoverPeripheral:advertisementData:RSSI:
+0x00279af8468 => 0x001fb47f7ed: centralManager:didUpdateFindMyPeripherals:
+0x00279af7fd0 => 0x001fb62d82a: btAddressData
+0x00279af8078 => 0x001fb0590e8: initWithXPCEventRepresentation:error:
+0x00279af81f0 => 0x001fbf302d6: setNotifyValue:forCharacteristic:
+0x00279af8348 => 0x001fb1c5111: performSelector:withObject:withObject:
+0x00279af8090 => 0x001fbf2e1d8: isNotifying
+0x00279af8098 => 0x001fa296b9f: isPeerPaired:
+0x00279af83a8 => 0x001fa395259: superclass
+0x00279af8470 => 0x001fb47f969: centralManager:willRestoreState:
+0x00279af82d8 => 0x001fab722e8: centralManager:didFailToConnectPeripheral:error:
+0x00279af7fe8 => 0x001fa223868: code
+0x00279af8068 => 0x001fa5280e8: init
+0x00279af8080 => 0x001fb0b0ae8: integerValue
+0x00279af8208 => 0x001fb0a2a68: sharedPairingAgent
+0x00279af82f0 => 0x001fb482c41: peripheralDidUpdateRSSI:error:
+0x00279af7ff8 => 0x001fa591ce8: connectedTransport
+0x00279af8048 => 0x001fb0ffa68: domain
+0x00279af8110 => 0x001fa4582e8: properties
+0x00279af8270 => 0x001fb482a47: peripheral:didDiscoverCharacteristicsForService:error:
+0x00279af8380 => 0x001fa441be8: release
+0x00279af83c8 => 0x001fa43bae8: centralManager:didFindPeripheral:forType:
+0x00279af83f0 => 0x001fb47f67d: centralManager:didSendBytes:toPeripheral:withError:
+0x00279af80a8 => 0x001fbf2bb9c: maximumWriteValueLengthForType:
+0x00279af80b8 => 0x001fa342568: name
+0x00279af80f8 => 0x001fa931f06: pairPeer:
+0x00279af8128 => 0x001fbf2ed76: readValueForCharacteristic:
+0x00279af81d8 => 0x001fae6f968: setDiscoveryFlags:
+0x00279af82d0 => 0x001fafa6fe8: centralManager:didConnectPeripheral:
+0x00279af7f88 => 0x001fa3098e8: UUID
+0x00279af7fd8 => 0x001fabf3c68: cancelPeripheralConnection:options:
+0x00279af8188 => 0x001fb18a4e8: service
+0x00279af81c8 => 0x001fa883768: setDeviceLostHandler:
+0x00279af82a8 => 0x001fa7796e8: pairingAgent:peerDidFailToCompletePairing:error:
+0x00279af8448 => 0x001fb47f92e: centralManager:didUpdateUsageStatisticEvent:results:error:
+0x00279af8150 => 0x001fa3d10f8: retrievePeripheralWithAddress:
+0x00279af8240 => 0x001fa6122e8: vendorID
+0x00279af8478 => 0x001fb47f608: centralManager:didDisconnectPeripheral:timestamp:isReconnecting:error:
+0x00279af7f90 => 0x001fa983dfe: UUIDWithNSUUID:
+0x00279af8058 => 0x001fab180e8: hasTag:
+0x00279af8070 => 0x001faf99868: initWithDelegate:queue:options:
+0x00279af8388 => 0x001faf38ee8: autorelease
+0x00279af83e0 => 0x001fb47f6e9: centralManager:didUpdateConnectionParameters:interval:latency:supervisionTimeout:
+0x00279af8458 => 0x001fb47f5c9: centralManager:didChannelSoundingProcedureEvent:results:error:
+0x00279af8298 => 0x001fa57b7e8: .cxx_destruct
+0x00279af8358 => 0x001fa81f5e8: isKindOfClass:
+0x00279af83d8 => 0x001fad0aaa5: centralManager:didLoseZone:mask:
+0x00279af8060 => 0x001fa820ce8: identifier
+0x00279af80b0 => 0x001fae3b668: model
+0x00279af81a8 => 0x001fbf2f676: setBtAddressData:
+0x00279af81b0 => 0x001fa855ce8: setCustomProperty:value:
+0x00279af8228 => 0x001faffcda0: unpairPeer:
+0x00279af8280 => 0x001fb482bca: peripheral:didWriteValueForCharacteristic:error:
+0x00279af8370 => 0x001fa645068: respondsToSelector:
+0x00279af83a0 => 0x001fabf2268: hash
+0x00279af82b8 => 0x001fa439968: pairingAgent:peerDidRequestPairing:type:passkey:
+0x00279af8340 => 0x001fb1c50f5: performSelector:withObject:
+0x00279af83b0 => 0x001faf0bde8: description
+0x00279af8408 => 0x001fb47f56b: centralManager:canSendDataToPeripheral:
+0x00279af8480 => 0x001fb47f6b1: centralManager:didUpdateANCSAuthorizationForPeripheral:
+0x00279af80d8 => 0x001fb6553c2: objectSetupColorCode
+0x00279af81d0 => 0x001fa61b34c: setDevicesBufferedHandler:
+0x00279af8268 => 0x001fb47c285: peripheral:didDiscoverServices:
+0x00279af8418 => 0x001fb47f818: centralManager:didUpdateMTUForPeripheral:
+0x00279af8288 => 0x001fb482b2c: peripheral:didUpdateNotificationStateForCharacteristic:error:
+0x00279af8440 => 0x001fb47f87b: centralManager:didUpdateRSSIStatisticsDetectionForPeripheral:results:error:
+0x00279af7ff0 => 0x001fadc4268: connectPeripheral:options:
+0x00279af8010 => 0x001fa6bf468: data
+0x00279af8130 => 0x001fa421de8: registerForConnectionEventsWithOptions:
+0x00279af80d0 => 0x001fb6553aa: objectSetupBatteryState
+0x00279af8158 => 0x001faa67afb: retrievePeripheralsWithFindMyIds:completion:
+0x00279af8218 => 0x001fa866f30: stopScan
+0x00279af8318 => 0x001fabdb11c: peripheral:didOpenL2CAPChannel:error:
+0x00279af8350 => 0x001fb0e4999: isProxy
+0x00279af8378 => 0x001fa345e68: retain
+0x00279af8028 => 0x001fb6325b3: devicesWithDiscoveryFlags:error:
+0x00279af80a0 => 0x001fa33598a: isPrimary
+0x00279af81f8 => 0x001faebbc7c: setOobKeys:
+0x00279af8320 => 0x001fb1a67e8: isEqual:
+0x00279af8400 => 0x001faaefd2d: centralManager:didDiscoverMultiplePeripherals:
+0x00279af7fb0 => 0x001fbf2ce19: bleAdvertisementTimestamp

@@ -1,0 +1,32 @@
+00000000000197bc T phNxpUciHal_write(unsigned short, unsigned char const*)
+000000000002b8fc T phTmlUwb_spi_write(void*, unsigned char*, long)
+0000000000036ca4 T printManifest_info(UWBManifest*)
+000000000003ae8c T persistent_log_write(char*, int, char*)
+0000000000023500 T SessionTrack_onSessionInit(unsigned long, unsigned char const*)
+0000000000019874 T phNxpUciHal_write_unlocked(unsigned short, unsigned char const*)
+000000000001acc0 T phNxpUciHal_applyVendorConfig()
+00000000000204b0 T phNxpUciHal_handle_get_caps_info(unsigned short, unsigned char*)
+000000000001e2f4 T phNxpUciHal_handle_set_app_config(unsigned short*, unsigned char*)
+000000000001c654 T phNxpUciHal_sessionInitialization(unsigned int)
+0000000000035204 T NxpUwbChipSr200::apply_lc_config()
+0000000000035368 T NxpUwbChipSr200::get_device_type(unsigned char const*, long)
+0000000000035414 T NxpUwbChipSr200::apply_calibration(extcal_param_id_t, unsigned char, unsigned char const*, long)
+000000000003542c T NxpUwbChipSr200::extra_group_delay()
+00000000000348c8 T NxpUwbChipSr200::onDeviceStatusNtf(long, unsigned char const*)
+0000000000034a04 T NxpUwbChipSr200::onGenericErrorNtf(long, unsigned char const*)
+0000000000034b80 T NxpUwbChipSr200::check_binding_done()
+0000000000035438 T NxpUwbChipSr200::phNxpUciHal_parse_lc(long, unsigned char const*)
+0000000000034b0c T NxpUwbChipSr200::on_binding_status_ntf(long, unsigned char const*)
+0000000000035408 T NxpUwbChipSr200::read_otp(extcal_param_id_t, unsigned char*, long, long*)
+0000000000034d28 T NxpUwbChipSr200::chip_init()
+00000000000351e0 T NxpUwbChipSr200::core_init()
+00000000000347d8 T NxpUwbChipSr200::NxpUwbChipSr200()
+00000000000347d8 T NxpUwbChipSr200::NxpUwbChipSr200()
+000000000003489c T NxpUwbChipSr200::~NxpUwbChipSr200()
+000000000003484c T NxpUwbChipSr200::~NxpUwbChipSr200()
+000000000003484c T NxpUwbChipSr200::~NxpUwbChipSr200()
+00000000000404f8 D vtable for NxpUwbChipSr200
+0000000000040590 V vtable for std::__1::__function::__func<std::__1::__bind<void (NxpUwbChipSr200::*)(long, unsigned char const*), NxpUwbChipSr200*, std::__1::placeholders::__ph<1> const&, std::__1::placeholders::__ph<2> const&>, std::__1::allocator<std::__1::__bind<void (NxpUwbChipSr200::*)(long, unsigned char const*), NxpUwbChipSr200*, std::__1::placeholders::__ph<1> const&, std::__1::placeholders::__ph<2> const&>>, void (unsigned long, unsigned char const*)>
+                 U __fwrite_chk@LIBC_N
+                 U __write_chk@LIBC_N
+                 U fwrite@LIBC

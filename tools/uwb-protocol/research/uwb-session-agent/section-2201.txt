@@ -1,0 +1,70 @@
+-[NIServerFindingRangingProvider _prepareServiceRequestForDiscoveryToken:technology:useCase:nbMask:nbUwbAcquisitionBandChannel:mmsNumFragments:mmsSlotSizeMsec:]:
+0x100266AE2   pushq    %rbp                 
+0x100266AE3   movq     %rsp, %rbp           
+0x100266AE6   pushq    %r15                 
+0x100266AE8   pushq    %r14                 
+0x100266AEA   pushq    %r13                 
+0x100266AEC   pushq    %r12                 
+0x100266AEE   pushq    %rbx                 
+0x100266AEF   subq     $0x28, %rsp          
+0x100266AF3   movl     %r9d, %r15d          
+0x100266AF6   movl     %r8d, %r13d          
+0x100266AF9   movq     %rcx, %rbx           
+0x100266AFC   movq     %rsi, %r12           
+0x100266AFF   movq     %rdi, %r14           
+0x100266B02   movq     %rcx, %rdi           
+0x100266B05   callq    *0x6d8705(%rip)      ; _objc_retain
+0x100266B0B   testq    %rbx, %rbx           
+0x100266B0E   je       0x100266b9c          
+0x100266B14   callq    0x1001a9d70          
+0x100266B19   movq     %rax, %rdi           
+0x100266B1C   callq    0x1004398c6          
+0x100266B21   cmpl     $0x1, %r13d          
+0x100266B25   setne    %cl                  
+0x100266B28   xorb     $0x1, %al            
+0x100266B2A   orb      %cl, %al             
+0x100266B2C   jne      0x100266b75          
+0x100266B2E   movl     0x28(%rbp), %eax     
+0x100266B31   movb     0x20(%rbp), %cl      
+0x100266B34   movzwl   0x18(%rbp), %esi     
+0x100266B38   movb     0x10(%rbp), %dil     
+0x100266B3C   movq     0x73f035(%rip), %rdx  ; selector "_prepareNbammsServiceRequestForDiscoveryToken:technology:useCase:nbMask:nbUwbAcquisitionBandChannel:mmsNumFragments:mmsSlotSizeMsec:"
+0x100266B43   movl     %eax, 0x18(%rsp)     
+0x100266B47   movzbl   %cl, %eax            
+0x100266B4A   movl     %eax, 0x10(%rsp)     
+0x100266B4E   movzwl   %si, %eax            
+0x100266B51   movl     %eax, 0x8(%rsp)      
+0x100266B55   movzbl   %dil, %eax           
+0x100266B59   movl     %eax, (%rsp)         
+0x100266B5C   movq     %r14, %rdi           
+0x100266B5F   movq     %r12, %rsi           
+0x100266B62   movq     %rbx, %rcx           
+0x100266B65   movl     $0x1, %r8d           
+0x100266B6B   movl     %r15d, %r9d          
+0x100266B6E   callq    _objc_msgSend_stret  
+0x100266B73   jmp      0x100266b81          
+0x100266B75   xorl     %eax, %eax           
+0x100266B77   movb     %al, (%r14)          
+0x100266B7A   movb     %al, 0x240(%r14)     
+0x100266B81   movq     %rbx, %rdi           
+0x100266B84   callq    *0x6d867e(%rip)      ; _objc_release
+0x100266B8A   movq     %r14, %rax           
+0x100266B8D   addq     $0x28, %rsp          
+0x100266B91   popq     %rbx                 
+0x100266B92   popq     %r12                 
+0x100266B94   popq     %r13                 
+0x100266B96   popq     %r14                 
+0x100266B98   popq     %r15                 
+0x100266B9A   popq     %rbp                 
+0x100266B9B   retq                          
+0x100266B9C   leaq     0x2c78b5(%rip), %rdi  ; string literal: "-[NIServerFindingRangingProvider _prepareServiceRequestForDiscoveryToken:technology:useCase:nbMask:nbUwbAcquisitionBandChannel:mmsNumFragments:mmsSlotSizeMsec:]"
+0x100266BA3   leaq     0x2c6f71(%rip), %rsi  ; string literal: "NIServerFindingRanging.mm"
+0x100266BAA   leaq     0x2c0fbd(%rip), %rcx  ; string literal: "token"
+0x100266BB1   movl     $0x107e, %edx        
+0x100266BB6   callq    ___assert_rtn        
+0x100266BBB   ud2                           
+0x100266BBD   movq     %rax, %r14           
+0x100266BC0   movq     %rbx, %rdi           
+0x100266BC3   callq    *0x6d863f(%rip)      ; _objc_release
+0x100266BC9   movq     %r14, %rdi           
+0x100266BCC   callq    __Unwind_Resume      

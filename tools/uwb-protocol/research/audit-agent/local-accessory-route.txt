@@ -1,0 +1,60 @@
+Native macOS local accessory route audit — 2026-10-08
+
+Result
+The macOS26.4 FindMyDevice framework exports a constructible
+FMDLocalFindableAccessory data model, but not FMDFMIPManager or an add/update/
+register accessory RPC. The native Mac daemon only provides local accessory
+removal, whose handler always returns NSError(domain='notimplemented',code=0).
+A new groupUUID registration cannot be initiated through this inspected Mac API.
+
+Read-only experiments
+1. runtime-inspect on framework: FMDLocalFindableAccessory exists;
+   FMDFMIPManager, FMDInternalLocalFindableAccessory, FMDFMIPAccount are Missing.
+2. Compiled accessory-surface.m, loaded framework, enumerated every FMD-prefixed
+   class and protocol with Objective-C runtime introspection. Complete inventory
+   saved accessory-complete-surface.txt. Only FMDFMMManager and Mac protocols are
+   exposed. No didAddLocalFindableAccessory, didUpdateLocalFindableAccessory, or
+   registerAccessory method exists in that loaded surface.
+3. Compiled accessory-model-check.m. Constructed model using synthetic UUID,
+   synthetic name and connected=false; assigned another synthetic baUUID and
+   synthetic Bluetooth address. Model exists and identifier/baUUID are preserved.
+   accessoryIdentifier getter returns nil. No manager/service method called.
+   Initial test reporting nil class crashed due to dictionary nil value; fixed
+   reporter and reran successfully. Crash involved only synthetic process state.
+4. Extracted native daemon arm64e slice and resolved entitlement CFStrings from
+   dyld fixups. Native _hasClientAccessEntitlement checks either
+   com.apple.icloud.findmydeviced.access (slot0x1000e6a00) or
+   com.apple.aosnotification.aosnotifyd-access (slot0x1000e69f8), both true-valued.
+   No entitlement assignment, XPC call, live registration, or account/system change.
+
+Constructible model API
+initWithIdentifier:name:connected: takes NSUUID, NSString, BOOL.
+Properties: identifier(NSUUID), name, serialNumber, alternateSerialNumber,
+btAddress, firmwareVersion, vendorId, productId (all strings), irkData(NSData),
+connected(BOOL), baUUID(NSUUID). NSSecureCoding/FMDAccessory conformances.
+The API can preserve a genuine known group UUID in an in-memory object without
+requiring private keys, but that supplies no Mac registration transport.
+
+Mac protocol evidence
+FMDFMMProtocol has didRemoveLocalFindableAccessory:completion: only. Its other
+operations concern the Mac account, Activation Lock, identity signing, location,
+and push simulation. Those operations do not implement accessory registration.
+FMDFMMUAProtocol/FMDFMMUAServicesProtocol similarly lack accessory add/update.
+Do not use simulatePushWithPayload as a substitute: native Mac provider doesn't
+support accessories and server-authenticated commands/context are a different flow.
+
+Native daemon source evidence
+FMDFMMXPCServer.didRemoveLocalFindableAccessory:completion:, disassembly
+101578–101630 / addresses0x100063da0–0x100063e64, creates notimplemented NSError
+and calls completion. It never forwards to service provider or register action.
+_hasClientAccessEntitlement, 100944 onward /0x1000633dc checks the two entitlements.
+No didAddLocal/findable model handler or registerAccessory method in Mac daemon
+symbolized disassembly. Consistent with already-established Mac unsupported paths.
+
+Useful next route
+The plain FMDLocalFindableAccessory object can establish model serialization and
+UUID semantics locally, but cannot resolve server-side hashedproductType eligibility.
+Use the iOS native FMDInternalLocalFindableAccessory schema evidence for a direct
+client experiment under genuine identifiers, coordinated by root. A server204 is
+not enrollment confirmation. Mac native XPC capability is absent, irrespective of
+whether the gateway config.type hash identifies an internally findable accessory.

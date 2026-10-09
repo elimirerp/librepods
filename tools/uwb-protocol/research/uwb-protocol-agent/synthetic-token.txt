@@ -1,0 +1,5 @@
+Synthetic IRK fixture only: 000102030405060708090a0b0c0d0e0f
+rawToken 26 bytes: e309731234560f090a80000102030405060708090a0b0c0d0e0f
+key 1: {length = 3, bytes = 0x123456}
+key 2: {length = 16, bytes = 0x000102030405060708090a0b0c0d0e0f}
+key 7: 1

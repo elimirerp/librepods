@@ -1,0 +1,30 @@
+{
+  "origin": "adb pull from user SM-S938U running build S938USQUCDZIF_OYNCDZIF",
+  "packages": [
+    {
+      "file": "com.sec.android.app.factorykeystring-0.apk",
+      "sha256": "d464ef1627b69af8186407e64578b44adcee2e8582a6c2c9b5ea1000845161ca",
+      "bytes": 12087278
+    },
+    {
+      "file": "com.sec.android.app.bluetoothagent-0.apk",
+      "sha256": "d1701ad471ca6c1470ae24faefb052dd6f36155999ea30f40b8ef459da362ef7",
+      "bytes": 439749
+    },
+    {
+      "file": "com.sec.android.app.hwmoduletest-0.apk",
+      "sha256": "7d3456154bd573550b07ab67ab69fccc000834a57883a7e1fa62dcaaf39c2423",
+      "bytes": 3237394
+    },
+    {
+      "file": "com.sem.factoryapp-0.apk",
+      "sha256": "eee70c07a84e7bbd6261354f6e19f2892aea4d7826bc341fd45a4e3c9b9223bb",
+      "bytes": 78688
+    },
+    {
+      "file": "com.sec.android.app.uwbtest-0.apk",
+      "sha256": "967596145958b24518bcc4a79e31538d3eb32ec1d0d8634a781065b438a04a7b",
+      "bytes": 1131686
+    }
+  ]
+}

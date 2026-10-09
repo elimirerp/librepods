@@ -1,0 +1,1845 @@
+SYMBOLS
+=======
+Symtab
+------
+0x1bd5dc608:  (__TEXT,__text) private	-[NIBluetoothSample initWithRSSI:identifier:model:channel:machContinuousTimeSeconds:]	
+0x1bd5dc61c:  (__TEXT,__text) private	-[NIBluetoothSample initWithRSSI:identifier:model:channel:machContinuousTimeSeconds:partIdentifier:name:presenceConfigData:]	
+0x1bd5dc71c:  (__TEXT,__text) private	-[NISession(DevicePresence) devicePresenceNotifier]	
+0x1bd5dc780:  (__TEXT,__text) private	-[NIDevicePresenceNotifier notifyBluetoothSample:]	
+0x1bd5dc8c4:  (__TEXT,__text) private	-[NISession getInternalConnectionQueue]	
+0x1bd5dc8fc:  (__TEXT,__text) private	-[NISession _remoteObject]	
+0x1bd5dc904:  (__TEXT,__text) private	-[NIServerConnection remoteObjectProxy]	
+0x1bd5dc990:  (__TEXT,__text) private	___50-[NIDevicePresenceNotifier notifyBluetoothSample:]_block_invoke	
+0x1bd5dc9fc:  (__TEXT,__text) private	-[NIBluetoothSample encodeWithCoder:]	
+0x1bd5dcb38:  (__TEXT,__text) private	___34-[NISession(Internal) _addObject:]_block_invoke	
+0x1bd5dcbdc:  (__TEXT,__text) private	-[NISession(Internal) _addObject:]	
+0x1bd5dcce0:  (__TEXT,__text) private	-[NIDiscoveryToken encodeWithCoder:]	
+0x1bd5dcd64:  (__TEXT,__text) private	___88-[NISession _interruptSessionWithInternalReason:cachedInterruption:nearbydReSuspension:]_block_invoke_2	
+0x1bd5dcdcc:  (__TEXT,__text) private	-[NIBluetoothSample .cxx_destruct]	
+0x1bd5dce34:  (__TEXT,__text) private	+[NISession isSupported]	
+0x1bd5dced0:  (__TEXT,__text) private	+[NIPlatformInfo supportsUWB]	
+0x1bd5dcf08:  (__TEXT,__text) private	-[NIRegionPredicate regionSizeCategory]	
+0x1bd5dcf10:  (__TEXT,__text) private	-[NIRegionPredicate radius]	
+0x1bd5dcf18:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration initWithRegions:]	
+0x1bd5dcf88:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration init]	
+0x1bd5dd048:  (__TEXT,__text) private	___34-[NISession(Internal) _addObject:]_block_invoke_2	
+0x1bd5dd108:  (__TEXT,__text) private	-[NIConfiguration initInternal]	
+0x1bd5dd154:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration setMonitoredRegions:]	
+0x1bd5dd1a4:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration .cxx_destruct]	
+0x1bd5dd20c:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration _updateRegionDescription]	
+0x1bd5dd334:  (__TEXT,__text) private	-[NIRegionPredicate shortDescription]	
+0x1bd5dd3c4:  (__TEXT,__text) private	___53-[NIHomeDeviceConfiguration _updateRegionDescription]_block_invoke	
+0x1bd5dd438:  (__TEXT,__text) private	+[NIInternalUtils NINearbyObjectUpdateRateToShortString:]	
+0x1bd5dd460:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration setAllowedDevices:]	
+0x1bd5dd470:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration setAnchor:]	
+0x1bd5dd480:  (__TEXT,__text) private	-[NIConfiguration setEnabledGestures:]	
+0x1bd5dd488:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration description]	
+0x1bd5dd544:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration descriptionInternal]	
+0x1bd5dd63c:  (__TEXT,__text) private	+[NIInternalUtils NIRelationshipSpecifierToString:]	
+0x1bd5dd660:  (__TEXT,__text) private	-[NIConfiguration enabledGestures]	
+0x1bd5dd668:  (__TEXT,__text) private	+[NIInternalUtils AntennaDiversityOverrideToString:]	
+0x1bd5dd68c:  (__TEXT,__text) private	+[NIInternalUtils NINearbyObjectUpdateRateToString:]	
+0x1bd5dd6b4:  (__TEXT,__text) private	-[NISession runWithConfiguration:]	
+0x1bd5dd7b8:  (__TEXT,__text) private	___34-[NISession runWithConfiguration:]_block_invoke	
+0x1bd5ddcf0:  (__TEXT,__text) private	-[NISession internalState]	
+0x1bd5ddcf8:  (__TEXT,__text) private	+[NIPlatformInfo isInternalBuild]	
+0x1bd5ddd30:  (__TEXT,__text) private	__ZL30NISessionInternalStateToString22NISessionInternalState	
+0x1bd5ddd58:  (__TEXT,__text) private	-[NISession _reinterruptSessionWithCachedInterruption]	
+0x1bd5dde68:  (__TEXT,__text) private	-[NISession _interruptSessionWithInternalReason:cachedInterruption:nearbydReSuspension:]	
+0x1bd5de028:  (__TEXT,__text) private	-[NISession setInternalState:]	
+0x1bd5de030:  (__TEXT,__text) private	-[NISession _performBlockOnDelegateQueue:ifRespondsToSelector:]	
+0x1bd5de038:  (__TEXT,__text) private	-[NISession _performBlockOnDelegateQueue:ifRespondsToSelector:evenIfNotRunning:]	
+0x1bd5de0fc:  (__TEXT,__text) private	__ZL53InternalInterruptionReasonToNISessionSuspensionReason36UWBSessionInterruptionReasonInternal	
+0x1bd5de10c:  (__TEXT,__text) private	-[NISession motionState]	
+0x1bd5de1b8:  (__TEXT,__text) private	___24-[NISession motionState]_block_invoke	
+0x1bd5de1cc:  (__TEXT,__text) private	-[NIDiscoveryToken description]	
+0x1bd5de288:  (__TEXT,__text) private	-[NIDiscoveryToken descriptionInternal]	
+0x1bd5de290:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]	
+0x1bd5de318:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse description]	
+0x1bd5de460:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse copyWithZone:]	
+0x1bd5de4b8:  (__TEXT,__text) private	+[NIBluetoothHostTimeSyncResponse supportsSecureCoding]	
+0x1bd5de4c0:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse encodeWithCoder:]	
+0x1bd5de5a8:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse initWithCoder:]	
+0x1bd5de684:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse deviceEventCount]	
+0x1bd5de68c:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse uwbDeviceTimeUs]	
+0x1bd5de694:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse uwbDeviceTimeUncertainty]	
+0x1bd5de69c:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse uwbClockSkewMeasurementAvailable]	
+0x1bd5de6a4:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse deviceMaxPpm]	
+0x1bd5de6ac:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse success]	
+0x1bd5de6b4:  (__TEXT,__text) private	-[NIBluetoothHostTimeSyncResponse retryDelay]	
+0x1bd5de6bc:  (__TEXT,__text) private	+[NIInternalUtils isIntValidRelationshipSpecifier:]	
+0x1bd5de6c8:  (__TEXT,__text) private	+[NIInternalUtils isIntValidAntennaDiversityOverride:]	
+0x1bd5de6d4:  (__TEXT,__text) private	+[NIInternalUtils isIntValidNearbyObjectUpdateRate:]	
+0x1bd5de6e0:  (__TEXT,__text) private	+[NIInternalUtils isIntValidNearbyObjectDiscoveryPriority:]	
+0x1bd5de6ec:  (__TEXT,__text) private	+[NIInternalUtils nearbyObjectUpdateRate:isGreaterThan:]	
+0x1bd5de728:  (__TEXT,__text) private	+[NIInternalUtils NISessionBackgroundModeToString:]	
+0x1bd5de750:  (__TEXT,__text) private	+[NIInternalUtils NINearbyPeerUseCaseToString:]	
+0x1bd5de784:  (__TEXT,__text) private	+[NIInternalUtils NINearbyObjectDiscoveryPriorityToString:]	
+0x1bd5de7b8:  (__TEXT,__text) private	+[NIInternalUtils NISystemResourceAvailabilityToString:]	
+0x1bd5de8cc:  (__TEXT,__text) private	+[NIInternalUtils NISystemPassiveAccessIntentToString:]	
+0x1bd5deaec:  (__TEXT,__text) private	-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:]	
+0x1bd5debb4:  (__TEXT,__text) private	-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:finalData2Bitmask:]	
+0x1bd5debe0:  (__TEXT,__text) private	-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:finalData2Bitmask:selectedProtocolVersion:]	
+0x1bd5dec0c:  (__TEXT,__text) private	-[NIAcwgM1Msg description]	
+0x1bd5ded3c:  (__TEXT,__text) private	-[NIAcwgM1Msg toStruct]	
+0x1bd5dedf4:  (__TEXT,__text) non-external (was a private external)	__Z24nsNumberArrayToStdVectorItEDaPK7NSArrayIP8NSNumberE	
+0x1bd5df004:  (__TEXT,__text) non-external (was a private external)	__Z24nsNumberArrayToStdVectorIhEDaPK7NSArrayIP8NSNumberE	
+0x1bd5df22c:  (__TEXT,__text) private	-[NIAcwgM1Msg copyWithZone:]	
+0x1bd5df280:  (__TEXT,__text) private	+[NIAcwgM1Msg supportsSecureCoding]	
+0x1bd5df288:  (__TEXT,__text) private	-[NIAcwgM1Msg encodeWithCoder:]	
+0x1bd5df35c:  (__TEXT,__text) private	-[NIAcwgM1Msg initWithCoder:]	
+0x1bd5df460:  (__TEXT,__text) private	-[NIAcwgM1Msg supportedUwbConfigIds]	
+0x1bd5df468:  (__TEXT,__text) private	-[NIAcwgM1Msg supportedPulseShapeCombos]	
+0x1bd5df470:  (__TEXT,__text) private	-[NIAcwgM1Msg channelBitmask]	
+0x1bd5df478:  (__TEXT,__text) private	-[NIAcwgM1Msg uwbSessionId]	
+0x1bd5df480:  (__TEXT,__text) private	-[NIAcwgM1Msg finalData2Bitmask]	
+0x1bd5df488:  (__TEXT,__text) private	-[NIAcwgM1Msg selectedProtocolVersion]	
+0x1bd5df490:  (__TEXT,__text) private	-[NIAcwgM1Msg .cxx_destruct]	
+0x1bd5df4d4:  (__TEXT,__text) private	-[NIAcwgM2Msg initWithSelectedUwbConfigId:selectedPulseShapeCombo:selectedChannelBitmask:supportedSyncCodeIndexBitmask:minRanMultiplier:supportedSlotBitmask:supportedHoppingConfigBitmask:]	
+0x1bd5df564:  (__TEXT,__text) private	-[NIAcwgM2Msg initWithSelectedUwbConfigId:selectedPulseShapeCombo:selectedChannelBitmask:supportedSyncCodeIndexBitmask:minRanMultiplier:supportedSlotBitmask:supportedHoppingConfigBitmask:selectedFinalData2Bitmask:]	
+0x1bd5df598:  (__TEXT,__text) private	-[NIAcwgM2Msg description]	
+0x1bd5df6f8:  (__TEXT,__text) private	-[NIAcwgM2Msg toStruct]	
+0x1bd5df71c:  (__TEXT,__text) private	+[NIAcwgM2Msg fromStruct:]	
+0x1bd5df79c:  (__TEXT,__text) private	-[NIAcwgM2Msg copyWithZone:]	
+0x1bd5df7f8:  (__TEXT,__text) private	+[NIAcwgM2Msg supportsSecureCoding]	
+0x1bd5df800:  (__TEXT,__text) private	-[NIAcwgM2Msg encodeWithCoder:]	
+0x1bd5df8fc:  (__TEXT,__text) private	-[NIAcwgM2Msg initWithCoder:]	
+0x1bd5df9ec:  (__TEXT,__text) private	-[NIAcwgM2Msg selectedUwbConfigId]	
+0x1bd5df9f4:  (__TEXT,__text) private	-[NIAcwgM2Msg selectedPulseShapeCombo]	
+0x1bd5df9fc:  (__TEXT,__text) private	-[NIAcwgM2Msg selectedChannelBitmask]	
+0x1bd5dfa04:  (__TEXT,__text) private	-[NIAcwgM2Msg supportedSyncCodeIndexBitmask]	
+0x1bd5dfa0c:  (__TEXT,__text) private	-[NIAcwgM2Msg minRanMultiplier]	
+0x1bd5dfa14:  (__TEXT,__text) private	-[NIAcwgM2Msg supportedSlotBitmask]	
+0x1bd5dfa1c:  (__TEXT,__text) private	-[NIAcwgM2Msg supportedHoppingConfigBitmask]	
+0x1bd5dfa24:  (__TEXT,__text) private	-[NIAcwgM2Msg selectedFinalData2Bitmask]	
+0x1bd5dfa2c:  (__TEXT,__text) private	-[NIAcwgM3Msg initWithSelectedRanMultiplier:selectedNumChapsPerSlot:numResponders:numSlotsPerRound:supportedSyncCodeIndexBitmask:selectedHoppingConfigBitmask:macMode:]	
+0x1bd5dfab8:  (__TEXT,__text) private	-[NIAcwgM3Msg description]	
+0x1bd5dfc00:  (__TEXT,__text) private	-[NIAcwgM3Msg toStruct]	
+0x1bd5dfc18:  (__TEXT,__text) private	-[NIAcwgM3Msg copyWithZone:]	
+0x1bd5dfc74:  (__TEXT,__text) private	+[NIAcwgM3Msg supportsSecureCoding]	
+0x1bd5dfc7c:  (__TEXT,__text) private	-[NIAcwgM3Msg encodeWithCoder:]	
+0x1bd5dfd64:  (__TEXT,__text) private	-[NIAcwgM3Msg initWithCoder:]	
+0x1bd5dfe40:  (__TEXT,__text) private	-[NIAcwgM3Msg selectedRanMultiplier]	
+0x1bd5dfe48:  (__TEXT,__text) private	-[NIAcwgM3Msg selectedNumChapsPerSlot]	
+0x1bd5dfe50:  (__TEXT,__text) private	-[NIAcwgM3Msg numResponders]	
+0x1bd5dfe58:  (__TEXT,__text) private	-[NIAcwgM3Msg numSlotsPerRound]	
+0x1bd5dfe60:  (__TEXT,__text) private	-[NIAcwgM3Msg supportedSyncCodeIndexBitmask]	
+0x1bd5dfe68:  (__TEXT,__text) private	-[NIAcwgM3Msg selectedHoppingConfigBitmask]	
+0x1bd5dfe70:  (__TEXT,__text) private	-[NIAcwgM3Msg macMode]	
+0x1bd5dfe78:  (__TEXT,__text) private	-[NIAcwgM4Msg initWithStsIndex0:uwbTime0:hopKey:selectedSyncCodeIndex:]	
+0x1bd5dfee0:  (__TEXT,__text) private	-[NIAcwgM4Msg description]	
+0x1bd5dffe0:  (__TEXT,__text) private	-[NIAcwgM4Msg toStruct]	
+0x1bd5e0000:  (__TEXT,__text) private	+[NIAcwgM4Msg fromStruct:]	
+0x1bd5e0048:  (__TEXT,__text) private	-[NIAcwgM4Msg copyWithZone:]	
+0x1bd5e0094:  (__TEXT,__text) private	+[NIAcwgM4Msg supportsSecureCoding]	
+0x1bd5e009c:  (__TEXT,__text) private	-[NIAcwgM4Msg encodeWithCoder:]	
+0x1bd5e0148:  (__TEXT,__text) private	-[NIAcwgM4Msg initWithCoder:]	
+0x1bd5e01e8:  (__TEXT,__text) private	-[NIAcwgM4Msg stsIndex0]	
+0x1bd5e01f0:  (__TEXT,__text) private	-[NIAcwgM4Msg uwbTime0]	
+0x1bd5e01f8:  (__TEXT,__text) private	-[NIAcwgM4Msg hopKey]	
+0x1bd5e0200:  (__TEXT,__text) private	-[NIAcwgM4Msg selectedSyncCodeIndex]	
+0x1bd5e0208:  (__TEXT,__text) private	-[NIAcwgRangingSessionResumeResponseMsg initWithStsIndex0:uwbTime0:]	
+0x1bd5e025c:  (__TEXT,__text) private	-[NIAcwgRangingSessionResumeResponseMsg description]	
+0x1bd5e032c:  (__TEXT,__text) private	+[NIAcwgRangingSessionResumeResponseMsg fromStruct:]	
+0x1bd5e0370:  (__TEXT,__text) private	-[NIAcwgRangingSessionResumeResponseMsg copyWithZone:]	
+0x1bd5e03b8:  (__TEXT,__text) private	+[NIAcwgRangingSessionResumeResponseMsg supportsSecureCoding]	
+0x1bd5e03c0:  (__TEXT,__text) private	-[NIAcwgRangingSessionResumeResponseMsg encodeWithCoder:]	
+0x1bd5e0444:  (__TEXT,__text) private	-[NIAcwgRangingSessionResumeResponseMsg initWithCoder:]	
+0x1bd5e04bc:  (__TEXT,__text) private	-[NIAcwgRangingSessionResumeResponseMsg stsIndex0]	
+0x1bd5e04c4:  (__TEXT,__text) private	-[NIAcwgRangingSessionResumeResponseMsg uwbTime0]	
+0x1bd5e04cc:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate initWithSFZone:btConnHandle:lastBtRssiValue:ioStateDisplacing:explicitPAITriggered:currentSFInBubble:]	
+0x1bd5e0550:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate description]	
+0x1bd5e06ac:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate copyWithZone:]	
+0x1bd5e0704:  (__TEXT,__text) private	+[NIAcwgSFZoneUpdate supportsSecureCoding]	
+0x1bd5e070c:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate encodeWithCoder:]	
+0x1bd5e07e0:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate initWithCoder:]	
+0x1bd5e08ac:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate currentZone]	
+0x1bd5e08b4:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate btConnHandle]	
+0x1bd5e08bc:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate lastBtRssiValue]	
+0x1bd5e08c4:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate ioStateDisplacing]	
+0x1bd5e08cc:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate explicitPAITriggered]	
+0x1bd5e08d4:  (__TEXT,__text) private	-[NIAcwgSFZoneUpdate currentSFInBubble]	
+0x1bd5e08dc:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorItNS_9allocatorItEEE20__throw_length_errorB9nqe210106Ev	
+0x1bd5e08dc:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorItNS_9allocatorItEEE20__throw_length_errorB9nqe210106Ev	
+0x1bd5e08dc:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorItNS_9allocatorItEEE20__throw_length_errorB9nqe210106Ev	
+0x1bd5e08dc:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorItNS_9allocatorItEEE20__throw_length_errorB9nqe210106Ev	
+0x1bd5e08f4:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__120__throw_length_errorB9nqe210106EPKc	
+0x1bd5e0950:  (__TEXT,__text) non-external (was a private external)	__ZNSt12length_errorC1B9nqe210106EPKc	
+0x1bd5e0984:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__119__allocate_at_leastB9nqe210106INS_9allocatorItEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS5_m	
+0x1bd5e09c8:  (__TEXT,__text) non-external (was a private external)	__ZSt28__throw_bad_array_new_lengthB9nqe210106v	
+0x1bd5e09fc:  (__TEXT,__text) non-external (was a private external)	__ZN4rose6alisha15AcwgM1MsgStructC2ERKNSt3__16vectorItNS2_9allocatorItEEEERKNS3_IhNS4_IhEEEEhjht	
+0x1bd5e0aa4:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorItNS_9allocatorItEEE16__init_with_sizeB9nqe210106IPtS5_EEvT_T0_m	
+0x1bd5e0b20:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorItNS_9allocatorItEEE11__vallocateB9nqe210106Em	
+0x1bd5e0b5c:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorIhNS_9allocatorIhEEE16__init_with_sizeB9nqe210106IPhS5_EEvT_T0_m	
+0x1bd5e0bd8:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorIhNS_9allocatorIhEEE11__vallocateB9nqe210106Em	
+0x1bd5e0c28:  (__TEXT,__text) non-external (was a private external)	__Z25combinedQuaternionFromAoA6AoARad	
+0x1bd5e0cd4:  (__TEXT,__text) non-external (was a private external)	__Z36unitVectorForAoAInNearbydCoordinatesRK6AoARad	
+0x1bd5e0d30:  (__TEXT,__text) non-external (was a private external)	__Z36unitVectorForAoAInSpatialCoordinatesRK6AoARad	
+0x1bd5e0d8c:  (__TEXT,__text) non-external (was a private external)	__Z52convertAoAFromNearbydCoordinatesToSpatialCoordinatesRK6AoARad	
+0x1bd5e0de4:  (__TEXT,__text) non-external (was a private external)	__Z46calculateAoAFromUnitVectorInSpatialCoordinatesfff	
+0x1bd5e0e5c:  (__TEXT,__text) private	___33+[NIPlatformInfo isInternalBuild]_block_invoke	
+0x1bd5e0e84:  (__TEXT,__text) private	___29+[NIPlatformInfo supportsUWB]_block_invoke	
+0x1bd5e0eac:  (__TEXT,__text) private	+[NIPlatformInfo supportsDLTDoA]	
+0x1bd5e0ee4:  (__TEXT,__text) private	___32+[NIPlatformInfo supportsDLTDoA]_block_invoke	
+0x1bd5e0f68:  (__TEXT,__text) private	+[NIPlatformInfo supportsAoA]	
+0x1bd5e0fa0:  (__TEXT,__text) private	___29+[NIPlatformInfo supportsAoA]_block_invoke	
+0x1bd5e10b4:  (__TEXT,__text) private	+[NIPlatformInfo supportsSyntheticAperture]	
+0x1bd5e10ec:  (__TEXT,__text) private	___43+[NIPlatformInfo supportsSyntheticAperture]_block_invoke	
+0x1bd5e1138:  (__TEXT,__text) private	+[NIPlatformInfo supportsARKit]	
+0x1bd5e1170:  (__TEXT,__text) private	___31+[NIPlatformInfo supportsARKit]_block_invoke	
+0x1bd5e1198:  (__TEXT,__text) private	+[NIPlatformInfo supportsNBAMMS]	
+0x1bd5e11d0:  (__TEXT,__text) private	___32+[NIPlatformInfo supportsNBAMMS]_block_invoke	
+0x1bd5e1310:  (__TEXT,__text) private	-[NISessionVisionContext init]	
+0x1bd5e1380:  (__TEXT,__text) private	-[NISessionVisionContext arSession]	
+0x1bd5e1388:  (__TEXT,__text) private	-[NISessionVisionContext setArSession:]	
+0x1bd5e13c8:  (__TEXT,__text) private	-[NISessionVisionContext arSessionState]	
+0x1bd5e13d0:  (__TEXT,__text) private	-[NISessionVisionContext setArSessionState:]	
+0x1bd5e13d8:  (__TEXT,__text) private	-[NISessionVisionContext isCameraAssistanceEnabled]	
+0x1bd5e13e0:  (__TEXT,__text) private	-[NISessionVisionContext setCameraAssistanceEnabled:]	
+0x1bd5e13e8:  (__TEXT,__text) private	-[NISessionVisionContext isARSessionInternal]	
+0x1bd5e13f0:  (__TEXT,__text) private	-[NISessionVisionContext setArSessionInternal:]	
+0x1bd5e13f8:  (__TEXT,__text) private	-[NISessionVisionContext isARSessionInClientProcess]	
+0x1bd5e1400:  (__TEXT,__text) private	-[NISessionVisionContext setArSessionInClientProcess:]	
+0x1bd5e1408:  (__TEXT,__text) private	-[NISessionVisionContext latestARFrame]	
+0x1bd5e1410:  (__TEXT,__text) private	-[NISessionVisionContext setLatestARFrame:]	
+0x1bd5e1418:  (__TEXT,__text) private	-[NISessionVisionContext .cxx_destruct]	
+0x1bd5e145c:  (__TEXT,__text) private	+[NISession cachedPlatformCapabilities]	
+0x1bd5e1498:  (__TEXT,__text) private	+[NISession setCachedPlatformCapabilities:]	
+0x1bd5e14d8:  (__TEXT,__text) private	-[NISession _initAndConnectToServerWithOptions:]	
+0x1bd5e18d4:  (__TEXT,__text) private	___48-[NISession _initAndConnectToServerWithOptions:]_block_invoke	
+0x1bd5e1930:  (__TEXT,__text) private	___48-[NISession _initAndConnectToServerWithOptions:]_block_invoke_2	
+0x1bd5e198c:  (__TEXT,__text) private	___48-[NISession _initAndConnectToServerWithOptions:]_block_invoke.897	
+0x1bd5e1a10:  (__TEXT,__text) private	+[NISession _supportedPlatform:]	
+0x1bd5e1a68:  (__TEXT,__text) private	+[NISession _queryAndCacheCapabilities]	
+0x1bd5e1c08:  (__TEXT,__text) private	___Block_byref_object_copy_	
+0x1bd5e1c18:  (__TEXT,__text) private	___Block_byref_object_dispose_	
+0x1bd5e1c20:  (__TEXT,__text) private	___39+[NISession _queryAndCacheCapabilities]_block_invoke	
+0x1bd5e1c90:  (__TEXT,__text) private	-[NISession _osLogNearbyObjectUpdate:]	
+0x1bd5e1f20:  (__TEXT,__text) private	___38-[NISession _osLogNearbyObjectUpdate:]_block_invoke	
+0x1bd5e205c:  (__TEXT,__text) private	-[NISession _logTime]	
+0x1bd5e2118:  (__TEXT,__text) private	___21-[NISession _logTime]_block_invoke	
+0x1bd5e21f0:  (__TEXT,__text) private	-[NISession _logDurationAndSubmit:]	
+0x1bd5e22a8:  (__TEXT,__text) private	___35-[NISession _logDurationAndSubmit:]_block_invoke	
+0x1bd5e2380:  (__TEXT,__text) private	-[NISession _submitErrorMetric:]	
+0x1bd5e2540:  (__TEXT,__text) private	___32-[NISession _submitErrorMetric:]_block_invoke	
+0x1bd5e266c:  (__TEXT,__text) private	-[NISession setDelegate:]	
+0x1bd5e270c:  (__TEXT,__text) private	___25-[NISession setDelegate:]_block_invoke	
+0x1bd5e27cc:  (__TEXT,__text) private	-[NISession setDelegateQueue:]	
+0x1bd5e28d0:  (__TEXT,__text) private	___30-[NISession setDelegateQueue:]_block_invoke	
+0x1bd5e2998:  (__TEXT,__text) private	+[NISession deviceCapabilities]	
+0x1bd5e2a3c:  (__TEXT,__text) private	-[NISession configuration]	
+0x1bd5e2b28:  (__TEXT,__text) private	___26-[NISession configuration]_block_invoke	
+0x1bd5e2b74:  (__TEXT,__text) private	-[NISession discoveryToken]	
+0x1bd5e2d94:  (__TEXT,__text) private	___27-[NISession discoveryToken]_block_invoke	
+0x1bd5e2de0:  (__TEXT,__text) private	___27-[NISession discoveryToken]_block_invoke_2	
+0x1bd5e2e44:  (__TEXT,__text) private	___27-[NISession discoveryToken]_block_invoke_3	
+0x1bd5e2e90:  (__TEXT,__text) private	-[NISession _isInternalClient]	
+0x1bd5e2f3c:  (__TEXT,__text) private	-[NISession init]	
+0x1bd5e2f44:  (__TEXT,__text) private	___34-[NISession runWithConfiguration:]_block_invoke.945	
+0x1bd5e300c:  (__TEXT,__text) private	___34-[NISession runWithConfiguration:]_block_invoke.951	
+0x1bd5e3068:  (__TEXT,__text) private	___34-[NISession runWithConfiguration:]_block_invoke_2	
+0x1bd5e30c4:  (__TEXT,__text) private	___34-[NISession runWithConfiguration:]_block_invoke_3	
+0x1bd5e3148:  (__TEXT,__text) private	-[NISession pause]	
+0x1bd5e31bc:  (__TEXT,__text) private	___18-[NISession pause]_block_invoke	
+0x1bd5e33ec:  (__TEXT,__text) private	___18-[NISession pause]_block_invoke.952	
+0x1bd5e3464:  (__TEXT,__text) private	-[NISession invalidate]	
+0x1bd5e34d8:  (__TEXT,__text) private	___23-[NISession invalidate]_block_invoke	
+0x1bd5e35e4:  (__TEXT,__text) private	-[NISession dealloc]	
+0x1bd5e36f4:  (__TEXT,__text) non-external (was a private external)	___clang_call_terminate	
+0x1bd5e3708:  (__TEXT,__text) private	-[NISession setARSession:]	
+0x1bd5e3804:  (__TEXT,__text) private	___26-[NISession setARSession:]_block_invoke	
+0x1bd5e3810:  (__TEXT,__text) private	-[NISession _setARSessionInternal:]	
+0x1bd5e3990:  (__TEXT,__text) private	-[NISession worldTransformForObject:]	
+0x1bd5e3ac0:  (__TEXT,__text) private	___Block_byref_object_copy_.957	
+0x1bd5e3ad4:  (__TEXT,__text) private	___Block_byref_object_dispose_.958	
+0x1bd5e3ad8:  (__TEXT,__text) private	___37-[NISession worldTransformForObject:]_block_invoke	
+0x1bd5e3bdc:  (__TEXT,__text) private	-[NISession isEqual:]	
+0x1bd5e3c60:  (__TEXT,__text) private	-[NISession hash]	
+0x1bd5e3c68:  (__TEXT,__text) private	-[NISession description]	
+0x1bd5e3ea8:  (__TEXT,__text) private	___24-[NISession description]_block_invoke	
+0x1bd5e3f64:  (__TEXT,__text) private	-[NISession setConfigurationForTesting:]	
+0x1bd5e4004:  (__TEXT,__text) private	___40-[NISession setConfigurationForTesting:]_block_invoke	
+0x1bd5e4040:  (__TEXT,__text) private	-[NISession getInternalIdentifier]	
+0x1bd5e4078:  (__TEXT,__text) private	-[NISession getInternalLogObject]	
+0x1bd5e40b0:  (__TEXT,__text) private	-[NISession _serverConnectionInvalidated]	
+0x1bd5e4208:  (__TEXT,__text) private	-[NISession _serverConnectionInterrupted]	
+0x1bd5e4530:  (__TEXT,__text) private	___41-[NISession _serverConnectionInterrupted]_block_invoke	
+0x1bd5e4694:  (__TEXT,__text) private	___41-[NISession _serverConnectionInterrupted]_block_invoke.987	
+0x1bd5e4718:  (__TEXT,__text) private	___41-[NISession _serverConnectionInterrupted]_block_invoke_2	
+0x1bd5e4780:  (__TEXT,__text) private	-[NISession _synchronousRemoteObject]	
+0x1bd5e4788:  (__TEXT,__text) private	-[NISession _shouldReConnectToDaemonAfterCrash]	
+0x1bd5e4824:  (__TEXT,__text) private	-[NISession didRemoveNearbyObjects:withReason:]	
+0x1bd5e4ac0:  (__TEXT,__text) private	___47-[NISession didRemoveNearbyObjects:withReason:]_block_invoke	
+0x1bd5e4b2c:  (__TEXT,__text) private	___47-[NISession didRemoveNearbyObjects:withReason:]_block_invoke_2	
+0x1bd5e4b98:  (__TEXT,__text) private	___47-[NISession didRemoveNearbyObjects:withReason:]_block_invoke_3	
+0x1bd5e4c60:  (__TEXT,__text) private	-[NISession didUpdateNearbyObjects:]	
+0x1bd5e4f0c:  (__TEXT,__text) private	___36-[NISession didUpdateNearbyObjects:]_block_invoke	
+0x1bd5e4f74:  (__TEXT,__text) private	-[NISession uwbSessionDidFailWithError:]	
+0x1bd5e5010:  (__TEXT,__text) private	-[NISession uwbSessionDidInvalidateWithError:]	
+0x1bd5e509c:  (__TEXT,__text) private	-[NISession uwbSessionInterruptedWithReason:timestamp:]	
+0x1bd5e53a8:  (__TEXT,__text) private	___55-[NISession uwbSessionInterruptedWithReason:timestamp:]_block_invoke	
+0x1bd5e54c8:  (__TEXT,__text) private	-[NISession uwbSessionInterruptionReasonEnded:timestamp:]	
+0x1bd5e597c:  (__TEXT,__text) private	___57-[NISession uwbSessionInterruptionReasonEnded:timestamp:]_block_invoke	
+0x1bd5e5a8c:  (__TEXT,__text) private	___57-[NISession uwbSessionInterruptionReasonEnded:timestamp:]_block_invoke.1015	
+0x1bd5e5af4:  (__TEXT,__text) private	___57-[NISession uwbSessionInterruptionReasonEnded:timestamp:]_block_invoke_2	
+0x1bd5e5b60:  (__TEXT,__text) private	-[NISession didUpdateLocalDiscoveryToken:]	
+0x1bd5e5cb8:  (__TEXT,__text) private	___42-[NISession didUpdateLocalDiscoveryToken:]_block_invoke	
+0x1bd5e5d20:  (__TEXT,__text) private	-[NISession didReceiveRangingAuthRecommendation:forObject:]	
+0x1bd5e5df8:  (__TEXT,__text) private	___59-[NISession didReceiveRangingAuthRecommendation:forObject:]_block_invoke	
+0x1bd5e5e64:  (__TEXT,__text) private	-[NISession didDiscoverNearbyObject:]	
+0x1bd5e5fc0:  (__TEXT,__text) private	___37-[NISession didDiscoverNearbyObject:]_block_invoke	
+0x1bd5e6028:  (__TEXT,__text) private	-[NISession object:didUpdateRegion:previousRegion:]	
+0x1bd5e61f0:  (__TEXT,__text) private	___51-[NISession object:didUpdateRegion:previousRegion:]_block_invoke	
+0x1bd5e625c:  (__TEXT,__text) private	-[NISession didUpdateMotionState:]	
+0x1bd5e62f4:  (__TEXT,__text) private	___34-[NISession didUpdateMotionState:]_block_invoke	
+0x1bd5e635c:  (__TEXT,__text) private	-[NISession didUpdateHomeDeviceUWBRangingAvailability:]	
+0x1bd5e63f4:  (__TEXT,__text) private	___55-[NISession didUpdateHomeDeviceUWBRangingAvailability:]_block_invoke	
+0x1bd5e6460:  (__TEXT,__text) private	-[NISession relayDCKMessage:]	
+0x1bd5e6520:  (__TEXT,__text) private	___29-[NISession relayDCKMessage:]_block_invoke	
+0x1bd5e6588:  (__TEXT,__text) private	-[NISession didUpdateHealthStatus:]	
+0x1bd5e6600:  (__TEXT,__text) private	___35-[NISession didUpdateHealthStatus:]_block_invoke	
+0x1bd5e6668:  (__TEXT,__text) private	-[NISession didProcessAcwgM1MsgWithResponse:error:]	
+0x1bd5e6750:  (__TEXT,__text) private	___51-[NISession didProcessAcwgM1MsgWithResponse:error:]_block_invoke	
+0x1bd5e67bc:  (__TEXT,__text) private	-[NISession didProcessAcwgM3MsgWithResponse:error:]	
+0x1bd5e68a4:  (__TEXT,__text) private	___51-[NISession didProcessAcwgM3MsgWithResponse:error:]_block_invoke	
+0x1bd5e6910:  (__TEXT,__text) private	-[NISession didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error:]	
+0x1bd5e69f8:  (__TEXT,__text) private	___76-[NISession didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error:]_block_invoke	
+0x1bd5e6a64:  (__TEXT,__text) private	-[NISession requestAcwgRangingSessionSuspend:withSuspendTriggerReason:]	
+0x1bd5e6ae0:  (__TEXT,__text) private	___71-[NISession requestAcwgRangingSessionSuspend:withSuspendTriggerReason:]_block_invoke	
+0x1bd5e6b4c:  (__TEXT,__text) private	-[NISession didStartAcwgRanging:]	
+0x1bd5e6bc4:  (__TEXT,__text) private	___33-[NISession didStartAcwgRanging:]_block_invoke	
+0x1bd5e6c2c:  (__TEXT,__text) private	-[NISession didSuspendAcwgRanging:]	
+0x1bd5e6ca4:  (__TEXT,__text) private	___35-[NISession didSuspendAcwgRanging:]_block_invoke	
+0x1bd5e6d0c:  (__TEXT,__text) private	-[NISession didPrefetchAcwgUrsk:error:]	
+0x1bd5e6dd4:  (__TEXT,__text) private	___39-[NISession didPrefetchAcwgUrsk:error:]_block_invoke	
+0x1bd5e6e40:  (__TEXT,__text) private	-[NISession didReceiveAopSFZoneUpdate:]	
+0x1bd5e6f00:  (__TEXT,__text) private	___39-[NISession didReceiveAopSFZoneUpdate:]_block_invoke	
+0x1bd5e6f68:  (__TEXT,__text) private	-[NISession didGenerateShareableConfigurationData:forObject:]	
+0x1bd5e70f0:  (__TEXT,__text) private	___61-[NISession didGenerateShareableConfigurationData:forObject:]_block_invoke	
+0x1bd5e715c:  (__TEXT,__text) private	-[NISession systemDidUpdateState:]	
+0x1bd5e72b0:  (__TEXT,__text) private	___34-[NISession systemDidUpdateState:]_block_invoke	
+0x1bd5e7318:  (__TEXT,__text) private	-[NISession systemDidUpdateResourceUsageLimitExceeded:forSessionConfigurationTypeWithName:]	
+0x1bd5e7474:  (__TEXT,__text) private	___91-[NISession systemDidUpdateResourceUsageLimitExceeded:forSessionConfigurationTypeWithName:]_block_invoke	
+0x1bd5e74e0:  (__TEXT,__text) private	-[NISession didUpdateAlgorithmState:forObject:]	
+0x1bd5e77e8:  (__TEXT,__text) private	___47-[NISession didUpdateAlgorithmState:forObject:]_block_invoke	
+0x1bd5e7894:  (__TEXT,__text) private	___47-[NISession didUpdateAlgorithmState:forObject:]_block_invoke_2	
+0x1bd5e7900:  (__TEXT,__text) private	-[NISession didUpdateState:forItem:]	
+0x1bd5e7b70:  (__TEXT,__text) private	-[NISession didUpdateNICoordinates:]	
+0x1bd5e7c38:  (__TEXT,__text) private	___36-[NISession didUpdateNICoordinates:]_block_invoke	
+0x1bd5e7ca0:  (__TEXT,__text) private	-[NISession didUpdateDLTDOAMeasurements:]	
+0x1bd5e7d68:  (__TEXT,__text) private	___41-[NISession didUpdateDLTDOAMeasurements:]_block_invoke	
+0x1bd5e7f48:  (__TEXT,__text) private	-[NISession session:didUpdateFrame:]	
+0x1bd5e7fe8:  (__TEXT,__text) private	___36-[NISession session:didUpdateFrame:]_block_invoke	
+0x1bd5e7ff4:  (__TEXT,__text) private	-[NISession session:didFailWithError:]	
+0x1bd5e8094:  (__TEXT,__text) private	___38-[NISession session:didFailWithError:]_block_invoke	
+0x1bd5e80a0:  (__TEXT,__text) private	-[NISession sessionWasInterrupted:]	
+0x1bd5e8114:  (__TEXT,__text) private	___35-[NISession sessionWasInterrupted:]_block_invoke	
+0x1bd5e811c:  (__TEXT,__text) private	-[NISession sessionInterruptionEnded:]	
+0x1bd5e8190:  (__TEXT,__text) private	___38-[NISession sessionInterruptionEnded:]_block_invoke	
+0x1bd5e8198:  (__TEXT,__text) private	-[NISession session:didChangeState:]	
+0x1bd5e820c:  (__TEXT,__text) private	___36-[NISession session:didChangeState:]_block_invoke	
+0x1bd5e8218:  (__TEXT,__text) private	-[NISession session:didUpdateExternalAnchors:]	
+0x1bd5e821c:  (__TEXT,__text) private	-[NISession session:willRunWithConfiguration:]	
+0x1bd5e82d8:  (__TEXT,__text) private	___46-[NISession session:willRunWithConfiguration:]_block_invoke	
+0x1bd5e82e8:  (__TEXT,__text) private	-[NISession sessionShouldAttemptRelocalization:completion:]	
+0x1bd5e83ec:  (__TEXT,__text) private	___59-[NISession sessionShouldAttemptRelocalization:completion:]_block_invoke	
+0x1bd5e8478:  (__TEXT,__text) private	-[NISession _handleARSessionDidUpdateFrame:]	
+0x1bd5e86ac:  (__TEXT,__text) private	-[NISession _handleARSessionDidFailWithError:]	
+0x1bd5e8758:  (__TEXT,__text) private	-[NISession _handleARSessionWasInterrupted]	
+0x1bd5e8800:  (__TEXT,__text) private	-[NISession _handleARSessionInterruptionEnded]	
+0x1bd5e88a8:  (__TEXT,__text) private	-[NISession _handleARSessionDidChangeState:]	
+0x1bd5e8974:  (__TEXT,__text) private	-[NISession _handleARSession:willRunWithConfiguration:]	
+0x1bd5e8a44:  (__TEXT,__text) private	-[NISession _configureAndRunInternalARSession]	
+0x1bd5e8d58:  (__TEXT,__text) private	___46-[NISession _configureAndRunInternalARSession]_block_invoke	
+0x1bd5e8e58:  (__TEXT,__text) private	-[NISession _isValidARSession:andConfiguration:]	
+0x1bd5e9338:  (__TEXT,__text) private	___48-[NISession _isValidARSession:andConfiguration:]_block_invoke	
+0x1bd5e93e0:  (__TEXT,__text) private	-[NISession _pauseInternalARSessionIfNeeded]	
+0x1bd5e9478:  (__TEXT,__text) private	-[NISession _invalidateInternalARSessionIfNeeded]	
+0x1bd5e952c:  (__TEXT,__text) private	-[NISession niVisionInputTrackingStateFromARTRackingState:]	
+0x1bd5e9540:  (__TEXT,__text) private	-[NISession lightEstimateFromARLightEstimate:]	
+0x1bd5e95a0:  (__TEXT,__text) private	-[NISession _invalidateSessionAndNotifyError:]	
+0x1bd5e9614:  (__TEXT,__text) private	___88-[NISession _interruptSessionWithInternalReason:cachedInterruption:nearbydReSuspension:]_block_invoke	
+0x1bd5e967c:  (__TEXT,__text) private	-[NISession _invalidateInternal]	
+0x1bd5e97c0:  (__TEXT,__text) private	-[NISession _handleActivationError:]	
+0x1bd5e98fc:  (__TEXT,__text) private	-[NISession _handleActivationSuccess:]	
+0x1bd5e9aa8:  (__TEXT,__text) private	-[NISession _handleRunSessionError:]	
+0x1bd5e9bf4:  (__TEXT,__text) private	-[NISession _handleRunSessionSuccess]	
+0x1bd5e9d8c:  (__TEXT,__text) private	___37-[NISession _handleRunSessionSuccess]_block_invoke	
+0x1bd5e9df4:  (__TEXT,__text) private	-[NISession _handlePauseSessionError:]	
+0x1bd5e9f30:  (__TEXT,__text) private	-[NISession _handlePauseSessionSuccess]	
+0x1bd5ea060:  (__TEXT,__text) private	-[NISession _verifyError:]	
+0x1bd5ea218:  (__TEXT,__text) private	-[NISession _notifyDidInvalidateWithError:]	
+0x1bd5ea374:  (__TEXT,__text) private	___43-[NISession _notifyDidInvalidateWithError:]_block_invoke	
+0x1bd5ea3dc:  (__TEXT,__text) private	-[NISession _getSessionFailureError]	
+0x1bd5ea4b0:  (__TEXT,__text) private	-[NISession _shouldReRunSessionAfterSessionInterruptionEnded]	
+0x1bd5ea568:  (__TEXT,__text) private	-[NISession _internalRunWithConfiguration:]	
+0x1bd5ea700:  (__TEXT,__text) private	___43-[NISession _internalRunWithConfiguration:]_block_invoke	
+0x1bd5ea778:  (__TEXT,__text) private	-[NISession _sendRemoteDevice:changedState:]	
+0x1bd5ea8b0:  (__TEXT,__text) private	-[NISession _tryToRecoverFromFailure:]	
+0x1bd5eaab0:  (__TEXT,__text) private	___38-[NISession _tryToRecoverFromFailure:]_block_invoke	
+0x1bd5eab18:  (__TEXT,__text) private	-[NISession _configurationSupportsRetry]	
+0x1bd5eab98:  (__TEXT,__text) private	-[NISession delegate]	
+0x1bd5eabc4:  (__TEXT,__text) private	-[NISession delegateQueue]	
+0x1bd5eabcc:  (__TEXT,__text) private	-[NISession invalidationError]	
+0x1bd5eabd8:  (__TEXT,__text) private	-[NISession setInvalidationError:]	
+0x1bd5eabe0:  (__TEXT,__text) private	-[NISession activationResponse]	
+0x1bd5eabec:  (__TEXT,__text) private	-[NISession setActivationResponse:]	
+0x1bd5eabf4:  (__TEXT,__text) private	-[NISession internalDelegate]	
+0x1bd5eac20:  (__TEXT,__text) private	-[NISession setInternalDelegate:]	
+0x1bd5eac2c:  (__TEXT,__text) private	-[NISession .cxx_destruct]	
+0x1bd5ead50:  (__TEXT,__text) private	-[NISession .cxx_construct]	
+0x1bd5ead80:  (__TEXT,__text) private	-[NIAlgorithmConvergence initWithStatus:andReasons:]	
+0x1bd5eae0c:  (__TEXT,__text) private	+[NIAlgorithmConvergence supportsSecureCoding]	
+0x1bd5eae14:  (__TEXT,__text) private	-[NIAlgorithmConvergence copyWithZone:]	
+0x1bd5eae9c:  (__TEXT,__text) private	-[NIAlgorithmConvergence encodeWithCoder:]	
+0x1bd5eaf24:  (__TEXT,__text) private	-[NIAlgorithmConvergence initWithCoder:]	
+0x1bd5eb0e4:  (__TEXT,__text) private	-[NIAlgorithmConvergence isEqual:]	
+0x1bd5eb1ec:  (__TEXT,__text) private	-[NIAlgorithmConvergence hash]	
+0x1bd5eb25c:  (__TEXT,__text) private	-[NIAlgorithmConvergence reasonsPrivate]	
+0x1bd5eb294:  (__TEXT,__text) private	-[NIAlgorithmConvergence status]	
+0x1bd5eb29c:  (__TEXT,__text) private	-[NIAlgorithmConvergence setStatus:]	
+0x1bd5eb2a4:  (__TEXT,__text) private	-[NIAlgorithmConvergence reasons]	
+0x1bd5eb2ac:  (__TEXT,__text) private	-[NIAlgorithmConvergence setReasons:]	
+0x1bd5eb2b4:  (__TEXT,__text) private	-[NIAlgorithmConvergence .cxx_destruct]	
+0x1bd5eb2c0:  (__TEXT,__text) private	+[NISession(Internal) internalDeviceCapabilities]	
+0x1bd5eb528:  (__TEXT,__text) private	___34-[NISession(Internal) _addObject:]_block_invoke_3	
+0x1bd5eb590:  (__TEXT,__text) private	-[NISession(Internal) _removeObject:]	
+0x1bd5eb694:  (__TEXT,__text) private	___37-[NISession(Internal) _removeObject:]_block_invoke	
+0x1bd5eb738:  (__TEXT,__text) private	___37-[NISession(Internal) _removeObject:]_block_invoke_2	
+0x1bd5eb7f8:  (__TEXT,__text) private	___37-[NISession(Internal) _removeObject:]_block_invoke_3	
+0x1bd5eb860:  (__TEXT,__text) private	-[NISession(Internal) _addRegionPredicate:]	
+0x1bd5eb8ec:  (__TEXT,__text) private	-[NISession(Internal) _removeRegionPredicate:]	
+0x1bd5eb978:  (__TEXT,__text) private	+[NISession(Internal) observerSession]	
+0x1bd5eb9b0:  (__TEXT,__text) private	-[NISession(Internal) isPreciseRangingAllowed]	
+0x1bd5eba5c:  (__TEXT,__text) private	___46-[NISession(Internal) isPreciseRangingAllowed]_block_invoke	
+0x1bd5ebb00:  (__TEXT,__text) private	___46-[NISession(Internal) isPreciseRangingAllowed]_block_invoke_2	
+0x1bd5ebb84:  (__TEXT,__text) private	-[NISession(Internal) isExtendedDistanceMeasurementAllowed]	
+0x1bd5ebc30:  (__TEXT,__text) private	___59-[NISession(Internal) isExtendedDistanceMeasurementAllowed]_block_invoke	
+0x1bd5ebcd4:  (__TEXT,__text) private	___59-[NISession(Internal) isExtendedDistanceMeasurementAllowed]_block_invoke_2	
+0x1bd5ebd58:  (__TEXT,__text) private	-[NISession(Internal) processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:]	
+0x1bd5ebdd0:  (__TEXT,__text) private	___87-[NISession(Internal) processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:]_block_invoke	
+0x1bd5ebe7c:  (__TEXT,__text) private	___87-[NISession(Internal) processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:]_block_invoke_2	
+0x1bd5ebf7c:  (__TEXT,__text) private	___87-[NISession(Internal) processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:]_block_invoke_3	
+0x1bd5ebfe8:  (__TEXT,__text) private	-[NICarKeyEventNotifier initWithParentSession:]	
+0x1bd5ec060:  (__TEXT,__text) private	-[NICarKeyEventNotifier notifyVehicleUnlockedWithReason:]	
+0x1bd5ec24c:  (__TEXT,__text) private	___57-[NICarKeyEventNotifier notifyVehicleUnlockedWithReason:]_block_invoke	
+0x1bd5ec2c0:  (__TEXT,__text) private	___57-[NICarKeyEventNotifier notifyVehicleUnlockedWithReason:]_block_invoke_2	
+0x1bd5ec2c4:  (__TEXT,__text) private	-[NICarKeyEventNotifier notifyVehicleLockedWithReason:]	
+0x1bd5ec4b0:  (__TEXT,__text) private	___55-[NICarKeyEventNotifier notifyVehicleLockedWithReason:]_block_invoke	
+0x1bd5ec524:  (__TEXT,__text) private	___55-[NICarKeyEventNotifier notifyVehicleLockedWithReason:]_block_invoke_2	
+0x1bd5ec528:  (__TEXT,__text) private	-[NICarKeyEventNotifier notifyVehicleReadyToDriveWithReason:]	
+0x1bd5ec714:  (__TEXT,__text) private	___61-[NICarKeyEventNotifier notifyVehicleReadyToDriveWithReason:]_block_invoke	
+0x1bd5ec788:  (__TEXT,__text) private	___61-[NICarKeyEventNotifier notifyVehicleReadyToDriveWithReason:]_block_invoke_2	
+0x1bd5ec78c:  (__TEXT,__text) private	-[NICarKeyEventNotifier notifyRangingIntentSentToVehicleWithReason:]	
+0x1bd5ec978:  (__TEXT,__text) private	___68-[NICarKeyEventNotifier notifyRangingIntentSentToVehicleWithReason:]_block_invoke	
+0x1bd5ec9ec:  (__TEXT,__text) private	___68-[NICarKeyEventNotifier notifyRangingIntentSentToVehicleWithReason:]_block_invoke_2	
+0x1bd5ec9f0:  (__TEXT,__text) private	-[NICarKeyEventNotifier notifyVehicleTerminatedRangingSession]	
+0x1bd5ecb9c:  (__TEXT,__text) private	___62-[NICarKeyEventNotifier notifyVehicleTerminatedRangingSession]_block_invoke	
+0x1bd5ecc10:  (__TEXT,__text) private	___62-[NICarKeyEventNotifier notifyVehicleTerminatedRangingSession]_block_invoke_2	
+0x1bd5ecc14:  (__TEXT,__text) private	-[NICarKeyEventNotifier notifyVehicleSentRangingSuspendedSubEvent]	
+0x1bd5ecdc0:  (__TEXT,__text) private	___66-[NICarKeyEventNotifier notifyVehicleSentRangingSuspendedSubEvent]_block_invoke	
+0x1bd5ece34:  (__TEXT,__text) private	___66-[NICarKeyEventNotifier notifyVehicleSentRangingSuspendedSubEvent]_block_invoke_2	
+0x1bd5ece38:  (__TEXT,__text) private	-[NICarKeyEventNotifier .cxx_destruct]	
+0x1bd5ece40:  (__TEXT,__text) private	-[NISession(CarKey) processDCKMessage:responseCallback:]	
+0x1bd5ed03c:  (__TEXT,__text) private	___56-[NISession(CarKey) processDCKMessage:responseCallback:]_block_invoke	
+0x1bd5ed148:  (__TEXT,__text) private	___56-[NISession(CarKey) processDCKMessage:responseCallback:]_block_invoke_2	
+0x1bd5ed218:  (__TEXT,__text) private	___56-[NISession(CarKey) processDCKMessage:responseCallback:]_block_invoke_3	
+0x1bd5ed2e4:  (__TEXT,__text) private	___56-[NISession(CarKey) processDCKMessage:responseCallback:]_block_invoke_4	
+0x1bd5ed2fc:  (__TEXT,__text) private	-[NISession(CarKey) processBluetoothEventWithType:btcClockTicks:eventCounter:]	
+0x1bd5ed300:  (__TEXT,__text) private	-[NISession(CarKey) processBluetoothEventWithType:btcClockTicks:]	
+0x1bd5ed30c:  (__TEXT,__text) private	-[NISession(CarKey) deleteURSKs]	
+0x1bd5ed3f8:  (__TEXT,__text) private	___32-[NISession(CarKey) deleteURSKs]_block_invoke	
+0x1bd5ed49c:  (__TEXT,__text) private	___32-[NISession(CarKey) deleteURSKs]_block_invoke_2	
+0x1bd5ed4e4:  (__TEXT,__text) private	-[NISession(CarKey) _setDebugURSK:transactionIdentifier:]	
+0x1bd5ed6c4:  (__TEXT,__text) private	___57-[NISession(CarKey) _setDebugURSK:transactionIdentifier:]_block_invoke	
+0x1bd5ed76c:  (__TEXT,__text) private	___57-[NISession(CarKey) _setDebugURSK:transactionIdentifier:]_block_invoke_2	
+0x1bd5ed7b4:  (__TEXT,__text) private	-[NISession(CarKey) isRangingLimitExceeded]	
+0x1bd5ed860:  (__TEXT,__text) private	___43-[NISession(CarKey) isRangingLimitExceeded]_block_invoke	
+0x1bd5ed904:  (__TEXT,__text) private	___43-[NISession(CarKey) isRangingLimitExceeded]_block_invoke_2	
+0x1bd5ed988:  (__TEXT,__text) private	-[NISession(CarKey) carKeyEventNotifier]	
+0x1bd5ed9ec:  (__TEXT,__text) private	-[NISession(CarKey_Project) _setURSKTTL:]	
+0x1bd5edadc:  (__TEXT,__text) private	___41-[NISession(CarKey_Project) _setURSKTTL:]_block_invoke	
+0x1bd5edb80:  (__TEXT,__text) private	___41-[NISession(CarKey_Project) _setURSKTTL:]_block_invoke_2	
+0x1bd5edbc8:  (__TEXT,__text) private	-[NIAcwgEventNotifier initWithParentSession:]	
+0x1bd5edc40:  (__TEXT,__text) private	-[NIAcwgEventNotifier notifyUrskCreated:]	
+0x1bd5edd04:  (__TEXT,__text) private	-[NIAcwgEventNotifier notifyLockStatusChanged:]	
+0x1bd5eddc8:  (__TEXT,__text) private	-[NIAcwgEventNotifier .cxx_destruct]	
+0x1bd5eddd0:  (__TEXT,__text) private	-[NISession(Acwg) acwgEventNotifier]	
+0x1bd5ede34:  (__TEXT,__text) private	-[NISession(Acwg) processAcwgM1Msg:withSessionTriggerReason:]	
+0x1bd5edf48:  (__TEXT,__text) private	___61-[NISession(Acwg) processAcwgM1Msg:withSessionTriggerReason:]_block_invoke	
+0x1bd5edfb4:  (__TEXT,__text) private	-[NISession(Acwg) processAcwgM3Msg:]	
+0x1bd5ee0b8:  (__TEXT,__text) private	___36-[NISession(Acwg) processAcwgM3Msg:]_block_invoke	
+0x1bd5ee124:  (__TEXT,__text) private	-[NISession(Acwg) suspendAcwgRanging:withSuspendTriggerReason:]	
+0x1bd5ee19c:  (__TEXT,__text) private	___63-[NISession(Acwg) suspendAcwgRanging:withSuspendTriggerReason:]_block_invoke	
+0x1bd5ee20c:  (__TEXT,__text) private	-[NISession(Acwg) processAcwgRangingSessionResumeRequestMsg:withResumeTriggerReason:]	
+0x1bd5ee284:  (__TEXT,__text) private	___85-[NISession(Acwg) processAcwgRangingSessionResumeRequestMsg:withResumeTriggerReason:]_block_invoke	
+0x1bd5ee2f4:  (__TEXT,__text) private	-[NISession(Acwg) prefetchAcwgUrsk:]	
+0x1bd5ee36c:  (__TEXT,__text) private	___36-[NISession(Acwg) prefetchAcwgUrsk:]_block_invoke	
+0x1bd5ee3d8:  (__TEXT,__text) private	-[NISession(Acwg) _processUpdatedLockState:]	
+0x1bd5ee450:  (__TEXT,__text) private	___44-[NISession(Acwg) _processUpdatedLockState:]_block_invoke	
+0x1bd5ee4bc:  (__TEXT,__text) private	-[NISession(SpatialBrowsing) updateResponderDeviceIdentifier:completionHandler:]	
+0x1bd5ee600:  (__TEXT,__text) private	-[NISession(Vision) processVisionInput:]	
+0x1bd5ee6a0:  (__TEXT,__text) private	___40-[NISession(Vision) processVisionInput:]_block_invoke	
+0x1bd5ee70c:  (__TEXT,__text) private	-[NIDevicePresenceNotifier initWithParentSession:]	
+0x1bd5ee784:  (__TEXT,__text) private	-[NIDevicePresenceNotifier .cxx_destruct]	
+0x1bd5ee78c:  (__TEXT,__text) private	+[NISession(DevicePresence) generateBluetoothDeviceTokenWithPublicAddress:IRK:]	
+0x1bd5ee9e4:  (__TEXT,__text) private	-[NIFindingNotifier initWithParentSession:]	
+0x1bd5eea5c:  (__TEXT,__text) private	-[NIFindingNotifier notifyDiscoveredNearbyObjectWithToken:sharedConfigurationData:]	
+0x1bd5eeec0:  (__TEXT,__text) private	___83-[NIFindingNotifier notifyDiscoveredNearbyObjectWithToken:sharedConfigurationData:]_block_invoke	
+0x1bd5eef34:  (__TEXT,__text) private	___83-[NIFindingNotifier notifyDiscoveredNearbyObjectWithToken:sharedConfigurationData:]_block_invoke_2	
+0x1bd5eef38:  (__TEXT,__text) private	-[NIFindingNotifier notifyRemovedNearbyObjectWithToken:]	
+0x1bd5ef318:  (__TEXT,__text) private	___56-[NIFindingNotifier notifyRemovedNearbyObjectWithToken:]_block_invoke	
+0x1bd5ef38c:  (__TEXT,__text) private	___56-[NIFindingNotifier notifyRemovedNearbyObjectWithToken:]_block_invoke_2	
+0x1bd5ef390:  (__TEXT,__text) private	-[NIFindingNotifier notifyUpdatedLocationForLocalDevice:]	
+0x1bd5ef5c0:  (__TEXT,__text) private	___57-[NIFindingNotifier notifyUpdatedLocationForLocalDevice:]_block_invoke	
+0x1bd5ef634:  (__TEXT,__text) private	___57-[NIFindingNotifier notifyUpdatedLocationForLocalDevice:]_block_invoke_2	
+0x1bd5ef638:  (__TEXT,__text) private	-[NIFindingNotifier notifyUpdatedHeadingForLocalDevice:]	
+0x1bd5ef868:  (__TEXT,__text) private	___56-[NIFindingNotifier notifyUpdatedHeadingForLocalDevice:]_block_invoke	
+0x1bd5ef8dc:  (__TEXT,__text) private	___56-[NIFindingNotifier notifyUpdatedHeadingForLocalDevice:]_block_invoke_2	
+0x1bd5ef8e0:  (__TEXT,__text) private	-[NIFindingNotifier notifyUpdatedLocation:forNearbyObjectWithToken:]	
+0x1bd5efb84:  (__TEXT,__text) private	___68-[NIFindingNotifier notifyUpdatedLocation:forNearbyObjectWithToken:]_block_invoke	
+0x1bd5efbf8:  (__TEXT,__text) private	___68-[NIFindingNotifier notifyUpdatedLocation:forNearbyObjectWithToken:]_block_invoke_2	
+0x1bd5efbfc:  (__TEXT,__text) private	-[NIFindingNotifier .cxx_destruct]	
+0x1bd5efc04:  (__TEXT,__text) private	+[NISession(Finding) generateFindingDiscoveryToken]	
+0x1bd5efc7c:  (__TEXT,__text) private	+[NISession(Finding) generateFindingDiscoveryTokenWithSharedSecret:]	
+0x1bd5efcfc:  (__TEXT,__text) private	+[NISession(Finding) generateFindingDiscoveryTokenWithIdentityResolvingKey:]	
+0x1bd5efd34:  (__TEXT,__text) private	+[NISession(Finding) generateDiscoveryTokenFromBeaconIdentifier:]	
+0x1bd5efd6c:  (__TEXT,__text) private	-[NISession(Finding) findingNotifier]	
+0x1bd5efdd0:  (__TEXT,__text) private	-[NISession(Perf) _provideTruthTag:]	
+0x1bd5efe70:  (__TEXT,__text) private	___36-[NISession(Perf) _provideTruthTag:]_block_invoke	
+0x1bd5efedc:  (__TEXT,__text) private	-[NISystemEventNotifier initWithParentSession:]	
+0x1bd5eff54:  (__TEXT,__text) private	-[NISystemEventNotifier notifyPassiveAccessIntent:]	
+0x1bd5f0140:  (__TEXT,__text) private	___51-[NISystemEventNotifier notifyPassiveAccessIntent:]_block_invoke	
+0x1bd5f01b4:  (__TEXT,__text) private	___51-[NISystemEventNotifier notifyPassiveAccessIntent:]_block_invoke_2	
+0x1bd5f01b8:  (__TEXT,__text) private	-[NISystemEventNotifier _notifyResourceUsageLimitExceeded:forSessionConfigurationType:]	
+0x1bd5f03e4:  (__TEXT,__text) private	___87-[NISystemEventNotifier _notifyResourceUsageLimitExceeded:forSessionConfigurationType:]_block_invoke	
+0x1bd5f0458:  (__TEXT,__text) private	___87-[NISystemEventNotifier _notifyResourceUsageLimitExceeded:forSessionConfigurationType:]_block_invoke_2	
+0x1bd5f045c:  (__TEXT,__text) private	-[NISystemEventNotifier .cxx_destruct]	
+0x1bd5f0464:  (__TEXT,__text) private	-[NISession(SystemConfigurator) systemEventNotifier]	
+0x1bd5f07ac:  (__TEXT,__text) private	___NINotifySystemShutdownWithReason_block_invoke	
+0x1bd5f0828:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__119__allocate_at_leastB9nqe210106INS_9allocatorI33UWBSessionInterruptionBookkeepingEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS6_m	
+0x1bd5f0870:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorI33UWBSessionInterruptionBookkeepingNS_9allocatorIS1_EEE18__assign_with_sizeB9nqe210106IPS1_S6_EEvT_T0_l	
+0x1bd5f099c:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorI33UWBSessionInterruptionBookkeepingNS_9allocatorIS1_EEE11__vallocateB9nqe210106Em	
+0x1bd5f09dc:  (__TEXT,__text) private	_OUTLINED_FUNCTION_0	
+0x1bd5f09dc:  (__TEXT,__text) private	_OUTLINED_FUNCTION_0	
+0x1bd5f09f4:  (__TEXT,__text) private	_OUTLINED_FUNCTION_1	
+0x1bd5f0a08:  (__TEXT,__text) private	_OUTLINED_FUNCTION_2	
+0x1bd5f0a08:  (__TEXT,__text) private	_OUTLINED_FUNCTION_2	
+0x1bd5f0a1c:  (__TEXT,__text) private	_OUTLINED_FUNCTION_3	
+0x1bd5f0a1c:  (__TEXT,__text) private	_OUTLINED_FUNCTION_3	
+0x1bd5f0a30:  (__TEXT,__text) private	_OUTLINED_FUNCTION_4	
+0x1bd5f0a3c:  (__TEXT,__text) private	-[BiasEstimatorFeatures initWithBiasEstimatorFeatures:]	
+0x1bd5f0cb8:  (__TEXT,__text) private	-[BiasEstimatorFeatures encodeWithCoder:]	
+0x1bd5f0eb8:  (__TEXT,__text) private	-[BiasEstimatorFeatures initWithCoder:]	
+0x1bd5f12ec:  (__TEXT,__text) private	-[BiasEstimatorFeatures copyWithZone:]	
+0x1bd5f1330:  (__TEXT,__text) private	+[BiasEstimatorFeatures supportsSecureCoding]	
+0x1bd5f1338:  (__TEXT,__text) private	-[BiasEstimatorFeatures isEqual:]	
+0x1bd5f1758:  (__TEXT,__text) private	-[BiasEstimatorFeatures description]	
+0x1bd5f1a60:  (__TEXT,__text) private	-[BiasEstimatorFeatures populateOrderedInputFeature]	
+0x1bd5f1d4c:  (__TEXT,__text) private	-[BiasEstimatorFeatures hash]	
+0x1bd5f2230:  (__TEXT,__text) private	-[BiasEstimatorFeatures antennaMask]	
+0x1bd5f2238:  (__TEXT,__text) private	-[BiasEstimatorFeatures setAntennaMask:]	
+0x1bd5f2240:  (__TEXT,__text) private	-[BiasEstimatorFeatures timestamp]	
+0x1bd5f2248:  (__TEXT,__text) private	-[BiasEstimatorFeatures setTimestamp:]	
+0x1bd5f2250:  (__TEXT,__text) private	-[BiasEstimatorFeatures uwbTime]	
+0x1bd5f2258:  (__TEXT,__text) private	-[BiasEstimatorFeatures setUwbTime:]	
+0x1bd5f2260:  (__TEXT,__text) private	-[BiasEstimatorFeatures tofPicSecond]	
+0x1bd5f2268:  (__TEXT,__text) private	-[BiasEstimatorFeatures setTofPicSecond:]	
+0x1bd5f2270:  (__TEXT,__text) private	-[BiasEstimatorFeatures rssiDbm]	
+0x1bd5f2278:  (__TEXT,__text) private	-[BiasEstimatorFeatures setRssiDbm:]	
+0x1bd5f2280:  (__TEXT,__text) private	-[BiasEstimatorFeatures soiRssiDbm]	
+0x1bd5f2288:  (__TEXT,__text) private	-[BiasEstimatorFeatures setSoiRssiDbm:]	
+0x1bd5f2290:  (__TEXT,__text) private	-[BiasEstimatorFeatures toaNoiseRms]	
+0x1bd5f2298:  (__TEXT,__text) private	-[BiasEstimatorFeatures setToaNoiseRms:]	
+0x1bd5f22a0:  (__TEXT,__text) private	-[BiasEstimatorFeatures toaPpwinRms]	
+0x1bd5f22a8:  (__TEXT,__text) private	-[BiasEstimatorFeatures setToaPpwinRms:]	
+0x1bd5f22b0:  (__TEXT,__text) private	-[BiasEstimatorFeatures toaPpwinPeak]	
+0x1bd5f22b8:  (__TEXT,__text) private	-[BiasEstimatorFeatures setToaPpwinPeak:]	
+0x1bd5f22c0:  (__TEXT,__text) private	-[BiasEstimatorFeatures rttInitiator]	
+0x1bd5f22c8:  (__TEXT,__text) private	-[BiasEstimatorFeatures setRttInitiator:]	
+0x1bd5f22d0:  (__TEXT,__text) private	-[BiasEstimatorFeatures tatInitiator]	
+0x1bd5f22d8:  (__TEXT,__text) private	-[BiasEstimatorFeatures setTatInitiator:]	
+0x1bd5f22e0:  (__TEXT,__text) private	-[BiasEstimatorFeatures rttResponder]	
+0x1bd5f22e8:  (__TEXT,__text) private	-[BiasEstimatorFeatures setRttResponder:]	
+0x1bd5f22f0:  (__TEXT,__text) private	-[BiasEstimatorFeatures tatResponder]	
+0x1bd5f22f8:  (__TEXT,__text) private	-[BiasEstimatorFeatures setTatResponder:]	
+0x1bd5f2300:  (__TEXT,__text) private	-[BiasEstimatorFeatures cirPacket1]	
+0x1bd5f2308:  (__TEXT,__text) private	-[BiasEstimatorFeatures setCirPacket1:]	
+0x1bd5f2310:  (__TEXT,__text) private	-[BiasEstimatorFeatures leadingEdgePacket1]	
+0x1bd5f2318:  (__TEXT,__text) private	-[BiasEstimatorFeatures setLeadingEdgePacket1:]	
+0x1bd5f2320:  (__TEXT,__text) private	-[BiasEstimatorFeatures firstPathIndexPacket1]	
+0x1bd5f2328:  (__TEXT,__text) private	-[BiasEstimatorFeatures setFirstPathIndexPacket1:]	
+0x1bd5f2330:  (__TEXT,__text) private	-[BiasEstimatorFeatures rxAntennaPacket1]	
+0x1bd5f2338:  (__TEXT,__text) private	-[BiasEstimatorFeatures setRxAntennaPacket1:]	
+0x1bd5f2340:  (__TEXT,__text) private	-[BiasEstimatorFeatures cirPacket2]	
+0x1bd5f2348:  (__TEXT,__text) private	-[BiasEstimatorFeatures setCirPacket2:]	
+0x1bd5f2350:  (__TEXT,__text) private	-[BiasEstimatorFeatures leadingEdgePacket2]	
+0x1bd5f2358:  (__TEXT,__text) private	-[BiasEstimatorFeatures setLeadingEdgePacket2:]	
+0x1bd5f2360:  (__TEXT,__text) private	-[BiasEstimatorFeatures firstPathIndexPacket2]	
+0x1bd5f2368:  (__TEXT,__text) private	-[BiasEstimatorFeatures setFirstPathIndexPacket2:]	
+0x1bd5f2370:  (__TEXT,__text) private	-[BiasEstimatorFeatures rxAntennaPacket2]	
+0x1bd5f2378:  (__TEXT,__text) private	-[BiasEstimatorFeatures setRxAntennaPacket2:]	
+0x1bd5f2380:  (__TEXT,__text) private	-[BiasEstimatorFeatures .cxx_destruct]	
+0x1bd5f23c4:  (__TEXT,__text) private	-[BiasEstimatorOutputs initWithOuputProbabilities:rawRange:correctedRange:]	
+0x1bd5f25d4:  (__TEXT,__text) private	-[BiasEstimatorOutputs initWithBiasEstimatorOutputs:]	
+0x1bd5f2710:  (__TEXT,__text) private	-[BiasEstimatorOutputs copyWithZone:]	
+0x1bd5f2754:  (__TEXT,__text) private	-[BiasEstimatorOutputs encodeWithCoder:]	
+0x1bd5f27ec:  (__TEXT,__text) private	-[BiasEstimatorOutputs initWithCoder:]	
+0x1bd5f2908:  (__TEXT,__text) private	-[BiasEstimatorOutputs isEqual:]	
+0x1bd5f2a48:  (__TEXT,__text) private	+[BiasEstimatorOutputs supportsSecureCoding]	
+0x1bd5f2a50:  (__TEXT,__text) private	-[BiasEstimatorOutputs hash]	
+0x1bd5f2afc:  (__TEXT,__text) private	-[BiasEstimatorOutputs description]	
+0x1bd5f2c64:  (__TEXT,__text) private	-[BiasEstimatorOutputs populateOrderedBiasEstimatorOutputs]	
+0x1bd5f2d58:  (__TEXT,__text) private	-[BiasEstimatorOutputs outProbabilities]	
+0x1bd5f2d60:  (__TEXT,__text) private	-[BiasEstimatorOutputs setOutProbabilities:]	
+0x1bd5f2d68:  (__TEXT,__text) private	-[BiasEstimatorOutputs rawRange]	
+0x1bd5f2d70:  (__TEXT,__text) private	-[BiasEstimatorOutputs setRawRange:]	
+0x1bd5f2d78:  (__TEXT,__text) private	-[BiasEstimatorOutputs correctedRange]	
+0x1bd5f2d80:  (__TEXT,__text) private	-[BiasEstimatorOutputs setCorrectedRange:]	
+0x1bd5f2d88:  (__TEXT,__text) private	-[BiasEstimatorOutputs .cxx_destruct]	
+0x1bd5f2d94:  (__TEXT,__text) private	+[UWBSignalFeatures supportsSecureCoding]	
+0x1bd5f2d9c:  (__TEXT,__text) private	-[UWBSignalFeatures initWithUWBSignalFeatures:]	
+0x1bd5f2ec8:  (__TEXT,__text) private	-[UWBSignalFeatures copyWithZone:]	
+0x1bd5f2f0c:  (__TEXT,__text) private	-[UWBSignalFeatures encodeWithCoder:]	
+0x1bd5f2f90:  (__TEXT,__text) private	-[UWBSignalFeatures initWithCoder:]	
+0x1bd5f30ac:  (__TEXT,__text) private	-[UWBSignalFeatures isEqual:]	
+0x1bd5f31d0:  (__TEXT,__text) private	-[UWBSignalFeatures description]	
+0x1bd5f3288:  (__TEXT,__text) private	-[UWBSignalFeatures hash]	
+0x1bd5f32c0:  (__TEXT,__text) private	-[UWBSignalFeatures orderedBiasEstimatorFeatutes]	
+0x1bd5f3378:  (__TEXT,__text) private	-[UWBSignalFeatures inputFeatures]	
+0x1bd5f3380:  (__TEXT,__text) private	-[UWBSignalFeatures setInputFeatures:]	
+0x1bd5f3388:  (__TEXT,__text) private	-[UWBSignalFeatures outputs]	
+0x1bd5f3390:  (__TEXT,__text) private	-[UWBSignalFeatures setOutputs:]	
+0x1bd5f3398:  (__TEXT,__text) private	-[UWBSignalFeatures .cxx_destruct]	
+0x1bd5f33dc:  (__TEXT,__text) private	+[Complex supportsSecureCoding]	
+0x1bd5f33e4:  (__TEXT,__text) private	-[Complex initWithRealPart:imagPart:]	
+0x1bd5f3488:  (__TEXT,__text) private	-[Complex copyWithZone:]	
+0x1bd5f3528:  (__TEXT,__text) private	-[Complex encodeWithCoder:]	
+0x1bd5f35ac:  (__TEXT,__text) private	-[Complex initWithCoder:]	
+0x1bd5f36c4:  (__TEXT,__text) private	-[Complex isEqual:]	
+0x1bd5f37e8:  (__TEXT,__text) private	-[Complex description]	
+0x1bd5f384c:  (__TEXT,__text) private	-[Complex hash]	
+0x1bd5f3884:  (__TEXT,__text) private	-[Complex real]	
+0x1bd5f3890:  (__TEXT,__text) private	-[Complex setReal:]	
+0x1bd5f3898:  (__TEXT,__text) private	-[Complex imag]	
+0x1bd5f38a4:  (__TEXT,__text) private	-[Complex setImag:]	
+0x1bd5f38ac:  (__TEXT,__text) private	-[Complex .cxx_destruct]	
+0x1bd5f38f0:  (__TEXT,__text) private	+[NIDiscoveryToken(Finding_Project) generateFindingTokenWithIRK:]	
+0x1bd5f3b80:  (__TEXT,__text) private	+[NIDiscoveryToken(Finding_Project) generateDiscoveryTokenFromBeaconIdentifier:]	
+0x1bd5f3db8:  (__TEXT,__text) private	+[NIDiscoveryToken(Finding_Project) generateFindingTokenWithServiceID:deviceName:]	
+0x1bd5f4134:  (__TEXT,__text) private	+[NIDiscoveryToken(Finding_Project) generateFindingTokenWithIRK:forExternalUse:]	
+0x1bd5f416c:  (__TEXT,__text) private	-[NIFindingConfiguration initWithRole:discoveryToken:preferredUpdateRate:]	
+0x1bd5f4194:  (__TEXT,__text) private	-[NIFindingConfiguration initWithDiscoveryToken:requestedUpdateRate:requestedMeasaurementQuality:]	
+0x1bd5f41b0:  (__TEXT,__text) private	-[NIFindingConfiguration sessionDiscoveryToken]	
+0x1bd5f41f0:  (__TEXT,__text) private	-[NIFindingConfiguration findingDiscoveryToken]	
+0x1bd5f4230:  (__TEXT,__text) private	-[NIFindingConfiguration _initInternalWithConfigType:isFinder:isObserver:specifiedToken:preferredUpdateRate:requestedMeasurementQuality:]	
+0x1bd5f4384:  (__TEXT,__text) private	+[NIFindingConfiguration supportsSecureCoding]	
+0x1bd5f438c:  (__TEXT,__text) private	-[NIFindingConfiguration copyWithZone:]	
+0x1bd5f450c:  (__TEXT,__text) private	-[NIFindingConfiguration encodeWithCoder:]	
+0x1bd5f46c0:  (__TEXT,__text) private	-[NIFindingConfiguration initWithCoder:]	
+0x1bd5f4b24:  (__TEXT,__text) private	-[NIFindingConfiguration canUpdateToConfiguration:]	
+0x1bd5f4d40:  (__TEXT,__text) private	-[NIFindingConfiguration isEqual:]	
+0x1bd5f4e6c:  (__TEXT,__text) private	-[NIFindingConfiguration hash]	
+0x1bd5f4f60:  (__TEXT,__text) private	-[NIFindingConfiguration description]	
+0x1bd5f501c:  (__TEXT,__text) private	-[NIFindingConfiguration descriptionInternal]	
+0x1bd5f516c:  (__TEXT,__text) private	-[NIFindingConfiguration _internalIsCameraAssistanceEnabled]	
+0x1bd5f517c:  (__TEXT,__text) private	-[NIFindingConfiguration _internalIsCameraAssistanceInClientProcess]	
+0x1bd5f518c:  (__TEXT,__text) private	-[NIFindingConfiguration preferredUpdateRate]	
+0x1bd5f519c:  (__TEXT,__text) private	-[NIFindingConfiguration setPreferredUpdateRate:]	
+0x1bd5f51ac:  (__TEXT,__text) private	-[NIFindingConfiguration preferredDiscoveryPriority]	
+0x1bd5f51bc:  (__TEXT,__text) private	-[NIFindingConfiguration setPreferredDiscoveryPriority:]	
+0x1bd5f51cc:  (__TEXT,__text) private	-[NIFindingConfiguration isCameraAssistanceEnabled]	
+0x1bd5f51dc:  (__TEXT,__text) private	-[NIFindingConfiguration setCameraAssistanceEnabled:]	
+0x1bd5f51ec:  (__TEXT,__text) private	-[NIFindingConfiguration isCameraAssistanceInClientProcess]	
+0x1bd5f51fc:  (__TEXT,__text) private	-[NIFindingConfiguration setCameraAssistanceInClientProcess:]	
+0x1bd5f520c:  (__TEXT,__text) private	-[NIFindingConfiguration monitoredRegions]	
+0x1bd5f521c:  (__TEXT,__text) private	-[NIFindingConfiguration setMonitoredRegions:]	
+0x1bd5f5228:  (__TEXT,__text) private	-[NIFindingConfiguration isFinder]	
+0x1bd5f5238:  (__TEXT,__text) private	-[NIFindingConfiguration setIsFinder:]	
+0x1bd5f5248:  (__TEXT,__text) private	-[NIFindingConfiguration isObserver]	
+0x1bd5f5258:  (__TEXT,__text) private	-[NIFindingConfiguration setIsObserver:]	
+0x1bd5f5268:  (__TEXT,__text) private	-[NIFindingConfiguration configType]	
+0x1bd5f5278:  (__TEXT,__text) private	-[NIFindingConfiguration setConfigType:]	
+0x1bd5f5288:  (__TEXT,__text) private	-[NIFindingConfiguration specifiedToken]	
+0x1bd5f5298:  (__TEXT,__text) private	-[NIFindingConfiguration setSpecifiedToken:]	
+0x1bd5f52a4:  (__TEXT,__text) private	-[NIFindingConfiguration debugParameters]	
+0x1bd5f52b4:  (__TEXT,__text) private	-[NIFindingConfiguration setDebugParameters:]	
+0x1bd5f52c0:  (__TEXT,__text) private	-[NIFindingConfiguration discoveryTokenVariant]	
+0x1bd5f52d0:  (__TEXT,__text) private	-[NIFindingConfiguration setDiscoveryTokenVariant:]	
+0x1bd5f52e0:  (__TEXT,__text) private	-[NIFindingConfiguration requestedMeasurementQuality]	
+0x1bd5f52f0:  (__TEXT,__text) private	-[NIFindingConfiguration setRequestedMeasurementQuality:]	
+0x1bd5f5300:  (__TEXT,__text) private	-[NIFindingConfiguration .cxx_destruct]	
+0x1bd5f5368:  (__TEXT,__text) private	-[NIAcwgConfiguration initWithLockIdentifier:]	
+0x1bd5f547c:  (__TEXT,__text) private	-[NIAcwgConfiguration initWithConfiguration:]	
+0x1bd5f55d8:  (__TEXT,__text) private	-[NIAcwgConfiguration configurationType]	
+0x1bd5f55e8:  (__TEXT,__text) private	-[NIAcwgConfiguration copyWithZone:]	
+0x1bd5f56bc:  (__TEXT,__text) private	+[NIAcwgConfiguration supportsSecureCoding]	
+0x1bd5f56c4:  (__TEXT,__text) private	-[NIAcwgConfiguration encodeWithCoder:]	
+0x1bd5f5790:  (__TEXT,__text) private	-[NIAcwgConfiguration initWithCoder:]	
+0x1bd5f5a28:  (__TEXT,__text) private	-[NIAcwgConfiguration isEqual:]	
+0x1bd5f5bc8:  (__TEXT,__text) private	-[NIAcwgConfiguration hash]	
+0x1bd5f5c2c:  (__TEXT,__text) private	-[NIAcwgConfiguration description]	
+0x1bd5f5ce8:  (__TEXT,__text) private	-[NIAcwgConfiguration descriptionInternal]	
+0x1bd5f5d48:  (__TEXT,__text) private	-[NIAcwgConfiguration lockIdentifier]	
+0x1bd5f5d58:  (__TEXT,__text) private	-[NIAcwgConfiguration setLockIdentifier:]	
+0x1bd5f5d64:  (__TEXT,__text) private	-[NIAcwgConfiguration lockBtConnHandle]	
+0x1bd5f5d74:  (__TEXT,__text) private	-[NIAcwgConfiguration setLockBtConnHandle:]	
+0x1bd5f5d84:  (__TEXT,__text) private	-[NIAcwgConfiguration debugOptions]	
+0x1bd5f5d94:  (__TEXT,__text) private	-[NIAcwgConfiguration setDebugOptions:]	
+0x1bd5f5da0:  (__TEXT,__text) private	-[NIAcwgConfiguration .cxx_destruct]	
+0x1bd5f5df4:  (__TEXT,__text) private	+[NIDiscoveryToken(ItemLocalizer_Project) generateTokenWithUUID:]	
+0x1bd5f5fb8:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration initWithItemUUID:preferredUpdateRate:]	
+0x1bd5f60ac:  (__TEXT,__text) private	+[NIItemLocalizerConfiguration supportsSecureCoding]	
+0x1bd5f60b4:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration copyWithZone:]	
+0x1bd5f6194:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration encodeWithCoder:]	
+0x1bd5f6284:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration initWithCoder:]	
+0x1bd5f65e8:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration canUpdateToConfiguration:]	
+0x1bd5f6760:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration isEqual:]	
+0x1bd5f6864:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration hash]	
+0x1bd5f68f0:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration description]	
+0x1bd5f69ac:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration descriptionInternal]	
+0x1bd5f6ad4:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration _internalIsCameraAssistanceEnabled]	
+0x1bd5f6ae4:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration itemUUID]	
+0x1bd5f6af4:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration setItemUUID:]	
+0x1bd5f6b00:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration discoveryToken]	
+0x1bd5f6b10:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration setDiscoveryToken:]	
+0x1bd5f6b1c:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration preferredUpdateRate]	
+0x1bd5f6b2c:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration setPreferredUpdateRate:]	
+0x1bd5f6b3c:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration isCameraAssistanceEnabled]	
+0x1bd5f6b4c:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration setCameraAssistanceEnabled:]	
+0x1bd5f6b5c:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration debugParameters]	
+0x1bd5f6b6c:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration setDebugParameters:]	
+0x1bd5f6b78:  (__TEXT,__text) private	-[NIItemLocalizerConfiguration .cxx_destruct]	
+0x1bd5f6be0:  (__TEXT,__text) private	-[NIDiscoveryToken initWithBytes:]	
+0x1bd5f6cf4:  (__TEXT,__text) private	+[NIDiscoveryToken _identifyingSequenceFromBytes:]	
+0x1bd5f6efc:  (__TEXT,__text) private	___Block_byref_object_copy_	
+0x1bd5f6f0c:  (__TEXT,__text) private	___Block_byref_object_dispose_	
+0x1bd5f6f14:  (__TEXT,__text) private	___50+[NIDiscoveryToken _identifyingSequenceFromBytes:]_block_invoke	
+0x1bd5f6fbc:  (__TEXT,__text) private	-[NIDiscoveryToken objectInRawTokenOPACKDictForKey:]	
+0x1bd5f70e4:  (__TEXT,__text) private	-[NIDiscoveryToken tokenVariant]	
+0x1bd5f7174:  (__TEXT,__text) private	-[NIDiscoveryToken deviceCapabilities]	
+0x1bd5f7220:  (__TEXT,__text) private	-[NIDiscoveryToken getIRK]	
+0x1bd5f7324:  (__TEXT,__text) private	-[NIDiscoveryToken getSessionIdentifier]	
+0x1bd5f7428:  (__TEXT,__text) private	+[NIDiscoveryToken serialize:]	
+0x1bd5f7574:  (__TEXT,__text) private	___30+[NIDiscoveryToken serialize:]_block_invoke	
+0x1bd5f7678:  (__TEXT,__text) private	+[NIDiscoveryToken deserialize:]	
+0x1bd5f77d4:  (__TEXT,__text) private	-[NIDiscoveryToken rawTokenAsString]	
+0x1bd5f77e0:  (__TEXT,__text) private	-[NIDiscoveryToken initWithDeviceAddress:]	
+0x1bd5f78a0:  (__TEXT,__text) private	-[NIDiscoveryToken shortDeviceAddress]	
+0x1bd5f78d8:  (__TEXT,__text) private	+[NIDiscoveryToken supportsSecureCoding]	
+0x1bd5f78e0:  (__TEXT,__text) private	-[NIDiscoveryToken copyWithZone:]	
+0x1bd5f796c:  (__TEXT,__text) private	-[NIDiscoveryToken initWithCoder:]	
+0x1bd5f7ac0:  (__TEXT,__text) private	-[NIDiscoveryToken isEqual:]	
+0x1bd5f7b48:  (__TEXT,__text) private	-[NIDiscoveryToken hash]	
+0x1bd5f7b50:  (__TEXT,__text) private	-[NIDiscoveryToken rawToken]	
+0x1bd5f7b5c:  (__TEXT,__text) private	-[NIDiscoveryToken .cxx_destruct]	
+0x1bd5f7bac:  (__TEXT,__text) private	-[NIConfiguration initWithConfiguration:]	
+0x1bd5f7cb8:  (__TEXT,__text) private	+[NIConfiguration supportsSecureCoding]	
+0x1bd5f7cc0:  (__TEXT,__text) private	-[NIConfiguration copyWithZone:]	
+0x1bd5f7d04:  (__TEXT,__text) private	-[NIConfiguration encodeWithCoder:]	
+0x1bd5f7d9c:  (__TEXT,__text) private	-[NIConfiguration initWithCoder:]	
+0x1bd5f7fb4:  (__TEXT,__text) private	-[NIConfiguration descriptionInternal]	
+0x1bd5f7fbc:  (__TEXT,__text) private	-[NIConfiguration _internalIsCameraAssistanceEnabled]	
+0x1bd5f7fc4:  (__TEXT,__text) private	-[NIConfiguration _internalIsCameraAssistanceInClientProcess]	
+0x1bd5f7fcc:  (__TEXT,__text) private	-[NIConfiguration _internalIsMemoryAssertionRequired]	
+0x1bd5f7fd4:  (__TEXT,__text) private	-[NIConfiguration _internalIsPowerAssertionRequired]	
+0x1bd5f7fdc:  (__TEXT,__text) private	-[NIConfiguration _internalIsExtendedDistanceMeasurementEnabled]	
+0x1bd5f7fe4:  (__TEXT,__text) private	-[NIConfiguration supportsCameraAssistance]	
+0x1bd5f7ff0:  (__TEXT,__text) private	-[NIConfiguration setSupportsCameraAssistance:]	
+0x1bd5f7ff8:  (__TEXT,__text) private	-[NIConfiguration suspensionPolicy]	
+0x1bd5f8000:  (__TEXT,__text) private	-[NIConfiguration setSuspensionPolicy:]	
+0x1bd5f8008:  (__TEXT,__text) private	-[NINearbyPeerConfiguration initWithPeerToken:]	
+0x1bd5f8118:  (__TEXT,__text) private	+[NINearbyPeerConfiguration supportsSecureCoding]	
+0x1bd5f8120:  (__TEXT,__text) private	-[NINearbyPeerConfiguration copyWithZone:]	
+0x1bd5f8224:  (__TEXT,__text) private	-[NINearbyPeerConfiguration encodeWithCoder:]	
+0x1bd5f8328:  (__TEXT,__text) private	-[NINearbyPeerConfiguration initWithCoder:]	
+0x1bd5f8630:  (__TEXT,__text) private	-[NINearbyPeerConfiguration isEqual:]	
+0x1bd5f8858:  (__TEXT,__text) private	-[NINearbyPeerConfiguration hash]	
+0x1bd5f88d0:  (__TEXT,__text) private	-[NINearbyPeerConfiguration description]	
+0x1bd5f898c:  (__TEXT,__text) private	-[NINearbyPeerConfiguration descriptionInternal]	
+0x1bd5f8b14:  (__TEXT,__text) private	-[NINearbyPeerConfiguration _internalIsCameraAssistanceEnabled]	
+0x1bd5f8b1c:  (__TEXT,__text) private	-[NINearbyPeerConfiguration _internalIsCameraAssistanceInClientProcess]	
+0x1bd5f8b38:  (__TEXT,__text) private	-[NINearbyPeerConfiguration _internalIsPowerAssertionRequired]	
+0x1bd5f8b48:  (__TEXT,__text) private	-[NINearbyPeerConfiguration _internalIsExtendedDistanceMeasurementEnabled]	
+0x1bd5f8b50:  (__TEXT,__text) private	-[NINearbyPeerConfiguration peerDiscoveryToken]	
+0x1bd5f8b58:  (__TEXT,__text) private	-[NINearbyPeerConfiguration setPeerDiscoveryToken:]	
+0x1bd5f8b60:  (__TEXT,__text) private	-[NINearbyPeerConfiguration isCameraAssistanceEnabled]	
+0x1bd5f8b68:  (__TEXT,__text) private	-[NINearbyPeerConfiguration setCameraAssistanceEnabled:]	
+0x1bd5f8b70:  (__TEXT,__text) private	-[NINearbyPeerConfiguration isExtendedDistanceMeasurementEnabled]	
+0x1bd5f8b78:  (__TEXT,__text) private	-[NINearbyPeerConfiguration setExtendedDistanceMeasurementEnabled:]	
+0x1bd5f8b80:  (__TEXT,__text) private	-[NINearbyPeerConfiguration useCase]	
+0x1bd5f8b88:  (__TEXT,__text) private	-[NINearbyPeerConfiguration setUseCase:]	
+0x1bd5f8b90:  (__TEXT,__text) private	-[NINearbyPeerConfiguration useCaseCameraAssistanceInClientProcess]	
+0x1bd5f8b98:  (__TEXT,__text) private	-[NINearbyPeerConfiguration setUseCaseCameraAssistanceInClientProcess:]	
+0x1bd5f8ba0:  (__TEXT,__text) private	-[NINearbyPeerConfiguration isLongRangeEnabled]	
+0x1bd5f8ba8:  (__TEXT,__text) private	-[NINearbyPeerConfiguration setLongRangeEnabled:]	
+0x1bd5f8bb0:  (__TEXT,__text) private	-[NINearbyPeerConfiguration backgroundMode]	
+0x1bd5f8bb8:  (__TEXT,__text) private	-[NINearbyPeerConfiguration setBackgroundMode:]	
+0x1bd5f8bc0:  (__TEXT,__text) private	-[NINearbyPeerConfiguration debugParameters]	
+0x1bd5f8bcc:  (__TEXT,__text) private	-[NINearbyPeerConfiguration setDebugParameters:]	
+0x1bd5f8bd4:  (__TEXT,__text) private	-[NINearbyPeerConfiguration .cxx_destruct]	
+0x1bd5f8c18:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration initWithData:error:]	
+0x1bd5f8fec:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration initWithAccessoryData:bluetoothPeerIdentifier:error:]	
+0x1bd5f914c:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration initWithDataExchangeDisabledAndUsingParameterOverrides:]	
+0x1bd5f93c0:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration dataExchangeDisabledAndUsingParameterOverrides]	
+0x1bd5f9434:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration accessoryConfigData]	
+0x1bd5f946c:  (__TEXT,__text) private	+[NINearbyAccessoryConfiguration supportsSecureCoding]	
+0x1bd5f9474:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration copyWithZone:]	
+0x1bd5f955c:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration encodeWithCoder:]	
+0x1bd5f9638:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration initWithCoder:]	
+0x1bd5f9970:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration isEqual:]	
+0x1bd5f9b7c:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration hash]	
+0x1bd5f9be0:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration description]	
+0x1bd5f9c9c:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration descriptionInternal]	
+0x1bd5f9df8:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration _internalIsCameraAssistanceEnabled]	
+0x1bd5f9e00:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration _internalIsPowerAssertionRequired]	
+0x1bd5f9e10:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration accessoryDiscoveryToken]	
+0x1bd5f9e18:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration isCameraAssistanceEnabled]	
+0x1bd5f9e20:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration setCameraAssistanceEnabled:]	
+0x1bd5f9e28:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration bluetoothDeviceIdentifier]	
+0x1bd5f9e34:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration setBluetoothDeviceIdentifier:]	
+0x1bd5f9e3c:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration debugParameters]	
+0x1bd5f9e48:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration setDebugParameters:]	
+0x1bd5f9e50:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration backgroundMode]	
+0x1bd5f9e58:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration setBackgroundMode:]	
+0x1bd5f9e60:  (__TEXT,__text) private	-[NINearbyAccessoryConfiguration .cxx_destruct]	
+0x1bd5f9ebc:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration initWithDiscoveryToken:wifiRangingParameters:regions:]	
+0x1bd5f9f80:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration copyWithZone:]	
+0x1bd5fa060:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration encodeWithCoder:]	
+0x1bd5fa100:  (__TEXT,__text) private	+[_NIWiFiRangingTestConfiguration supportsSecureCoding]	
+0x1bd5fa108:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration initWithCoder:]	
+0x1bd5fa390:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration isEqual:]	
+0x1bd5fa4dc:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration hash]	
+0x1bd5fa514:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration description]	
+0x1bd5fa5d0:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration descriptionInternal]	
+0x1bd5fa6c0:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration peerDiscoveryToken]	
+0x1bd5fa6c8:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration parameters]	
+0x1bd5fa6d0:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration monitoredRegions]	
+0x1bd5fa6dc:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration setMonitoredRegions:]	
+0x1bd5fa6e4:  (__TEXT,__text) private	-[_NIWiFiRangingTestConfiguration .cxx_destruct]	
+0x1bd5fa734:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorIhNS_9allocatorIhEEE16__init_with_sizeB9nqe210106IPKhS6_EEvT_T0_m	
+0x1bd5fa7a8:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorImNS_9allocatorImEEE16__init_with_sizeB9nqe210106IPKmS6_EEvT_T0_m	
+0x1bd5fa81c:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorImNS_9allocatorImEEE11__vallocateB9nqe210106Em	
+0x1bd5fa85c:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__119__allocate_at_leastB9nqe210106INS_9allocatorImEEEENS_19__allocation_resultINS_16allocator_traitsIT_E7pointerEEERS5_m	
+0x1bd5fa8a4:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) _localDeviceLogger]	
+0x1bd5fa8f8:  (__TEXT,__text) private	___55+[NISession(LocalDeviceInteraction) _localDeviceLogger]_block_invoke	
+0x1bd5fa93c:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) setAsyncLocalDeviceInteractableDiscoveryTokens:completion:]	
+0x1bd5fab78:  (__TEXT,__text) private	___95+[NISession(LocalDeviceInteraction) setAsyncLocalDeviceInteractableDiscoveryTokens:completion:]_block_invoke	
+0x1bd5fac70:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) getAsyncInteractableDiscoveryTokens:]	
+0x1bd5fae18:  (__TEXT,__text) private	___73+[NISession(LocalDeviceInteraction) getAsyncInteractableDiscoveryTokens:]_block_invoke	
+0x1bd5faf4c:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) getAsyncActivelyInteractingDiscoveryTokens:]	
+0x1bd5fb0f4:  (__TEXT,__text) private	___80+[NISession(LocalDeviceInteraction) getAsyncActivelyInteractingDiscoveryTokens:]_block_invoke	
+0x1bd5fb228:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) setLocalDeviceCanInteract:withDiscoveryTokens:]	
+0x1bd5fb65c:  (__TEXT,__text) private	___Block_byref_object_copy_	
+0x1bd5fb66c:  (__TEXT,__text) private	___Block_byref_object_dispose_	
+0x1bd5fb674:  (__TEXT,__text) private	___83+[NISession(LocalDeviceInteraction) setLocalDeviceCanInteract:withDiscoveryTokens:]_block_invoke	
+0x1bd5fb6f4:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) setLocalDeviceDebugParameters:]	
+0x1bd5fbac4:  (__TEXT,__text) private	___67+[NISession(LocalDeviceInteraction) setLocalDeviceDebugParameters:]_block_invoke	
+0x1bd5fbb44:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) setLocalDeviceInteractableDiscoveryTokens:]	
+0x1bd5fbf30:  (__TEXT,__text) private	___79+[NISession(LocalDeviceInteraction) setLocalDeviceInteractableDiscoveryTokens:]_block_invoke	
+0x1bd5fbfb0:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) interactableDiscoveryTokens]	
+0x1bd5fc3d8:  (__TEXT,__text) private	___64+[NISession(LocalDeviceInteraction) interactableDiscoveryTokens]_block_invoke	
+0x1bd5fc484:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) activelyInteractingDiscoveryTokens]	
+0x1bd5fc8ac:  (__TEXT,__text) private	___71+[NISession(LocalDeviceInteraction) activelyInteractingDiscoveryTokens]_block_invoke	
+0x1bd5fc958:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) localDevicePrintableState]	
+0x1bd5fcd54:  (__TEXT,__text) private	___62+[NISession(LocalDeviceInteraction) localDevicePrintableState]_block_invoke	
+0x1bd5fce00:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration initWithInnerBoundary:outerBoundary:error:]	
+0x1bd5fcff8:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration initWithInnerBoundary:outerBoundary:monitoringOption:allowedDevices:error:]	
+0x1bd5fd0a8:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration initWithDiscoveryToken:regions:preferredUpdateRate:error:]	
+0x1bd5fd2e8:  (__TEXT,__text) private	+[NIDevicePresenceConfiguration supportsSecureCoding]	
+0x1bd5fd2f0:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration copyWithZone:]	
+0x1bd5fd410:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration encodeWithCoder:]	
+0x1bd5fd538:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration initWithCoder:]	
+0x1bd5fd754:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration isEqual:]	
+0x1bd5fd9ac:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration hash]	
+0x1bd5fda54:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration description]	
+0x1bd5fdb10:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration descriptionInternal]	
+0x1bd5fdbdc:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration _internalIsCameraAssistanceEnabled]	
+0x1bd5fdbec:  (__TEXT,__text) private	+[NIDevicePresenceConfiguration _validateRegionPredicates:outer:]	
+0x1bd5fdcb0:  (__TEXT,__text) private	+[NIDevicePresenceConfiguration _validateRegionIsPreset:]	
+0x1bd5fdcd4:  (__TEXT,__text) private	+[NIDevicePresenceConfiguration _radiusFromDevicePresencePreset:]	
+0x1bd5fdcfc:  (__TEXT,__text) private	+[NIDevicePresenceConfiguration _NIDevicePresenceMonitoringOptionToString:]	
+0x1bd5fdd24:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration monitoringOption]	
+0x1bd5fdd34:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration setMonitoringOption:]	
+0x1bd5fdd44:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration allowedDevices]	
+0x1bd5fdd54:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration setAllowedDevices:]	
+0x1bd5fdd64:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration innerBoundary]	
+0x1bd5fdd74:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration outerBoundary]	
+0x1bd5fdd84:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration monitoredRegions]	
+0x1bd5fdd94:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration token]	
+0x1bd5fdda4:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration isCameraAssistanceEnabled]	
+0x1bd5fddb4:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration setCameraAssistanceEnabled:]	
+0x1bd5fddc4:  (__TEXT,__text) private	-[NIDevicePresenceConfiguration .cxx_destruct]	
+0x1bd5fde40:  (__TEXT,__text) private	-[NINearbyObject initWithToken:]	
+0x1bd5fe078:  (__TEXT,__text) private	-[NINearbyObject initWithNearbyObject:]	
+0x1bd5fe488:  (__TEXT,__text) private	+[NINearbyObject supportsSecureCoding]	
+0x1bd5fe490:  (__TEXT,__text) private	-[NINearbyObject copyWithZone:]	
+0x1bd5fe4d4:  (__TEXT,__text) private	-[NINearbyObject encodeWithCoder:]	
+0x1bd5fe850:  (__TEXT,__text) private	-[NINearbyObject initWithCoder:]	
+0x1bd5fefc0:  (__TEXT,__text) private	-[NINearbyObject isEqual:]	
+0x1bd5ff88c:  (__TEXT,__text) private	-[NINearbyObject hash]	
+0x1bd600158:  (__TEXT,__text) private	__ZL25extractHashFromSimdFloat3Dv3_f	
+0x1bd600234:  (__TEXT,__text) private	-[NINearbyObject description]	
+0x1bd60046c:  (__TEXT,__text) private	-[NINearbyObject descriptionInternal]	
+0x1bd600b20:  (__TEXT,__text) private	-[NINearbyObject deviceIdentifer]	
+0x1bd600b58:  (__TEXT,__text) private	+[NINearbyObject fauxObjectWithDiscoveryToken:name:deviceIdentifier:]	
+0x1bd600c0c:  (__TEXT,__text) private	-[NINearbyObject overrideDistance:]	
+0x1bd600c14:  (__TEXT,__text) private	-[NINearbyObject overrideDirection:]	
+0x1bd600c1c:  (__TEXT,__text) private	-[NINearbyObject overrideRelationship:]	
+0x1bd600c24:  (__TEXT,__text) private	-[NINearbyObject overrideDistanceMeasurementQuality:]	
+0x1bd600c2c:  (__TEXT,__text) private	-[NINearbyObject overrideMotionState:]	
+0x1bd600c34:  (__TEXT,__text) private	-[NINearbyObject overrideTimestamp:]	
+0x1bd600c40:  (__TEXT,__text) private	-[NINearbyObject overrideSpatialScore:]	
+0x1bd600c80:  (__TEXT,__text) private	-[NINearbyObject discoveryToken]	
+0x1bd600c88:  (__TEXT,__text) private	-[NINearbyObject setDiscoveryToken:]	
+0x1bd600c90:  (__TEXT,__text) private	-[NINearbyObject distance]	
+0x1bd600c98:  (__TEXT,__text) private	-[NINearbyObject setDistance:]	
+0x1bd600ca0:  (__TEXT,__text) private	-[NINearbyObject direction]	
+0x1bd600ca8:  (__TEXT,__text) private	-[NINearbyObject setDirection:]	
+0x1bd600cb0:  (__TEXT,__text) private	-[NINearbyObject verticalDirectionEstimate]	
+0x1bd600cb8:  (__TEXT,__text) private	-[NINearbyObject setVerticalDirectionEstimate:]	
+0x1bd600cc0:  (__TEXT,__text) private	-[NINearbyObject horizontalAngle]	
+0x1bd600cc8:  (__TEXT,__text) private	-[NINearbyObject setHorizontalAngle:]	
+0x1bd600cd0:  (__TEXT,__text) private	-[NINearbyObject quaternion]	
+0x1bd600cd8:  (__TEXT,__text) private	-[NINearbyObject setQuaternion:]	
+0x1bd600ce0:  (__TEXT,__text) private	-[NINearbyObject azimuth]	
+0x1bd600ce8:  (__TEXT,__text) private	-[NINearbyObject setAzimuth:]	
+0x1bd600cf0:  (__TEXT,__text) private	-[NINearbyObject elevation]	
+0x1bd600cf8:  (__TEXT,__text) private	-[NINearbyObject setElevation:]	
+0x1bd600d00:  (__TEXT,__text) private	-[NINearbyObject relationship]	
+0x1bd600d08:  (__TEXT,__text) private	-[NINearbyObject setRelationship:]	
+0x1bd600d10:  (__TEXT,__text) private	-[NINearbyObject deviceIdentifier]	
+0x1bd600d18:  (__TEXT,__text) private	-[NINearbyObject setDeviceIdentifier:]	
+0x1bd600d20:  (__TEXT,__text) private	-[NINearbyObject timestamp]	
+0x1bd600d28:  (__TEXT,__text) private	-[NINearbyObject setTimestamp:]	
+0x1bd600d30:  (__TEXT,__text) private	-[NINearbyObject distanceMeasurementQuality]	
+0x1bd600d38:  (__TEXT,__text) private	-[NINearbyObject setDistanceMeasurementQuality:]	
+0x1bd600d40:  (__TEXT,__text) private	-[NINearbyObject motionState]	
+0x1bd600d48:  (__TEXT,__text) private	-[NINearbyObject setMotionState:]	
+0x1bd600d50:  (__TEXT,__text) private	-[NINearbyObject name]	
+0x1bd600d58:  (__TEXT,__text) private	-[NINearbyObject setName:]	
+0x1bd600d60:  (__TEXT,__text) private	-[NINearbyObject spatialScore]	
+0x1bd600d68:  (__TEXT,__text) private	-[NINearbyObject setSpatialScore:]	
+0x1bd600d70:  (__TEXT,__text) private	-[NINearbyObject bluetoothAdvertisingAddress]	
+0x1bd600d78:  (__TEXT,__text) private	-[NINearbyObject setBluetoothAdvertisingAddress:]	
+0x1bd600d80:  (__TEXT,__text) private	-[NINearbyObject bluetoothPeerIdentifier]	
+0x1bd600d88:  (__TEXT,__text) private	-[NINearbyObject setBluetoothPeerIdentifier:]	
+0x1bd600d90:  (__TEXT,__text) private	-[NINearbyObject horizontalAngleAccuracy]	
+0x1bd600d98:  (__TEXT,__text) private	-[NINearbyObject setHorizontalAngleAccuracy:]	
+0x1bd600da0:  (__TEXT,__text) private	-[NINearbyObject signalStrength]	
+0x1bd600da8:  (__TEXT,__text) private	-[NINearbyObject setSignalStrength:]	
+0x1bd600db0:  (__TEXT,__text) private	-[NINearbyObject rangeBiasEstimate]	
+0x1bd600db8:  (__TEXT,__text) private	-[NINearbyObject setRangeBiasEstimate:]	
+0x1bd600dc0:  (__TEXT,__text) private	-[NINearbyObject rangeUncertainty]	
+0x1bd600dc8:  (__TEXT,__text) private	-[NINearbyObject setRangeUncertainty:]	
+0x1bd600dd0:  (__TEXT,__text) private	-[NINearbyObject remoteTxAntennaMask]	
+0x1bd600dd8:  (__TEXT,__text) private	-[NINearbyObject setRemoteTxAntennaMask:]	
+0x1bd600de0:  (__TEXT,__text) private	-[NINearbyObject worldPosition]	
+0x1bd600de8:  (__TEXT,__text) private	-[NINearbyObject setWorldPosition:]	
+0x1bd600df0:  (__TEXT,__text) private	-[NINearbyObject requiresBiasCorrection]	
+0x1bd600df8:  (__TEXT,__text) private	-[NINearbyObject setRequiresBiasCorrection:]	
+0x1bd600e00:  (__TEXT,__text) private	-[NINearbyObject uwbSignalFeatures]	
+0x1bd600e08:  (__TEXT,__text) private	-[NINearbyObject setUwbSignalFeatures:]	
+0x1bd600e10:  (__TEXT,__text) private	-[NINearbyObject nbRxStatus]	
+0x1bd600e18:  (__TEXT,__text) private	-[NINearbyObject setNbRxStatus:]	
+0x1bd600e20:  (__TEXT,__text) private	-[NINearbyObject mmsRxStatus]	
+0x1bd600e28:  (__TEXT,__text) private	-[NINearbyObject setMmsRxStatus:]	
+0x1bd600e30:  (__TEXT,__text) private	-[NINearbyObject nbRssi]	
+0x1bd600e38:  (__TEXT,__text) private	-[NINearbyObject setNbRssi:]	
+0x1bd600e40:  (__TEXT,__text) private	-[NINearbyObject canInteract]	
+0x1bd600e48:  (__TEXT,__text) private	-[NINearbyObject setCanInteract:]	
+0x1bd600e50:  (__TEXT,__text) private	-[NINearbyObject boundedRegionRange]	
+0x1bd600e58:  (__TEXT,__text) private	-[NINearbyObject setBoundedRegionRange:]	
+0x1bd600e60:  (__TEXT,__text) private	-[NINearbyObject algorithmSource]	
+0x1bd600e68:  (__TEXT,__text) private	-[NINearbyObject setAlgorithmSource:]	
+0x1bd600e70:  (__TEXT,__text) private	-[NINearbyObject debugDisplayInfo]	
+0x1bd600e78:  (__TEXT,__text) private	-[NINearbyObject setDebugDisplayInfo:]	
+0x1bd600e80:  (__TEXT,__text) private	-[NINearbyObject horizontalDistance]	
+0x1bd600e88:  (__TEXT,__text) private	-[NINearbyObject setHorizontalDistance:]	
+0x1bd600e90:  (__TEXT,__text) private	-[NINearbyObject itemState]	
+0x1bd600e98:  (__TEXT,__text) private	-[NINearbyObject setItemState:]	
+0x1bd600ea0:  (__TEXT,__text) private	-[NINearbyObject location]	
+0x1bd600ea8:  (__TEXT,__text) private	-[NINearbyObject setLocation:]	
+0x1bd600eb0:  (__TEXT,__text) private	-[NINearbyObject rawRange]	
+0x1bd600eb8:  (__TEXT,__text) private	-[NINearbyObject setRawRange:]	
+0x1bd600ec0:  (__TEXT,__text) private	-[NINearbyObject vioTrackingState]	
+0x1bd600ec8:  (__TEXT,__text) private	-[NINearbyObject setVioTrackingState:]	
+0x1bd600ed0:  (__TEXT,__text) private	-[NINearbyObject vioMajorRelocalization]	
+0x1bd600ed8:  (__TEXT,__text) private	-[NINearbyObject setVioMajorRelocalization:]	
+0x1bd600ee0:  (__TEXT,__text) private	-[NINearbyObject resetARSession]	
+0x1bd600ee8:  (__TEXT,__text) private	-[NINearbyObject setResetARSession:]	
+0x1bd600ef0:  (__TEXT,__text) private	-[NINearbyObject revokeFindingExperience]	
+0x1bd600ef8:  (__TEXT,__text) private	-[NINearbyObject setRevokeFindingExperience:]	
+0x1bd600f00:  (__TEXT,__text) private	-[NINearbyObject .cxx_destruct]	
+0x1bd600f98:  (__TEXT,__text) private	-[NSCoder(NearbyInteraction) encodeVector3:forKey:]	
+0x1bd601028:  (__TEXT,__text) private	-[NSCoder(NearbyInteraction) decodeVector3ForKey:]	
+0x1bd601170:  (__TEXT,__text) private	-[NSCoder(NearbyInteraction) encodeQuat:forKey:]	
+0x1bd601200:  (__TEXT,__text) private	-[NSCoder(NearbyInteraction) decodeQuatForKey:]	
+0x1bd60133c:  (__TEXT,__text) private	-[NIVisionInput initWithTimestamp:devicePose:trackingState:lightEstimate:majorRelocalization:minorRelocalization:]	
+0x1bd6013e0:  (__TEXT,__text) private	-[NIVisionInput overrideTimestamp:]	
+0x1bd6013e8:  (__TEXT,__text) private	+[NIVisionInput supportsSecureCoding]	
+0x1bd6013f0:  (__TEXT,__text) private	-[NIVisionInput copyWithZone:]	
+0x1bd60144c:  (__TEXT,__text) private	-[NIVisionInput encodeWithCoder:]	
+0x1bd601524:  (__TEXT,__text) private	-[NIVisionInput initWithCoder:]	
+0x1bd601640:  (__TEXT,__text) private	-[NIVisionInput isEqual:]	
+0x1bd6017e0:  (__TEXT,__text) private	-[NIVisionInput hash]	
+0x1bd601974:  (__TEXT,__text) private	-[NIVisionInput timestamp]	
+0x1bd60197c:  (__TEXT,__text) private	-[NIVisionInput devicePose]	
+0x1bd6019bc:  (__TEXT,__text) private	-[NIVisionInput trackingState]	
+0x1bd6019c4:  (__TEXT,__text) private	-[NIVisionInput lightEstimate]	
+0x1bd6019cc:  (__TEXT,__text) private	-[NIVisionInput majorRelocalization]	
+0x1bd6019d8:  (__TEXT,__text) private	-[NIVisionInput minorRelocalization]	
+0x1bd6019e4:  (__TEXT,__text) private	-[NSCoder(NearbyInteraction) encodeMatrix4x4:forKey:]	
+0x1bd601a78:  (__TEXT,__text) private	-[NSCoder(NearbyInteraction) decodeMatrix4x4ForKey:]	
+0x1bd601bec:  (__TEXT,__text) private	-[NIDLTDOAConfiguration initWithNetworkIdentifier:]	
+0x1bd601c50:  (__TEXT,__text) private	-[NIDLTDOAConfiguration initWithConfigParametersOverride:]	
+0x1bd601d94:  (__TEXT,__text) private	-[NIDLTDOAConfiguration setNetworkIdentifier:]	
+0x1bd601df4:  (__TEXT,__text) private	-[NIDLTDOAConfiguration networkIdentifier]	
+0x1bd601e3c:  (__TEXT,__text) private	-[NIDLTDOAConfiguration setCameraAssistanceEnabled:]	
+0x1bd601e9c:  (__TEXT,__text) private	-[NIDLTDOAConfiguration isCameraAssistanceEnabled]	
+0x1bd601ee4:  (__TEXT,__text) private	-[NIDLTDOAConfiguration copyWithZone:]	
+0x1bd601fbc:  (__TEXT,__text) private	+[NIDLTDOAConfiguration supportsSecureCoding]	
+0x1bd601fc4:  (__TEXT,__text) private	-[NIDLTDOAConfiguration encodeWithCoder:]	
+0x1bd60207c:  (__TEXT,__text) private	-[NIDLTDOAConfiguration initWithCoder:]	
+0x1bd60218c:  (__TEXT,__text) private	-[NIDLTDOAConfiguration isEqual:]	
+0x1bd6022e8:  (__TEXT,__text) private	-[NIDLTDOAConfiguration _internalIsCameraAssistanceEnabled]	
+0x1bd6022f8:  (__TEXT,__text) private	-[NIDLTDOAConfiguration hash]	
+0x1bd602388:  (__TEXT,__text) private	-[NIDLTDOAConfiguration description]	
+0x1bd602444:  (__TEXT,__text) private	-[NIDLTDOAConfiguration descriptionInternal]	
+0x1bd6024d8:  (__TEXT,__text) private	-[NIDLTDOAConfiguration debugParameters]	
+0x1bd6024e8:  (__TEXT,__text) private	-[NIDLTDOAConfiguration setDebugParameters:]	
+0x1bd6024f4:  (__TEXT,__text) private	-[NIDLTDOAConfiguration .cxx_destruct]	
+0x1bd602508:  (__TEXT,__text) private	-[NIBluetoothSample initWithBluetoothSample:]	
+0x1bd6026b4:  (__TEXT,__text) private	+[NIBluetoothSample supportsSecureCoding]	
+0x1bd6026bc:  (__TEXT,__text) private	-[NIBluetoothSample copyWithZone:]	
+0x1bd602700:  (__TEXT,__text) private	-[NIBluetoothSample initWithCoder:]	
+0x1bd602a28:  (__TEXT,__text) private	-[NIBluetoothSample isEqual:]	
+0x1bd602d50:  (__TEXT,__text) private	-[NIBluetoothSample hash]	
+0x1bd602e94:  (__TEXT,__text) private	-[NIBluetoothSample description]	
+0x1bd602ff0:  (__TEXT,__text) private	-[NIBluetoothSample descriptionInternal]	
+0x1bd603078:  (__TEXT,__text) private	-[NIBluetoothSample rssi]	
+0x1bd603080:  (__TEXT,__text) private	-[NIBluetoothSample identifier]	
+0x1bd60308c:  (__TEXT,__text) private	-[NIBluetoothSample model]	
+0x1bd603098:  (__TEXT,__text) private	-[NIBluetoothSample channel]	
+0x1bd6030a0:  (__TEXT,__text) private	-[NIBluetoothSample machContinuousTimeSeconds]	
+0x1bd6030a8:  (__TEXT,__text) private	-[NIBluetoothSample partIdentifier]	
+0x1bd6030b4:  (__TEXT,__text) private	-[NIBluetoothSample name]	
+0x1bd6030bc:  (__TEXT,__text) private	-[NIBluetoothSample setName:]	
+0x1bd6030c4:  (__TEXT,__text) private	-[NIBluetoothSample presenceConfigData]	
+0x1bd6030cc:  (__TEXT,__text) private	-[NIBluetoothSample setPresenceConfigData:]	
+0x1bd6030d4:  (__TEXT,__text) private	-[NIBluetoothSample devicePlacement]	
+0x1bd6030dc:  (__TEXT,__text) private	-[NIBluetoothSample setDevicePlacement:]	
+0x1bd6030e4:  (__TEXT,__text) private	-[NIServerConnection initWithSessionID:queue:exportedObject:options:]	
+0x1bd603340:  (__TEXT,__text) private	-[NIServerConnection dealloc]	
+0x1bd603388:  (__TEXT,__text) private	___39-[NIServerConnection remoteObjectProxy]_block_invoke	
+0x1bd6033ec:  (__TEXT,__text) private	-[NIServerConnection synchronousRemoteObjectProxy]	
+0x1bd603478:  (__TEXT,__text) private	___50-[NIServerConnection synchronousRemoteObjectProxy]_block_invoke	
+0x1bd6034dc:  (__TEXT,__text) private	-[NIServerConnection interruptionHandler]	
+0x1bd6034e4:  (__TEXT,__text) private	-[NIServerConnection invalidationHandler]	
+0x1bd6034ec:  (__TEXT,__text) private	-[NIServerConnection setInterruptionHandler:]	
+0x1bd6034f4:  (__TEXT,__text) private	-[NIServerConnection setInvalidationHandler:]	
+0x1bd6034fc:  (__TEXT,__text) private	-[NIServerConnection resume]	
+0x1bd603504:  (__TEXT,__text) private	-[NIServerConnection invalidate]	
+0x1bd603544:  (__TEXT,__text) private	-[NIServerConnection auditTokenForConnection]	
+0x1bd60355c:  (__TEXT,__text) private	+[NIServerConnection createOneShotConnectionAndResume:]	
+0x1bd603624:  (__TEXT,__text) private	+[NIServerConnection _internalBuildShouldDenyConnection]	
+0x1bd603788:  (__TEXT,__text) private	-[NIServerConnection sessionID]	
+0x1bd603794:  (__TEXT,__text) private	-[NIServerConnection exportedObject]	
+0x1bd6037a0:  (__TEXT,__text) private	-[NIServerConnection setExportedObject:]	
+0x1bd6037a8:  (__TEXT,__text) private	-[NIServerConnection .cxx_destruct]	
+0x1bd603810:  (__TEXT,__text) private	-[NIExportedObjectForwarder initWithExportedObject:]	
+0x1bd6038ac:  (__TEXT,__text) private	-[NIExportedObjectForwarder forwardingTargetForSelector:]	
+0x1bd6038b0:  (__TEXT,__text) private	-[NIExportedObjectForwarder forwardInvocation:]	
+0x1bd6038b4:  (__TEXT,__text) private	-[NIExportedObjectForwarder methodSignatureForSelector:]	
+0x1bd6038ec:  (__TEXT,__text) private	-[NIExportedObjectForwarder exportedObject]	
+0x1bd603918:  (__TEXT,__text) private	-[NIExportedObjectForwarder setExportedObject:]	
+0x1bd603924:  (__TEXT,__text) private	-[NIExportedObjectForwarder exportedObjectClass]	
+0x1bd60392c:  (__TEXT,__text) private	-[NIExportedObjectForwarder setExportedObjectClass:]	
+0x1bd60396c:  (__TEXT,__text) private	-[NIExportedObjectForwarder .cxx_destruct]	
+0x1bd6039ac:  (__TEXT,__text) private	_OUTLINED_FUNCTION_0	
+0x1bd6039cc:  (__TEXT,__text) private	_OUTLINED_FUNCTION_4	
+0x1bd6039e0:  (__TEXT,__text) private	+[NIHomeDeviceConfiguration new]	
+0x1bd6039ec:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration initWithAllowedDevices:sessionKey:asAnchor:regions:]	
+0x1bd603ab0:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration monitoredRegions]	
+0x1bd603b00:  (__TEXT,__text) private	+[NIHomeDeviceConfiguration supportsSecureCoding]	
+0x1bd603b08:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration copyWithZone:]	
+0x1bd603c24:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration encodeWithCoder:]	
+0x1bd603d30:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration initWithCoder:]	
+0x1bd604038:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration canUpdateToConfiguration:]	
+0x1bd604268:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration isEqual:]	
+0x1bd604324:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration hash]	
+0x1bd6043b0:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration allowedDevices]	
+0x1bd6043c0:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration sessionKey]	
+0x1bd6043d0:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration setSessionKey:]	
+0x1bd6043dc:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration isAnchor]	
+0x1bd6043f0:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration minimumPreferredUpdatedRate]	
+0x1bd604400:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration setMinimumPreferredUpdatedRate:]	
+0x1bd604410:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration antennaDiversityOverride]	
+0x1bd604420:  (__TEXT,__text) private	-[NIHomeDeviceConfiguration setAntennaDiversityOverride:]	
+0x1bd604430:  (__TEXT,__text) private	-[NICarKeyConfiguration initWithVehicleIdentifier:]	
+0x1bd604544:  (__TEXT,__text) private	-[NICarKeyConfiguration initVehicleSimConfiguration:]	
+0x1bd604674:  (__TEXT,__text) private	-[NICarKeyConfiguration initLabTestModeConfiguration:]	
+0x1bd6047a4:  (__TEXT,__text) private	+[NICarKeyConfiguration _vehicleSimConfigurationWithOptions:]	
+0x1bd604808:  (__TEXT,__text) private	+[NICarKeyConfiguration _labTestModeConfigurationWithOptions:]	
+0x1bd60486c:  (__TEXT,__text) private	-[NICarKeyConfiguration initWithConfiguration:]	
+0x1bd6049c8:  (__TEXT,__text) private	-[NICarKeyConfiguration configurationType]	
+0x1bd6049d8:  (__TEXT,__text) private	+[NICarKeyConfiguration supportsSecureCoding]	
+0x1bd6049e0:  (__TEXT,__text) private	-[NICarKeyConfiguration copyWithZone:]	
+0x1bd604ab4:  (__TEXT,__text) private	-[NICarKeyConfiguration encodeWithCoder:]	
+0x1bd604b80:  (__TEXT,__text) private	-[NICarKeyConfiguration initWithCoder:]	
+0x1bd604e48:  (__TEXT,__text) private	-[NICarKeyConfiguration canUpdateToConfiguration:]	
+0x1bd604f70:  (__TEXT,__text) private	-[NICarKeyConfiguration isEqual:]	
+0x1bd60502c:  (__TEXT,__text) private	-[NICarKeyConfiguration hash]	
+0x1bd605090:  (__TEXT,__text) private	-[NICarKeyConfiguration description]	
+0x1bd60514c:  (__TEXT,__text) private	-[NICarKeyConfiguration descriptionInternal]	
+0x1bd6051ac:  (__TEXT,__text) private	-[NICarKeyConfiguration vehicleIdentifier]	
+0x1bd6051bc:  (__TEXT,__text) private	-[NICarKeyConfiguration setVehicleIdentifier:]	
+0x1bd6051c8:  (__TEXT,__text) private	-[NICarKeyConfiguration protocolVersion]	
+0x1bd6051d8:  (__TEXT,__text) private	-[NICarKeyConfiguration setProtocolVersion:]	
+0x1bd6051e8:  (__TEXT,__text) private	-[NICarKeyConfiguration debugOptions]	
+0x1bd6051f8:  (__TEXT,__text) private	-[NICarKeyConfiguration setDebugOptions:]	
+0x1bd605204:  (__TEXT,__text) private	-[NICarKeyConfiguration .cxx_destruct]	
+0x1bd605258:  (__TEXT,__text) non-external (was a private external)	_NIErrorWithCodeAndUserInfo	
+0x1bd6053d4:  (__TEXT,__text) non-external (was a private external)	_NIInternalErrorWithCodeAndUserInfo	
+0x1bd605828:  (__TEXT,__text) private	-[NIDeviceCapabilities initWithFineRangingSupport:aoaSupport:extendedDistanceMeasurementSupport:syntheticApertureSupport:dltdoaSupport:]	
+0x1bd605840:  (__TEXT,__text) private	-[NIDeviceCapabilities initWithFineRangingSupport:coarseRangingSupport:aoaSupport:extendedDistanceMeasurementSupport:syntheticApertureSupport:dltdoaSupport:]	
+0x1bd6058c4:  (__TEXT,__text) private	-[NIDeviceCapabilities initWithBitmap:]	
+0x1bd6058e4:  (__TEXT,__text) private	-[NIDeviceCapabilities toBitmap]	
+0x1bd605920:  (__TEXT,__text) private	-[NIDeviceCapabilities supportsPreciseDistanceMeasurement]	
+0x1bd605928:  (__TEXT,__text) private	-[NIDeviceCapabilities supportsDirectionMeasurement]	
+0x1bd605930:  (__TEXT,__text) private	-[NIDeviceCapabilities supportsCameraAssistance]	
+0x1bd605938:  (__TEXT,__text) private	-[NIDeviceCapabilities supportsCoarseDistanceMeasurement]	
+0x1bd605940:  (__TEXT,__text) private	-[NIDeviceCapabilities supportsExtendedDistanceMeasurement]	
+0x1bd605948:  (__TEXT,__text) private	-[NIDeviceCapabilities supportsDLTDOAMeasurement]	
+0x1bd605950:  (__TEXT,__text) private	-[NSCoder(NearbyInteraction) encodeDoubleVector3:forKey:]	
+0x1bd6059e4:  (__TEXT,__text) private	-[NSCoder(NearbyInteraction) decodeDoubleVector3ForKey:]	
+0x1bd605b38:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate initWithDLTDOACoordinatesType:coordinates:]	
+0x1bd605b94:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate description]	
+0x1bd605ca8:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate copyWithZone:]	
+0x1bd605cf4:  (__TEXT,__text) private	+[NIDLTDOACoordinatesUpdate supportsSecureCoding]	
+0x1bd605cfc:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate encodeWithCoder:]	
+0x1bd605d70:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate initWithCoder:]	
+0x1bd605e0c:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate isEqual:]	
+0x1bd605f18:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate hash]	
+0x1bd606020:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate coordinatesType]	
+0x1bd606028:  (__TEXT,__text) private	-[NIDLTDOACoordinatesUpdate coordinates]	
+0x1bd60603c:  (__TEXT,__text) private	-[NIDLTDOAMeasurement initWithAnchorAddress:measurementType:coordinatesType:transmitTime:receiveTime:signalStrength:carrierFrequencyOffset:coordinates:]	
+0x1bd6060d4:  (__TEXT,__text) private	-[NIDLTDOAMeasurement setAddress:]	
+0x1bd60612c:  (__TEXT,__text) private	-[NIDLTDOAMeasurement address]	
+0x1bd60616c:  (__TEXT,__text) private	-[NIDLTDOAMeasurement setMeasurementType:]	
+0x1bd6061c4:  (__TEXT,__text) private	-[NIDLTDOAMeasurement measurementType]	
+0x1bd606204:  (__TEXT,__text) private	-[NIDLTDOAMeasurement setCoordinatesType:]	
+0x1bd60625c:  (__TEXT,__text) private	-[NIDLTDOAMeasurement coordinatesType]	
+0x1bd60629c:  (__TEXT,__text) private	-[NIDLTDOAMeasurement setTransmitTime:]	
+0x1bd6062f4:  (__TEXT,__text) private	-[NIDLTDOAMeasurement transmitTime]	
+0x1bd60633c:  (__TEXT,__text) private	-[NIDLTDOAMeasurement setReceiveTime:]	
+0x1bd606394:  (__TEXT,__text) private	-[NIDLTDOAMeasurement receiveTime]	
+0x1bd6063dc:  (__TEXT,__text) private	-[NIDLTDOAMeasurement setSignalStrength:]	
+0x1bd606434:  (__TEXT,__text) private	-[NIDLTDOAMeasurement signalStrength]	
+0x1bd60647c:  (__TEXT,__text) private	-[NIDLTDOAMeasurement setCarrierFrequencyOffset:]	
+0x1bd6064d4:  (__TEXT,__text) private	-[NIDLTDOAMeasurement carrierFrequencyOffset]	
+0x1bd60651c:  (__TEXT,__text) private	-[NIDLTDOAMeasurement setCoordinates:]	
+0x1bd606578:  (__TEXT,__text) private	-[NIDLTDOAMeasurement coordinates]	
+0x1bd6065cc:  (__TEXT,__text) private	-[NIDLTDOAMeasurement description]	
+0x1bd606778:  (__TEXT,__text) private	-[NIDLTDOAMeasurement copyWithZone:]	
+0x1bd6067d0:  (__TEXT,__text) private	+[NIDLTDOAMeasurement supportsSecureCoding]	
+0x1bd6067d8:  (__TEXT,__text) private	-[NIDLTDOAMeasurement encodeWithCoder:]	
+0x1bd6068c4:  (__TEXT,__text) private	-[NIDLTDOAMeasurement initWithCoder:]	
+0x1bd6069dc:  (__TEXT,__text) private	-[NIDLTDOAMeasurement isEqual:]	
+0x1bd606bc0:  (__TEXT,__text) private	-[NIDLTDOAMeasurement hash]	
+0x1bd606e44:  (__TEXT,__text) private	-[NILocation initWithTimestamp:latitude:longitude:altitude:ellipsoidalAltitude:horizontalAccuracy:verticalAccuracy:speed:speedAccuracy:course:courseAccuracy:floor:locationType:signalEnvironment:]	
+0x1bd606f84:  (__TEXT,__text) private	+[NILocation supportsSecureCoding]	
+0x1bd606f8c:  (__TEXT,__text) private	-[NILocation copyWithZone:]	
+0x1bd606fe8:  (__TEXT,__text) private	-[NILocation encodeWithCoder:]	
+0x1bd60715c:  (__TEXT,__text) private	-[NILocation initWithCoder:]	
+0x1bd6073b8:  (__TEXT,__text) private	-[NILocation isEqual:]	
+0x1bd607680:  (__TEXT,__text) private	-[NILocation hash]	
+0x1bd6079e0:  (__TEXT,__text) private	-[NILocation description]	
+0x1bd607a9c:  (__TEXT,__text) private	-[NILocation descriptionInternal]	
+0x1bd607f00:  (__TEXT,__text) private	-[NILocation timestamp]	
+0x1bd607f08:  (__TEXT,__text) private	-[NILocation setTimestamp:]	
+0x1bd607f10:  (__TEXT,__text) private	-[NILocation latitude]	
+0x1bd607f18:  (__TEXT,__text) private	-[NILocation setLatitude:]	
+0x1bd607f20:  (__TEXT,__text) private	-[NILocation longitude]	
+0x1bd607f28:  (__TEXT,__text) private	-[NILocation setLongitude:]	
+0x1bd607f30:  (__TEXT,__text) private	-[NILocation altitude]	
+0x1bd607f38:  (__TEXT,__text) private	-[NILocation setAltitude:]	
+0x1bd607f40:  (__TEXT,__text) private	-[NILocation ellipsoidalAltitude]	
+0x1bd607f48:  (__TEXT,__text) private	-[NILocation setEllipsoidalAltitude:]	
+0x1bd607f50:  (__TEXT,__text) private	-[NILocation horizontalAccuracy]	
+0x1bd607f58:  (__TEXT,__text) private	-[NILocation setHorizontalAccuracy:]	
+0x1bd607f60:  (__TEXT,__text) private	-[NILocation verticalAccuracy]	
+0x1bd607f68:  (__TEXT,__text) private	-[NILocation setVerticalAccuracy:]	
+0x1bd607f70:  (__TEXT,__text) private	-[NILocation speed]	
+0x1bd607f78:  (__TEXT,__text) private	-[NILocation setSpeed:]	
+0x1bd607f80:  (__TEXT,__text) private	-[NILocation speedAccuracy]	
+0x1bd607f88:  (__TEXT,__text) private	-[NILocation setSpeedAccuracy:]	
+0x1bd607f90:  (__TEXT,__text) private	-[NILocation course]	
+0x1bd607f98:  (__TEXT,__text) private	-[NILocation setCourse:]	
+0x1bd607fa0:  (__TEXT,__text) private	-[NILocation courseAccuracy]	
+0x1bd607fa8:  (__TEXT,__text) private	-[NILocation setCourseAccuracy:]	
+0x1bd607fb0:  (__TEXT,__text) private	-[NILocation floor]	
+0x1bd607fb8:  (__TEXT,__text) private	-[NILocation setFloor:]	
+0x1bd607fc0:  (__TEXT,__text) private	-[NILocation locationType]	
+0x1bd607fc8:  (__TEXT,__text) private	-[NILocation setLocationType:]	
+0x1bd607fd0:  (__TEXT,__text) private	-[NILocation signalEnvironment]	
+0x1bd607fd8:  (__TEXT,__text) private	-[NILocation setSignalEnvironment:]	
+0x1bd607fe0:  (__TEXT,__text) private	-[NILocation .cxx_destruct]	
+0x1bd607fec:  (__TEXT,__text) private	-[NIHeading initWithTimestamp:trueHeading:magneticHeading:headingAccuracy:]	
+0x1bd6080cc:  (__TEXT,__text) private	+[NIHeading supportsSecureCoding]	
+0x1bd6080d4:  (__TEXT,__text) private	-[NIHeading copyWithZone:]	
+0x1bd60811c:  (__TEXT,__text) private	-[NIHeading encodeWithCoder:]	
+0x1bd6081c8:  (__TEXT,__text) private	-[NIHeading initWithCoder:]	
+0x1bd6082f4:  (__TEXT,__text) private	-[NIHeading isEqual:]	
+0x1bd608450:  (__TEXT,__text) private	-[NIHeading hash]	
+0x1bd608540:  (__TEXT,__text) private	-[NIHeading description]	
+0x1bd6085fc:  (__TEXT,__text) private	-[NIHeading descriptionInternal]	
+0x1bd608730:  (__TEXT,__text) private	-[NIHeading timestamp]	
+0x1bd608738:  (__TEXT,__text) private	-[NIHeading setTimestamp:]	
+0x1bd608740:  (__TEXT,__text) private	-[NIHeading trueHeading]	
+0x1bd608748:  (__TEXT,__text) private	-[NIHeading setTrueHeading:]	
+0x1bd608750:  (__TEXT,__text) private	-[NIHeading magneticHeading]	
+0x1bd608758:  (__TEXT,__text) private	-[NIHeading setMagneticHeading:]	
+0x1bd608760:  (__TEXT,__text) private	-[NIHeading headingAccuracy]	
+0x1bd608768:  (__TEXT,__text) private	-[NIHeading setHeadingAccuracy:]	
+0x1bd608770:  (__TEXT,__text) private	-[NIHeading .cxx_destruct]	
+0x1bd60877c:  (__TEXT,__text) private	+[NISpatialBrowsingConfiguration responderConfigurationWithIdentifier:]	
+0x1bd608854:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration init]	
+0x1bd6088e0:  (__TEXT,__text) private	+[NISpatialBrowsingConfiguration new]	
+0x1bd6088ec:  (__TEXT,__text) private	+[NISpatialBrowsingConfiguration supportsSecureCoding]	
+0x1bd6088f4:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration copyWithZone:]	
+0x1bd60899c:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration encodeWithCoder:]	
+0x1bd608a70:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration initWithCoder:]	
+0x1bd608bd4:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration isEqual:]	
+0x1bd608d58:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration hash]	
+0x1bd608e00:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration description]	
+0x1bd608ebc:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration descriptionInternal]	
+0x1bd608f74:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration updatesPolicy]	
+0x1bd608f84:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration setUpdatesPolicy:]	
+0x1bd608f94:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration isResponder]	
+0x1bd608fa8:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration setResponder:]	
+0x1bd608fb8:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration deviceIdentifier]	
+0x1bd608fc8:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration setDeviceIdentifier:]	
+0x1bd608fd4:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration maxNearbyObjectAge]	
+0x1bd608fe4:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration setMaxNearbyObjectAge:]	
+0x1bd608ff4:  (__TEXT,__text) private	-[NISpatialBrowsingConfiguration .cxx_destruct]	
+0x1bd609008:  (__TEXT,__text) private	-[NIRegionPredicate initWithName:radius:preferredUpdateRate:]	
+0x1bd609168:  (__TEXT,__text) private	-[NIRegionPredicate initWithName:radius:]	
+0x1bd6091e4:  (__TEXT,__text) private	-[NIRegionPredicate initWithName:devicePresencePreset:]	
+0x1bd609328:  (__TEXT,__text) private	-[NIRegionPredicate initWithName:radius:preferredUpdateRate:requiresUserIntent:]	
+0x1bd6093c0:  (__TEXT,__text) private	-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:]	
+0x1bd609468:  (__TEXT,__text) private	-[NIRegionPredicate initWithName:radius:preferredUpdateRate:requiresUserIntent:devicePresencePreset:]	
+0x1bd609510:  (__TEXT,__text) private	-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:devicePresencePreset:]	
+0x1bd6095b4:  (__TEXT,__text) private	-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:coarseEstimation:devicePresencePreset:]	
+0x1bd60967c:  (__TEXT,__text) private	+[NIRegionPredicate supportsSecureCoding]	
+0x1bd609684:  (__TEXT,__text) private	-[NIRegionPredicate devicePresencePreset]	
+0x1bd60968c:  (__TEXT,__text) private	-[NIRegionPredicate setDevicePresencePreset:]	
+0x1bd609694:  (__TEXT,__text) private	-[NIRegionPredicate copyWithZone:]	
+0x1bd6096ec:  (__TEXT,__text) private	-[NIRegionPredicate encodeWithCoder:]	
+0x1bd6097d4:  (__TEXT,__text) private	-[NIRegionPredicate initWithCoder:]	
+0x1bd609984:  (__TEXT,__text) private	-[NIRegionPredicate isEqual:]	
+0x1bd609aac:  (__TEXT,__text) private	-[NIRegionPredicate hash]	
+0x1bd609b08:  (__TEXT,__text) private	-[NIRegionPredicate description]	
+0x1bd609bc4:  (__TEXT,__text) private	-[NIRegionPredicate descriptionInternal]	
+0x1bd609ca0:  (__TEXT,__text) non-external (was a private external)	__Z28NIRegionSizeCategoryToString20NIRegionSizeCategory	
+0x1bd609cd4:  (__TEXT,__text) private	+[NIRegionPredicate _isExecuteRegion:]	
+0x1bd609cf8:  (__TEXT,__text) private	-[NIRegionPredicate name]	
+0x1bd609d04:  (__TEXT,__text) private	-[NIRegionPredicate setRegionSizeCategory:]	
+0x1bd609d0c:  (__TEXT,__text) private	-[NIRegionPredicate preferredUpdateRate]	
+0x1bd609d14:  (__TEXT,__text) private	-[NIRegionPredicate setPreferredUpdateRate:]	
+0x1bd609d1c:  (__TEXT,__text) private	-[NIRegionPredicate requiresUserIntent]	
+0x1bd609d28:  (__TEXT,__text) private	-[NIRegionPredicate setRequiresUserIntent:]	
+0x1bd609d30:  (__TEXT,__text) private	-[NIRegionPredicate coarseEstimation]	
+0x1bd609d3c:  (__TEXT,__text) private	-[NIRegionPredicate setCoarseEstimation:]	
+0x1bd609d44:  (__TEXT,__text) private	-[NIRegionPredicate .cxx_destruct]	
+0x1bd609d50:  (__TEXT,__text) private	_OUTLINED_FUNCTION_0	
+0x1bd609d7c:  (__TEXT,__text) non-external (was a private external)	__Z29PRCommonConvertTicksToSecondsy	
+0x1bd609e44:  (__TEXT,__text) non-external (was a private external)	__Z26PRCommonGetMachTimeSecondsv	
+0x1bd609e6c:  (__TEXT,__text) non-external (was a private external)	__Z36PRCommonGetMachContinuousTimeSecondsv	
+0x1bd609e94:  (__TEXT,__text) non-external (was a private external)	__Z32PRCommonGetMachAbsoluteTimeTicksv	
+0x1bd609e98:  (__TEXT,__text) non-external (was a private external)	__Z19PRCommonGetAllTimesPdS_S_	
+0x1bd609f48:  (__TEXT,__text) non-external (was a private external)	__Z34PRCommonConvertNSDataToHexNSStringP6NSDatab	
+0x1bd60a140:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEEC1B9nqe210106ILi0EEEPKc	
+0x1bd60a1fc:  (__TEXT,__text) non-external (was a private external)	__Z34PRCommonConvertHexNSStringToNSDataP8NSString	
+0x1bd60a350:  (__TEXT,__text) non-external (was a private external)	__Z31PRCommonSerializePrintableStateP8NSStringP12NSDictionaryIS0_P7NSArrayIS0_EE	
+0x1bd60a5b0:  (__TEXT,__text) non-external (was a private external)	__Z31PRCommonSerializePrintableStateP8NSStringP7NSArrayIS0_E	
+0x1bd60a688:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__16vectorIhNS_9allocatorIhEEEC2B9nqe210106Em	
+0x1bd60a6fc:  (__TEXT,__text) non-external (was a private external)	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE20__throw_length_errorB9nqe210106Ev	
+0x1bd60a714:  (__TEXT,__text) private	+[NILocalization _niFrameworkBundle]	
+0x1bd60a768:  (__TEXT,__text) private	___36+[NILocalization _niFrameworkBundle]_block_invoke	
+0x1bd60a7ec:  (__TEXT,__text) private	+[NILocalization _niLocalizedStringFromFrameworkBundleWithKey:]	
+0x1bd60a8e4:  (__TEXT,__text) private	+[NILocalization fallbackBundle]	
+0x1bd60a954:  (__TEXT,__text) private	+[NILocalization localizedBundle]	
+0x1bd60a9c4:  (__TEXT,__text) private	+[NILocalization _niLocalizedStringFromBundle:withKey:]	
+0x1bd60aac0:  (__TEXT,__text) private	+[NILocalization fallbackBundleWithBundle:]	
+0x1bd60abd8:  (__TEXT,__text) private	+[NILocalization localizedBundleWithBundle:]	
+0x1bd60ad44:  (__TEXT,__text) private	+[NISession(SOSBeacon) generateSOSBeaconSubjectDataWithCompletion:]	
+0x1bd60ae68:  (__TEXT,__text) private	+[NISession(SOSBeacon) generateSOSBeaconSearcherDataMatchingSubjectData:completion:]	
+0x1bd60af8c:  (__TEXT,__text) private	+[NINearbyPeerConfiguration(SOSBeacon) createSOSBeaconSubjectConfigWithSessionKey:selfData:peerData:]	
+0x1bd60af94:  (__TEXT,__text) private	+[NINearbyPeerConfiguration(SOSBeacon) createSOSBeaconSearcherConfigWithSessionKey:selfData:peerData:usingCameraAssistance:]	
+0x1bd60af9c:  (__TEXT,__text) private	-[NISystemConfiguration init]	
+0x1bd60aff0:  (__TEXT,__text) private	+[NISystemConfiguration new]	
+0x1bd60affc:  (__TEXT,__text) private	+[NISystemConfiguration supportsSecureCoding]	
+0x1bd60b004:  (__TEXT,__text) private	-[NISystemConfiguration copyWithZone:]	
+0x1bd60b084:  (__TEXT,__text) private	-[NISystemConfiguration encodeWithCoder:]	
+0x1bd60b120:  (__TEXT,__text) private	-[NISystemConfiguration initWithCoder:]	
+0x1bd60b1ec:  (__TEXT,__text) private	-[NISystemConfiguration isEqual:]	
+0x1bd60b2bc:  (__TEXT,__text) private	-[NISystemConfiguration hash]	
+0x1bd60b2e0:  (__TEXT,__text) private	-[NISystemConfiguration description]	
+0x1bd60b39c:  (__TEXT,__text) private	-[NISystemConfiguration descriptionInternal]	
+0x1bd60b3ec:  (__TEXT,__text) private	-[NISystemConfiguration _internalIsMemoryAssertionRequired]	
+0x1bd60b3f4:  (__TEXT,__text) private	-[NISystemConfiguration prewarmUWB]	
+0x1bd60b404:  (__TEXT,__text) private	-[NISystemConfiguration setPrewarmUWB:]	
+0x1bd60b414:  (__TEXT,__text) private	-[NISystemConfiguration prewarmSecureElementChannel]	
+0x1bd60b424:  (__TEXT,__text) private	-[NISystemConfiguration setPrewarmSecureElementChannel:]	
+0x1bd60b434:  (__TEXT,__text) private	-[NISystemState init]	
+0x1bd60b488:  (__TEXT,__text) private	-[NISystemState initWithUWBPreciseDistanceAvailability:uwbExtendedDistanceAvailability:]	
+0x1bd60b4d8:  (__TEXT,__text) private	+[NISystemState supportsSecureCoding]	
+0x1bd60b4e0:  (__TEXT,__text) private	-[NISystemState copyWithZone:]	
+0x1bd60b520:  (__TEXT,__text) private	-[NISystemState encodeWithCoder:]	
+0x1bd60b5a4:  (__TEXT,__text) private	-[NISystemState initWithCoder:]	
+0x1bd60b63c:  (__TEXT,__text) private	-[NISystemState isEqual:]	
+0x1bd60b6f4:  (__TEXT,__text) private	-[NISystemState hash]	
+0x1bd60b704:  (__TEXT,__text) private	-[NISystemState description]	
+0x1bd60b7c0:  (__TEXT,__text) private	-[NISystemState descriptionInternal]	
+0x1bd60b884:  (__TEXT,__text) private	-[NISystemState uwbPreciseDistanceAvailability]	
+0x1bd60b88c:  (__TEXT,__text) private	-[NISystemState setUwbPreciseDistanceAvailability:]	
+0x1bd60b894:  (__TEXT,__text) private	-[NISystemState uwbExtendedDistanceAvailability]	
+0x1bd60b89c:  (__TEXT,__text) private	-[NISystemState setUwbExtendedDistanceAvailability:]	
+0x1bd60b8a4:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration init]	
+0x1bd60b8f0:  (__TEXT,__text) private	+[NIHomePassiveSensingConfiguration new]	
+0x1bd60b8fc:  (__TEXT,__text) private	+[NIHomePassiveSensingConfiguration supportsSecureCoding]	
+0x1bd60b904:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration copyWithZone:]	
+0x1bd60b970:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration encodeWithCoder:]	
+0x1bd60b9f0:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration initWithCoder:]	
+0x1bd60babc:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration canUpdateToConfiguration:]	
+0x1bd60bb34:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration isEqual:]	
+0x1bd60bbc8:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration hash]	
+0x1bd60bbd8:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration description]	
+0x1bd60bc94:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration descriptionInternal]	
+0x1bd60bcf0:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration minimumPreferredUpdatedRate]	
+0x1bd60bd00:  (__TEXT,__text) private	-[NIHomePassiveSensingConfiguration setMinimumPreferredUpdatedRate:]	
+0x1bd60bd10:  (__TEXT,__text) non-external (was a private external)	_UWBMakeSessionServerXPCInterface	
+0x1bd60ccd4:  (__TEXT,__text) non-external (was a private external)	_UWBMakeSessionDelegateXPCInterface	
+0x1bd60d160:  (__TEXT,__text) non-external (was a private external)	_UWBSessionInterruptionReasonInternalToString	
+0x1bd60d184:  (__TEXT,__text) non-external (was a private external)	_UWBTrackingStopReasonInternalToString	
+0x1bd60d1b0:  (__TEXT,__text) private	-[NIRangingAuthConfiguration initAsResponder:macAddress:key:]	
+0x1bd60d364:  (__TEXT,__text) private	-[NIRangingAuthConfiguration copyWithZone:]	
+0x1bd60d42c:  (__TEXT,__text) private	-[NIRangingAuthConfiguration encodeWithCoder:]	
+0x1bd60d500:  (__TEXT,__text) private	+[NIRangingAuthConfiguration supportsSecureCoding]	
+0x1bd60d508:  (__TEXT,__text) private	-[NIRangingAuthConfiguration initWithCoder:]	
+0x1bd60d6ec:  (__TEXT,__text) private	-[NIRangingAuthConfiguration isEqual:]	
+0x1bd60d85c:  (__TEXT,__text) private	-[NIRangingAuthConfiguration hash]	
+0x1bd60d8d0:  (__TEXT,__text) private	-[NIRangingAuthConfiguration description]	
+0x1bd60d988:  (__TEXT,__text) private	-[NIRangingAuthConfiguration descriptionInternal]	
+0x1bd60da44:  (__TEXT,__text) private	-[NIRangingAuthConfiguration isResponder]	
+0x1bd60da54:  (__TEXT,__text) private	-[NIRangingAuthConfiguration peerToken]	
+0x1bd60da64:  (__TEXT,__text) private	-[NIRangingAuthConfiguration macAddress]	
+0x1bd60da74:  (__TEXT,__text) private	-[NIRangingAuthConfiguration secureKey]	
+0x1bd60da84:  (__TEXT,__text) private	-[NIRangingAuthConfiguration .cxx_destruct]	
+0x1bd60daec:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState initWithConvergenceStatus:]	
+0x1bd60db40:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState initWithAlgorithmConvergenceState:]	
+0x1bd60dc1c:  (__TEXT,__text) private	+[NIAlgorithmConvergenceState supportsSecureCoding]	
+0x1bd60dc24:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState copyWithZone:]	
+0x1bd60dc68:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState encodeWithCoder:]	
+0x1bd60dd3c:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState initWithCoder:]	
+0x1bd60de74:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState isEqual:]	
+0x1bd60dfdc:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState hash]	
+0x1bd60e060:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState description]	
+0x1bd60e218:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState convergence]	
+0x1bd60e220:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState setConvergence:]	
+0x1bd60e228:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState insufficientSignalStrength]	
+0x1bd60e230:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState setInsufficientSignalStrength:]	
+0x1bd60e238:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState insufficientHorizontalSweep]	
+0x1bd60e240:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState setInsufficientHorizontalSweep:]	
+0x1bd60e248:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState insufficientVerticalSweep]	
+0x1bd60e250:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState setInsufficientVerticalSweep:]	
+0x1bd60e258:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState insufficientMovement]	
+0x1bd60e260:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState setInsufficientMovement:]	
+0x1bd60e268:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState insufficientLighting]	
+0x1bd60e270:  (__TEXT,__text) private	-[NIAlgorithmConvergenceState setInsufficientLighting:]	
+0x1bd60f308:  (__TEXT,__text) non-external (was a private external)	_get_enum_tag_for_layout_string 17NearbyInteraction28NIAlgorithmConvergenceStatusO	
+0x1bd60f320:  (__TEXT,__text) non-external (was a private external)	___swift_memcpy8_8	
+0x1bd60f40c:  (__TEXT,__text) non-external (was a private external)	___swift_memcpy16_8	
+0x1bd60f58c:  (__TEXT,__text) non-external (was a private external)	___swift_instantiateConcreteTypeFromMangledNameV2	
+0x1bd60f5e0:  (__TEXT,__text) private	__swift_stdlib_malloc_size	
+0x1bd60f664:  (__TEXT,__text) private	+[NIInternalUtils NISessionBackgroundModeToString:].cold.1	
+0x1bd60f690:  (__TEXT,__text) private	+[NIInternalUtils NINearbyPeerUseCaseToString:].cold.1	
+0x1bd60f6bc:  (__TEXT,__text) private	+[NIInternalUtils NINearbyObjectUpdateRateToString:].cold.1	
+0x1bd60f6e8:  (__TEXT,__text) private	+[NIInternalUtils NINearbyObjectUpdateRateToShortString:].cold.1	
+0x1bd60f714:  (__TEXT,__text) private	+[NIInternalUtils NINearbyObjectDiscoveryPriorityToString:].cold.1	
+0x1bd60f740:  (__TEXT,__text) private	+[NIPlatformInfo isInternalBuild].cold.1	
+0x1bd60f754:  (__TEXT,__text) private	+[NIPlatformInfo supportsUWB].cold.1	
+0x1bd60f768:  (__TEXT,__text) private	+[NIPlatformInfo supportsDLTDoA].cold.1	
+0x1bd60f77c:  (__TEXT,__text) private	+[NIPlatformInfo supportsAoA].cold.1	
+0x1bd60f790:  (__TEXT,__text) private	+[NIPlatformInfo supportsSyntheticAperture].cold.1	
+0x1bd60f7a4:  (__TEXT,__text) private	+[NIPlatformInfo supportsARKit].cold.1	
+0x1bd60f7b8:  (__TEXT,__text) private	+[NIPlatformInfo supportsNBAMMS].cold.1	
+0x1bd60f7cc:  (__TEXT,__text) private	-[NISession discoveryToken].cold.1	
+0x1bd60f800:  (__TEXT,__text) private	-[NISession uwbSessionDidFailWithError:].cold.1	
+0x1bd60f84c:  (__TEXT,__text) private	-[NISession uwbSessionDidInvalidateWithError:].cold.1	
+0x1bd60f898:  (__TEXT,__text) private	-[NISession uwbSessionInterruptionReasonEnded:timestamp:].cold.1	
+0x1bd60f8cc:  (__TEXT,__text) private	-[NISession didUpdateState:forItem:].cold.1	
+0x1bd60f900:  (__TEXT,__text) private	-[NISession _handleARSessionDidFailWithError:].cold.1	
+0x1bd60f94c:  (__TEXT,__text) private	-[NISession _handleARSession:willRunWithConfiguration:].cold.1	
+0x1bd60f998:  (__TEXT,__text) private	-[NISession _configureAndRunInternalARSession].cold.1	
+0x1bd60f9cc:  (__TEXT,__text) private	-[NISession _reinterruptSessionWithCachedInterruption].cold.1	
+0x1bd60fa00:  (__TEXT,__text) private	-[NISession _verifyError:].cold.1	
+0x1bd60fa58:  (__TEXT,__text) private	-[NISession _notifyDidInvalidateWithError:].cold.1	
+0x1bd60fac4:  (__TEXT,__text) private	-[NIConfiguration init]	
+0x1bd60fb0c:  (__TEXT,__text) private	+[NIConfiguration new]	
+0x1bd60fb38:  (__TEXT,__text) private	-[NINearbyPeerConfiguration init]	
+0x1bd60fb80:  (__TEXT,__text) private	+[NINearbyPeerConfiguration new]	
+0x1bd60fbac:  (__TEXT,__text) private	+[NISession(LocalDeviceInteraction) _localDeviceLogger].cold.1	
+0x1bd60fbc0:  (__TEXT,__text) private	-[NINearbyObject init]	
+0x1bd60fc08:  (__TEXT,__text) private	+[NINearbyObject new]	
+0x1bd60fc34:  (__TEXT,__text) private	-[NIServerConnection initWithSessionID:queue:exportedObject:options:].cold.1	
+0x1bd60fc90:  (__TEXT,__text) private	___39-[NIServerConnection remoteObjectProxy]_block_invoke.cold.1	
+0x1bd60fce0:  (__TEXT,__text) private	___50-[NIServerConnection synchronousRemoteObjectProxy]_block_invoke.cold.1	
+0x1bd60fd30:  (__TEXT,__text) private	-[NIExportedObjectForwarder initWithExportedObject:].cold.1	
+0x1bd60fd8c:  (__TEXT,__text) private	-[NIDeviceCapabilities init]	
+0x1bd60fdb8:  (__TEXT,__text) private	+[NIDeviceCapabilities new]	
+0x1bd60fde4:  (__TEXT,__text) private	-[NIRegionPredicate descriptionInternal].cold.1	
+0x1bd60fe10:  (__TEXT,__text) private	-[NIRegionPredicate descriptionInternal].cold.2	
+0x1bd60fe10:  (__TEXT,__text) private	-[NIRegionPredicate descriptionInternal].cold.2	
+0x1bd60fe20:  (__TEXT,__text) private	__Z29PRCommonConvertTicksToSecondsy.cold.1	
+0x1bd60fe4c:  (__TEXT,__text) private	+[NILocalization _niFrameworkBundle].cold.1	
+0x1eb563a30:  (__DATA,__data) external	_NIARLightEstimateNotAvailable	
+0x1bd5e7f18:  (__TEXT,__text) external	_NIAlgorithmConvergenceStatusReasonDescription	
+0x1bd5e7dd0:  (__TEXT,__text) external	_NIAlgorithmConvergenceStatusReasonDescription_Private	
+0x1e737c350:  (__DATA_CONST,__const) external	_NIAlgorithmConvergenceStatusReasonInsufficientHorizontalSweep	
+0x1e737c368:  (__DATA_CONST,__const) external	_NIAlgorithmConvergenceStatusReasonInsufficientLighting	
+0x1e737c360:  (__DATA_CONST,__const) external	_NIAlgorithmConvergenceStatusReasonInsufficientMovement	
+0x1e737c348:  (__DATA_CONST,__const) external	_NIAlgorithmConvergenceStatusReasonInsufficientSignalStrength	
+0x1e737c358:  (__DATA_CONST,__const) external	_NIAlgorithmConvergenceStatusReasonInsufficientVerticalSweep	
+0x1e737cc40:  (__DATA_CONST,__const) external	_NIErrorDomain	
+0x1e737ca98:  (__DATA_CONST,__const) external	_NILocalDeviceStartedInteractingWithTokenNotification	
+0x1e737caa0:  (__DATA_CONST,__const) external	_NILocalDeviceStoppedInteractingWithTokenNotification	
+0x1eb563d30:  (__DATA,__data) external	_NILocationFloorNotAvailable	
+0x1eb563c28:  (__DATA,__data) external	_NINearbyObjectAngleNotAvailable	
+0x1eb563c2c:  (__DATA,__data) external	_NINearbyObjectAngleNotAvailable_Private	
+0x1eb563c40:  (__DATA,__data) external	_NINearbyObjectAzimuthNotAvailable	
+0x1eb564410:  (__DATA,__common) external	_NINearbyObjectDirectionNotAvailable	
+0x1eb564420:  (__DATA,__common) external	_NINearbyObjectDirectionNotAvailable_Private	
+0x1eb563c20:  (__DATA,__data) external	_NINearbyObjectDistanceNotAvailable	
+0x1eb563c24:  (__DATA,__data) external	_NINearbyObjectDistanceNotAvailable_Private	
+0x1eb563c44:  (__DATA,__data) external	_NINearbyObjectElevationNotAvailable	
+0x1eb563c60:  (__DATA,__data) external	_NINearbyObjectNbRssiNotAvailable	
+0x1eb564430:  (__DATA,__common) external	_NINearbyObjectQuaternionNotAvailable	
+0x1eb563c48:  (__DATA,__data) external	_NINearbyObjectRangeBiasEstimateNotAvailable	
+0x1eb563c50:  (__DATA,__data) external	_NINearbyObjectRangeUncertaintyNotAvailable	
+0x1eb563c68:  (__DATA,__data) external	_NINearbyObjectRegionBoundaryRangeNotAvailable	
+0x1eb564448:  (__DATA,__common) external	_NINearbyObjectRemoteTxAntennaMaskNotAvailable	
+0x1eb563c58:  (__DATA,__data) external	_NINearbyObjectRxStatusNotAvailable	
+0x1eb563c30:  (__DATA,__data) external	_NINearbyObjectSignalStrengthNotAvailable	
+0x1eb563c38:  (__DATA,__data) external	_NINearbyObjectSignalStrengthNotAvailable_Private	
+0x1eb563a20:  (__DATA,__data) external	_NINearbyObjectWorldPositionNotAvailable	
+0x1eb564390:  (__DATA,__common) external	_NINearbyObjectWorldTransformNotAvailable	
+0x1eb5643d0:  (__DATA,__common) external	_NINearbyObjectWorldTransformNotAvailable_Private	
+0x1bd5f04c8:  (__TEXT,__text) external	_NINotifySystemShutdownWithReason	
+0x1e737cd98:  (__DATA_CONST,__const) external	_NISystemDidUpdateStateDarwinNotification	
+0x1e737c2d0:  (__DATA_CONST,__const) external	_NITruthTagLabelKey	
+0x1e737c2e8:  (__DATA_CONST,__const) external	_NITruthTagSourceClientApp	
+0x1e737c2e0:  (__DATA_CONST,__const) external	_NITruthTagSourceDirectUserInput	
+0x1e737c2d8:  (__DATA_CONST,__const) external	_NITruthTagSourceKey	
+0x1ed3543f8:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIAcwgConfiguration	
+0x1ee055e30:  (__AUTH,__objc_data) external	_OBJC_CLASS_$_NIAcwgEventNotifier	
+0x1ed3543d0:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIAcwgM1Msg	
+0x1ed3543a8:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIAcwgM2Msg	
+0x1ed354380:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIAcwgM3Msg	
+0x1ed354358:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIAcwgM4Msg	
+0x1ed354330:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIAcwgRangingSessionResumeResponseMsg	
+0x1ed3540d8:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIAcwgSFZoneUpdate	
+0x1ee055d90:  (__AUTH,__objc_data) external	_OBJC_CLASS_$_NIAlgorithmConvergence	
+0x1ed354830:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIAlgorithmConvergenceState	
+0x1ed354308:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIBluetoothHostTimeSyncResponse	
+0x1ed3547b8:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIBluetoothSample	
+0x1ed354b00:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NICarKeyConfiguration	
+0x1ee055de0:  (__AUTH,__objc_data) external	_OBJC_CLASS_$_NICarKeyEventNotifier	
+0x1ed354ad8:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIConfiguration	
+0x1ed3540b0:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIDLTDOAConfiguration	
+0x1ed354088:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIDLTDOACoordinatesUpdate	
+0x1ed354060:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIDLTDOAMeasurement	
+0x1ed354790:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIDevicePresenceConfiguration	
+0x1ee055e80:  (__AUTH,__objc_data) external	_OBJC_CLASS_$_NIDevicePresenceNotifier	
+0x1ed354ab0:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIDiscoveryToken	
+0x1ed3545b0:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIFindingConfiguration	
+0x1ee055ed0:  (__AUTH,__objc_data) external	_OBJC_CLASS_$_NIFindingNotifier	
+0x1ed354588:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIHeading	
+0x1ed354a88:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIHomeDeviceConfiguration	
+0x1ed354038:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIHomePassiveSensingConfiguration	
+0x1ed354128:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIItemLocalizerConfiguration	
+0x1ed354560:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NILocation	
+0x1ed354768:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NINearbyAccessoryConfiguration	
+0x1ed354a60:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NINearbyObject	
+0x1ed354a38:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NINearbyPeerConfiguration	
+0x1ed354718:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIRangingAuthConfiguration	
+0x1ed354a10:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIRegionPredicate	
+0x1ed3549c0:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NISession	
+0x1ee056060:  (__AUTH,__objc_data) external	_OBJC_CLASS_$_NISpatialBrowsingConfiguration	
+0x1ee0560b0:  (__AUTH,__objc_data) external	_OBJC_CLASS_$_NISystemConfiguration	
+0x1ee055f20:  (__AUTH,__objc_data) external	_OBJC_CLASS_$_NISystemEventNotifier	
+0x1ed3542b8:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NISystemState	
+0x1ed3546f0:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$_NIVisionInput	
+0x1ed354998:  (__DATA_DIRTY,__objc_data) external	_OBJC_CLASS_$__NIWiFiRangingTestConfiguration	
+0x1ed354290:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIAcwgConfiguration	
+0x1ee055e58:  (__AUTH,__objc_data) external	_OBJC_METACLASS_$_NIAcwgEventNotifier	
+0x1ed354268:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIAcwgM1Msg	
+0x1ed354448:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIAcwgM2Msg	
+0x1ed354240:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIAcwgM3Msg	
+0x1ed354218:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIAcwgM4Msg	
+0x1ed3541f0:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIAcwgRangingSessionResumeResponseMsg	
+0x1ed354100:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIAcwgSFZoneUpdate	
+0x1ee055db8:  (__AUTH,__objc_data) external	_OBJC_METACLASS_$_NIAlgorithmConvergence	
+0x1ed354808:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIAlgorithmConvergenceState	
+0x1ed3541c8:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIBluetoothHostTimeSyncResponse	
+0x1ed3546c8:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIBluetoothSample	
+0x1ed354970:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NICarKeyConfiguration	
+0x1ee055e08:  (__AUTH,__objc_data) external	_OBJC_METACLASS_$_NICarKeyEventNotifier	
+0x1ed354948:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIConfiguration	
+0x1ed354010:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIDLTDOAConfiguration	
+0x1ed353fe8:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIDLTDOACoordinatesUpdate	
+0x1ed353fc0:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIDLTDOAMeasurement	
+0x1ed3546a0:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIDevicePresenceConfiguration	
+0x1ee055ea8:  (__AUTH,__objc_data) external	_OBJC_METACLASS_$_NIDevicePresenceNotifier	
+0x1ed354b50:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIDiscoveryToken	
+0x1ed354678:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIFindingConfiguration	
+0x1ee055ef8:  (__AUTH,__objc_data) external	_OBJC_METACLASS_$_NIFindingNotifier	
+0x1ed354538:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIHeading	
+0x1ed354920:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIHomeDeviceConfiguration	
+0x1ed353f98:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIHomePassiveSensingConfiguration	
+0x1ed3541a0:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIItemLocalizerConfiguration	
+0x1ed354650:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NILocation	
+0x1ed354628:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NINearbyAccessoryConfiguration	
+0x1ed3548f8:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NINearbyObject	
+0x1ed3548d0:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NINearbyPeerConfiguration	
+0x1ed354600:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIRangingAuthConfiguration	
+0x1ed3548a8:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIRegionPredicate	
+0x1ed354b28:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NISession	
+0x1ee056088:  (__AUTH,__objc_data) external	_OBJC_METACLASS_$_NISpatialBrowsingConfiguration	
+0x1ee0560d8:  (__AUTH,__objc_data) external	_OBJC_METACLASS_$_NISystemConfiguration	
+0x1ee055f48:  (__AUTH,__objc_data) external	_OBJC_METACLASS_$_NISystemEventNotifier	
+0x1ed354150:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NISystemState	
+0x1ed3545d8:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$_NIVisionInput	
+0x1ed354858:  (__DATA_DIRTY,__objc_data) external	_OBJC_METACLASS_$__NIWiFiRangingTestConfiguration	
+0x1bd5deac0:  (__TEXT,__text) external	__Z20NIAcwgSFZoneToString12NIAcwgSFZone	
+0x1bd5de9b8:  (__TEXT,__text) external	__Z34NIAcwgSessionTriggerReasonToString26NIAcwgSessionTriggerReason	
+0x1bd5dea0c:  (__TEXT,__text) external	__Z34NIAcwgSuspendTriggerReasonToString26NIAcwgSuspendTriggerReason	
+0x1eb5644e2:  (__DATA,__common) external	__swift_FORCE_LOAD_$_swiftNearbyInteraction	
+0x1eb563c18:  (__DATA,__data) external	_kNISystemShutdownCompletionTimeoutSeconds	
+              (undefined) external	_AnalyticsSendEventLazy	 (from CoreAnalytics)
+              (undefined) external	_CUPrintNSObjectMasked	 (from CoreUtils)
+              (undefined) external	_MGGetBoolAnswer	 (from libMobileGestalt.dylib)
+              (undefined) external	_MGGetProductType	 (from libMobileGestalt.dylib)
+              (undefined) external	_MGGetSInt32Answer	 (from libMobileGestalt.dylib)
+              (undefined) external	_NSClassFromString	 (from Foundation)
+              (undefined) external	_NSLocalizedDescriptionKey	 (from Foundation)
+              (undefined) external	_NSLocalizedFailureReasonErrorKey	 (from Foundation)
+              (undefined) external	_NSLocalizedRecoverySuggestionErrorKey	 (from Foundation)
+              (undefined) external	_NSRandomData	 (from CoreUtils)
+              (undefined) external	_NSStringFromClass	 (from Foundation)
+              (undefined) weak external automatically hidden	_OBJC_CLASS_$_ARSession	 (from ARKitCore)
+              (undefined) weak external automatically hidden	_OBJC_CLASS_$_ARWorldTrackingConfiguration	 (from ARKitCore)
+              (undefined) external	_OBJC_CLASS_$_NSArray	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSAssertionHandler	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSBundle	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSCoder	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSConstantArray	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSConstantIntegerNumber	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSData	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSDate	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSDictionary	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSError	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSLocale	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSMutableArray	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSMutableData	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSMutableDictionary	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSMutableSet	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSMutableString	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSNumber	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSObject	 (from libobjc.A.dylib)
+              (undefined) external	_OBJC_CLASS_$_NSProcessInfo	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSPropertyListSerialization	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSSet	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSString	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSURL	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSUUID	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSUserDefaults	 (from CoreFoundation)
+              (undefined) external	_OBJC_CLASS_$_NSXPCConnection	 (from Foundation)
+              (undefined) external	_OBJC_CLASS_$_NSXPCInterface	 (from Foundation)
+              (undefined) external	_OBJC_METACLASS_$_NSObject	 (from libobjc.A.dylib)
+              (undefined) external	_OPACKDecodeData	 (from CoreUtils)
+              (undefined) external	_OPACKEncoderCreateData	 (from CoreUtils)
+              (undefined) external	__Block_object_dispose	 (from libSystem.B.dylib)
+              (undefined) external	__NSConcreteGlobalBlock	 (from libSystem.B.dylib)
+              (undefined) external	__NSConcreteStackBlock	 (from libSystem.B.dylib)
+              (undefined) external	__Unwind_Resume	 (from libSystem.B.dylib)
+              (undefined) external	__ZNSt11logic_errorC2EPKc	 (from libc++.1.dylib)
+              (undefined) external	__ZNSt12length_errorD1Ev	 (from libc++.1.dylib)
+              (undefined) external	__ZNSt20bad_array_new_lengthC1Ev	 (from libc++.1.dylib)
+              (undefined) external	__ZNSt20bad_array_new_lengthD1Ev	 (from libc++.1.dylib)
+              (undefined) external	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm	 (from libc++.1.dylib)
+              (undefined) external	__ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKcm	 (from libc++.1.dylib)
+              (undefined) external	__ZSt9terminatev	 (from libc++.1.dylib)
+              (undefined) external	__ZTISt12length_error	 (from libc++.1.dylib)
+              (undefined) external	__ZTISt20bad_array_new_length	 (from libc++.1.dylib)
+              (undefined) external	__ZTVSt12length_error	 (from libc++.1.dylib)
+              (undefined) external	__ZdlPv	 (from libc++.1.dylib)
+              (undefined) external	__ZnwmSt19__type_descriptor_t	 (from libc++.1.dylib)
+              (undefined) external	___CFConstantStringClassReference	 (from CoreFoundation)
+              (undefined) external	___NSArray0__struct	 (from CoreFoundation)
+              (undefined) external	___assert_rtn	 (from libSystem.B.dylib)
+              (undefined) external	___cxa_allocate_exception	 (from libc++.1.dylib)
+              (undefined) external	___cxa_begin_catch	 (from libc++.1.dylib)
+              (undefined) external	___cxa_free_exception	 (from libc++.1.dylib)
+              (undefined) external	___cxa_throw	 (from libc++.1.dylib)
+              (undefined) external	___gxx_personality_v0	 (from libc++.1.dylib)
+              (undefined) external	___kCFBooleanTrue	 (from CoreFoundation)
+              (undefined) external	___sincosf_stret	 (from libSystem.B.dylib)
+              (undefined) external	___stack_chk_fail	 (from libSystem.B.dylib)
+              (undefined) external	___stack_chk_guard	 (from libSystem.B.dylib)
+              (undefined) external	__dispatch_main_q	 (from libSystem.B.dylib)
+              (undefined) external	__objc_empty_cache	 (from libobjc.A.dylib)
+              (undefined) external	__os_log_error_impl	 (from libSystem.B.dylib)
+              (undefined) external	__os_log_impl	 (from libSystem.B.dylib)
+              (undefined) external	__swiftEmptyArrayStorage	 (from libswiftCore.dylib)
+              (undefined) weak external automatically hidden	__swift_FORCE_LOAD_$_swiftCoreFoundation	 (from libswiftCoreFoundation.dylib)
+              (undefined) weak external automatically hidden	__swift_FORCE_LOAD_$_swiftDispatch	 (from libswiftDispatch.dylib)
+              (undefined) weak external automatically hidden	__swift_FORCE_LOAD_$_swiftFoundation	 (from Foundation)
+              (undefined) weak external automatically hidden	__swift_FORCE_LOAD_$_swiftObjectiveC	 (from libswiftObjectiveC.dylib)
+              (undefined) weak external automatically hidden	__swift_FORCE_LOAD_$_swiftXPC	 (from libswiftXPC.dylib)
+              (undefined) weak external automatically hidden	__swift_FORCE_LOAD_$_swift_Builtin_float	 (from libswift_Builtin_float.dylib)
+              (undefined) weak external automatically hidden	__swift_FORCE_LOAD_$_swiftsimd	 (from libswiftsimd.dylib)
+              (undefined) external	_asinf	 (from libSystem.B.dylib)
+              (undefined) external	_atan2f	 (from libSystem.B.dylib)
+              (undefined) external	_bzero	 (from libSystem.B.dylib)
+              (undefined) external	_cosf	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_after	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_assert_queue$V2	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_async	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_once	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_queue_attr_make_with_qos_class	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_queue_create	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_semaphore_create	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_semaphore_signal	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_semaphore_wait	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_sync	 (from libSystem.B.dylib)
+              (undefined) external	_dispatch_time	 (from libSystem.B.dylib)
+              (undefined) external	_kCFAbsoluteTimeIntervalSince1970	 (from CoreFoundation)
+              (undefined) external	_mach_absolute_time	 (from libSystem.B.dylib)
+              (undefined) external	_mach_continuous_time	 (from libSystem.B.dylib)
+              (undefined) external	_mach_get_times	 (from libSystem.B.dylib)
+              (undefined) external	_mach_timebase_info	 (from libSystem.B.dylib)
+              (undefined) external	_malloc_size	 (from libSystem.B.dylib)
+              (undefined) external	_malloc_type_calloc	 (from libSystem.B.dylib)
+              (undefined) external	_matrix_identity_float4x4	 (from libSystem.B.dylib)
+              (undefined) external	_memcpy	 (from libSystem.B.dylib)
+              (undefined) external	_memmove	 (from libSystem.B.dylib)
+              (undefined) external	_objc_alloc	 (from libobjc.A.dylib)
+              (undefined) external	_objc_alloc_init	 (from libobjc.A.dylib)
+              (undefined) external	_objc_autorelease	 (from libobjc.A.dylib)
+              (undefined) external	_objc_autoreleasePoolPop	 (from libobjc.A.dylib)
+              (undefined) external	_objc_autoreleasePoolPush	 (from libobjc.A.dylib)
+              (undefined) external	_objc_autoreleaseReturnValue	 (from libobjc.A.dylib)
+              (undefined) external	_objc_copyStruct	 (from libobjc.A.dylib)
+              (undefined) external	_objc_copyWeak	 (from libobjc.A.dylib)
+              (undefined) external	_objc_destroyWeak	 (from libobjc.A.dylib)
+              (undefined) external	_objc_enumerationMutation	 (from libobjc.A.dylib)
+              (undefined) external	_objc_getProperty	 (from libobjc.A.dylib)
+              (undefined) external	_objc_initWeak	 (from libobjc.A.dylib)
+              (undefined) external	_objc_loadWeakRetained	 (from libobjc.A.dylib)
+              (undefined) external	_objc_msgSend	 (from libobjc.A.dylib)
+              (undefined) external	_objc_msgSendSuper2	 (from libobjc.A.dylib)
+              (undefined) external	_objc_opt_class	 (from libobjc.A.dylib)
+              (undefined) external	_objc_opt_isKindOfClass	 (from libobjc.A.dylib)
+              (undefined) external	_objc_opt_new	 (from libobjc.A.dylib)
+              (undefined) external	_objc_opt_respondsToSelector	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x1	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x19	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x20	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x21	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x22	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x23	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x24	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x25	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x26	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x27	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x28	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x8	 (from libobjc.A.dylib)
+              (undefined) external	_objc_release_x9	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retainAutorelease	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retainAutoreleasedReturnValue	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x1	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x19	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x2	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x20	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x21	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x22	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x23	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x24	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x25	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x26	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x27	 (from libobjc.A.dylib)
+              (undefined) external	_objc_retain_x28	 (from libobjc.A.dylib)
+              (undefined) external	_objc_setProperty_atomic	 (from libobjc.A.dylib)
+              (undefined) external	_objc_setProperty_atomic_copy	 (from libobjc.A.dylib)
+              (undefined) external	_objc_setProperty_nonatomic_copy	 (from libobjc.A.dylib)
+              (undefined) external	_objc_storeStrong	 (from libobjc.A.dylib)
+              (undefined) external	_objc_storeWeak	 (from libobjc.A.dylib)
+              (undefined) external	_objc_sync_enter	 (from libobjc.A.dylib)
+              (undefined) external	_objc_sync_exit	 (from libobjc.A.dylib)
+              (undefined) external	_os_log_create	 (from libSystem.B.dylib)
+              (undefined) external	_os_log_type_enabled	 (from libSystem.B.dylib)
+              (undefined) external	_strlcpy	 (from libSystem.B.dylib)
+              (undefined) external	_strlen	 (from libSystem.B.dylib)
+              (undefined) external	_strtol	 (from libSystem.B.dylib)
+              (undefined) external	_swift_allocObject	 (from libswiftCore.dylib)
+              (undefined) external	_swift_arrayInitWithCopy	 (from libswiftCore.dylib)
+              (undefined) external	_swift_bridgeObjectRelease	 (from libswiftCore.dylib)
+              (undefined) external	_swift_bridgeObjectRetain	 (from libswiftCore.dylib)
+              (undefined) external	_swift_cvw_assignWithCopy	 (from libswiftCore.dylib)
+              (undefined) external	_swift_cvw_assignWithTake	 (from libswiftCore.dylib)
+              (undefined) external	_swift_cvw_destroy	 (from libswiftCore.dylib)
+              (undefined) external	_swift_cvw_enumFn_getEnumTag	 (from libswiftCore.dylib)
+              (undefined) external	_swift_cvw_initWithCopy	 (from libswiftCore.dylib)
+              (undefined) external	_swift_cvw_initializeBufferWithCopyOfBuffer	 (from libswiftCore.dylib)
+              (undefined) external	_swift_getForeignTypeMetadata	 (from libswiftCore.dylib)
+              (undefined) external	_swift_getTypeByMangledNameInContext2	 (from libswiftCore.dylib)
+              (undefined) external	_swift_getWitnessTable	 (from libswiftCore.dylib)
+              (undefined) external	_swift_once	 (from libswiftCore.dylib)
+              (undefined) external	_swift_release	 (from libswiftCore.dylib)
+
+Stubs
+=====
+0x1bd6101f0 => 0x23275605c: _mach_timebase_info
+0x1bd6104e0 => 0x1800999d0: _objc_retain_x24
+0x1bd6102c0 => 0x1800a23e8: _objc_destroyWeak
+0x1bd60ffd0 => 0x192c874dc: __ZNSt11logic_errorC2EPKc
+0x1bd6103e0 => 0x18009a8f4: _objc_release_x25
+0x1bd610370 => 0x180099bd4: _objc_release_x1
+0x1bd60ff90 => 0x1928896dc: _OPACKDecodeData
+0x1bd6104b0 => 0x180099904: _objc_retain_x21
+0x1bd6102a0 => 0x1800ad8ac: _objc_copyStruct
+0x1bd6105e0 => 0x18f09699c: _strtol
+0x1bd610110 => 0x1be0637e4: _dispatch_after
+0x1bd610270 => 0x18009d590: _objc_autoreleasePoolPop
+0x1bd610390 => 0x18009a5d4: _objc_release_x20
+0x1bd60ffe0 => 0x1801d78a4: __ZNSt20bad_array_new_lengthC1Ev
+0x1bd610510 => 0x180099a9c: _objc_retain_x27
+0x1bd60feb0 => 0x1802bea3c: _$sSS9hashValueSivg
+0x1bd610050 => 0x1801c5230: ___cxa_allocate_exception
+0x1bd60fef0 => 0x1801e8cf0: _$ss6HasherV5_seedABSi_tcfC
+0x1bd610450 => 0x18009d8d8: _objc_retainAutorelease
+0x1bd610210 => 0x18ec9c09c: _malloc_type_calloc
+0x1bd610460 => 0x1800a26d4: _objc_retainAutoreleasedReturnValue
+0x1bd6105d0 => 0x2a3280e00: __platform_strlen
+0x1bd610170 => 0x1be04e8ec: _dispatch_semaphore_create
+0x1bd60fed0 => 0x180322e9c: _$ss20_SwiftNewtypeWrapperPsSHRzSH8RawValueSYRpzrlE20_toCustomAnyHashables0hI0VSgyF
+0x1bd6101e0 => 0x232751ef0: _mach_get_times
+0x1bd6102d0 => 0x1800d6038: _objc_enumerationMutation
+0x1bd60fe60 => 0x180810090: _$sSS10FoundationE19_bridgeToObjectiveCSo8NSStringCyF
+0x1bd610060 => 0x1801c66bc: ___cxa_begin_catch
+0x1bd610440 => 0x18009943c: _objc_retain_x0
+0x1bd610070 => 0x1801d8d00: ___cxa_free_exception
+0x1bd6101a0 => 0x1be052dc8: _dispatch_sync
+0x1bd6102e0 => 0x18009f814: _objc_getProperty
+0x1bd610010 => 0x1801d7140: __ZSt9terminatev
+0x1bd610660 => 0x1801e72bc: _swift_once
+0x1bd60fe70 => 0x1807b3f58: _$sSS10FoundationE26_forceBridgeFromObjectiveC_6resultySo8NSStringC_SSSgztFZ
+0x1bd6103f0 => 0x18009a994: _objc_release_x26
+0x1bd610140 => 0x1be04f4fc: _dispatch_once
+0x1bd610530 => 0x1800a0248: _objc_setProperty_atomic
+0x1bd60ff60 => 0x18077e558: _NSClassFromString
+0x1bd60ff20 => 0x19289731c: _CUPrintNSObjectMasked
+0x1bd610380 => 0x18009a534: _objc_release_x19
+0x1bd6103a0 => 0x18009a674: _objc_release_x21
+0x1bd610640 => 0x18020b354: _swift_getTypeByMangledNameInContext2
+0x1bd610610 => 0x1801e324c: _swift_bridgeObjectRelease
+0x1bd610620 => 0x1801e3078: _swift_bridgeObjectRetain
+0x1bd6100e0 => 0x2a3239770: _atan2f
+0x1bd610480 => 0x18009987c: _objc_retain_x19
+0x1bd610590 => 0x18009d908: _objc_sync_exit
+0x1bd610580 => 0x18009d9c8: _objc_sync_enter
+0x1bd610190 => 0x1be04e9fc: _dispatch_semaphore_wait
+0x1bd6103c0 => 0x18009a7b4: _objc_release_x23
+0x1bd610540 => 0x1800a3e6c: _objc_setProperty_atomic_copy
+0x1bd6104f0 => 0x180099a14: _objc_retain_x25
+0x1bd610570 => 0x18009c5ec: _objc_storeWeak
+0x1bd6101b0 => 0x1be07eee0: _dispatch_time
+0x1bd610100 => 0x2a3235f40: _cosf
+0x1bd6104d0 => 0x18009998c: _objc_retain_x23
+0x1bd60ffc0 => 0x2270d4e64: __Unwind_Resume
+0x1bd6101c0 => 0x232751e54: _mach_absolute_time
+0x1bd60fe90 => 0x18077ea9c: _$sSS10FoundationE36_unconditionallyBridgeFromObjectiveCySSSo8NSStringCSgFZ
+0x1bd610550 => 0x1800a1de0: _objc_setProperty_nonatomic_copy
+0x1bd610240 => 0x18009c218: _objc_alloc
+0x1bd610600 => 0x1801fae74: _swift_arrayInitWithCopy
+0x1bd60ffb0 => 0x2a3206a5c: __Block_object_dispose
+0x1bd610410 => 0x18009aad4: _objc_release_x28
+0x1bd610180 => 0x1be04e9e0: _dispatch_semaphore_signal
+0x1bd610290 => 0x18009bc10: _objc_autoreleaseReturnValue
+0x1bd610030 => 0x1801c42dc: __ZnwmSt19__type_descriptor_t
+0x1bd610020 => 0x1801c42d8: __ZdlPv
+0x1bd60fee0 => 0x1801f50a4: _$ss27_stringCompareWithSmolCheck__9expectingSbs11_StringGutsV_ADs01_G16ComparisonResultOtF
+0x1bd6102b0 => 0x18009e0c4: _objc_copyWeak
+0x1bd610250 => 0x18009bf6c: _objc_alloc_init
+0x1bd6105b0 => 0x1a956f420: _os_log_type_enabled
+0x1bd6102f0 => 0x18009dcf8: _objc_initWeak
+0x1bd610200 => 0x18ec9e970: _malloc_size
+0x1bd6100d0 => 0x2a323c130: _asinf
+0x1bd6103d0 => 0x18009a854: _objc_release_x24
+0x1bd610300 => 0x18009e3b0: _objc_loadWeakRetained
+0x1bd610520 => 0x180099ae0: _objc_retain_x28
+0x1bd6100b0 => 0x1a9575074: __os_log_error_impl
+0x1bd610220 => 0x2a3280930: __platform_memmove
+0x1bd610160 => 0x1be053fc0: _dispatch_queue_create
+0x1bd60fea0 => 0x1801eb730: _$sSS4hash4intoys6HasherVz_tF
+0x1bd610630 => 0x180225b84: _swift_getForeignTypeMetadata
+0x1bd610560 => 0x18009cc48: _objc_storeStrong
+0x1bd60ff80 => 0x18077c9cc: _NSStringFromClass
+0x1bd610310 => 0x18009b6c0: _objc_msgSendSuper2
+0x1bd610120 => 0x1be050028: _dispatch_assert_queue$V2
+0x1bd60ff30 => 0x1b22e5bb0: _MGGetBoolAnswer
+0x1bd6101d0 => 0x23275211c: _mach_continuous_time
+0x1bd6105a0 => 0x1a9575868: _os_log_create
+0x1bd610330 => 0x1800a5e2c: _objc_opt_isKindOfClass
+0x1bd60ff70 => 0x1929529c0: _NSRandomData
+0x1bd610260 => 0x18009c2b0: _objc_autorelease
+0x1bd610040 => 0x18f10215c: ___assert_rtn
+0x1bd6103b0 => 0x18009a714: _objc_release_x22
+0x1bd60ffa0 => 0x192888530: _OPACKEncoderCreateData
+0x1bd6104a0 => 0x1800998c0: _objc_retain_x20
+0x1bd610000 => 0x192c81db4: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6insertEmPKcm
+0x1bd60fec0 => 0x1807869b0: _$sSa10FoundationE36_unconditionallyBridgeFromObjectiveCySayxGSo7NSArrayCSgFZ
+0x1bd610420 => 0x18009a034: _objc_release_x8
+0x1bd610090 => 0x2a32361fc: ___sincosf_stret
+0x1bd60fff0 => 0x192c801d4: __ZNSt3__112basic_stringIcNS_11char_traitsIcEENS_9allocatorIcEEE6appendEPKcm
+0x1bd60ff40 => 0x1b22eb48c: _MGGetProductType
+0x1bd610280 => 0x18009cccc: _objc_autoreleasePoolPush
+0x1bd6105f0 => 0x1801e532c: _swift_allocObject
+0x1bd6100c0 => 0x1a95721dc: __os_log_impl
+0x1bd610430 => 0x18009a0d4: _objc_release_x9
+0x1bd610230 => 0x2a3280930: __platform_memmove
+0x1bd610470 => 0x180099480: _objc_retain_x1
+0x1bd60ff00 => 0x18022d01c: _$ss6HasherV9_finalizeSiyF
+0x1bd6100f0 => 0x2a3280c00: __platform_bzero
+0x1bd610400 => 0x18009aa34: _objc_release_x27
+0x1bd610360 => 0x180099b34: _objc_release_x0
+0x1bd60fe80 => 0x180785e08: _$sSS10FoundationE34_conditionallyBridgeFromObjectiveC_6resultSbSo8NSStringC_SSSgztFZ
+0x1bd610670 => 0x1801e30f4: _swift_release_preservemost
+0x1bd6104c0 => 0x180099948: _objc_retain_x22
+0x1bd610490 => 0x1800994c4: _objc_retain_x2
+0x1bd6100a0 => 0x18f09d1cc: ___stack_chk_fail
+0x1bd610150 => 0x1be04c298: _dispatch_queue_attr_make_with_qos_class
+0x1bd610320 => 0x1800a5224: _objc_opt_class
+0x1bd610500 => 0x180099a58: _objc_retain_x26
+0x1bd610080 => 0x1801c5304: ___cxa_throw
+0x1bd6105c0 => 0x2a3281260: __platform_strlcpy
+0x1bd610340 => 0x1800a2180: _objc_opt_new
+0x1bd610650 => 0x1801e3220: _swift_getWitnessTable
+0x1bd60ff50 => 0x1b22e6ef0: _MGGetSInt32Answer
+0x1bd60ff10 => 0x1b0638f10: _AnalyticsSendEventLazy
+0x1bd610130 => 0x1be05249c: _dispatch_channel_async
+0x1bd610350 => 0x1800a0a48: _objc_opt_respondsToSelector

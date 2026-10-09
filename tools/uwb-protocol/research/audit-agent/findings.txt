@@ -1,0 +1,73 @@
+AirPods direct registration audit — local source and synthetic experiments only
+2026-10-08
+
+Scope
+Read direct-register.py, README.md, iOS26 disassembly/binary, selected macOS disassembly,
+and library source. No live authenticated session, network, Bluetooth, preferences,
+or account credential store access. No shared source edits.
+
+Confirmed client gap: X-Apple-Ctx is discarded
+Native iOS26 FMDRequest.requestHeaders calls contextForKey:contextUUID:error: for
+serverContextHeaderContext and maps it to X-Apple-Ctx. Mach-O fixups resolved pointer
+slots 0x10030bd70 and 0x10030bdb0 respectively. Native generic completion reads
+X-Apple-Ctx from response headers, clears previous context, and saves new context
+(data protection class 4). Evidence: disassembly 18837–18880 and 21444–21493.
+The direct client's post method stores only header names and does not reuse value.
+Synthetic response with X-Apple-Ctx followed by second registration: second request
+has no X-Apple-Ctx. Tested script offline-client-checks.py; test passed.
+
+Limits: Native requestHeaders has no rejection/deferral when context is absent; safe
+mapping omits nil. Thus native first registration can be submitted without it. Only
+observed creation path is a server response, not locally generated attestation.
+The logged custom register responses did not contain X-Apple-Ctx, so they did not
+bootstrap context. Missing context is an authentic difference, not established
+explanation of 204/no entry. Do not invent/forge it or read protected native store.
+
+Confirmed viewer detection gap
+The match loop checks baUUID, serialNumber, deviceDiscoveryId, udid only. It ignores
+id, deviceClass, serialNumbers dictionary. Synthetic content entry with id exactly
+TARGET, name 'My Headphones', deviceClass 'AirPods' produces target_found=false and
+airpods_named_entry=false. Test passed. Count 1 by itself doesn't prove sole entry
+is a Mac; independently classify deviceClass/productType when checking live content.
+No proof actual responses were missed: root reports actual sole entry is Mac.
+
+Native ordering and host reconciliation
+FMDServiceProvider.accessoryDidPair: first calls host registerDeviceWithCause:
+force: with deviceDidPair, resets supported accessory config/version, then audio
+asset/registry update (511895–511953). accessoryDidUpdate: sends dedicated accessory
+registration cause accessoryRegistryUpdate, includeDeviceState=true (511795–511837).
+accessoryDidUnpair: sends host registration cause deviceDidUnpair (512015–512027).
+Explicit unregisterAccessory: removes registry entry then sends host registration
+(508054–508068). Host _constructPairedDevicesInfo enumerates allAccessories and
+calls deviceInfoForHostRegister (14533 onward). Strong reason to investigate whether
+host snapshots reconcile reverse host association; server deletion semantics cannot
+be proven from client code. Mac empty snapshot could plausibly clear association.
+
+Auth binding evidence
+FMDRequest.initWithAccount: copies account authId/authToken/apsEnvironment directly
+(368831–368880). Accessory action uses the same account. FMDFMIPAccount.authId is dsid;
+authToken is fmipAuthToken else iCloudAuthToken (451097–451145). Category method at
+0x1001bf230 reads aa_fmipToken and aa_authToken. No per-accessory token derivation,
+host signature, or synthetic login device id in register auth path. Hidden server
+binding of auth token to login/provisioned device remains possible and untested.
+identityV5 has separate hardware/BAA signatures and host identity endpoint; no
+accessory-register gate to it was found. Source does not justify inventing BAA or
+adding generic Anisette headers to register requests.
+
+Registration body context
+Native registerDeviceContextForAccount: uses standardDeviceContext, optional
+lastLoggedInDsid; standard context contains deviceTS plus optional lastCommandId
+(pref key pointer 0x10030b228). The extra values are previous account/command state,
+not an identified new-registration authorization credential.
+
+Most focused next coordinated live trial
+1. Fix detection locally to include id and report aggregate deviceClass/productType
+counts; retain returned X-Apple-Ctx privately in memory and reuse only in same session.
+2. One read-only initClient to inspect context header presence and actual classes.
+3. Reproduce audio ordering: native host snapshot includes genuine accessory; while
+that snapshot is still in place, submit dedicated accessoryRegistryUpdate and read
+viewer immediately. Record timing/header names/classes only, then restore the local
+host override as already required. Do not deliberately invoke empty native register
+before the first verification.
+This distinguishes request ordering/host association from an arbitrary payload
+variation. Another 204 alone cannot confirm account enrollment.

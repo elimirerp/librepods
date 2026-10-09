@@ -1,0 +1,184 @@
+/System/Library/PrivateFrameworks/NearbySessions.framework/NearbySessions [arm64e]:
+    -exports:
+        offset      symbol
+        0x00001B70  NearbySessions.Invitation_InvitationData.displayName.modify : Swift.String
+        0x00001B08  NearbySessions.Invitation_InvitationData.displayName.getter : Swift.String
+        0x00008E34  property descriptor for NearbySessions.Invitation_InvitationData.displayName : Swift.String
+        0x00001B38  NearbySessions.Invitation_InvitationData.displayName.setter : Swift.String
+        0x00001E1C  NearbySessions.Invitation_InvitationData.hasUserInfo.getter : Swift.Bool
+        0x00008E38  property descriptor for NearbySessions.Invitation_InvitationData.hasUserInfo : Swift.Bool
+        0x00001AE8  NearbySessions.Invitation_InvitationData.invitationID.modify : Foundation.Data
+        0x00001A7C  NearbySessions.Invitation_InvitationData.invitationID.getter : Foundation.Data
+        0x00008E30  property descriptor for NearbySessions.Invitation_InvitationData.invitationID : Foundation.Data
+        0x00001AB0  NearbySessions.Invitation_InvitationData.invitationID.setter : Foundation.Data
+        0x00001E84  NearbySessions.Invitation_InvitationData.clearUserInfo() -> ()
+        0x00003560  NearbySessions.Invitation_InvitationData.decodeMessage<A where A: InternalSwiftProtobuf.Decoder>(decoder: inout A) throws -> ()
+        0x00002AAC  NearbySessions.Invitation_InvitationData.unknownFields.modify : InternalSwiftProtobuf.UnknownStorage
+        0x00002988  NearbySessions.Invitation_InvitationData.unknownFields.getter : InternalSwiftProtobuf.UnknownStorage
+        0x00008E3C  property descriptor for NearbySessions.Invitation_InvitationData.unknownFields : InternalSwiftProtobuf.UnknownStorage
+        0x00002A1C  NearbySessions.Invitation_InvitationData.unknownFields.setter : InternalSwiftProtobuf.UnknownStorage
+        0x000031C8  NearbySessions.Invitation_InvitationData.protoMessageName.unsafeMutableAddressor : Swift.String
+        0x000031D4  static NearbySessions.Invitation_InvitationData.protoMessageName.getter : Swift.String
+        0x339F5A28  static NearbySessions.Invitation_InvitationData.protoMessageName : Swift.String
+        0x00003434  NearbySessions.Invitation_InvitationData._protobuf_nameMap.unsafeMutableAddressor : InternalSwiftProtobuf._NameMap
+        0x000034AC  static NearbySessions.Invitation_InvitationData._protobuf_nameMap.getter : InternalSwiftProtobuf._NameMap
+        0x3979AE90  static NearbySessions.Invitation_InvitationData._protobuf_nameMap : InternalSwiftProtobuf._NameMap
+        0x00002284  NearbySessions.Invitation_InvitationData.hostConnectionInfo.modify : NearbySessions.Invitation_HostConnectionInfo
+        0x00001EC4  NearbySessions.Invitation_InvitationData.hostConnectionInfo.getter : NearbySessions.Invitation_HostConnectionInfo
+        0x339F5A48  property descriptor for NearbySessions.Invitation_InvitationData.hostConnectionInfo : NearbySessions.Invitation_HostConnectionInfo
+        0x000021E8  NearbySessions.Invitation_InvitationData.hostConnectionInfo.setter : NearbySessions.Invitation_HostConnectionInfo
+        0x00008D68  protocol conformance descriptor for NearbySessions.Invitation_InvitationData : InternalSwiftProtobuf._ProtoNameProviding in NearbySessions
+        0x00008D30  protocol conformance descriptor for NearbySessions.Invitation_InvitationData : InternalSwiftProtobuf._MessageImplementationBase in NearbySessions
+        0x00008CB8  protocol conformance descriptor for NearbySessions.Invitation_InvitationData : InternalSwiftProtobuf.Message in NearbySessions
+        0x00002560  NearbySessions.Invitation_InvitationData.hasHostConnectionInfo.getter : Swift.Bool
+        0x00008E38  property descriptor for NearbySessions.Invitation_InvitationData.hasHostConnectionInfo : Swift.Bool
+        0x00002904  NearbySessions.Invitation_InvitationData.clearHostConnectionInfo() -> ()
+        0x00003AAC  static NearbySessions.Invitation_InvitationData.== infix(NearbySessions.Invitation_InvitationData, NearbySessions.Invitation_InvitationData) -> Swift.Bool
+        0x00003710  NearbySessions.Invitation_InvitationData.traverse<A where A: InternalSwiftProtobuf.Visitor>(visitor: inout A) throws -> ()
+        0x00001D0C  NearbySessions.Invitation_InvitationData.userInfo.modify : Foundation.Data
+        0x00001B90  NearbySessions.Invitation_InvitationData.userInfo.getter : Foundation.Data
+        0x339F5A38  property descriptor for NearbySessions.Invitation_InvitationData.userInfo : Foundation.Data
+        0x00001CB0  NearbySessions.Invitation_InvitationData.userInfo.setter : Foundation.Data
+        0x00003AB0  NearbySessions.Invitation_InvitationData.hashValue.getter : Swift.Int
+        0x00008E38  property descriptor for NearbySessions.Invitation_InvitationData.hashValue : Swift.Int
+        0x00002AF4  NearbySessions.Invitation_InvitationData.init() -> NearbySessions.Invitation_InvitationData
+        0x00001BE0  type metadata accessor for NearbySessions.Invitation_InvitationData
+        0x0000938C  nominal type descriptor for NearbySessions.Invitation_InvitationData
+        0x3CA75C98  type metadata for NearbySessions.Invitation_InvitationData
+        0x00008DB8  protocol conformance descriptor for NearbySessions.Invitation_InvitationData : Swift.Hashable in NearbySessions
+        0x00008DF8  protocol conformance descriptor for NearbySessions.Invitation_InvitationData : Swift.Equatable in NearbySessions
+        0x00008D90  protocol conformance descriptor for NearbySessions.Invitation_InvitationData : Swift.CustomDebugStringConvertible in NearbySessions
+        0x00006C00  NearbySessions.NearbyGroupMember.description.getter : Swift.String
+        0x00006764  static NearbySessions.NearbyGroupMember.supportsSecureCoding.getter : Swift.Bool
+        0x00008F80  property descriptor for static NearbySessions.NearbyGroupMember.supportsSecureCoding : Swift.Bool
+        0x0000676C  NearbySessions.NearbyGroupMember.__allocating_init(coder: __C.NSCoder) -> NearbySessions.NearbyGroupMember?
+        0x00006D74  dispatch thunk of NearbySessions.NearbyGroupMember.__allocating_init(coder: __C.NSCoder) -> NearbySessions.NearbyGroupMember?
+        0x00009428  method descriptor for NearbySessions.NearbyGroupMember.__allocating_init(coder: __C.NSCoder) -> NearbySessions.NearbyGroupMember?
+        0x000067A0  NearbySessions.NearbyGroupMember.init(coder: __C.NSCoder) -> NearbySessions.NearbyGroupMember?
+        0x00006D88  dispatch thunk of NearbySessions.NearbyGroupMember.encode(with: __C.NSCoder) -> ()
+        0x00009430  method descriptor for NearbySessions.NearbyGroupMember.encode(with: __C.NSCoder) -> ()
+        0x0000628C  NearbySessions.NearbyGroupMember.__allocating_init(handle: Swift.String, tokenID: Swift.String?) -> NearbySessions.NearbyGroupMember
+        0x00006D60  dispatch thunk of NearbySessions.NearbyGroupMember.__allocating_init(handle: Swift.String, tokenID: Swift.String?) -> NearbySessions.NearbyGroupMember
+        0x00009420  method descriptor for NearbySessions.NearbyGroupMember.__allocating_init(handle: Swift.String, tokenID: Swift.String?) -> NearbySessions.NearbyGroupMember
+        0x0000630C  NearbySessions.NearbyGroupMember.init(handle: Swift.String, tokenID: Swift.String?) -> NearbySessions.NearbyGroupMember
+        0x00006214  NearbySessions.NearbyGroupMember.handle.getter : Swift.String
+        0x339F5A58  property descriptor for NearbySessions.NearbyGroupMember.handle : Swift.String
+        0x00006250  NearbySessions.NearbyGroupMember.tokenID.getter : Swift.String?
+        0x339F5A60  property descriptor for NearbySessions.NearbyGroupMember.tokenID : Swift.String?
+        0x00006AB0  NearbySessions.NearbyGroupMember.__allocating_init() -> NearbySessions.NearbyGroupMember
+        0x00008430  NearbySessions.NearbyGroupMember.init() -> NearbySessions.NearbyGroupMember
+        0x00006360  type metadata accessor for NearbySessions.NearbyGroupMember
+        0x000093EC  nominal type descriptor for NearbySessions.NearbyGroupMember
+        0x00008FA8  class metadata base offset for NearbySessions.NearbyGroupMember
+        0x00006D48  method lookup function for NearbySessions.NearbyGroupMember
+        0x3BE334B8  type metadata for NearbySessions.NearbyGroupMember
+        0x00006B0C  NearbySessions.NearbyGroupMember.__deallocating_deinit
+        0x000073A4  static NearbySessions.NearbyGroupInterface.hostObjectInterface.modify : __C.NSXPCInterface
+        0x0000735C  static NearbySessions.NearbyGroupInterface.hostObjectInterface.getter : __C.NSXPCInterface
+        0x339F5A78  property descriptor for static NearbySessions.NearbyGroupInterface.hostObjectInterface : __C.NSXPCInterface
+        0x00007380  static NearbySessions.NearbyGroupInterface.hostObjectInterface.setter : __C.NSXPCInterface
+        0x00007628  static NearbySessions.NearbyGroupInterface.clientObjectInterface.modify : __C.NSXPCInterface
+        0x00007510  static NearbySessions.NearbyGroupInterface.clientObjectInterface.getter : __C.NSXPCInterface
+        0x339F5A88  property descriptor for static NearbySessions.NearbyGroupInterface.clientObjectInterface : __C.NSXPCInterface
+        0x0000759C  static NearbySessions.NearbyGroupInterface.clientObjectInterface.setter : __C.NSXPCInterface
+        0x00008FE0  protocol conformance descriptor for NearbySessions.NearbyGroupInterface : CopresenceCore.XPCInterface in NearbySessions
+        0x00006FE0  static NearbySessions.NearbyGroupInterface.identity.modify : CopresenceCore.XPCIdentity
+        0x00006E34  static NearbySessions.NearbyGroupInterface.identity.getter : CopresenceCore.XPCIdentity
+        0x339F5A68  property descriptor for static NearbySessions.NearbyGroupInterface.identity : CopresenceCore.XPCIdentity
+        0x00006EEC  static NearbySessions.NearbyGroupInterface.identity.setter : CopresenceCore.XPCIdentity
+        0x0000794C  type metadata accessor for NearbySessions.NearbyGroupInterface
+        0x00009438  nominal type descriptor for NearbySessions.NearbyGroupInterface
+        0x3FE4A318  type metadata for NearbySessions.NearbyGroupInterface
+        0x00007F18  NearbySessions.NearbyGroupClientConnection.setMembers(Swift.Set<NearbySessions.NearbyGroupMember>) -> ()
+        0x00007E44  NearbySessions.NearbyGroupClientConnection.setMembersCallback.modify : ((Swift.Set<NearbySessions.NearbyGroupMember>) -> ())?
+        0x00007D38  NearbySessions.NearbyGroupClientConnection.setMembersCallback.getter : ((Swift.Set<NearbySessions.NearbyGroupMember>) -> ())?
+        0x339F5AA8  property descriptor for NearbySessions.NearbyGroupClientConnection.setMembersCallback : ((Swift.Set<NearbySessions.NearbyGroupMember>) -> ())?
+        0x3979AE50  direct field offset for NearbySessions.NearbyGroupClientConnection.setMembersCallback : ((Swift.Set<NearbySessions.NearbyGroupMember>) -> ())?
+        0x00007DC0  NearbySessions.NearbyGroupClientConnection.setMembersCallback.setter : ((Swift.Set<NearbySessions.NearbyGroupMember>) -> ())?
+        0x00007EA4  NearbySessions.NearbyGroupClientConnection.handleServerDisconnect() -> ()
+        0x00007B70  NearbySessions.NearbyGroupClientConnection.serverDisconnectedCallback.modify : (() -> ())?
+        0x00007B10  NearbySessions.NearbyGroupClientConnection.serverDisconnectedCallback.getter : (() -> ())?
+        0x339F5A98  property descriptor for NearbySessions.NearbyGroupClientConnection.serverDisconnectedCallback : (() -> ())?
+        0x3979AE48  direct field offset for NearbySessions.NearbyGroupClientConnection.serverDisconnectedCallback : (() -> ())?
+        0x00007B40  NearbySessions.NearbyGroupClientConnection.serverDisconnectedCallback.setter : (() -> ())?
+        0x00008070  NearbySessions.NearbyGroupClientConnection.__allocating_init() -> NearbySessions.NearbyGroupClientConnection
+        0x0000809C  NearbySessions.NearbyGroupClientConnection.init() -> NearbySessions.NearbyGroupClientConnection
+        0x000081E4  type metadata accessor for NearbySessions.NearbyGroupClientConnection
+        0x00009454  nominal type descriptor for NearbySessions.NearbyGroupClientConnection
+        0x3979AF08  class metadata base offset for NearbySessions.NearbyGroupClientConnection
+        0x3CA75CF0  ObjC resilient class stub for NearbySessions.NearbyGroupClientConnection
+        0x0000819C  NearbySessions.NearbyGroupClientConnection.__deallocating_deinit
+        0x00002DCC  NearbySessions.Invitation_HostConnectionInfo.decodeMessage<A where A: InternalSwiftProtobuf.Decoder>(decoder: inout A) throws -> ()
+        0x000019EC  NearbySessions.Invitation_HostConnectionInfo.unknownFields.modify : InternalSwiftProtobuf.UnknownStorage
+        0x0000199C  NearbySessions.Invitation_HostConnectionInfo.unknownFields.getter : InternalSwiftProtobuf.UnknownStorage
+        0x00008E28  property descriptor for NearbySessions.Invitation_HostConnectionInfo.unknownFields : InternalSwiftProtobuf.UnknownStorage
+        0x000019D4  NearbySessions.Invitation_HostConnectionInfo.unknownFields.setter : InternalSwiftProtobuf.UnknownStorage
+        0x00002B98  NearbySessions.Invitation_HostConnectionInfo.protoMessageName.unsafeMutableAddressor : Swift.String
+        0x00002BA4  static NearbySessions.Invitation_HostConnectionInfo.protoMessageName.getter : Swift.String
+        0x339F5A18  static NearbySessions.Invitation_HostConnectionInfo.protoMessageName : Swift.String
+        0x00002D84  NearbySessions.Invitation_HostConnectionInfo._protobuf_nameMap.unsafeMutableAddressor : InternalSwiftProtobuf._NameMap
+        0x00002DA8  static NearbySessions.Invitation_HostConnectionInfo._protobuf_nameMap.getter : InternalSwiftProtobuf._NameMap
+        0x3979AE78  static NearbySessions.Invitation_HostConnectionInfo._protobuf_nameMap : InternalSwiftProtobuf._NameMap
+        0x00008C00  protocol conformance descriptor for NearbySessions.Invitation_HostConnectionInfo : InternalSwiftProtobuf._ProtoNameProviding in NearbySessions
+        0x00008BC8  protocol conformance descriptor for NearbySessions.Invitation_HostConnectionInfo : InternalSwiftProtobuf._MessageImplementationBase in NearbySessions
+        0x00008B50  protocol conformance descriptor for NearbySessions.Invitation_HostConnectionInfo : InternalSwiftProtobuf.Message in NearbySessions
+        0x00002F4C  static NearbySessions.Invitation_HostConnectionInfo.== infix(NearbySessions.Invitation_HostConnectionInfo, NearbySessions.Invitation_HostConnectionInfo) -> Swift.Bool
+        0x0000197C  NearbySessions.Invitation_HostConnectionInfo.handle.modify : Swift.String
+        0x00005624  NearbySessions.Invitation_HostConnectionInfo.handle.getter : Swift.String
+        0x00008E24  property descriptor for NearbySessions.Invitation_HostConnectionInfo.handle : Swift.String
+        0x00005630  NearbySessions.Invitation_HostConnectionInfo.handle.setter : Swift.String
+        0x00002E60  NearbySessions.Invitation_HostConnectionInfo.traverse<A where A: InternalSwiftProtobuf.Visitor>(visitor: inout A) throws -> ()
+        0x00002F50  NearbySessions.Invitation_HostConnectionInfo.hashValue.getter : Swift.Int
+        0x00008E38  property descriptor for NearbySessions.Invitation_HostConnectionInfo.hashValue : Swift.Int
+        0x00001958  NearbySessions.Invitation_HostConnectionInfo.publicKey.modify : Foundation.Data
+        0x0000560C  NearbySessions.Invitation_HostConnectionInfo.publicKey.getter : Foundation.Data
+        0x00008E20  property descriptor for NearbySessions.Invitation_HostConnectionInfo.publicKey : Foundation.Data
+        0x00005634  NearbySessions.Invitation_HostConnectionInfo.publicKey.setter : Foundation.Data
+        0x00001A34  NearbySessions.Invitation_HostConnectionInfo.init() -> NearbySessions.Invitation_HostConnectionInfo
+        0x000019B4  type metadata accessor for NearbySessions.Invitation_HostConnectionInfo
+        0x00009364  nominal type descriptor for NearbySessions.Invitation_HostConnectionInfo
+        0x3CA75C10  type metadata for NearbySessions.Invitation_HostConnectionInfo
+        0x00008C50  protocol conformance descriptor for NearbySessions.Invitation_HostConnectionInfo : Swift.Hashable in NearbySessions
+        0x00008C90  protocol conformance descriptor for NearbySessions.Invitation_HostConnectionInfo : Swift.Equatable in NearbySessions
+        0x00008C28  protocol conformance descriptor for NearbySessions.Invitation_HostConnectionInfo : Swift.CustomDebugStringConvertible in NearbySessions
+        0x00005BCC  NearbySessions.>> prefix<A>(A?) -> Swift.String
+        0x000058F0  NearbySessions.Log.host.unsafeMutableAddressor : os.Logger
+        0x00005914  static NearbySessions.Log.host.getter : os.Logger
+        0x3979AEA8  static NearbySessions.Log.host : os.Logger
+        0x00008F54  property descriptor for static NearbySessions.Log.host : os.Logger
+        0x00005A9C  NearbySessions.Log.group.unsafeMutableAddressor : os.Logger
+        0x00005B14  static NearbySessions.Log.group.getter : os.Logger
+        0x3979AEF0  static NearbySessions.Log.group : os.Logger
+        0x00008F54  property descriptor for static NearbySessions.Log.group : os.Logger
+        0x00005890  NearbySessions.Log.client.unsafeMutableAddressor : os.Logger
+        0x000058B4  static NearbySessions.Log.client.getter : os.Logger
+        0x3BE33580  static NearbySessions.Log.client : os.Logger
+        0x00008F54  property descriptor for static NearbySessions.Log.client : os.Logger
+        0x00005958  NearbySessions.Log.session.unsafeMutableAddressor : os.Logger
+        0x0000597C  static NearbySessions.Log.session.getter : os.Logger
+        0x3979AEC0  static NearbySessions.Log.session : os.Logger
+        0x00008F54  property descriptor for static NearbySessions.Log.session : os.Logger
+        0x000059C0  NearbySessions.Log.provider.unsafeMutableAddressor : os.Logger
+        0x000059E4  static NearbySessions.Log.provider.getter : os.Logger
+        0x3979AED8  static NearbySessions.Log.provider : os.Logger
+        0x00008F54  property descriptor for static NearbySessions.Log.provider : os.Logger
+        0x00005BC8  NearbySessions.Log.init() -> NearbySessions.Log
+        0x000061EC  type metadata accessor for NearbySessions.Log
+        0x000093D0  nominal type descriptor for NearbySessions.Log
+        0x3FE4A250  type metadata for NearbySessions.Log
+        0x00005638  NearbySessions.Subsystem.init(rawValue: Swift.String) -> NearbySessions.Subsystem?
+        0x00005680  NearbySessions.Subsystem.rawValue.getter : Swift.String
+        0x00008F54  property descriptor for NearbySessions.Subsystem.rawValue : Swift.String
+        0x000061DC  type metadata accessor for NearbySessions.Subsystem
+        0x000093B4  nominal type descriptor for NearbySessions.Subsystem
+        0x3FE4A230  type metadata for NearbySessions.Subsystem
+        0x00008EDC  protocol conformance descriptor for NearbySessions.Subsystem : Swift.Hashable in NearbySessions
+        0x00008EB4  protocol conformance descriptor for NearbySessions.Subsystem : Swift.Equatable in NearbySessions
+        0x00008F1C  protocol conformance descriptor for NearbySessions.Subsystem : Swift.RawRepresentable in NearbySessions
+        0x000057FC  (extension in NearbySessions):os.Logger.init<A where A: Swift.RawRepresentable, A.RawValue == Swift.String>(subsystem: A, category: Swift.String) -> os.Logger
+        0x00005F28  (extension in NearbySessions):Swift.DefaultStringInterpolation.appendInterpolation<A>(A?) -> ()
+        0x00008AF8  _NearbySessionsVersionNumber
+        0x00008AC0  _NearbySessionsVersionString
+        0x3BE334B8  _OBJC_CLASS_$_NearbySessions.NearbyGroupMember
+        0x3BE33550  _OBJC_METACLASS_$_NearbySessions.NearbyGroupMember
+        0x3CA75CC0  _OBJC_METACLASS_$_NearbySessions.NearbyGroupClientConnection

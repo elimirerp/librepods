@@ -1,0 +1,84 @@
+Host snapshot investigation — 2026-10-08
+
+Answer
+A rootless RegistrationClient can technically POST to the Mac's hardware UDID, but
+I found no way within the inspected API surface to obtain the full native Mac
+registration body without native daemon access. Submitting a handwritten partial
+Mac body cannot be justified as preserving current Find My state. Server omission
+and array reconciliation semantics are not established by the available binary.
+
+Local experiments
+Ran existing runtime-inspect on FindMyDevice.framework for ServerDeviceInfo,
+FMDSystemConfig, FMDSystemConfig_macosx, FMDFMMManager, FMDFMIPManager,
+FMDDeviceInfo, FMDServiceProvider. Only FMDFMMManager exists there. Output saved
+in host-api-surface.txt. Runtime inspection lists methods/properties only, calls
+no state/accessor/registration methods, and changes no settings.
+
+Native completeDeviceInfo is not the desired accessor
+-[ServerDeviceInfo completeDeviceInfoForAccount:accessory:] at 0x100057840 simply
+calls [accessory completeDeviceInfo], mutableCopy, and adds a protocol field.
+No accessory=nil -> host fallback. Evidence: macOS disassembly 88785–88814.
+For host: deviceInfoForAccount: at 0x1000572d0 combines nonVolatile, volatile,
+nonCritical dictionaries and then applies deviceInfoOverrides through shallow
+addEntriesFromDictionary. Evidence: 88430–88504.
+These generator classes live in /usr/libexec/findmydeviced (MH_EXECUTE), not the
+loadable FindMyDevice framework.
+
+Rootless framework API alternatives checked statically
+FMDFMMManager has fetchAPNSTokenWithCompletion and locationPayloadWithCompletion,
+but their server handlers require _hasClientAccessEntitlement before returning
+values (101254–101470). locationPayload returns server locationPayloadReceived,
+not the registration body. Even these would not export the full host dictionary.
+No RPC experiment made and no entitlement attempt performed.
+
+Why a minimal Mac body is materially different
+Native host nonVolatile dictionary includes native device identity/class/model,
+build/version/platform, serial/mlb identity, account version history, APNS token,
+recovery state, location capability, and optional secure-element metadata.
+Native volatile dictionary includes native location permissions, name/timezone/
+locale, unlock/biolock state, BA registration status, masked account value, and
+Activation Lock capability/allowed/state fields. NonCritical adds battery/BLE and
+Octagon status. Evidence: 88815–90359. Viewer Mac objects contain different fields
+and are not a round-trip registration representation.
+
+Patch/merge versus replacement evidence
+Local deviceInfoOverrides is a shallow dictionary merge into a freshly generated
+full native body; otherDevices overrides that whole array. It is not a server
+patch instruction. FMDRequestRegister uses generic requestBody with complete
+named deviceInfo/deviceContext, same register URL. No PATCH verb, merge flag, or
+per-array append operation was found.
+iOS audio accessoryDidPair first sends host deviceDidPair registration, then
+registry/assets update triggers dedicated accessoryRegistryUpdate registration.
+Unpair removes accessory from local registry and sends host registration, strongly
+suggesting host snapshots are used to reconcile membership. This does not prove
+whether any absent host field gets erased or omitted fields are preserved. Treat
+server semantics as unknown; do not send partial Mac identity/status fields.
+
+Concrete coordinated trial using existing native generator
+This is a proposed later live procedure for root, not performed in this audit.
+1. Keep fixed genuine Mac platform/hardware identity. Use already validated target
+   host candidate with macosx_proxy (registration-candidate.json or corresponding
+   full macosx candidate). No iPhone host impersonation.
+2. Baseline viewer: aggregate class/productType count, target match (including id,
+   deviceClass and nested serialNumbers), no private values. Verify direct/native
+   accounts match by the previously established digest procedure if needed.
+3. Run existing registration-trial --run-refresh candidate in authorized native
+   helper for its 90-second window, preserving original prefs/marker backup and
+   restoration. This merges only target otherDevices into the native full body.
+4. Wait for the native host registration HTTP204 evidence, avoiding reporting it
+   as success. During the same override window, root invokes one dedicated target
+   register with cause accessoryRegistryUpdate and platform macosx_proxy, then
+   immediately calls viewer. Reuse X-Apple-Ctx only if obtained in that session.
+5. A second viewer read inside the window can distinguish transient appearance.
+   Ensure both reads occur before preference restoration and any later empty host
+   registration. No arbitrary standalone Mac POST and no native Find My setting
+   changes are needed for body reconstruction.
+6. Let helper restore original override and refresh marker, verify restoration,
+   then another viewer read. Correlate native registration timestamps. Disappearance
+   after a later [] host snapshot would support reverse-association reconciliation;
+   continued absence does not resolve server prerequisites/schema on its own.
+
+If native override cannot be used
+Do not synthesize a rootless full host body from hardware + viewer. Progress can
+continue on dedicated accessory schema/config fields and read-only evidence, but
+that is not the same complete native host snapshot trial.

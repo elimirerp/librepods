@@ -1,0 +1,172 @@
+Magic         = 64-bit MachO
+Type          = EXECUTE
+CPU           = AARCH64, ARM64e caps: USR00
+Commands      = 110 (Size: 12520)
+Flags         = NoUndefs, DyldLink, TwoLevel, PIE
+000: LC_SEGMENT_64 sz=0x00000000 off=0x00000000-0x00000000 addr=0x000000000-0x100000000 ---/---   __PAGEZERO        
+001: LC_SEGMENT_64 sz=0x01880000 off=0x00000000-0x01880000 addr=0x100000000-0x101880000 r-x/r-x   __TEXT            
+	sz=0x01580ee0 off=0x00003290-0x01584170 addr=0x100003290-0x101584170               __TEXT.__text            PureInstructions|SomeInstructions 
+	sz=0x00007d20 off=0x01584170-0x0158be90 addr=0x101584170-0x10158be90               __TEXT.__auth_stubs      PureInstructions|SomeInstructions (SymbolStubs)
+	sz=0x00006d80 off=0x0158bea0-0x01592c20 addr=0x10158bea0-0x101592c20               __TEXT.__objc_stubs      PureInstructions|SomeInstructions 
+	sz=0x00003d94 off=0x01592c20-0x015969b4 addr=0x101592c20-0x1015969b4               __TEXT.__objc_methlist    
+	sz=0x00015f58 off=0x015969c0-0x015ac918 addr=0x1015969c0-0x1015ac918               __TEXT.__objc_methname    (CstringLiterals)
+	sz=0x000300cd off=0x015ac920-0x015dc9ed addr=0x1015ac920-0x1015dc9ed               __TEXT.__cstring          (CstringLiterals)
+	sz=0x000040b9 off=0x015dc9f0-0x015e0aa9 addr=0x1015dc9f0-0x1015e0aa9               __TEXT.__objc_classname   (CstringLiterals)
+	sz=0x0000586b off=0x015e0ab0-0x015e631b addr=0x1015e0ab0-0x1015e631b               __TEXT.__objc_methtype    (CstringLiterals)
+	sz=0x00092f90 off=0x015e6320-0x016792b0 addr=0x1015e6320-0x1016792b0               __TEXT.__const            
+	sz=0x00045eac off=0x016792b0-0x016bf15c addr=0x1016792b0-0x1016bf15c               __TEXT.__oslogstring      (CstringLiterals)
+	sz=0x00022a18 off=0x016bf15c-0x016e1b74 addr=0x1016bf15c-0x1016e1b74               __TEXT.__swift5_typeref   
+	sz=0x000235ac off=0x016e1b74-0x01705120 addr=0x1016e1b74-0x101705120               __TEXT.__swift5_fieldmd   
+	sz=0x0001f6d4 off=0x01705120-0x017247f4 addr=0x101705120-0x1017247f4               __TEXT.__constg_swiftt    
+	sz=0x00000988 off=0x017247f4-0x0172517c addr=0x1017247f4-0x10172517c               __TEXT.__swift5_builtin   
+	sz=0x000220df off=0x01725180-0x0174725f addr=0x101725180-0x10174725f               __TEXT.__swift5_reflstr   
+	sz=0x00002e40 off=0x01747260-0x0174a0a0 addr=0x101747260-0x10174a0a0               __TEXT.__swift5_assocty   
+	sz=0x000002f4 off=0x0174a0a0-0x0174a394 addr=0x10174a0a0-0x10174a394               __TEXT.__swift5_protos    
+	sz=0x00005cf0 off=0x0174a394-0x01750084 addr=0x10174a394-0x101750084               __TEXT.__swift5_proto     
+	sz=0x00001e50 off=0x01750084-0x01751ed4 addr=0x101750084-0x101751ed4               __TEXT.__swift5_types     
+	sz=0x00002d18 off=0x01751ed4-0x01754bec addr=0x101751ed4-0x101754bec               __TEXT.__swift_as_entry   
+	sz=0x00016ef4 off=0x01754bec-0x0176bae0 addr=0x101754bec-0x10176bae0               __TEXT.__swift5_capture   
+	sz=0x00005e10 off=0x0176bae0-0x017718f0 addr=0x10176bae0-0x1017718f0               __TEXT.__swift_as_ret     
+	sz=0x00000b08 off=0x017718f0-0x017723f8 addr=0x1017718f0-0x1017723f8               __TEXT.__swift5_mpenum    
+	sz=0x00000008 off=0x017723f8-0x01772400 addr=0x1017723f8-0x101772400               __TEXT.__swift5_entry     
+	sz=0x0000068d off=0x01772400-0x01772a8d addr=0x101772400-0x101772a8d               __TEXT.__info_plist       
+	sz=0x0003f660 off=0x01772a90-0x017b20f0 addr=0x101772a90-0x1017b20f0               __TEXT.__unwind_info      
+	sz=0x000cb1ec off=0x017b20f0-0x0187d2dc addr=0x1017b20f0-0x10187d2dc               __TEXT.__eh_frame        NoToc|StripStaticSyms|LiveSupport (Coalesced)
+002: LC_SEGMENT_64 sz=0x00078000 off=0x01880000-0x018f8000 addr=0x101880000-0x1018f8000 rw-/rw-   __DATA_CONST      ReadOnly
+	sz=0x00003e98 off=0x01880000-0x01883e98 addr=0x101880000-0x101883e98         __DATA_CONST.__auth_got         (NonLazySymbolPointers)
+	sz=0x00003230 off=0x01883e98-0x018870c8 addr=0x101883e98-0x1018870c8         __DATA_CONST.__got              (NonLazySymbolPointers)
+	sz=0x00004558 off=0x018870c8-0x0188b620 addr=0x1018870c8-0x10188b620         __DATA_CONST.__auth_ptr         
+	sz=0x00068ad0 off=0x0188b620-0x018f40f0 addr=0x10188b620-0x1018f40f0         __DATA_CONST.__const            
+	sz=0x00000080 off=0x018f40f0-0x018f4170 addr=0x1018f40f0-0x1018f4170         __DATA_CONST.__cfstring         
+	sz=0x00000850 off=0x018f4170-0x018f49c0 addr=0x1018f4170-0x1018f49c0         __DATA_CONST.__objc_classlist  NoDeadStrip 
+	sz=0x00000010 off=0x018f49c0-0x018f49d0 addr=0x1018f49c0-0x1018f49d0         __DATA_CONST.__objc_catlist    NoDeadStrip 
+	sz=0x00000338 off=0x018f49d0-0x018f4d08 addr=0x1018f49d0-0x1018f4d08         __DATA_CONST.__objc_protolist   
+	sz=0x00000008 off=0x018f4d08-0x018f4d10 addr=0x1018f4d08-0x1018f4d10         __DATA_CONST.__objc_imageinfo   
+	sz=0x000001a8 off=0x018f4d10-0x018f4eb8 addr=0x1018f4d10-0x1018f4eb8         __DATA_CONST.__objc_protorefs   
+	sz=0x00000010 off=0x018f4eb8-0x018f4ec8 addr=0x1018f4eb8-0x1018f4ec8         __DATA_CONST.__objc_superrefs   
+	sz=0x00000015 off=0x018f4ec8-0x018f4edd addr=0x1018f4ec8-0x1018f4edd         __DATA_CONST.__linkguard        
+003: LC_SEGMENT_64 sz=0x00060000 off=0x018f8000-0x01958000 addr=0x1018f8000-0x101a0c000 rw-/rw-   __DATA            
+	sz=0x0001a498 off=0x018f8000-0x01912498 addr=0x1018f8000-0x101912498               __DATA.__objc_const       
+	sz=0x00003250 off=0x01912498-0x019156e8 addr=0x101912498-0x1019156e8               __DATA.__objc_selrefs    NoDeadStrip (LiteralPointers)
+	sz=0x00000010 off=0x019156e8-0x019156f8 addr=0x1019156e8-0x1019156f8               __DATA.__objc_ivar        
+	sz=0x00003688 off=0x019156f8-0x01918d80 addr=0x1019156f8-0x101918d80               __DATA.__objc_data        
+	sz=0x0003b430 off=0x01918d80-0x019541b0 addr=0x101918d80-0x1019541b0               __DATA.__data             
+	sz=0x000b1f30 off=0x00000000-0x000b1f30 addr=0x1019541b0-0x101a060e0               __DATA.__bss              (Zerofill)
+	sz=0x00002b30 off=0x00000000-0x00002b30 addr=0x101a060e0-0x101a08c10               __DATA.__common           (Zerofill)
+004: LC_SEGMENT_64 sz=0x000e12d0 off=0x01958000-0x01a392d0 addr=0x101a0c000-0x101af0000 r--/r--   __LINKEDIT        
+005: LC_DYLD_CHAINED_FIXUPS      offset=0x001958000 size=0x399a8
+006: LC_DYLD_EXPORTS_TRIE        offset=0x0019919a8 size=0xa818
+007: LC_SYMTAB                   Symbol offset=0x019B1EC0, Num Syms: 4210, String offset=0x019C7D90-0x019FD770
+008: LC_DYSYMTAB                 
+	             Local Syms: 1 at 0
+	          External Syms: 1 at 1
+	         Undefined Syms: 4208 at 2
+	                    TOC: No
+	                 Modtab: No
+	External symtab Entries: None
+	Indirect symtab Entries: 5611 at 0x019c25e0
+	 External Reloc Entries: None
+	    Local Reloc Entries: None
+009: LC_LOAD_DYLINKER            /usr/lib/dyld
+010: LC_UUID                     F6D64A44-F2F2-3B16-96A3-3C0AF8BB9148
+011: LC_BUILD_VERSION            Platform: iOS, MinOS: 26.7, SDK: 26.7, Tool: ld (1267)
+012: LC_SOURCE_VERSION           423.36.4.19.2
+013: LC_MAIN                     Entry Point: 0x0000000001409280, Stack Size: 0x0
+014: LC_LOAD_WEAK_DYLIB          /usr/appleinternal/lib/liblinkguard.dylib (26)
+015: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/RunningBoardServices.framework/RunningBoardServices (1015.160.2)
+016: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreBluetooth.framework/CoreBluetooth (196.5.1)
+017: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/DeviceIdentity.framework/DeviceIdentity (0)
+018: LC_LOAD_DYLIB               /System/Library/Frameworks/IOKit.framework/Versions/A/IOKit (275)
+019: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/MobileKeyBag.framework/MobileKeyBag (1)
+020: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/WirelessProximity.framework/WirelessProximity (1)
+021: LC_LOAD_DYLIB               /System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices (1226)
+022: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/NanoRegistry.framework/NanoRegistry (1)
+023: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/NearField.framework/NearField (1)
+024: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/Sharing.framework/Sharing (2094.70.81)
+025: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreTelephony.framework/CoreTelephony (0)
+026: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/SpringBoardServices.framework/SpringBoardServices (4557.6.2)
+027: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyMessaging.framework/FindMyMessaging (1)
+028: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/SwiftSQLite.framework/SwiftSQLite (1)
+029: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyUnsafeAsyncBridging.framework/FindMyUnsafeAsyncBridging (1)
+030: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyLocate.framework/FindMyLocate (1)
+031: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyStorage.framework/FindMyStorage (1)
+032: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyBase.framework/FindMyBase (1)
+033: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/BluetoothManager.framework/BluetoothManager (1)
+034: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyBluetooth.framework/FindMyBluetooth (1)
+035: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyCloudKit.framework/FindMyCloudKit (1)
+036: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FrontBoardServices.framework/FrontBoardServices (0)
+037: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/BiomeStreams.framework/BiomeStreams (209.22)
+038: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CoreTime.framework/CoreTime (334)
+039: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyServerInteraction.framework/FindMyServerInteraction (1)
+040: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/SPShared.framework/SPShared (1)
+041: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyCommon.framework/FindMyCommon (1)
+042: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/SPFinder.framework/SPFinder (1)
+043: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/SPOwner.framework/SPOwner (1)
+044: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FamilyCircle.framework/FamilyCircle (3)
+045: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyCrypto.framework/FindMyCrypto (1)
+046: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyPairing.framework/FindMyPairing (1)
+047: LC_LOAD_DYLIB               /usr/lib/libMobileGestalt.dylib (1)
+048: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/IDS.framework/IDS (800)
+049: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyDevice.framework/FindMyDevice (1)
+050: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CoreAnalytics.framework/CoreAnalytics (1)
+051: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/AuthKit.framework/AuthKit (1)
+052: LC_LOAD_DYLIB               /System/Library/Frameworks/CloudKit.framework/CloudKit (2360.120.2)
+053: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/ApplePushService.framework/ApplePushService (1)
+054: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FMNetworking.framework/FMNetworking (1)
+055: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FMCore.framework/FMCore (1)
+056: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreLocation.framework/CoreLocation (3077)
+057: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FMCoreLite.framework/FMCoreLite (1)
+058: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FindMyDaemonSupport.framework/FindMyDaemonSupport (1)
+059: LC_LOAD_DYLIB               /System/Library/Frameworks/Foundation.framework/Foundation (5026.6.7)
+060: LC_LOAD_DYLIB               /usr/lib/libobjc.A.dylib (228)
+061: LC_LOAD_DYLIB               /usr/lib/libSystem.B.dylib (1356)
+062: LC_LOAD_DYLIB               /System/Library/Frameworks/Accounts.framework/Accounts (1)
+063: LC_LOAD_DYLIB               /System/Library/Frameworks/Combine.framework/Combine (3023)
+064: LC_LOAD_DYLIB               /System/Library/Frameworks/Contacts.framework/Contacts (3804.255.52)
+065: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreFoundation.framework/CoreFoundation (5026.6.7)
+066: LC_LOAD_DYLIB               /System/Library/Frameworks/CoreServices.framework/CoreServices (1226)
+067: LC_LOAD_DYLIB               /System/Library/Frameworks/CryptoKit.framework/CryptoKit (1)
+068: LC_LOAD_DYLIB               /System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction (0)
+069: LC_LOAD_DYLIB               /System/Library/Frameworks/Network.framework/Network (5812.160.9)
+070: LC_LOAD_DYLIB               /System/Library/Frameworks/Security.framework/Security (61901.160.44)
+071: LC_LOAD_DYLIB               /System/Library/Frameworks/UserNotifications.framework/UserNotifications (1)
+072: LC_LOAD_DYLIB               /System/Library/Frameworks/_LocationEssentials.framework/_LocationEssentials (1)
+073: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/AAAFoundationSwift.framework/AAAFoundationSwift (1)
+074: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CommunicationsFilter.framework/CommunicationsFilter (800)
+075: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/ContactsFoundation.framework/ContactsFoundation (1)
+076: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CoreAccessories.framework/CoreAccessories (1)
+077: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CorePhoneNumbers.framework/CorePhoneNumbers (1)
+078: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CoreRoutine.framework/CoreRoutine (1075)
+079: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/CoreUtils.framework/CoreUtils (1)
+080: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/FeatureFlags.framework/FeatureFlags (103)
+081: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/GeoServices.framework/GeoServices (2031.36.4)
+082: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/IDSFoundation.framework/IDSFoundation (800)
+083: LC_LOAD_DYLIB               /System/Library/PrivateFrameworks/SpaceAttribution.framework/SpaceAttribution (1)
+084: LC_LOAD_DYLIB               /usr/lib/libsqlite3.dylib (382)
+085: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftAccelerate.dylib (77.100.2)
+086: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftCompression.dylib (11)
+087: LC_LOAD_DYLIB               /usr/lib/swift/libswiftCore.dylib (0)
+088: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftCoreAudio.dylib (411.255)
+089: LC_LOAD_DYLIB               /usr/lib/swift/libswiftCoreFoundation.dylib (120.100)
+090: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftCoreLocation.dylib (53)
+091: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftCoreMIDI.dylib (6)
+092: LC_LOAD_DYLIB               /usr/lib/swift/libswiftDispatch.dylib (1542.160.2)
+093: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftMetal.dylib (373.7)
+094: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftOSLog.dylib (10)
+095: LC_LOAD_DYLIB               /usr/lib/swift/libswiftObjectiveC.dylib (951.7)
+096: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftQuartzCore.dylib (5)
+097: LC_LOAD_DYLIB               /usr/lib/swift/libswiftRegexBuilder.dylib (0)
+098: LC_LOAD_DYLIB               /usr/lib/swift/libswiftSynchronization.dylib (0)
+099: LC_LOAD_DYLIB               /usr/lib/swift/libswiftUniformTypeIdentifiers.dylib (879.5.1)
+100: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftXPC.dylib (128.120.2)
+101: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswift_Builtin_float.dylib (0)
+102: LC_LOAD_DYLIB               /usr/lib/swift/libswift_Concurrency.dylib (0)
+103: LC_LOAD_DYLIB               /usr/lib/swift/libswift_DarwinFoundation1.dylib (377.160.5)
+104: LC_LOAD_DYLIB               /usr/lib/swift/libswift_StringProcessing.dylib (0)
+105: LC_LOAD_DYLIB               /usr/lib/swift/libswiftos.dylib (1082)
+106: LC_LOAD_WEAK_DYLIB          /usr/lib/swift/libswiftsimd.dylib (23)
+107: LC_FUNCTION_STARTS          offset=0x00199c1c0 size=0x15d00
+108: LC_DATA_IN_CODE             offset=0x019b1ec0-0x019b1ec0 size=    0 entries=0
+109: LC_CODE_SIGNATURE           offset=0x0019fd770 size=0x3bb60
+
+

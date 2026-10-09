@@ -1,0 +1,116 @@
+-[NIServerNBAMMSSession _initializeEncryptionSessionIfNecessary]:
+0x10025CBF9   pushq    %rbp                 
+0x10025CBFA   movq     %rsp, %rbp           
+0x10025CBFD   pushq    %r15                 
+0x10025CBFF   pushq    %r14                 
+0x10025CC01   pushq    %r13                 
+0x10025CC03   pushq    %r12                 
+0x10025CC05   pushq    %rbx                 
+0x10025CC06   subq     $0x28, %rsp          
+0x10025CC0A   movq     0x6e1ddf(%rip), %rax  ; ___stack_chk_guard
+0x10025CC11   movq     (%rax), %rax         
+0x10025CC14   movq     %rax, -0x30(%rbp)    
+0x10025CC18   cmpb     $0x0, 0xe0(%rdi)     
+0x10025CC1F   jne      0x10025cd6a          
+0x10025CC25   movq     %rdi, %r14           
+0x10025CC28   movl     $0x8, %edi           
+0x10025CC2D   xorl     %esi, %esi           
+0x10025CC2F   callq    _NSRandomData        
+0x10025CC34   movq     %rax, %rdi           
+0x10025CC37   callq    _objc_retainAutoreleasedReturnValue 
+0x10025CC3C   movq     %rax, %rbx           
+0x10025CC3F   leaq     0x76107a(%rip), %rax  ; 
+0x10025CC46   movq     (%rax), %r15         
+0x10025CC49   movq     %r15, %rdi           
+0x10025CC4C   callq    *0x6e25be(%rip)      ; _objc_retain
+0x10025CC52   movq     %r15, %rdi           
+0x10025CC55   xorl     %esi, %esi           
+0x10025CC57   callq    _os_log_type_enabled 
+0x10025CC5C   testb    %al, %al             
+0x10025CC5E   je       0x10025ccec          
+0x10025CC64   movq     %rbx, %rdi           
+0x10025CC67   callq    _CUPrintNSObjectMasked 
+0x10025CC6C   movq     %rax, %rdi           
+0x10025CC6F   callq    _objc_retainAutoreleasedReturnValue 
+0x10025CC74   movq     %rax, %r12           
+0x10025CC77   movq     0x30(%r14), %rdi     
+0x10025CC7B   movq     0x74708e(%rip), %rsi  ; selector "descriptionInternal"
+0x10025CC82   callq    *0x6e2548(%rip)      ; _objc_msgSend
+0x10025CC88   movq     %rax, %rdi           
+0x10025CC8B   callq    _objc_retainAutoreleasedReturnValue 
+0x10025CC90   movq     %rax, %r13           
+0x10025CC93   movq     0x10(%r14), %rax     
+0x10025CC97   leaq     -0x50(%rbp), %r8     
+0x10025CC9B   movl     $0x8410303, (%r8)    
+0x10025CCA2   movq     %r12, 0x4(%r8)       
+0x10025CCA6   movw     $0x841, 0xc(%r8)     
+0x10025CCAD   movq     %r13, 0xe(%r8)       
+0x10025CCB1   movw     $0x840, 0x16(%r8)    
+0x10025CCB8   movq     %rax, 0x18(%r8)      
+0x10025CCBC   leaq     -0x25ccc3(%rip), %rdi  ; 
+0x10025CCC3   leaq     0x31a846(%rip), %rcx  ; string literal: "#find-range,#crypto Init self session. ID: %{private}@. Token: %{private}@. %@"
+0x10025CCCA   movq     %r15, %rsi           
+0x10025CCCD   xorl     %edx, %edx           
+0x10025CCCF   movl     $0x20, %r9d          
+0x10025CCD5   callq    __os_log_impl        
+0x10025CCDA   movq     %r13, %rdi           
+0x10025CCDD   callq    *0x6e2525(%rip)      ; _objc_release
+0x10025CCE3   movq     %r12, %rdi           
+0x10025CCE6   callq    *0x6e251c(%rip)      ; _objc_release
+0x10025CCEC   movq     %r15, %rdi           
+0x10025CCEF   callq    *0x6e2513(%rip)      ; _objc_release
+0x10025CCF5   leaq     0x74ec94(%rip), %rdi  ; NIServerCryptoSession
+0x10025CCFC   callq    _objc_alloc          
+0x10025CD01   movq     %rax, %r12           
+0x10025CD04   movq     0x30(%r14), %rdi     
+0x10025CD08   movq     0x746f41(%rip), %rsi  ; selector "getIRK"
+0x10025CD0F   callq    *0x6e24bb(%rip)      ; _objc_msgSend
+0x10025CD15   movq     %rax, %rdi           
+0x10025CD18   callq    _objc_retainAutoreleasedReturnValue 
+0x10025CD1D   movq     %rax, %r15           
+0x10025CD20   movq     0x748bf1(%rip), %rsi  ; selector "initWithKeyDerivationKey:sessionIdentifier:encrypt:"
+0x10025CD27   movq     %r12, %rdi           
+0x10025CD2A   movq     %rax, %rdx           
+0x10025CD2D   movq     %rbx, %rcx           
+0x10025CD30   movl     $0x1, %r8d           
+0x10025CD36   callq    *0x6e2494(%rip)      ; _objc_msgSend
+0x10025CD3C   movq     0xd0(%r14), %rdi     
+0x10025CD43   movq     %rax, 0xd0(%r14)     
+0x10025CD4A   callq    *0x6e24b8(%rip)      ; _objc_release
+0x10025CD50   movq     %r15, %rdi           
+0x10025CD53   callq    *0x6e24af(%rip)      ; _objc_release
+0x10025CD59   movb     $0x1, 0xe0(%r14)     
+0x10025CD61   movq     %rbx, %rdi           
+0x10025CD64   callq    *0x6e249e(%rip)      ; _objc_release
+0x10025CD6A   movq     0x6e1c7f(%rip), %rax  ; ___stack_chk_guard
+0x10025CD71   movq     (%rax), %rax         
+0x10025CD74   cmpq     -0x30(%rbp), %rax    
+0x10025CD78   jne      0x10025cd89          
+0x10025CD7A   addq     $0x28, %rsp          
+0x10025CD7E   popq     %rbx                 
+0x10025CD7F   popq     %r12                 
+0x10025CD81   popq     %r13                 
+0x10025CD83   popq     %r14                 
+0x10025CD85   popq     %r15                 
+0x10025CD87   popq     %rbp                 
+0x10025CD88   retq                          
+0x10025CD89   callq    ___stack_chk_fail    
+0x10025CD8E   movq     %rax, %r14           
+0x10025CD91   movq     %r12, %rdi           
+0x10025CD94   callq    *0x6e246e(%rip)      ; _objc_release
+0x10025CD9A   jmp      0x10025cd9f          
+0x10025CD9C   movq     %rax, %r14           
+0x10025CD9F   movq     %r15, %rdi           
+0x10025CDA2   callq    *0x6e2460(%rip)      ; _objc_release
+0x10025CDA8   jmp      0x10025cdbb          
+0x10025CDAA   movq     %rax, %r14           
+0x10025CDAD   movq     %r15, %rdi           
+0x10025CDB0   callq    *0x6e2452(%rip)      ; _objc_release
+0x10025CDB6   jmp      0x10025cdbb          
+0x10025CDB8   movq     %rax, %r14           
+0x10025CDBB   movq     %rbx, %rdi           
+0x10025CDBE   callq    *0x6e2444(%rip)      ; _objc_release
+0x10025CDC4   jmp      0x10025cdc9          
+0x10025CDC6   movq     %rax, %r14           
+0x10025CDC9   movq     %r14, %rdi           
+0x10025CDCC   callq    __Unwind_Resume      

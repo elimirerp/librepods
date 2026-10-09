@@ -1,0 +1,53 @@
+
+CLASS FMDLocalFindableAccessory : NSObject
++ supportsSecureCoding B16@0:8
+- setFirmwareVersion: v24@0:8@16
+- firmwareVersion @16@0:8
+- isConnected B16@0:8
+- serialNumber @16@0:8
+- productId @16@0:8
+- setSerialNumber: v24@0:8@16
+- setConnected: v20@0:8B16
+- btAddress @16@0:8
+- encodeWithCoder: v24@0:8@16
+- setBtAddress: v24@0:8@16
+- setName: v24@0:8@16
+- .cxx_destruct v16@0:8
+- setIrkData: v24@0:8@16
+- name @16@0:8
+- irkData @16@0:8
+- baUUID @16@0:8
+- setIdentifier: v24@0:8@16
+- initWithCoder: @24@0:8@16
+- vendorId @16@0:8
+- identifier @16@0:8
+- setProductId: v24@0:8@16
+- setVendorId: v24@0:8@16
+- accessoryIdentifier @16@0:8
+- alternateSerialNumber @16@0:8
+- initWithIdentifier:name:connected: @36@0:8@16@24B32
+- setAlternateSerialNumber: v24@0:8@16
+- setBaUUID: v24@0:8@16
+property identifier T@"NSUUID",&,N,V_identifier
+property name T@"NSString",C,N,V_name
+property serialNumber T@"NSString",C,N,V_serialNumber
+property alternateSerialNumber T@"NSString",C,N,V_alternateSerialNumber
+property irkData T@"NSData",C,N,V_irkData
+property btAddress T@"NSString",C,N,V_btAddress
+property firmwareVersion T@"NSString",C,N,V_firmwareVersion
+property vendorId T@"NSString",C,N,V_vendorId
+property productId T@"NSString",C,N,V_productId
+property connected TB,N,GisConnected,V_connected
+property baUUID T@"NSUUID",C,N,V_baUUID
+property accessoryIdentifier T@"NSObject<FMDIdentifiable>",R,N,VaccessoryIdentifier
+property hash TQ,R
+property superclass T#,R
+property description T@"NSString",R,C
+property debugDescription T@"NSString",?,R,C
+protocol NSSecureCoding
+protocol FMDAccessory
+Missing FMDFMIPManager
+Missing FMDLocalFindableAccessoryInfo
+Missing FMDInternalLocalFindableAccessory
+Missing FMDFMIPAccount
+Missing FMDLocalFindableAccessoryProtocol

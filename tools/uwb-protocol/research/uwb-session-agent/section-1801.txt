@@ -1,0 +1,670 @@
+-[NIServerCryptoSession decrypt:]:
+0x10022108A   pushq    %rbp                 
+0x10022108B   movq     %rsp, %rbp           
+0x10022108E   pushq    %r15                 
+0x100221090   pushq    %r14                 
+0x100221092   pushq    %r13                 
+0x100221094   pushq    %r12                 
+0x100221096   pushq    %rbx                 
+0x100221097   subq     $0x128, %rsp         
+0x10022109E   movq     %rdx, %rbx           
+0x1002210A1   movq     %rdi, %r14           
+0x1002210A4   movq     0x71d945(%rip), %rax  ; ___stack_chk_guard
+0x1002210AB   movq     (%rax), %rax         
+0x1002210AE   movq     %rax, -0x30(%rbp)    
+0x1002210B2   movq     %rdx, %rdi           
+0x1002210B5   callq    *0x71e155(%rip)      ; _objc_retain
+0x1002210BB   cmpb     $0x0, 0x10(%r14)     
+0x1002210C0   je       0x1002210f1          
+0x1002210C2   leaq     0x79cbf7(%rip), %rax  ; 
+0x1002210C9   movq     (%rax), %r15         
+0x1002210CC   movq     %r15, %rdi           
+0x1002210CF   movl     $0x10, %esi          
+0x1002210D4   callq    _os_log_type_enabled 
+0x1002210D9   testb    %al, %al             
+0x1002210DB   je       0x10022122b          
+0x1002210E1   movq     %r14, %rdi           
+0x1002210E4   movq     %r15, %rsi           
+0x1002210E7   callq    0x100487b56          
+0x1002210EC   jmp      0x10022122b          
+0x1002210F1   movb     $0x0, -0xb1(%rbp)    
+0x1002210F8   movq     0x781a39(%rip), %r15  ; selector "length"
+0x1002210FF   movq     %rbx, %rdi           
+0x100221102   movq     %r15, %rsi           
+0x100221105   callq    *0x71e0c5(%rip)      ; _objc_msgSend
+0x10022110B   testq    %rax, %rax           
+0x10022110E   je       0x1002211b4          
+0x100221114   movq     0x78358d(%rip), %r12  ; selector "getBytes:range:"
+0x10022111B   leaq     -0xb1(%rbp), %rdx    
+0x100221122   movl     $0x1, %r8d           
+0x100221128   movq     %rbx, %rdi           
+0x10022112B   movq     %r12, %rsi           
+0x10022112E   xorl     %ecx, %ecx           
+0x100221130   callq    *0x71e09a(%rip)      ; _objc_msgSend
+0x100221136   cmpb     $0x1, -0xb1(%rbp)    
+0x10022113D   jne      0x100221205          
+0x100221143   movl     $0x0, -0xc4(%rbp)    
+0x10022114D   movq     %rbx, %rdi           
+0x100221150   movq     %r15, %rsi           
+0x100221153   callq    *0x71e077(%rip)      ; _objc_msgSend
+0x100221159   cmpq     $0x4, %rax           
+0x10022115D   ja       0x100221264          
+0x100221163   leaq     0x79cb56(%rip), %rax  ; 
+0x10022116A   movq     (%rax), %r12         
+0x10022116D   movq     %r12, %rdi           
+0x100221170   callq    *0x71e09a(%rip)      ; _objc_retain
+0x100221176   movq     %r12, %rdi           
+0x100221179   movl     $0x10, %esi          
+0x10022117E   callq    _os_log_type_enabled 
+0x100221183   testb    %al, %al             
+0x100221185   je       0x1002211a9          
+0x100221187   movq     0x18(%r14), %r14     
+0x10022118B   movq     %rbx, %rdi           
+0x10022118E   movq     %r15, %rsi           
+0x100221191   callq    *0x71e039(%rip)      ; _objc_msgSend
+0x100221197   leaq     -0x50(%rbp), %rdx    
+0x10022119B   movq     %r14, %rdi           
+0x10022119E   movq     %rax, %rsi           
+0x1002211A1   movq     %r12, %rcx           
+0x1002211A4   callq    0x100487fab          
+0x1002211A9   movq     %r12, %rdi           
+0x1002211AC   callq    *0x71e056(%rip)      ; _objc_release
+0x1002211B2   jmp      0x10022122b          
+0x1002211B4   leaq     0x79cb05(%rip), %rax  ; 
+0x1002211BB   movq     (%rax), %r12         
+0x1002211BE   movq     %r12, %rdi           
+0x1002211C1   callq    *0x71e049(%rip)      ; _objc_retain
+0x1002211C7   movq     %r12, %rdi           
+0x1002211CA   movl     $0x10, %esi          
+0x1002211CF   callq    _os_log_type_enabled 
+0x1002211D4   testb    %al, %al             
+0x1002211D6   je       0x1002211fa          
+0x1002211D8   movq     0x18(%r14), %r14     
+0x1002211DC   movq     %rbx, %rdi           
+0x1002211DF   movq     %r15, %rsi           
+0x1002211E2   callq    *0x71dfe8(%rip)      ; _objc_msgSend
+0x1002211E8   leaq     -0x50(%rbp), %rdx    
+0x1002211EC   movq     %r14, %rdi           
+0x1002211EF   movq     %rax, %rsi           
+0x1002211F2   movq     %r12, %rcx           
+0x1002211F5   callq    0x100487ff4          
+0x1002211FA   movq     %r12, %rdi           
+0x1002211FD   callq    *0x71e005(%rip)      ; _objc_release
+0x100221203   jmp      0x10022122b          
+0x100221205   leaq     0x79cab4(%rip), %rax  ; 
+0x10022120C   movq     (%rax), %r15         
+0x10022120F   movq     %r15, %rdi           
+0x100221212   movl     $0x10, %esi          
+0x100221217   callq    _os_log_type_enabled 
+0x10022121C   testb    %al, %al             
+0x10022121E   je       0x10022122b          
+0x100221220   movq     %r14, %rdi           
+0x100221223   movq     %r15, %rsi           
+0x100221226   callq    0x100487bb4          
+0x10022122B   xorl     %r14d, %r14d         
+0x10022122E   movq     %rbx, %rdi           
+0x100221231   callq    *0x71dfd1(%rip)      ; _objc_release
+0x100221237   movq     0x71d7b2(%rip), %rax  ; ___stack_chk_guard
+0x10022123E   movq     (%rax), %rax         
+0x100221241   cmpq     -0x30(%rbp), %rax    
+0x100221245   jne      0x100221a5d          
+0x10022124B   movq     %r14, %rdi           
+0x10022124E   addq     $0x128, %rsp         
+0x100221255   popq     %rbx                 
+0x100221256   popq     %r12                 
+0x100221258   popq     %r13                 
+0x10022125A   popq     %r14                 
+0x10022125C   popq     %r15                 
+0x10022125E   popq     %rbp                 
+0x10022125F   jmp      _objc_autoreleaseReturnValue 
+0x100221264   leaq     -0xc4(%rbp), %rdx    
+0x10022126B   movl     $0x1, %ecx           
+0x100221270   movl     $0x4, %r8d           
+0x100221276   movq     %rbx, %rdi           
+0x100221279   movq     %r12, %rsi           
+0x10022127C   callq    *0x71df4e(%rip)      ; _objc_msgSend
+0x100221282   movl     -0xc4(%rbp), %eax    
+0x100221288   movq     %rax, -0x120(%rbp)   
+0x10022128F   leaq     -0x70(%rbp), %rdx    
+0x100221293   movb     $0x0, (%rdx)         
+0x100221296   leaq     -0x50(%rbp), %rdi    
+0x10022129A   movl     $0x6, %esi           
+0x10022129F   callq    0x100010660          
+0x1002212A4   movq     %rbx, %rdi           
+0x1002212A7   movq     %r15, %rsi           
+0x1002212AA   callq    *0x71df20(%rip)      ; _objc_msgSend
+0x1002212B0   cmpq     $0xa, %rax           
+0x1002212B4   ja       0x10022130d          
+0x1002212B6   leaq     0x79ca03(%rip), %rax  ; 
+0x1002212BD   movq     (%rax), %r12         
+0x1002212C0   movq     %r12, %rdi           
+0x1002212C3   callq    *0x71df47(%rip)      ; _objc_retain
+0x1002212C9   movq     %r12, %rdi           
+0x1002212CC   movl     $0x10, %esi          
+0x1002212D1   callq    _os_log_type_enabled 
+0x1002212D6   testb    %al, %al             
+0x1002212D8   je       0x1002212fc          
+0x1002212DA   movq     0x18(%r14), %r14     
+0x1002212DE   movq     %rbx, %rdi           
+0x1002212E1   movq     %r15, %rsi           
+0x1002212E4   callq    *0x71dee6(%rip)      ; _objc_msgSend
+0x1002212EA   leaq     -0x70(%rbp), %rdx    
+0x1002212EE   movq     %r14, %rdi           
+0x1002212F1   movq     %rax, %rsi           
+0x1002212F4   movq     %r12, %rcx           
+0x1002212F7   callq    0x100487f62          
+0x1002212FC   movq     %r12, %rdi           
+0x1002212FF   callq    *0x71df03(%rip)      ; _objc_release
+0x100221305   xorl     %r14d, %r14d         
+0x100221308   jmp      0x100221590          
+0x10022130D   movq     -0x50(%rbp), %rdx    
+0x100221311   movl     $0x5, %ecx           
+0x100221316   movl     $0x6, %r8d           
+0x10022131C   movq     %rbx, %rdi           
+0x10022131F   movq     %r12, %rsi           
+0x100221322   callq    *0x71dea8(%rip)      ; _objc_msgSend
+0x100221328   xorps    %xmm0, %xmm0         
+0x10022132B   movaps   %xmm0, -0x70(%rbp)   
+0x10022132F   movq     $0x0, -0x60(%rbp)    
+0x100221337   movq     %rbx, %rdi           
+0x10022133A   movq     %r15, %rsi           
+0x10022133D   callq    *0x71de8d(%rip)      ; _objc_msgSend
+0x100221343   movq     %rax, -0x108(%rbp)   
+0x10022134A   movq     %rax, %r13           
+0x10022134D   addq     $-0xb, %r13          
+0x100221351   je       0x10022145b          
+0x100221357   leaq     -0x90(%rbp), %rdx    
+0x10022135E   movb     $0x0, (%rdx)         
+0x100221361   leaq     -0x70(%rbp), %rdi    
+0x100221365   movq     %r13, %rsi           
+0x100221368   callq    0x100221b78          
+0x10022136D   movq     -0x70(%rbp), %rdx    
+0x100221371   movl     $0xb, %ecx           
+0x100221376   movq     %rbx, %rdi           
+0x100221379   movq     %r12, %rsi           
+0x10022137C   movq     %r13, %r8            
+0x10022137F   callq    *0x71de4b(%rip)      ; _objc_msgSend
+0x100221385   movq     -0x108(%rbp), %r12   
+0x10022138C   movq     %rbx, %rdi           
+0x10022138F   movq     %r15, %rsi           
+0x100221392   callq    *0x71de38(%rip)      ; _objc_msgSend
+0x100221398   cmpq     %rax, %r12           
+0x10022139B   jne      0x100221940          
+0x1002213A1   movq     $0x0, -0xc0(%rbp)    
+0x1002213AC   movq     0x8(%r14), %rdi      
+0x1002213B0   movq     0x781921(%rip), %rsi  ; selector "bytes"
+0x1002213B7   callq    *0x71de13(%rip)      ; _objc_msgSend
+0x1002213BD   movq     %rax, %r12           
+0x1002213C0   movq     0x8(%r14), %rdi      
+0x1002213C4   movq     %r15, %rsi           
+0x1002213C7   callq    *0x71de03(%rip)      ; _objc_msgSend
+0x1002213CD   leaq     -0xc0(%rbp), %rcx    
+0x1002213D4   movq     %rcx, 0x28(%rsp)     
+0x1002213D9   xorl     %ecx, %ecx           
+0x1002213DB   movl     %ecx, 0x20(%rsp)     
+0x1002213DF   movl     %ecx, 0x18(%rsp)     
+0x1002213E3   xorps    %xmm0, %xmm0         
+0x1002213E6   movups   %xmm0, 0x8(%rsp)     
+0x1002213EB   movq     %rax, (%rsp)         
+0x1002213EF   movl     $0x1, %edi           
+0x1002213F4   movl     $0xc, %esi           
+0x1002213F9   xorl     %edx, %edx           
+0x1002213FB   movl     $0x3e8, %ecx         
+0x100221400   xorl     %r8d, %r8d           
+0x100221403   movq     %r12, %r9            
+0x100221406   callq    _CCCryptorCreateWithMode 
+0x10022140B   movl     %eax, %r15d          
+0x10022140E   testl    %eax, %eax           
+0x100221410   setne    %al                  
+0x100221413   movq     -0xc0(%rbp), %rdi    
+0x10022141A   testq    %rdi, %rdi           
+0x10022141D   sete     %cl                  
+0x100221420   orb      %al, %cl             
+0x100221422   cmpb     $0x1, %cl            
+0x100221425   jne      0x10022148a          
+0x100221427   leaq     0x79c892(%rip), %rax  ; 
+0x10022142E   movq     (%rax), %r12         
+0x100221431   movq     %r12, %rdi           
+0x100221434   movl     $0x10, %esi          
+0x100221439   callq    _os_log_type_enabled 
+0x10022143E   testb    %al, %al             
+0x100221440   jne      0x1002215ab          
+0x100221446   movq     -0xc0(%rbp), %rdi    
+0x10022144D   testq    %rdi, %rdi           
+0x100221450   jne      0x100221576          
+0x100221456   jmp      0x10022157b          
+0x10022145B   leaq     0x79c85e(%rip), %rax  ; 
+0x100221462   movq     (%rax), %r15         
+0x100221465   movq     %r15, %rdi           
+0x100221468   movl     $0x10, %esi          
+0x10022146D   callq    _os_log_type_enabled 
+0x100221472   testb    %al, %al             
+0x100221474   je       0x10022157b          
+0x10022147A   movq     %r14, %rdi           
+0x10022147D   movq     %r15, %rsi           
+0x100221480   callq    0x100487f04          
+0x100221485   jmp      0x10022157b          
+0x10022148A   movq     -0x68(%rbp), %rcx    
+0x10022148E   subq     -0x70(%rbp), %rcx    
+0x100221492   movl     $0x3, %esi           
+0x100221497   xorl     %edx, %edx           
+0x100221499   callq    _CCCryptorAddParameter 
+0x10022149E   movl     %eax, %r15d          
+0x1002214A1   testl    %eax, %eax           
+0x1002214A3   je       0x1002214d7          
+0x1002214A5   leaq     0x79c814(%rip), %rax  ; 
+0x1002214AC   movq     (%rax), %r12         
+0x1002214AF   movq     %r12, %rdi           
+0x1002214B2   movl     $0x10, %esi          
+0x1002214B7   callq    _os_log_type_enabled 
+0x1002214BC   testb    %al, %al             
+0x1002214BE   je       0x10022156f          
+0x1002214C4   movq     %r14, %rdi           
+0x1002214C7   movl     %r15d, %esi          
+0x1002214CA   movq     %r12, %rdx           
+0x1002214CD   callq    0x100487c12          
+0x1002214D2   jmp      0x10022156f          
+0x1002214D7   movq     -0xc0(%rbp), %rdi    
+0x1002214DE   movl     $0x6, %ecx           
+0x1002214E3   movl     $0x2, %esi           
+0x1002214E8   xorl     %edx, %edx           
+0x1002214EA   callq    _CCCryptorAddParameter 
+0x1002214EF   movl     %eax, %r15d          
+0x1002214F2   testl    %eax, %eax           
+0x1002214F4   je       0x100221521          
+0x1002214F6   leaq     0x79c7c3(%rip), %rax  ; 
+0x1002214FD   movq     (%rax), %r12         
+0x100221500   movq     %r12, %rdi           
+0x100221503   movl     $0x10, %esi          
+0x100221508   callq    _os_log_type_enabled 
+0x10022150D   testb    %al, %al             
+0x10022150F   je       0x10022156f          
+0x100221511   movq     %r14, %rdi           
+0x100221514   movl     %r15d, %esi          
+0x100221517   movq     %r12, %rdx           
+0x10022151A   callq    0x100487c80          
+0x10022151F   jmp      0x10022156f          
+0x100221521   movq     -0xc0(%rbp), %rdi    
+0x100221528   leaq     -0x120(%rbp), %rdx   
+0x10022152F   movl     $0x8, %ecx           
+0x100221534   xorl     %esi, %esi           
+0x100221536   callq    _CCCryptorAddParameter 
+0x10022153B   movl     %eax, %r15d          
+0x10022153E   testl    %eax, %eax           
+0x100221540   je       0x10022160a          
+0x100221546   leaq     0x79c773(%rip), %rax  ; 
+0x10022154D   movq     (%rax), %r12         
+0x100221550   movq     %r12, %rdi           
+0x100221553   movl     $0x10, %esi          
+0x100221558   callq    _os_log_type_enabled 
+0x10022155D   testb    %al, %al             
+0x10022155F   je       0x10022156f          
+0x100221561   movq     %r14, %rdi           
+0x100221564   movl     %r15d, %esi          
+0x100221567   movq     %r12, %rdx           
+0x10022156A   callq    0x100487cee          
+0x10022156F   movq     -0xc0(%rbp), %rdi    
+0x100221576   callq    _CCCryptorRelease    
+0x10022157B   xorl     %r14d, %r14d         
+0x10022157E   movq     -0x70(%rbp), %rdi    
+0x100221582   testq    %rdi, %rdi           
+0x100221585   je       0x100221590          
+0x100221587   movq     %rdi, -0x68(%rbp)    
+0x10022158B   callq    __ZdlPv              
+0x100221590   movq     -0x50(%rbp), %rdi    
+0x100221594   testq    %rdi, %rdi           
+0x100221597   je       0x10022122e          
+0x10022159D   movq     %rdi, -0x48(%rbp)    
+0x1002215A1   callq    __ZdlPv              
+0x1002215A6   jmp      0x10022122e          
+0x1002215AB   movq     0x18(%r14), %rax     
+0x1002215AF   xorl     %ecx, %ecx           
+0x1002215B1   cmpq     $0x0, -0xc0(%rbp)    
+0x1002215B9   setne    %cl                  
+0x1002215BC   leaq     -0x90(%rbp), %r8     
+0x1002215C3   movl     $0x8410303, (%r8)    
+0x1002215CA   movq     %rax, 0x4(%r8)       
+0x1002215CE   movw     $0x400, %ax          
+0x1002215D2   movw     %ax, 0xc(%r8)        
+0x1002215D7   movl     %r15d, 0xe(%r8)      
+0x1002215DB   movw     %ax, 0x12(%r8)       
+0x1002215E0   movl     %ecx, 0x14(%r8)      
+0x1002215E4   leaq     -0x2215eb(%rip), %rdi  ; 
+0x1002215EB   leaq     0x34d1ae(%rip), %rcx  ; string literal: "#crypto,[%{private}@][Decryptor] create failed %d. Cryptor needs release: %d"
+0x1002215F2   movq     %r12, %rsi           
+0x1002215F5   movl     $0x10, %edx          
+0x1002215FA   movl     $0x18, %r9d          
+0x100221600   callq    __os_log_error_impl  
+0x100221605   jmp      0x100221446          
+0x10022160A   leaq     -0xe0(%rbp), %rdx    
+0x100221611   movb     $0x0, (%rdx)         
+0x100221614   leaq     -0x90(%rbp), %rdi    
+0x10022161B   movl     $0x5, %esi           
+0x100221620   callq    0x100010660          
+0x100221625   movq     -0x90(%rbp), %rax    
+0x10022162C   movb     -0xb1(%rbp), %cl     
+0x100221632   movb     %cl, (%rax)          
+0x100221634   movq     -0x90(%rbp), %rax    
+0x10022163B   movl     -0xc4(%rbp), %ecx    
+0x100221641   movl     %ecx, 0x1(%rax)      
+0x100221644   movq     -0xc0(%rbp), %rdi    
+0x10022164B   movq     -0x90(%rbp), %rdx    
+0x100221652   movq     -0x88(%rbp), %rcx    
+0x100221659   subq     %rdx, %rcx           
+0x10022165C   movl     $0x1, %esi           
+0x100221661   callq    _CCCryptorAddParameter 
+0x100221666   movl     %eax, %r15d          
+0x100221669   testl    %eax, %eax           
+0x10022166B   je       0x1002216aa          
+0x10022166D   leaq     0x79c64c(%rip), %rax  ; 
+0x100221674   movq     (%rax), %r12         
+0x100221677   movq     %r12, %rdi           
+0x10022167A   movl     $0x10, %esi          
+0x10022167F   callq    _os_log_type_enabled 
+0x100221684   testb    %al, %al             
+0x100221686   je       0x100221696          
+0x100221688   movq     %r14, %rdi           
+0x10022168B   movl     %r15d, %esi          
+0x10022168E   movq     %r12, %rdx           
+0x100221691   callq    0x100487d5c          
+0x100221696   movq     -0xc0(%rbp), %rdi    
+0x10022169D   callq    _CCCryptorRelease    
+0x1002216A2   xorl     %r14d, %r14d         
+0x1002216A5   jmp      0x1002219e4          
+0x1002216AA   movq     -0xc0(%rbp), %rdi    
+0x1002216B1   movq     -0x68(%rbp), %rsi    
+0x1002216B5   subq     -0x70(%rbp), %rsi    
+0x1002216B9   xorl     %edx, %edx           
+0x1002216BB   callq    _CCCryptorGetOutputLength 
+0x1002216C0   leaq     -0x100(%rbp), %rdx   
+0x1002216C7   movb     $0x0, (%rdx)         
+0x1002216CA   leaq     -0xe0(%rbp), %rdi    
+0x1002216D1   movq     %rax, %rsi           
+0x1002216D4   callq    0x100010660          
+0x1002216D9   leaq     -0x118(%rbp), %r9    
+0x1002216E0   movq     $0x0, (%r9)          
+0x1002216E7   movq     -0xc0(%rbp), %rdi    
+0x1002216EE   movq     -0x70(%rbp), %rsi    
+0x1002216F2   movq     -0x68(%rbp), %rdx    
+0x1002216F6   subq     %rsi, %rdx           
+0x1002216F9   movq     -0xe0(%rbp), %rcx    
+0x100221700   movq     -0xd8(%rbp), %r8     
+0x100221707   subq     %rcx, %r8            
+0x10022170A   callq    _CCCryptorUpdate     
+0x10022170F   movl     %eax, %r15d          
+0x100221712   testl    %eax, %eax           
+0x100221714   je       0x100221753          
+0x100221716   leaq     0x79c5a3(%rip), %rax  ; 
+0x10022171D   movq     (%rax), %r12         
+0x100221720   movq     %r12, %rdi           
+0x100221723   movl     $0x10, %esi          
+0x100221728   callq    _os_log_type_enabled 
+0x10022172D   testb    %al, %al             
+0x10022172F   je       0x10022173f          
+0x100221731   movq     %r14, %rdi           
+0x100221734   movl     %r15d, %esi          
+0x100221737   movq     %r12, %rdx           
+0x10022173A   callq    0x100487dca          
+0x10022173F   movq     -0xc0(%rbp), %rdi    
+0x100221746   callq    _CCCryptorRelease    
+0x10022174B   xorl     %r14d, %r14d         
+0x10022174E   jmp      0x1002219cc          
+0x100221753   movq     -0x118(%rbp), %rsi   
+0x10022175A   movq     -0xd8(%rbp), %rax    
+0x100221761   subq     -0xe0(%rbp), %rax    
+0x100221768   cmpq     %rax, %rsi           
+0x10022176B   jae      0x100221779          
+0x10022176D   leaq     -0xe0(%rbp), %rdi    
+0x100221774   callq    0x100221060          
+0x100221779   leaq     -0xb0(%rbp), %rdx    
+0x100221780   movb     $0x0, (%rdx)         
+0x100221783   leaq     -0x100(%rbp), %rdi   
+0x10022178A   movl     $0x10, %esi          
+0x10022178F   callq    0x100010660          
+0x100221794   leaq     -0xe8(%rbp), %rcx    
+0x10022179B   movq     $0x0, (%rcx)         
+0x1002217A2   movq     -0xc0(%rbp), %rdi    
+0x1002217A9   movq     -0x100(%rbp), %rsi   
+0x1002217B0   movq     -0xf8(%rbp), %rdx    
+0x1002217B7   subq     %rsi, %rdx           
+0x1002217BA   callq    _CCCryptorFinal      
+0x1002217BF   movl     %eax, %r15d          
+0x1002217C2   testl    %eax, %eax           
+0x1002217C4   jne      0x100221863          
+0x1002217CA   cmpq     $0x0, -0xe8(%rbp)    
+0x1002217D2   jne      0x100221863          
+0x1002217D8   leaq     -0x110(%rbp), %rdx   
+0x1002217DF   movb     $0x0, (%rdx)         
+0x1002217E2   leaq     -0xb0(%rbp), %rdi    
+0x1002217E9   movl     $0x6, %esi           
+0x1002217EE   callq    0x100010660          
+0x1002217F3   movq     -0xb0(%rbp), %rdx    
+0x1002217FA   movq     -0xa8(%rbp), %rax    
+0x100221801   subq     %rdx, %rax           
+0x100221804   leaq     -0x110(%rbp), %rcx   
+0x10022180B   movq     %rax, (%rcx)         
+0x10022180E   movq     -0xc0(%rbp), %rdi    
+0x100221815   movl     $0x4, %esi           
+0x10022181A   callq    _CCCryptorGetParameter 
+0x10022181F   movl     %eax, %r15d          
+0x100221822   testl    %eax, %eax           
+0x100221824   je       0x100221896          
+0x100221826   leaq     0x79c493(%rip), %rax  ; 
+0x10022182D   movq     (%rax), %r12         
+0x100221830   movq     %r12, %rdi           
+0x100221833   movl     $0x10, %esi          
+0x100221838   callq    _os_log_type_enabled 
+0x10022183D   testb    %al, %al             
+0x10022183F   je       0x10022184f          
+0x100221841   movq     %r14, %rdi           
+0x100221844   movl     %r15d, %esi          
+0x100221847   movq     %r12, %rdx           
+0x10022184A   callq    0x100487e38          
+0x10022184F   movq     -0xc0(%rbp), %rdi    
+0x100221856   callq    _CCCryptorRelease    
+0x10022185B   xorl     %r14d, %r14d         
+0x10022185E   jmp      0x10022199c          
+0x100221863   leaq     0x79c456(%rip), %rax  ; 
+0x10022186A   movq     (%rax), %r12         
+0x10022186D   movq     %r12, %rdi           
+0x100221870   movl     $0x10, %esi          
+0x100221875   callq    _os_log_type_enabled 
+0x10022187A   testb    %al, %al             
+0x10022187C   jne      0x100221a05          
+0x100221882   movq     -0xc0(%rbp), %rdi    
+0x100221889   callq    _CCCryptorRelease    
+0x10022188E   xorl     %r14d, %r14d         
+0x100221891   jmp      0x1002219b4          
+0x100221896   movq     -0xc0(%rbp), %rdi    
+0x10022189D   callq    _CCCryptorRelease    
+0x1002218A2   movq     0x71e047(%rip), %rdi  ; _OBJC_CLASS_$_NSData
+0x1002218A9   movq     -0x50(%rbp), %rdx    
+0x1002218AD   movq     -0x48(%rbp), %rcx    
+0x1002218B1   subq     %rdx, %rcx           
+0x1002218B4   movq     0x781425(%rip), %r13  ; selector "dataWithBytes:length:"
+0x1002218BB   movq     %r13, %rsi           
+0x1002218BE   callq    *0x71d90c(%rip)      ; _objc_msgSend
+0x1002218C4   movq     %rax, %rdi           
+0x1002218C7   callq    _objc_retainAutoreleasedReturnValue 
+0x1002218CC   movq     %rax, %r15           
+0x1002218CF   movq     0x71e01a(%rip), %rdi  ; _OBJC_CLASS_$_NSData
+0x1002218D6   movq     -0xb0(%rbp), %rdx    
+0x1002218DD   movq     -0xa8(%rbp), %rcx    
+0x1002218E4   subq     %rdx, %rcx           
+0x1002218E7   movq     %r13, %rsi           
+0x1002218EA   callq    *0x71d8e0(%rip)      ; _objc_msgSend
+0x1002218F0   movq     %rax, %rdi           
+0x1002218F3   callq    _objc_retainAutoreleasedReturnValue 
+0x1002218F8   movq     %rax, %r12           
+0x1002218FB   movq     0x7812ae(%rip), %rsi  ; selector "isEqualToData:"
+0x100221902   movq     %r15, %rdi           
+0x100221905   movq     %rax, %rdx           
+0x100221908   callq    *0x71d8c2(%rip)      ; _objc_msgSend
+0x10022190E   testb    %al, %al             
+0x100221910   je       0x100221961          
+0x100221912   movq     0x71dfd7(%rip), %rdi  ; _OBJC_CLASS_$_NSData
+0x100221919   movq     -0xe0(%rbp), %rdx    
+0x100221920   movq     -0xd8(%rbp), %rcx    
+0x100221927   subq     %rdx, %rcx           
+0x10022192A   movq     %r13, %rsi           
+0x10022192D   callq    *0x71d89d(%rip)      ; _objc_msgSend
+0x100221933   movq     %rax, %rdi           
+0x100221936   callq    _objc_retainAutoreleasedReturnValue 
+0x10022193B   movq     %rax, %r14           
+0x10022193E   jmp      0x10022198a          
+0x100221940   leaq     0x30868a(%rip), %rdi  ; string literal: "-[NIServerCryptoSession decrypt:]"
+0x100221947   leaq     0x3086a5(%rip), %rsi  ; string literal: "NIServerCryptoSession.mm"
+0x10022194E   leaq     0x3086b7(%rip), %rcx  ; string literal: "byteOffset == ciphertext.length"
+0x100221955   movl     $0x132, %edx         
+0x10022195A   callq    ___assert_rtn        
+0x10022195F   ud2                           
+0x100221961   leaq     0x79c358(%rip), %rax  ; 
+0x100221968   movq     (%rax), %r13         
+0x10022196B   movq     %r13, %rdi           
+0x10022196E   movl     $0x10, %esi          
+0x100221973   callq    _os_log_type_enabled 
+0x100221978   testb    %al, %al             
+0x10022197A   je       0x100221987          
+0x10022197C   movq     %r14, %rdi           
+0x10022197F   movq     %r13, %rsi           
+0x100221982   callq    0x100487ea6          
+0x100221987   xorl     %r14d, %r14d         
+0x10022198A   movq     %r12, %rdi           
+0x10022198D   callq    *0x71d875(%rip)      ; _objc_release
+0x100221993   movq     %r15, %rdi           
+0x100221996   callq    *0x71d86c(%rip)      ; _objc_release
+0x10022199C   movq     -0xb0(%rbp), %rdi    
+0x1002219A3   testq    %rdi, %rdi           
+0x1002219A6   je       0x1002219b4          
+0x1002219A8   movq     %rdi, -0xa8(%rbp)    
+0x1002219AF   callq    __ZdlPv              
+0x1002219B4   movq     -0x100(%rbp), %rdi   
+0x1002219BB   testq    %rdi, %rdi           
+0x1002219BE   je       0x1002219cc          
+0x1002219C0   movq     %rdi, -0xf8(%rbp)    
+0x1002219C7   callq    __ZdlPv              
+0x1002219CC   movq     -0xe0(%rbp), %rdi    
+0x1002219D3   testq    %rdi, %rdi           
+0x1002219D6   je       0x1002219e4          
+0x1002219D8   movq     %rdi, -0xd8(%rbp)    
+0x1002219DF   callq    __ZdlPv              
+0x1002219E4   movq     -0x90(%rbp), %rdi    
+0x1002219EB   testq    %rdi, %rdi           
+0x1002219EE   je       0x10022157e          
+0x1002219F4   movq     %rdi, -0x88(%rbp)    
+0x1002219FB   callq    __ZdlPv              
+0x100221A00   jmp      0x10022157e          
+0x100221A05   movq     0x18(%r14), %rax     
+0x100221A09   movl     -0xe8(%rbp), %ecx    
+0x100221A0F   leaq     -0xb0(%rbp), %r8     
+0x100221A16   movl     $0x8410303, (%r8)    
+0x100221A1D   movq     %rax, 0x4(%r8)       
+0x100221A21   movw     $0x400, %ax          
+0x100221A25   movw     %ax, 0xc(%r8)        
+0x100221A2A   movl     %r15d, 0xe(%r8)      
+0x100221A2E   movw     %ax, 0x12(%r8)       
+0x100221A33   movl     %ecx, 0x14(%r8)      
+0x100221A37   leaq     -0x221a3e(%rip), %rdi  ; 
+0x100221A3E   leaq     0x34ceeb(%rip), %rcx  ; string literal: "#crypto,[%{private}@][Decryptor] cryptor-final failed %d. Leftover: %d"
+0x100221A45   movq     %r12, %rsi           
+0x100221A48   movl     $0x10, %edx          
+0x100221A4D   movl     $0x18, %r9d          
+0x100221A53   callq    __os_log_error_impl  
+0x100221A58   jmp      0x100221882          
+0x100221A5D   callq    ___stack_chk_fail    
+0x100221A62   movq     %rax, %r14           
+0x100221A65   jmp      0x100221a75          
+0x100221A67   jmp      0x100221a82          
+0x100221A69   movq     %rax, %r14           
+0x100221A6C   movq     %r12, %rdi           
+0x100221A6F   callq    *0x71d793(%rip)      ; _objc_release
+0x100221A75   movq     %r15, %rdi           
+0x100221A78   callq    *0x71d78a(%rip)      ; _objc_release
+0x100221A7E   jmp      0x100221a85          
+0x100221A80   jmp      0x100221aa1          
+0x100221A82   movq     %rax, %r14           
+0x100221A85   movq     -0xb0(%rbp), %rdi    
+0x100221A8C   testq    %rdi, %rdi           
+0x100221A8F   je       0x100221aa4          
+0x100221A91   movq     %rdi, -0xa8(%rbp)    
+0x100221A98   callq    __ZdlPv              
+0x100221A9D   jmp      0x100221aa4          
+0x100221A9F   jmp      0x100221ac2          
+0x100221AA1   movq     %rax, %r14           
+0x100221AA4   movq     -0x100(%rbp), %rdi   
+0x100221AAB   testq    %rdi, %rdi           
+0x100221AAE   je       0x100221ac5          
+0x100221AB0   movq     %rdi, -0xf8(%rbp)    
+0x100221AB7   callq    __ZdlPv              
+0x100221ABC   jmp      0x100221ac5          
+0x100221ABE   jmp      0x100221ae1          
+0x100221AC0   jmp      0x100221ae1          
+0x100221AC2   movq     %rax, %r14           
+0x100221AC5   movq     -0xe0(%rbp), %rdi    
+0x100221ACC   testq    %rdi, %rdi           
+0x100221ACF   je       0x100221ae4          
+0x100221AD1   movq     %rdi, -0xd8(%rbp)    
+0x100221AD8   callq    __ZdlPv              
+0x100221ADD   jmp      0x100221ae4          
+0x100221ADF   jmp      0x100221b3a          
+0x100221AE1   movq     %rax, %r14           
+0x100221AE4   movq     -0x90(%rbp), %rdi    
+0x100221AEB   testq    %rdi, %rdi           
+0x100221AEE   je       0x100221b3d          
+0x100221AF0   movq     %rdi, -0x88(%rbp)    
+0x100221AF7   callq    __ZdlPv              
+0x100221AFC   jmp      0x100221b3d          
+0x100221AFE   movq     %rax, %r14           
+0x100221B01   movq     %r12, %rdi           
+0x100221B04   callq    *0x71d6fe(%rip)      ; _objc_release
+0x100221B0A   jmp      0x100221b4f          
+0x100221B0C   jmp      0x100221b3a          
+0x100221B0E   movq     %rax, %r14           
+0x100221B11   movq     %r12, %rdi           
+0x100221B14   callq    *0x71d6ee(%rip)      ; _objc_release
+0x100221B1A   jmp      0x100221b61          
+0x100221B1C   jmp      0x100221b35          
+0x100221B1E   movq     %rax, %r14           
+0x100221B21   movq     %r12, %rdi           
+0x100221B24   callq    *0x71d6de(%rip)      ; _objc_release
+0x100221B2A   jmp      0x100221b61          
+0x100221B2C   jmp      0x100221b3a          
+0x100221B2E   movq     %rax, %r14           
+0x100221B31   jmp      0x100221b4f          
+0x100221B33   jmp      0x100221b35          
+0x100221B35   movq     %rax, %r14           
+0x100221B38   jmp      0x100221b61          
+0x100221B3A   movq     %rax, %r14           
+0x100221B3D   movq     -0x70(%rbp), %rdi    
+0x100221B41   testq    %rdi, %rdi           
+0x100221B44   je       0x100221b4f          
+0x100221B46   movq     %rdi, -0x68(%rbp)    
+0x100221B4A   callq    __ZdlPv              
+0x100221B4F   movq     -0x50(%rbp), %rdi    
+0x100221B53   testq    %rdi, %rdi           
+0x100221B56   je       0x100221b61          
+0x100221B58   movq     %rdi, -0x48(%rbp)    
+0x100221B5C   callq    __ZdlPv              
+0x100221B61   movq     %rbx, %rdi           
+0x100221B64   callq    *0x71d69e(%rip)      ; _objc_release
+0x100221B6A   jmp      0x100221b6f          
+0x100221B6C   movq     %rax, %r14           
+0x100221B6F   movq     %r14, %rdi           
+0x100221B72   callq    __Unwind_Resume      
+0x100221B77   nop                           
+0x100221B78   pushq    %rbp                 
+0x100221B79   movq     %rsp, %rbp           
+0x100221B7C   movq     (%rdi), %rcx         
+0x100221B7F   movq     0x8(%rdi), %r8       
+0x100221B83   subq     %rcx, %r8            
+0x100221B86   movq     %rsi, %rax           
+0x100221B89   subq     %r8, %rax            
+0x100221B8C   jbe      0x100221b97          
+0x100221B8E   movq     %rax, %rsi           
+0x100221B91   popq     %rbp                 
+0x100221B92   jmp      0x10034a0f4          
+0x100221B97   jae      0x100221ba0          
+0x100221B99   addq     %rsi, %rcx           
+0x100221B9C   movq     %rcx, 0x8(%rdi)      
+0x100221BA0   popq     %rbp                 
+0x100221BA1   retq                          

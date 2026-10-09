@@ -1,0 +1,980 @@
+(lldb) target create "work/uwb-protocol-agent/runtime-inventory"
+Current executable set to '/Users/elibaum/Documents/Codex/2026-10-08/bas/work/uwb-protocol-agent/runtime-inventory' (arm64).
+(lldb) breakpoint set --name exit
+Breakpoint 1: 5 locations.
+(lldb) run /System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction /System/Library/Frameworks/CoreLocation.framework/CoreLocation
+LOAD /System/Library/Frameworks/NearbyInteraction.framework/NearbyInteraction ok
+LOAD /System/Library/Frameworks/CoreLocation.framework/CoreLocation ok
+CLASS _TtCV10Foundation4Data14RangeReference
+CLASS _TtCV14BiomeSQLParser27PgQuery_PartitionRangeDatumP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser24PgQuery_RangeTblFunctionP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser21PgQuery_RangeTblEntryP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser25PgQuery_RangeTableFuncColP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser22PgQuery_RangeTableFuncP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser24PgQuery_RangeTableSampleP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _TtCV14BiomeSQLParser22PgQuery_RangeSubselectP33_A784F7F2ED97E043416F18646CF1BF1713_StorageClass
+CLASS _CLRangingPeerDistance
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- peer @16@0:8
+- encodeWithCoder: v24@0:8@16
+- timestamp @16@0:8
+- init @16@0:8
+- initWithCoder: @24@0:8@16
+- date @16@0:8
+- dealloc v16@0:8
+- isInitiator B16@0:8
+- initWithPeer:timestamp:distanceMeters:accuracyMeters:initiator: @52@0:8@16@24@32@40B48
+- accuracyMeters @16@0:8
+- distanceMeters @16@0:8
+- initWithPeer:date:distanceMeters:accuracyMeters:initiator: @52@0:8@16@24@32@40B48
+- initWithPeer:date:distanceMeters:accuracyMeters:initiator:shouldUnlock: @56@0:8@16@24@32@40B48B52
+- initiator B16@0:8
+- shouldUnlock B16@0:8
++ supportsSecureCoding B16@0:8
+CLASS _CLRangingPeer
+- macAddress Q16@0:8
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- encodeWithCoder: v24@0:8@16
+- isEqual: B24@0:8@16
+- hash Q16@0:8
+- init @16@0:8
+- initWithCoder: @24@0:8@16
+- dealloc v16@0:8
+- getMacAddressAsString @16@0:8
+- initWithMacAddressAsData:secureRangingKeyID: @32@0:8@16@24
+- initWithMacAddressAsString:secureRangingKeyID: @32@0:8@16@24
+- initWithMacAddressAsUInt:secureRangingKeyID: @32@0:8Q16@24
+- isEqualToPeer: B24@0:8@16
+- secureRangingKeyID @16@0:8
++ supportsSecureCoding B16@0:8
++ hexStringMacAddressFromUInt: @24@0:8Q16
++ uintMacAddressFromString: Q24@0:8@16
+CLASS _CLRangingPeerDistanceInternal
+- copyWithZone: @24@0:8^{_NSZone=}16
+- dealloc v16@0:8
+- initWithPeer:date:distanceMeters:accuracyMeters:initiator:shouldUnlock: @56@0:8@16@24@32@40B48B52
+CLASS _CLRangingPeerInternal
+- copyWithZone: @24@0:8^{_NSZone=}16
+- dealloc v16@0:8
+- initWithMacAddressAsUInt:secureRangingKeyID: @32@0:8Q16@24
+CLASS CLFindMyAccessoryFindingCapabilities
+- copyWithZone: @24@0:8^{_NSZone=}16
+- encodeWithCoder: v24@0:8@16
+- initWithData: @24@0:8@16
+- capabilities I16@0:8
+- init @16@0:8
+- initWithCoder: @24@0:8@16
+- supportsNBAMMS B16@0:8
+- setCapabilities: v20@0:8I16
+- dealloc v16@0:8
+- setSupportsSimultaneousRanging: v20@0:8B16
+- capabilitiesString @16@0:8
+- initWithSupportsFC1ND:supportsNBAMMS:supportsUnii5:capabilities:supportsSimultaneousRanging: @36@0:8B16B20B24I28B32
+- setSupportsFC1ND: v20@0:8B16
+- setSupportsNBAMMS: v20@0:8B16
+- supportsFC1ND B16@0:8
+- supportsSimultaneousRanging B16@0:8
+- supportsUnii5 B16@0:8
++ supportsSecureCoding B16@0:8
+CLASS CLFindMyAccessoryRangingManager
+- .cxx_construct @16@0:8
+- setDelegate: v24@0:8@16
+- handleMessage: v32@0:8{shared_ptr<CLConnectionMessage>=^{CLConnectionMessage}^{__shared_weak_count}}16
+- delegate @16@0:8
+- handleInterruption v16@0:8
+- initWithDelegate:delegateQueue: @32@0:8@16@24
+- .cxx_destruct v16@0:8
+- init @16@0:8
+- fetchFirmwareVersionFromDevice: v24@0:8@16
+- prepareForStartRangingOnDevice: v24@0:8@16
+- connectToDevice: v24@0:8@16
+- disconnectFromDevice: v24@0:8@16
+- initRoseWithParameters:onDevice: v32@0:8@16@24
+- setRoseRangingParameters:onDevice: v32@0:8@16@24
+- startEventCounterOnDevice: v24@0:8@16
+- startRangingWithParameters:onDevice: v32@0:8@16@24
+- stopEventCounterOnDevice: v24@0:8@16
+- stopRangingOnDevice: v24@0:8@16
+- stopRoseWithParameters:onDevice: v32@0:8@16@24
+CLASS _GEOTimeRange
+- startDate @16@0:8
+- startTime d16@0:8
+- duration d16@0:8
+- contains: B24@0:8@16
+- endDate @16@0:8
+- initWithPBTimeRange: @28@0:8{GEOPBTransitTimeRange=II{?=b1b1}}16
+- initWithPDTimeRange: @28@0:8{GEOPDTimeRange=II{?=b1b1}}16
+CLASS GEOPolylineCoordinateRangeArray
+- .cxx_construct @16@0:8
+- description @16@0:8
+- countByEnumeratingWithState:objects:count: Q40@0:8^{?=Q^@^Q[5Q]}16^@24Q32
+- count Q16@0:8
+- encodeWithCoder: v24@0:8@16
+- .cxx_destruct v16@0:8
+- initWithCoder: @24@0:8@16
+- addCoordinateRange: v32@0:8{GEOPolylineCoordinateRange={PolylineCoordinate=If}{PolylineCoordinate=If}}16
+- coordinateRangeAtIndex: {GEOPolylineCoordinateRange={PolylineCoordinate=If}{PolylineCoordinate=If}}24@0:8Q16
++ supportsSecureCoding B16@0:8
+CLASS CURangingSample
+- channel i16@0:8
+- setDeviceModel: v24@0:8@16
+- description @16@0:8
+- setChannel: v20@0:8i16
+- deviceAddress @16@0:8
+- deviceModel @16@0:8
+- .cxx_destruct v16@0:8
+- rawRSSI i16@0:8
+- setDeviceAddress: v24@0:8@16
+- setRawRSSI: v20@0:8i16
+CLASS CURangingPeer
+- deviceIRK @16@0:8
+- setDeviceModel: v24@0:8@16
+- description @16@0:8
+- deviceAddress @16@0:8
+- deviceModel @16@0:8
+- isEqual: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- setDeviceAddress: v24@0:8@16
+- setDeviceIRK: v24@0:8@16
+CLASS CURangingMeasurement
+- description @16@0:8
+- error @16@0:8
+- setError: v24@0:8@16
+- encodeWithCoder: v24@0:8@16
+- flags I16@0:8
+- .cxx_destruct v16@0:8
+- setFlags: v20@0:8I16
+- setIdentifier: v24@0:8@16
+- initWithCoder: @24@0:8@16
+- identifier @16@0:8
+- distanceMeters d16@0:8
+- horizontalError d16@0:8
+- horizontalAngle d16@0:8
+- distanceError d16@0:8
+- ptsScore d16@0:8
+- setDistanceError: v24@0:8d16
+- setDistanceMeters: v24@0:8d16
+- setHorizontalAngle: v24@0:8d16
+- setHorizontalError: v24@0:8d16
+- setPtsScore: v24@0:8d16
+- setTimestampTicks: v24@0:8Q16
+- setVerticalAngle: v24@0:8d16
+- setVerticalError: v24@0:8d16
+- timestampTicks Q16@0:8
+- verticalAngle d16@0:8
+- verticalError d16@0:8
++ supportsSecureCoding B16@0:8
+CLASS CURangingSession
+- setErrorHandler: v24@0:8@?16
+- setDispatchQueue: v24@0:8@16
+- dispatchQueue @16@0:8
+- setInvalidationHandler: v24@0:8@?16
+- invalidationHandler @?16@0:8
+- _update v16@0:8
+- _invalidated v16@0:8
+- setLabel: v24@0:8@16
+- peers @16@0:8
+- addSample: v24@0:8@16
+- activate v16@0:8
+- errorHandler @?16@0:8
+- flags I16@0:8
+- measurementHandler @?16@0:8
+- .cxx_destruct v16@0:8
+- init @16@0:8
+- setFlags: v20@0:8I16
+- setMeasurementHandler: v24@0:8@?16
+- statusFlags I16@0:8
+- invalidate v16@0:8
+- _invalidate v16@0:8
+- dealloc v16@0:8
+- label @16@0:8
+- _updateInitiator v16@0:8
+- _updatePeers v16@0:8
+- _updateResponder v16@0:8
+- measurementHandlerEx @?16@0:8
+- setMeasurementHandlerEx: v24@0:8@?16
+- setPeers: v24@0:8@16
+- setStatusChangedHandler: v24@0:8@?16
+- statusChangedHandler @?16@0:8
+CLASS NIDiscoveryToken
+- descriptionInternal @16@0:8
+- description @16@0:8
+- rawToken @16@0:8
+- getIRK @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- deviceCapabilities @16@0:8
+- initWithDeviceAddress: @20@0:8S16
+- encodeWithCoder: v24@0:8@16
+- isEqual: B24@0:8@16
+- shortDeviceAddress @16@0:8
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- tokenVariant q16@0:8
+- initWithCoder: @24@0:8@16
+- objectInRawTokenOPACKDictForKey: @24@0:8@16
+- getSessionIdentifier @16@0:8
+- initWithBytes: @24@0:8@16
+- rawTokenAsString @16@0:8
++ _identifyingSequenceFromBytes: @24@0:8@16
++ supportsSecureCoding B16@0:8
++ generateTokenWithUUID: @24@0:8@16
++ serialize: @24@0:8@16
++ generateFindingTokenWithIRK:forExternalUse: @28@0:8@16B24
++ generateFindingTokenWithIRK: @24@0:8@16
++ deserialize: @24@0:8@16
++ generateFindingTokenWithServiceID:deviceName: @32@0:8@16@24
++ generateDiscoveryTokenFromBeaconIdentifier: @24@0:8@16
+CLASS NIConfiguration
+- descriptionInternal @16@0:8
+- _internalIsMemoryAssertionRequired B16@0:8
+- _internalIsPowerAssertionRequired B16@0:8
+- setEnabledGestures: v24@0:8Q16
+- setSuspensionPolicy: v24@0:8Q16
+- _internalIsCameraAssistanceInClientProcess B16@0:8
+- enabledGestures Q16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithConfiguration: @24@0:8@16
+- suspensionPolicy Q16@0:8
+- setSupportsCameraAssistance: v20@0:8B16
+- encodeWithCoder: v24@0:8@16
+- _internalIsCameraAssistanceEnabled B16@0:8
+- supportsCameraAssistance B16@0:8
+- _internalIsExtendedDistanceMeasurementEnabled B16@0:8
+- init @16@0:8
+- initInternal @16@0:8
+- initWithCoder: @24@0:8@16
++ supportsSecureCoding B16@0:8
++ new @16@0:8
+CLASS NIRangingAuthConfiguration
+- descriptionInternal @16@0:8
+- macAddress @16@0:8
+- description @16@0:8
+- initAsResponder:macAddress:key: @36@0:8B16@20@28
+- isResponder B16@0:8
+- secureKey @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- encodeWithCoder: v24@0:8@16
+- isEqual: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- initWithCoder: @24@0:8@16
+- peerToken @16@0:8
++ supportsSecureCoding B16@0:8
+CLASS _NIWiFiRangingTestConfiguration
+- descriptionInternal @16@0:8
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- monitoredRegions @16@0:8
+- peerDiscoveryToken @16@0:8
+- encodeWithCoder: v24@0:8@16
+- isEqual: B24@0:8@16
+- initWithDiscoveryToken:wifiRangingParameters:regions: @40@0:8@16@24@32
+- setMonitoredRegions: v24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- initWithCoder: @24@0:8@16
+- parameters @16@0:8
++ supportsSecureCoding B16@0:8
+CLASS NIFindingConfiguration
+- descriptionInternal @16@0:8
+- setCameraAssistanceEnabled: v20@0:8B16
+- description @16@0:8
+- isCameraAssistanceEnabled B16@0:8
+- _internalIsCameraAssistanceInClientProcess B16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- preferredUpdateRate q16@0:8
+- monitoredRegions @16@0:8
+- setPreferredUpdateRate: v24@0:8q16
+- setDebugParameters: v24@0:8@16
+- encodeWithCoder: v24@0:8@16
+- _internalIsCameraAssistanceEnabled B16@0:8
+- isEqual: B24@0:8@16
+- isFinder B16@0:8
+- canUpdateToConfiguration: B24@0:8@16
+- setMonitoredRegions: v24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- initWithCoder: @24@0:8@16
+- debugParameters @16@0:8
+- configType q16@0:8
+- setConfigType: v24@0:8q16
+- isObserver B16@0:8
+- setRequestedMeasurementQuality: v24@0:8q16
+- _initInternalWithConfigType:isFinder:isObserver:specifiedToken:preferredUpdateRate:requestedMeasurementQuality: @56@0:8q16B24B28@32q40q48
+- discoveryTokenVariant q16@0:8
+- findingDiscoveryToken @16@0:8
+- initWithDiscoveryToken:requestedUpdateRate:requestedMeasaurementQuality: @40@0:8@16q24q32
+- initWithRole:discoveryToken:preferredUpdateRate: @40@0:8q16@24q32
+- isCameraAssistanceInClientProcess B16@0:8
+- preferredDiscoveryPriority q16@0:8
+- requestedMeasurementQuality q16@0:8
+- sessionDiscoveryToken @16@0:8
+- setCameraAssistanceInClientProcess: v20@0:8B16
+- setDiscoveryTokenVariant: v24@0:8q16
+- setIsFinder: v20@0:8B16
+- setIsObserver: v20@0:8B16
+- setPreferredDiscoveryPriority: v24@0:8q16
+- setSpecifiedToken: v24@0:8@16
+- specifiedToken @16@0:8
++ supportsSecureCoding B16@0:8
+CLASS NIFindingNotifier
+- .cxx_destruct v16@0:8
+- initWithParentSession: @24@0:8@16
+- notifyDiscoveredNearbyObjectWithToken:sharedConfigurationData: v32@0:8@16@24
+- notifyRemovedNearbyObjectWithToken: v24@0:8@16
+- notifyUpdatedHeadingForLocalDevice: v24@0:8@16
+- notifyUpdatedLocation:forNearbyObjectWithToken: v32@0:8@16@24
+- notifyUpdatedLocationForLocalDevice: v24@0:8@16
+CLASS NISession
+- setInternalState: v20@0:8i16
+- didUpdateAlgorithmState:forObject: v32@0:8@16@24
+- isPreciseRangingAllowed B16@0:8
+- _getSessionFailureError @16@0:8
+- internalState i16@0:8
+- didUpdateNICoordinates: v24@0:8@16
+- .cxx_construct @16@0:8
+- description @16@0:8
+- internalDelegate @16@0:8
+- didReceiveRangingAuthRecommendation:forObject: v28@0:8B16@20
+- didUpdateNearbyObjects: v24@0:8@16
+- _shouldReConnectToDaemonAfterCrash B16@0:8
+- _isInternalClient B16@0:8
+- _processUpdatedLockState: v20@0:8S16
+- setInternalDelegate: v24@0:8@16
+- uwbSessionInterruptedWithReason:timestamp: v32@0:8q16d24
+- didUpdateState:forItem: v32@0:8q16@24
+- setDelegate: v24@0:8@16
+- _addRegionPredicate: v24@0:8@16
+- _initAndConnectToServerWithOptions: @24@0:8Q16
+- processDCKMessage:responseCallback: v32@0:8@16@?24
+- _handleRunSessionError: v24@0:8@16
+- delegateQueue @16@0:8
+- configuration @16@0:8
+- _sendRemoteDevice:changedState: v32@0:8@16q24
+- activationResponse @16@0:8
+- processBluetoothEventWithType:btcClockTicks: v32@0:8q16Q24
+- didProcessAcwgM3MsgWithResponse:error: v32@0:8@16@24
+- processVisionInput: v24@0:8@16
+- didUpdateHomeDeviceUWBRangingAvailability: v20@0:8B16
+- _submitErrorMetric: v24@0:8@16
+- _handlePauseSessionError: v24@0:8@16
+- processAcwgRangingSessionResumeRequestMsg:withResumeTriggerReason: v28@0:8I16q20
+- _shouldReRunSessionAfterSessionInterruptionEnded B16@0:8
+- didUpdateLocalDiscoveryToken: v24@0:8@16
+- setActivationResponse: v24@0:8@16
+- acwgEventNotifier @16@0:8
+- findingNotifier @16@0:8
+- _synchronousRemoteObject @16@0:8
+- getInternalConnectionQueue @16@0:8
+- _addObject: v24@0:8@16
+- uwbSessionDidFailWithError: v24@0:8@16
+- getInternalLogObject @16@0:8
+- _serverConnectionInvalidated v16@0:8
+- setARSession: v24@0:8@16
+- isEqual: B24@0:8@16
+- delegate @16@0:8
+- setConfigurationForTesting: v24@0:8@16
+- _internalRunWithConfiguration: v24@0:8@16
+- _serverConnectionInterrupted v16@0:8
+- systemEventNotifier @16@0:8
+- systemDidUpdateState: v24@0:8@16
+- didRemoveNearbyObjects:withReason: v32@0:8@16Q24
+- didProcessAcwgM1MsgWithResponse:error: v32@0:8@16@24
+- didUpdateMotionState: v24@0:8q16
+- setDelegateQueue: v24@0:8@16
+- relayDCKMessage: v24@0:8@16
+- didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error: v32@0:8@16@24
+- pause v16@0:8
+- didUpdateDLTDOAMeasurements: v24@0:8@16
+- setInvalidationError: v24@0:8@16
+- getInternalIdentifier @16@0:8
+- uwbSessionInterruptionReasonEnded:timestamp: v32@0:8q16d24
+- motionState q16@0:8
+- _invalidateSessionAndNotifyError: v24@0:8@16
+- _interruptSessionWithInternalReason:cachedInterruption:nearbydReSuspension: v32@0:8q16B24B28
+- processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter: v40@0:8q16Q24Q32
+- object:didUpdateRegion:previousRegion: v40@0:8@16@24@32
+- prefetchAcwgUrsk: v20@0:8I16
+- didStartAcwgRanging: v24@0:8q16
+- _notifyDidInvalidateWithError: v24@0:8@16
+- isRangingLimitExceeded B16@0:8
+- _verifyError: @24@0:8@16
+- carKeyEventNotifier @16@0:8
+- deleteURSKs @16@0:8
+- didSuspendAcwgRanging: v24@0:8q16
+- hash Q16@0:8
+- suspendAcwgRanging:withSuspendTriggerReason: v28@0:8I16q20
+- _logDurationAndSubmit: v20@0:8B16
+- .cxx_destruct v16@0:8
+- _setURSKTTL: @24@0:8Q16
+- systemDidUpdateResourceUsageLimitExceeded:forSessionConfigurationTypeWithName: v28@0:8B16@20
+- init @16@0:8
+- _removeRegionPredicate: v24@0:8@16
+- _reinterruptSessionWithCachedInterruption v16@0:8
+- _performBlockOnDelegateQueue:ifRespondsToSelector:evenIfNotRunning: v36@0:8@?16:24B32
+- didDiscoverNearbyObject: v24@0:8@16
+- didGenerateShareableConfigurationData:forObject: v32@0:8@16@24
+- _handlePauseSessionSuccess v16@0:8
+- requestAcwgRangingSessionSuspend:withSuspendTriggerReason: v28@0:8I16q20
+- _logTime v16@0:8
+- _performBlockOnDelegateQueue:ifRespondsToSelector: v32@0:8@?16:24
+- processAcwgM3Msg: v24@0:8@16
+- updateResponderDeviceIdentifier:completionHandler: v32@0:8@16@?24
+- didReceiveAopSFZoneUpdate: v24@0:8@16
+- didUpdateHealthStatus: v24@0:8q16
+- _remoteObject @16@0:8
+- _handleRunSessionSuccess v16@0:8
+- _removeObject: v24@0:8@16
+- uwbSessionDidInvalidateWithError: v24@0:8@16
+- _configurationSupportsRetry B16@0:8
+- devicePresenceNotifier @16@0:8
+- _invalidateInternal v16@0:8
+- runWithConfiguration: v24@0:8@16
+- discoveryToken @16@0:8
+- invalidate v16@0:8
+- didPrefetchAcwgUrsk:error: v28@0:8I16@20
+- _setARSessionInternal: v24@0:8@16
+- _handleActivationError: v24@0:8@16
+- _osLogNearbyObjectUpdate: v24@0:8@16
+- _setDebugURSK:transactionIdentifier: @28@0:8@16I24
+- processAcwgM1Msg:withSessionTriggerReason: v32@0:8@16q24
+- dealloc v16@0:8
+- isExtendedDistanceMeasurementAllowed B16@0:8
+- worldTransformForObject: {?=[4]}24@0:8@16
+- _tryToRecoverFromFailure: B24@0:8@16
+- processBluetoothEventWithType:btcClockTicks:eventCounter: v40@0:8q16Q24Q32
+- invalidationError @16@0:8
+- _handleActivationSuccess: v24@0:8@16
+- _provideTruthTag: v24@0:8@16
++ interactableDiscoveryTokens @16@0:8
++ generateSOSBeaconSearcherDataMatchingSubjectData:completion: v32@0:8@16@?24
++ generateFindingDiscoveryTokenWithSharedSecret: @24@0:8@16
++ deviceCapabilities @16@0:8
++ setAsyncLocalDeviceInteractableDiscoveryTokens:completion: v32@0:8@16@?24
++ generateFindingDiscoveryTokenWithIdentityResolvingKey: @24@0:8@16
++ getAsyncActivelyInteractingDiscoveryTokens: v24@0:8@?16
++ generateFindingDiscoveryToken @16@0:8
++ setLocalDeviceDebugParameters: @24@0:8@16
++ setCachedPlatformCapabilities: v24@0:8@16
++ _localDeviceLogger @16@0:8
++ _queryAndCacheCapabilities v16@0:8
++ internalDeviceCapabilities @16@0:8
++ setLocalDeviceInteractableDiscoveryTokens: @24@0:8@16
++ _supportedPlatform: B24@0:8@16
++ localDevicePrintableState @16@0:8
++ generateBluetoothDeviceTokenWithPublicAddress:IRK: @32@0:8@16@24
++ generateSOSBeaconSubjectDataWithCompletion: v24@0:8@?16
++ cachedPlatformCapabilities @16@0:8
++ setLocalDeviceCanInteract:withDiscoveryTokens: @28@0:8B16@20
++ getAsyncInteractableDiscoveryTokens: v24@0:8@?16
++ isSupported B16@0:8
++ activelyInteractingDiscoveryTokens @16@0:8
++ observerSession @16@0:8
++ generateDiscoveryTokenFromBeaconIdentifier: @24@0:8@16
+CLASS NIAcwgRangingSessionResumeResponseMsg
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- encodeWithCoder: v24@0:8@16
+- initWithCoder: @24@0:8@16
+- initWithStsIndex0:uwbTime0: @28@0:8I16Q20
+- stsIndex0 I16@0:8
+- uwbTime0 Q16@0:8
++ supportsSecureCoding B16@0:8
++ fromStruct: @32@0:8{AcwgRangingSessionResumeResponseMsgStruct=IQ}16
+CLASS NSRangeSpecifier
+- encodeWithCoder: v24@0:8@16
+- initWithCoder: @24@0:8@16
+- dealloc v16@0:8
+- _initFromRecord: @24@0:8@16
+- _putKeyFormAndDataInRecord: B24@0:8@16
+- _simpleDescription @16@0:8
+- _specifiedIndexesOfObjectsInContainer: @24@0:8@16
+- _specifiesSingleIndexedObjectPerContainer B16@0:8
+- endSpecifier @16@0:8
+- initWithContainerClassDescription:containerSpecifier:key: @40@0:8@16@24@32
+- initWithContainerClassDescription:containerSpecifier:key:startSpecifier:endSpecifier: @56@0:8@16@24@32@40@48
+- setEndSpecifier: v24@0:8@16
+- setStartSpecifier: v24@0:8@16
+- startSpecifier @16@0:8
+CLASS NSPrivateCoreDataClassForFindingBundle
+CLASS HDRFlexRangeParameters
+- setVersion: v24@0:8Q16
+- description @16@0:8
+- version Q16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- init @16@0:8
+- isMono B16@0:8
+- channelGammaRGB 16@0:8
+- alternateColorSpace ^{CGColorSpace=}16@0:8
+- alternateHeadroom f16@0:8
+- baseHeadroom f16@0:8
+- channelAlternateOffset f16@0:8
+- channelAlternateOffsetRGB 16@0:8
+- channelBaseOffset f16@0:8
+- channelBaseOffsetRGB 16@0:8
+- channelGamma f16@0:8
+- channelMax f16@0:8
+- channelMaxRGB 16@0:8
+- channelMin f16@0:8
+- channelMinRGB 16@0:8
+- createFlexRangeDictionary @16@0:8
+- createFlexRangeMetadata ^{CGImageMetadata=}16@0:8
+- setAlternateColorSpace: v24@0:8^{CGColorSpace=}16
+- setAlternateHeadroom: v20@0:8f16
+- setBaseHeadroom: v20@0:8f16
+- setChannelAlternateOffset: v20@0:8f16
+- setChannelAlternateOffsetRGB: v32@0:816
+- setChannelBaseOffset: v20@0:8f16
+- setChannelBaseOffsetRGB: v32@0:816
+- setChannelGamma: v20@0:8f16
+- setChannelGammaRGB: v32@0:816
+- setChannelMax: v20@0:8f16
+- setChannelMaxRGB: v32@0:816
+- setChannelMin: v20@0:8f16
+- setChannelMinRGB: v32@0:816
+- setIsMono: v20@0:8B16
+- setUseBaseColor: v20@0:8B16
+- useBaseColor B16@0:8
++ flexRangeParametersFromDictionary: @24@0:8@16
++ flexRangeParametersFromMetadata: @24@0:8^{CGImageMetadata=}16
+CLASS MTLResourceAddressRangeArray
+- description @16@0:8
+- formattedDescription: @24@0:8Q16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- count Q16@0:8
+- isEqual: B24@0:8@16
+- ranges ^{MTLAddressRange=QQ}16@0:8
+- initWithCount: @24@0:8Q16
+- hash Q16@0:8
+- dealloc v16@0:8
+- initWithRanges:count: @32@0:8^{MTLAddressRange=QQ}16Q24
+CLASS CAFrameRateRangeGroup
+- initWithDisplay: @24@0:8@16
+- dealloc v16@0:8
+- addReason: v20@0:8I16
+- arbitratedRange {CAFrameRateRange=fff}16@0:8
+- addCompatQuantaIntent v16@0:8
+- addFrameRateRange: v28@0:8{CAFrameRateRange=fff}16
+- arbitratedIntervalRange {CAFrameIntervalRange=III}16@0:8
+- hasCompatQuantaIntent B16@0:8
+- reasonsWithCount: r^I24@0:8^I16
+- removeFrameRateRange: v28@0:8{CAFrameRateRange=fff}16
+- updateFrameRateRange:toRange: v40@0:8{CAFrameRateRange=fff}16{CAFrameRateRange=fff}28
+CLASS GEOLPRValidationRange
+- start i16@0:8
+- description @16@0:8
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- setEnd: v20@0:8i16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- setStart: v20@0:8i16
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- end i16@0:8
+- validCharacters @16@0:8
+- hasEnd B16@0:8
+- hasStart B16@0:8
+- hasValidCharacters B16@0:8
+- setHasEnd: v20@0:8B16
+- setHasStart: v20@0:8B16
+- setValidCharacters: v24@0:8@16
++ isValid: B24@0:8@16
+CLASS GEOTraitsTransitScheduleTimeRange
+- setHasStartTime: v20@0:8B16
+- hasStartTime B16@0:8
+- description @16@0:8
+- hasDuration B16@0:8
+- setHasDuration: v20@0:8B16
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- setStartTime: v24@0:8d16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- startTime d16@0:8
+- duration d16@0:8
+- clearUnknownFields: v20@0:8B16
+- setDuration: v24@0:8d16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
++ isValid: B24@0:8@16
+CLASS GEOTimeRange
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+- initWithPlaceDataTimeRange: @24@0:8^{GEOPDLocalTimeRange=II{?=b1b1}}16
+CLASS GEOPBTransitZoomRangeString
+- description @16@0:8
+- setMinZoom: v20@0:8I16
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- minZoom I16@0:8
+- initWithData: @24@0:8@16
+- clearUnknownFields: v20@0:8B16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- hasLabelLanguage B16@0:8
+- hasLabelText B16@0:8
+- hasMinZoom B16@0:8
+- labelLanguage @16@0:8
+- labelText @16@0:8
+- setHasMinZoom: v20@0:8B16
+- setLabelLanguage: v24@0:8@16
+- setLabelText: v24@0:8@16
++ isValid: B24@0:8@16
+CLASS GEOPDResultRefinementRangeElement
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- initWithData: @24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+CLASS GEOPDResultRefinementRangeDiscrete
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+CLASS GEOPDResultRefinementRangeContinuous
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- initWithData: @24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+CLASS GEOPDResultRefinementRange
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- initWithData: @24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+CLASS GEOPDDateTimeRange
+- description @16@0:8
+- copyWithZone: @24@0:8^{_NSZone=}16
+- isEqual: B24@0:8@16
+- readFrom: B24@0:8@16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- writeTo: v24@0:8@16
+- dealloc v16@0:8
+- hasValidStartAndEndDates B16@0:8
+CLASS GEOTriggerPointRange
+- description @16@0:8
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- initWithData: @24@0:8@16
+- clearUnknownFields: v20@0:8B16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- init @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- displayTime I16@0:8
+- setDisplayTime: v20@0:8I16
+- setHideAtPoint: v24@0:8@16
+- setShowAtPoint: v24@0:8@16
+- hasDisplayTime B16@0:8
+- hasHideAtPoint B16@0:8
+- hasShowAtPoint B16@0:8
+- hideAtPoint @16@0:8
+- setHasDisplayTime: v20@0:8B16
+- showAtPoint @16@0:8
++ isValid: B24@0:8@16
+CLASS GEORouteLegRange
+- description @16@0:8
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- clearUnknownFields: v20@0:8B16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- setHasEndValidDistanceOffsetCm: v20@0:8B16
+- endValidDistanceOffsetCm I16@0:8
+- endValidSegmentIndex I16@0:8
+- hasEndValidDistanceOffsetCm B16@0:8
+- hasEndValidSegmentIndex B16@0:8
+- hasStartValidDistanceOffsetCm B16@0:8
+- hasStartValidSegmentIndex B16@0:8
+- setEndValidDistanceOffsetCm: v20@0:8I16
+- setEndValidSegmentIndex: v20@0:8I16
+- setHasEndValidSegmentIndex: v20@0:8B16
+- setHasStartValidDistanceOffsetCm: v20@0:8B16
+- setHasStartValidSegmentIndex: v20@0:8B16
+- setStartValidDistanceOffsetCm: v20@0:8I16
+- setStartValidSegmentIndex: v20@0:8I16
+- startValidDistanceOffsetCm I16@0:8
+- startValidSegmentIndex I16@0:8
++ isValid: B24@0:8@16
+CLASS GEOMinimumVisibleElevationRange
+- description @16@0:8
+- readAll: v20@0:8B16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- initWithJSON: @24@0:8@16
+- isEqual: B24@0:8@16
+- copyTo: v24@0:8@16
+- readFrom: B24@0:8@16
+- clearUnknownFields: v20@0:8B16
+- hash Q16@0:8
+- .cxx_destruct v16@0:8
+- jsonRepresentation @16@0:8
+- dictionaryRepresentation @16@0:8
+- unknownFields @16@0:8
+- mergeFrom: v24@0:8@16
+- writeTo: v24@0:8@16
+- initWithDictionary: @24@0:8@16
+- hasLowerBoundCm B16@0:8
+- hasUpperBoundCm B16@0:8
+- lowerBoundCm i16@0:8
+- setHasLowerBoundCm: v20@0:8B16
+- setHasUpperBoundCm: v20@0:8B16
+- setLowerBoundCm: v20@0:8i16
+- setUpperBoundCm: v20@0:8i16
+- upperBoundCm i16@0:8
++ isValid: B24@0:8@16
+CLASS CCToolKitToolRestrictionContextInInclusiveRange
+- initWithData:error: @32@0:8@16^@24
+- jsonDictionary @16@0:8
+- initWithJSONDictionary:error: @32@0:8@16^@24
+- upperBound d16@0:8
+- lowerBound d16@0:8
+- decodeFieldValuesFromData:error: B32@0:8@16^@24
+- ensureDecodedWithError: B24@0:8^@16
+- enumerateFieldsUsingBlock:parentFieldType: v28@0:8@?16S24
+- initLazyDecodedWithTrustedItemMessageData:error: @32@0:8@16^@24
+- initWithItemMessageData:error: @32@0:8@16^@24
+- hasLowerBound B16@0:8
+- hasUpperBound B16@0:8
+- initWithLowerBound:upperBound:error: @40@0:8@16@24^@32
+- setHasLowerBound: v20@0:8B16
+- setHasUpperBound: v20@0:8B16
++ itemType S16@0:8
++ descriptionForTypeIdentifier: @20@0:8S16
++ contentMessageClass #16@0:8
++ metaContentMessageClass #16@0:8
++ typeIdentifierForDescription: S24@0:8@16
+CLASS VMURangeArray
+- range {_VMURange=QQ}16@0:8
+- description @16@0:8
+- setCapacity: v20@0:8I16
+- addRange: v32@0:8{_VMURange=QQ}16
+- sort v16@0:8
+- rangeAtIndex: {_VMURange=QQ}20@0:8I16
+- containsLocation: B24@0:8Q16
+- copyWithZone: @24@0:8^{_NSZone=}16
+- intersectsRange: B32@0:8{_VMURange=QQ}16
+- count I16@0:8
+- containsRange: B32@0:8{_VMURange=QQ}16
+- ranges ^{_VMURange=QQ}16@0:8
+- init @16@0:8
+- dealloc v16@0:8
+- initWithRanges:count: @28@0:8r^{_VMURange=QQ}16I24
+- insertRange:atIndex: v36@0:8{_VMURange=QQ}16I32
+- removeRangeAtIndex: v20@0:8I16
+- removeAllRanges v16@0:8
+- addRanges: v24@0:8@16
+- indexForLocation: Q24@0:8Q16
+- intersectsLocation: B24@0:8Q16
+- largestRange {_VMURange=QQ}16@0:8
+- rangeForLocation: {_VMURange=QQ}24@0:8Q16
+- subrangeNotExcludedBySelfForRange: {_VMURange=QQ}32@0:8{_VMURange=QQ}16
+- sumLengths Q16@0:8
+CLASS VMUNonOverlappingRangeArray
+- mergeRange:excludingRanges: v40@0:8{_VMURange=QQ}16@32
+- addOrExtendRange: v32@0:8{_VMURange=QQ}16
+- mergeRanges:excludingRanges: v32@0:8@16@24
+- _mergeAllBitsOfRange:excludingRanges:mergeRanges: v44@0:8{_VMURange=QQ}16@32B40
+- subtract:mergeRanges: @28@0:8@16B24
+- sortAndMergeRanges v16@0:8
+- mergeRange: v32@0:8{_VMURange=QQ}16
+- mergeRanges: v24@0:8@16
+CLASS VMURangeToStringMap
+- .cxx_construct @16@0:8
+- description @16@0:8
+- uniquedStringCount I16@0:8
+- enumerateRanges: v24@0:8@?16
+- indexForString:insertIfMissing: I28@0:8@16B24
+- rangeForString:startingAtAddress: {_VMURange=QQ}32@0:8@16Q24
+- sort v16@0:8
+- stringForIndex: @20@0:8I16
+- enumerateHexAddressesInStrings: v24@0:8@?16
+- count I16@0:8
+- encodeWithCoder: v24@0:8@16
+- stringForAddress: @24@0:8Q16
+- rangeContainingAddress: {_VMURange=QQ}24@0:8Q16
+- .cxx_destruct v16@0:8
+- init @16@0:8
+- setString:forRange: v40@0:8@16{_VMURange=QQ}24
+- resymbolicateStringsWithSymbolicator: v32@0:8{_CSTypeRef=QQ}16
+- initWithCoder: @24@0:8@16
++ supportsSecureCoding B16@0:8
+CLASS VMUVMRegionRangeInfo
+- range {_VMURange=QQ}16@0:8
+- setSize: v24@0:8Q16
+- address Q16@0:8
+- setAddress: v24@0:8Q16
+- init @16@0:8
+- size Q16@0:8
+- stackIdentifier Q16@0:8
+- userTag I16@0:8
+- setStackIdentifier: v24@0:8Q16
+- setUserTag: v20@0:8I16
+CLASS AVAudioDoubleRange
+- description @16@0:8
+- initWithMin:max: @32@0:8d16d24
+- initWithRange: @48@0:8{SampleRateRange=^^?[1I]dd}16
+- minimum d16@0:8
+- maximum d16@0:8
+CLASS AVAudioFloatRange
+- description @16@0:8
+- initWithMin:max: @24@0:8f16f20
+- minimum f16@0:8
+- maximum f16@0:8
+CLASS AVAudioUIntegerRange
+- initWithMin:max: @32@0:8Q16Q24
+- minimum Q16@0:8
+- maximum Q16@0:8
+CLASS _TtGCs23_ContiguousArrayStorageGVs5RangeSi__$
+- objectAtIndexedSubscript: @24@0:8q16
+- countByEnumeratingWithState:objects:count: q40@0:8^{?=Q^@^Q[5Q]}16^@24q32
+- getObjects:range: v40@0:8^@16{?=qq}24
+- count q16@0:8
+- objectAtIndex: @24@0:8q16
+Process 68475 launched: '/Users/elibaum/Documents/Codex/2026-10-08/bas/work/uwb-protocol-agent/runtime-inventory' (arm64)
+Process 68475 stopped
+* thread #1, queue = 'com.apple.main-thread', stop reason = breakpoint 1.2
+    frame #0: 0x0000000187bd82d0 libdyld.dylib`dyld4::LibSystemHelpers::exit(int) const
+libdyld.dylib`dyld4::LibSystemHelpers::exit:
+->  0x187bd82d0 <+0>:  pacibsp 
+    0x187bd82d4 <+4>:  stp    x29, x30, [sp, #-0x10]!
+    0x187bd82d8 <+8>:  mov    x29, sp
+    0x187bd82dc <+12>: mov    x0, x1
+Target 0: (runtime-inventory) stopped.
+(lldb) disassemble --name "+[NISession generateFindingDiscoveryTokenWithSharedSecret:]"
+NearbyInteraction`+[NISession(Finding) generateFindingDiscoveryTokenWithSharedSecret:]:
+    0x232c13c94 <+0>:   pacibsp 
+    0x232c13c98 <+4>:   stp    x20, x19, [sp, #-0x20]!
+    0x232c13c9c <+8>:   stp    x29, x30, [sp, #0x10]
+    0x232c13ca0 <+12>:  add    x29, sp, #0x10
+    0x232c13ca4 <+16>:  mov    x19, x2
+    0x232c13ca8 <+20>:  mov    x0, x2
+    0x232c13cac <+24>:  bl     0x232c3754c               ; symbol stub for: -[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]
+    0x232c13cb0 <+28>:  mov    x0, x19
+    0x232c13cb4 <+32>:  bl     0x232c553e0               ; objc_msgSend$length
+    0x232c13cb8 <+36>:  cmp    x0, #0x10
+    0x232c13cbc <+40>:  b.ne   0x232c13ce0               ; <+76>
+    0x232c13cc0 <+44>:  adrp   x8, 408798
+    0x232c13cc4 <+48>:  ldr    x0, [x8, #0x138]
+    0x232c13cc8 <+52>:  mov    x2, x19
+    0x232c13ccc <+56>:  bl     0x232c54520               ; objc_msgSend$generateFindingTokenWithIRK:
+    0x232c13cd0 <+60>:  mov    x29, x29
+    0x232c13cd4 <+64>:  bl     0x232c3756c               ; symbol stub for: -[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]
+    0x232c13cd8 <+68>:  mov    x20, x0
+    0x232c13cdc <+72>:  b      0x232c13ce4               ; <+80>
+    0x232c13ce0 <+76>:  mov    x20, #0x0                 ; =0 
+    0x232c13ce4 <+80>:  mov    x0, x19
+    0x232c13ce8 <+84>:  bl     0x232c3753c               ; symbol stub for: -[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]
+    0x232c13cec <+88>:  mov    x0, x20
+    0x232c13cf0 <+92>:  ldp    x29, x30, [sp, #0x10]
+    0x232c13cf4 <+96>:  ldp    x20, x19, [sp], #0x20
+    0x232c13cf8 <+100>: autibsp 
+    0x232c13cfc <+104>: eor    x16, x30, x30, lsl #1
+    0x232c13d00 <+108>: tbz    x16, #0x3e, 0x232c13d08   ; <+116>
+    0x232c13d04 <+112>: brk    #0xc471
+    0x232c13d08 <+116>: b      0x232c3746c               ; symbol stub for: -[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]
+    0x232c13d0c <+120>: mov    x20, x0
+    0x232c13d10 <+124>: mov    x0, x19
+    0x232c13d14 <+128>: bl     0x232c3753c               ; symbol stub for: -[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]
+    0x232c13d18 <+132>: mov    x0, x20
+    0x232c13d1c <+136>: bl     0x232c370fc               ; symbol stub for: -[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]
+(lldb) disassemble --name "+[NISession generateFindingDiscoveryTokenWithIdentityResolvingKey:]"
+NearbyInteraction`+[NISession(Finding) generateFindingDiscoveryTokenWithIdentityResolvingKey:]:
+    0x232c13d20 <+0>:  pacibsp 
+    0x232c13d24 <+4>:  stp    x29, x30, [sp, #-0x10]!
+    0x232c13d28 <+8>:  mov    x29, sp
+    0x232c13d2c <+12>: adrp   x8, 408798
+    0x232c13d30 <+16>: ldr    x0, [x8, #0x1a0]
+    0x232c13d34 <+20>: bl     0x232c54500               ; objc_msgSend$generateFindingDiscoveryTokenWithSharedSecret:
+    0x232c13d38 <+24>: mov    x29, x29
+    0x232c13d3c <+28>: bl     0x232c3756c               ; symbol stub for: -[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]
+    0x232c13d40 <+32>: ldp    x29, x30, [sp], #0x10
+    0x232c13d44 <+36>: autibsp 
+    0x232c13d48 <+40>: eor    x16, x30, x30, lsl #1
+    0x232c13d4c <+44>: tbz    x16, #0x3e, 0x232c13d54   ; <+52>
+    0x232c13d50 <+48>: brk    #0xc471
+    0x232c13d54 <+52>: b      0x232c3746c               ; symbol stub for: -[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:]
+(lldb) disassemble --name "-[CLFindMyAccessoryRangingManager setRoseRangingParameters:onDevice:]"
+error: Unable to find symbol with name '-[CLFindMyAccessoryRangingManager setRoseRangingParameters:onDevice:]'.

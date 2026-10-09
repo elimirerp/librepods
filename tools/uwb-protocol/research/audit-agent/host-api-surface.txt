@@ -1,0 +1,76 @@
+Missing ServerDeviceInfo
+Missing FMDSystemConfig
+Missing FMDSystemConfig_macosx
+
+CLASS FMDFMMManager : NSObject
++ sharedInstance @16@0:8
+- cachedAccountInfo @16@0:8
+- setCachedAccountInfo: v24@0:8@16
+- .cxx_destruct v16@0:8
+- init @16@0:8
+- dealloc v16@0:8
+- isFMMEnabled B16@0:8
+- didReceiveLostModeExitAuthToken: v24@0:8@16
+- disableFMMUsingToken:inContext:usingCallback: v40@0:8@16Q24@?32
+- needsLostModeExitAuth B16@0:8
+- retrieveFMMAccount: @24@0:8^@16
+- registerObservers v16@0:8
+- _genericErrorForDisableContext: @24@0:8Q16
+- authRef ^{AuthorizationOpaqueRef=}16@0:8
+- clearFMMAccountsWithCompletion: v24@0:8@?16
+- _invalidateDisableFMMConnection v16@0:8
+- _adminAuthDataForRight: @24@0:8r*16
+- _createAuthRight v16@0:8
+- _storeDisableFMMConnection: v24@0:8@16
+- activationLockInfoForContext:withCompletion: v32@0:8@16@?24
+- activationLockInfoForUnlockWithCompletion: v24@0:8@?16
+- activationLockInfoForValidationWithCompletion: v24@0:8@?16
+- addFMMAccount: @24@0:8@16
+- addFMMAccount:withCompletion: v32@0:8@16@?24
+- authenticateDeviceOwnerWithCallback: v24@0:8@?16
+- commandValidationSignatureWithContext:completion: v32@0:8@16@?24
+- didChangeFMMAccountInfo: v24@0:8@16
+- didRemoveLocalFindableAccessory:completion: v32@0:8@16@?24
+- disableFMMConnection @16@0:8
+- disableFMMUsingToken:deviceOwnerCredentials:inContext:usingCallback: v48@0:8@16@24Q32@?40
+- enableActivationLockWithCompletion: v24@0:8@?16
+- enableRepairWithContext:completion: v32@0:8@16@?24
+- eraseAllContentAndSettingsUsingCallback: v24@0:8@?16
+- fetchAPNSTokenWithCompletion: v24@0:8@?16
+- fetchDeviceOwnerAuthContext: v24@0:8@?16
+- getRepairStateWithContext:reply: v32@0:8@16@?24
+- initiateLostModeExitAuthWithCompletion: v24@0:8@?16
+- isActivationLockCapableWithCompletion: v24@0:8@?16
+- isActivationLockedWithCompletion: v24@0:8@?16
+- laContext @16@0:8
+- locationCommandWithCompletion: v24@0:8@?16
+- locationPayloadWithCompletion: v24@0:8@?16
+- needsDeviceOwnerCredentials: v24@0:8@?16
+- newErrorForCode:message: @28@0:8i16@20
+- performActivationLockOperationWithContext:withCompletion: v32@0:8@16@?24
+- removeActivationLockForMacOSUserWithPassword:withCompletion: v32@0:8@16@?24
+- removeActivationLockForiCloudUser:authenticationPET:withCompletion: v40@0:8@16@24@?32
+- removeFMMAccountWithUsername: @24@0:8@16
+- removeFMMAccountWithUsername:authRight: @32@0:8@16@24
+- removeFMMAccountWithUsername:authRight:completion: v40@0:8@16@24@?32
+- removeFMMAccountWithUsername:authRight:deviceOwnerCredentials:completion: v48@0:8@16@24@32@?40
+- removeFMMAccountWithUsername:completion: v32@0:8@16@?24
+- removeManagedActivationLockWithCode:withCompletion: v32@0:8@16@?24
+- retrieveFMMAccountWithCompletion: v24@0:8@?16
+- setAuthRef: v24@0:8^{AuthorizationOpaqueRef=}16
+- setDisableFMMConnection: v24@0:8@16
+- setLaContext: v24@0:8@16
+- shouldPromptForCredentialsForDeviceActivation: v24@0:8@?16
+- shouldResumeCardsForUser:withCompletion: v32@0:8@16@?24
+- signatureHeadersWithData:completion: v32@0:8@16@?24
+- simulatePushWithPayload:completion: v32@0:8@16@?24
+- unregisterObservers v16@0:8
+- updateCredentialsContextForDeviceActivation:completion: v32@0:8@16@?24
+- validateActivationLockForiCloudUser:authenticationPET:withCompletion: v40@0:8@16@24@?32
+property authRef T^{AuthorizationOpaqueRef=},N,V_authRef
+property disableFMMConnection T@"FMNSXPCConnection",&,N,V_disableFMMConnection
+property cachedAccountInfo T@"FMDFMMAccountInfo",&,V_cachedAccountInfo
+property laContext T@"LAContext",&,V_laContext
+Missing FMDFMIPManager
+Missing FMDDeviceInfo
+Missing FMDServiceProvider

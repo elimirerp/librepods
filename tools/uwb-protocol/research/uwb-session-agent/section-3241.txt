@@ -1,0 +1,192 @@
+-[NIServerFindingAdvertisement byteRepresentation]:
+0x100348866   pushq    %rbp                 
+0x100348867   movq     %rsp, %rbp           
+0x10034886A   pushq    %r15                 
+0x10034886C   pushq    %r14                 
+0x10034886E   pushq    %r13                 
+0x100348870   pushq    %r12                 
+0x100348872   pushq    %rbx                 
+0x100348873   subq     $0x98, %rsp          
+0x10034887A   movq     %rdi, %rbx           
+0x10034887D   movq     0x5f616c(%rip), %rax  ; ___stack_chk_guard
+0x100348884   movq     (%rax), %rax         
+0x100348887   movq     %rax, -0x30(%rbp)    
+0x10034888B   movq     0x5f705e(%rip), %rdi  ; _OBJC_CLASS_$_NSData
+0x100348892   leaq     0x14(%rbx), %rdx     
+0x100348896   movq     0x65a443(%rip), %rsi  ; selector "dataWithBytes:length:"
+0x10034889D   movq     0x5f692c(%rip), %r14  ; _objc_msgSend
+0x1003488A4   movl     $0x6, %ecx           
+0x1003488A9   callq    *%r14                
+0x1003488AC   movq     %rax, %rdi           
+0x1003488AF   callq    _objc_retainAutoreleasedReturnValue 
+0x1003488B4   movq     %rax, -0xb0(%rbp)    
+0x1003488BB   movq     0x65e066(%rip), %rsi  ; selector "statusFlags"
+0x1003488C2   movq     %rbx, %rdi           
+0x1003488C5   callq    *%r14                
+0x1003488C8   movl     %eax, %r14d          
+0x1003488CB   movq     0x65e04e(%rip), %rsi  ; selector "payload"
+0x1003488D2   movq     %rbx, %rdi           
+0x1003488D5   callq    *0x5f68f5(%rip)      ; _objc_msgSend
+0x1003488DB   movq     %rax, %rdi           
+0x1003488DE   callq    _objc_retainAutoreleasedReturnValue 
+0x1003488E3   movq     %rax, -0xa0(%rbp)    
+0x1003488EA   movq     0x65e1c7(%rip), %rsi  ; selector "extraOOBData"
+0x1003488F1   movq     %rbx, %rdi           
+0x1003488F4   callq    *0x5f68d6(%rip)      ; _objc_msgSend
+0x1003488FA   movq     %rax, %rdi           
+0x1003488FD   callq    _objc_retainAutoreleasedReturnValue 
+0x100348902   movq     %rax, %r12           
+0x100348905   movl     $0x3, %edi           
+0x10034890A   xorl     %esi, %esi           
+0x10034890C   callq    _NSRandomData        
+0x100348911   movq     %rax, %rdi           
+0x100348914   callq    _objc_retainAutoreleasedReturnValue 
+0x100348919   movq     %rax, -0xa8(%rbp)    
+0x100348920   leaq     0x6297b9(%rip), %rax  ; 
+0x100348927   movq     %rax, -0x90(%rbp)    
+0x10034892E   movq     0x5f5d0b(%rip), %rdi  ; _OBJC_CLASS_$_NSNumber
+0x100348935   movsbl   0x8(%rbx), %edx      
+0x100348939   movq     0x65a650(%rip), %rsi  ; selector "numberWithBool:"
+0x100348940   callq    *0x5f688a(%rip)      ; _objc_msgSend
+0x100348946   movq     %rax, %rdi           
+0x100348949   callq    _objc_retainAutoreleasedReturnValue 
+0x10034894E   movq     %rax, %r13           
+0x100348951   movq     %rax, -0x60(%rbp)    
+0x100348955   leaq     0x62979c(%rip), %rax  ; 
+0x10034895C   movq     %rax, -0x88(%rbp)    
+0x100348963   movq     -0xb0(%rbp), %rax    
+0x10034896A   movq     %rax, -0x58(%rbp)    
+0x10034896E   leaq     0x62979b(%rip), %rax  ; 
+0x100348975   movq     %rax, -0x80(%rbp)    
+0x100348979   movq     0x5f5cc0(%rip), %rdi  ; _OBJC_CLASS_$_NSNumber
+0x100348980   movq     0x65c339(%rip), %rsi  ; selector "numberWithUnsignedChar:"
+0x100348987   movzbl   %r14b, %edx          
+0x10034898B   movq     %r13, -0xb8(%rbp)    
+0x100348992   callq    *0x5f6838(%rip)      ; _objc_msgSend
+0x100348998   movq     %rax, %rdi           
+0x10034899B   callq    _objc_retainAutoreleasedReturnValue 
+0x1003489A0   movq     %rax, %rbx           
+0x1003489A3   movq     %rax, -0x50(%rbp)    
+0x1003489A7   leaq     0x62977a(%rip), %rax  ; 
+0x1003489AE   movq     %rax, -0x78(%rbp)    
+0x1003489B2   movq     -0xa0(%rbp), %rax    
+0x1003489B9   movq     %rax, %r14           
+0x1003489BC   testq    %rax, %rax           
+0x1003489BF   jne      0x1003489e0          
+0x1003489C1   movq     0x5f6f70(%rip), %rdi  ; _OBJC_CLASS_$_NSNull
+0x1003489C8   movq     0x65ce39(%rip), %rsi  ; selector "null"
+0x1003489CF   callq    *0x5f67fb(%rip)      ; _objc_msgSend
+0x1003489D5   movq     %rax, %rdi           
+0x1003489D8   callq    _objc_retainAutoreleasedReturnValue 
+0x1003489DD   movq     %rax, %r14           
+0x1003489E0   movq     %r14, -0x48(%rbp)    
+0x1003489E4   leaq     0x629755(%rip), %rax  ; 
+0x1003489EB   movq     %rax, -0x70(%rbp)    
+0x1003489EF   movq     -0xa8(%rbp), %rax    
+0x1003489F6   movq     %rax, -0x40(%rbp)    
+0x1003489FA   leaq     0x629757(%rip), %rax  ; 
+0x100348A01   movq     %rax, -0x68(%rbp)    
+0x100348A05   movq     %r12, %r15           
+0x100348A08   testq    %r12, %r12           
+0x100348A0B   jne      0x100348a2c          
+0x100348A0D   movq     0x5f6f24(%rip), %rdi  ; _OBJC_CLASS_$_NSNull
+0x100348A14   movq     0x65cded(%rip), %rsi  ; selector "null"
+0x100348A1B   callq    *0x5f67af(%rip)      ; _objc_msgSend
+0x100348A21   movq     %rax, %rdi           
+0x100348A24   callq    _objc_retainAutoreleasedReturnValue 
+0x100348A29   movq     %rax, %r15           
+0x100348A2C   leaq     -0x60(%rbp), %rdx    
+0x100348A30   movq     %r15, 0x28(%rdx)     
+0x100348A34   movq     0x5f6ec5(%rip), %rdi  ; _OBJC_CLASS_$_NSDictionary
+0x100348A3B   movq     0x659ce6(%rip), %rsi  ; selector "dictionaryWithObjects:forKeys:count:"
+0x100348A42   leaq     -0x90(%rbp), %rcx    
+0x100348A49   movl     $0x6, %r8d           
+0x100348A4F   callq    *0x5f677b(%rip)      ; _objc_msgSend
+0x100348A55   movq     %rax, %rdi           
+0x100348A58   callq    _objc_retainAutoreleasedReturnValue 
+0x100348A5D   movq     %rax, %r13           
+0x100348A60   testq    %r12, %r12           
+0x100348A63   jne      0x100348a6e          
+0x100348A65   movq     %r15, %rdi           
+0x100348A68   callq    *0x5f679a(%rip)      ; _objc_release
+0x100348A6E   cmpq     $0x0, -0xa0(%rbp)    
+0x100348A76   jne      0x100348a81          
+0x100348A78   movq     %r14, %rdi           
+0x100348A7B   callq    *0x5f6787(%rip)      ; _objc_release
+0x100348A81   movq     %rbx, %rdi           
+0x100348A84   callq    *0x5f677e(%rip)      ; _objc_release
+0x100348A8A   movq     -0xb8(%rbp), %rdi    
+0x100348A91   callq    *0x5f6771(%rip)      ; _objc_release
+0x100348A97   movq     %r13, %rdi           
+0x100348A9A   movl     $0x8, %esi           
+0x100348A9F   xorl     %edx, %edx           
+0x100348AA1   callq    _OPACKEncoderCreateData 
+0x100348AA6   movq     %rax, %rbx           
+0x100348AA9   movq     %r13, %rdi           
+0x100348AAC   callq    *0x5f6756(%rip)      ; _objc_release
+0x100348AB2   movq     -0xa8(%rbp), %rdi    
+0x100348AB9   callq    *0x5f6749(%rip)      ; _objc_release
+0x100348ABF   movq     %r12, %rdi           
+0x100348AC2   callq    *0x5f6740(%rip)      ; _objc_release
+0x100348AC8   movq     -0xa0(%rbp), %rdi    
+0x100348ACF   callq    *0x5f6733(%rip)      ; _objc_release
+0x100348AD5   movq     -0xb0(%rbp), %rdi    
+0x100348ADC   callq    *0x5f6726(%rip)      ; _objc_release
+0x100348AE2   movq     0x5f5f07(%rip), %rax  ; ___stack_chk_guard
+0x100348AE9   movq     (%rax), %rax         
+0x100348AEC   cmpq     -0x30(%rbp), %rax    
+0x100348AF0   jne      0x100348b0b          
+0x100348AF2   movq     %rbx, %rdi           
+0x100348AF5   addq     $0x98, %rsp          
+0x100348AFC   popq     %rbx                 
+0x100348AFD   popq     %r12                 
+0x100348AFF   popq     %r13                 
+0x100348B01   popq     %r14                 
+0x100348B03   popq     %r15                 
+0x100348B05   popq     %rbp                 
+0x100348B06   jmp      _objc_autoreleaseReturnValue 
+0x100348B0B   callq    ___stack_chk_fail    
+0x100348B10   movq     %rax, -0x98(%rbp)    
+0x100348B17   jmp      0x100348b49          
+0x100348B19   movq     %rax, -0x98(%rbp)    
+0x100348B20   jmp      0x100348b5c          
+0x100348B22   movq     %rax, -0x98(%rbp)    
+0x100348B29   movq     %r13, %rdi           
+0x100348B2C   callq    *0x5f66d6(%rip)      ; _objc_release
+0x100348B32   jmp      0x100348b84          
+0x100348B34   movq     %rax, -0x98(%rbp)    
+0x100348B3B   testq    %r12, %r12           
+0x100348B3E   jne      0x100348b49          
+0x100348B40   movq     %r15, %rdi           
+0x100348B43   callq    *0x5f66bf(%rip)      ; _objc_release
+0x100348B49   cmpq     $0x0, -0xa0(%rbp)    
+0x100348B51   jne      0x100348b5c          
+0x100348B53   movq     %r14, %rdi           
+0x100348B56   callq    *0x5f66ac(%rip)      ; _objc_release
+0x100348B5C   movq     %rbx, %rdi           
+0x100348B5F   callq    *0x5f66a3(%rip)      ; _objc_release
+0x100348B65   jmp      0x100348b6e          
+0x100348B67   movq     %rax, -0x98(%rbp)    
+0x100348B6E   movq     -0xb8(%rbp), %rdi    
+0x100348B75   callq    *0x5f668d(%rip)      ; _objc_release
+0x100348B7B   jmp      0x100348b84          
+0x100348B7D   movq     %rax, -0x98(%rbp)    
+0x100348B84   movq     -0xa8(%rbp), %rdi    
+0x100348B8B   callq    *0x5f6677(%rip)      ; _objc_release
+0x100348B91   jmp      0x100348b9a          
+0x100348B93   movq     %rax, -0x98(%rbp)    
+0x100348B9A   movq     %r12, %rdi           
+0x100348B9D   callq    *0x5f6665(%rip)      ; _objc_release
+0x100348BA3   jmp      0x100348bac          
+0x100348BA5   movq     %rax, -0x98(%rbp)    
+0x100348BAC   movq     -0xa0(%rbp), %rdi    
+0x100348BB3   callq    *0x5f664f(%rip)      ; _objc_release
+0x100348BB9   jmp      0x100348bc4          
+0x100348BBB   jmp      0x100348bbd          
+0x100348BBD   movq     %rax, -0x98(%rbp)    
+0x100348BC4   movq     -0xb0(%rbp), %rdi    
+0x100348BCB   callq    *0x5f6637(%rip)      ; _objc_release
+0x100348BD1   jmp      0x100348bda          
+0x100348BD3   movq     %rax, -0x98(%rbp)    
+0x100348BDA   movq     -0x98(%rbp), %rdi    
+0x100348BE1   callq    __Unwind_Resume      

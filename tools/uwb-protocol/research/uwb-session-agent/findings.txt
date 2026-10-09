@@ -1,0 +1,35 @@
+Mac UWB / Find My session audit, 2026-10-08
+
+Scope: static system binary inspection, runtime class/method enumeration only, plus synthetic token creation using dummy bytes 00..0f. No NISession object creation, no runWithConfiguration, no Bluetooth operations, no daemon attachment, no protected account or credential reads. Pairing preserved.
+
+Strongest protocol leads
+1. NearbyInteraction has NIFindingConfiguration distinct from public NINearbyAccessoryConfiguration. It accepts finding discovery tokens generated from shared secret or identity resolving key. Token generation checks16 bytes exactly; the identity-resolving-key method directly calls the shared-secret method.
+2. Native model-only synthetic fixture produces OPACK dictionary {1:bytes123456, 7:1, 2:dummy16-byte-key}. Raw26-byte fixture: e309731234560f090a80000102030405060708090a0b0c0d0e0f. getIRK returns dummy key unchanged, getSessionIdentifier returns123456, tokenVariant1. Independent minimal offline parser passes fixture and rejects truncation/trailing bytes.
+3. nearbyd NIServerFindingService emits shareable configuration by NIServerFindingAdvertisement.byteRepresentation via OPACKEncoderCreateData(flags8). Actual integer keys identified from __objc_intobj constants: 1=isFinder bool;2=6-byte address NSData;3=statusFlags uint8;4=payload or null;5=3 random bytes;6=extraOOBData or null. Received shared config decoded by advertisementFromByteRepresentation and passed to processAdvertisement:receivedOOBFromPeer:.
+4. NIServerFindingAdvertisement payload comprises optional supportedTechnologies byte, followed when nonzero by protocolVersion(bits0..2), narrowBandMask(bits3..4), mmsNumFragmentsOOB(bits5..6). Exact inner AirPods transport and byte ordering require iOS/case-specific corroboration. This is not a public NI accessory configuration blob.
+5. Find My native ranging provider prepares NBAMMS requests, including nb/UWB acquisition band/channel, narrowband mask, MMS fragmentation/slot size. Discovery-token IRK feeds native protocol crypto. Authenticated aiding/signalling and mutual-auth states are present, so BLE encryption is only one layer.
+
+Native protocol crypto (generic NBAMMS, AirPods Pro3 route not proven)
+- _initializeEncryptionSessionIfNecessary: generates8 random sessionID bytes; obtains discoveryToken.getIRK; creates NIServerCryptoSession(KDK=IRK,sessionIdentifier,encrypt=true).
+- _deriveSessionKeyFromKeyDerivationKey:sessionIdentifier: uses CCKDFParametersCreateHkdf(salt=NULL,saltLen=0,context=sessionIdentifier,contextLen=length); CCDeriveKey digest10; output32 bytes. Apple's primary CommonDigestSPI enum confirms digest10=SHA256. Therefore key=HKDF-SHA256(IKM=IRK,salt empty,info=sessionID,length32).
+- encrypt uses CCCryptorCreateWithMode(operation0,mode12,algorithm0,padding1000,keylen32). Apple's CommonCryptorSPI enum confirms12=CCM; algorithm0 is AES. Sets tag length6, nonce to8-byte counter (native little endian on this Mac), associated-data5 bytes = version1 + lower32-bit little-endian counter. Counter increments first, rejects at0xffffffff. Output appends version1, counterLE4, ciphertext, tag6. This is AES256-CCM for native protocol message payloads, not necessarily its UWB STS-key generator or GATT encryption.
+- _updateCryptoSessionConfigPayload: unencrypted configuration message header contains byte0=0, messageID byte1=0, crypto state byte2, sessionID length byte3, reserved4 zero bytes, followed by sessionID at offset8. There are separate encrypted aiding/signalling and mutual-auth messages.
+
+Entitlements
+nearbyd checks com.apple.nearbyinteraction.finding.session, com.apple.nearbyinteraction.finding.local-device, and com.apple.private.nearbyinteraction.privileged. Native finding session container rejects unauthorised finding configurations. Existence of framework methods does not give ordinary third-party Mac apps an allowed Find My ranging transport.
+
+Framework scope
+FindMyBluetooth exports CBDiscovery.OOBKeyInfo(btAddress,irkData), fragmentation/reassembly helpers, generic encrypted-characteristic properties. It did not export a dedicated UWB configuration class. NearbySessions exports group/invitation and host public-key types; no direct UWB interface found in exports. nearbyd is the productive source.
+
+Public primary sources
+- Apple WWDC22 Nearby Interaction https://developer.apple.com/videos/play/wwdc2022/10008/ : accessory sends UWB configuration -> app NI configuration -> NI emits shareable configuration -> accessory. Background NI requires LE pairing/connection and encrypted Accessory Configuration Data characteristic, used by iOS to bind Bluetooth peer ID to session; app cannot directly read that system characteristic. This describes third-party accessories and does not prove AirPods use the same GATT schema.
+- Apple NI page https://developer.apple.com/nearby-interaction/ : accessory/interoperability spec download redirects to authenticated developer page; do not infer full wire specification from public overview.
+- Ghost Peak primary paper https://www.usenix.org/system/files/sec22-leu.pdf : U1 interoperation tested with Qorvo/NXP under compatibility mode, distinct from iPhone-AirTag FindMy mode. STS requires pre-agreed key. No AirPods3/S25 evidence.
+- UWB smartphone primary research https://arxiv.org/html/2303.11220v1 : software constraints limit cross-platform interoperation despite shared PHY; historical2023 study, not current OneUI9 evidence.
+- Apple cryptographic enum headers https://raw.githubusercontent.com/apple-oss-distributions/CommonCrypto/main/include/Private/CommonDigestSPI.h and https://raw.githubusercontent.com/apple-oss-distributions/CommonCrypto/main/include/Private/CommonCryptorSPI.h ; HKDF API https://raw.githubusercontent.com/apple-oss-distributions/CommonCrypto/main/include/Private/CommonKeyDerivationSPI.h .
+
+Next evidence needed
+- AirPodsPro3 case BLE service/characteristic/L2CAP channel and exact owner authentication exchange.
+- Case-selected native protocol version and acquisition channel; mapping NBAMMS features to Android controller capabilities. Standard FiRa API availability does not imply it exposes Apple's NB/MMS mode.
+- Authorized owner-shared-secret delivery into Android integration without republishing private keys; runtime permission and Samsung HAL parameter support.
+- Derivation of actual UWB STS/session-key/index and mutual-auth challenge state, separate from generic native message encryption above.

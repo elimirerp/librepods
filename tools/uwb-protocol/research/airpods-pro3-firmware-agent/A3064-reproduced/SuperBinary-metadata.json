@@ -1,0 +1,166 @@
+{
+  "SuperBinary Payloads": [
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auch_jb.bin",
+      "Payload 4CC": "AUCH",
+      "Payload Version": "0.0.3.3"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/audt_jb.bin",
+      "Payload 4CC": "AUDT",
+      "Payload Version": "0.0.1.0"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auer_jb.bin",
+      "Payload 4CC": "AUER",
+      "Payload Version": "0.0.3.2"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aufm_jb.bin",
+      "Payload 4CC": "AUFM",
+      "Payload Version": "0.0.2.3"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aufr_jb.bin",
+      "Payload 4CC": "AUFR",
+      "Payload Version": "0.0.3.2"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aulb_jb.bin",
+      "Payload 4CC": "AULB",
+      "Payload Version": "0.0.3.2"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aupc_jb.bin",
+      "Payload 4CC": "AUPC",
+      "Payload Version": "0.0.3.2"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/aups_jb.bin",
+      "Payload 4CC": "AUPS",
+      "Payload Version": "0.0.3.2"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auuf_jb.bin",
+      "Payload 4CC": "AUUF",
+      "Payload Version": "0.0.1.3"
+    },
+    {
+      "Payload Filepath": "usr/local/standalone/firmware/audio_assets/juicebox/generated/b747/auut_jb.bin",
+      "Payload 4CC": "AUUT",
+      "Payload Version": "0.0.3.3"
+    },
+    {
+      "Payload MetaData": {
+        "Payload Hash": "usr/local/standalone/firmware/b747/bapp_b747.hash",
+        "Payload Signature": "usr/local/standalone/firmware/b747/bapp_b747.sig",
+        "Payload Certificate": "usr/local/standalone/firmware/b747/bapp_b747.cert"
+      },
+      "Payload Version": "90.390.0.0",
+      "Payload Filepath": "usr/local/standalone/firmware/b747/bapp_b747.bin",
+      "Payload 4CC": "BAPP"
+    },
+    {
+      "Payload MetaData": {
+        "Property List Payload": true
+      },
+      "Payload Version": "90.224854016.26214400.6807",
+      "Payload Filepath": "usr/local/standalone/firmware/uarp/cmaps/b747/a3122_cmap.plist",
+      "Payload 4CC": "CMAP",
+      "Payload Long Name": "Crash Analytics Mapfile"
+    },
+    {
+      "Payload MetaData": {
+        "Payload Compression ChunkSize": 16384,
+        "Compose Payload Hash Algorithm": "SHA-256",
+        "Payload Compression Algorithm": "LZBitmapFast2"
+      },
+      "Payload Version": "90.224854016.26214400.6807",
+      "Payload Filepath": "ftab.bin",
+      "Payload 4CC": "CTAB"
+    },
+    {
+      "Payload MetaData": {
+        "Compose Payload Hash Algorithm": "SHA-256"
+      },
+      "Payload Version": "90.224854016.26214400.6807",
+      "Payload Filepath": "ftab.bin",
+      "Payload 4CC": "FTAB"
+    },
+    {
+      "Payload MetaData": {
+        "Payload Hash": "usr/local/standalone/firmware/nerfthis/b747/nerfthis_b747.hash",
+        "Payload Signature": "usr/local/standalone/firmware/nerfthis/b747/nerfthis_b747.sig",
+        "Payload Certificate": "usr/local/standalone/firmware/nerfthis/b747/nerfthis_b747.cert"
+      },
+      "Payload Version": "90.264.0.0",
+      "Payload Filepath": "usr/local/standalone/firmware/nerfthis/b747/nerfthis_b747user.bin",
+      "Payload 4CC": "NERF"
+    },
+    {
+      "Payload MetaData": {
+        "Compose Measured Payloads": [
+          {
+            "Personalization FTAB Payload Longname": "RTKitOS",
+            "Personalization FTAB Payload Hash Algorithm": "SHA-384",
+            "Personalization FTAB Payload Production Mode": true,
+            "Personalization FTAB Payload Security Mode": true,
+            "Personalization FTAB Payload Tag": "rkos",
+            "Personalization FTAB Payload Trusted": true
+          },
+          {
+            "Personalization FTAB Payload Longname": "SoftwareBinaryDsp1",
+            "Personalization FTAB Payload Hash Algorithm": "SHA-384",
+            "Personalization FTAB Payload Production Mode": true,
+            "Personalization FTAB Payload Security Mode": true,
+            "Personalization FTAB Payload Tag": "sbd1",
+            "Personalization FTAB Payload Trusted": true
+          },
+          {
+            "Personalization FTAB Payload Longname": "RTKitIOConfig",
+            "Personalization FTAB Payload Hash Algorithm": "SHA-384",
+            "Personalization FTAB Payload Production Mode": true,
+            "Personalization FTAB Payload Security Mode": true,
+            "Personalization FTAB Payload Tag": "icnf",
+            "Personalization FTAB Payload Trusted": true
+          }
+        ],
+        "Personalization Manifest Prefix": "Rap",
+        "Personalization Required": true
+      },
+      "Payload Version": "90.224854016.26214400.6807",
+      "Payload Filepath": "usr/local/standalone/firmware/Rose/b747/ftab.bin",
+      "Payload 4CC": "ROSE"
+    },
+    {
+      "Payload MetaData": {
+        "Payload Hash": "usr/local/standalone/firmware/b747/b747.hash",
+        "Payload Signature": "usr/local/standalone/firmware/b747/b747.sig",
+        "Payload Certificate": "usr/local/standalone/firmware/b747/b747.cert"
+      },
+      "Payload Version": "90.390.0.0",
+      "Payload Filepath": "usr/local/standalone/firmware/b747/FWUP_b747.bin",
+      "Payload 4CC": "STFW"
+    },
+    {
+      "Payload MetaData": {
+        "Property List Payload": true
+      },
+      "Payload Version": "90.224854016.26214400.6807",
+      "Payload Filepath": "usr/local/standalone/firmware/uarp/tmaps/b747/a3122.plist",
+      "Payload 4CC": "TMAP",
+      "Payload Long Name": "Analytics Map Software Update"
+    },
+    {
+      "Payload MetaData": {
+        "Property List Payload": true
+      },
+      "Payload Version": "90.224854016.26214400.6807",
+      "Payload Filepath": "usr/local/standalone/firmware/uarp/tmaps/b788/a3064.plist",
+      "Payload 4CC": "TMAP",
+      "Payload Long Name": "Analytics Map Software Update"
+    }
+  ],
+  "SuperBinary Firmware Version": "9.0.348.0",
+  "SuperBinary Format Version": 3
+}

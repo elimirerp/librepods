@@ -1,0 +1,785 @@
+-[NIServerFindingRangingProvider startRangingWithPeer:technology:peerAdvertisement:OOBRangingParameters:]:
+0x1002630AC   pushq    %rbp                 
+0x1002630AD   movq     %rsp, %rbp           
+0x1002630B0   pushq    %r15                 
+0x1002630B2   pushq    %r14                 
+0x1002630B4   pushq    %r13                 
+0x1002630B6   pushq    %r12                 
+0x1002630B8   pushq    %rbx                 
+0x1002630B9   subq     $0x378, %rsp         
+0x1002630C0   movq     %r9, -0x358(%rbp)    
+0x1002630C7   movq     %r8, %r14            
+0x1002630CA   movl     %ecx, %r13d          
+0x1002630CD   movq     %rdi, -0x340(%rbp)   
+0x1002630D4   movq     0x6db915(%rip), %rax  ; ___stack_chk_guard
+0x1002630DB   movq     (%rax), %rax         
+0x1002630DE   movq     %rax, -0x30(%rbp)    
+0x1002630E2   movq     0x6dc127(%rip), %rbx  ; _objc_retain
+0x1002630E9   movq     %rdx, -0x338(%rbp)   
+0x1002630F0   movq     %rdx, %rdi           
+0x1002630F3   callq    *%rbx                
+0x1002630F5   movq     %r14, -0x350(%rbp)   
+0x1002630FC   movq     %r14, %rdi           
+0x1002630FF   callq    *%rbx                
+0x100263101   leaq     0x75abb8(%rip), %rax  ; 
+0x100263108   movq     (%rax), %r14         
+0x10026310B   movq     %r14, %rdi           
+0x10026310E   callq    *%rbx                
+0x100263110   movq     %r14, %rdi           
+0x100263113   xorl     %esi, %esi           
+0x100263115   callq    _os_log_type_enabled 
+0x10026311A   testb    %al, %al             
+0x10026311C   je       0x10026320c          
+0x100263122   movq     -0x340(%rbp), %rax   
+0x100263129   movsbl   0x20(%rax), %edi     
+0x10026312D   callq    0x100313d45          
+0x100263132   movq     %rax, %r12           
+0x100263135   movq     0x740bd4(%rip), %rsi  ; selector "descriptionInternal"
+0x10026313C   movq     -0x338(%rbp), %rdi   
+0x100263143   callq    *0x6dc087(%rip)      ; _objc_msgSend
+0x100263149   movq     %rax, %rdi           
+0x10026314C   callq    _objc_retainAutoreleasedReturnValue 
+0x100263151   movq     %rax, %rbx           
+0x100263154   movl     %r13d, -0x344(%rbp)  
+0x10026315B   movl     %r13d, %edi          
+0x10026315E   callq    0x10031494a          
+0x100263163   movq     %rax, %r13           
+0x100263166   movq     0x6db4fb(%rip), %rdi  ; _OBJC_CLASS_$_NSString
+0x10026316D   movq     -0x358(%rbp), %rax   
+0x100263174   movzbl   (%rax), %ecx         
+0x100263177   movzbl   0x1(%rax), %r8d      
+0x10026317C   movzbl   0x3(%rax), %r9d      
+0x100263181   movq     0x73f788(%rip), %rsi  ; selector "stringWithFormat:"
+0x100263188   leaq     0x706769(%rip), %rdx  ; @"<nbAcqChIdx: %d, nbMask: %d, lowPrioDutyCycle: %d>"
+0x10026318F   xorl     %eax, %eax           
+0x100263191   callq    *0x6dc039(%rip)      ; _objc_msgSend
+0x100263197   movq     %rax, %rdi           
+0x10026319A   callq    _objc_retainAutoreleasedReturnValue 
+0x10026319F   movq     %rax, %r15           
+0x1002631A2   leaq     -0x320(%rbp), %r8    
+0x1002631A9   movl     $0x8200403, (%r8)    
+0x1002631B0   movq     %r12, 0x4(%r8)       
+0x1002631B4   movw     $0x841, 0xc(%r8)     
+0x1002631BB   movq     %rbx, 0xe(%r8)       
+0x1002631BF   movw     $0x820, 0x16(%r8)    
+0x1002631C6   movq     %r13, 0x18(%r8)      
+0x1002631CA   movw     $0x840, 0x20(%r8)    
+0x1002631D1   movq     %rax, 0x22(%r8)      
+0x1002631D5   leaq     -0x2631dc(%rip), %rdi  ; 
+0x1002631DC   leaq     0x314f1d(%rip), %rcx  ; string literal: "#find-range,[%s] startRangingWithPeer: %{private}@. Technology: %s. OOBParams: %@"
+0x1002631E3   movq     %r14, %rsi           
+0x1002631E6   xorl     %edx, %edx           
+0x1002631E8   movl     $0x2a, %r9d          
+0x1002631EE   callq    __os_log_impl        
+0x1002631F3   movq     %rbx, %rdi           
+0x1002631F6   callq    *0x6dc00c(%rip)      ; _objc_release
+0x1002631FC   movl     -0x344(%rbp), %r13d  
+0x100263203   movq     %r15, %rdi           
+0x100263206   callq    *0x6dbffc(%rip)      ; _objc_release
+0x10026320C   movq     %r14, %rdi           
+0x10026320F   callq    *0x6dbff3(%rip)      ; _objc_release
+0x100263215   movq     -0x340(%rbp), %r14   
+0x10026321C   movq     0x30(%r14), %rdi     
+0x100263220   callq    _dispatch_assert_queue$V2 
+0x100263225   movq     -0x358(%rbp), %rbx   
+0x10026322C   cmpq     $0x0, -0x338(%rbp)   
+0x100263234   je       0x100263cf4          
+0x10026323A   cmpb     $0x0, 0x48(%r14)     
+0x10026323F   je       0x100263281          
+0x100263241   cmpl     $0x1, %r13d          
+0x100263245   jne      0x100263320          
+0x10026324B   callq    0x1001a9d70          
+0x100263250   movq     %rax, %rdi           
+0x100263253   callq    0x1004398c6          
+0x100263258   testb    %al, %al             
+0x10026325A   je       0x100263399          
+0x100263260   cmpb     $0x1, 0x68(%r14)     
+0x100263265   jne      0x100263463          
+0x10026326B   movl     $0x10, %edi          
+0x100263270   callq    0x100408e9b          
+0x100263275   movl     %eax, %ebx           
+0x100263277   movb     $0x5, %al            
+0x100263279   xorl     %r15d, %r15d         
+0x10026327C   jmp      0x100263488          
+0x100263281   leaq     0x75aa38(%rip), %rax  ; 
+0x100263288   movq     (%rax), %rbx         
+0x10026328B   movq     %rbx, %rdi           
+0x10026328E   movl     $0x10, %esi          
+0x100263293   callq    _os_log_type_enabled 
+0x100263298   testb    %al, %al             
+0x10026329A   je       0x1002632a4          
+0x10026329C   movq     %rbx, %rdi           
+0x10026329F   callq    0x10048de69          
+0x1002632A4   movq     0x6db355(%rip), %rbx  ; _OBJC_CLASS_$_NSError
+0x1002632AB   movq     0x6db306(%rip), %rax  ; _NSLocalizedFailureReasonErrorKey
+0x1002632B2   movq     (%rax), %rax         
+0x1002632B5   leaq     -0x40(%rbp), %rcx    
+0x1002632B9   movq     %rax, (%rcx)         
+0x1002632BC   leaq     0x705ad5(%rip), %rax  ; @"Ranging not activated"
+0x1002632C3   leaq     -0x38(%rbp), %rdx    
+0x1002632C7   movq     %rax, (%rdx)         
+0x1002632CA   movq     0x6dc62f(%rip), %rdi  ; _OBJC_CLASS_$_NSDictionary
+0x1002632D1   movq     0x73f450(%rip), %rsi  ; selector "dictionaryWithObjects:forKeys:count:"
+0x1002632D8   movl     $0x1, %r8d           
+0x1002632DE   callq    *0x6dbeec(%rip)      ; _objc_msgSend
+0x1002632E4   movq     %rax, %rdi           
+0x1002632E7   callq    _objc_retainAutoreleasedReturnValue 
+0x1002632EC   movq     %rax, %r13           
+0x1002632EF   leaq     0x6ecf02(%rip), %rax  ; 
+0x1002632F6   movq     (%rax), %rdx         
+0x1002632F9   movq     0x73f3a0(%rip), %rsi  ; selector "errorWithDomain:code:userInfo:"
+0x100263300   movq     %rbx, %rdi           
+0x100263303   movq     $-0x2724, %rcx       
+0x10026330A   movq     %r13, %r8            
+0x10026330D   callq    *0x6dbebd(%rip)      ; _objc_msgSend
+0x100263313   movq     %rax, %rdi           
+0x100263316   callq    _objc_retainAutoreleasedReturnValue 
+0x10026331B   jmp      0x100263410          
+0x100263320   movq     0x6db2d9(%rip), %rbx  ; _OBJC_CLASS_$_NSError
+0x100263327   movq     0x6db28a(%rip), %rax  ; _NSLocalizedFailureReasonErrorKey
+0x10026332E   movq     (%rax), %rax         
+0x100263331   leaq     -0x50(%rbp), %rcx    
+0x100263335   movq     %rax, (%rcx)         
+0x100263338   leaq     0x705a79(%rip), %rax  ; @"Specified technology not supported"
+0x10026333F   leaq     -0x48(%rbp), %rdx    
+0x100263343   movq     %rax, (%rdx)         
+0x100263346   movq     0x6dc5b3(%rip), %rdi  ; _OBJC_CLASS_$_NSDictionary
+0x10026334D   movq     0x73f3d4(%rip), %rsi  ; selector "dictionaryWithObjects:forKeys:count:"
+0x100263354   movl     $0x1, %r8d           
+0x10026335A   callq    *0x6dbe70(%rip)      ; _objc_msgSend
+0x100263360   movq     %rax, %rdi           
+0x100263363   callq    _objc_retainAutoreleasedReturnValue 
+0x100263368   movq     %rax, %r13           
+0x10026336B   leaq     0x6ece86(%rip), %rax  ; 
+0x100263372   movq     (%rax), %rdx         
+0x100263375   movq     0x73f324(%rip), %rsi  ; selector "errorWithDomain:code:userInfo:"
+0x10026337C   movq     %rbx, %rdi           
+0x10026337F   movq     $-0x2724, %rcx       
+0x100263386   movq     %r13, %r8            
+0x100263389   callq    *0x6dbe41(%rip)      ; _objc_msgSend
+0x10026338F   movq     %rax, %rdi           
+0x100263392   callq    _objc_retainAutoreleasedReturnValue 
+0x100263397   jmp      0x100263410          
+0x100263399   movq     0x6db260(%rip), %rbx  ; _OBJC_CLASS_$_NSError
+0x1002633A0   movq     0x6db211(%rip), %rax  ; _NSLocalizedFailureReasonErrorKey
+0x1002633A7   movq     (%rax), %rax         
+0x1002633AA   leaq     -0x60(%rbp), %rcx    
+0x1002633AE   movq     %rax, (%rcx)         
+0x1002633B1   leaq     0x705a20(%rip), %rax  ; @"Device does not support specified technology"
+0x1002633B8   leaq     -0x58(%rbp), %rdx    
+0x1002633BC   movq     %rax, (%rdx)         
+0x1002633BF   movq     0x6dc53a(%rip), %rdi  ; _OBJC_CLASS_$_NSDictionary
+0x1002633C6   movq     0x73f35b(%rip), %rsi  ; selector "dictionaryWithObjects:forKeys:count:"
+0x1002633CD   movl     $0x1, %r8d           
+0x1002633D3   callq    *0x6dbdf7(%rip)      ; _objc_msgSend
+0x1002633D9   movq     %rax, %rdi           
+0x1002633DC   callq    _objc_retainAutoreleasedReturnValue 
+0x1002633E1   movq     %rax, %r13           
+0x1002633E4   leaq     0x6ece0d(%rip), %rax  ; 
+0x1002633EB   movq     (%rax), %rdx         
+0x1002633EE   movq     0x73f2ab(%rip), %rsi  ; selector "errorWithDomain:code:userInfo:"
+0x1002633F5   movq     %rbx, %rdi           
+0x1002633F8   movq     $-0x2724, %rcx       
+0x1002633FF   movq     %r13, %r8            
+0x100263402   callq    *0x6dbdc8(%rip)      ; _objc_msgSend
+0x100263408   movq     %rax, %rdi           
+0x10026340B   callq    _objc_retainAutoreleasedReturnValue 
+0x100263410   movq     %rax, %r12           
+0x100263413   movq     %r13, %rdi           
+0x100263416   callq    *0x6dbdec(%rip)      ; _objc_release
+0x10026341C   movq     -0x350(%rbp), %rdi   
+0x100263423   callq    *0x6dbddf(%rip)      ; _objc_release
+0x100263429   movq     -0x338(%rbp), %rdi   
+0x100263430   callq    *0x6dbdd2(%rip)      ; _objc_release
+0x100263436   movq     0x6db5b3(%rip), %rax  ; ___stack_chk_guard
+0x10026343D   movq     (%rax), %rax         
+0x100263440   cmpq     -0x30(%rbp), %rax    
+0x100263444   jne      0x100263d15          
+0x10026344A   movq     %r12, %rdi           
+0x10026344D   addq     $0x378, %rsp         
+0x100263454   popq     %rbx                 
+0x100263455   popq     %r12                 
+0x100263457   popq     %r13                 
+0x100263459   popq     %r14                 
+0x10026345B   popq     %r15                 
+0x10026345D   popq     %rbp                 
+0x10026345E   jmp      _objc_autoreleaseReturnValue 
+0x100263463   callq    0x100314c50          
+0x100263468   testb    %al, %al             
+0x10026346A   je       0x10026347f          
+0x10026346C   movl     $0x10, %edi          
+0x100263471   callq    0x100408e9b          
+0x100263476   movl     %eax, %ebx           
+0x100263478   movb     $0x2, %al            
+0x10026347A   movb     $0x1, %r15b          
+0x10026347D   jmp      0x100263488          
+0x10026347F   movb     (%rbx), %al          
+0x100263481   movb     0x1(%rbx), %r15b     
+0x100263485   movb     0x2(%rbx), %bl       
+0x100263488   xorl     %ecx, %ecx           
+0x10026348A   cmpb     $0x0, 0x68(%r14)     
+0x10026348F   sete     %cl                  
+0x100263492   leal     0x1(%rcx,%rcx,4), %ecx 
+0x100263496   movzbl   %al, %r12d           
+0x10026349A   leaq     -0x320(%rbp), %rdi   
+0x1002634A1   movb     %cl, (%rdi)          
+0x1002634A3   movw     $0x0, 0x1(%rdi)      
+0x1002634A9   movw     %r12w, 0x4(%rdi)     
+0x1002634AE   movb     $0x1, 0x6(%rdi)      
+0x1002634B2   callq    0x100408da9          
+0x1002634B7   movw     %ax, -0x344(%rbp)    
+0x1002634BE   movzbl   %bl, %edi            
+0x1002634C1   callq    0x100408e7c          
+0x1002634C6   movb     %al, -0x360(%rbp)    
+0x1002634CC   movq     0x70(%r14), %rdi     
+0x1002634D0   movq     0x73f181(%rip), %rsi  ; selector "objectForKey:"
+0x1002634D7   movq     -0x338(%rbp), %rdx   
+0x1002634DE   callq    *0x6dbcec(%rip)      ; _objc_msgSend
+0x1002634E4   movq     %rax, %rdi           
+0x1002634E7   callq    _objc_retainAutoreleasedReturnValue 
+0x1002634EC   testq    %rax, %rax           
+0x1002634EF   sete     %bl                  
+0x1002634F2   movq     %rax, %rdi           
+0x1002634F5   callq    *0x6dbd0d(%rip)      ; _objc_release
+0x1002634FB   testb    %bl, %bl             
+0x1002634FD   jne      0x1002636cf          
+0x100263503   movq     -0x340(%rbp), %rax   
+0x10026350A   movq     0x70(%rax), %rdi     
+0x10026350E   movq     0x73f233(%rip), %rsi  ; selector "objectForKeyedSubscript:"
+0x100263515   movq     -0x338(%rbp), %rdx   
+0x10026351C   callq    *0x6dbcae(%rip)      ; _objc_msgSend
+0x100263522   movq     %rax, %rdi           
+0x100263525   callq    _objc_retainAutoreleasedReturnValue 
+0x10026352A   movq     %rax, %rbx           
+0x10026352D   movq     0x742564(%rip), %rsi  ; selector "getOOBRangingParameters"
+0x100263534   movq     %rax, %rdi           
+0x100263537   callq    *0x6dbc93(%rip)      ; _objc_msgSend
+0x10026353D   movb     $0x1, %r15b          
+0x100263540   movq     -0x358(%rbp), %rdx   
+0x100263547   cmpb     %al, (%rdx)          
+0x100263549   jne      0x100263566          
+0x10026354B   movl     %eax, %ecx           
+0x10026354D   shrl     $0x8, %ecx           
+0x100263550   cmpb     %cl, 0x1(%rdx)       
+0x100263553   jne      0x100263566          
+0x100263555   shrl     $0x18, %eax          
+0x100263558   movq     -0x358(%rbp), %rcx   
+0x10026355F   cmpb     %al, 0x3(%rcx)       
+0x100263562   setne    %r15b                
+0x100263566   movq     %rbx, %rdi           
+0x100263569   callq    *0x6dbc99(%rip)      ; _objc_release
+0x10026356F   movq     0x74252a(%rip), %r13  ; selector "uniqueIdentifier"
+0x100263576   movq     -0x350(%rbp), %rdi   
+0x10026357D   movq     %r13, %rsi           
+0x100263580   callq    *0x6dbc4a(%rip)      ; _objc_msgSend
+0x100263586   movq     %rax, %rdi           
+0x100263589   callq    _objc_retainAutoreleasedReturnValue 
+0x10026358E   movq     %rax, %r12           
+0x100263591   testq    %rax, %rax           
+0x100263594   je       0x100263a1e          
+0x10026359A   movq     -0x350(%rbp), %rdi   
+0x1002635A1   movq     %r13, %rsi           
+0x1002635A4   movq     %r12, -0x368(%rbp)   
+0x1002635AB   callq    *0x6dbc1f(%rip)      ; _objc_msgSend
+0x1002635B1   movq     %rax, %rdi           
+0x1002635B4   callq    _objc_retainAutoreleasedReturnValue 
+0x1002635B9   movq     %rax, -0x360(%rbp)   
+0x1002635C0   movq     -0x340(%rbp), %rax   
+0x1002635C7   movq     0x70(%rax), %rdi     
+0x1002635CB   movq     0x73f086(%rip), %rsi  ; selector "objectForKey:"
+0x1002635D2   movq     -0x338(%rbp), %rdx   
+0x1002635D9   callq    *0x6dbbf1(%rip)      ; _objc_msgSend
+0x1002635DF   movq     %rax, %rdi           
+0x1002635E2   callq    _objc_retainAutoreleasedReturnValue 
+0x1002635E7   movq     %rax, %r14           
+0x1002635EA   movq     0x7424b7(%rip), %rsi  ; selector "advertisement"
+0x1002635F1   movq     %rax, %rdi           
+0x1002635F4   callq    *0x6dbbd6(%rip)      ; _objc_msgSend
+0x1002635FA   movq     %rax, %rdi           
+0x1002635FD   callq    _objc_retainAutoreleasedReturnValue 
+0x100263602   movq     %rax, %rbx           
+0x100263605   movq     %rax, %rdi           
+0x100263608   movq     %r13, %rsi           
+0x10026360B   callq    *0x6dbbbf(%rip)      ; _objc_msgSend
+0x100263611   movq     %rax, %rdi           
+0x100263614   callq    _objc_retainAutoreleasedReturnValue 
+0x100263619   movq     %rax, %r13           
+0x10026361C   movq     0x73f58d(%rip), %rsi  ; selector "isEqualToData:"
+0x100263623   movq     -0x360(%rbp), %rdi   
+0x10026362A   movq     %rax, %rdx           
+0x10026362D   callq    *0x6dbb9d(%rip)      ; _objc_msgSend
+0x100263633   movl     %eax, %r12d          
+0x100263636   movq     %r13, %rdi           
+0x100263639   callq    *0x6dbbc9(%rip)      ; _objc_release
+0x10026363F   movq     %rbx, %rdi           
+0x100263642   callq    *0x6dbbc0(%rip)      ; _objc_release
+0x100263648   movq     %r14, %rdi           
+0x10026364B   callq    *0x6dbbb7(%rip)      ; _objc_release
+0x100263651   movq     -0x360(%rbp), %rdi   
+0x100263658   callq    *0x6dbbaa(%rip)      ; _objc_release
+0x10026365E   movq     -0x368(%rbp), %rdi   
+0x100263665   callq    *0x6dbb9d(%rip)      ; _objc_release
+0x10026366B   testb    %r15b, %r15b         
+0x10026366E   jne      0x100263a27          
+0x100263674   testb    %r12b, %r12b         
+0x100263677   jne      0x100263b59          
+0x10026367D   leaq     0x74885c(%rip), %rdi  ; NIServerFindingNBAMMSSessionManager
+0x100263684   movq     0x73f06d(%rip), %rsi  ; selector "sharedInstance"
+0x10026368B   callq    *0x6dbb3f(%rip)      ; _objc_msgSend
+0x100263691   movq     %rax, %rdi           
+0x100263694   callq    _objc_retainAutoreleasedReturnValue 
+0x100263699   movq     %rax, %rbx           
+0x10026369C   xorl     %eax, %eax           
+0x10026369E   leaq     -0x320(%rbp), %rcx   
+0x1002636A5   movb     %al, (%rcx)          
+0x1002636A7   movb     %al, 0x70(%rcx)      
+0x1002636AA   movq     0x742307(%rip), %rsi  ; selector "refreshRangingForToken:withNewStartOptions:"
+0x1002636B1   movq     %rbx, %rdi           
+0x1002636B4   movq     -0x338(%rbp), %rdx   
+0x1002636BB   callq    *0x6dbb0f(%rip)      ; _objc_msgSend
+0x1002636C1   movq     %rbx, %rdi           
+0x1002636C4   callq    *0x6dbb3e(%rip)      ; _objc_release
+0x1002636CA   jmp      0x100263b59          
+0x1002636CF   leaq     0x74885a(%rip), %rdi  ; NIServerFindingRangingProviderPeerInfo
+0x1002636D6   callq    _objc_alloc          
+0x1002636DB   movq     -0x340(%rbp), %rbx   
+0x1002636E2   movq     -0x358(%rbp), %rcx   
+0x1002636E9   movq     0x7423e0(%rip), %rsi  ; selector "initWithAdvertisement:OOBRangingParameters:"
+0x1002636F0   movq     %rax, %rdi           
+0x1002636F3   movq     -0x350(%rbp), %rdx   
+0x1002636FA   callq    *0x6dbad0(%rip)      ; _objc_msgSend
+0x100263700   movq     %rax, %r13           
+0x100263703   movq     0x70(%rbx), %rdi     
+0x100263707   movq     0x73efc2(%rip), %rsi  ; selector "setObject:forKey:"
+0x10026370E   movq     %rax, %rdx           
+0x100263711   movq     -0x338(%rbp), %rcx   
+0x100263718   callq    *0x6dbab2(%rip)      ; _objc_msgSend
+0x10026371E   movq     0x7423b3(%rip), %r14  ; selector "protocolVersion"
+0x100263725   movq     -0x350(%rbp), %rdi   
+0x10026372C   movq     %r14, %rsi           
+0x10026372F   callq    *0x6dba9b(%rip)      ; _objc_msgSend
+0x100263735   movzbl   %al, %eax            
+0x100263738   cmpb     $0x2, %al            
+0x10026373A   movl     $0x2, %ecx           
+0x10026373F   cmovbl   %eax, %ecx           
+0x100263742   movzbl   %cl, %ecx            
+0x100263745   leaq     0x3881ec(%rip), %rax  ; 
+0x10026374C   movq     %rcx, -0x380(%rbp)   
+0x100263753   movl     (%rax,%rcx,4), %eax  
+0x100263756   movl     %eax, -0x368(%rbp)   
+0x10026375C   leaq     0x75a55d(%rip), %rax  ; 
+0x100263763   movq     (%rax), %rbx         
+0x100263766   movq     %rbx, %rdi           
+0x100263769   callq    *0x6dbaa1(%rip)      ; _objc_retain
+0x10026376F   movq     %rbx, %rdi           
+0x100263772   xorl     %esi, %esi           
+0x100263774   callq    _os_log_type_enabled 
+0x100263779   testb    %al, %al             
+0x10026377B   je       0x100263821          
+0x100263781   movl     %r15d, -0x374(%rbp)  
+0x100263788   movq     -0x340(%rbp), %rax   
+0x10026378F   movsbl   0x20(%rax), %r15d    
+0x100263794   movq     -0x350(%rbp), %rdi   
+0x10026379B   movq     %r14, %rsi           
+0x10026379E   callq    *0x6dba2c(%rip)      ; _objc_msgSend
+0x1002637A4   movzwl   -0x344(%rbp), %ecx   
+0x1002637AB   movzbl   %al, %eax            
+0x1002637AE   leaq     -0x320(%rbp), %r8    
+0x1002637B5   movl     $0x4000600, (%r8)    
+0x1002637BC   movl     %r15d, 0x4(%r8)      
+0x1002637C0   movw     $0x400, %dx          
+0x1002637C4   movw     %dx, 0x8(%r8)        
+0x1002637C9   movl     %r12d, 0xa(%r8)      
+0x1002637CD   movw     %dx, 0xe(%r8)        
+0x1002637D2   movl     %ecx, 0x10(%r8)      
+0x1002637D6   movw     %dx, 0x14(%r8)       
+0x1002637DB   movl     $0x2, 0x16(%r8)      
+0x1002637E3   movw     %dx, 0x1a(%r8)       
+0x1002637E8   movl     %eax, 0x1c(%r8)      
+0x1002637EC   movw     %dx, 0x20(%r8)       
+0x1002637F1   movq     -0x380(%rbp), %rax   
+0x1002637F8   movl     %eax, 0x22(%r8)      
+0x1002637FC   leaq     -0x263803(%rip), %rdi  ; 
+0x100263803   leaq     0x314986(%rip), %rcx  ; string literal: "#find-range,startRangingWithPeer: isFinder = %d, NapChIdx = %d, NapBch = %d, selfProtoVer: %d, peerProtoVer: %d, sharedProtoVer: %d"
+0x10026380A   movq     %rbx, %rsi           
+0x10026380D   xorl     %edx, %edx           
+0x10026380F   movl     $0x26, %r9d          
+0x100263815   callq    __os_log_impl        
+0x10026381A   movl     -0x374(%rbp), %r15d  
+0x100263821   movq     %rbx, %rdi           
+0x100263824   callq    *0x6db9de(%rip)      ; _objc_release
+0x10026382A   movq     0x7409af(%rip), %rsi  ; selector "useCase"
+0x100263831   movq     -0x350(%rbp), %rdi   
+0x100263838   callq    *0x6db992(%rip)      ; _objc_msgSend
+0x10026383E   movq     -0x340(%rbp), %rbx   
+0x100263845   movq     0x742294(%rip), %rdx  ; selector "_prepareServiceRequestForDiscoveryToken:technology:useCase:nbMask:nbUwbAcquisitionBandChannel:mmsNumFragments:mmsSlotSizeMsec:"
+0x10026384C   movl     -0x368(%rbp), %ecx   
+0x100263852   movl     %ecx, 0x18(%rsp)     
+0x100263856   movzbl   -0x360(%rbp), %ecx   
+0x10026385D   movl     %ecx, 0x10(%rsp)     
+0x100263861   movzwl   -0x344(%rbp), %r14d  
+0x100263869   movl     %r14d, 0x8(%rsp)     
+0x10026386E   movzbl   %r15b, %ecx          
+0x100263872   movl     %ecx, (%rsp)         
+0x100263875   leaq     -0x320(%rbp), %rdi   
+0x10026387C   movq     %rbx, %rsi           
+0x10026387F   movq     -0x338(%rbp), %rcx   
+0x100263886   movl     $0x1, %r8d           
+0x10026388C   movl     %eax, %r9d           
+0x10026388F   callq    _objc_msgSend_stret  
+0x100263894   cmpb     $0x0, -0xe0(%rbp)    
+0x10026389B   movq     -0x358(%rbp), %r15   
+0x1002638A2   je       0x100263bec          
+0x1002638A8   movq     0x70(%rbx), %rdi     
+0x1002638AC   movq     0x73ee95(%rip), %rsi  ; selector "objectForKeyedSubscript:"
+0x1002638B3   movq     -0x338(%rbp), %rdx   
+0x1002638BA   callq    *0x6db910(%rip)      ; _objc_msgSend
+0x1002638C0   movq     %rax, %rdi           
+0x1002638C3   callq    _objc_retainAutoreleasedReturnValue 
+0x1002638C8   movq     %rax, %r12           
+0x1002638CB   movq     0x7421d6(%rip), %rsi  ; selector "advertisement"
+0x1002638D2   movq     %rax, %rdi           
+0x1002638D5   callq    *0x6db8f5(%rip)      ; _objc_msgSend
+0x1002638DB   movq     %rax, %rdi           
+0x1002638DE   callq    _objc_retainAutoreleasedReturnValue 
+0x1002638E3   movq     %rax, %rbx           
+0x1002638E6   movq     0x7421c3(%rip), %rsi  ; selector "address"
+0x1002638ED   movq     %rax, %rdi           
+0x1002638F0   callq    *0x6db8da(%rip)      ; _objc_msgSend
+0x1002638F6   leaq     -0x370(%rbp), %rcx   
+0x1002638FD   movl     %eax, (%rcx)         
+0x1002638FF   shrq     $0x20, %rax          
+0x100263903   movw     %ax, 0x4(%rcx)       
+0x100263907   movsbl   0x3(%r15), %r9d      
+0x10026390C   movq     0x7421a5(%rip), %rdx  ; selector "_prepareStartRangingOptionsWithPeerBTAdvAddress:nbUwbAcquisitionBandChannel:useLowPriorityDutyCycle:"
+0x100263913   leaq     -0xd0(%rbp), %r15    
+0x10026391A   movq     %r15, %rdi           
+0x10026391D   movq     -0x340(%rbp), %rsi   
+0x100263924   movl     %r14d, %r8d          
+0x100263927   callq    _objc_msgSend_stret  
+0x10026392C   movq     %rbx, %rdi           
+0x10026392F   callq    *0x6db8d3(%rip)      ; _objc_release
+0x100263935   movq     %r12, %rdi           
+0x100263938   callq    *0x6db8ca(%rip)      ; _objc_release
+0x10026393E   leaq     -0x370(%rbp), %rdi   
+0x100263945   movq     -0x340(%rbp), %rsi   
+0x10026394C   callq    _objc_initWeak       
+0x100263951   leaq     0x748588(%rip), %rdi  ; NIServerFindingNBAMMSSessionManager
+0x100263958   movq     0x73ed99(%rip), %rsi  ; selector "sharedInstance"
+0x10026395F   callq    *0x6db86b(%rip)      ; _objc_msgSend
+0x100263965   movq     %rax, %rdi           
+0x100263968   callq    _objc_retainAutoreleasedReturnValue 
+0x10026396D   movq     %rax, %r14           
+0x100263970   movq     -0x340(%rbp), %rax   
+0x100263977   movb     0x20(%rax), %r12b    
+0x10026397B   leaq     -0x370(%rbp), %rdi   
+0x100263982   callq    _objc_loadWeakRetained 
+0x100263987   movq     %rax, %rbx           
+0x10026398A   cmpb     $0x0, -0xe0(%rbp)    
+0x100263991   je       0x100263d1a          
+0x100263997   movq     0x741fd2(%rip), %rsi  ; selector "registerNBAMMSSessionWithToken:isFinder:client:serviceRequest:startRangingOptions:sharedProtocol:"
+0x10026399E   movq     -0x380(%rbp), %rax   
+0x1002639A5   movl     %eax, 0x8(%rsp)      
+0x1002639A9   movq     %r15, (%rsp)         
+0x1002639AD   movsbl   %r12b, %ecx          
+0x1002639B1   leaq     -0x320(%rbp), %r9    
+0x1002639B8   movq     %r14, %rdi           
+0x1002639BB   movq     -0x338(%rbp), %rdx   
+0x1002639C2   movq     %rbx, %r8            
+0x1002639C5   callq    *0x6db805(%rip)      ; _objc_msgSend
+0x1002639CB   movq     %rax, %rdi           
+0x1002639CE   callq    _objc_retainAutoreleasedReturnValue 
+0x1002639D3   movq     %rax, %r12           
+0x1002639D6   movq     %rbx, %rdi           
+0x1002639D9   callq    *0x6db829(%rip)      ; _objc_release
+0x1002639DF   movq     %r14, %rdi           
+0x1002639E2   callq    *0x6db820(%rip)      ; _objc_release
+0x1002639E8   movq     -0x340(%rbp), %rax   
+0x1002639EF   movq     0x70(%rax), %rdi     
+0x1002639F3   testq    %r12, %r12           
+0x1002639F6   je       0x100263c9d          
+0x1002639FC   movq     0x73ed1d(%rip), %rsi  ; selector "removeObjectForKey:"
+0x100263A03   movq     -0x338(%rbp), %rdx   
+0x100263A0A   callq    *0x6db7c0(%rip)      ; _objc_msgSend
+0x100263A10   movq     %r12, %rdi           
+0x100263A13   callq    *0x6db7f7(%rip)      ; _objc_retain
+0x100263A19   jmp      0x100263cda          
+0x100263A1E   testb    %r15b, %r15b         
+0x100263A21   je       0x100263b59          
+0x100263A27   movq     -0x340(%rbp), %r15   
+0x100263A2E   movq     0x70(%r15), %rdi     
+0x100263A32   movq     0x73ed0f(%rip), %rsi  ; selector "objectForKeyedSubscript:"
+0x100263A39   movq     -0x338(%rbp), %rdx   
+0x100263A40   callq    *0x6db78a(%rip)      ; _objc_msgSend
+0x100263A46   movq     %rax, %rdi           
+0x100263A49   callq    _objc_retainAutoreleasedReturnValue 
+0x100263A4E   movq     %rax, %r14           
+0x100263A51   movq     0x742050(%rip), %rsi  ; selector "advertisement"
+0x100263A58   movq     %rax, %rdi           
+0x100263A5B   callq    *0x6db76f(%rip)      ; _objc_msgSend
+0x100263A61   movq     %rax, %rdi           
+0x100263A64   callq    _objc_retainAutoreleasedReturnValue 
+0x100263A69   movq     %rax, %rbx           
+0x100263A6C   movq     0x74203d(%rip), %rsi  ; selector "address"
+0x100263A73   movq     %rax, %rdi           
+0x100263A76   callq    *0x6db754(%rip)      ; _objc_msgSend
+0x100263A7C   leaq     -0x320(%rbp), %rcx   
+0x100263A83   movl     %eax, (%rcx)         
+0x100263A85   shrq     $0x20, %rax          
+0x100263A89   movw     %ax, 0x4(%rcx)       
+0x100263A8D   movq     -0x358(%rbp), %rax   
+0x100263A94   movsbl   0x3(%rax), %r9d      
+0x100263A99   movq     0x742018(%rip), %rdx  ; selector "_prepareStartRangingOptionsWithPeerBTAdvAddress:nbUwbAcquisitionBandChannel:useLowPriorityDutyCycle:"
+0x100263AA0   movzwl   -0x344(%rbp), %r8d   
+0x100263AA8   leaq     -0xd0(%rbp), %rdi    
+0x100263AAF   movq     %r15, %rsi           
+0x100263AB2   callq    _objc_msgSend_stret  
+0x100263AB7   movq     %rbx, %rdi           
+0x100263ABA   callq    *0x6db748(%rip)      ; _objc_release
+0x100263AC0   movq     %r14, %rdi           
+0x100263AC3   callq    *0x6db73f(%rip)      ; _objc_release
+0x100263AC9   leaq     0x748410(%rip), %rdi  ; NIServerFindingNBAMMSSessionManager
+0x100263AD0   movq     0x73ec21(%rip), %rsi  ; selector "sharedInstance"
+0x100263AD7   callq    *0x6db6f3(%rip)      ; _objc_msgSend
+0x100263ADD   movq     %rax, %rdi           
+0x100263AE0   callq    _objc_retainAutoreleasedReturnValue 
+0x100263AE5   movq     %rax, %rbx           
+0x100263AE8   movups   -0x70(%rbp), %xmm0   
+0x100263AEC   leaq     -0x320(%rbp), %rcx   
+0x100263AF3   movaps   %xmm0, 0x60(%rcx)    
+0x100263AF7   movups   -0x80(%rbp), %xmm0   
+0x100263AFB   movaps   %xmm0, 0x50(%rcx)    
+0x100263AFF   movups   -0x90(%rbp), %xmm0   
+0x100263B06   movaps   %xmm0, 0x40(%rcx)    
+0x100263B0A   movups   -0xd0(%rbp), %xmm0   
+0x100263B11   movups   -0xc0(%rbp), %xmm1   
+0x100263B18   movups   -0xb0(%rbp), %xmm2   
+0x100263B1F   movups   -0xa0(%rbp), %xmm3   
+0x100263B26   movaps   %xmm3, 0x30(%rcx)    
+0x100263B2A   movaps   %xmm2, 0x20(%rcx)    
+0x100263B2E   movaps   %xmm1, 0x10(%rcx)    
+0x100263B32   movaps   %xmm0, (%rcx)        
+0x100263B35   movb     $0x1, 0x70(%rcx)     
+0x100263B39   movq     0x741e78(%rip), %rsi  ; selector "refreshRangingForToken:withNewStartOptions:"
+0x100263B40   movq     %rax, %rdi           
+0x100263B43   movq     -0x338(%rbp), %rdx   
+0x100263B4A   callq    *0x6db680(%rip)      ; _objc_msgSend
+0x100263B50   movq     %rbx, %rdi           
+0x100263B53   callq    *0x6db6af(%rip)      ; _objc_release
+0x100263B59   movq     -0x340(%rbp), %rax   
+0x100263B60   movq     0x70(%rax), %rdi     
+0x100263B64   movq     0x73ebdd(%rip), %rsi  ; selector "objectForKeyedSubscript:"
+0x100263B6B   movq     -0x338(%rbp), %rdx   
+0x100263B72   callq    *0x6db658(%rip)      ; _objc_msgSend
+0x100263B78   movq     %rax, %rdi           
+0x100263B7B   callq    _objc_retainAutoreleasedReturnValue 
+0x100263B80   movq     %rax, %rbx           
+0x100263B83   movq     0x741f36(%rip), %rsi  ; selector "setAdvertisement:"
+0x100263B8A   movq     %rax, %rdi           
+0x100263B8D   movq     -0x350(%rbp), %rdx   
+0x100263B94   callq    *0x6db636(%rip)      ; _objc_msgSend
+0x100263B9A   movq     %rbx, %rdi           
+0x100263B9D   callq    *0x6db665(%rip)      ; _objc_release
+0x100263BA3   movq     -0x340(%rbp), %rax   
+0x100263BAA   movq     0x70(%rax), %rdi     
+0x100263BAE   movq     0x73eb93(%rip), %rsi  ; selector "objectForKeyedSubscript:"
+0x100263BB5   movq     -0x338(%rbp), %rdx   
+0x100263BBC   callq    *0x6db60e(%rip)      ; _objc_msgSend
+0x100263BC2   movq     %rax, %rdi           
+0x100263BC5   callq    _objc_retainAutoreleasedReturnValue 
+0x100263BCA   movq     %rax, %r13           
+0x100263BCD   movq     0x741ef4(%rip), %rsi  ; selector "setOOBRangingParameters:"
+0x100263BD4   movq     %rax, %rdi           
+0x100263BD7   movq     -0x358(%rbp), %rdx   
+0x100263BDE   callq    *0x6db5ec(%rip)      ; _objc_msgSend
+0x100263BE4   xorl     %r12d, %r12d         
+0x100263BE7   jmp      0x100263413          
+0x100263BEC   leaq     0x75a0cd(%rip), %rax  ; 
+0x100263BF3   movq     (%rax), %rbx         
+0x100263BF6   movq     %rbx, %rdi           
+0x100263BF9   movl     $0x10, %esi          
+0x100263BFE   callq    _os_log_type_enabled 
+0x100263C03   testb    %al, %al             
+0x100263C05   je       0x100263c0f          
+0x100263C07   movq     %rbx, %rdi           
+0x100263C0A   callq    0x10048de35          
+0x100263C0F   movq     0x6da9ea(%rip), %rbx  ; _OBJC_CLASS_$_NSError
+0x100263C16   movq     0x6da99b(%rip), %rax  ; _NSLocalizedFailureReasonErrorKey
+0x100263C1D   movq     (%rax), %rax         
+0x100263C20   leaq     -0x330(%rbp), %rcx   
+0x100263C27   movq     %rax, (%rcx)         
+0x100263C2A   leaq     0x7051c7(%rip), %rax  ; @"Could not build ranging service request"
+0x100263C31   leaq     -0x328(%rbp), %rdx   
+0x100263C38   movq     %rax, (%rdx)         
+0x100263C3B   movq     0x6dbcbe(%rip), %rdi  ; _OBJC_CLASS_$_NSDictionary
+0x100263C42   movq     0x73eadf(%rip), %rsi  ; selector "dictionaryWithObjects:forKeys:count:"
+0x100263C49   movl     $0x1, %r8d           
+0x100263C4F   callq    *0x6db57b(%rip)      ; _objc_msgSend
+0x100263C55   movq     %rax, %rdi           
+0x100263C58   callq    _objc_retainAutoreleasedReturnValue 
+0x100263C5D   movq     %rax, %r14           
+0x100263C60   leaq     0x6ec591(%rip), %rax  ; 
+0x100263C67   movq     (%rax), %rdx         
+0x100263C6A   movq     0x73ea2f(%rip), %rsi  ; selector "errorWithDomain:code:userInfo:"
+0x100263C71   movq     %rbx, %rdi           
+0x100263C74   movq     $-0x2724, %rcx       
+0x100263C7B   movq     %r14, %r8            
+0x100263C7E   callq    *0x6db54c(%rip)      ; _objc_msgSend
+0x100263C84   movq     %rax, %rdi           
+0x100263C87   callq    _objc_retainAutoreleasedReturnValue 
+0x100263C8C   movq     %rax, %r12           
+0x100263C8F   movq     %r14, %rdi           
+0x100263C92   callq    *0x6db570(%rip)      ; _objc_release
+0x100263C98   jmp      0x100263413          
+0x100263C9D   movq     0x73e9b4(%rip), %rsi  ; selector "objectForKey:"
+0x100263CA4   movq     -0x338(%rbp), %rdx   
+0x100263CAB   callq    *0x6db51f(%rip)      ; _objc_msgSend
+0x100263CB1   movq     %rax, %rdi           
+0x100263CB4   callq    _objc_retainAutoreleasedReturnValue 
+0x100263CB9   movq     %rax, %rbx           
+0x100263CBC   movq     0x741e25(%rip), %rsi  ; selector "setRangingActive:"
+0x100263CC3   movq     %rax, %rdi           
+0x100263CC6   movl     $0x1, %edx           
+0x100263CCB   callq    *0x6db4ff(%rip)      ; _objc_msgSend
+0x100263CD1   movq     %rbx, %rdi           
+0x100263CD4   callq    *0x6db52e(%rip)      ; _objc_release
+0x100263CDA   movq     %r12, %rdi           
+0x100263CDD   callq    *0x6db525(%rip)      ; _objc_release
+0x100263CE3   leaq     -0x370(%rbp), %rdi   
+0x100263CEA   callq    _objc_destroyWeak    
+0x100263CEF   jmp      0x100263413          
+0x100263CF4   leaq     0x2ca1f4(%rip), %rdi  ; string literal: "-[NIServerFindingRangingProvider startRangingWithPeer:technology:peerAdvertisement:OOBRangingParameters:]"
+0x100263CFB   leaq     0x2c9e19(%rip), %rsi  ; string literal: "NIServerFindingRanging.mm"
+0x100263D02   leaq     0x2c3e65(%rip), %rcx  ; string literal: "token"
+0x100263D09   movl     $0xe08, %edx         
+0x100263D0E   callq    ___assert_rtn        
+0x100263D13   jmp      0x100263d1f          
+0x100263D15   callq    ___stack_chk_fail    
+0x100263D1A   callq    0x1001394f0          
+0x100263D1F   ud2                           
+0x100263D21   movq     %rax, %r15           
+0x100263D24   movq     %rbx, %rdi           
+0x100263D27   callq    *0x6db4db(%rip)      ; _objc_release
+0x100263D2D   jmp      0x100263d43          
+0x100263D2F   movq     %rax, %r15           
+0x100263D32   movq     %rbx, %rdi           
+0x100263D35   callq    *0x6db4cd(%rip)      ; _objc_release
+0x100263D3B   jmp      0x100263ee7          
+0x100263D40   movq     %rax, %r15           
+0x100263D43   movq     %r12, %rdi           
+0x100263D46   callq    *0x6db4bc(%rip)      ; _objc_release
+0x100263D4C   jmp      0x100263db7          
+0x100263D4E   movq     %rax, %r15           
+0x100263D51   jmp      0x100263db7          
+0x100263D53   movq     %rax, %r15           
+0x100263D56   movq     %r14, %rdi           
+0x100263D59   callq    *0x6db4a9(%rip)      ; _objc_release
+0x100263D5F   jmp      0x100263e8b          
+0x100263D64   movq     %rax, %r15           
+0x100263D67   jmp      0x100263dd4          
+0x100263D69   jmp      0x100263e88          
+0x100263D6E   movq     %rax, %r15           
+0x100263D71   movq     %rbx, %rdi           
+0x100263D74   callq    *0x6db48e(%rip)      ; _objc_release
+0x100263D7A   jmp      0x100263e8b          
+0x100263D7F   movq     %rax, %r15           
+0x100263D82   movq     %rbx, %rdi           
+0x100263D85   callq    *0x6db47d(%rip)      ; _objc_release
+0x100263D8B   jmp      0x100263ee7          
+0x100263D90   jmp      0x100263ee4          
+0x100263D95   movq     %rax, %r15           
+0x100263D98   jmp      0x100263e6b          
+0x100263D9D   jmp      0x100263ee4          
+0x100263DA2   movq     %rax, %r15           
+0x100263DA5   movq     %rbx, %rdi           
+0x100263DA8   callq    *0x6db45a(%rip)      ; _objc_release
+0x100263DAE   movq     %r14, %rdi           
+0x100263DB1   callq    *0x6db451(%rip)      ; _objc_release
+0x100263DB7   leaq     -0x370(%rbp), %rdi   
+0x100263DBE   callq    _objc_destroyWeak    
+0x100263DC3   jmp      0x100263e8b          
+0x100263DC8   movq     %rax, %r15           
+0x100263DCB   movq     %rbx, %rdi           
+0x100263DCE   callq    *0x6db434(%rip)      ; _objc_release
+0x100263DD4   movq     %r12, %rdi           
+0x100263DD7   callq    *0x6db42b(%rip)      ; _objc_release
+0x100263DDD   jmp      0x100263e8b          
+0x100263DE2   jmp      0x100263e88          
+0x100263DE7   jmp      0x100263e88          
+0x100263DEC   movq     %rax, %r15           
+0x100263DEF   movq     %r13, %rdi           
+0x100263DF2   callq    *0x6db410(%rip)      ; _objc_release
+0x100263DF8   jmp      0x100263dfd          
+0x100263DFA   movq     %rax, %r15           
+0x100263DFD   movq     %rbx, %rdi           
+0x100263E00   callq    *0x6db402(%rip)      ; _objc_release
+0x100263E06   jmp      0x100263e0b          
+0x100263E08   movq     %rax, %r15           
+0x100263E0B   movq     %r14, %rdi           
+0x100263E0E   callq    *0x6db3f4(%rip)      ; _objc_release
+0x100263E14   jmp      0x100263e19          
+0x100263E16   movq     %rax, %r15           
+0x100263E19   movq     -0x360(%rbp), %rdi   
+0x100263E20   callq    *0x6db3e2(%rip)      ; _objc_release
+0x100263E26   jmp      0x100263e2b          
+0x100263E28   movq     %rax, %r15           
+0x100263E2B   movq     -0x368(%rbp), %rdi   
+0x100263E32   callq    *0x6db3d0(%rip)      ; _objc_release
+0x100263E38   jmp      0x100263ee7          
+0x100263E3D   movq     %rax, %r15           
+0x100263E40   movq     %r13, %rdi           
+0x100263E43   callq    *0x6db3bf(%rip)      ; _objc_release
+0x100263E49   jmp      0x100263ee7          
+0x100263E4E   movq     %rax, %r15           
+0x100263E51   movq     %rbx, %rdi           
+0x100263E54   callq    *0x6db3ae(%rip)      ; _objc_release
+0x100263E5A   jmp      0x100263ee7          
+0x100263E5F   movq     %rax, %r15           
+0x100263E62   movq     %rbx, %rdi           
+0x100263E65   callq    *0x6db39d(%rip)      ; _objc_release
+0x100263E6B   movq     %r14, %rdi           
+0x100263E6E   callq    *0x6db394(%rip)      ; _objc_release
+0x100263E74   jmp      0x100263ee7          
+0x100263E76   movq     %rax, %r15           
+0x100263E79   movq     %rbx, %rdi           
+0x100263E7C   callq    *0x6db386(%rip)      ; _objc_release
+0x100263E82   jmp      0x100263ee7          
+0x100263E84   jmp      0x100263ee4          
+0x100263E86   jmp      0x100263ee4          
+0x100263E88   movq     %rax, %r15           
+0x100263E8B   movq     %r13, %rdi           
+0x100263E8E   callq    *0x6db374(%rip)      ; _objc_release
+0x100263E94   jmp      0x100263ee7          
+0x100263E96   jmp      0x100263ee4          
+0x100263E98   movq     %rax, %r15           
+0x100263E9B   movq     %r13, %rdi           
+0x100263E9E   callq    *0x6db364(%rip)      ; _objc_release
+0x100263EA4   jmp      0x100263ee7          
+0x100263EA6   jmp      0x100263ee4          
+0x100263EA8   jmp      0x100263ee4          
+0x100263EAA   jmp      0x100263ee4          
+0x100263EAC   movq     %rax, %r15           
+0x100263EAF   movq     %r13, %rdi           
+0x100263EB2   callq    *0x6db350(%rip)      ; _objc_release
+0x100263EB8   jmp      0x100263ee7          
+0x100263EBA   movq     %rax, %r15           
+0x100263EBD   movq     %r13, %rdi           
+0x100263EC0   callq    *0x6db342(%rip)      ; _objc_release
+0x100263EC6   jmp      0x100263ee7          
+0x100263EC8   movq     %rax, %r15           
+0x100263ECB   movq     %rbx, %rdi           
+0x100263ECE   callq    *0x6db334(%rip)      ; _objc_release
+0x100263ED4   jmp      0x100263ed9          
+0x100263ED6   movq     %rax, %r15           
+0x100263ED9   movq     %r14, %rdi           
+0x100263EDC   callq    *0x6db326(%rip)      ; _objc_release
+0x100263EE2   jmp      0x100263ee7          
+0x100263EE4   movq     %rax, %r15           
+0x100263EE7   movq     -0x350(%rbp), %rdi   
+0x100263EEE   callq    *0x6db314(%rip)      ; _objc_release
+0x100263EF4   movq     -0x338(%rbp), %rdi   
+0x100263EFB   callq    *0x6db307(%rip)      ; _objc_release
+0x100263F01   jmp      0x100263f06          
+0x100263F03   movq     %rax, %r15           
+0x100263F06   movq     %r15, %rdi           
+0x100263F09   callq    __Unwind_Resume      

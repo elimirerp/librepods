@@ -52,15 +52,22 @@ installed case build merely from an available archive.
 | `android/vendor/`, `android/scripts/` | Pinned FindMy source, Bumble mobile wheel, provenance/licenses and deterministic builders |
 | `tools/uwb-protocol/` | Current host probes, codecs, ownership derivation, offline tests and evidence |
 | `tools/uwb-protocol/evidence/` | Sanitized live metadata traces and this handoff's verification logs |
-| `tools/uwb-protocol/research/` | Original decompilation notes, selected assembly, synthetic instruction harnesses and firmware provenance |
+| `tools/uwb-protocol/research/` | Actual firmware/system binaries, complete compressed disassembly dumps, `.m` probes, original notes, instruction harnesses and provenance |
 | `tools/findmy-enrollment/` | Offline bridge preparation and registration audit |
 | `tools/findmy-enrollment/mac-lab-archive/` | Redacted historical Mac enrollment programs; fixed-target guards prevent reuse as an installer |
 | `tools/findmy-research/` | Earlier nonroot/vendor/API research and primary-source manifest |
 
 Read the current live evidence before historical notes. Archived reports retain
 their original stage-specific unknowns; this handoff and subsequent live tests
-supersede them. Proprietary binaries, raw DEX dumps, credentials, live account
-state, case candidate files and owned identifiers are excluded from Git.
+supersede them. Actual firmware, analyzed system binaries and complete static
+DEX/disassembly inputs are included at the user's explicit request. Credentials,
+live account state, owner keys, case candidate files and owned identifiers are
+excluded from Git. `tools/uwb-protocol/research/binary-input-manifest.json`
+records both original and archived hashes; large text dumps use lossless gzip.
+Run `python3 tools/uwb-protocol/research/verify_archived_inputs.py --unpack` from
+the repository root to verify the inputs and restore their complete text files.
+Historical advice to keep firmware local is superseded by this archive decision;
+the included Apple/Samsung binaries retain their original ownership.
 
 ## Find My enrollment: what actually worked
 
@@ -358,5 +365,6 @@ timing compatibility. No arbitrary firmware writes are justified by this work.
 Verification logs are in `tools/uwb-protocol/evidence/`. Temporary authenticated
 case helper state is process-local and is stopped for this handoff. Normal root
 manager grants and device enrollment remain available; credentials must be
-provided afresh to a future helper. Proprietary binary inputs remain local and
-can be retrieved/extracted using the included provenance and author scripts.
+provided afresh to a future helper. Actual firmware and analyzed binary inputs
+are included under `tools/uwb-protocol/research/`, with verified hashes, complete
+compressed text dumps and the original extraction/provenance scripts.

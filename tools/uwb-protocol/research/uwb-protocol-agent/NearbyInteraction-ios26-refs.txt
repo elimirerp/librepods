@@ -1,0 +1,3478 @@
+@protocol ARInternalSessionObserver <ARSessionDelegate>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[ARInternalSessionObserver session:didChangeState:];
+-[ARInternalSessionObserver session:didUpdateExternalAnchors:];
+-[ARInternalSessionObserver sessionShouldAttemptRelocalization:completion:];
+-[ARInternalSessionObserver session:willRunWithConfiguration:];
+-[ARInternalSessionObserver session:didUpdateSpatialMappingPointClouds:];
+-[ARInternalSessionObserver session:requestedRunWithConfiguration:options:];
+
+@end
+
+@protocol ARSessionDelegate <ARSessionObserver>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[ARSessionDelegate session:didUpdateFrame:];
+-[ARSessionDelegate session:didUpdateAnchors:];
+-[ARSessionDelegate session:didAddAnchors:];
+-[ARSessionDelegate session:didRemoveAnchors:];
+
+@end
+
+@protocol ARSessionObserver <NSObject>
+
+@required
+
+@optional
+
+/* optional instance methods */
+-[ARSessionObserver session:didChangeGeoTrackingStatus:];
+-[ARSessionObserver sessionInterruptionEnded:];
+-[ARSessionObserver session:didFailWithError:];
+-[ARSessionObserver sessionWasInterrupted:];
+-[ARSessionObserver session:cameraDidChangeTrackingState:];
+-[ARSessionObserver session:didOutputAudioSampleBuffer:];
+-[ARSessionObserver session:didOutputCollaborationData:];
+-[ARSessionObserver sessionShouldAttemptRelocalization:];
+
+@end
+
+@protocol NIDeviceCapability
+
+@required
+
+@property (TB,R,N) supportsPreciseDistanceMeasurement;
+@property (TB,R,N) supportsDirectionMeasurement;
+@property (TB,R,N) supportsCameraAssistance;
+@property (TB,R,N) supportsExtendedDistanceMeasurement;
+@property (TB,R,N) supportsDLTDOAMeasurement;
+
+/* required instance methods */
+-[NIDeviceCapability supportsDLTDOAMeasurement];
+-[NIDeviceCapability supportsExtendedDistanceMeasurement];
+-[NIDeviceCapability supportsPreciseDistanceMeasurement];
+-[NIDeviceCapability supportsDirectionMeasurement];
+-[NIDeviceCapability supportsCameraAssistance];
+
+@optional
+
+@end
+
+@protocol NIInternalDeviceCapability <NIDeviceCapability>
+
+@required
+
+@property (TB,R,N) supportsCoarseDistanceMeasurement;
+
+/* required instance methods */
+-[NIInternalDeviceCapability supportsCoarseDistanceMeasurement];
+
+@optional
+
+@end
+
+@protocol NSCoding
+
+@required
+
+/* required instance methods */
+-[NSCoding initWithCoder:];
+-[NSCoding encodeWithCoder:];
+
+@optional
+
+@end
+
+@protocol NSCopying
+
+@required
+
+/* required instance methods */
+-[NSCopying copyWithZone:];
+
+@optional
+
+@end
+
+@protocol NSObject
+
+@required
+
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* required instance methods */
+-[NSObject zone];
+-[NSObject retain];
+-[NSObject superclass];
+-[NSObject conformsToProtocol:];
+-[NSObject release];
+-[NSObject isMemberOfClass:];
+-[NSObject respondsToSelector:];
+-[NSObject isKindOfClass:];
+-[NSObject class];
+-[NSObject hash];
+-[NSObject description];
+-[NSObject autorelease];
+-[NSObject isProxy];
+-[NSObject retainCount];
+-[NSObject isEqual:];
+-[NSObject performSelector:];
+-[NSObject performSelector:withObject:];
+-[NSObject performSelector:withObject:withObject:];
+-[NSObject self];
+
+@optional
+
+/* optional instance methods */
+-[NSObject debugDescription];
+
+@end
+
+@protocol NSSecureCoding <NSCoding>
+
+@required
+
+@property (class, TB,R) supportsSecureCoding;
+
+/* class methods */
++[NSSecureCoding supportsSecureCoding];
+
+@optional
+
+@end
+
+@protocol UWBSessionDelegateProxyProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[UWBSessionDelegateProxyProtocol didGenerateShareableConfigurationData:forObject:];
+-[UWBSessionDelegateProxyProtocol didUpdateNearbyObjects:];
+-[UWBSessionDelegateProxyProtocol systemDidUpdateResourceUsageLimitExceeded:forSessionConfigurationTypeWithName:];
+-[UWBSessionDelegateProxyProtocol didUpdateHomeDeviceUWBRangingAvailability:];
+-[UWBSessionDelegateProxyProtocol didSuspendAcwgRanging:];
+-[UWBSessionDelegateProxyProtocol didProcessAcwgM1MsgWithResponse:error:];
+-[UWBSessionDelegateProxyProtocol didDiscoverNearbyObject:];
+-[UWBSessionDelegateProxyProtocol didUpdateDLTDOAMeasurements:];
+-[UWBSessionDelegateProxyProtocol object:didUpdateRegion:previousRegion:];
+-[UWBSessionDelegateProxyProtocol uwbSessionInterruptionReasonEnded:timestamp:];
+-[UWBSessionDelegateProxyProtocol didUpdateNICoordinates:];
+-[UWBSessionDelegateProxyProtocol systemDidUpdateState:];
+-[UWBSessionDelegateProxyProtocol relayDCKMessage:];
+-[UWBSessionDelegateProxyProtocol didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error:];
+-[UWBSessionDelegateProxyProtocol didUpdateAlgorithmState:forObject:];
+-[UWBSessionDelegateProxyProtocol didPrefetchAcwgUrsk:error:];
+-[UWBSessionDelegateProxyProtocol didUpdateState:forItem:];
+-[UWBSessionDelegateProxyProtocol requestAcwgRangingSessionSuspend:withSuspendTriggerReason:];
+-[UWBSessionDelegateProxyProtocol didReceiveRangingAuthRecommendation:forObject:];
+-[UWBSessionDelegateProxyProtocol didStartAcwgRanging:];
+-[UWBSessionDelegateProxyProtocol didUpdateMotionState:];
+-[UWBSessionDelegateProxyProtocol uwbSessionInterruptedWithReason:timestamp:];
+-[UWBSessionDelegateProxyProtocol didReceiveAopSFZoneUpdate:];
+-[UWBSessionDelegateProxyProtocol didProcessAcwgM3MsgWithResponse:error:];
+-[UWBSessionDelegateProxyProtocol didUpdateLocalDiscoveryToken:];
+-[UWBSessionDelegateProxyProtocol uwbSessionDidFailWithError:];
+-[UWBSessionDelegateProxyProtocol didRemoveNearbyObjects:withReason:];
+-[UWBSessionDelegateProxyProtocol didUpdateHealthStatus:];
+-[UWBSessionDelegateProxyProtocol uwbSessionDidInvalidateWithError:];
+
+@optional
+
+@end
+
+@protocol UWBSessionServerProtocol <NSObject>
+
+@required
+
+/* required instance methods */
+-[UWBSessionServerProtocol activate:];
+-[UWBSessionServerProtocol pause:];
+-[UWBSessionServerProtocol generateDiscoveryToken];
+-[UWBSessionServerProtocol runWithConfiguration:reply:];
+
+@optional
+
+/* optional instance methods */
+-[UWBSessionServerProtocol processAcwgM3Msg:];
+-[UWBSessionServerProtocol prefetchAcwgUrsk:];
+-[UWBSessionServerProtocol processAcwgRangingSessionResumeRequestMsg:withResumeTriggerReason:];
+-[UWBSessionServerProtocol processVisionInput:];
+-[UWBSessionServerProtocol processAcwgM1Msg:withSessionTriggerReason:];
+-[UWBSessionServerProtocol _provideTruthTag:];
+-[UWBSessionServerProtocol suspendAcwgRanging:withSuspendTriggerReason:];
+-[UWBSessionServerProtocol getInteractableDiscoveryTokens:];
+-[UWBSessionServerProtocol _addObject:reply:];
+-[UWBSessionServerProtocol _processBluetoothSample:];
+-[UWBSessionServerProtocol _processCarKeyEvent:reply:];
+-[UWBSessionServerProtocol _processFindingEvent:reply:];
+-[UWBSessionServerProtocol _processSystemEvent:reply:];
+-[UWBSessionServerProtocol _removeObject:reply:];
+-[UWBSessionServerProtocol _setDebugURSK:transactionIdentifier:reply:];
+-[UWBSessionServerProtocol _setURSKTTL:reply:];
+-[UWBSessionServerProtocol arSessionDidFailWithError:];
+-[UWBSessionServerProtocol arSessionInterruptionEnded];
+-[UWBSessionServerProtocol arSessionWasInterrupted];
+-[UWBSessionServerProtocol arSessionWillRunWithInvalidConfiguration];
+-[UWBSessionServerProtocol deleteURSKs:];
+-[UWBSessionServerProtocol generateSOSBeaconDataForSubject:peerData:reply:];
+-[UWBSessionServerProtocol getActivelyInteractingDiscoveryTokens:];
+-[UWBSessionServerProtocol getLocalDevicePrintableState:];
+-[UWBSessionServerProtocol isExtendedDistanceMeasurementAllowed:];
+-[UWBSessionServerProtocol isPreciseRangingAllowed:];
+-[UWBSessionServerProtocol isRangingLimitExceeded:];
+-[UWBSessionServerProtocol notifySystemShutdownWithReason:reply:];
+-[UWBSessionServerProtocol processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:reply:];
+-[UWBSessionServerProtocol processDCKMessage:reply:];
+-[UWBSessionServerProtocol processUpdatedLockState:];
+-[UWBSessionServerProtocol queryDeviceCapabilities:];
+-[UWBSessionServerProtocol setLocalDeviceCanInteract:withDiscoveryTokens:reply:];
+-[UWBSessionServerProtocol setLocalDeviceDebugParameters:reply:];
+-[UWBSessionServerProtocol setLocalDeviceInteractableDiscoveryTokens:reply:];
+
+@end
+
+@interface BiasEstimatorFeatures : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    i _antennaMask;
+    i _rxAntennaPacket1;
+    i _rxAntennaPacket2;
+    d _timestamp;
+    d _uwbTime;
+    d _tofPicSecond;
+    d _rssiDbm;
+    d _soiRssiDbm;
+    d _toaNoiseRms;
+    d _toaPpwinRms;
+    d _toaPpwinPeak;
+    d _rttInitiator;
+    d _tatInitiator;
+    d _rttResponder;
+    d _tatResponder;
+    @"NSArray" _cirPacket1;
+    d _leadingEdgePacket1;
+    d _firstPathIndexPacket1;
+    @"NSArray" _cirPacket2;
+    d _leadingEdgePacket2;
+    d _firstPathIndexPacket2;
+}
+
+@property (Ti,N,V_antennaMask) antennaMask;
+@property (Td,N,V_timestamp) timestamp;
+@property (Td,N,V_uwbTime) uwbTime;
+@property (Td,N,V_tofPicSecond) tofPicSecond;
+@property (Td,N,V_rssiDbm) rssiDbm;
+@property (Td,N,V_soiRssiDbm) soiRssiDbm;
+@property (Td,N,V_toaNoiseRms) toaNoiseRms;
+@property (Td,N,V_toaPpwinRms) toaPpwinRms;
+@property (Td,N,V_toaPpwinPeak) toaPpwinPeak;
+@property (Td,N,V_rttInitiator) rttInitiator;
+@property (Td,N,V_tatInitiator) tatInitiator;
+@property (Td,N,V_rttResponder) rttResponder;
+@property (Td,N,V_tatResponder) tatResponder;
+@property (T@"NSArray",C,N,V_cirPacket1) cirPacket1;
+@property (Td,N,V_leadingEdgePacket1) leadingEdgePacket1;
+@property (Td,N,V_firstPathIndexPacket1) firstPathIndexPacket1;
+@property (Ti,N,V_rxAntennaPacket1) rxAntennaPacket1;
+@property (T@"NSArray",C,N,V_cirPacket2) cirPacket2;
+@property (Td,N,V_leadingEdgePacket2) leadingEdgePacket2;
+@property (Td,N,V_firstPathIndexPacket2) firstPathIndexPacket2;
+@property (Ti,N,V_rxAntennaPacket2) rxAntennaPacket2;
+
+/* class methods */
++[BiasEstimatorFeatures supportsSecureCoding];
+
+/* instance methods */
+-[BiasEstimatorFeatures timestamp];
+-[BiasEstimatorFeatures copyWithZone:];
+-[BiasEstimatorFeatures initWithCoder:];
+-[BiasEstimatorFeatures encodeWithCoder:];
+-[BiasEstimatorFeatures setTimestamp:];
+-[BiasEstimatorFeatures hash];
+-[BiasEstimatorFeatures description];
+-[BiasEstimatorFeatures isEqual:];
+-[BiasEstimatorFeatures setAntennaMask:];
+-[BiasEstimatorFeatures setToaNoiseRms:];
+-[BiasEstimatorFeatures rssiDbm];
+-[BiasEstimatorFeatures setToaPpwinRms:];
+-[BiasEstimatorFeatures uwbTime];
+-[BiasEstimatorFeatures antennaMask];
+-[BiasEstimatorFeatures cirPacket1];
+-[BiasEstimatorFeatures cirPacket2];
+-[BiasEstimatorFeatures firstPathIndexPacket1];
+-[BiasEstimatorFeatures firstPathIndexPacket2];
+-[BiasEstimatorFeatures initWithBiasEstimatorFeatures:];
+-[BiasEstimatorFeatures leadingEdgePacket1];
+-[BiasEstimatorFeatures leadingEdgePacket2];
+-[BiasEstimatorFeatures populateOrderedInputFeature];
+-[BiasEstimatorFeatures rttInitiator];
+-[BiasEstimatorFeatures rttResponder];
+-[BiasEstimatorFeatures rxAntennaPacket1];
+-[BiasEstimatorFeatures rxAntennaPacket2];
+-[BiasEstimatorFeatures setCirPacket1:];
+-[BiasEstimatorFeatures setCirPacket2:];
+-[BiasEstimatorFeatures setFirstPathIndexPacket1:];
+-[BiasEstimatorFeatures setFirstPathIndexPacket2:];
+-[BiasEstimatorFeatures setLeadingEdgePacket1:];
+-[BiasEstimatorFeatures setLeadingEdgePacket2:];
+-[BiasEstimatorFeatures setRssiDbm:];
+-[BiasEstimatorFeatures setRttInitiator:];
+-[BiasEstimatorFeatures setRttResponder:];
+-[BiasEstimatorFeatures setRxAntennaPacket1:];
+-[BiasEstimatorFeatures setRxAntennaPacket2:];
+-[BiasEstimatorFeatures setSoiRssiDbm:];
+-[BiasEstimatorFeatures setTatInitiator:];
+-[BiasEstimatorFeatures setTatResponder:];
+-[BiasEstimatorFeatures setToaPpwinPeak:];
+-[BiasEstimatorFeatures setTofPicSecond:];
+-[BiasEstimatorFeatures setUwbTime:];
+-[BiasEstimatorFeatures soiRssiDbm];
+-[BiasEstimatorFeatures tatInitiator];
+-[BiasEstimatorFeatures tatResponder];
+-[BiasEstimatorFeatures toaNoiseRms];
+-[BiasEstimatorFeatures toaPpwinPeak];
+-[BiasEstimatorFeatures toaPpwinRms];
+-[BiasEstimatorFeatures tofPicSecond];
+
+@end
+
+@interface BiasEstimatorOutputs : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSArray" _outProbabilities;
+    d _rawRange;
+    d _correctedRange;
+}
+
+@property (T@"NSArray",C,N,V_outProbabilities) outProbabilities;
+@property (Td,N,V_rawRange) rawRange;
+@property (Td,N,V_correctedRange) correctedRange;
+
+/* class methods */
++[BiasEstimatorOutputs supportsSecureCoding];
+
+/* instance methods */
+-[BiasEstimatorOutputs copyWithZone:];
+-[BiasEstimatorOutputs initWithCoder:];
+-[BiasEstimatorOutputs encodeWithCoder:];
+-[BiasEstimatorOutputs hash];
+-[BiasEstimatorOutputs description];
+-[BiasEstimatorOutputs isEqual:];
+-[BiasEstimatorOutputs correctedRange];
+-[BiasEstimatorOutputs initWithBiasEstimatorOutputs:];
+-[BiasEstimatorOutputs initWithOuputProbabilities:rawRange:correctedRange:];
+-[BiasEstimatorOutputs outProbabilities];
+-[BiasEstimatorOutputs populateOrderedBiasEstimatorOutputs];
+-[BiasEstimatorOutputs rawRange];
+-[BiasEstimatorOutputs setCorrectedRange:];
+-[BiasEstimatorOutputs setOutProbabilities:];
+-[BiasEstimatorOutputs setRawRange:];
+
+@end
+
+@interface Complex : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSNumber" _real;
+    @"NSNumber" _imag;
+}
+
+@property (T@"NSNumber",&,V_real) real;
+@property (T@"NSNumber",&,V_imag) imag;
+
+/* class methods */
++[Complex supportsSecureCoding];
+
+/* instance methods */
+-[Complex copyWithZone:];
+-[Complex initWithCoder:];
+-[Complex encodeWithCoder:];
+-[Complex hash];
+-[Complex description];
+-[Complex isEqual:];
+-[Complex imag];
+-[Complex initWithRealPart:imagPart:];
+-[Complex real];
+-[Complex setImag:];
+-[Complex setReal:];
+
+@end
+
+@interface NIAcwgConfiguration : NIConfiguration {
+    /* instance variables */
+    q _configurationTypeInternal;
+    S _lockBtConnHandle;
+    @"NSString" _lockIdentifier;
+    @"NSDictionary" _debugOptions;
+}
+
+@property (Tq,R) configurationType;
+@property (T@"NSString",C,V_lockIdentifier) lockIdentifier;
+@property (TS,V_lockBtConnHandle) lockBtConnHandle;
+@property (T@"NSDictionary",C,V_debugOptions) debugOptions;
+
+/* class methods */
++[NIAcwgConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIAcwgConfiguration descriptionInternal];
+-[NIAcwgConfiguration setDebugOptions:];
+-[NIAcwgConfiguration copyWithZone:];
+-[NIAcwgConfiguration initWithCoder:];
+-[NIAcwgConfiguration initWithConfiguration:];
+-[NIAcwgConfiguration debugOptions];
+-[NIAcwgConfiguration encodeWithCoder:];
+-[NIAcwgConfiguration configurationType];
+-[NIAcwgConfiguration hash];
+-[NIAcwgConfiguration description];
+-[NIAcwgConfiguration isEqual:];
+-[NIAcwgConfiguration initWithLockIdentifier:];
+-[NIAcwgConfiguration lockBtConnHandle];
+-[NIAcwgConfiguration lockIdentifier];
+-[NIAcwgConfiguration setLockBtConnHandle:];
+-[NIAcwgConfiguration setLockIdentifier:];
+
+@end
+
+@interface NIAcwgEventNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NIAcwgEventNotifier initWithParentSession:];
+-[NIAcwgEventNotifier notifyLockStatusChanged:];
+-[NIAcwgEventNotifier notifyUrskCreated:];
+
+@end
+
+@interface NIAcwgM1Msg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _channelBitmask;
+    C _finalData2Bitmask;
+    S _selectedProtocolVersion;
+    I _uwbSessionId;
+    @"NSArray" _supportedUwbConfigIds;
+    @"NSArray" _supportedPulseShapeCombos;
+}
+
+@property (T@"NSArray",R,N,V_supportedUwbConfigIds) supportedUwbConfigIds;
+@property (T@"NSArray",R,N,V_supportedPulseShapeCombos) supportedPulseShapeCombos;
+@property (TC,R,N,V_channelBitmask) channelBitmask;
+@property (TI,R,N,V_uwbSessionId) uwbSessionId;
+@property (TC,R,N,V_finalData2Bitmask) finalData2Bitmask;
+@property (TS,R,N,V_selectedProtocolVersion) selectedProtocolVersion;
+
+/* class methods */
++[NIAcwgM1Msg supportsSecureCoding];
+
+/* instance methods */
+-[NIAcwgM1Msg copyWithZone:];
+-[NIAcwgM1Msg initWithCoder:];
+-[NIAcwgM1Msg encodeWithCoder:];
+-[NIAcwgM1Msg description];
+-[NIAcwgM1Msg channelBitmask];
+-[NIAcwgM1Msg finalData2Bitmask];
+-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:];
+-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:finalData2Bitmask:];
+-[NIAcwgM1Msg initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:finalData2Bitmask:selectedProtocolVersion:];
+-[NIAcwgM1Msg selectedProtocolVersion];
+-[NIAcwgM1Msg supportedPulseShapeCombos];
+-[NIAcwgM1Msg supportedUwbConfigIds];
+-[NIAcwgM1Msg toStruct];
+-[NIAcwgM1Msg uwbSessionId];
+
+@end
+
+@interface NIAcwgM2Msg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _selectedPulseShapeCombo;
+    C _selectedChannelBitmask;
+    C _minRanMultiplier;
+    C _supportedSlotBitmask;
+    C _supportedHoppingConfigBitmask;
+    C _selectedFinalData2Bitmask;
+    S _selectedUwbConfigId;
+    I _supportedSyncCodeIndexBitmask;
+}
+
+@property (TS,R,N,V_selectedUwbConfigId) selectedUwbConfigId;
+@property (TC,R,N,V_selectedPulseShapeCombo) selectedPulseShapeCombo;
+@property (TC,R,N,V_selectedChannelBitmask) selectedChannelBitmask;
+@property (TI,R,N,V_supportedSyncCodeIndexBitmask) supportedSyncCodeIndexBitmask;
+@property (TC,R,N,V_minRanMultiplier) minRanMultiplier;
+@property (TC,R,N,V_supportedSlotBitmask) supportedSlotBitmask;
+@property (TC,R,N,V_supportedHoppingConfigBitmask) supportedHoppingConfigBitmask;
+@property (TC,R,N,V_selectedFinalData2Bitmask) selectedFinalData2Bitmask;
+
+/* class methods */
++[NIAcwgM2Msg supportsSecureCoding];
++[NIAcwgM2Msg fromStruct:];
+
+/* instance methods */
+-[NIAcwgM2Msg copyWithZone:];
+-[NIAcwgM2Msg initWithCoder:];
+-[NIAcwgM2Msg encodeWithCoder:];
+-[NIAcwgM2Msg description];
+-[NIAcwgM2Msg initWithSelectedUwbConfigId:selectedPulseShapeCombo:selectedChannelBitmask:supportedSyncCodeIndexBitmask:minRanMultiplier:supportedSlotBitmask:supportedHoppingConfigBitmask:];
+-[NIAcwgM2Msg initWithSelectedUwbConfigId:selectedPulseShapeCombo:selectedChannelBitmask:supportedSyncCodeIndexBitmask:minRanMultiplier:supportedSlotBitmask:supportedHoppingConfigBitmask:selectedFinalData2Bitmask:];
+-[NIAcwgM2Msg minRanMultiplier];
+-[NIAcwgM2Msg selectedChannelBitmask];
+-[NIAcwgM2Msg selectedFinalData2Bitmask];
+-[NIAcwgM2Msg selectedPulseShapeCombo];
+-[NIAcwgM2Msg selectedUwbConfigId];
+-[NIAcwgM2Msg supportedHoppingConfigBitmask];
+-[NIAcwgM2Msg supportedSlotBitmask];
+-[NIAcwgM2Msg supportedSyncCodeIndexBitmask];
+-[NIAcwgM2Msg toStruct];
+
+@end
+
+@interface NIAcwgM3Msg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _selectedRanMultiplier;
+    C _selectedNumChapsPerSlot;
+    C _numResponders;
+    C _numSlotsPerRound;
+    C _selectedHoppingConfigBitmask;
+    C _macMode;
+    I _supportedSyncCodeIndexBitmask;
+}
+
+@property (TC,R,N,V_selectedRanMultiplier) selectedRanMultiplier;
+@property (TC,R,N,V_selectedNumChapsPerSlot) selectedNumChapsPerSlot;
+@property (TC,R,N,V_numResponders) numResponders;
+@property (TC,R,N,V_numSlotsPerRound) numSlotsPerRound;
+@property (TI,R,N,V_supportedSyncCodeIndexBitmask) supportedSyncCodeIndexBitmask;
+@property (TC,R,N,V_selectedHoppingConfigBitmask) selectedHoppingConfigBitmask;
+@property (TC,R,N,V_macMode) macMode;
+
+/* class methods */
++[NIAcwgM3Msg supportsSecureCoding];
+
+/* instance methods */
+-[NIAcwgM3Msg copyWithZone:];
+-[NIAcwgM3Msg initWithCoder:];
+-[NIAcwgM3Msg encodeWithCoder:];
+-[NIAcwgM3Msg description];
+-[NIAcwgM3Msg macMode];
+-[NIAcwgM3Msg initWithSelectedRanMultiplier:selectedNumChapsPerSlot:numResponders:numSlotsPerRound:supportedSyncCodeIndexBitmask:selectedHoppingConfigBitmask:macMode:];
+-[NIAcwgM3Msg numResponders];
+-[NIAcwgM3Msg numSlotsPerRound];
+-[NIAcwgM3Msg selectedHoppingConfigBitmask];
+-[NIAcwgM3Msg selectedNumChapsPerSlot];
+-[NIAcwgM3Msg selectedRanMultiplier];
+-[NIAcwgM3Msg supportedSyncCodeIndexBitmask];
+-[NIAcwgM3Msg toStruct];
+
+@end
+
+@interface NIAcwgM4Msg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _selectedSyncCodeIndex;
+    I _stsIndex0;
+    I _hopKey;
+    Q _uwbTime0;
+}
+
+@property (TI,R,N,V_stsIndex0) stsIndex0;
+@property (TQ,R,N,V_uwbTime0) uwbTime0;
+@property (TI,R,N,V_hopKey) hopKey;
+@property (TC,R,N,V_selectedSyncCodeIndex) selectedSyncCodeIndex;
+
+/* class methods */
++[NIAcwgM4Msg supportsSecureCoding];
++[NIAcwgM4Msg fromStruct:];
+
+/* instance methods */
+-[NIAcwgM4Msg copyWithZone:];
+-[NIAcwgM4Msg initWithCoder:];
+-[NIAcwgM4Msg encodeWithCoder:];
+-[NIAcwgM4Msg description];
+-[NIAcwgM4Msg hopKey];
+-[NIAcwgM4Msg initWithStsIndex0:uwbTime0:hopKey:selectedSyncCodeIndex:];
+-[NIAcwgM4Msg selectedSyncCodeIndex];
+-[NIAcwgM4Msg stsIndex0];
+-[NIAcwgM4Msg toStruct];
+-[NIAcwgM4Msg uwbTime0];
+
+@end
+
+@interface NIAcwgRangingSessionResumeResponseMsg : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    I _stsIndex0;
+    Q _uwbTime0;
+}
+
+@property (TI,R,N,V_stsIndex0) stsIndex0;
+@property (TQ,R,N,V_uwbTime0) uwbTime0;
+
+/* class methods */
++[NIAcwgRangingSessionResumeResponseMsg supportsSecureCoding];
++[NIAcwgRangingSessionResumeResponseMsg fromStruct:];
+
+/* instance methods */
+-[NIAcwgRangingSessionResumeResponseMsg copyWithZone:];
+-[NIAcwgRangingSessionResumeResponseMsg initWithCoder:];
+-[NIAcwgRangingSessionResumeResponseMsg encodeWithCoder:];
+-[NIAcwgRangingSessionResumeResponseMsg description];
+-[NIAcwgRangingSessionResumeResponseMsg initWithStsIndex0:uwbTime0:];
+-[NIAcwgRangingSessionResumeResponseMsg stsIndex0];
+-[NIAcwgRangingSessionResumeResponseMsg uwbTime0];
+
+@end
+
+@interface NIAcwgSFZoneUpdate : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    c _lastBtRssiValue;
+    B _ioStateDisplacing;
+    B _explicitPAITriggered;
+    B _currentSFInBubble;
+    S _btConnHandle;
+    q _currentZone;
+}
+
+@property (Tq,R,N,V_currentZone) currentZone;
+@property (TS,R,N,V_btConnHandle) btConnHandle;
+@property (Tc,R,N,V_lastBtRssiValue) lastBtRssiValue;
+@property (TB,R,N,V_ioStateDisplacing) ioStateDisplacing;
+@property (TB,R,N,V_explicitPAITriggered) explicitPAITriggered;
+@property (TB,R,N,V_currentSFInBubble) currentSFInBubble;
+
+/* class methods */
++[NIAcwgSFZoneUpdate supportsSecureCoding];
+
+/* instance methods */
+-[NIAcwgSFZoneUpdate copyWithZone:];
+-[NIAcwgSFZoneUpdate initWithCoder:];
+-[NIAcwgSFZoneUpdate encodeWithCoder:];
+-[NIAcwgSFZoneUpdate description];
+-[NIAcwgSFZoneUpdate lastBtRssiValue];
+-[NIAcwgSFZoneUpdate btConnHandle];
+-[NIAcwgSFZoneUpdate currentSFInBubble];
+-[NIAcwgSFZoneUpdate currentZone];
+-[NIAcwgSFZoneUpdate explicitPAITriggered];
+-[NIAcwgSFZoneUpdate initWithSFZone:btConnHandle:lastBtRssiValue:ioStateDisplacing:explicitPAITriggered:currentSFInBubble:];
+-[NIAcwgSFZoneUpdate ioStateDisplacing];
+
+@end
+
+@interface NIAlgorithmConvergence : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    q _status;
+    @"NSArray" _reasons;
+}
+
+@property (Tq,N,V_status) status;
+@property (T@"NSArray",C,N,V_reasons) reasons;
+
+/* class methods */
++[NIAlgorithmConvergence supportsSecureCoding];
+
+/* instance methods */
+-[NIAlgorithmConvergence status];
+-[NIAlgorithmConvergence copyWithZone:];
+-[NIAlgorithmConvergence initWithCoder:];
+-[NIAlgorithmConvergence reasons];
+-[NIAlgorithmConvergence encodeWithCoder:];
+-[NIAlgorithmConvergence hash];
+-[NIAlgorithmConvergence setStatus:];
+-[NIAlgorithmConvergence isEqual:];
+-[NIAlgorithmConvergence setReasons:];
+-[NIAlgorithmConvergence initWithStatus:andReasons:];
+-[NIAlgorithmConvergence reasonsPrivate];
+
+@end
+
+@interface NIAlgorithmConvergenceState : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    B _insufficientSignalStrength;
+    B _insufficientHorizontalSweep;
+    B _insufficientVerticalSweep;
+    B _insufficientMovement;
+    B _insufficientLighting;
+    q _convergence;
+}
+
+@property (Tq,N,V_convergence) convergence;
+@property (TB,N,V_insufficientSignalStrength) insufficientSignalStrength;
+@property (TB,N,V_insufficientHorizontalSweep) insufficientHorizontalSweep;
+@property (TB,N,V_insufficientVerticalSweep) insufficientVerticalSweep;
+@property (TB,N,V_insufficientMovement) insufficientMovement;
+@property (TB,N,V_insufficientLighting) insufficientLighting;
+
+/* class methods */
++[NIAlgorithmConvergenceState supportsSecureCoding];
+
+/* instance methods */
+-[NIAlgorithmConvergenceState copyWithZone:];
+-[NIAlgorithmConvergenceState initWithCoder:];
+-[NIAlgorithmConvergenceState encodeWithCoder:];
+-[NIAlgorithmConvergenceState hash];
+-[NIAlgorithmConvergenceState description];
+-[NIAlgorithmConvergenceState isEqual:];
+-[NIAlgorithmConvergenceState setConvergence:];
+-[NIAlgorithmConvergenceState setInsufficientHorizontalSweep:];
+-[NIAlgorithmConvergenceState convergence];
+-[NIAlgorithmConvergenceState initWithAlgorithmConvergenceState:];
+-[NIAlgorithmConvergenceState initWithConvergenceStatus:];
+-[NIAlgorithmConvergenceState insufficientHorizontalSweep];
+-[NIAlgorithmConvergenceState insufficientLighting];
+-[NIAlgorithmConvergenceState insufficientMovement];
+-[NIAlgorithmConvergenceState insufficientSignalStrength];
+-[NIAlgorithmConvergenceState insufficientVerticalSweep];
+-[NIAlgorithmConvergenceState setInsufficientLighting:];
+-[NIAlgorithmConvergenceState setInsufficientMovement:];
+-[NIAlgorithmConvergenceState setInsufficientSignalStrength:];
+-[NIAlgorithmConvergenceState setInsufficientVerticalSweep:];
+
+@end
+
+@interface NIBluetoothHostTimeSyncResponse : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _uwbDeviceTimeUncertainty;
+    C _uwbClockSkewMeasurementAvailable;
+    C _success;
+    S _deviceMaxPpm;
+    S _retryDelay;
+    Q _deviceEventCount;
+    Q _uwbDeviceTimeUs;
+}
+
+@property (TQ,R,N,V_deviceEventCount) deviceEventCount;
+@property (TQ,R,N,V_uwbDeviceTimeUs) uwbDeviceTimeUs;
+@property (TC,R,N,V_uwbDeviceTimeUncertainty) uwbDeviceTimeUncertainty;
+@property (TC,R,N,V_uwbClockSkewMeasurementAvailable) uwbClockSkewMeasurementAvailable;
+@property (TS,R,N,V_deviceMaxPpm) deviceMaxPpm;
+@property (TC,R,N,V_success) success;
+@property (TS,R,N,V_retryDelay) retryDelay;
+
+/* class methods */
++[NIBluetoothHostTimeSyncResponse supportsSecureCoding];
+
+/* instance methods */
+-[NIBluetoothHostTimeSyncResponse success];
+-[NIBluetoothHostTimeSyncResponse copyWithZone:];
+-[NIBluetoothHostTimeSyncResponse initWithCoder:];
+-[NIBluetoothHostTimeSyncResponse encodeWithCoder:];
+-[NIBluetoothHostTimeSyncResponse description];
+-[NIBluetoothHostTimeSyncResponse retryDelay];
+-[NIBluetoothHostTimeSyncResponse uwbDeviceTimeUs];
+-[NIBluetoothHostTimeSyncResponse deviceEventCount];
+-[NIBluetoothHostTimeSyncResponse deviceMaxPpm];
+-[NIBluetoothHostTimeSyncResponse initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:];
+-[NIBluetoothHostTimeSyncResponse uwbClockSkewMeasurementAvailable];
+-[NIBluetoothHostTimeSyncResponse uwbDeviceTimeUncertainty];
+
+@end
+
+@interface NIBluetoothSample : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    i _channel;
+    d _rssi;
+    @"NSString" _identifier;
+    @"NSString" _model;
+    d _machContinuousTimeSeconds;
+    @"NSString" _partIdentifier;
+    @"NSString" _name;
+    @"NSData" _presenceConfigData;
+    q _devicePlacement;
+}
+
+@property (T@"NSString",R,V_partIdentifier) partIdentifier;
+@property (T@"NSString",C,N,V_name) name;
+@property (T@"NSData",C,N,V_presenceConfigData) presenceConfigData;
+@property (Tq,V_devicePlacement) devicePlacement;
+@property (Td,R,V_rssi) rssi;
+@property (T@"NSString",R,V_identifier) identifier;
+@property (T@"NSString",R,V_model) model;
+@property (Ti,R,V_channel) channel;
+@property (Td,R,V_machContinuousTimeSeconds) machContinuousTimeSeconds;
+
+/* class methods */
++[NIBluetoothSample supportsSecureCoding];
+
+/* instance methods */
+-[NIBluetoothSample descriptionInternal];
+-[NIBluetoothSample name];
+-[NIBluetoothSample rssi];
+-[NIBluetoothSample copyWithZone:];
+-[NIBluetoothSample initWithCoder:];
+-[NIBluetoothSample channel];
+-[NIBluetoothSample setPresenceConfigData:];
+-[NIBluetoothSample identifier];
+-[NIBluetoothSample presenceConfigData];
+-[NIBluetoothSample encodeWithCoder:];
+-[NIBluetoothSample hash];
+-[NIBluetoothSample model];
+-[NIBluetoothSample setName:];
+-[NIBluetoothSample description];
+-[NIBluetoothSample isEqual:];
+-[NIBluetoothSample machContinuousTimeSeconds];
+-[NIBluetoothSample devicePlacement];
+-[NIBluetoothSample initWithBluetoothSample:];
+-[NIBluetoothSample initWithRSSI:identifier:model:channel:machContinuousTimeSeconds:];
+-[NIBluetoothSample initWithRSSI:identifier:model:channel:machContinuousTimeSeconds:partIdentifier:name:presenceConfigData:];
+-[NIBluetoothSample partIdentifier];
+-[NIBluetoothSample setDevicePlacement:];
+
+@end
+
+@interface NICarKeyConfiguration : NIConfiguration {
+    /* instance variables */
+    q _configurationTypeInternal;
+    S _protocolVersion;
+    @"NSString" _vehicleIdentifier;
+    @"NSDictionary" _debugOptions;
+}
+
+@property (Tq,R) configurationType;
+@property (T@"NSString",C,V_vehicleIdentifier) vehicleIdentifier;
+@property (TS,V_protocolVersion) protocolVersion;
+@property (T@"NSDictionary",C,V_debugOptions) debugOptions;
+
+/* class methods */
++[NICarKeyConfiguration supportsSecureCoding];
++[NICarKeyConfiguration _labTestModeConfigurationWithOptions:];
++[NICarKeyConfiguration _vehicleSimConfigurationWithOptions:];
+
+/* instance methods */
+-[NICarKeyConfiguration descriptionInternal];
+-[NICarKeyConfiguration protocolVersion];
+-[NICarKeyConfiguration setProtocolVersion:];
+-[NICarKeyConfiguration initVehicleSimConfiguration:];
+-[NICarKeyConfiguration setDebugOptions:];
+-[NICarKeyConfiguration copyWithZone:];
+-[NICarKeyConfiguration initWithVehicleIdentifier:];
+-[NICarKeyConfiguration initWithCoder:];
+-[NICarKeyConfiguration initWithConfiguration:];
+-[NICarKeyConfiguration debugOptions];
+-[NICarKeyConfiguration encodeWithCoder:];
+-[NICarKeyConfiguration configurationType];
+-[NICarKeyConfiguration setVehicleIdentifier:];
+-[NICarKeyConfiguration hash];
+-[NICarKeyConfiguration canUpdateToConfiguration:];
+-[NICarKeyConfiguration description];
+-[NICarKeyConfiguration initLabTestModeConfiguration:];
+-[NICarKeyConfiguration isEqual:];
+-[NICarKeyConfiguration vehicleIdentifier];
+
+@end
+
+@interface NICarKeyEventNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NICarKeyEventNotifier initWithParentSession:];
+-[NICarKeyEventNotifier notifyRangingIntentSentToVehicleWithReason:];
+-[NICarKeyEventNotifier notifyVehicleLockedWithReason:];
+-[NICarKeyEventNotifier notifyVehicleReadyToDriveWithReason:];
+-[NICarKeyEventNotifier notifyVehicleSentRangingSuspendedSubEvent];
+-[NICarKeyEventNotifier notifyVehicleTerminatedRangingSession];
+-[NICarKeyEventNotifier notifyVehicleUnlockedWithReason:];
+
+@end
+
+@interface NIConfiguration : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    B _supportsCameraAssistance;
+    Q _suspensionPolicy;
+    Q _enabledGestures;
+}
+
+@property (TB,V_supportsCameraAssistance) supportsCameraAssistance;
+@property (TQ,V_suspensionPolicy) suspensionPolicy;
+@property (TQ,V_enabledGestures) enabledGestures;
+
+/* class methods */
++[NIConfiguration supportsSecureCoding];
++[NIConfiguration new];
+
+/* instance methods */
+-[NIConfiguration suspensionPolicy];
+-[NIConfiguration _internalIsExtendedDistanceMeasurementEnabled];
+-[NIConfiguration enabledGestures];
+-[NIConfiguration setEnabledGestures:];
+-[NIConfiguration descriptionInternal];
+-[NIConfiguration _internalIsMemoryAssertionRequired];
+-[NIConfiguration setSuspensionPolicy:];
+-[NIConfiguration setSupportsCameraAssistance:];
+-[NIConfiguration _internalIsCameraAssistanceEnabled];
+-[NIConfiguration _internalIsCameraAssistanceInClientProcess];
+-[NIConfiguration _internalIsPowerAssertionRequired];
+-[NIConfiguration init];
+-[NIConfiguration copyWithZone:];
+-[NIConfiguration initWithCoder:];
+-[NIConfiguration initWithConfiguration:];
+-[NIConfiguration initInternal];
+-[NIConfiguration encodeWithCoder:];
+-[NIConfiguration supportsCameraAssistance];
+
+@end
+
+@interface NIDLTDOAConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    q _networkIdentifier;
+    @"NSDictionary" _debugParameters;
+}
+
+@property (T@"NSDictionary",C,V_debugParameters) debugParameters;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (Tq,N,V_networkIdentifier) networkIdentifier;
+
+/* class methods */
++[NIDLTDOAConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIDLTDOAConfiguration descriptionInternal];
+-[NIDLTDOAConfiguration _internalIsCameraAssistanceEnabled];
+-[NIDLTDOAConfiguration copyWithZone:];
+-[NIDLTDOAConfiguration initWithCoder:];
+-[NIDLTDOAConfiguration debugParameters];
+-[NIDLTDOAConfiguration isCameraAssistanceEnabled];
+-[NIDLTDOAConfiguration encodeWithCoder:];
+-[NIDLTDOAConfiguration setDebugParameters:];
+-[NIDLTDOAConfiguration hash];
+-[NIDLTDOAConfiguration setCameraAssistanceEnabled:];
+-[NIDLTDOAConfiguration description];
+-[NIDLTDOAConfiguration isEqual:];
+-[NIDLTDOAConfiguration networkIdentifier];
+-[NIDLTDOAConfiguration setNetworkIdentifier:];
+-[NIDLTDOAConfiguration initWithConfigParametersOverride:];
+-[NIDLTDOAConfiguration initWithNetworkIdentifier:];
+
+@end
+
+@interface NIDLTDOACoordinatesUpdate : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    q _coordinatesType;
+     _coordinates;
+}
+
+@property (Tq,R,N,V_coordinatesType) coordinatesType;
+@property (T,R,N,V_coordinates) coordinates;
+
+/* class methods */
++[NIDLTDOACoordinatesUpdate supportsSecureCoding];
+
+/* instance methods */
+-[NIDLTDOACoordinatesUpdate copyWithZone:];
+-[NIDLTDOACoordinatesUpdate initWithCoder:];
+-[NIDLTDOACoordinatesUpdate encodeWithCoder:];
+-[NIDLTDOACoordinatesUpdate hash];
+-[NIDLTDOACoordinatesUpdate coordinates];
+-[NIDLTDOACoordinatesUpdate description];
+-[NIDLTDOACoordinatesUpdate isEqual:];
+-[NIDLTDOACoordinatesUpdate coordinatesType];
+-[NIDLTDOACoordinatesUpdate initWithDLTDOACoordinatesType:coordinates:];
+
+@end
+
+@interface NIDLTDOAMeasurement : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    Q _address;
+    q _measurementType;
+    q _coordinatesType;
+    d _transmitTime;
+    d _receiveTime;
+    d _signalStrength;
+    d _carrierFrequencyOffset;
+     _coordinates;
+}
+
+@property (TQ,R,N,V_address) address;
+@property (Tq,R,N,V_measurementType) measurementType;
+@property (Td,R,N,V_transmitTime) transmitTime;
+@property (Td,R,N,V_receiveTime) receiveTime;
+@property (Td,R,N,V_signalStrength) signalStrength;
+@property (Td,R,N,V_carrierFrequencyOffset) carrierFrequencyOffset;
+@property (Tq,R,N,V_coordinatesType) coordinatesType;
+@property (T,R,N,V_coordinates) coordinates;
+
+/* class methods */
++[NIDLTDOAMeasurement supportsSecureCoding];
+
+/* instance methods */
+-[NIDLTDOAMeasurement signalStrength];
+-[NIDLTDOAMeasurement setAddress:];
+-[NIDLTDOAMeasurement setSignalStrength:];
+-[NIDLTDOAMeasurement copyWithZone:];
+-[NIDLTDOAMeasurement initWithCoder:];
+-[NIDLTDOAMeasurement address];
+-[NIDLTDOAMeasurement encodeWithCoder:];
+-[NIDLTDOAMeasurement hash];
+-[NIDLTDOAMeasurement coordinates];
+-[NIDLTDOAMeasurement description];
+-[NIDLTDOAMeasurement isEqual:];
+-[NIDLTDOAMeasurement setCoordinates:];
+-[NIDLTDOAMeasurement coordinatesType];
+-[NIDLTDOAMeasurement measurementType];
+-[NIDLTDOAMeasurement setReceiveTime:];
+-[NIDLTDOAMeasurement carrierFrequencyOffset];
+-[NIDLTDOAMeasurement initWithAnchorAddress:measurementType:coordinatesType:transmitTime:receiveTime:signalStrength:carrierFrequencyOffset:coordinates:];
+-[NIDLTDOAMeasurement receiveTime];
+-[NIDLTDOAMeasurement setCarrierFrequencyOffset:];
+-[NIDLTDOAMeasurement setCoordinatesType:];
+-[NIDLTDOAMeasurement setMeasurementType:];
+-[NIDLTDOAMeasurement setTransmitTime:];
+-[NIDLTDOAMeasurement transmitTime];
+
+@end
+
+@interface NIDeviceCapabilities : NSObject <NIInternalDeviceCapability> {
+    /* instance variables */
+    B _supportsPreciseDistanceMeasurement;
+    B _supportsDirectionMeasurement;
+    B _supportsCameraAssistance;
+    B _supportsCoarseDistanceMeasurement;
+    B _supportsExtendedDistanceMeasurement;
+    B _supportsDLTDOAMeasurement;
+}
+
+@property (TB,R,N,V_supportsCoarseDistanceMeasurement) supportsCoarseDistanceMeasurement;
+@property (TB,R,N,V_supportsPreciseDistanceMeasurement) supportsPreciseDistanceMeasurement;
+@property (TB,R,N,V_supportsDirectionMeasurement) supportsDirectionMeasurement;
+@property (TB,R,N,V_supportsCameraAssistance) supportsCameraAssistance;
+@property (TB,R,N,V_supportsExtendedDistanceMeasurement) supportsExtendedDistanceMeasurement;
+@property (TB,R,N,V_supportsDLTDOAMeasurement) supportsDLTDOAMeasurement;
+
+/* class methods */
++[NIDeviceCapabilities new];
+
+/* instance methods */
+-[NIDeviceCapabilities supportsDLTDOAMeasurement];
+-[NIDeviceCapabilities init];
+-[NIDeviceCapabilities supportsCoarseDistanceMeasurement];
+-[NIDeviceCapabilities supportsExtendedDistanceMeasurement];
+-[NIDeviceCapabilities supportsPreciseDistanceMeasurement];
+-[NIDeviceCapabilities toBitmap];
+-[NIDeviceCapabilities initWithBitmap:];
+-[NIDeviceCapabilities initWithFineRangingSupport:aoaSupport:extendedDistanceMeasurementSupport:syntheticApertureSupport:dltdoaSupport:];
+-[NIDeviceCapabilities initWithFineRangingSupport:coarseRangingSupport:aoaSupport:extendedDistanceMeasurementSupport:syntheticApertureSupport:dltdoaSupport:];
+-[NIDeviceCapabilities supportsDirectionMeasurement];
+-[NIDeviceCapabilities supportsCameraAssistance];
+
+@end
+
+@interface NIDevicePresenceConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    Q _monitoringOption;
+    Q _allowedDevices;
+    @"NIRegionPredicate" _innerBoundary;
+    @"NIRegionPredicate" _outerBoundary;
+    @"NSArray" _monitoredRegions;
+    @"NIDiscoveryToken" _token;
+}
+
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (TQ,V_monitoringOption) monitoringOption;
+@property (TQ,V_allowedDevices) allowedDevices;
+@property (T@"NIRegionPredicate",R,V_innerBoundary) innerBoundary;
+@property (T@"NIRegionPredicate",R,V_outerBoundary) outerBoundary;
+@property (T@"NSArray",R,V_monitoredRegions) monitoredRegions;
+@property (T@"NIDiscoveryToken",R,V_token) token;
+
+/* class methods */
++[NIDevicePresenceConfiguration supportsSecureCoding];
++[NIDevicePresenceConfiguration _validateRegionPredicates:outer:];
++[NIDevicePresenceConfiguration _validateRegionIsPreset:];
++[NIDevicePresenceConfiguration _radiusFromDevicePresencePreset:];
++[NIDevicePresenceConfiguration _NIDevicePresenceMonitoringOptionToString:];
+
+/* instance methods */
+-[NIDevicePresenceConfiguration descriptionInternal];
+-[NIDevicePresenceConfiguration _internalIsCameraAssistanceEnabled];
+-[NIDevicePresenceConfiguration monitoringOption];
+-[NIDevicePresenceConfiguration initWithInnerBoundary:outerBoundary:monitoringOption:allowedDevices:error:];
+-[NIDevicePresenceConfiguration outerBoundary];
+-[NIDevicePresenceConfiguration copyWithZone:];
+-[NIDevicePresenceConfiguration token];
+-[NIDevicePresenceConfiguration initWithCoder:];
+-[NIDevicePresenceConfiguration initWithDiscoveryToken:regions:preferredUpdateRate:error:];
+-[NIDevicePresenceConfiguration setAllowedDevices:];
+-[NIDevicePresenceConfiguration allowedDevices];
+-[NIDevicePresenceConfiguration isCameraAssistanceEnabled];
+-[NIDevicePresenceConfiguration encodeWithCoder:];
+-[NIDevicePresenceConfiguration monitoredRegions];
+-[NIDevicePresenceConfiguration innerBoundary];
+-[NIDevicePresenceConfiguration hash];
+-[NIDevicePresenceConfiguration setCameraAssistanceEnabled:];
+-[NIDevicePresenceConfiguration initWithInnerBoundary:outerBoundary:error:];
+-[NIDevicePresenceConfiguration description];
+-[NIDevicePresenceConfiguration setMonitoringOption:];
+-[NIDevicePresenceConfiguration isEqual:];
+
+@end
+
+@interface NIDevicePresenceNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NIDevicePresenceNotifier initWithParentSession:];
+-[NIDevicePresenceNotifier notifyBluetoothSample:];
+
+@end
+
+@interface NIDiscoveryToken : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSData" _rawToken;
+    @"NSNumber" _shortDeviceAddress;
+    @"NSData" _identifyingSequence;
+}
+
+@property (T@"NSData",R,C,V_rawToken) rawToken;
+@property (T@"NSString",R) rawTokenAsString;
+@property (Tq,R) tokenVariant;
+@property (T@"<NIDeviceCapability>",R,C,N) deviceCapabilities;
+
+/* class methods */
++[NIDiscoveryToken supportsSecureCoding];
++[NIDiscoveryToken generateTokenWithUUID:];
++[NIDiscoveryToken _identifyingSequenceFromBytes:];
++[NIDiscoveryToken deserialize:];
++[NIDiscoveryToken serialize:];
++[NIDiscoveryToken generateDiscoveryTokenFromBeaconIdentifier:];
++[NIDiscoveryToken generateFindingTokenWithIRK:forExternalUse:];
++[NIDiscoveryToken generateFindingTokenWithServiceID:deviceName:];
++[NIDiscoveryToken generateFindingTokenWithIRK:];
+
+/* instance methods */
+-[NIDiscoveryToken descriptionInternal];
+-[NIDiscoveryToken tokenVariant];
+-[NIDiscoveryToken copyWithZone:];
+-[NIDiscoveryToken initWithCoder:];
+-[NIDiscoveryToken initWithDeviceAddress:];
+-[NIDiscoveryToken shortDeviceAddress];
+-[NIDiscoveryToken objectInRawTokenOPACKDictForKey:];
+-[NIDiscoveryToken rawTokenAsString];
+-[NIDiscoveryToken initWithBytes:];
+-[NIDiscoveryToken rawToken];
+-[NIDiscoveryToken encodeWithCoder:];
+-[NIDiscoveryToken deviceCapabilities];
+-[NIDiscoveryToken hash];
+-[NIDiscoveryToken description];
+-[NIDiscoveryToken getIRK];
+-[NIDiscoveryToken getSessionIdentifier];
+-[NIDiscoveryToken isEqual:];
+
+@end
+
+@interface NIExportedObjectForwarder : NSObject {
+    /* instance variables */
+    @ _exportedObject;
+    # _exportedObjectClass;
+}
+
+@property (T@,W,N,V_exportedObject) exportedObject;
+@property (T#,&,N,V_exportedObjectClass) exportedObjectClass;
+
+/* instance methods */
+-[NIExportedObjectForwarder forwardingTargetForSelector:];
+-[NIExportedObjectForwarder initWithExportedObject:];
+-[NIExportedObjectForwarder exportedObject];
+-[NIExportedObjectForwarder methodSignatureForSelector:];
+-[NIExportedObjectForwarder exportedObjectClass];
+-[NIExportedObjectForwarder setExportedObjectClass:];
+-[NIExportedObjectForwarder setExportedObject:];
+-[NIExportedObjectForwarder forwardInvocation:];
+
+@end
+
+@interface NIFindingConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    B _cameraAssistanceInClientProcess;
+    B _isFinder;
+    B _isObserver;
+    q _preferredUpdateRate;
+    q _preferredDiscoveryPriority;
+    @"NSArray" _monitoredRegions;
+    q _configType;
+    @"NIDiscoveryToken" _specifiedToken;
+    @"NSDictionary" _debugParameters;
+    q _discoveryTokenVariant;
+    q _requestedMeasurementQuality;
+}
+
+@property (TB,N,V_isFinder) isFinder;
+@property (TB,N,V_isObserver) isObserver;
+@property (Tq,N,V_configType) configType;
+@property (T@"NIDiscoveryToken",C,N,V_specifiedToken) specifiedToken;
+@property (T@"NIDiscoveryToken",R,C,N) findingDiscoveryToken;
+@property (T@"NSDictionary",C,N,V_debugParameters) debugParameters;
+@property (Tq,N,V_discoveryTokenVariant) discoveryTokenVariant;
+@property (Tq,N,V_requestedMeasurementQuality) requestedMeasurementQuality;
+@property (T@"NIDiscoveryToken",R,C,N) sessionDiscoveryToken;
+@property (Tq,N,V_preferredUpdateRate) preferredUpdateRate;
+@property (Tq,N,V_preferredDiscoveryPriority) preferredDiscoveryPriority;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (TB,N,GisCameraAssistanceInClientProcess,V_cameraAssistanceInClientProcess) cameraAssistanceInClientProcess;
+@property (T@"NSArray",&,V_monitoredRegions) monitoredRegions;
+
+/* class methods */
++[NIFindingConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIFindingConfiguration isFinder];
+-[NIFindingConfiguration descriptionInternal];
+-[NIFindingConfiguration _internalIsCameraAssistanceEnabled];
+-[NIFindingConfiguration _internalIsCameraAssistanceInClientProcess];
+-[NIFindingConfiguration setMonitoredRegions:];
+-[NIFindingConfiguration copyWithZone:];
+-[NIFindingConfiguration initWithCoder:];
+-[NIFindingConfiguration setPreferredUpdateRate:];
+-[NIFindingConfiguration debugParameters];
+-[NIFindingConfiguration isCameraAssistanceEnabled];
+-[NIFindingConfiguration encodeWithCoder:];
+-[NIFindingConfiguration setDebugParameters:];
+-[NIFindingConfiguration monitoredRegions];
+-[NIFindingConfiguration hash];
+-[NIFindingConfiguration canUpdateToConfiguration:];
+-[NIFindingConfiguration preferredUpdateRate];
+-[NIFindingConfiguration setCameraAssistanceEnabled:];
+-[NIFindingConfiguration description];
+-[NIFindingConfiguration isEqual:];
+-[NIFindingConfiguration configType];
+-[NIFindingConfiguration setConfigType:];
+-[NIFindingConfiguration isObserver];
+-[NIFindingConfiguration setRequestedMeasurementQuality:];
+-[NIFindingConfiguration _initInternalWithConfigType:isFinder:isObserver:specifiedToken:preferredUpdateRate:requestedMeasurementQuality:];
+-[NIFindingConfiguration discoveryTokenVariant];
+-[NIFindingConfiguration findingDiscoveryToken];
+-[NIFindingConfiguration initWithDiscoveryToken:requestedUpdateRate:requestedMeasaurementQuality:];
+-[NIFindingConfiguration initWithRole:discoveryToken:preferredUpdateRate:];
+-[NIFindingConfiguration isCameraAssistanceInClientProcess];
+-[NIFindingConfiguration preferredDiscoveryPriority];
+-[NIFindingConfiguration requestedMeasurementQuality];
+-[NIFindingConfiguration sessionDiscoveryToken];
+-[NIFindingConfiguration setCameraAssistanceInClientProcess:];
+-[NIFindingConfiguration setDiscoveryTokenVariant:];
+-[NIFindingConfiguration setIsFinder:];
+-[NIFindingConfiguration setIsObserver:];
+-[NIFindingConfiguration setPreferredDiscoveryPriority:];
+-[NIFindingConfiguration setSpecifiedToken:];
+-[NIFindingConfiguration specifiedToken];
+
+@end
+
+@interface NIFindingNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NIFindingNotifier initWithParentSession:];
+-[NIFindingNotifier notifyDiscoveredNearbyObjectWithToken:sharedConfigurationData:];
+-[NIFindingNotifier notifyRemovedNearbyObjectWithToken:];
+-[NIFindingNotifier notifyUpdatedHeadingForLocalDevice:];
+-[NIFindingNotifier notifyUpdatedLocation:forNearbyObjectWithToken:];
+-[NIFindingNotifier notifyUpdatedLocationForLocalDevice:];
+
+@end
+
+@interface NIHeading : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSDate" _timestamp;
+    d _trueHeading;
+    d _magneticHeading;
+    d _headingAccuracy;
+}
+
+@property (T@"NSDate",C,N,V_timestamp) timestamp;
+@property (Td,N,V_trueHeading) trueHeading;
+@property (Td,N,V_magneticHeading) magneticHeading;
+@property (Td,N,V_headingAccuracy) headingAccuracy;
+
+/* class methods */
++[NIHeading supportsSecureCoding];
+
+/* instance methods */
+-[NIHeading descriptionInternal];
+-[NIHeading timestamp];
+-[NIHeading headingAccuracy];
+-[NIHeading copyWithZone:];
+-[NIHeading initWithCoder:];
+-[NIHeading encodeWithCoder:];
+-[NIHeading setTimestamp:];
+-[NIHeading hash];
+-[NIHeading description];
+-[NIHeading isEqual:];
+-[NIHeading magneticHeading];
+-[NIHeading trueHeading];
+-[NIHeading setHeadingAccuracy:];
+-[NIHeading setTrueHeading:];
+-[NIHeading initWithTimestamp:trueHeading:magneticHeading:headingAccuracy:];
+-[NIHeading setMagneticHeading:];
+
+@end
+
+@interface NIHomeDeviceConfiguration : NIConfiguration {
+    /* instance variables */
+    @"NSArray" _monitoredRegions;
+    @"NSString" _regionDescription;
+    B _anchor;
+    Q _allowedDevices;
+    @"NSData" _sessionKey;
+    q _minimumPreferredUpdatedRate;
+    q _antennaDiversityOverride;
+}
+
+@property (Tq,V_antennaDiversityOverride) antennaDiversityOverride;
+@property (TQ,V_allowedDevices) allowedDevices;
+@property (T@"NSData",C,V_sessionKey) sessionKey;
+@property (TB,GisAnchor,V_anchor) anchor;
+@property (T@"NSArray",C) monitoredRegions;
+@property (Tq,V_minimumPreferredUpdatedRate) minimumPreferredUpdatedRate;
+
+/* class methods */
++[NIHomeDeviceConfiguration supportsSecureCoding];
++[NIHomeDeviceConfiguration new];
+
+/* instance methods */
+-[NIHomeDeviceConfiguration descriptionInternal];
+-[NIHomeDeviceConfiguration setAnchor:];
+-[NIHomeDeviceConfiguration setAntennaDiversityOverride:];
+-[NIHomeDeviceConfiguration setMonitoredRegions:];
+-[NIHomeDeviceConfiguration _updateRegionDescription];
+-[NIHomeDeviceConfiguration minimumPreferredUpdatedRate];
+-[NIHomeDeviceConfiguration isAnchor];
+-[NIHomeDeviceConfiguration init];
+-[NIHomeDeviceConfiguration copyWithZone:];
+-[NIHomeDeviceConfiguration initWithCoder:];
+-[NIHomeDeviceConfiguration setAllowedDevices:];
+-[NIHomeDeviceConfiguration allowedDevices];
+-[NIHomeDeviceConfiguration encodeWithCoder:];
+-[NIHomeDeviceConfiguration monitoredRegions];
+-[NIHomeDeviceConfiguration initWithRegions:];
+-[NIHomeDeviceConfiguration hash];
+-[NIHomeDeviceConfiguration canUpdateToConfiguration:];
+-[NIHomeDeviceConfiguration setMinimumPreferredUpdatedRate:];
+-[NIHomeDeviceConfiguration initWithAllowedDevices:sessionKey:asAnchor:regions:];
+-[NIHomeDeviceConfiguration antennaDiversityOverride];
+-[NIHomeDeviceConfiguration description];
+-[NIHomeDeviceConfiguration sessionKey];
+-[NIHomeDeviceConfiguration setSessionKey:];
+-[NIHomeDeviceConfiguration isEqual:];
+
+@end
+
+@interface NIHomePassiveSensingConfiguration : NIConfiguration {
+    /* instance variables */
+    q _minimumPreferredUpdatedRate;
+}
+
+@property (Tq,V_minimumPreferredUpdatedRate) minimumPreferredUpdatedRate;
+
+/* class methods */
++[NIHomePassiveSensingConfiguration supportsSecureCoding];
++[NIHomePassiveSensingConfiguration new];
+
+/* instance methods */
+-[NIHomePassiveSensingConfiguration descriptionInternal];
+-[NIHomePassiveSensingConfiguration minimumPreferredUpdatedRate];
+-[NIHomePassiveSensingConfiguration init];
+-[NIHomePassiveSensingConfiguration copyWithZone:];
+-[NIHomePassiveSensingConfiguration initWithCoder:];
+-[NIHomePassiveSensingConfiguration encodeWithCoder:];
+-[NIHomePassiveSensingConfiguration hash];
+-[NIHomePassiveSensingConfiguration canUpdateToConfiguration:];
+-[NIHomePassiveSensingConfiguration setMinimumPreferredUpdatedRate:];
+-[NIHomePassiveSensingConfiguration description];
+-[NIHomePassiveSensingConfiguration isEqual:];
+
+@end
+
+@interface NIInternalUtils : NSObject
+
+/* class methods */
++[NIInternalUtils NINearbyObjectDiscoveryPriorityToString:];
++[NIInternalUtils NINearbyObjectUpdateRateToString:];
++[NIInternalUtils NIRelationshipSpecifierToString:];
++[NIInternalUtils NISystemPassiveAccessIntentToString:];
++[NIInternalUtils AntennaDiversityOverrideToString:];
++[NIInternalUtils NINearbyObjectUpdateRateToShortString:];
++[NIInternalUtils NINearbyPeerUseCaseToString:];
++[NIInternalUtils NISessionBackgroundModeToString:];
++[NIInternalUtils NISystemResourceAvailabilityToString:];
++[NIInternalUtils isIntValidAntennaDiversityOverride:];
++[NIInternalUtils isIntValidNearbyObjectDiscoveryPriority:];
++[NIInternalUtils isIntValidNearbyObjectUpdateRate:];
++[NIInternalUtils isIntValidRelationshipSpecifier:];
++[NIInternalUtils nearbyObjectUpdateRate:isGreaterThan:];
+
+@end
+
+@interface NIItemLocalizerConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    @"NSUUID" _itemUUID;
+    @"NIDiscoveryToken" _discoveryToken;
+    q _preferredUpdateRate;
+    @"NSDictionary" _debugParameters;
+}
+
+@property (T@"NSUUID",C,N,V_itemUUID) itemUUID;
+@property (T@"NIDiscoveryToken",C,N,V_discoveryToken) discoveryToken;
+@property (T@"NSDictionary",C,N,V_debugParameters) debugParameters;
+@property (Tq,N,V_preferredUpdateRate) preferredUpdateRate;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+
+/* class methods */
++[NIItemLocalizerConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIItemLocalizerConfiguration descriptionInternal];
+-[NIItemLocalizerConfiguration _internalIsCameraAssistanceEnabled];
+-[NIItemLocalizerConfiguration discoveryToken];
+-[NIItemLocalizerConfiguration copyWithZone:];
+-[NIItemLocalizerConfiguration initWithCoder:];
+-[NIItemLocalizerConfiguration setPreferredUpdateRate:];
+-[NIItemLocalizerConfiguration debugParameters];
+-[NIItemLocalizerConfiguration isCameraAssistanceEnabled];
+-[NIItemLocalizerConfiguration encodeWithCoder:];
+-[NIItemLocalizerConfiguration setDebugParameters:];
+-[NIItemLocalizerConfiguration hash];
+-[NIItemLocalizerConfiguration canUpdateToConfiguration:];
+-[NIItemLocalizerConfiguration preferredUpdateRate];
+-[NIItemLocalizerConfiguration setCameraAssistanceEnabled:];
+-[NIItemLocalizerConfiguration description];
+-[NIItemLocalizerConfiguration isEqual:];
+-[NIItemLocalizerConfiguration itemUUID];
+-[NIItemLocalizerConfiguration initWithItemUUID:preferredUpdateRate:];
+-[NIItemLocalizerConfiguration setDiscoveryToken:];
+-[NIItemLocalizerConfiguration setItemUUID:];
+
+@end
+
+@interface NILocalization : NSObject
+
+/* class methods */
++[NILocalization fallbackBundle];
++[NILocalization localizedBundle];
++[NILocalization _niFrameworkBundle];
++[NILocalization _niLocalizedStringFromBundle:withKey:];
++[NILocalization _niLocalizedStringFromFrameworkBundleWithKey:];
++[NILocalization fallbackBundleWithBundle:];
++[NILocalization localizedBundleWithBundle:];
+
+@end
+
+@interface NILocation : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"NSDate" _timestamp;
+    d _latitude;
+    d _longitude;
+    d _altitude;
+    d _ellipsoidalAltitude;
+    d _horizontalAccuracy;
+    d _verticalAccuracy;
+    d _speed;
+    d _speedAccuracy;
+    d _course;
+    d _courseAccuracy;
+    q _floor;
+    q _locationType;
+    q _signalEnvironment;
+}
+
+@property (T@"NSDate",C,N,V_timestamp) timestamp;
+@property (Td,N,V_latitude) latitude;
+@property (Td,N,V_longitude) longitude;
+@property (Td,N,V_altitude) altitude;
+@property (Td,N,V_ellipsoidalAltitude) ellipsoidalAltitude;
+@property (Td,N,V_horizontalAccuracy) horizontalAccuracy;
+@property (Td,N,V_verticalAccuracy) verticalAccuracy;
+@property (Td,N,V_speed) speed;
+@property (Td,N,V_speedAccuracy) speedAccuracy;
+@property (Td,N,V_course) course;
+@property (Td,N,V_courseAccuracy) courseAccuracy;
+@property (Tq,N,V_floor) floor;
+@property (Tq,N,V_locationType) locationType;
+@property (Tq,N,V_signalEnvironment) signalEnvironment;
+
+/* class methods */
++[NILocation supportsSecureCoding];
+
+/* instance methods */
+-[NILocation descriptionInternal];
+-[NILocation speedAccuracy];
+-[NILocation timestamp];
+-[NILocation course];
+-[NILocation horizontalAccuracy];
+-[NILocation verticalAccuracy];
+-[NILocation altitude];
+-[NILocation locationType];
+-[NILocation setLocationType:];
+-[NILocation courseAccuracy];
+-[NILocation copyWithZone:];
+-[NILocation initWithCoder:];
+-[NILocation speed];
+-[NILocation latitude];
+-[NILocation encodeWithCoder:];
+-[NILocation setTimestamp:];
+-[NILocation hash];
+-[NILocation setHorizontalAccuracy:];
+-[NILocation setCourse:];
+-[NILocation description];
+-[NILocation setAltitude:];
+-[NILocation setLongitude:];
+-[NILocation longitude];
+-[NILocation setLatitude:];
+-[NILocation setSpeed:];
+-[NILocation isEqual:];
+-[NILocation floor];
+-[NILocation setCourseAccuracy:];
+-[NILocation setSpeedAccuracy:];
+-[NILocation setVerticalAccuracy:];
+-[NILocation ellipsoidalAltitude];
+-[NILocation initWithTimestamp:latitude:longitude:altitude:ellipsoidalAltitude:horizontalAccuracy:verticalAccuracy:speed:speedAccuracy:course:courseAccuracy:floor:locationType:signalEnvironment:];
+-[NILocation setEllipsoidalAltitude:];
+-[NILocation setFloor:];
+-[NILocation setSignalEnvironment:];
+-[NILocation signalEnvironment];
+
+@end
+
+@interface NINearbyAccessoryConfiguration : NIConfiguration {
+    /* instance variables */
+    @"NSData" _rawData;
+    B _cameraAssistanceEnabled;
+    @"NIDiscoveryToken" _accessoryDiscoveryToken;
+    @"NSUUID" _bluetoothDeviceIdentifier;
+    @"NSDictionary" _debugParameters;
+    q _backgroundMode;
+}
+
+@property (T@"NSData",R,C) accessoryConfigData;
+@property (T@"NSUUID",C,V_bluetoothDeviceIdentifier) bluetoothDeviceIdentifier;
+@property (T@"NSDictionary",C,V_debugParameters) debugParameters;
+@property (TB,R) dataExchangeDisabledAndUsingParameterOverrides;
+@property (Tq,N,V_backgroundMode) backgroundMode;
+@property (T@"NIDiscoveryToken",R,C,N,V_accessoryDiscoveryToken) accessoryDiscoveryToken;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+
+/* class methods */
++[NINearbyAccessoryConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NINearbyAccessoryConfiguration descriptionInternal];
+-[NINearbyAccessoryConfiguration _internalIsCameraAssistanceEnabled];
+-[NINearbyAccessoryConfiguration _internalIsPowerAssertionRequired];
+-[NINearbyAccessoryConfiguration initWithData:error:];
+-[NINearbyAccessoryConfiguration initWithAccessoryData:bluetoothPeerIdentifier:error:];
+-[NINearbyAccessoryConfiguration backgroundMode];
+-[NINearbyAccessoryConfiguration setBackgroundMode:];
+-[NINearbyAccessoryConfiguration copyWithZone:];
+-[NINearbyAccessoryConfiguration initWithCoder:];
+-[NINearbyAccessoryConfiguration accessoryConfigData];
+-[NINearbyAccessoryConfiguration debugParameters];
+-[NINearbyAccessoryConfiguration isCameraAssistanceEnabled];
+-[NINearbyAccessoryConfiguration encodeWithCoder:];
+-[NINearbyAccessoryConfiguration setDebugParameters:];
+-[NINearbyAccessoryConfiguration hash];
+-[NINearbyAccessoryConfiguration accessoryDiscoveryToken];
+-[NINearbyAccessoryConfiguration setCameraAssistanceEnabled:];
+-[NINearbyAccessoryConfiguration bluetoothDeviceIdentifier];
+-[NINearbyAccessoryConfiguration description];
+-[NINearbyAccessoryConfiguration initWithDataExchangeDisabledAndUsingParameterOverrides:];
+-[NINearbyAccessoryConfiguration setBluetoothDeviceIdentifier:];
+-[NINearbyAccessoryConfiguration dataExchangeDisabledAndUsingParameterOverrides];
+-[NINearbyAccessoryConfiguration isEqual:];
+
+@end
+
+@interface NINearbyObject : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    C _remoteTxAntennaMask;
+    B _requiresBiasCorrection;
+    C _nbRxStatus;
+    C _mmsRxStatus;
+    B _canInteract;
+    B _vioMajorRelocalization;
+    B _resetARSession;
+    B _revokeFindingExperience;
+    f _distance;
+    f _horizontalAngle;
+    f _azimuth;
+    f _elevation;
+    f _horizontalAngleAccuracy;
+    f _boundedRegionRange;
+    f _horizontalDistance;
+    f _rawRange;
+    @"NIDiscoveryToken" _discoveryToken;
+    q _verticalDirectionEstimate;
+    Q _relationship;
+    @"NSString" _deviceIdentifier;
+    d _timestamp;
+    q _distanceMeasurementQuality;
+    q _motionState;
+    @"NSString" _name;
+    @"NSNumber" _spatialScore;
+    @"NSData" _bluetoothAdvertisingAddress;
+    @"NSUUID" _bluetoothPeerIdentifier;
+    d _signalStrength;
+    d _rangeBiasEstimate;
+    d _rangeUncertainty;
+    @"UWBSignalFeatures" _uwbSignalFeatures;
+    d _nbRssi;
+    q _algorithmSource;
+    @"NSString" _debugDisplayInfo;
+    q _itemState;
+    @"NILocation" _location;
+    q _vioTrackingState;
+     _direction;
+    {?="vector"} _quaternion;
+     _worldPosition;
+}
+
+@property (T@"NIDiscoveryToken",C,N,V_discoveryToken) discoveryToken;
+@property (Tf,N,V_distance) distance;
+@property (T,N,V_direction) direction;
+@property (T{?=},N,V_quaternion) quaternion;
+@property (Tf,N,V_azimuth) azimuth;
+@property (Tf,N,V_elevation) elevation;
+@property (TQ,N,V_relationship) relationship;
+@property (T@"NSString",C,N,V_deviceIdentifier) deviceIdentifier;
+@property (Td,N,V_timestamp) timestamp;
+@property (Tq,N,V_distanceMeasurementQuality) distanceMeasurementQuality;
+@property (Tq,N,V_motionState) motionState;
+@property (T@"NSString",C,N,V_name) name;
+@property (T@"NSNumber",C,N,V_spatialScore) spatialScore;
+@property (T@"NSData",C,N,V_bluetoothAdvertisingAddress) bluetoothAdvertisingAddress;
+@property (T@"NSUUID",C,N,V_bluetoothPeerIdentifier) bluetoothPeerIdentifier;
+@property (Tq,N,V_verticalDirectionEstimate) verticalDirectionEstimate;
+@property (Tf,N,V_horizontalAngle) horizontalAngle;
+@property (Tf,N,V_horizontalAngleAccuracy) horizontalAngleAccuracy;
+@property (Td,N,V_signalStrength) signalStrength;
+@property (Td,N,V_rangeBiasEstimate) rangeBiasEstimate;
+@property (Td,N,V_rangeUncertainty) rangeUncertainty;
+@property (TC,N,V_remoteTxAntennaMask) remoteTxAntennaMask;
+@property (T,N,V_worldPosition) worldPosition;
+@property (TB,N,V_requiresBiasCorrection) requiresBiasCorrection;
+@property (T@"UWBSignalFeatures",C,N,V_uwbSignalFeatures) uwbSignalFeatures;
+@property (TC,N,V_nbRxStatus) nbRxStatus;
+@property (TC,N,V_mmsRxStatus) mmsRxStatus;
+@property (Td,N,V_nbRssi) nbRssi;
+@property (TB,N,V_canInteract) canInteract;
+@property (Tf,N,V_boundedRegionRange) boundedRegionRange;
+@property (Tq,N,V_algorithmSource) algorithmSource;
+@property (T@"NSString",C,N,V_debugDisplayInfo) debugDisplayInfo;
+@property (Tf,N,V_horizontalDistance) horizontalDistance;
+@property (Tq,N,V_itemState) itemState;
+@property (T@"NILocation",C,N,V_location) location;
+@property (Tf,N,V_rawRange) rawRange;
+@property (Tq,N,V_vioTrackingState) vioTrackingState;
+@property (TB,N,V_vioMajorRelocalization) vioMajorRelocalization;
+@property (TB,N,V_resetARSession) resetARSession;
+@property (TB,N,V_revokeFindingExperience) revokeFindingExperience;
+
+/* class methods */
++[NINearbyObject supportsSecureCoding];
++[NINearbyObject fauxObjectWithDiscoveryToken:name:deviceIdentifier:];
++[NINearbyObject new];
+
+/* instance methods */
+-[NINearbyObject motionState];
+-[NINearbyObject quaternion];
+-[NINearbyObject descriptionInternal];
+-[NINearbyObject setDeviceIdentifier:];
+-[NINearbyObject setDistance:];
+-[NINearbyObject signalStrength];
+-[NINearbyObject initWithToken:];
+-[NINearbyObject timestamp];
+-[NINearbyObject direction];
+-[NINearbyObject distance];
+-[NINearbyObject setRelationship:];
+-[NINearbyObject name];
+-[NINearbyObject relationship];
+-[NINearbyObject deviceIdentifier];
+-[NINearbyObject setQuaternion:];
+-[NINearbyObject discoveryToken];
+-[NINearbyObject init];
+-[NINearbyObject setLocation:];
+-[NINearbyObject setSignalStrength:];
+-[NINearbyObject copyWithZone:];
+-[NINearbyObject initWithCoder:];
+-[NINearbyObject location];
+-[NINearbyObject setDirection:];
+-[NINearbyObject setItemState:];
+-[NINearbyObject encodeWithCoder:];
+-[NINearbyObject setTimestamp:];
+-[NINearbyObject setMotionState:];
+-[NINearbyObject hash];
+-[NINearbyObject azimuth];
+-[NINearbyObject setName:];
+-[NINearbyObject description];
+-[NINearbyObject itemState];
+-[NINearbyObject isEqual:];
+-[NINearbyObject elevation];
+-[NINearbyObject setAzimuth:];
+-[NINearbyObject horizontalAngle];
+-[NINearbyObject setHorizontalAngle:];
+-[NINearbyObject worldPosition];
+-[NINearbyObject setWorldPosition:];
+-[NINearbyObject deviceIdentifer];
+-[NINearbyObject setCanInteract:];
+-[NINearbyObject algorithmSource];
+-[NINearbyObject setBluetoothAdvertisingAddress:];
+-[NINearbyObject setMmsRxStatus:];
+-[NINearbyObject bluetoothAdvertisingAddress];
+-[NINearbyObject bluetoothPeerIdentifier];
+-[NINearbyObject boundedRegionRange];
+-[NINearbyObject canInteract];
+-[NINearbyObject debugDisplayInfo];
+-[NINearbyObject distanceMeasurementQuality];
+-[NINearbyObject horizontalAngleAccuracy];
+-[NINearbyObject horizontalDistance];
+-[NINearbyObject initWithNearbyObject:];
+-[NINearbyObject mmsRxStatus];
+-[NINearbyObject nbRssi];
+-[NINearbyObject nbRxStatus];
+-[NINearbyObject overrideDirection:];
+-[NINearbyObject overrideDistance:];
+-[NINearbyObject overrideDistanceMeasurementQuality:];
+-[NINearbyObject overrideMotionState:];
+-[NINearbyObject overrideRelationship:];
+-[NINearbyObject overrideSpatialScore:];
+-[NINearbyObject overrideTimestamp:];
+-[NINearbyObject rangeBiasEstimate];
+-[NINearbyObject rangeUncertainty];
+-[NINearbyObject rawRange];
+-[NINearbyObject remoteTxAntennaMask];
+-[NINearbyObject requiresBiasCorrection];
+-[NINearbyObject resetARSession];
+-[NINearbyObject revokeFindingExperience];
+-[NINearbyObject setAlgorithmSource:];
+-[NINearbyObject setBluetoothPeerIdentifier:];
+-[NINearbyObject setBoundedRegionRange:];
+-[NINearbyObject setDebugDisplayInfo:];
+-[NINearbyObject setDiscoveryToken:];
+-[NINearbyObject setDistanceMeasurementQuality:];
+-[NINearbyObject setElevation:];
+-[NINearbyObject setHorizontalAngleAccuracy:];
+-[NINearbyObject setHorizontalDistance:];
+-[NINearbyObject setNbRssi:];
+-[NINearbyObject setNbRxStatus:];
+-[NINearbyObject setRangeBiasEstimate:];
+-[NINearbyObject setRangeUncertainty:];
+-[NINearbyObject setRawRange:];
+-[NINearbyObject setRemoteTxAntennaMask:];
+-[NINearbyObject setRequiresBiasCorrection:];
+-[NINearbyObject setResetARSession:];
+-[NINearbyObject setRevokeFindingExperience:];
+-[NINearbyObject setSpatialScore:];
+-[NINearbyObject setUwbSignalFeatures:];
+-[NINearbyObject setVerticalDirectionEstimate:];
+-[NINearbyObject setVioMajorRelocalization:];
+-[NINearbyObject setVioTrackingState:];
+-[NINearbyObject spatialScore];
+-[NINearbyObject uwbSignalFeatures];
+-[NINearbyObject verticalDirectionEstimate];
+-[NINearbyObject vioMajorRelocalization];
+-[NINearbyObject vioTrackingState];
+
+@end
+
+@interface NINearbyPeerConfiguration : NIConfiguration {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    B _extendedDistanceMeasurementEnabled;
+    B _useCaseCameraAssistanceInClientProcess;
+    B _longRangeEnabled;
+    @"NIDiscoveryToken" _peerDiscoveryToken;
+    q _useCase;
+    q _backgroundMode;
+    @"NSDictionary" _debugParameters;
+}
+
+@property (T@"NIDiscoveryToken",C,N,V_peerDiscoveryToken) peerDiscoveryToken;
+@property (Tq,N,V_useCase) useCase;
+@property (TB,N,V_useCaseCameraAssistanceInClientProcess) useCaseCameraAssistanceInClientProcess;
+@property (TB,N,GisLongRangeEnabled,V_longRangeEnabled) longRangeEnabled;
+@property (Tq,N,V_backgroundMode) backgroundMode;
+@property (T@"NSDictionary",C,V_debugParameters) debugParameters;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (TB,N,GisExtendedDistanceMeasurementEnabled,V_extendedDistanceMeasurementEnabled) extendedDistanceMeasurementEnabled;
+
+/* class methods */
++[NINearbyPeerConfiguration supportsSecureCoding];
++[NINearbyPeerConfiguration new];
++[NINearbyPeerConfiguration createSOSBeaconSearcherConfigWithSessionKey:selfData:peerData:usingCameraAssistance:];
++[NINearbyPeerConfiguration createSOSBeaconSubjectConfigWithSessionKey:selfData:peerData:];
+
+/* instance methods */
+-[NINearbyPeerConfiguration useCase];
+-[NINearbyPeerConfiguration _internalIsExtendedDistanceMeasurementEnabled];
+-[NINearbyPeerConfiguration descriptionInternal];
+-[NINearbyPeerConfiguration _internalIsCameraAssistanceEnabled];
+-[NINearbyPeerConfiguration _internalIsCameraAssistanceInClientProcess];
+-[NINearbyPeerConfiguration _internalIsPowerAssertionRequired];
+-[NINearbyPeerConfiguration isLongRangeEnabled];
+-[NINearbyPeerConfiguration initWithPeerToken:];
+-[NINearbyPeerConfiguration backgroundMode];
+-[NINearbyPeerConfiguration init];
+-[NINearbyPeerConfiguration setUseCase:];
+-[NINearbyPeerConfiguration setBackgroundMode:];
+-[NINearbyPeerConfiguration copyWithZone:];
+-[NINearbyPeerConfiguration initWithCoder:];
+-[NINearbyPeerConfiguration isExtendedDistanceMeasurementEnabled];
+-[NINearbyPeerConfiguration setLongRangeEnabled:];
+-[NINearbyPeerConfiguration useCaseCameraAssistanceInClientProcess];
+-[NINearbyPeerConfiguration debugParameters];
+-[NINearbyPeerConfiguration isCameraAssistanceEnabled];
+-[NINearbyPeerConfiguration encodeWithCoder:];
+-[NINearbyPeerConfiguration setDebugParameters:];
+-[NINearbyPeerConfiguration setUseCaseCameraAssistanceInClientProcess:];
+-[NINearbyPeerConfiguration hash];
+-[NINearbyPeerConfiguration setPeerDiscoveryToken:];
+-[NINearbyPeerConfiguration setExtendedDistanceMeasurementEnabled:];
+-[NINearbyPeerConfiguration setCameraAssistanceEnabled:];
+-[NINearbyPeerConfiguration description];
+-[NINearbyPeerConfiguration peerDiscoveryToken];
+-[NINearbyPeerConfiguration isEqual:];
+
+@end
+
+@interface NIPlatformInfo : NSObject
+
+/* class methods */
++[NIPlatformInfo isInternalBuild];
++[NIPlatformInfo supportsAoA];
++[NIPlatformInfo supportsARKit];
++[NIPlatformInfo supportsSyntheticAperture];
++[NIPlatformInfo supportsNBAMMS];
++[NIPlatformInfo supportsUWB];
++[NIPlatformInfo supportsDLTDoA];
+
+@end
+
+@interface NIRangingAuthConfiguration : NIConfiguration {
+    /* instance variables */
+    B _isResponder;
+    @"NIDiscoveryToken" _peerToken;
+    @"NSData" _macAddress;
+    @"NSData" _secureKey;
+}
+
+@property (TB,R,N,V_isResponder) isResponder;
+@property (T@"NIDiscoveryToken",R,C,N,V_peerToken) peerToken;
+@property (T@"NSData",R,C,N,V_macAddress) macAddress;
+@property (T@"NSData",R,C,N,V_secureKey) secureKey;
+
+/* class methods */
++[NIRangingAuthConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[NIRangingAuthConfiguration descriptionInternal];
+-[NIRangingAuthConfiguration secureKey];
+-[NIRangingAuthConfiguration peerToken];
+-[NIRangingAuthConfiguration macAddress];
+-[NIRangingAuthConfiguration copyWithZone:];
+-[NIRangingAuthConfiguration isResponder];
+-[NIRangingAuthConfiguration initWithCoder:];
+-[NIRangingAuthConfiguration encodeWithCoder:];
+-[NIRangingAuthConfiguration hash];
+-[NIRangingAuthConfiguration description];
+-[NIRangingAuthConfiguration initAsResponder:macAddress:key:];
+-[NIRangingAuthConfiguration isEqual:];
+
+@end
+
+@interface NIRegionPredicate : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    q _devicePresencePreset;
+    B _requiresUserIntent;
+    B _coarseEstimation;
+    f _radius;
+    @"NSString" _name;
+    q _regionSizeCategory;
+    q _preferredUpdateRate;
+}
+
+@property (T@"NSString",R,V_name) name;
+@property (Tq,V_regionSizeCategory) regionSizeCategory;
+@property (Tf,R,V_radius) radius;
+@property (Tq,V_preferredUpdateRate) preferredUpdateRate;
+@property (TB,V_requiresUserIntent) requiresUserIntent;
+@property (TB,V_coarseEstimation) coarseEstimation;
+
+/* class methods */
++[NIRegionPredicate supportsSecureCoding];
++[NIRegionPredicate _isExecuteRegion:];
+
+/* instance methods */
+-[NIRegionPredicate descriptionInternal];
+-[NIRegionPredicate radius];
+-[NIRegionPredicate coarseEstimation];
+-[NIRegionPredicate name];
+-[NIRegionPredicate devicePresencePreset];
+-[NIRegionPredicate shortDescription];
+-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:coarseEstimation:devicePresencePreset:];
+-[NIRegionPredicate setCoarseEstimation:];
+-[NIRegionPredicate requiresUserIntent];
+-[NIRegionPredicate copyWithZone:];
+-[NIRegionPredicate initWithName:radius:];
+-[NIRegionPredicate initWithCoder:];
+-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:devicePresencePreset:];
+-[NIRegionPredicate initWithName:devicePresencePreset:];
+-[NIRegionPredicate setPreferredUpdateRate:];
+-[NIRegionPredicate regionSizeCategory];
+-[NIRegionPredicate encodeWithCoder:];
+-[NIRegionPredicate initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:];
+-[NIRegionPredicate hash];
+-[NIRegionPredicate preferredUpdateRate];
+-[NIRegionPredicate initWithName:radius:preferredUpdateRate:requiresUserIntent:];
+-[NIRegionPredicate initWithName:radius:preferredUpdateRate:requiresUserIntent:devicePresencePreset:];
+-[NIRegionPredicate setDevicePresencePreset:];
+-[NIRegionPredicate description];
+-[NIRegionPredicate setRegionSizeCategory:];
+-[NIRegionPredicate initWithName:radius:preferredUpdateRate:];
+-[NIRegionPredicate setRequiresUserIntent:];
+-[NIRegionPredicate isEqual:];
+
+@end
+
+@interface NIServerConnection : NSObject {
+    /* instance variables */
+    @"NSXPCConnection" _connection;
+    Q _options;
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSObject<OS_os_log>" _log;
+    @"NSUUID" _sessionID;
+    @ _exportedObject;
+}
+
+@property (T@?,C) interruptionHandler;
+@property (T@?,C) invalidationHandler;
+@property (T@"NSUUID",R,V_sessionID) sessionID;
+@property (T@,&,V_exportedObject) exportedObject;
+
+/* class methods */
++[NIServerConnection _internalBuildShouldDenyConnection];
++[NIServerConnection createOneShotConnectionAndResume:];
+
+/* instance methods */
+-[NIServerConnection setInterruptionHandler:];
+-[NIServerConnection synchronousRemoteObjectProxy];
+-[NIServerConnection setInvalidationHandler:];
+-[NIServerConnection resume];
+-[NIServerConnection auditTokenForConnection];
+-[NIServerConnection remoteObjectProxy];
+-[NIServerConnection invalidate];
+-[NIServerConnection exportedObject];
+-[NIServerConnection interruptionHandler];
+-[NIServerConnection sessionID];
+-[NIServerConnection setExportedObject:];
+-[NIServerConnection dealloc];
+-[NIServerConnection invalidationHandler];
+-[NIServerConnection initWithSessionID:queue:exportedObject:options:];
+
+@end
+
+@interface NISession : NSObject <UWBSessionDelegateProxyProtocol, ARInternalSessionObserver> {
+    /* instance variables */
+    @"NSObject<OS_dispatch_queue>" _queue;
+    @"NSUUID" _internalID;
+    @"NIServerConnection" _connection;
+    @"NIExportedObjectForwarder" _exportedObjectForwarder;
+    @"NIConfiguration" _currentConfiguration;
+    @"NSObject<OS_dispatch_semaphore>" _discoveryTokenSemaphore;
+    {vector<UWBSessionInterruptionBookkeeping, std::allocator<UWBSessionInterruptionBookkeeping>>="__begin_"^{UWBSessionInterruptionBookkeeping}"__end_"^{UWBSessionInterruptionBookkeeping}""{?="__cap_"^{UWBSessionInterruptionBookkeeping}}} _interruptions;
+    {atomic<bool>="__a_"{__cxx_atomic_impl<bool, std::__cxx_atomic_base_impl<bool>>="__a_value"AB}} _readyForCallbacks;
+    @"NSObject<OS_os_log>" _log;
+    d _startTime;
+    d _duration;
+    B _updatedNearbyObjects;
+    q _motionState;
+    @"NIDiscoveryToken" _discoveryToken;
+    @"NICarKeyEventNotifier" _carKeyEventNotifier;
+    Q _connectionOptions;
+    @"NIAcwgEventNotifier" _acwgEventNotifier;
+    @"NIDevicePresenceNotifier" _devicePresenceNotifier;
+    @"NIFindingNotifier" _findingNotifier;
+    @"NISystemEventNotifier" _systemEventNotifier;
+    @"NISessionVisionContext" _visionContext;
+    @"NSDate" _lastObjectUpdateLogTime;
+    {NearbyObjectUpdateLogging="totalUpdates"i"totalObjects"i"objectsWithDistance"i"objectsWithHorizontalAngle"i"firstDistance"f"lastDistance"f"minDistance"f"maxDistance"f"firstHorizontalAngleRad"f"lastHorizontalAngleRad"f} _objectUpdateLogging;
+    B _itemLocalizerDidPrewarmRanging;
+    i _internalState;
+    @"<NISessionDelegate>" _delegate;
+    @"NSObject<OS_dispatch_queue>" _delegateQueue;
+    @"NSError" _invalidationError;
+    @"NSDictionary" _activationResponse;
+    @"<NIInternalSessionDelegate>" _internalDelegate;
+}
+
+@property (Tq,R) motionState;
+@property (TB,R,GisPreciseRangingAllowed) preciseRangingAllowed;
+@property (TB,R,GisExtendedDistanceMeasurementAllowed) extendedDistanceMeasurementAllowed;
+@property (TB,R,GisRangingLimitExceeded) rangingLimitExceeded;
+@property (T@"NICarKeyEventNotifier",R) carKeyEventNotifier;
+@property (T@"NIAcwgEventNotifier",R) acwgEventNotifier;
+@property (TB,R,GisRangingLimitExceeded) rangingLimitExceeded;
+@property (T@"NIDevicePresenceNotifier",R) devicePresenceNotifier;
+@property (T@"NIFindingNotifier",R) findingNotifier;
+@property (T@"NISystemEventNotifier",R,N) systemEventNotifier;
+@property (Ti,V_internalState) internalState;
+@property (T@"NSError",&,V_invalidationError) invalidationError;
+@property (T@"NSDictionary",&,V_activationResponse) activationResponse;
+@property (T@"<NIInternalSessionDelegate>",W,V_internalDelegate) internalDelegate;
+@property (T@"<NISessionDelegate>",W,N,V_delegate) delegate;
+@property (T@"NSObject<OS_dispatch_queue>",&,N,V_delegateQueue) delegateQueue;
+@property (T@"NIDiscoveryToken",R,C,N) discoveryToken;
+@property (T@"NIConfiguration",R,C,N) configuration;
+@property (TQ,R) hash;
+@property (T#,R) superclass;
+@property (T@"NSString",R,C) description;
+@property (T@"NSString",?,R,C) debugDescription;
+
+/* class methods */
++[NISession _localDeviceLogger];
++[NISession interactableDiscoveryTokens];
++[NISession generateSOSBeaconSearcherDataMatchingSubjectData:completion:];
++[NISession _queryAndCacheCapabilities];
++[NISession observerSession];
++[NISession cachedPlatformCapabilities];
++[NISession localDevicePrintableState];
++[NISession generateDiscoveryTokenFromBeaconIdentifier:];
++[NISession _supportedPlatform:];
++[NISession internalDeviceCapabilities];
++[NISession generateBluetoothDeviceTokenWithPublicAddress:IRK:];
++[NISession generateFindingDiscoveryTokenWithSharedSecret:];
++[NISession deviceCapabilities];
++[NISession isSupported];
++[NISession setAsyncLocalDeviceInteractableDiscoveryTokens:completion:];
++[NISession generateFindingDiscoveryToken];
++[NISession activelyInteractingDiscoveryTokens];
++[NISession setLocalDeviceDebugParameters:];
++[NISession setLocalDeviceCanInteract:withDiscoveryTokens:];
++[NISession getAsyncInteractableDiscoveryTokens:];
++[NISession getAsyncActivelyInteractingDiscoveryTokens:];
++[NISession setLocalDeviceInteractableDiscoveryTokens:];
++[NISession generateSOSBeaconSubjectDataWithCompletion:];
++[NISession setCachedPlatformCapabilities:];
++[NISession generateFindingDiscoveryTokenWithIdentityResolvingKey:];
+
+/* instance methods */
+-[NISession motionState];
+-[NISession invalidationError];
+-[NISession setDelegateQueue:];
+-[NISession _removeObject:];
+-[NISession processAcwgM3Msg:];
+-[NISession _handlePauseSessionSuccess];
+-[NISession _invalidateInternal];
+-[NISession didGenerateShareableConfigurationData:forObject:];
+-[NISession prefetchAcwgUrsk:];
+-[NISession delegateQueue];
+-[NISession updateResponderDeviceIdentifier:completionHandler:];
+-[NISession _handleRunSessionSuccess];
+-[NISession _logTime];
+-[NISession processAcwgRangingSessionResumeRequestMsg:withResumeTriggerReason:];
+-[NISession _handleARSessionDidChangeState:];
+-[NISession didUpdateNearbyObjects:];
+-[NISession _addObject:];
+-[NISession systemDidUpdateResourceUsageLimitExceeded:forSessionConfigurationTypeWithName:];
+-[NISession _isValidARSession:andConfiguration:];
+-[NISession session:didChangeState:];
+-[NISession didUpdateHomeDeviceUWBRangingAvailability:];
+-[NISession _submitErrorMetric:];
+-[NISession didSuspendAcwgRanging:];
+-[NISession didProcessAcwgM1MsgWithResponse:error:];
+-[NISession _handleActivationSuccess:];
+-[NISession _remoteObject];
+-[NISession _setURSKTTL:];
+-[NISession _addRegionPredicate:];
+-[NISession _handleARSessionInterruptionEnded];
+-[NISession setConfigurationForTesting:];
+-[NISession discoveryToken];
+-[NISession didDiscoverNearbyObject:];
+-[NISession init];
+-[NISession didUpdateDLTDOAMeasurements:];
+-[NISession object:didUpdateRegion:previousRegion:];
+-[NISession _invalidateSessionAndNotifyError:];
+-[NISession _interruptSessionWithInternalReason:cachedInterruption:nearbydReSuspension:];
+-[NISession _initAndConnectToServerWithOptions:];
+-[NISession processVisionInput:];
+-[NISession _setARSessionInternal:];
+-[NISession findingNotifier];
+-[NISession _handleActivationError:];
+-[NISession pause];
+-[NISession _logDurationAndSubmit:];
+-[NISession _processUpdatedLockState:];
+-[NISession uwbSessionInterruptionReasonEnded:timestamp:];
+-[NISession sessionInterruptionEnded:];
+-[NISession setDelegate:];
+-[NISession didUpdateNICoordinates:];
+-[NISession session:didFailWithError:];
+-[NISession setInternalDelegate:];
+-[NISession session:didUpdateFrame:];
+-[NISession _isInternalClient];
+-[NISession processAcwgM1Msg:withSessionTriggerReason:];
+-[NISession processBluetoothEventWithType:btcClockTicks:];
+-[NISession processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:];
+-[NISession _configurationSupportsRetry];
+-[NISession setActivationResponse:];
+-[NISession deleteURSKs];
+-[NISession _removeRegionPredicate:];
+-[NISession _getSessionFailureError];
+-[NISession _handleARSessionWasInterrupted];
+-[NISession _internalRunWithConfiguration:];
+-[NISession systemDidUpdateState:];
+-[NISession _serverConnectionInterrupted];
+-[NISession niVisionInputTrackingStateFromARTRackingState:];
+-[NISession _provideTruthTag:];
+-[NISession relayDCKMessage:];
+-[NISession _handleARSessionDidFailWithError:];
+-[NISession _invalidateInternalARSessionIfNeeded];
+-[NISession configuration];
+-[NISession session:didUpdateExternalAnchors:];
+-[NISession _reinterruptSessionWithCachedInterruption];
+-[NISession _pauseInternalARSessionIfNeeded];
+-[NISession _configureAndRunInternalARSession];
+-[NISession devicePresenceNotifier];
+-[NISession getInternalIdentifier];
+-[NISession activationResponse];
+-[NISession sessionShouldAttemptRelocalization:completion:];
+-[NISession isPreciseRangingAllowed];
+-[NISession invalidate];
+-[NISession didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error:];
+-[NISession didUpdateAlgorithmState:forObject:];
+-[NISession setInvalidationError:];
+-[NISession _shouldReConnectToDaemonAfterCrash];
+-[NISession carKeyEventNotifier];
+-[NISession didPrefetchAcwgUrsk:error:];
+-[NISession didUpdateState:forItem:];
+-[NISession hash];
+-[NISession lightEstimateFromARLightEstimate:];
+-[NISession worldTransformForObject:];
+-[NISession getInternalLogObject];
+-[NISession requestAcwgRangingSessionSuspend:withSuspendTriggerReason:];
+-[NISession _serverConnectionInvalidated];
+-[NISession _handlePauseSessionError:];
+-[NISession _performBlockOnDelegateQueue:ifRespondsToSelector:evenIfNotRunning:];
+-[NISession processDCKMessage:responseCallback:];
+-[NISession runWithConfiguration:];
+-[NISession didReceiveRangingAuthRecommendation:forObject:];
+-[NISession didStartAcwgRanging:];
+-[NISession isExtendedDistanceMeasurementAllowed];
+-[NISession systemEventNotifier];
+-[NISession suspendAcwgRanging:withSuspendTriggerReason:];
+-[NISession didUpdateMotionState:];
+-[NISession acwgEventNotifier];
+-[NISession _tryToRecoverFromFailure:];
+-[NISession isRangingLimitExceeded];
+-[NISession setARSession:];
+-[NISession _handleARSessionDidUpdateFrame:];
+-[NISession getInternalConnectionQueue];
+-[NISession _sendRemoteDevice:changedState:];
+-[NISession uwbSessionInterruptedWithReason:timestamp:];
+-[NISession didReceiveAopSFZoneUpdate:];
+-[NISession description];
+-[NISession _performBlockOnDelegateQueue:ifRespondsToSelector:];
+-[NISession didProcessAcwgM3MsgWithResponse:error:];
+-[NISession sessionWasInterrupted:];
+-[NISession didUpdateLocalDiscoveryToken:];
+-[NISession uwbSessionDidFailWithError:];
+-[NISession delegate];
+-[NISession _osLogNearbyObjectUpdate:];
+-[NISession _shouldReRunSessionAfterSessionInterruptionEnded];
+-[NISession internalDelegate];
+-[NISession dealloc];
+-[NISession processBluetoothEventWithType:btcClockTicks:eventCounter:];
+-[NISession internalState];
+-[NISession _notifyDidInvalidateWithError:];
+-[NISession _handleARSession:willRunWithConfiguration:];
+-[NISession session:willRunWithConfiguration:];
+-[NISession didRemoveNearbyObjects:withReason:];
+-[NISession didUpdateHealthStatus:];
+-[NISession uwbSessionDidInvalidateWithError:];
+-[NISession _synchronousRemoteObject];
+-[NISession _setDebugURSK:transactionIdentifier:];
+-[NISession _verifyError:];
+-[NISession isEqual:];
+-[NISession setInternalState:];
+-[NISession _handleRunSessionError:];
+
+@end
+
+@interface NISessionVisionContext : NSObject {
+    /* instance variables */
+    B _cameraAssistanceEnabled;
+    B _arSessionInternal;
+    B _arSessionInClientProcess;
+    @"ARSession" _arSession;
+    Q _arSessionState;
+    @"ARFrame" _latestARFrame;
+}
+
+@property (T@"ARSession",&,N,V_arSession) arSession;
+@property (TQ,N,V_arSessionState) arSessionState;
+@property (TB,N,GisCameraAssistanceEnabled,V_cameraAssistanceEnabled) cameraAssistanceEnabled;
+@property (TB,N,GisARSessionInternal,V_arSessionInternal) arSessionInternal;
+@property (TB,N,GisARSessionInClientProcess,V_arSessionInClientProcess) arSessionInClientProcess;
+@property (T@"ARFrame",C,N,V_latestARFrame) latestARFrame;
+
+/* instance methods */
+-[NISessionVisionContext setArSessionInClientProcess:];
+-[NISessionVisionContext setArSessionState:];
+-[NISessionVisionContext init];
+-[NISessionVisionContext latestARFrame];
+-[NISessionVisionContext setArSession:];
+-[NISessionVisionContext arSession];
+-[NISessionVisionContext setArSessionInternal:];
+-[NISessionVisionContext isCameraAssistanceEnabled];
+-[NISessionVisionContext isARSessionInternal];
+-[NISessionVisionContext setCameraAssistanceEnabled:];
+-[NISessionVisionContext setLatestARFrame:];
+-[NISessionVisionContext isARSessionInClientProcess];
+-[NISessionVisionContext arSessionState];
+
+@end
+
+@interface NISpatialBrowsingConfiguration : NIConfiguration {
+    /* instance variables */
+    B _responder;
+    q _updatesPolicy;
+    @"NSString" _deviceIdentifier;
+    d _maxNearbyObjectAge;
+}
+
+@property (Tq,V_updatesPolicy) updatesPolicy;
+@property (TB,GisResponder,V_responder) responder;
+@property (T@"NSString",C,V_deviceIdentifier) deviceIdentifier;
+@property (Td,V_maxNearbyObjectAge) maxNearbyObjectAge;
+
+/* class methods */
++[NISpatialBrowsingConfiguration supportsSecureCoding];
++[NISpatialBrowsingConfiguration new];
++[NISpatialBrowsingConfiguration responderConfigurationWithIdentifier:];
+
+/* instance methods */
+-[NISpatialBrowsingConfiguration descriptionInternal];
+-[NISpatialBrowsingConfiguration setDeviceIdentifier:];
+-[NISpatialBrowsingConfiguration maxNearbyObjectAge];
+-[NISpatialBrowsingConfiguration deviceIdentifier];
+-[NISpatialBrowsingConfiguration setUpdatesPolicy:];
+-[NISpatialBrowsingConfiguration init];
+-[NISpatialBrowsingConfiguration copyWithZone:];
+-[NISpatialBrowsingConfiguration isResponder];
+-[NISpatialBrowsingConfiguration initWithCoder:];
+-[NISpatialBrowsingConfiguration setResponder:];
+-[NISpatialBrowsingConfiguration setMaxNearbyObjectAge:];
+-[NISpatialBrowsingConfiguration encodeWithCoder:];
+-[NISpatialBrowsingConfiguration hash];
+-[NISpatialBrowsingConfiguration description];
+-[NISpatialBrowsingConfiguration updatesPolicy];
+-[NISpatialBrowsingConfiguration isEqual:];
+
+@end
+
+@interface NISystemConfiguration : NIConfiguration {
+    /* instance variables */
+    B _prewarmUWB;
+    B _prewarmSecureElementChannel;
+}
+
+@property (TB,N,V_prewarmUWB) prewarmUWB;
+@property (TB,N,V_prewarmSecureElementChannel) prewarmSecureElementChannel;
+
+/* class methods */
++[NISystemConfiguration supportsSecureCoding];
++[NISystemConfiguration new];
+
+/* instance methods */
+-[NISystemConfiguration descriptionInternal];
+-[NISystemConfiguration _internalIsMemoryAssertionRequired];
+-[NISystemConfiguration init];
+-[NISystemConfiguration copyWithZone:];
+-[NISystemConfiguration initWithCoder:];
+-[NISystemConfiguration encodeWithCoder:];
+-[NISystemConfiguration hash];
+-[NISystemConfiguration description];
+-[NISystemConfiguration isEqual:];
+-[NISystemConfiguration setPrewarmSecureElementChannel:];
+-[NISystemConfiguration prewarmSecureElementChannel];
+-[NISystemConfiguration prewarmUWB];
+-[NISystemConfiguration setPrewarmUWB:];
+
+@end
+
+@interface NISystemEventNotifier : NSObject {
+    /* instance variables */
+    @"NISession" parentSession;
+}
+
+/* instance methods */
+-[NISystemEventNotifier _notifyResourceUsageLimitExceeded:forSessionConfigurationType:];
+-[NISystemEventNotifier initWithParentSession:];
+-[NISystemEventNotifier notifyPassiveAccessIntent:];
+
+@end
+
+@interface NISystemState : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    Q _uwbPreciseDistanceAvailability;
+    Q _uwbExtendedDistanceAvailability;
+}
+
+@property (TQ,N,V_uwbPreciseDistanceAvailability) uwbPreciseDistanceAvailability;
+@property (TQ,N,V_uwbExtendedDistanceAvailability) uwbExtendedDistanceAvailability;
+
+/* class methods */
++[NISystemState supportsSecureCoding];
+
+/* instance methods */
+-[NISystemState descriptionInternal];
+-[NISystemState init];
+-[NISystemState copyWithZone:];
+-[NISystemState initWithCoder:];
+-[NISystemState encodeWithCoder:];
+-[NISystemState hash];
+-[NISystemState description];
+-[NISystemState isEqual:];
+-[NISystemState uwbExtendedDistanceAvailability];
+-[NISystemState initWithUWBPreciseDistanceAvailability:uwbExtendedDistanceAvailability:];
+-[NISystemState setUwbExtendedDistanceAvailability:];
+-[NISystemState setUwbPreciseDistanceAvailability:];
+-[NISystemState uwbPreciseDistanceAvailability];
+
+@end
+
+@interface NIVisionInput : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    B _majorRelocalization;
+    B _minorRelocalization;
+    d _timestamp;
+    q _trackingState;
+    d _lightEstimate;
+    {?="columns"[4]} _devicePose;
+}
+
+@property (Td,R,V_timestamp) timestamp;
+@property (T{?=[4]},R,V_devicePose) devicePose;
+@property (Tq,R,V_trackingState) trackingState;
+@property (Td,R,V_lightEstimate) lightEstimate;
+@property (TB,R,V_majorRelocalization) majorRelocalization;
+@property (TB,R,V_minorRelocalization) minorRelocalization;
+
+/* class methods */
++[NIVisionInput supportsSecureCoding];
+
+/* instance methods */
+-[NIVisionInput timestamp];
+-[NIVisionInput copyWithZone:];
+-[NIVisionInput initWithCoder:];
+-[NIVisionInput encodeWithCoder:];
+-[NIVisionInput hash];
+-[NIVisionInput isEqual:];
+-[NIVisionInput trackingState];
+-[NIVisionInput devicePose];
+-[NIVisionInput initWithTimestamp:devicePose:trackingState:lightEstimate:majorRelocalization:minorRelocalization:];
+-[NIVisionInput lightEstimate];
+-[NIVisionInput majorRelocalization];
+-[NIVisionInput minorRelocalization];
+-[NIVisionInput overrideTimestamp:];
+
+@end
+
+@interface UWBSignalFeatures : NSObject <NSCopying, NSSecureCoding> {
+    /* instance variables */
+    @"BiasEstimatorFeatures" _inputFeatures;
+    @"BiasEstimatorOutputs" _outputs;
+}
+
+@property (T@"BiasEstimatorFeatures",C,N,V_inputFeatures) inputFeatures;
+@property (T@"BiasEstimatorOutputs",C,N,V_outputs) outputs;
+
+/* class methods */
++[UWBSignalFeatures supportsSecureCoding];
+
+/* instance methods */
+-[UWBSignalFeatures outputs];
+-[UWBSignalFeatures copyWithZone:];
+-[UWBSignalFeatures initWithCoder:];
+-[UWBSignalFeatures encodeWithCoder:];
+-[UWBSignalFeatures hash];
+-[UWBSignalFeatures description];
+-[UWBSignalFeatures isEqual:];
+-[UWBSignalFeatures inputFeatures];
+-[UWBSignalFeatures setOutputs:];
+-[UWBSignalFeatures initWithUWBSignalFeatures:];
+-[UWBSignalFeatures orderedBiasEstimatorFeatutes];
+-[UWBSignalFeatures setInputFeatures:];
+
+@end
+
+@interface _NIWiFiRangingTestConfiguration : NIConfiguration {
+    /* instance variables */
+    @"NIDiscoveryToken" _peerDiscoveryToken;
+    @"NSDictionary" _parameters;
+    @"NSArray" _monitoredRegions;
+}
+
+@property (T@"NIDiscoveryToken",R,C,N,V_peerDiscoveryToken) peerDiscoveryToken;
+@property (T@"NSDictionary",R,N,V_parameters) parameters;
+@property (T@"NSArray",C,V_monitoredRegions) monitoredRegions;
+
+/* class methods */
++[_NIWiFiRangingTestConfiguration supportsSecureCoding];
+
+/* instance methods */
+-[_NIWiFiRangingTestConfiguration descriptionInternal];
+-[_NIWiFiRangingTestConfiguration setMonitoredRegions:];
+-[_NIWiFiRangingTestConfiguration copyWithZone:];
+-[_NIWiFiRangingTestConfiguration parameters];
+-[_NIWiFiRangingTestConfiguration initWithCoder:];
+-[_NIWiFiRangingTestConfiguration initWithDiscoveryToken:wifiRangingParameters:regions:];
+-[_NIWiFiRangingTestConfiguration encodeWithCoder:];
+-[_NIWiFiRangingTestConfiguration monitoredRegions];
+-[_NIWiFiRangingTestConfiguration hash];
+-[_NIWiFiRangingTestConfiguration description];
+-[_NIWiFiRangingTestConfiguration peerDiscoveryToken];
+-[_NIWiFiRangingTestConfiguration isEqual:];
+
+@end
+
+@interface NSCoder (NearbyInteraction)
+
+/* instance methods */
+-[NSCoder  decodeDoubleVector3ForKey:];
+-[NSCoder  decodeMatrix4x4ForKey:];
+-[NSCoder  decodeQuatForKey:];
+-[NSCoder  decodeVector3ForKey:];
+-[NSCoder  encodeDoubleVector3:forKey:];
+-[NSCoder  encodeMatrix4x4:forKey:];
+-[NSCoder  encodeQuat:forKey:];
+-[NSCoder  encodeVector3:forKey:];
+
+@end
+
+
+@protocol refs
+0x001e737d018 => 0x001eb563bb8: ARInternalSessionObserver
+0x001e737d020 => 0x001eb563c70: NIDeviceCapability
+0x001e737d028 => 0x001eb563cd0: NIInternalDeviceCapability
+0x001e737edc8 => 0x001eca18908: UWBSessionServerProtocol
+0x001e737edd0 => 0x001eca18788: UWBSessionDelegateProxyProtocol
+0x001e737cfe8 => 0x001eb563950: NSCoding
+0x001e737cff0 => 0x001eb5639b0: NSSecureCoding
+0x001e737cff8 => 0x001eb563a38: NSObject
+0x001e737d008 => 0x001eb563af8: ARSessionObserver
+0x001e737d010 => 0x001eb563b58: ARSessionDelegate
+0x001e737d030 => 0x001eb563d38: UWBSessionServerProtocol
+0x001e737cfe0 => 0x001eb5638f0: NSCopying
+0x001e737d000 => 0x001eb563a98: UWBSessionDelegateProxyProtocol
+
+@class refs
+
+@super refs
+0x001e737eeb8 => 0x001ed354a60: NINearbyObject
+0x001e737eec8 => 0x001ed3540b0: NIDLTDOAConfiguration
+0x001e737edd8 => 0x001ed354308: NIBluetoothHostTimeSyncResponse
+0x001e737ee08 => 0x001ed3540d8: NIAcwgSFZoneUpdate
+0x001e737ee28 => 0x001ee055de0: NICarKeyEventNotifier
+0x001e737ee30 => 0x001ee055e30: NIAcwgEventNotifier
+0x001e737eec0 => 0x001ed3546f0: NIVisionInput
+0x001e737eed0 => 0x001ed3547b8: NIBluetoothSample
+0x001e737ef30 => 0x001ee0560b0: NISystemConfiguration
+0x001e737ef48 => 0x001ed354718: NIRangingAuthConfiguration
+0x001e737edf0 => 0x001ed354380: NIAcwgM3Msg
+0x001e737edf8 => 0x001ed354358: NIAcwgM4Msg
+0x001e737ee00 => 0x001ed354330: NIAcwgRangingSessionResumeResponseMsg
+0x001e737ee40 => 0x001ee055ed0: NIFindingNotifier
+0x001e737eee8 => 0x001ed354a88: NIHomeDeviceConfiguration
+0x001e737ef10 => 0x001ed354560: NILocation
+0x001e737ef38 => 0x001ed3542b8: NISystemState
+0x001e737ef40 => 0x001ed354038: NIHomePassiveSensingConfiguration
+0x001e737ede0 => 0x001ed3543d0: NIAcwgM1Msg
+0x001e737ee18 => 0x001ed3549c0: NISession
+0x001e737ee20 => 0x001ee055d90: NIAlgorithmConvergence
+0x001e737ee50 => 0x001ee055f70: BiasEstimatorFeatures
+0x001e737ef08 => 0x001ed354060: NIDLTDOAMeasurement
+0x001e737ef20 => 0x001ee056060: NISpatialBrowsingConfiguration
+0x001e737ef50 => 0x001ed354830: NIAlgorithmConvergenceState
+0x001e737ee10 => 0x001ed354470: NISessionVisionContext
+0x001e737eea0 => 0x001ed354768: NINearbyAccessoryConfiguration
+0x001e737eee0 => 0x001ed354498: NIExportedObjectForwarder
+0x001e737ee48 => 0x001ee055f20: NISystemEventNotifier
+0x001e737ee70 => 0x001ed3545b0: NIFindingConfiguration
+0x001e737eef0 => 0x001ed354b00: NICarKeyConfiguration
+0x001e737ef00 => 0x001ed354088: NIDLTDOACoordinatesUpdate
+0x001e737ee98 => 0x001ed354a38: NINearbyPeerConfiguration
+0x001e737ee38 => 0x001ee055e80: NIDevicePresenceNotifier
+0x001e737ee58 => 0x001ee055fe8: BiasEstimatorOutputs
+0x001e737ee60 => 0x001ed353f20: UWBSignalFeatures
+0x001e737ee68 => 0x001ee055f98: Complex
+0x001e737ee78 => 0x001ed3543f8: NIAcwgConfiguration
+0x001e737ee80 => 0x001ed354128: NIItemLocalizerConfiguration
+0x001e737ee90 => 0x001ed354ad8: NIConfiguration
+0x001e737ee88 => 0x001ed354ab0: NIDiscoveryToken
+0x001e737eea8 => 0x001ed354998: _NIWiFiRangingTestConfiguration
+0x001e737eed8 => 0x001ed3549e8: NIServerConnection
+0x001e737eef8 => 0x001ed3544c0: NIDeviceCapabilities
+0x001e737ef18 => 0x001ed354588: NIHeading
+0x001e737ef28 => 0x001ed354a10: NIRegionPredicate
+0x001e737ede8 => 0x001ed3543a8: NIAcwgM2Msg
+0x001e737eeb0 => 0x001ed354790: NIDevicePresenceConfiguration
+
+@selectors refs
+0x001e737e820 => 0x001fbdef7d3: hopKey
+0x001e737eb78 => 0x001fad2ed68: methodSignatureForSelector:
+0x001e737d0e8 => 0x001fa5504e8: didUpdateDLTDOAMeasurements:
+0x001e737d148 => 0x001fafeb7e8: _NIDevicePresenceMonitoringOptionToString:
+0x001e737d438 => 0x001fb1cf894: arrayWithObjects:count:
+0x001e737d780 => 0x001fbdef747: generateDiscoveryToken
+0x001e737dc88 => 0x001fb1d80a1: numberWithFloat:
+0x001e737dd88 => 0x001fb0bad68: processBluetoothEventWithType:btcClockTicks:eventCounter:
+0x001e737e1c0 => 0x001fa422d68: setObject:forKeyedSubscript:
+0x001e737e488 => 0x001fbdeefc9: uwbExtendedDistanceAvailability
+0x001e737d188 => 0x001faa074e8: _handleARSessionDidFailWithError:
+0x001e737d278 => 0x001faa9aae8: _pauseInternalARSessionIfNeeded
+0x001e737dcd0 => 0x001fa84f310: objectInRawTokenOPACKDictForKey:
+0x001e737df40 => 0x001fbdf0c99: session:didUpdateAlgorithmConvergence:forObject:
+0x001e737e0e0 => 0x001fbdf1036: setFirstPathIndexPacket1:
+0x001e737e270 => 0x001fbdf13f1: setSpecifiedToken:
+0x001e737e688 => 0x001fafcc531: setLocalDeviceInteractableDiscoveryTokens:
+0x001e737df68 => 0x001fbdf0d6c: session:didUpdateLocalMotionState:
+0x001e737e400 => 0x001fbdf166e: toaNoiseRms
+0x001e737e6b8 => 0x001fa9f1bb0: generateBluetoothDeviceTokenWithPublicAddress:IRK:
+0x001e737eb70 => 0x001fafdc868: forwardInvocation:
+0x001e737d280 => 0x001faf2eb01: _performBlockOnDelegateQueue:ifRespondsToSelector:
+0x001e737da40 => 0x001fb1d5ff5: interfaceWithProtocol:
+0x001e737ddf8 => 0x001fbdf08b5: rawRange
+0x001e737e350 => 0x001fb1dd11d: stringWithUTF8String:
+0x001e737eb18 => 0x001fbdf1347: setRevokeFindingExperience:
+0x001e737d940 => 0x001fbdefb85: initWithRealPart:imagPart:
+0x001e737d768 => 0x001fbdef70f: firstPathIndexPacket1
+0x001e737d790 => 0x001fab37804: generateFindingDiscoveryTokenWithSharedSecret:
+0x001e737df00 => 0x001fbdf0b26: session:didProcessAcwgM3MsgWithResponse:error:
+0x001e737e5b8 => 0x001fa3f0904: didUpdateHomeDeviceUWBRangingAvailability:
+0x001e737ecb0 => 0x001fb194928: initAsResponder:macAddress:key:
+0x001e737d210 => 0x001fa58f72b: _interruptSessionWithInternalReason:cachedInterruption:nearbydReSuspension:
+0x001e737d220 => 0x001faa0df0a: _invalidateInternalARSessionIfNeeded
+0x001e737db30 => 0x001fa680ffb: isResponder
+0x001e737ddc0 => 0x001fa65b331: processVisionInput:
+0x001e737dce8 => 0x001fa1e493a: outputs
+0x001e737ec88 => 0x001fa75b377: initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:devicePresencePreset:
+0x001e737ed00 => 0x001fb1c514c: self
+0x001e737d040 => 0x001fa5280e8: init
+0x001e737d998 => 0x001fbdefeb6: initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:
+0x001e737ddb0 => 0x001fa405968: processName
+0x001e737e288 => 0x001fab34768: setTimestamp:
+0x001e737e3d8 => 0x001fbdf164b: tatInitiator
+0x001e737e3f0 => 0x001fa52b868: timeIntervalSinceReferenceDate
+0x001e737d8b8 => 0x001fad0033e: initWithExportedObject:
+0x001e737ed30 => 0x001fa51d468: isMemberOfClass:
+0x001e737e4d0 => 0x001fbdf1748: vioMajorRelocalization
+0x001e737d888 => 0x001fa6e0468: initWithConfiguration:
+0x001e737e210 => 0x001fb04aa68: setRegionSizeCategory:
+0x001e737e568 => 0x001fa255efc: _removeObject:
+0x001e737e6f0 => 0x001fa6afd46: deserialize:
+0x001e737d328 => 0x001fabb1ae8: _shouldReConnectToDaemonAfterCrash
+0x001e737de98 => 0x001fbdf094c: rttInitiator
+0x001e737e2b8 => 0x001fa54f768: setUseCase:
+0x001e737ed38 => 0x001fa3cb1e8: conformsToProtocol:
+0x001e737d3e0 => 0x001fbdef410: antennaMask
+0x001e737d518 => 0x001fbdef52f: convergence
+0x001e737d6b0 => 0x001fa2350e8: doubleValue
+0x001e737d7e8 => 0x001fb1d3cf4: handleFailureInMethod:object:file:lineNumber:description:
+0x001e737e128 => 0x001fbdf113e: setIsObserver:
+0x001e737e250 => 0x001fbdf1391: setRxAntennaPacket1:
+0x001e737e310 => 0x001fa710768: speed
+0x001e737e800 => 0x001fbdf09d5: selectedHoppingConfigBitmask
+0x001e737db98 => 0x001fbdf038c: localizedBundleWithBundle:
+0x001e737d708 => 0x001fbdef677: encodeMatrix4x4:forKey:
+0x001e737de40 => 0x001fae52568: remoteObjectProxyWithErrorHandler:
+0x001e737de68 => 0x001fbdf0925: resetARSession
+0x001e737d340 => 0x001fa96f550: _supportedPlatform:
+0x001e737d730 => 0x001fb16c12e: errorWithDomain:code:userInfo:
+0x001e737ed10 => 0x001fb1c50f5: performSelector:withObject:
+0x001e737d7a8 => 0x001fbdef78e: getActivelyInteractingDiscoveryTokens:
+0x001e737d7f8 => 0x001fa420ae8: headingAccuracy
+0x001e737e4c0 => 0x001fa346be8: verticalAccuracy
+0x001e737e5d0 => 0x001fadb03a7: didStartAcwgRanging:
+0x001e737e9c0 => 0x001fa6e4d24: initWithDiscoveryToken:wifiRangingParameters:regions:
+0x001e737dd68 => 0x001fbdf07f5: prewarmUWB
+0x001e737d3f0 => 0x001fa96a868: appendData:
+0x001e737d6d0 => 0x001fa1de7e8: encodeBool:forKey:
+0x001e737e2c0 => 0x001fab3e530: setUseCaseCameraAssistanceInClientProcess:
+0x001e737d1f8 => 0x001fa209101: _internalIsCameraAssistanceEnabled
+0x001e737d200 => 0x001fa221a04: _internalIsCameraAssistanceInClientProcess
+0x001e737df60 => 0x001fbdf0d39: session:didUpdateHomeDeviceUWBRangingAvailability:
+0x001e737e318 => 0x001fa205709: speedAccuracy
+0x001e737eb00 => 0x001fbdf14fb: setVioTrackingState:
+0x001e737d4c8 => 0x001fbdef519: cirPacket1
+0x001e737e540 => 0x001fa8f1709: deleteURSKs
+0x001e737e7b0 => 0x001fbdf15a0: supportedSyncCodeIndexBitmask
+0x001e737d2d8 => 0x001fa45d319: _remoteObject
+0x001e737e190 => 0x001fad1cf42: setMinimumPreferredUpdatedRate:
+0x001e737e6b0 => 0x001fb0c8b68: generateFindingDiscoveryTokenWithIdentityResolvingKey:
+0x001e737d130 => 0x001fa2186e8: UTF8String
+0x001e737e778 => 0x001fbdef50a: channelBitmask
+0x001e737ea28 => 0x001fb656740: setHorizontalAngle:
+0x001e737d560 => 0x001fa555f22: courseAccuracy
+0x001e737d688 => 0x001fa4b593c: discoveryToken
+0x001e737dc30 => 0x001fa26c015: monitoringOption
+0x001e737e450 => 0x001fa2237e8: unsignedCharValue
+0x001e737d2a0 => 0x001fbdef375: _processFindingEvent:reply:
+0x001e737d600 => 0x001facaf268: decodeObjectOfClass:forKey:
+0x001e737de38 => 0x001faa3f6e8: remoteObjectProxy
+0x001e737e650 => 0x001fb07d5a5: generateSOSBeaconSubjectDataWithCompletion:
+0x001e737ec80 => 0x001fab91510: initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:
+0x001e737ed98 => 0x001fa5af3be: session:didChangeGeoTrackingStatus:
+0x001e737e3e0 => 0x001fbdf1658: tatResponder
+0x001e737e898 => 0x001fbdf063e: notifyVehicleTerminatedRangingSession
+0x001e737d748 => 0x001fba487f8: fallbackBundle
+0x001e737db58 => 0x001fa9a4368: latitude
+0x001e737e298 => 0x001fbdf1426: setToaPpwinPeak:
+0x001e737e2d8 => 0x001fabd5268: setWithArray:
+0x001e737e300 => 0x001fbdf1522: soiRssiDbm
+0x001e737d3b0 => 0x001fbdef096: algorithmSource
+0x001e737e038 => 0x001fa7dc710: setByAddingObjectsFromSet:
+0x001e737e150 => 0x001fbdf1171: setLeadingEdgePacket2:
+0x001e737d6e0 => 0x001fbdef65b: encodeDoubleVector3:forKey:
+0x001e737dd90 => 0x001fa81aee8: processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:
+0x001e737d0c0 => 0x001fad70177: didReceiveRangingAuthRecommendation:forObject:
+0x001e737d760 => 0x001fa1c5e76: firstObject
+0x001e737d9e8 => 0x001fbdeef21: initialWorldMap
+0x001e737dba8 => 0x001fa75fc68: location
+0x001e737e040 => 0x001fb08ad73: setCachedPlatformCapabilities:
+0x001e737e278 => 0x001fbdf1404: setTatInitiator:
+0x001e737ebf8 => 0x001fb0dd068: setLatitude:
+0x001e737e198 => 0x001fa3a1fe8: setMonitoredRegions:
+0x001e737ecc8 => 0x001fbdef14e: setConvergence:
+0x001e737d0a8 => 0x001faf5e503: didProcessAcwgM3MsgWithResponse:error:
+0x001e737dc50 => 0x001fbdf0413: nbRxStatus
+0x001e737def8 => 0x001fbdf0af7: session:didProcessAcwgM1MsgWithResponse:error:
+0x001e737e240 => 0x001fbdf136f: setRttInitiator:
+0x001e737db70 => 0x001fa4b3de8: length
+0x001e737dd10 => 0x001fa4b12e8: pause:
+0x001e737e1e8 => 0x001fbdef18e: setPrewarmSecureElementChannel:
+0x001e737d6d8 => 0x001fa200788: encodeDouble:forKey:
+0x001e737ed08 => 0x001fb1c50e4: performSelector:
+0x001e737d0d0 => 0x001fa960b36: systemDidUpdateState:
+0x001e737d128 => 0x001fbdef070: NISystemResourceAvailabilityToString:
+0x001e737d268 => 0x001fb0ff707: _notifyDidInvalidateWithError:
+0x001e737daa8 => 0x001fa301be8: isEqualToArray:
+0x001e737de78 => 0x001fa900568: resume
+0x001e737ea98 => 0x001fbdf1301: setRemoteTxAntennaMask:
+0x001e737eb58 => 0x001fa9057c8: auditTokenForConnection
+0x001e737ebf0 => 0x001fb1f09c1: setCoordinates:
+0x001e737d698 => 0x001fa2b95e8: distance
+0x001e737e138 => 0x001fbdf114d: setItemUUID:
+0x001e737e218 => 0x001fa26c4e8: setRemoteObjectInterface:
+0x001e737e3c0 => 0x001fa7a6c68: synchronousRemoteObjectProxyWithErrorHandler:
+0x001e737eb60 => 0x001fae75be8: sessionID
+0x001e737d848 => 0x001fbdef80a: initWithAlgorithmConvergenceState:
+0x001e737ddd8 => 0x001fbdf0879: queryDeviceCapabilities:
+0x001e737e000 => 0x001fbdeef79: setAntennaMask:
+0x001e737e768 => 0x001fbdf15be: supportedUwbConfigIds
+0x001e737eab8 => 0x001fbdf126e: setNbRxStatus:
+0x001e737d338 => 0x001fa3f6d06: _submitErrorMetric:
+0x001e737e720 => 0x001fbdef1de: uwbDeviceTimeUs
+0x001e737d108 => 0x001fbdeeea9: NINearbyObjectUpdateRateToString:
+0x001e737d500 => 0x001fabb124f: configurationType
+0x001e737dbd0 => 0x001fb037d68: longitude
+0x001e737e110 => 0x001fab6b2e8: setInvalidationError:
+0x001e737e728 => 0x001fbdf16ce: uwbDeviceTimeUncertainty
+0x001e737ed28 => 0x001fa81f5e8: isKindOfClass:
+0x001e737d728 => 0x001fa34c1e8: enumerateObjectsUsingBlock:
+0x001e737dcb0 => 0x001fb1d8177: numberWithUnsignedShort:
+0x001e737e090 => 0x001fa4950fb: setDebugOptions:
+0x001e737e628 => 0x001fa30e5e8: delegateQueue
+0x001e737eb20 => 0x001fa62c868: fauxObjectWithDiscoveryToken:name:deviceIdentifier:
+0x001e737d0b0 => 0x001fab3eb04: didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error:
+0x001e737d110 => 0x001fbdef032: NINearbyPeerUseCaseToString:
+0x001e737dde8 => 0x001fbdf0892: rangeBiasEstimate
+0x001e737d0f0 => 0x001fbdeefe9: AntennaDiversityOverrideToString:
+0x001e737d7b0 => 0x001fa4dc4e8: getBytes:length:
+0x001e737e088 => 0x001fbdf0f88: setCorrectedRange:
+0x001e737e340 => 0x001fb1dd0d0: stringWithFormat:
+0x001e737e708 => 0x001faf54d2a: createSOSBeaconSearcherConfigWithSessionKey:selfData:peerData:usingCameraAssistance:
+0x001e737ea20 => 0x001fbdf14c2: setVerticalDirectionEstimate:
+0x001e737eb40 => 0x001fa7a299d: setPresenceConfigData:
+0x001e737da60 => 0x001fa1e65a5: invalidationError
+0x001e737e780 => 0x001fbdf1706: uwbSessionId
+0x001e737eae0 => 0x001fbdf0ed0: setAlgorithmSource:
+0x001e737ec68 => 0x001fbdf123b: setMagneticHeading:
+0x001e737d070 => 0x001fb1434f6: uwbSessionDidInvalidateWithError:
+0x001e737d7d0 => 0x001fac74304: getInternalLogObject
+0x001e737dd48 => 0x001fac79af6: preferredUpdateRate
+0x001e737de00 => 0x001fa98b5c2: rawToken
+0x001e737e358 => 0x001faf07ce8: subdataWithRange:
+0x001e737e570 => 0x001fa466ef7: _addRegionPredicate:
+0x001e737e970 => 0x001fa20272e: setSupportsCameraAssistance:
+0x001e737e4f8 => 0x001fac646e8: worldTransformForObject:
+0x001e737e9f8 => 0x001fbdf071b: overrideMotionState:
+0x001e737ea48 => 0x001fa2dd4e8: setRelationship:
+0x001e737d1e0 => 0x001fa619ae8: _initAndConnectToServerWithOptions:
+0x001e737d2e8 => 0x001fa24bc68: _removeObserver:
+0x001e737d6c0 => 0x001fb778947: ellipsoidalAltitude
+0x001e737db08 => 0x001fa1cf652: isInternalBuild
+0x001e737d930 => 0x001fbdefac5: initWithParentSession:
+0x001e737d3b8 => 0x001fa46970c: allocWithZone:
+0x001e737d420 => 0x001fafffaa4: arSessionState
+0x001e737e008 => 0x001fa67db48: setArSession:
+0x001e737e580 => 0x001fab35ae8: isPreciseRangingAllowed
+0x001e737e858 => 0x001fbdef56c: currentSFInBubble
+0x001e737d5d8 => 0x001fa21bf68: decodeInt64ForKey:
+0x001e737dce0 => 0x001fa3c07e8: outerBoundary
+0x001e737dfb8 => 0x001faff2508: sessionKey
+0x001e737e0d0 => 0x001faf52be8: setExportedObject:
+0x001e737e648 => 0x001fa9218e8: .cxx_construct
+0x001e737e9e0 => 0x001fbdf06d2: overrideDirection:
+0x001e737df98 => 0x001fb86135a: session:suspendedWithReason:
+0x001e737e5e8 => 0x001fa2b0f07: didGenerateShareableConfigurationData:forObject:
+0x001e737e658 => 0x001fa5d11e8: generateSOSBeaconSearcherDataMatchingSubjectData:completion:
+0x001e737e408 => 0x001fbdf167a: toaPpwinPeak
+0x001e737e850 => 0x001fbdef6b8: explicitPAITriggered
+0x001e737e8e8 => 0x001fbdf04b3: notifyPassiveAccessIntent:
+0x001e737ebd0 => 0x001fbdf0f74: setCoordinatesType:
+0x001e737dbb8 => 0x001fbdf03a7: lockBtConnHandle
+0x001e737e050 => 0x001fbdf0f17: setCameraAssistanceInClientProcess:
+0x001e737ec30 => 0x001fb2fa485: setSpeedAccuracy:
+0x001e737d520 => 0x001faefd901: coordinates
+0x001e737df28 => 0x001fbdf0c32: session:didRemoveNearbyObjects:withReason:
+0x001e737e5c0 => 0x001fb13891a: didUpdateHealthStatus:
+0x001e737ebc0 => 0x001fa44570e: setAddress:
+0x001e737e178 => 0x001fbdf1228: setLockIdentifier:
+0x001e737d380 => 0x001fa1e8ece: activate:
+0x001e737d498 => 0x001fa6dcf73: cachedPlatformCapabilities
+0x001e737d448 => 0x001fac08457: azimuth
+0x001e737e620 => 0x001fb11c6f7: session:willRunWithConfiguration:
+0x001e737e990 => 0x001fac3dd9c: setPeerDiscoveryToken:
+0x001e737ec98 => 0x001fbdef2ae: _niLocalizedStringFromBundle:withKey:
+0x001e737d208 => 0x001fa94daef: _internalRunWithConfiguration:
+0x001e737d490 => 0x001fa6ddee8: bytes
+0x001e737d6a8 => 0x001fb0ffa68: domain
+0x001e737d920 => 0x001fbdefa60: initWithNearbyObject:
+0x001e737d9b8 => 0x001fbdf0053: initWithTimestamp:latitude:longitude:altitude:ellipsoidalAltitude:horizontalAccuracy:verticalAccuracy:speed:speedAccuracy:course:courseAccuracy:floor:locationType:signalEnvironment:
+0x001e737def0 => 0x001fbdf0ad4: session:didPrefetchAcwgUrsk:error:
+0x001e737d5e8 => 0x001fa28f883: decodeIntegerForKey:
+0x001e737d9d0 => 0x001fbdf0148: initWithUWBPreciseDistanceAvailability:uwbExtendedDistanceAvailability:
+0x001e737dbe8 => 0x001fb77603b: magneticHeading
+0x001e737e478 => 0x001fa9aecf9: useCaseCameraAssistanceInClientProcess
+0x001e737d250 => 0x001fa32e93a: _logTime
+0x001e737e758 => 0x001fbdeeeec: NISystemPassiveAccessIntentToString:
+0x001e737e938 => 0x001fb06df57: getIRK
+0x001e737d7f0 => 0x001fabf2268: hash
+0x001e737d6f0 => 0x001fa205474: encodeInt64:forKey:
+0x001e737ed50 => 0x001fa441be8: release
+0x001e737dea8 => 0x001fbc95831: runWithConfiguration:options:
+0x001e737e100 => 0x001fb1b26e8: setInternalState:
+0x001e737e258 => 0x001fbdf13a6: setRxAntennaPacket2:
+0x001e737e638 => 0x001fa7b22f4: setInternalDelegate:
+0x001e737e690 => 0x001fa3f0dfd: interactableDiscoveryTokens
+0x001e737e918 => 0x001fbdf0e8d: sessionDiscoveryToken
+0x001e737eac0 => 0x001fbdef17e: setMmsRxStatus:
+0x001e737ead8 => 0x001fbdf0f00: setBoundedRegionRange:
+0x001e737d418 => 0x001fbdef437: arSessionInterruptionEnded
+0x001e737dab0 => 0x001fa1ea9e8: isEqualToData:
+0x001e737e048 => 0x001fadbd568: setCameraAssistanceEnabled:
+0x001e737e0c8 => 0x001fa376468: setExportedInterface:
+0x001e737dbb0 => 0x001fa46f4f8: locationType
+0x001e737dd30 => 0x001fbdf07be: preferredDiscoveryPriority
+0x001e737e6d0 => 0x001fad2e520: isSupported
+0x001e737eac8 => 0x001fbdf1263: setNbRssi:
+0x001e737dc38 => 0x001fa1d134f: motionState
+0x001e737dcf0 => 0x001fa67eee8: parameters
+0x001e737e418 => 0x001fbdf1693: tofPicSecond
+0x001e737ec10 => 0x001fbdf101e: setEllipsoidalAltitude:
+0x001e737df30 => 0x001fbdf0c5d: session:didStartAcwgRanging:
+0x001e737e560 => 0x001fa383d3e: _addObject:
+0x001e737dde0 => 0x001fa298613: radius
+0x001e737d5d0 => 0x001fa1d4c68: decodeFloatForKey:
+0x001e737d980 => 0x001fbdefe61: initWithStsIndex0:uwbTime0:
+0x001e737d140 => 0x001fa5da2e8: UUIDString
+0x001e737d258 => 0x001fbdef29b: _niFrameworkBundle
+0x001e737d298 => 0x001fbdef35a: _processCarKeyEvent:reply:
+0x001e737d918 => 0x001fa4959dd: initWithName:regionSizeCategory:radius:preferredUpdateRate:requiresUserIntent:coarseEstimation:devicePresencePreset:
+0x001e737dfe0 => 0x001fa8dfd2d: setActivationResponse:
+0x001e737e068 => 0x001fb1db14b: setClass:forSelector:argumentIndex:ofReply:
+0x001e737e420 => 0x001fa692be8: token
+0x001e737ea80 => 0x001fa5a9310: setSignalStrength:
+0x001e737d898 => 0x001fa39c1e8: initWithData:error:
+0x001e737e180 => 0x001fa906d01: setLongRangeEnabled:
+0x001e737d840 => 0x001fa3bf2a9: initVehicleSimConfiguration:
+0x001e737eaa8 => 0x001fbdf1319: setRequiresBiasCorrection:
+0x001e737d068 => 0x001faf7e902: didUpdateLocalDiscoveryToken:
+0x001e737d598 => 0x001fa7eb10e: debugOptions
+0x001e737e9a8 => 0x001faf429ae: initWithDataExchangeDisabledAndUsingParameterOverrides:
+0x001e737eb48 => 0x001fbdef0a6: devicePlacement
+0x001e737d2d0 => 0x001faa8f2e8: _reinterruptSessionWithCachedInterruption
+0x001e737d440 => 0x001fa310668: auditToken
+0x001e737dc48 => 0x001fbdf040c: nbRssi
+0x001e737eb88 => 0x001fae4cc72: initWithAllowedDevices:sessionKey:asAnchor:regions:
+0x001e737d8a0 => 0x001fa728d96: initWithDeviceAddress:
+0x001e737dac8 => 0x001fa976f68: isEqualToString:
+0x001e737ea38 => 0x001fb483fee: setAzimuth:
+0x001e737ebb0 => 0x001fa916e07: supportsExtendedDistanceMeasurement
+0x001e737d3d0 => 0x001fbdef3ff: ambientIntensity
+0x001e737e1d8 => 0x001fbdf1292: setPreferredDiscoveryPriority:
+0x001e737ea00 => 0x001fbdf075c: overrideTimestamp:
+0x001e737e808 => 0x001fbdeef41: macMode
+0x001e737e950 => 0x001fa7d4b13: shortDeviceAddress
+0x001e737ecf0 => 0x001fbdf10c2: setInsufficientLighting:
+0x001e737d610 => 0x001fbdef5cd: decodeQuatForKey:
+0x001e737dfc0 => 0x001fbc959ec: sessionShouldAttemptRelocalization:
+0x001e737e490 => 0x001fbdf16e7: uwbPreciseDistanceAvailability
+0x001e737eae8 => 0x001fbdf0f9b: setDebugDisplayInfo:
+0x001e737e1a0 => 0x001faf8504f: setMonitoringOption:
+0x001e737e558 => 0x001fabcfb20: carKeyEventNotifier
+0x001e737d650 => 0x001fa4288e8: deviceIdentifier
+0x001e737d820 => 0x001fa820ce8: identifier
+0x001e737dd78 => 0x001fa25a34f: processAcwgM3Msg:
+0x001e737ec18 => 0x001fad18a22: setHorizontalAccuracy:
+0x001e737d388 => 0x001fab058e8: activationResponse
+0x001e737dd98 => 0x001fbdf0800: processBluetoothHostTimeSyncWithType:btcClockTicks:eventCounter:reply:
+0x001e737d2c0 => 0x001fa68d996: _queryAndCacheCapabilities
+0x001e737d360 => 0x001facff468: _validateRegionIsPreset:
+0x001e737dbf0 => 0x001fbdf03c7: majorRelocalization
+0x001e737dfb0 => 0x001fbdef10e: sessionDidUpdateDiscoveryToken:
+0x001e737e680 => 0x001fae0391d: setLocalDeviceDebugParameters:
+0x001e737e248 => 0x001fbdf1380: setRttResponder:
+0x001e737e890 => 0x001fbdf04ce: notifyRangingIntentSentToVehicleWithReason:
+0x001e737e9c8 => 0x001fa28fa07: initWithInnerBoundary:outerBoundary:monitoringOption:allowedDevices:error:
+0x001e737ed58 => 0x001faf38ee8: autorelease
+0x001e737d658 => 0x001fbdef61f: devicePose
+0x001e737e5e0 => 0x001fabefd16: didPrefetchAcwgUrsk:error:
+0x001e737e6c8 => 0x001fa6aaf54: observerSession
+0x001e737e980 => 0x001fa1e1228: setEnabledGestures:
+0x001e737ebd8 => 0x001fbdf1448: setTransmitTime:
+0x001e737d390 => 0x001fa39c0f9: addEntriesFromDictionary:
+0x001e737e010 => 0x001fa3f1c88: setArSessionInClientProcess:
+0x001e737d0a0 => 0x001fa437119: didProcessAcwgM1MsgWithResponse:error:
+0x001e737d1c8 => 0x001fb1b993a: _handleRunSessionError:
+0x001e737da88 => 0x001faa0c6e8: isCameraAssistanceEnabled
+0x001e737e2d0 => 0x001fabb712b: setVehicleIdentifier:
+0x001e737e958 => 0x001fa1ee2e8: _internalIsMemoryAssertionRequired
+0x001e737d3a0 => 0x001fa396868: addObjectsFromArray:
+0x001e737dd40 => 0x001fb1d93e7: preferredLocalizationsFromArray:forPreferences:
+0x001e737e348 => 0x001fa223847: stringWithString:
+0x001e737e578 => 0x001fa8f18e8: _removeRegionPredicate:
+0x001e737e600 => 0x001faf7cee8: sessionWasInterrupted:
+0x001e737e928 => 0x001fbdf153a: specifiedToken
+0x001e737d8d0 => 0x001fa55b4fe: initWithFormat:
+0x001e737d978 => 0x001fa723468: initWithString:
+0x001e737d370 => 0x001fb19e32a: _verifyError:
+0x001e737da18 => 0x001fbdf01dc: insufficientMovement
+0x001e737e978 => 0x001fa1efc2d: setSuspensionPolicy:
+0x001e737d7a0 => 0x001fa3d07c9: generateTokenWithUUID:
+0x001e737dca8 => 0x001fb1d8111: numberWithUnsignedInt:
+0x001e737e718 => 0x001fbdef601: deviceEventCount
+0x001e737e748 => 0x001fb031174: retryDelay
+0x001e737e878 => 0x001fbdf0664: notifyVehicleUnlockedWithReason:
+0x001e737d1a0 => 0x001fa92d522: _handleARSessionWasInterrupted
+0x001e737e2b0 => 0x001fa468a0e: setUpdatesPolicy:
+0x001e737d608 => 0x001fafe7968: decodeObjectOfClasses:forKey:
+0x001e737e810 => 0x001fbdf1549: stsIndex0
+0x001e737d8a8 => 0x001fbdef96d: initWithDeviceEventCount:uwbDeviceTimeUs:uwbDeviceTimeUncertainty:uwbClockSkewMeasurementAvailable:deviceMaxPpm:success:retryDelay:
+0x001e737d8c0 => 0x001fae4e654: initWithFineRangingSupport:aoaSupport:extendedDistanceMeasurementSupport:syntheticApertureSupport:dltdoaSupport:
+0x001e737dcf8 => 0x001fbdf076f: partIdentifier
+0x001e737e4e8 => 0x001fb982bb6: worldPosition
+0x001e737eb68 => 0x001fa2f5a68: forwardingTargetForSelector:
+0x001e737d088 => 0x001fa4e551c: didDiscoverNearbyObject:
+0x001e737d168 => 0x001faa9bd28: _configureAndRunInternalARSession
+0x001e737d228 => 0x001fa58e187: _invalidateSessionAndNotifyError:
+0x001e737dc98 => 0x001fb1d80c1: numberWithInteger:
+0x001e737ddc8 => 0x001fa213d68: protocolVersion
+0x001e737daf0 => 0x001fbdf02bb: isIntValidNearbyObjectDiscoveryPriority:
+0x001e737dba0 => 0x001fa80e1a7: localizedStringForKey:value:table:
+0x001e737e2a8 => 0x001fbdf1437: setTofPicSecond:
+0x001e737d060 => 0x001fbdef75e: generateSOSBeaconDataForSubject:peerData:reply:
+0x001e737d4b8 => 0x001fbdef4f3: carrierFrequencyOffset
+0x001e737ded8 => 0x001fa79bf09: session:didFailWithError:
+0x001e737df48 => 0x001fbdf0cca: session:didUpdateAlgorithmState:forObject:
+0x001e737e0c0 => 0x001fbdf0fd7: setDiscoveryTokenVariant:
+0x001e737ece8 => 0x001fbdf10db: setInsufficientMovement:
+0x001e737e700 => 0x001fb1194fb: createSOSBeaconSubjectConfigWithSessionKey:selfData:peerData:
+0x001e737e8b8 => 0x001fbdf0444: notifyBluetoothSample:
+0x001e737d2a8 => 0x001fbdef391: _processSystemEvent:reply:
+0x001e737d770 => 0x001fbdef725: firstPathIndexPacket2
+0x001e737da70 => 0x001faff8394: isARSessionInClientProcess
+0x001e737dc00 => 0x001fbdeef49: measurementType
+0x001e737e550 => 0x001fae77ee8: isRangingLimitExceeded
+0x001e737d4e0 => 0x001fa223868: code
+0x001e737d808 => 0x001fb651a2a: horizontalAngle
+0x001e737d0c8 => 0x001fab59d1b: didUpdateAlgorithmState:forObject:
+0x001e737d9a0 => 0x001fbdeff0b: initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:finalData2Bitmask:
+0x001e737de28 => 0x001fa98ed33: regionSizeCategory
+0x001e737e3e8 => 0x001fb1dd771: timeIntervalSinceDate:
+0x001e737d378 => 0x001fa78ecf7: accessoryConfigData
+0x001e737d398 => 0x001fa6fea68: addObject:
+0x001e737e228 => 0x001fb174328: setRequiresUserIntent:
+0x001e737e7c0 => 0x001fbdf158b: supportedSlotBitmask
+0x001e737d538 => 0x001fa6031e8: copyWithZone:
+0x001e737e0a8 => 0x001fa1ef3f7: setDeviceIdentifier:
+0x001e737e338 => 0x001fab4bb68: stringByDeletingLastPathComponent
+0x001e737eb08 => 0x001fbdf14e0: setVioMajorRelocalization:
+0x001e737d0f8 => 0x001fbdeee80: NINearbyObjectDiscoveryPriorityToString:
+0x001e737d9f0 => 0x001fab2fb33: innerBoundary
+0x001e737deb8 => 0x001fbdf0982: rxAntennaPacket1
+0x001e737e108 => 0x001fa304be8: setInterruptionHandler:
+0x001e737d580 => 0x001fb1d0fe3: dataWithBytes:length:
+0x001e737dbc0 => 0x001fbdf03b8: lockIdentifier
+0x001e737dcb8 => 0x001fa1de468: objectAtIndex:
+0x001e737e510 => 0x001faabdf0a: devicePresenceNotifier
+0x001e737e7f0 => 0x001fbdf0685: numResponders
+0x001e737e8b0 => 0x001fbdf049a: notifyLockStatusChanged:
+0x001e737ec78 => 0x001fb16bc9e: responderConfigurationWithIdentifier:
+0x001e737d1d0 => 0x001fa32d992: _handleRunSessionSuccess
+0x001e737d2e0 => 0x001fbdef3ac: _removeObject:reply:
+0x001e737e200 => 0x001fbdf12eb: setRawRange:
+0x001e737edb8 => 0x001fbdf0e46: session:requestedRunWithConfiguration:options:
+0x001e737da30 => 0x001fa1dc3e8: intValue
+0x001e737e3d0 => 0x001fbdf1628: systemConfigurator:didUpdateState:
+0x001e737e828 => 0x001fbdf0a50: selectedSyncCodeIndex
+0x001e737dd00 => 0x001fb1d88e9: pathForResource:ofType:inDirectory:forLocalization:
+0x001e737e520 => 0x001fae0f921: acwgEventNotifier
+0x001e737e8a8 => 0x001fbdf05bd: notifyUrskCreated:
+0x001e737eaf0 => 0x001fbdf1090: setHorizontalDistance:
+0x001e737dbd8 => 0x001fa452de8: macAddress
+0x001e737e0b8 => 0x001fbdf0fc4: setDiscoveryToken:
+0x001e737e5f0 => 0x001fabf0ce8: didUpdateState:forItem:
+0x001e737ec70 => 0x001fb8c1b25: setHeadingAccuracy:
+0x001e737d320 => 0x001fbdef3ec: _setURSKTTL:reply:
+0x001e737d910 => 0x001fad40cfd: initWithName:radius:preferredUpdateRate:requiresUserIntent:devicePresencePreset:
+0x001e737db80 => 0x001fac5db02: lightEstimateFromARLightEstimate:
+0x001e737e738 => 0x001fbdef612: deviceMaxPpm
+0x001e737d2b8 => 0x001fa9ef11b: _provideTruthTag:
+0x001e737d9d8 => 0x001fbdf0190: initWithUWBSignalFeatures:
+0x001e737dff8 => 0x001fa2a8822: setAntennaDiversityOverride:
+0x001e737e070 => 0x001fa2e7dac: setClasses:forSelector:argumentIndex:ofReply:
+0x001e737e840 => 0x001fbdeef31: lastBtRssiValue
+0x001e737e328 => 0x001fa34aee8: status
+0x001e737e798 => 0x001fbdf0a66: selectedUwbConfigId
+0x001e737e6f8 => 0x001fa29cb68: supportsSecureCoding
+0x001e737eba0 => 0x001fabad00e: toBitmap
+0x001e737ed70 => 0x001fa395259: superclass
+0x001e737db28 => 0x001fbdf0340: isRangingLimitExceeded:
+0x001e737d348 => 0x001fb18531b: _synchronousRemoteObject
+0x001e737d8e0 => 0x001fba2e7e4: initWithLockIdentifier:
+0x001e737e120 => 0x001fbdf1131: setIsFinder:
+0x001e737ec50 => 0x001fa4eb109: setLocationType:
+0x001e737db88 => 0x001fb196868: localizations
+0x001e737dcd8 => 0x001fbdf06c1: outProbabilities
+0x001e737e368 => 0x001fa4e2c11: supportsAoA
+0x001e737e9f0 => 0x001fbdf06f7: overrideDistanceMeasurementQuality:
+0x001e737d180 => 0x001fa35950e: _handleARSessionDidChangeState:
+0x001e737d680 => 0x001fa2b55e8: direction
+0x001e737da98 => 0x001fbdf025a: isCollaborationEnabled
+0x001e737e390 => 0x001fa9b9f85: supportsPreciseDistanceMeasurement
+0x001e737e940 => 0x001fb0ea38d: getSessionIdentifier
+0x001e737e3b8 => 0x001fa3b9105: synchronousRemoteObjectProxy
+0x001e737e5a8 => 0x001fa48010a: setConfigurationForTesting:
+0x001e737d260 => 0x001fbdef2d4: _niLocalizedStringFromFrameworkBundleWithKey:
+0x001e737d690 => 0x001fbdef62a: discoveryTokenVariant
+0x001e737e380 => 0x001fb02eb49: supportsDirectionMeasurement
+0x001e737ed88 => 0x001fbc95971: session:didOutputAudioSampleBuffer:
+0x001e737e480 => 0x001fa914468: userInfo
+0x001e737e5b0 => 0x001fae05f11: didUpdateMotionState:
+0x001e737e868 => 0x001fb1942e8: setStatus:
+0x001e737eb98 => 0x001fae90e68: _labTestModeConfigurationWithOptions:
+0x001e737de58 => 0x001fbdf090e: requiresBiasCorrection
+0x001e737e080 => 0x001fb1ff76f: setConfigType:
+0x001e737ead0 => 0x001fbdeef89: setCanInteract:
+0x001e737d090 => 0x001fa55812e: object:didUpdateRegion:previousRegion:
+0x001e737d630 => 0x001faf0bde8: description
+0x001e737e448 => 0x001fb7830bf: trueHeading
+0x001e737ea88 => 0x001fbdf12c0: setRangeBiasEstimate:
+0x001e737d2c8 => 0x001faef7636: _radiusFromDevicePresencePreset:
+0x001e737de20 => 0x001fbdf08d2: receiveTime
+0x001e737e8d8 => 0x001fbdf0544: notifyUpdatedHeadingForLocalDevice:
+0x001e737d958 => 0x001fbdefcd0: initWithSelectedUwbConfigId:selectedPulseShapeCombo:selectedChannelBitmask:supportedSyncCodeIndexBitmask:minRanMultiplier:supportedSlotBitmask:supportedHoppingConfigBitmask:
+0x001e737da58 => 0x001fab38e68: invalidate
+0x001e737dc58 => 0x001fb1fbec9: networkIdentifier
+0x001e737de88 => 0x001fa3fd6e8: rssi
+0x001e737e548 => 0x001fb191509: _setDebugURSK:transactionIdentifier:
+0x001e737ea70 => 0x001fbdf0ee4: setBluetoothPeerIdentifier:
+0x001e737eba8 => 0x001fa7377e8: supportsCoarseDistanceMeasurement
+0x001e737d7c8 => 0x001faaf28e8: getInternalIdentifier
+0x001e737d880 => 0x001fa8ea537: initWithBytes:
+0x001e737dcc8 => 0x001fa701568: objectForKeyedSubscript:
+0x001e737e360 => 0x001fa3c554d: substringToIndex:
+0x001e737e988 => 0x001fa474dbb: initWithPeerToken:
+0x001e737eca0 => 0x001fbdf147d: setUwbPreciseDistanceAvailability:
+0x001e737d1b0 => 0x001fa43cafe: _handleActivationSuccess:
+0x001e737dec8 => 0x001fa250d52: secureKey
+0x001e737e1f0 => 0x001fbdf12b1: setPrewarmUWB:
+0x001e737ec38 => 0x001fad3e830: setCourse:
+0x001e737d138 => 0x001fa3098e8: UUID
+0x001e737d308 => 0x001fa68ff68: _setARSessionInternal:
+0x001e737d908 => 0x001fad0022b: initWithName:radius:preferredUpdateRate:requiresUserIntent:
+0x001e737dc10 => 0x001fbdf03ec: minorRelocalization
+0x001e737dd50 => 0x001fa2d8b1d: prefetchAcwgUrsk:
+0x001e737d528 => 0x001fb61e371: coordinatesType
+0x001e737d810 => 0x001fbdef7da: horizontalAngleAccuracy
+0x001e737d830 => 0x001fa7fd8e8: initInternal
+0x001e737e498 => 0x001faea3917: uwbSessionInterruptedWithReason:timestamp:
+0x001e737d170 => 0x001fa91ff22: _getSessionFailureError
+0x001e737d318 => 0x001fabc31e8: _setQueue:
+0x001e737d5e0 => 0x001fa2a671d: decodeIntForKey:
+0x001e737e158 => 0x001fbdf1188: setLocalDeviceCanInteract:withDiscoveryTokens:reply:
+0x001e737d458 => 0x001fbdef493: bluetoothAdvertisingAddress
+0x001e737d468 => 0x001fbdef4af: bluetoothPeerIdentifier
+0x001e737d4f0 => 0x001fb1f2267: configType
+0x001e737d7d8 => 0x001fbdef7b5: getLocalDevicePrintableState:
+0x001e737de90 => 0x001fbdef0e6: rssiDbm
+0x001e737dec0 => 0x001fbdf0993: rxAntennaPacket2
+0x001e737df18 => 0x001fbdf0bd8: session:didReceiveAopSFZoneUpdate:
+0x001e737d638 => 0x001fa1e5e03: descriptionInternal
+0x001e737dbe0 => 0x001fb77ebb1: machContinuousTimeSeconds
+0x001e737e7a0 => 0x001fbdf0a22: selectedPulseShapeCombo
+0x001e737d510 => 0x001fad375e8: containsValueForKey:
+0x001e737d8d8 => 0x001fadfc8e8: initWithInnerBoundary:outerBoundary:error:
+0x001e737da20 => 0x001fbdf01f1: insufficientSignalStrength
+0x001e737de80 => 0x001fbdf0934: revokeFindingExperience
+0x001e737e6c0 => 0x001fa9d9f68: internalDeviceCapabilities
+0x001e737d058 => 0x001fa6d2ee8: initWithCoder:
+0x001e737dae0 => 0x001fa1c965e: isFinder
+0x001e737dd28 => 0x001fbdf07a2: populateOrderedInputFeature
+0x001e737e2e8 => 0x001fa465ee8: shortDescription
+0x001e737d7b8 => 0x001fbdef0b6: getInteractableDiscoveryTokens:
+0x001e737e0d8 => 0x001fae7e529: setExportedObjectClass:
+0x001e737e140 => 0x001faef6a22: setLatestARFrame:
+0x001e737e590 => 0x001fa777668: setDelegate:
+0x001e737e9a0 => 0x001fa4109a4: initWithAccessoryData:bluetoothPeerIdentifier:error:
+0x001e737eb10 => 0x001fbdf1334: setResetARSession:
+0x001e737dda8 => 0x001fa1d4dfc: processInfo
+0x001e737e5a0 => 0x001fae7d50b: setARSession:
+0x001e737e710 => 0x001fa9662e8: new
+0x001e737d368 => 0x001fa414e93: _validateRegionPredicates:outer:
+0x001e737e588 => 0x001fadb4ee8: isExtendedDistanceMeasurementAllowed
+0x001e737d558 => 0x001fa2e6904: course
+0x001e737e1e0 => 0x001fa946b01: setPreferredUpdateRate:
+0x001e737d410 => 0x001fbdef41c: arSessionDidFailWithError:
+0x001e737d9b0 => 0x001fbdefff1: initWithTimestamp:devicePose:trackingState:lightEstimate:majorRelocalization:minorRelocalization:
+0x001e737d270 => 0x001fafe6d22: _osLogNearbyObjectUpdate:
+0x001e737d838 => 0x001fafb3268: initLabTestModeConfiguration:
+0x001e737e260 => 0x001fb005005: setSessionKey:
+0x001e737ebc8 => 0x001fbdf124f: setMeasurementType:
+0x001e737ecc0 => 0x001fbdef927: initWithConvergenceStatus:
+0x001e737d248 => 0x001fa6fa904: _logDurationAndSubmit:
+0x001e737d718 => 0x001fbdef68f: encodeQuat:forKey:
+0x001e737e060 => 0x001fbdf0f65: setCirPacket2:
+0x001e737e920 => 0x001fbdef6f9: findingDiscoveryToken
+0x001e737dad0 => 0x001fbdf0271: isExtendedDistanceMeasurementAllowed:
+0x001e737e018 => 0x001fa9adfb3: setArSessionInternal:
+0x001e737e220 => 0x001fbdef1ae: setRequestedMeasurementQuality:
+0x001e737d118 => 0x001fbdeeecb: NIRelationshipSpecifierToString:
+0x001e737d150 => 0x001fbdef1f6: _addObject:reply:
+0x001e737d330 => 0x001fb01dce8: _shouldReRunSessionAfterSessionInterruptionEnded
+0x001e737e330 => 0x001fa579b2d: stringByAppendingPathComponent:
+0x001e737d198 => 0x001fa467b11: _handleARSessionInterruptionEnded
+0x001e737d240 => 0x001fa3621c7: _localDeviceLogger
+0x001e737d8e8 => 0x001fa8508e8: initWithMachServiceName:options:
+0x001e737da80 => 0x001fa41470c: isAnchor
+0x001e737e610 => 0x001fa3dbb19: session:didChangeState:
+0x001e737e760 => 0x001fbdf1665: toStruct
+0x001e737e818 => 0x001fbdf1725: uwbTime0
+0x001e737e948 => 0x001fa84fb3b: rawTokenAsString
+0x001e737d350 => 0x001fae44b68: _tryToRecoverFromFailure:
+0x001e737dd70 => 0x001fa819ef2: processAcwgM1Msg:withSessionTriggerReason:
+0x001e737eaf8 => 0x001fa543c68: setLocation:
+0x001e737e098 => 0x001faac44fc: setDebugParameters:
+0x001e737e6a8 => 0x001fad9c224: generateFindingDiscoveryToken
+0x001e737e7e0 => 0x001fbdf0a3a: selectedRanMultiplier
+0x001e737e410 => 0x001fbdf1687: toaPpwinRms
+0x001e737ea08 => 0x001fbdf0746: overrideSpatialScore:
+0x001e737d9e0 => 0x001fa6b53e8: initWithVehicleIdentifier:
+0x001e737e9b0 => 0x001fb14fd96: dataExchangeDisabledAndUsingParameterOverrides
+0x001e737d8f0 => 0x001fa854b68: initWithName:devicePresencePreset:
+0x001e737dd18 => 0x001faf0fce8: peerDiscoveryToken
+0x001e737ddd0 => 0x001fa1d5a56: quaternion
+0x001e737df50 => 0x001fbdf0cf5: session:didUpdateDLTDOAMeasurements:
+0x001e737e870 => 0x001fb607ae9: setReasons:
+0x001e737d480 => 0x001fb1c5572: bundleWithPath:
+0x001e737e3a8 => 0x001fade3f2b: suspendAcwgRanging:withSuspendTriggerReason:
+0x001e737ec08 => 0x001faf6b1e8: setAltitude:
+0x001e737ddf0 => 0x001fbdf08a4: rangeUncertainty
+0x001e737e8d0 => 0x001fbdf0598: notifyUpdatedLocationForLocalDevice:
+0x001e737eb50 => 0x001fbdf0fb0: setDevicePlacement:
+0x001e737d470 => 0x001fa3beee8: boolValue
+0x001e737d5b8 => 0x001faf0cce8: decodeDictionaryWithKeysOfClasses:objectsOfClasses:forKey:
+0x001e737db20 => 0x001fbdf0327: isPreciseRangingAllowed:
+0x001e737e518 => 0x001fa322302: updateResponderDeviceIdentifier:completionHandler:
+0x001e737d230 => 0x001fa80e353: _isInternalClient
+0x001e737d3d8 => 0x001faebfa84: antennaDiversityOverride
+0x001e737e7d0 => 0x001fbdf09bb: selectedFinalData2Bitmask
+0x001e737d1e8 => 0x001fbdef208: _initInternalWithConfigType:isFinder:isObserver:specifiedToken:preferredUpdateRate:requestedMeasurementQuality:
+0x001e737d5c8 => 0x001fbdef59b: decodeDoubleVector3ForKey:
+0x001e737df70 => 0x001fbdef0ee: session:didUpdateNICoordinates:
+0x001e737e968 => 0x001fa1d610d: _internalIsExtendedDistanceMeasurementEnabled
+0x001e737ecd8 => 0x001fbdef15e: setInsufficientHorizontalSweep:
+0x001e737d048 => 0x001fb04d368: dealloc
+0x001e737e460 => 0x001fa1cb778: unsignedShortValue
+0x001e737e500 => 0x001fade16e8: systemEventNotifier
+0x001e737ed80 => 0x001fbc95934: session:cameraDidChangeTrackingState:
+0x001e737d710 => 0x001fa1ef92d: encodeObject:forKey:
+0x001e737dc18 => 0x001fbdf0400: mmsRxStatus
+0x001e737e830 => 0x001fbdef57e: currentZone
+0x001e737d548 => 0x001faf5bb68: count
+0x001e737dc90 => 0x001fb1d80b2: numberWithInt:
+0x001e737df78 => 0x001fbdeef59: session:didUpdateNearbyObjects:
+0x001e737e458 => 0x001fa273fe8: unsignedLongLongValue
+0x001e737e4f0 => 0x001fbdf177f: worldTrackingState
+0x001e737e8a0 => 0x001fbdf0614: notifyVehicleSentRangingSuspendedSubEvent
+0x001e737e9e8 => 0x001fbdf0730: overrideRelationship:
+0x001e737d120 => 0x001fbdef04f: NISessionBackgroundModeToString:
+0x001e737d1f0 => 0x001fbdef278: _internalBuildShouldDenyConnection
+0x001e737dd58 => 0x001fa976145: presenceConfigData
+0x001e737ea60 => 0x001fbdf13e0: setSpatialScore:
+0x001e737d948 => 0x001fbdefbd1: initWithSFZone:btConnHandle:lastBtRssiValue:ioStateDisplacing:explicitPAITriggered:currentSFInBubble:
+0x001e737d238 => 0x001fa3ce711: _isValidARSession:andConfiguration:
+0x001e737e118 => 0x001fa7fc768: setInvalidationHandler:
+0x001e737d0e0 => 0x001fa77f0e8: didUpdateNICoordinates:
+0x001e737d870 => 0x001fac1e94a: initWithBitmap:
+0x001e737dbf8 => 0x001fa2b7ff8: maxNearbyObjectAge
+0x001e737de70 => 0x001fb1467e8: resourcePath
+0x001e737df38 => 0x001fbdf0c7a: session:didSuspendAcwgRanging:
+0x001e737e0e8 => 0x001fbdf1050: setFirstPathIndexPacket2:
+0x001e737e900 => 0x001fbdf06a4: orderedBiasEstimatorFeatutes
+0x001e737dd08 => 0x001fa6e49e8: pause
+0x001e737dd80 => 0x001fa33a54f: processAcwgRangingSessionResumeRequestMsg:withResumeTriggerReason:
+0x001e737d190 => 0x001fae804e8: _handleARSessionDidUpdateFrame:
+0x001e737d6b8 => 0x001fb2bb8a3: elevation
+0x001e737d950 => 0x001fbdefc37: initWithSelectedRanMultiplier:selectedNumChapsPerSlot:numResponders:numSlotsPerRound:supportedSyncCodeIndexBitmask:selectedHoppingConfigBitmask:macMode:
+0x001e737d9a8 => 0x001fbdeff72: initWithSupportedUwbConfigIds:supportedPulseShapeCombos:channelBitmask:uwbSessionId:finalData2Bitmask:selectedProtocolVersion:
+0x001e737db38 => 0x001fb077958: itemState
+0x001e737dc28 => 0x001fab204e8: monitoredRegions
+0x001e737d968 => 0x001fb145b33: initWithSessionID:queue:exportedObject:options:
+0x001e737da50 => 0x001fadd8568: interruptionHandler
+0x001e737db00 => 0x001fbdf0306: isIntValidRelationshipSpecifier:
+0x001e737e910 => 0x001fbdef9f1: initWithDiscoveryToken:requestedUpdateRate:requestedMeasaurementQuality:
+0x001e737d4c0 => 0x001fa6e98e8: channel
+0x001e737d890 => 0x001fbdef942: initWithDLTDOACoordinatesType:coordinates:
+0x001e737d960 => 0x001fbdefd7e: initWithSelectedUwbConfigId:selectedPulseShapeCombo:selectedChannelBitmask:supportedSyncCodeIndexBitmask:minRanMultiplier:supportedSlotBitmask:supportedHoppingConfigBitmask:selectedFinalData2Bitmask:
+0x001e737e5f8 => 0x001fa7f7cff: session:didUpdateFrame:
+0x001e737eca8 => 0x001fbdf1459: setUwbExtendedDistanceAvailability:
+0x001e737ed20 => 0x001fb0e4999: isProxy
+0x001e737dd38 => 0x001fa9574e8: preferredLanguages
+0x001e737ed60 => 0x001fb0fa068: retainCount
+0x001e737d488 => 0x001fb1cff92: bundleWithURL:
+0x001e737d778 => 0x001fb23ebac: floor
+0x001e737da08 => 0x001fbdf01ab: insufficientHorizontalSweep
+0x001e737dd60 => 0x001fbdf07d9: prewarmSecureElementChannel
+0x001e737df10 => 0x001fbdf0b9d: session:didProcessBluetoothHostTimeSyncWithResponse:error:
+0x001e737e268 => 0x001fbdf13d1: setSoiRssiDbm:
+0x001e737e788 => 0x001fbdef6e7: finalData2Bitmask
+0x001e737e838 => 0x001fbdef4da: btConnHandle
+0x001e737d2f8 => 0x001fa99c534: _serverConnectionInterrupted
+0x001e737d7e0 => 0x001fb1d3cbf: handleFailureInFunction:file:lineNumber:description:
+0x001e737dae8 => 0x001fbdf0297: isIntValidAntennaDiversityOverride:
+0x001e737e3b0 => 0x001fa1c9b34: suspensionPolicy
+0x001e737e4a0 => 0x001fa743b68: uwbSessionInterruptionReasonEnded:timestamp:
+0x001e737e630 => 0x001fb0428e8: internalDelegate
+0x001e737eb30 => 0x001fbdef905: initWithConfigParametersOverride:
+0x001e737d288 => 0x001facaed95: _performBlockOnDelegateQueue:ifRespondsToSelector:evenIfNotRunning:
+0x001e737d4e8 => 0x001fb1d069f: componentsSeparatedByString:
+0x001e737e290 => 0x001fbdeefa9: setToaNoiseRms:
+0x001e737ea78 => 0x001fbdf1074: setHorizontalAngleAccuracy:
+0x001e737eb80 => 0x001fab23fe8: initWithRegions:
+0x001e737d450 => 0x001fa4af1af: backgroundMode
+0x001e737d590 => 0x001fbdef58a: debugDisplayInfo
+0x001e737d818 => 0x001fbdef7f2: horizontalDistance
+0x001e737e7f8 => 0x001fbdf0693: numSlotsPerRound
+0x001e737d8c8 => 0x001fafc45d6: initWithFineRangingSupport:coarseRangingSupport:aoaSupport:extendedDistanceMeasurementSupport:syntheticApertureSupport:dltdoaSupport:
+0x001e737ebe0 => 0x001fbdeef99: setReceiveTime:
+0x001e737da10 => 0x001fbdf01c7: insufficientLighting
+0x001e737eab0 => 0x001fbdf14a0: setUwbSignalFeatures:
+0x001e737eb38 => 0x001fbdefadc: initWithRSSI:identifier:model:channel:machContinuousTimeSeconds:
+0x001e737d670 => 0x001fb1d1d6f: dictionaryWithObjects:forKeys:count:
+0x001e737d9f8 => 0x001fb69c91b: inputFeatures
+0x001e737e0a0 => 0x001fa242268: setDelegateQueue:
+0x001e737e230 => 0x001fa788ee8: setResponder:
+0x001e737e468 => 0x001faf34d17: updatesPolicy
+0x001e737e4c8 => 0x001fbdf172e: verticalDirectionEstimate
+0x001e737e880 => 0x001fbdf05d0: notifyVehicleLockedWithReason:
+0x001e737d178 => 0x001fb11a19f: _handleARSession:willRunWithConfiguration:
+0x001e737d4d0 => 0x001fbdef524: cirPacket2
+0x001e737e020 => 0x001fa4da876: setArSessionState:
+0x001e737e960 => 0x001fa22a91a: _internalIsPowerAssertionRequired
+0x001e737ebe8 => 0x001fbdf0f3b: setCarrierFrequencyOffset:
+0x001e737ecd0 => 0x001fbdf10f4: setInsufficientSignalStrength:
+0x001e737dc40 => 0x001fa342568: name
+0x001e737dfa8 => 0x001fbdf0e75: sessionDidStartRunning:
+0x001e737dfe8 => 0x001fa8c09e8: setAllowedDevices:
+0x001e737e170 => 0x001fbdf1213: setLockBtConnHandle:
+0x001e737eb28 => 0x001fbdefa76: initWithNetworkIdentifier:
+0x001e737ec48 => 0x001fbdf106a: setFloor:
+0x001e737d878 => 0x001fbdef8ec: initWithBluetoothSample:
+0x001e737dfa0 => 0x001fb861377: session:suspensionReasonEnded:isNoLongerSuspended:
+0x001e737e0f8 => 0x001fbdf10b0: setInputFeatures:
+0x001e737e7e8 => 0x001fbdf09f2: selectedNumChapsPerSlot
+0x001e737d310 => 0x001fbdef3c1: _setDebugURSK:transactionIdentifier:reply:
+0x001e737d4f8 => 0x001faa341e8: configuration
+0x001e737d720 => 0x001fbdef6a2: encodeVector3:forKey:
+0x001e737dad8 => 0x001fa86c90a: isExtendedDistanceMeasurementEnabled
+0x001e737e1c8 => 0x001fbdf127d: setOutProbabilities:
+0x001e737ed68 => 0x001fa23c5da: zone
+0x001e737d1d8 => 0x001fa67db68: _identifyingSequenceFromBytes:
+0x001e737dac0 => 0x001fb19af7b: isEqualToNumber:
+0x001e737dd20 => 0x001fbdf077e: populateOrderedBiasEstimatorOutputs
+0x001e737e618 => 0x001faa5c11f: session:didUpdateExternalAnchors:
+0x001e737e888 => 0x001fbdf05ef: notifyVehicleReadyToDriveWithReason:
+0x001e737ed48 => 0x001fa345e68: retain
+0x001e737eda0 => 0x001fbc9595a: session:didAddAnchors:
+0x001e737d3c8 => 0x001fa39b9e8: altitude
+0x001e737d5a0 => 0x001fa9e051f: debugParameters
+0x001e737e1d0 => 0x001fb835df2: setOutputs:
+0x001e737d4a0 => 0x001fa643530: camera
+0x001e737da78 => 0x001fabdb52b: isARSessionInternal
+0x001e737e4d8 => 0x001fbdf175f: vioTrackingState
+0x001e737e848 => 0x001fbdf0226: ioStateDisplacing
+0x001e737d800 => 0x001fa2fe5e8: horizontalAccuracy
+0x001e737d938 => 0x001fbdefb1d: initWithRSSI:identifier:model:channel:machContinuousTimeSeconds:partIdentifier:name:presenceConfigData:
+0x001e737db50 => 0x001fa537e68: latestARFrame
+0x001e737d850 => 0x001fbdef82d: initWithAnchorAddress:measurementType:coordinatesType:transmitTime:receiveTime:signalStrength:carrierFrequencyOffset:coordinates:
+0x001e737d8b0 => 0x001fa46e5fc: initWithDictionary:copyItems:
+0x001e737da00 => 0x001fb1c5099: instanceMethodSignatureForSelector:
+0x001e737dc70 => 0x001fa1c6c68: now
+0x001e737dff0 => 0x001fa219568: setAnchor:
+0x001e737e238 => 0x001fbdf1363: setRssiDbm:
+0x001e737d2b0 => 0x001fa70ef23: _processUpdatedLockState:
+0x001e737d970 => 0x001fbdefe46: initWithStatus:andReasons:
+0x001e737e428 => 0x001fa3c0f2e: tokenVariant
+0x001e737e790 => 0x001fbdf0a0a: selectedProtocolVersion
+0x001e737e8e0 => 0x001fbdf0568: notifyUpdatedLocation:forNearbyObjectWithToken:
+0x001e737e9d8 => 0x001fbdf06e5: overrideDistance:
+0x001e737d5f8 => 0x001fa2085e8: decodeObjectForKey:
+0x001e737d640 => 0x001fab507e8: deviceCapabilities
+0x001e737e1b0 => 0x001fb20073d: setNetworkIdentifier:
+0x001e737e9b8 => 0x001fad2f54b: accessoryDiscoveryToken
+0x001e737ebb8 => 0x001fa47ea02: supportsDLTDOAMeasurement
+0x001e737da28 => 0x001fbdf020c: insufficientVerticalSweep
+0x001e737e7b8 => 0x001fbdf03db: minRanMultiplier
+0x001e737ea68 => 0x001fbdef12e: setBluetoothAdvertisingAddress:
+0x001e737eb90 => 0x001fb094520: _vehicleSimConfigurationWithOptions:
+0x001e737df88 => 0x001fbdf0dea: session:relayDCKMessage:
+0x001e737e750 => 0x001fbdf041e: nearbyObjectUpdateRate:isGreaterThan:
+0x001e737e8f8 => 0x001fbdefa91: initWithOuputProbabilities:rawRange:correctedRange:
+0x001e737ea18 => 0x001fa88c6e8: setDirection:
+0x001e737d570 => 0x001fb1d0dfc: currentHandler
+0x001e737dfc8 => 0x001fab1cd00: sessionShouldAttemptRelocalization:completion:
+0x001e737e430 => 0x001fb272e07: trackingState
+0x001e737e608 => 0x001fa75c8e8: sessionInterruptionEnded:
+0x001e737e8f0 => 0x001fbdef302: _notifyResourceUsageLimitExceeded:forSessionConfigurationType:
+0x001e737d648 => 0x001fbdeef11: deviceIdentifer
+0x001e737db68 => 0x001fbdf036b: leadingEdgePacket2
+0x001e737e0f0 => 0x001fbdf10a7: setImag:
+0x001e737de18 => 0x001fbdf08c3: reasonsPrivate
+0x001e737d100 => 0x001fbdef00b: NINearbyObjectUpdateRateToShortString:
+0x001e737d508 => 0x001fa4494e8: containsObject:
+0x001e737d860 => 0x001fbdef8af: initWithBiasEstimatorFeatures:
+0x001e737dc78 => 0x001fb1c5979: numberWithBool:
+0x001e737e930 => 0x001fbdefa3a: initWithItemUUID:preferredUpdateRate:
+0x001e737d428 => 0x001fbdef452: arSessionWasInterrupted
+0x001e737df90 => 0x001fbdf0e03: session:requestAcwgRangingSessionSuspend:withSuspendTriggerReason:
+0x001e737e5c8 => 0x001fac7b8fc: requestAcwgRangingSessionSuspend:withSuspendTriggerReason:
+0x001e737e6e0 => 0x001faa1c412: generateFindingTokenWithIRK:forExternalUse:
+0x001e737e730 => 0x001fbdf16ad: uwbClockSkewMeasurementAvailable
+0x001e737e7a8 => 0x001fbdf09a4: selectedChannelBitmask
+0x001e737d9c8 => 0x001fa2245b8: initWithToken:
+0x001e737db48 => 0x001fa2b6f76: lastObject
+0x001e737e1b8 => 0x001fa3ac868: setObject:forKey:
+0x001e737e280 => 0x001fbdf1415: setTatResponder:
+0x001e737ed40 => 0x001fa645068: respondsToSelector:
+0x001e737d158 => 0x001fa288c95: _addObserver:
+0x001e737d740 => 0x001fae0ef4d: exportedObjectClass
+0x001e737d758 => 0x001fb1d3222: fileURLWithPath:
+0x001e737de08 => 0x001fbdf08be: real
+0x001e737de10 => 0x001faa1991b: reasons
+0x001e737e7d8 => 0x001fbdef73b: fromStruct:
+0x001e737d478 => 0x001fbdef4c7: boundedRegionRange
+0x001e737e528 => 0x001fa45d714: _setURSKTTL:
+0x001e737d8f8 => 0x001fa678f1c: initWithName:radius:
+0x001e737daf8 => 0x001fbdf02e4: isIntValidNearbyObjectUpdateRate:
+0x001e737e058 => 0x001fbdf0f56: setCirPacket1:
+0x001e737e388 => 0x001fa74e305: supportsNBAMMS
+0x001e737d400 => 0x001faac5ee8: appendString:
+0x001e737d750 => 0x001fbdef6cd: fallbackBundleWithBundle:
+0x001e737e028 => 0x001fa5c3cf7: setBackgroundMode:
+0x001e737e370 => 0x001fb1472e8: supportsCameraAssistance
+0x001e737e3c8 => 0x001fbdf15d4: systemConfigurator:didUpdateResourceUsageLimitExceeded:forSessionConfigurationType:
+0x001e737e6e8 => 0x001fa912f23: serialize:
+0x001e737eaa0 => 0x001fbc1c198: setWorldPosition:
+0x001e737d4d8 => 0x001fa2f75a5: coarseEstimation
+0x001e737da90 => 0x001fbdf0238: isCameraAssistanceInClientProcess
+0x001e737d9c0 => 0x001fbdf0109: initWithTimestamp:trueHeading:magneticHeading:headingAccuracy:
+0x001e737dc08 => 0x001fa3e0906: minimumPreferredUpdatedRate
+0x001e737e4b0 => 0x001fbdef1ee: uwbTime
+0x001e737e770 => 0x001fbdf1571: supportedPulseShapeCombos
+0x001e737ed90 => 0x001fbc95995: session:didOutputCollaborationData:
+0x001e737d550 => 0x001fa7a07e8: countByEnumeratingWithState:objects:count:
+0x001e737e530 => 0x001fad3b183: processDCKMessage:responseCallback:
+0x001e737d788 => 0x001fa914a37: generateDiscoveryTokenFromBeaconIdentifier:
+0x001e737e130 => 0x001fa998937: setItemState:
+0x001e737e470 => 0x001fa1ca3a7: useCase
+0x001e737d3f8 => 0x001facc69e8: appendFormat:
+0x001e737d6c8 => 0x001fa1d7f50: enabledGestures
+0x001e737dda0 => 0x001fbdf0847: processDCKMessage:reply:
+0x001e737e1a8 => 0x001fae877e8: setName:
+0x001e737e860 => 0x001fa5a123c: supportsARKit
+0x001e737e2f8 => 0x001fa20a968: signalStrength
+0x001e737db90 => 0x001fbdef0d6: localizedBundle
+0x001e737e3f8 => 0x001fa26fbe8: timestamp
+0x001e737e908 => 0x001fbdefba0: initWithRole:discoveryToken:preferredUpdateRate:
+0x001e737d218 => 0x001fa28dd74: _invalidateInternal
+0x001e737ded0 => 0x001fbdf0a7a: session:didDiscoverNearbyObject:
+0x001e737e308 => 0x001fbdf152d: spatialScore
+0x001e737e320 => 0x001faff2ae8: state
+0x001e737d1c0 => 0x001fa28d6e8: _handlePauseSessionSuccess
+0x001e737d700 => 0x001fa2400b6: encodeInteger:forKey:
+0x001e737e4b8 => 0x001fb1c3149: vehicleIdentifier
+0x001e737ea58 => 0x001fabb8d68: setMotionState:
+0x001e737df20 => 0x001fbdf0bfb: session:didReceiveRangingAuthRecommendation:forObject:
+0x001e737e0b0 => 0x001faf0179d: setDevicePresencePreset:
+0x001e737e4e0 => 0x001fbdf1770: worldAlignment
+0x001e737ea50 => 0x001fbdf0ff1: setDistanceMeasurementQuality:
+0x001e737edc0 => 0x001fbdf0d8f: session:didUpdateSpatialMappingPointClouds:
+0x001e737d928 => 0x001fa299926: initWithObjects:
+0x001e737da48 => 0x001fb0e72e8: internalState
+0x001e737dbc8 => 0x001fa295f68: longLongValue
+0x001e737de30 => 0x001fa3b2768: relationship
+0x001e737e698 => 0x001fadbb23a: activelyInteractingDiscoveryTokens
+0x001e737ec20 => 0x001fb2fd4d7: setVerticalAccuracy:
+0x001e737eda8 => 0x001fb06223a: session:didUpdateAnchors:
+0x001e737d858 => 0x001faa52f22: initWithArray:copyItems:
+0x001e737dc80 => 0x001fb1d808f: numberWithDouble:
+0x001e737e998 => 0x001facf2912: setExtendedDistanceMeasurementEnabled:
+0x001e737ece0 => 0x001fbdf1113: setInsufficientVerticalSweep:
+0x001e737d5a8 => 0x001fb1d1720: decodeArrayOfObjectsOfClass:forKey:
+0x001e737d6e8 => 0x001fa2373f4: encodeFloat:forKey:
+0x001e737dea0 => 0x001fbdf0959: rttResponder
+0x001e737d0b8 => 0x001faee611e: didReceiveAopSFZoneUpdate:
+0x001e737daa0 => 0x001fb1a67e8: isEqual:
+0x001e737de50 => 0x001fbdf08f2: requestedMeasurementQuality
+0x001e737e6d8 => 0x001fac1e5a7: generateFindingTokenWithServiceID:deviceName:
+0x001e737ea30 => 0x001fa4781e8: setQuaternion:
+0x001e737d578 => 0x001fadb5b4f: dataUsingEncoding:
+0x001e737d738 => 0x001fad27ae8: exportedObject
+0x001e737e438 => 0x001fa32f1e8: transform
+0x001e737ea40 => 0x001fbdf1010: setElevation:
+0x001e737ea90 => 0x001fbdf12d6: setRangeUncertainty:
+0x001e737ec40 => 0x001fb2e6e85: setCourseAccuracy:
+0x001e737ec90 => 0x001faa57519: _isExecuteRegion:
+0x001e737d1a8 => 0x001fa692ee8: _handleActivationError:
+0x001e737d678 => 0x001fa370b34: didUpdateNearbyObjects:
+0x001e737d7c0 => 0x001fae91d11: getInternalConnectionQueue
+0x001e737e598 => 0x001fad5c2e8: runWithConfiguration:
+0x001e737ecf8 => 0x001fabcd0f6: class
+0x001e737d5b0 => 0x001fa2a33e8: decodeBoolForKey:
+0x001e737d868 => 0x001fbdef8ce: initWithBiasEstimatorOutputs:
+0x001e737d990 => 0x001fa2f134f: initWithSuiteName:
+0x001e737e1f8 => 0x001fa242868: setProtocolVersion:
+0x001e737e4a8 => 0x001fbdf1713: uwbSignalFeatures
+0x001e737df58 => 0x001fbdf0d1a: session:didUpdateHealthStatus:
+0x001e737e2f0 => 0x001fbdf1510: signalEnvironment
+0x001e737edb0 => 0x001fbc959b9: session:didRemoveAnchors:
+0x001e737d3c0 => 0x001fa8ecd1c: allowedDevices
+0x001e737d620 => 0x001faf89968: delegate
+0x001e737e440 => 0x001fbdf16a0: transmitTime
+0x001e737d460 => 0x001faee1d93: bluetoothDeviceIdentifier
+0x001e737dcc0 => 0x001fae06be8: objectForKey:
+0x001e737e640 => 0x001fa57b7e8: .cxx_destruct
+0x001e737e9d0 => 0x001fa89f02c: initWithDiscoveryToken:regions:preferredUpdateRate:error:
+0x001e737d828 => 0x001fbdef805: imag
+0x001e737dc20 => 0x001fae3b668: model
+0x001e737e188 => 0x001fa7ec7fb: setMaxNearbyObjectAge:
+0x001e737db78 => 0x001fbdf037e: lightEstimate
+0x001e737ddb8 => 0x001fbdf0860: processUpdatedLockState:
+0x001e737e660 => 0x001fad98388: setAsyncLocalDeviceInteractableDiscoveryTokens:completion:
+0x001e737e670 => 0x001faf4a381: getAsyncActivelyInteractingDiscoveryTokens:
+0x001e737e8c8 => 0x001fbdf04fa: notifyRemovedNearbyObjectWithToken:
+0x001e737ec58 => 0x001fbdf13bb: setSignalEnvironment:
+0x001e737d900 => 0x001fb068968: initWithName:radius:preferredUpdateRate:
+0x001e737db40 => 0x001fbd136b6: itemUUID
+0x001e737deb0 => 0x001fbdf0966: runWithConfiguration:reply:
+0x001e737e030 => 0x001fb0e4d22: setBluetoothDeviceIdentifier:
+0x001e737e2a0 => 0x001fbdef1ce: setToaPpwinRms:
+0x001e737e678 => 0x001fae332e8: setLocalDeviceCanInteract:withDiscoveryTokens:
+0x001e737e6a0 => 0x001fa8dfb68: localDevicePrintableState
+0x001e737d300 => 0x001fac8f4e8: _serverConnectionInvalidated
+0x001e737da38 => 0x001fb0b0ae8: integerValue
+0x001e737db60 => 0x001fbdf0358: leadingEdgePacket1
+0x001e737ed18 => 0x001fb1c5111: performSelector:withObject:withObject:
+0x001e737d050 => 0x001faa538e8: encodeWithCoder:
+0x001e737e160 => 0x001fbdf11bd: setLocalDeviceDebugParameters:reply:
+0x001e737e3a0 => 0x001faa2470e: supportsUWB
+0x001e737d628 => 0x001fbdef5f4: deleteURSKs:
+0x001e737d798 => 0x001faef9f20: generateFindingTokenWithIRK:
+0x001e737ea10 => 0x001fa1f9e18: setDistance:
+0x001e737ec60 => 0x001fbdeefb9: setTrueHeading:
+0x001e737d080 => 0x001fb13457d: didRemoveNearbyObjects:withReason:
+0x001e737d0d8 => 0x001fa3a06ff: systemDidUpdateResourceUsageLimitExceeded:forSessionConfigurationTypeWithName:
+0x001e737d358 => 0x001fa3c374a: _updateRegionDescription
+0x001e737e078 => 0x001fa506414: setCoarseEstimation:
+0x001e737e2c8 => 0x001fbdf14b6: setUwbTime:
+0x001e737d540 => 0x001fbdef53b: correctedRange
+0x001e737d6f8 => 0x001fa20db68: encodeInt:forKey:
+0x001e737de60 => 0x001fa5a870a: requiresUserIntent
+0x001e737e508 => 0x001fa691168: findingNotifier
+0x001e737de48 => 0x001fbdf08de: remoteTxAntennaMask
+0x001e737e378 => 0x001fb00c030: supportsDLTDoA
+0x001e737e668 => 0x001faf3ab68: getAsyncInteractableDiscoveryTokens:
+0x001e737ed78 => 0x001faa728e8: debugDescription
+0x001e737d5c0 => 0x001fa25cd68: decodeDoubleForKey:
+0x001e737dee0 => 0x001fbdf0a9b: session:didGenerateShareableConfigurationData:forObject:
+0x001e737df08 => 0x001fbdf0b55: session:didProcessAcwgRangingSessionResumeRequestMsgWithResponse:error:
+0x001e737e148 => 0x001fbdf115a: setLeadingEdgePacket1:
+0x001e737e168 => 0x001fbdf11e2: setLocalDeviceInteractableDiscoveryTokens:reply:
+0x001e737e8c0 => 0x001fbdf045b: notifyDiscoveredNearbyObjectWithToken:sharedConfigurationData:
+0x001e737d3e8 => 0x001fa649582: appendBytes:length:
+0x001e737d530 => 0x001fa2e5768: copy
+0x001e737d5f0 => 0x001fbdef5b6: decodeMatrix4x4ForKey:
+0x001e737dab8 => 0x001fa2e40e8: isEqualToDictionary:
+0x001e737db10 => 0x001fa42cd76: isLongRangeEnabled
+0x001e737dee8 => 0x001fb888037: session:didInvalidateWithError:
+0x001e737d160 => 0x001fa853d02: _configurationSupportsRetry
+0x001e737d6a0 => 0x001fbdef640: distanceMeasurementQuality
+0x001e737dfd8 => 0x001fbdf0ebb: sessionWasSuspended:
+0x001e737e2e0 => 0x001fb1c60dd: setWithObjects:
+0x001e737e398 => 0x001fa682daf: supportsSyntheticAperture
+0x001e737d668 => 0x001faf5fae8: dictionary
+0x001e737e208 => 0x001fbdf12f8: setReal:
+0x001e737d3a8 => 0x001fa86c7e8: address
+0x001e737da68 => 0x001fb0659e8: invalidationHandler
+0x001e737dc60 => 0x001fa9a519c: niVisionInputTrackingStateFromARTRackingState:
+0x001e737df80 => 0x001fbdf0dbb: session:object:didUpdateRegion:previousRegion:
+0x001e737e538 => 0x001fa81a71f: processBluetoothEventWithType:btcClockTicks:
+0x001e737ecb8 => 0x001fa3e09fb: peerToken
+0x001e737d2f0 => 0x001fae9b4e8: _sendRemoteDevice:changedState:
+0x001e737d618 => 0x001fbdef5df: decodeVector3ForKey:
+0x001e737d408 => 0x001fa8575f7: arSession
+0x001e737d988 => 0x001fbdefe7d: initWithStsIndex0:uwbTime0:hopKey:selectedSyncCodeIndex:
+0x001e737e7c8 => 0x001fbdf1553: supportedHoppingConfigBitmask
+0x001e737d430 => 0x001fbdef46a: arSessionWillRunWithInvalidConfiguration
+0x001e737d4b0 => 0x001fac3dce8: canUpdateToConfiguration:
+0x001e737db18 => 0x001fb75e42b: isObserver
+0x001e737dca0 => 0x001fb1d80d4: numberWithLongLong:
+0x001e737d290 => 0x001fbdef341: _processBluetoothSample:
+0x001e737d4a8 => 0x001fbdef4e7: canInteract
+0x001e737d588 => 0x001fb1d1130: dataWithPropertyList:format:options:error:
+0x001e737dc68 => 0x001fbdf051e: notifySystemShutdownWithReason:reply:
+0x001e737e5d8 => 0x001fa3fd194: didSuspendAcwgRanging:
+0x001e737e740 => 0x001fa2e2468: success
+0x001e737ec00 => 0x001fafc60e8: setLongitude:
+0x001e737ec28 => 0x001fb130568: setSpeed:
+0x001e737d078 => 0x001faf824e8: uwbSessionDidFailWithError:
+0x001e737d1b8 => 0x001fac9974b: _handlePauseSessionError:
+0x001e737d660 => 0x001fa3a3fa6: devicePresencePreset
+0x001e737dfd0 => 0x001fbdf0ea3: sessionSuspensionEnded:
+0x001e737d098 => 0x001fa9fd905: relayDCKMessage:
+0x001e737d568 => 0x001fbdef54a: createOneShotConnectionAndResume:

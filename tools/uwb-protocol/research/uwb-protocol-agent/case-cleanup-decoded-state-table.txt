@@ -1,0 +1,167 @@
+STATE 0 IDLE rows=14 table=4fbe0
+ 4fbe0: event=01 R1_INIT success=1 failure=20 callback=269f0
+ 4fbe8: event=02 R1_INIT_HE success=1 failure=20 callback=269f0
+ 4fbf0: event=03 R1_INIT_ST success=1 failure=20 callback=26380
+ 4fbf8: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fc00: event=19 R1_DEINIT_ST success=20 failure=20 callback=2656c
+ 4fc08: event=0c INITIATE_PAIRING_START success=1 failure=20 callback=269f0
+ 4fc10: event=0e KEYROLL_CONFIG_START success=1 failure=20 callback=269f0
+ 4fc18: event=07 RANGE_CONFIG_START success=1 failure=20 callback=269f0
+ 4fc20: event=11 PERS_PARAMS_START success=1 failure=20 callback=269f0
+ 4fc28: event=1b FATAL_RESPONSE success=0 failure=0 callback=262a4
+ 4fc30: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fc38: event=1a IDLE success=0 failure=0 callback=2657c
+ 4fc40: event=1d CLR_CRYPTO_DATA_START success=1 failure=20 callback=269f0
+ 4fc48: event=20 ENCRYPTED_SN_START success=1 failure=20 callback=269f0
+STATE 1 BOOTING rows=10 table=4fa08
+ 4fa08: event=03 R1_INIT_ST success=20 failure=20 callback=26380
+ 4fa10: event=05 BOOT_COMPLETE success=2 failure=14 callback=26958
+ 4fa18: event=04 BOOT_SECURE_ROM success=3 failure=20 callback=2623c
+ 4fa20: event=17 R1_DEINIT success=14 failure=14 callback=260f4
+ 4fa28: event=18 R1_DEINIT_HE success=14 failure=14 callback=26108
+ 4fa30: event=19 R1_DEINIT_ST success=20 failure=14 callback=26748
+ 4fa38: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fa40: event=1a IDLE success=0 failure=0 callback=2657c
+ 4fa48: event=02 R1_INIT_HE success=20 failure=20 callback=26074
+ 4fa50: event=1b FATAL_RESPONSE success=0 failure=0 callback=2657c
+STATE 2 READY rows=15 table=4fe18
+ 4fe18: event=01 R1_INIT success=20 failure=20 callback=26064
+ 4fe20: event=02 R1_INIT_HE success=20 failure=20 callback=26084
+ 4fe28: event=03 R1_INIT_ST success=20 failure=0 callback=26780
+ 4fe30: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fe38: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fe40: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fe48: event=09 RANGE_START success=5 failure=14 callback=26228
+ 4fe50: event=07 RANGE_CONFIG_START success=4 failure=14 callback=26214
+ 4fe58: event=0e KEYROLL_CONFIG_START success=8 failure=14 callback=268b4
+ 4fe60: event=11 PERS_PARAMS_START success=10 failure=14 callback=261d8
+ 4fe68: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fe70: event=1d CLR_CRYPTO_DATA_START success=16 failure=20 callback=26200
+ 4fe78: event=20 ENCRYPTED_SN_START success=18 failure=20 callback=261ec
+ 4fe80: event=1b FATAL_RESPONSE success=0 failure=0 callback=2657c
+ 4fe88: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 3 SECURE_ROM rows=6 table=4fe90
+ 4fe90: event=11 PERS_PARAMS_START success=10 failure=14 callback=261d8
+ 4fe98: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fea0: event=1a IDLE success=0 failure=0 callback=2657c
+ 4fea8: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4feb0: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4feb8: event=1b FATAL_RESPONSE success=0 failure=0 callback=2657c
+STATE 4 RANGE_CONFIG rows=6 table=4fd98
+ 4fd98: event=08 RANGE_CONFIG_COMPLETE success=2 failure=14 callback=2632c
+ 4fda0: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fda8: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fdb0: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fdb8: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fdc0: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 5 RANGE rows=10 table=4fdc8
+ 4fdc8: event=01 R1_INIT success=0 failure=20 callback=26144
+ 4fdd0: event=02 R1_INIT_HE success=0 failure=20 callback=2612c
+ 4fdd8: event=03 R1_INIT_ST success=20 failure=0 callback=26780
+ 4fde0: event=0a RANGE_STOP success=20 failure=20 callback=26322
+ 4fde8: event=0b RANGE_COMPLETE success=2 failure=2 callback=261a4
+ 4fdf0: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fdf8: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fe00: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fe08: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fe10: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 6 INITIATE_PAIRING rows=7 table=4fc80
+ 4fc80: event=03 R1_INIT_ST success=20 failure=0 callback=26780
+ 4fc88: event=0d INITIATE_PAIRING_COMPLETE success=7 failure=14 callback=26a54
+ 4fc90: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fc98: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fca0: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fca8: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fcb0: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 7 FINALIZE_PAIRING rows=7 table=4fad8
+ 4fad8: event=03 R1_INIT_ST success=20 failure=0 callback=26780
+ 4fae0: event=0e KEYROLL_CONFIG_START success=8 failure=14 callback=2688c
+ 4fae8: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4faf0: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4faf8: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fb00: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fb08: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 8 KEYROLL_CONFIG rows=9 table=4fcb8
+ 4fcb8: event=01 R1_INIT success=0 failure=20 callback=26144
+ 4fcc0: event=02 R1_INIT_HE success=0 failure=20 callback=2612c
+ 4fcc8: event=03 R1_INIT_ST success=20 failure=0 callback=26780
+ 4fcd0: event=0f KEYROLL_CONFIG_COMPLETE success=9 failure=14 callback=26864
+ 4fcd8: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fce0: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fce8: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fcf0: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fcf8: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 9 KEYROLL_PERFORM rows=10 table=4fd00
+ 4fd00: event=01 R1_INIT success=0 failure=20 callback=26144
+ 4fd08: event=02 R1_INIT_HE success=0 failure=20 callback=2612c
+ 4fd10: event=03 R1_INIT_ST success=20 failure=0 callback=26780
+ 4fd18: event=10 KEYROLL_PERFORM_COMPLETE success=20 failure=14 callback=268dc
+ 4fd20: event=1e KEYS_STORED success=17 failure=8 callback=26068
+ 4fd28: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fd30: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fd38: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fd40: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fd48: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 10 PERSONALIZATION_PARAMS rows=7 table=4fd50
+ 4fd50: event=12 PERS_PARAMS_COMPLETE success=11 failure=14 callback=26844
+ 4fd58: event=13 PERS_PARAMS_COMPLETE_R1_DFU success=3 failure=14 callback=2670c
+ 4fd60: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fd68: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fd70: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fd78: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fd80: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 11 BOOT_NONCE rows=6 table=4f9d4
+ 4f9d4: event=14 BOOT_NONCE_COMPLETE success=12 failure=14 callback=26824
+ 4f9dc: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4f9e4: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4f9ec: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4f9f4: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4f9fc: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 12 IMAGE_PARTITION rows=6 table=4fc50
+ 4fc50: event=15 IMAGE_PARTITION_COMPLETE success=13 failure=14 callback=26804
+ 4fc58: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fc60: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fc68: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fc70: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fc78: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 13 FW_VERSION rows=6 table=4fb10
+ 4fb10: event=16 FW_VERSION_COMPLETE success=2 failure=14 callback=2615c
+ 4fb18: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fb20: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fb28: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fb30: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fb38: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 14 PREP_FOR_HALT rows=2 table=4fd88
+ 4fd88: event=1a IDLE success=0 failure=0 callback=2657c
+ 4fd90: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+STATE 15 CRASH_BOOTING rows=2 table=4fa80
+ 4fa80: event=02 R1_INIT_HE success=20 failure=20 callback=26074
+ 4fa88: event=00 UNEXPECTED success=0 failure=0 callback=2657c
+STATE 16 CLR_CRYPTO_DATA rows=5 table=4fa58
+ 4fa58: event=0c INITIATE_PAIRING_START success=6 failure=14 callback=267dc
+ 4fa60: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fa68: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fa70: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fa78: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 17 CUSTOMER_CRASH rows=9 table=4fa90
+ 4fa90: event=01 R1_INIT success=0 failure=20 callback=26144
+ 4fa98: event=02 R1_INIT_HE success=0 failure=20 callback=2612c
+ 4faa0: event=03 R1_INIT_ST success=20 failure=0 callback=26780
+ 4faa8: event=1f CUSTOMER_CRASH_COMPLETE success=14 failure=14 callback=262e0
+ 4fab0: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fab8: event=18 R1_DEINIT_HE success=14 failure=20 callback=26108
+ 4fac0: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fac8: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fad0: event=1a IDLE success=0 failure=0 callback=2657c
+STATE 18 ENCRYPTED_SN_START rows=5 table=4fec0
+ 4fec0: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fec8: event=1a IDLE success=0 failure=0 callback=2657c
+ 4fed0: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4fed8: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4fee0: event=21 ENCRYPTED_SN_CFG_COMPLETE success=19 failure=14 callback=266f0
+STATE 19 ENCRYPTED_SN_WAITING_RESULT rows=5 table=4fee8
+ 4fee8: event=1c BOOT_FROM_FATAL_ERROR success=15 failure=15 callback=26440
+ 4fef0: event=1a IDLE success=0 failure=0 callback=2657c
+ 4fef8: event=17 R1_DEINIT success=14 failure=20 callback=260f4
+ 4ff00: event=19 R1_DEINIT_ST success=14 failure=14 callback=260d0
+ 4ff08: event=22 ENCRYPTED_SN_RESULT_COMPLETE success=14 failure=14 callback=26098
